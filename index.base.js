@@ -1,6 +1,6 @@
 /* @flow */
 
 import { AppRegistry } from 'react-native';
-import ChoosePokemon from './src/components/ChoosePokemon';
+import Home from './src/components/Home';
 
-AppRegistry.registerComponent('pokematch', () => ChoosePokemon);
+AppRegistry.registerComponent('pokematch', () => Home);

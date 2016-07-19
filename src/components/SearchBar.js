@@ -12,15 +12,13 @@ const styles = StyleSheet.create({
   bar: {
     flexDirection: 'row',
     backgroundColor: '#fff',
-    borderRadius: 2,
-    margin: 8,
-    height: 48,
+    height: 56,
     elevation: 2,
   },
 
   icon: {
     color: '#676767',
-    margin: 12,
+    margin: 16,
     height: 24,
     width: 24,
   },

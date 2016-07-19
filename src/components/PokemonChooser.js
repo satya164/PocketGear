@@ -16,10 +16,16 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class ChoosePokemon extends Component {
+type State = {
+  query: string;
+  selected: ?number;
+}
 
-  state = {
+export default class PokemonChooser extends Component<void, void, State> {
+
+  state: State = {
     query: '',
+    selected: 135,
   };
 
   _handleSearchChange = (query: string) => {
@@ -32,7 +38,7 @@ export default class ChoosePokemon extends Component {
     return (
       <View style={styles.page}>
         <SearchBar placeholder='Find a Pokémon' onChangeText={this._handleSearchChange} />
-        <PokeCard index={135} />
+        <PokeCard index={this.state.selected} />
       </View>
     )
   }

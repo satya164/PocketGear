@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
 
   image: {
     marginHorizontal: 8,
-    height: 64,
-    width: 64,
+    height: 84,
+    width: 84,
     resizeMode: 'contain',
   },
 
@@ -30,17 +30,29 @@ const styles = StyleSheet.create({
     padding: 8,
   },
 
+  item: {
+    flexDirection: 'row',
+    marginVertical: 2,
+  },
+
   name: {
     fontFamily: 'Lato',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 20,
     color: '#333',
   },
 
-  type: {
+  label: {
     fontFamily: 'Lato',
     fontSize: 12,
     color: '#999',
+    marginRight: 8,
+  },
+
+  summary: {
+    fontFamily: 'Lato',
+    fontSize: 12,
+    color: '#333',
   }
 });
 
@@ -56,9 +68,22 @@ export default class PokeCard extends Component {
           <Text style={styles.name}>
             Jolteon
           </Text>
-          <Text style={styles.type}>
-            Electricity
-          </Text>
+          <View style={styles.item}>
+            <Text style={styles.label}>
+              Type
+            </Text>
+            <Text style={styles.summary}>
+              Electric
+            </Text>
+          </View>
+          <View style={styles.item}>
+            <Text style={styles.label}>
+              Weakness
+            </Text>
+            <Text style={styles.summary}>
+              Ground
+            </Text>
+          </View>
         </View>
       </View>
     )
