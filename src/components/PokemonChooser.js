@@ -3,6 +3,7 @@
 import React, { PropTypes, Component } from 'react';
 import {
   View,
+  StatusBar,
   StyleSheet,
 } from 'react-native';
 import SearchBar from './SearchBar';
@@ -56,6 +57,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
   render() {
     return (
       <View style={styles.page}>
+        <StatusBar backgroundColor='#ccc' />
         <SearchBar placeholder='Find a Pokémon' onChangeText={this._handleSearchChange} />
         <PokeCard index={this.state.selected} onPress={this._handleCardPress} />
       </View>

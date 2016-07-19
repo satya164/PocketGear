@@ -7,6 +7,7 @@ import {
   Text,
   TouchableOpacity,
   ScrollView,
+  StatusBar,
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -17,9 +18,11 @@ const styles = StyleSheet.create({
   },
 
   cover: {
-    backgroundColor: '#175081',
+    backgroundColor: '#1d2c47',
     alignItems: 'center',
     padding: 16,
+    height: null,
+    width: null,
   },
 
   appbar: {
@@ -64,8 +67,8 @@ const styles = StyleSheet.create({
 
   title: {
     fontFamily: 'Lato',
-    fontSize: 20,
-    lineHeight: 30,
+    fontSize: 16,
+    lineHeight: 24,
     fontWeight: 'bold',
     color: '#333',
   },
@@ -80,8 +83,9 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Lato',
     fontSize: 14,
+    fontWeight: 'bold',
     color: '#999',
-    width: 100,
+    width: 80,
   },
 
   text: {
@@ -110,7 +114,8 @@ export default class PokeCard extends Component<void, Props, void> {
   render() {
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
-        <View style={styles.cover}>
+        <StatusBar backgroundColor='#182438' />
+        <Image source={require('../../assets/cover.png')} style={styles.cover}>
           <View style={styles.appbar}>
             <TouchableOpacity style={styles.button} onPress={this._handleGoBack}>
               <Icon
@@ -127,7 +132,7 @@ export default class PokeCard extends Component<void, Props, void> {
           <Text style={styles.name}>
             Jolteon
           </Text>
-        </View>
+        </Image>
         <View style={styles.details}>
           <View style={styles.row}>
             <Text style={styles.label}>
