@@ -5,7 +5,6 @@ import React, { Component, PropTypes } from 'react';
 import {
   View,
   StyleSheet,
-  StatusBar,
   NavigationExperimental,
 } from 'react-native';
 import type { Route } from './NavigationTypeDefinitions';
@@ -17,22 +16,6 @@ const {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  left: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-  },
-  right: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-  },
-  middle: {
-    position: 'absolute',
-    top: 0,
-    left: 56,
-    right: 56,
   },
   content: {
     flex: 1,

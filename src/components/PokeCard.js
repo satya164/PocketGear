@@ -5,6 +5,7 @@ import {
   View,
   Image,
   Text,
+  TouchableOpacity,
   StyleSheet,
 } from 'react-native';
 
@@ -56,10 +57,15 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class PokeCard extends Component {
+export default class PokeCard extends Component<void, any, void> {
+
+  static propTypes = {
+    style: View.propTypes.style,
+  };
+
   render() {
     return (
-      <View {...this.props} style={[ styles.card, this.props.style ]}>
+      <TouchableOpacity {...this.props} style={[ styles.card, this.props.style ]}>
         <Image
           style={styles.image}
           source={require('../../assets/jolteon.png')}
@@ -85,7 +91,7 @@ export default class PokeCard extends Component {
             </Text>
           </View>
         </View>
-      </View>
-    )
+      </TouchableOpacity>
+    );
   }
 }

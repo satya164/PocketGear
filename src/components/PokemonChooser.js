@@ -1,9 +1,8 @@
 /* @flow */
 
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import {
   View,
-  Text,
   StyleSheet,
 } from 'react-native';
 import SearchBar from './SearchBar';
@@ -21,7 +20,15 @@ type State = {
   selected: ?number;
 }
 
-export default class PokemonChooser extends Component<void, void, State> {
+type Props = {
+  onNavigate: Function;
+}
+
+export default class PokemonChooser extends Component<void, Props, State> {
+
+  static propTypes = {
+    onNavigate: PropTypes.func.isRequired,
+  };
 
   state: State = {
     query: '',
@@ -34,12 +41,24 @@ export default class PokemonChooser extends Component<void, void, State> {
     });
   };
 
+  _handleCardPress = () => {
+    this.props.onNavigate({
+      type: 'push',
+      route: {
+        name: 'details',
+        props: {
+          index: this.state.selected,
+        },
+      },
+    });
+  };
+
   render() {
     return (
       <View style={styles.page}>
         <SearchBar placeholder='Find a Pokémon' onChangeText={this._handleSearchChange} />
-        <PokeCard index={this.state.selected} />
+        <PokeCard index={this.state.selected} onPress={this._handleCardPress} />
       </View>
-    )
+    );
   }
 }

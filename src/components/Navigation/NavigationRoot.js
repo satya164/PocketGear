@@ -84,8 +84,6 @@ export default class NavigationRoot extends Component<void, Props, State> {
     switch (type) {
     case 'push':
       if (route) {
-        const lastRoute = routes[routes.length - 1];
-
         return {
           ...currentState,
           routes: [

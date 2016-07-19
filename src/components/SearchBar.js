@@ -31,7 +31,12 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class SearchBar extends Component {
+export default class SearchBar extends Component<void, any, void> {
+
+  static propTypes = {
+    style: View.propTypes.style,
+  };
+
   render() {
     const { ...rest, style } = this.props;
 
@@ -44,12 +49,11 @@ export default class SearchBar extends Component {
         />
         <TextInput
           style={styles.input}
-          placeholder={this.props.placeholder}
           placeholderTextColor='#949494'
           underlineColorAndroid='transparent'
           {...rest}
         />
       </View>
-    )
+    );
   }
 }

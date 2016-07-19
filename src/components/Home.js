@@ -1,7 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
-import ReactNative from 'react-native';
+import React, { Component } from 'react';
 import NavigationRoot from './Navigation/NavigationRoot';
 import NavigationScene from './Navigation/NavigationScene';
 import NavigationView from './Navigation/NavigationView';
