@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    fontFamily: 'Lato',
     flex: 1,
     margin: 0,
     padding: 0,
