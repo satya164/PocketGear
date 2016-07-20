@@ -128,7 +128,11 @@ export default class PokemonChooser extends Component<void, Props, State> {
     return (
       <View style={styles.page}>
         <StatusBar backgroundColor='#ccc' />
-        <SearchBar placeholder='Find Pokémon by name, type or index' onChangeText={this._handleSearchChange} />
+        <SearchBar
+          placeholder='Find Pokémon by name, type or index'
+          value={this.state.query}
+          onChangeSearch={this._handleSearchChange}
+        />
         {typeof this.state.selected === 'number' ?
           <PokeCard index={this.state.selected} onPress={this._handleCardPress} /> :
           null

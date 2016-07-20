@@ -1,9 +1,10 @@
 /* @flow */
 
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import {
   View,
   TextInput,
+  TouchableOpacity,
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -31,10 +32,22 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class SearchBar extends Component<void, any, void> {
+type Props = {
+  value: string;
+  onChangeSearch: Function;
+  style?: any;
+}
+
+export default class SearchBar extends Component<void, Props, void> {
 
   static propTypes = {
+    value: PropTypes.string.isRequired,
+    onChangeSearch: PropTypes.func.isRequired,
     style: View.propTypes.style,
+  };
+
+  _handleClearPress = () => {
+    this.props.onChangeSearch('');
   };
 
   render() {
@@ -48,11 +61,22 @@ export default class SearchBar extends Component<void, any, void> {
           size={24}
         />
         <TextInput
+          {...rest}
           style={styles.input}
           placeholderTextColor='#949494'
           underlineColorAndroid='transparent'
-          {...rest}
+          onChangeText={this.props.onChangeSearch}
         />
+        {this.props.value ?
+          <TouchableOpacity onPress={this._handleClearPress}>
+            <Icon
+              style={styles.icon}
+              name='close'
+              size={24}
+            />
+          </TouchableOpacity> :
+          null
+        }
       </View>
     );
   }
