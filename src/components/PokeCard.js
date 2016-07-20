@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import {
   View,
   Image,
@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
+import data from '../data.json';
+import sprites from '../sprites';
 
 const styles = StyleSheet.create({
   card: {
@@ -22,8 +24,8 @@ const styles = StyleSheet.create({
 
   image: {
     marginHorizontal: 8,
-    height: 84,
-    width: 84,
+    height: 64,
+    width: 64,
     resizeMode: 'contain',
   },
 
@@ -57,37 +59,38 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class PokeCard extends Component<void, any, void> {
+type Props = {
+  index: number;
+  style?: any;
+}
+
+export default class PokeCard extends Component<void, Props, void> {
 
   static propTypes = {
+    index: PropTypes.number.isRequired,
     style: View.propTypes.style,
   };
 
   render() {
+    const { index } = this.props;
+    const item = data[index - 1];
+
     return (
       <TouchableOpacity {...this.props} style={[ styles.card, this.props.style ]}>
         <Image
           style={styles.image}
-          source={require('../../assets/jolteon.png')}
+          source={sprites[item.index - 1]}
         />
         <View style={styles.details}>
           <Text style={styles.name}>
-            Jolteon
+            {item.name}
           </Text>
           <View style={styles.item}>
             <Text style={styles.label}>
               Type
             </Text>
             <Text style={styles.summary}>
-              Electric
-            </Text>
-          </View>
-          <View style={styles.item}>
-            <Text style={styles.label}>
-              Weakness
-            </Text>
-            <Text style={styles.summary}>
-              Ground
+              {item.types.join(', ')}
             </Text>
           </View>
         </View>

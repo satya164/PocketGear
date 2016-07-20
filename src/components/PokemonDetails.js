@@ -11,6 +11,8 @@ import {
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import data from '../data.json';
+import sprites from '../sprites';
 
 const styles = StyleSheet.create({
   container: {
@@ -112,6 +114,9 @@ export default class PokeCard extends Component<void, Props, void> {
   };
 
   render() {
+    const { index } = this.props;
+    const item = data[index - 1];
+
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
         <StatusBar backgroundColor='#182438' />
@@ -127,10 +132,10 @@ export default class PokeCard extends Component<void, Props, void> {
           </View>
           <Image
             style={styles.image}
-            source={require('../../assets/jolteon.png')}
+            source={sprites[index - 1]}
           />
           <Text style={styles.name}>
-            Jolteon
+            {item.name}
           </Text>
         </Image>
         <View style={styles.details}>
@@ -139,7 +144,7 @@ export default class PokeCard extends Component<void, Props, void> {
               Pokédex
             </Text>
             <Text style={styles.text}>
-              #135
+              #{item.index}
             </Text>
           </View>
           <View style={styles.row}>
@@ -147,7 +152,7 @@ export default class PokeCard extends Component<void, Props, void> {
               Type
             </Text>
             <Text style={styles.text}>
-              Electric
+              {item.types.join(', ')}
             </Text>
           </View>
           <View style={styles.block}>
@@ -155,7 +160,7 @@ export default class PokeCard extends Component<void, Props, void> {
               Lightning Pokémon
             </Text>
             <Text style={styles.summary}>
-              Jolteon's cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles.
+              {item.description}
             </Text>
           </View>
           <View style={styles.block}>

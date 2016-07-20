@@ -12,6 +12,7 @@ import SearchBar from './SearchBar';
 import GridView from './GridView';
 import PokeCard from './PokeCard';
 import data from '../data.json';
+import sprites from '../sprites';
 
 const styles = StyleSheet.create({
   page: {
@@ -20,12 +21,13 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    margin: 8,
-    height: 96,
+    margin: 16,
+    height: 72,
     resizeMode: 'contain',
   },
 
   block: {
+    alignItems: 'center',
     backgroundColor: '#fff',
     padding: 16,
     borderRadius: 2,
@@ -97,7 +99,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
     return (
       <View style={styles.block}>
         <Text style={[ styles.index, styles.subtitle ]}>#{rowData.index}</Text>
-        <Image source={{ uri: rowData.image + '?resize_h=192&resize_w=192' }} style={styles.image} />
+        <Image source={sprites[rowData.index - 1]} style={styles.image} />
         <Text style={styles.title}>{rowData.name}</Text>
         <Text style={styles.subtitle}>{rowData.types.join(', ')}</Text>
       </View>
