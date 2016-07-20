@@ -2,7 +2,7 @@
 
 import { Component, PropTypes } from 'react';
 import { AsyncStorage } from 'react-native';
-import { v4 } from 'node-uuid';
+import { v4 } from 'react-native-uuid';
 import type { Route, NavigationState, NavigationAction } from './NavigationTypeDefinitions';
 
 type Props = {
