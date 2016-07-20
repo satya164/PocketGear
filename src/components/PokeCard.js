@@ -12,54 +12,45 @@ import data from '../data.json';
 import sprites from '../sprites';
 
 const styles = StyleSheet.create({
-  card: {
-    flexDirection: 'row',
+  block: {
     alignItems: 'center',
     backgroundColor: '#fff',
-    margin: 8,
-    padding: 8,
+    padding: 16,
     borderRadius: 2,
     elevation: 1,
   },
 
   image: {
-    marginHorizontal: 8,
-    height: 64,
-    width: 64,
+    margin: 16,
+    height: 72,
     resizeMode: 'contain',
   },
 
-  details: {
-    padding: 8,
+  index: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    margin: 8,
   },
 
-  item: {
-    flexDirection: 'row',
-    marginVertical: 2,
-  },
-
-  name: {
+  title: {
     fontFamily: 'Lato',
+    color: '#333',
     fontWeight: 'bold',
-    fontSize: 20,
-    color: '#333',
+    fontSize: 14,
+    textAlign: 'center',
   },
 
-  label: {
+  subtitle: {
     fontFamily: 'Lato',
-    fontSize: 12,
     color: '#aaa',
-    marginRight: 8,
-  },
-
-  summary: {
-    fontFamily: 'Lato',
     fontSize: 12,
-    color: '#333',
-  }
+    textAlign: 'center',
+  },
 });
 
 type Props = {
+  onNavigate: Function;
   index: number;
   style?: any;
 }
@@ -67,8 +58,21 @@ type Props = {
 export default class PokeCard extends Component<void, Props, void> {
 
   static propTypes = {
+    onNavigate: PropTypes.func.isRequired,
     index: PropTypes.number.isRequired,
     style: View.propTypes.style,
+  };
+
+  _handlePress = () => {
+    this.props.onNavigate({
+      type: 'push',
+      route: {
+        name: 'details',
+        props: {
+          index: this.props.index,
+        },
+      },
+    });
   };
 
   render() {
@@ -76,24 +80,15 @@ export default class PokeCard extends Component<void, Props, void> {
     const item = data[index - 1];
 
     return (
-      <TouchableOpacity {...this.props} style={[ styles.card, this.props.style ]}>
-        <Image
-          style={styles.image}
-          source={sprites[item.index - 1]}
-        />
-        <View style={styles.details}>
-          <Text style={styles.name}>
-            {item.name}
-          </Text>
-          <View style={styles.item}>
-            <Text style={styles.label}>
-              Type
-            </Text>
-            <Text style={styles.summary}>
-              {item.types.join(', ')}
-            </Text>
-          </View>
-        </View>
+      <TouchableOpacity
+        onPress={this._handlePress}
+        activeOpacity={0.7}
+        style={styles.block}
+      >
+        <Text style={[ styles.index, styles.subtitle ]}>#{item.index}</Text>
+        <Image source={sprites[item.index - 1]} style={styles.image} />
+        <Text style={styles.title}>{item.name}</Text>
+        <Text style={styles.subtitle}>{item.types.join(', ')}</Text>
       </TouchableOpacity>
     );
   }

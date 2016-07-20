@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 
   image: {
     margin: 16,
-    height: 96,
+    height: 72,
     resizeMode: 'contain',
   },
 
@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
 
 type Props = {
   onNavigate: Function;
+  index: number;
   style?: any;
 }
 
@@ -106,6 +107,7 @@ export default class PokeCard extends Component<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
+    index: PropTypes.number.isRequired,
     style: ScrollView.propTypes.style,
   };
 
