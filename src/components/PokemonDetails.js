@@ -54,6 +54,17 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 
+  index: {
+    position: 'absolute',
+    top: 5,
+    left: -104,
+    width: 96,
+    textAlign: 'right',
+    fontFamily: 'Lato',
+    fontSize: 16,
+    color: 'rgba(255, 255, 255, .5)',
+  },
+
   details: {
     padding: 8,
   },
@@ -68,6 +79,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
+    marginVertical: 4,
     fontFamily: 'Lato',
     fontSize: 16,
     lineHeight: 24,
@@ -79,20 +91,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     fontSize: 14,
     lineHeight: 21,
-    color: '#333',
-  },
-
-  label: {
-    fontFamily: 'Lato',
-    fontSize: 14,
-    fontWeight: 'bold',
-    color: '#aaa',
-    width: 80,
-  },
-
-  text: {
-    fontFamily: 'Lato',
-    fontSize: 14,
     color: '#333',
   },
 });
@@ -136,24 +134,21 @@ export default class PokeCard extends Component<void, Props, void> {
             style={styles.image}
             source={sprites[index - 1]}
           />
-          <Text style={styles.name}>
-            {item.name}
-          </Text>
-        </Image>
-        <View style={styles.details}>
           <View style={styles.row}>
-            <Text style={styles.label}>
-              Pokédex
-            </Text>
-            <Text style={styles.text}>
+            <Text style={styles.index}>
               #{item.index}
             </Text>
+            <Text style={styles.name}>
+              {item.name}
+            </Text>
           </View>
-          <View style={styles.row}>
-            <Text style={styles.label}>
+        </Image>
+        <View style={styles.details}>
+          <View style={styles.block}>
+            <Text style={styles.title}>
               Type
             </Text>
-            <Text style={styles.text}>
+            <Text style={styles.summary}>
               {item.types.join(', ')}
             </Text>
           </View>
