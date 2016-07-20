@@ -22,7 +22,7 @@ type Props = {
   data: Array<any>;
   spacing: number;
   getNumberOfColumns: (width: number) => number;
-  renderRow: (rowData: any, sectionID: number, rowID: number, highlightRow: boolean) => ?React.Element;
+  renderRow: (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => ?React.Element;
   onLayout?: Function;
   contentContainerStyle?: any;
   style?: any;
@@ -79,7 +79,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     });
   }
 
-  _renderRow = (rowData: any, sectionID: number, rowID: number, highlightRow: boolean) => {
+  _renderRow = (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => {
     return (
       <View
         style={{

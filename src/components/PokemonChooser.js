@@ -93,15 +93,31 @@ export default class PokemonChooser extends Component<void, Props, State> {
     });
   };
 
-  _renderRow = (rowData: any, sectionID: number, rowID: number) => {
+  _renderRow = (rowData: any) => {
     return (
       <View style={styles.block}>
-        <Text style={[ styles.index, styles.subtitle ]}>#{rowID}</Text>
+        <Text style={[ styles.index, styles.subtitle ]}>#{rowData.index}</Text>
         <Image source={{ uri: rowData.image + '?resize_h=192&resize_w=192' }} style={styles.image} />
         <Text style={styles.title}>{rowData.name}</Text>
         <Text style={styles.subtitle}>{rowData.types.join(', ')}</Text>
       </View>
     );
+  };
+
+  _getSearchResults = () => {
+    const { query } = this.state;
+
+    if (query) {
+      return data.filter(item => {
+        return (
+          item.name.toLowerCase().indexOf(query.toLowerCase()) === 0 ||
+          item.types.filter(type => type.toLowerCase().indexOf(query.toLowerCase()) === 0).length ||
+          item.index === parseInt(query, 10)
+        );
+      });
+    }
+
+    return data;
   };
 
   _getNumberOfColumns = (width: number) => {
@@ -112,15 +128,15 @@ export default class PokemonChooser extends Component<void, Props, State> {
     return (
       <View style={styles.page}>
         <StatusBar backgroundColor='#ccc' />
-        <SearchBar placeholder='Find a Pokémon' onChangeText={this._handleSearchChange} />
+        <SearchBar placeholder='Find Pokémon by name, type or index' onChangeText={this._handleSearchChange} />
         {typeof this.state.selected === 'number' ?
           <PokeCard index={this.state.selected} onPress={this._handleCardPress} /> :
           null
         }
         <GridView
           removeClippedSubViews
-          data={data}
           spacing={8}
+          data={this._getSearchResults()}
           renderRow={this._renderRow}
           getNumberOfColumns={this._getNumberOfColumns}
         />
