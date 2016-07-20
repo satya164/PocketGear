@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
   },
 
   name: {
+    fontFamily: 'Lato',
     fontSize: 20,
     fontWeight: 'bold',
     color: '#fff',
@@ -65,6 +66,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
+    fontFamily: 'Lato',
     fontSize: 16,
     lineHeight: 24,
     fontWeight: 'bold',
@@ -72,12 +74,14 @@ const styles = StyleSheet.create({
   },
 
   summary: {
+    fontFamily: 'Lato',
     fontSize: 14,
     lineHeight: 21,
     color: '#333',
   },
 
   label: {
+    fontFamily: 'Lato',
     fontSize: 14,
     fontWeight: 'bold',
     color: '#999',
@@ -85,6 +89,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
+    fontFamily: 'Lato',
     fontSize: 14,
     color: '#333',
   },

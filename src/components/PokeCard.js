@@ -37,18 +37,21 @@ const styles = StyleSheet.create({
   },
 
   name: {
+    fontFamily: 'Lato',
     fontWeight: 'bold',
     fontSize: 20,
     color: '#333',
   },
 
   label: {
+    fontFamily: 'Lato',
     fontSize: 12,
     color: '#999',
     marginRight: 8,
   },
 
   summary: {
+    fontFamily: 'Lato',
     fontSize: 12,
     color: '#333',
   }
