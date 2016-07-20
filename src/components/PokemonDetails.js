@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#999',
+    color: '#aaa',
     width: 80,
   },
 

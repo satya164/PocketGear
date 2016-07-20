@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Lato',
     fontSize: 12,
-    color: '#999',
+    color: '#aaa',
     marginRight: 8,
   },
 
