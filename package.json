@@ -12,7 +12,8 @@
     "react-native": "^0.29.0",
     "react-native-tab-view": "0.0.18",
     "react-native-uuid": "^1.4.8",
-    "react-native-vector-icons": "^2.0.3"
+    "react-native-vector-icons": "^2.0.3",
+    "realm": "^0.14.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
