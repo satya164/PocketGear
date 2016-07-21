@@ -7,93 +7,101 @@ import {
   Text,
   TouchableOpacity,
   ScrollView,
-  StatusBar,
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
 import data from '../data.json';
+import colors from '../colors.json';
 import sprites from '../sprites';
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: '#fff',
   },
 
-  cover: {
-    backgroundColor: '#1d2c47',
-    alignItems: 'center',
-    padding: 16,
-    height: null,
-    width: null,
-  },
-
   appbar: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    height: 56,
   },
 
   button: {
     padding: 12,
   },
 
-  icon: {
-    color: '#fff',
+  title: {
+    fontFamily: 'Lato',
+    fontSize: 18,
+    marginHorizontal: 8,
   },
 
   image: {
-    margin: 16,
+    marginHorizontal: 8,
     height: 72,
     resizeMode: 'contain',
   },
 
   name: {
     fontFamily: 'Lato',
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
-    color: '#fff',
-  },
-
-  index: {
-    position: 'absolute',
-    top: 5,
-    left: -104,
-    width: 96,
-    textAlign: 'right',
-    fontFamily: 'Lato',
-    fontSize: 16,
-    color: 'rgba(255, 255, 255, .5)',
-  },
-
-  details: {
-    padding: 8,
+    marginVertical: 2,
   },
 
   row: {
     flexDirection: 'row',
-    margin: 8,
+    alignItems: 'flex-end',
   },
 
-  block: {
-    margin: 8,
+  meta: {
+    paddingHorizontal: 16,
+    marginBottom: 16,
   },
 
-  title: {
-    marginVertical: 4,
+  label: {
     fontFamily: 'Lato',
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: 12,
     fontWeight: 'bold',
-    color: '#333',
+    opacity: 0.5,
+    width: 72,
+    marginVertical: 2,
   },
 
-  summary: {
+  info: {
     fontFamily: 'Lato',
-    fontSize: 14,
-    lineHeight: 21,
-    color: '#333',
+    fontSize: 13,
+    marginVertical: 2,
+  },
+
+  tabview: {
+    flex: 1,
+    backgroundColor: '#f9f9f9',
+  },
+
+  tabbar: {
+    backgroundColor: '#fff',
+    elevation: 1,
+  },
+
+  tablabel: {
+    fontFamily: 'Lato',
+    fontSize: 10,
+    fontWeight: 'bold',
+    marginVertical: 8,
   },
 });
+
+type Route = {
+  key: string;
+  title: string;
+}
+
+type NavigationState = {
+  index: number;
+  routes: Array<Route>;
+}
 
 type Props = {
   onNavigate: Function;
@@ -101,12 +109,60 @@ type Props = {
   style?: any;
 }
 
-export default class PokeCard extends Component<void, Props, void> {
+type State = {
+  navigation: NavigationState;
+}
+
+export default class PokeCard extends Component<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
     index: PropTypes.number.isRequired,
     style: ScrollView.propTypes.style,
+  };
+
+  state: State = {
+    navigation: {
+      index: 0,
+      routes: [
+        { key: '1', title: 'Strong against' },
+        { key: '2', title: 'Weak against' },
+        { key: '3', title: 'Details' },
+      ],
+    },
+  };
+
+  _handleChangeTab = (index: number) => {
+    this.setState({
+      navigation: { ...this.state.navigation, index },
+    });
+  };
+
+  _getColor = () => {
+    return colors[data[this.props.index - 1].types[0].toLowerCase() + 'Dark'] || colors.normalDark;
+  };
+
+  _renderLabel = ({ route }: { route: Route }) => {
+    return <Text style={[ styles.tablabel, { color: this._getColor() } ]}>{route.title.toUpperCase()}</Text>;
+  }
+
+  _renderHeader = (props: any) => {
+    return (
+      <TabBarTop
+        {...props}
+        renderLabel={this._renderLabel}
+        indicatorStyle={{ backgroundColor: this._getColor() }}
+        style={styles.tabbar}
+      />
+    );
+  };
+
+  _renderScene = () => {
+    return <View />;
+  };
+
+  _renderPage = (props: any) => {
+    return <TabViewPage {...props} renderScene={this._renderScene} />;
   };
 
   _handleGoBack = () => {
@@ -116,60 +172,46 @@ export default class PokeCard extends Component<void, Props, void> {
   render() {
     const { index } = this.props;
     const item = data[index - 1];
+    const color = this._getColor();
 
     return (
-      <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
-        <StatusBar backgroundColor='#182438' />
-        <Image source={require('../../assets/cover.png')} style={styles.cover}>
-          <View style={styles.appbar}>
-            <TouchableOpacity style={styles.button} onPress={this._handleGoBack}>
-              <Icon
-                name='arrow-back'
-                size={24}
-                style={styles.icon}
-              />
-            </TouchableOpacity>
-          </View>
-          <Image
-            style={styles.image}
-            source={sprites[index - 1]}
-          />
-          <View style={styles.row}>
-            <Text style={styles.index}>
-              #{item.index}
-            </Text>
-            <Text style={styles.name}>
-              {item.name}
-            </Text>
-          </View>
-        </Image>
-        <View style={styles.details}>
-          <View style={styles.block}>
-            <Text style={styles.title}>
-              Type
-            </Text>
-            <Text style={styles.summary}>
-              {item.types.join(', ')}
-            </Text>
-          </View>
-          <View style={styles.block}>
-            <Text style={styles.title}>
-              Lightning Pokémon
-            </Text>
-            <Text style={styles.summary}>
-              {item.description}
-            </Text>
-          </View>
-          <View style={styles.block}>
-            <Text style={styles.title}>
-              Evolution
-            </Text>
-            <Text style={styles.summary}>
-              Evee → Jolteon
-            </Text>
-          </View>
+      <View {...this.props} style={[ styles.container, this.props.style ]}>
+        <View style={styles.appbar}>
+          <TouchableOpacity style={styles.button} onPress={this._handleGoBack}>
+            <Icon
+              name='arrow-back'
+              size={24}
+              style={{ color }}
+            />
+          </TouchableOpacity>
+          <Text style={[ styles.title, { color } ]}>#{item.index}</Text>
         </View>
-      </ScrollView>
+        <View style={[ styles.row, styles.meta ]}>
+          <View>
+            <Text style={[ styles.name, { color } ]}>{item.name}</Text>
+            <View style={styles.row}>
+              <Text style={[ styles.label, { color } ]}>Type</Text>
+              <Text style={[ styles.info, { color } ]}>{item.types.join(', ')}</Text>
+            </View>
+            <View style={styles.row}>
+              <Text style={[ styles.label, { color } ]}>Category</Text>
+              <Text style={[ styles.info, { color } ]}>Seed Pokémon</Text>
+            </View>
+            <View style={styles.row}>
+              <Text style={[ styles.label, { color } ]}>Weakness</Text>
+              <Text style={[ styles.info, { color } ]}>Fire</Text>
+            </View>
+          </View>
+          <Image style={styles.image} source={sprites[index - 1]} />
+        </View>
+        <TabViewAnimated
+          style={styles.tabview}
+          navigationState={this.state.navigation}
+          renderScene={this._renderPage}
+          renderHeader={this._renderHeader}
+          onRequestChangeTab={this._handleChangeTab}
+        />
+      </View>
     );
   }
 }
