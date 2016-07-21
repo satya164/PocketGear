@@ -125,8 +125,8 @@ export default class PokeCard extends Component<void, Props, State> {
     navigation: {
       index: 0,
       routes: [
-        { key: '1', title: 'Strong against' },
-        { key: '2', title: 'Weak against' },
+        { key: '1', title: 'Weak against' },
+        { key: '2', title: 'Strong against' },
         { key: '3', title: 'Details' },
       ],
     },
