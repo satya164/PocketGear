@@ -9,6 +9,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import data from '../data.json';
+import colors from '../colors.json';
 import sprites from '../sprites';
 
 const styles = StyleSheet.create({
@@ -35,7 +36,6 @@ const styles = StyleSheet.create({
 
   title: {
     fontFamily: 'Lato',
-    color: '#333',
     fontWeight: 'bold',
     fontSize: 14,
     textAlign: 'center',
@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
 
   subtitle: {
     fontFamily: 'Lato',
-    color: '#aaa',
     fontSize: 12,
     textAlign: 'center',
+    opacity: 0.5,
   },
 });
 
@@ -78,6 +78,7 @@ export default class PokeCard extends Component<void, Props, void> {
   render() {
     const { index } = this.props;
     const item = data[index - 1];
+    const color = colors[item.types[0].toLowerCase() + 'Dark'] || colors.normalDark;
 
     return (
       <TouchableOpacity
@@ -85,10 +86,10 @@ export default class PokeCard extends Component<void, Props, void> {
         activeOpacity={0.7}
         style={styles.block}
       >
-        <Text style={[ styles.index, styles.subtitle ]}>#{item.index}</Text>
+        <Text style={[ styles.index, styles.subtitle, { color } ]}>#{item.index}</Text>
         <Image source={sprites[item.index - 1]} style={styles.image} />
-        <Text style={styles.title}>{item.name}</Text>
-        <Text style={styles.subtitle}>{item.types.join(', ')}</Text>
+        <Text style={[ styles.title, { color } ]}>{item.name}</Text>
+        <Text style={[ styles.subtitle, { color } ]}>{item.types.join(', ')}</Text>
       </TouchableOpacity>
     );
   }
