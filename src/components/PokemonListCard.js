@@ -55,7 +55,7 @@ type Props = {
   style?: any;
 }
 
-export default class PokeCard extends Component<void, Props, void> {
+export default class PokemonListCard extends Component<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
@@ -67,7 +67,7 @@ export default class PokeCard extends Component<void, Props, void> {
     this.props.onNavigate({
       type: 'push',
       route: {
-        name: 'details',
+        name: 'info',
         props: {
           index: this.props.index,
         },

@@ -7,8 +7,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import SearchBar from './SearchBar';
-import GridView from './GridView';
-import PokeCard from './PokeCard';
+import PokemonList from './PokemonList';
 import data from '../data.json';
 
 const styles = StyleSheet.create({
@@ -44,10 +43,6 @@ export default class PokemonChooser extends Component<void, Props, State> {
     });
   };
 
-  _renderRow = (rowData: any) => {
-    return <PokeCard index={rowData.index} onNavigate={this.props.onNavigate} />;
-  };
-
   _getSearchResults = () => {
     const { query } = this.state;
 
@@ -77,13 +72,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
           value={this.state.query}
           onChangeSearch={this._handleSearchChange}
         />
-        <GridView
-          removeClippedSubViews
-          spacing={8}
-          data={this._getSearchResults()}
-          renderRow={this._renderRow}
-          getNumberOfColumns={this._getNumberOfColumns}
-        />
+        <PokemonList data={this._getSearchResults()} onNavigate={this.props.onNavigate} />
       </View>
     );
   }

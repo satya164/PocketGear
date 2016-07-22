@@ -113,7 +113,7 @@ type State = {
   navigation: NavigationState;
 }
 
-export default class PokeCard extends Component<void, Props, State> {
+export default class PokemonInfo extends Component<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
