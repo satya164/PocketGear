@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
+import PokemonDetails from './PokemonDetails';
 import data from '../data.json';
 import colors from '../colors.json';
 import sprites from '../sprites';
@@ -125,9 +126,9 @@ export default class PokemonInfo extends Component<void, Props, State> {
     navigation: {
       index: 0,
       routes: [
-        { key: '1', title: 'Strong against' },
-        { key: '2', title: 'Weak against' },
-        { key: '3', title: 'Details' },
+        { key: 'strong-against', title: 'Strong against' },
+        { key: 'weak-against', title: 'Weak against' },
+        { key: 'details', title: 'Details' },
       ],
     },
   };
@@ -157,8 +158,13 @@ export default class PokemonInfo extends Component<void, Props, State> {
     );
   };
 
-  _renderScene = () => {
-    return <View />;
+  _renderScene = ({ route }) => {
+    switch (route.key) {
+    case 'details':
+      return <PokemonDetails index={this.props.index} onNavigate={this.props.onNavigate} />;
+    default:
+      return <View />;
+    }
   };
 
   _renderPage = (props: any) => {
