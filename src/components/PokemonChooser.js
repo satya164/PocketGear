@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
 
 type State = {
   query: string;
-  selected: ?number;
 }
 
 type Props = {
@@ -34,7 +33,6 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   state: State = {
     query: '',
-    selected: null,
   };
 
   _handleSearchChange = (query: string) => {
@@ -57,10 +55,6 @@ export default class PokemonChooser extends Component<void, Props, State> {
     }
 
     return data;
-  };
-
-  _getNumberOfColumns = (width: number) => {
-    return Math.floor(width / 160);
   };
 
   render() {

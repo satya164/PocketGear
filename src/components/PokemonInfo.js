@@ -12,6 +12,8 @@ import {
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
 import PokemonDetails from './PokemonDetails';
+import WeakAgainstList from './WeakAgainstList';
+import StrongAgainstList from './StrongAgainstList';
 import data from '../data.json';
 import colors from '../colors.json';
 import sprites from '../sprites';
@@ -160,10 +162,14 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   _renderScene = ({ route }) => {
     switch (route.key) {
+    case 'weak-against':
+      return <WeakAgainstList index={this.props.index} onNavigate={this.props.onNavigate} />;
+    case 'strong-against':
+      return <StrongAgainstList index={this.props.index} onNavigate={this.props.onNavigate} />;
     case 'details':
       return <PokemonDetails index={this.props.index} onNavigate={this.props.onNavigate} />;
     default:
-      return <View />;
+      return null;
     }
   };
 
