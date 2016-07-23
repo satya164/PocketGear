@@ -82,6 +82,7 @@ export default class PokemonListCard extends Component<void, Props, void> {
 
     return (
       <TouchableOpacity
+        key={item.name}
         onPress={this._handlePress}
         activeOpacity={0.7}
         style={styles.block}
