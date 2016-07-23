@@ -5,6 +5,7 @@ import {
   View,
   StatusBar,
   StyleSheet,
+  Platform,
 } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
@@ -15,6 +16,18 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f9f9f9',
   },
+
+  list: {
+    paddingTop: Platform.OS === 'ios' ? 64 : 62,
+  },
+
+  searchbar: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    paddingTop: Platform.OS === 'ios' ? 20 : 0,
+  }
 });
 
 type State = {
@@ -61,12 +74,18 @@ export default class PokemonChooser extends Component<void, Props, State> {
     return (
       <View style={styles.page}>
         <StatusBar backgroundColor='#ccc' />
-        <SearchBar
-          placeholder='Find Pokémon by name, type or index'
-          value={this.state.query}
-          onChangeSearch={this._handleSearchChange}
+        <PokemonList
+          contentContainerStyle={styles.list}
+          data={this._getSearchResults()}
+          onNavigate={this.props.onNavigate}
         />
-        <PokemonList data={this._getSearchResults()} onNavigate={this.props.onNavigate} />
+        <View style={styles.searchbar}>
+          <SearchBar
+            placeholder='Find Pokémon by name, type or index'
+            value={this.state.query}
+            onChangeSearch={this._handleSearchChange}
+          />
+        </View>
       </View>
     );
   }

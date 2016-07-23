@@ -33,17 +33,17 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
+  placeholder: string;
   value: string;
   onChangeSearch: Function;
-  style?: any;
 }
 
 export default class SearchBar extends Component<void, Props, void> {
 
   static propTypes = {
+    placeholder: PropTypes.string,
     value: PropTypes.string.isRequired,
     onChangeSearch: PropTypes.func.isRequired,
-    style: View.propTypes.style,
   };
 
   _handleClearPress = () => {
@@ -51,18 +51,22 @@ export default class SearchBar extends Component<void, Props, void> {
   };
 
   render() {
-    const { ...rest, style } = this.props;
+    const {
+      placeholder,
+      value,
+    } = this.props;
 
     return (
-      <View style={[ styles.bar, style ]}>
+      <View style={styles.bar}>
         <Icon
           style={styles.icon}
           name='search'
           size={24}
         />
         <TextInput
-          {...rest}
           style={styles.input}
+          placeholder={placeholder}
+          value={value}
           placeholderTextColor='#949494'
           underlineColorAndroid='transparent'
           onChangeText={this.props.onChangeSearch}
