@@ -73,10 +73,6 @@ export default class PokemonDetails extends Component<void, Props, void> {
   };
 
   _goToPokemon = (index: number) => () => {
-    if (index === this.props.index) {
-      return;
-    }
-
     this.props.onNavigate({
       type: 'push',
       route: {
