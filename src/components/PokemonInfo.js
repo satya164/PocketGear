@@ -35,6 +35,10 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === 'ios' ? 20 : 0,
   },
 
+  icon: {
+    color: '#222',
+  },
+
   button: {
     height: BAR_HEIGHT,
     width: BAR_HEIGHT,
@@ -44,6 +48,7 @@ const styles = StyleSheet.create({
 
   title: {
     flex: 1,
+    color: '#222',
     textAlign: Platform.OS === 'ios' ? 'center' : 'left',
     fontFamily: 'Lato',
     fontSize: Platform.OS === 'ios' ? 16 : 18,
@@ -57,6 +62,7 @@ const styles = StyleSheet.create({
   },
 
   name: {
+    color: '#222',
     fontFamily: 'Lato',
     fontSize: 18,
     fontWeight: 'bold',
@@ -74,6 +80,7 @@ const styles = StyleSheet.create({
   },
 
   label: {
+    color: '#222',
     fontFamily: 'Lato',
     fontSize: 12,
     fontWeight: 'bold',
@@ -83,6 +90,7 @@ const styles = StyleSheet.create({
   },
 
   info: {
+    color: '#222',
     fontFamily: 'Lato',
     fontSize: 13,
     marginVertical: 2,
@@ -99,10 +107,15 @@ const styles = StyleSheet.create({
   },
 
   tablabel: {
+    color: '#222',
     fontFamily: 'Lato',
     fontSize: 10,
     fontWeight: 'bold',
     marginVertical: 8,
+  },
+
+  indicator: {
+    backgroundColor: '#222',
   },
 });
 
@@ -151,12 +164,8 @@ export default class PokemonInfo extends Component<void, Props, State> {
     });
   };
 
-  _getColor = () => {
-    return colors[data[this.props.index - 1].types[0].toLowerCase() + 'Dark'] || colors.normalDark;
-  };
-
   _renderLabel = ({ route }: { route: Route }) => {
-    return <Text style={[ styles.tablabel, { color: this._getColor() } ]}>{route.title.toUpperCase()}</Text>;
+    return <Text style={styles.tablabel}>{route.title.toUpperCase()}</Text>;
   }
 
   _renderHeader = (props: any) => {
@@ -164,7 +173,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
       <TabBarTop
         {...props}
         renderLabel={this._renderLabel}
-        indicatorStyle={{ backgroundColor: this._getColor() }}
+        indicatorStyle={styles.indicator}
         style={styles.tabbar}
       />
     );
@@ -194,7 +203,6 @@ export default class PokemonInfo extends Component<void, Props, State> {
   render() {
     const { index } = this.props;
     const item = data[index - 1];
-    const color = this._getColor();
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
@@ -204,32 +212,32 @@ export default class PokemonInfo extends Component<void, Props, State> {
               <EvilIcons
                 name='chevron-left'
                 size={36}
-                style={{ color }}
+                style={styles.icon}
               /> :
               <MaterialIcons
                 name='arrow-back'
                 size={24}
-                style={{ color }}
+                style={styles.icon}
               />
             }
           </TouchableOpacity>
-          <Text style={[ styles.title, { color } ]}>#{item.index}</Text>
+          <Text style={styles.title}>#{item.index}</Text>
           <View style={styles.button} />
         </View>
         <View style={[ styles.row, styles.meta ]}>
           <View>
-            <Text style={[ styles.name, { color } ]}>{item.name}</Text>
+            <Text style={styles.name}>{item.name}</Text>
             <View style={styles.row}>
-              <Text style={[ styles.label, { color } ]}>Type</Text>
-              <Text style={[ styles.info, { color } ]}>{item.types.join(', ')}</Text>
+              <Text style={styles.label}>Type</Text>
+              <Text style={styles.info}>{item.types.join(', ')}</Text>
             </View>
             <View style={styles.row}>
-              <Text style={[ styles.label, { color } ]}>Category</Text>
-              <Text style={[ styles.info, { color } ]}>Seed Pokémon</Text>
+              <Text style={styles.label}>Category</Text>
+              <Text style={styles.info}>Seed Pokémon</Text>
             </View>
             <View style={styles.row}>
-              <Text style={[ styles.label, { color } ]}>Weakness</Text>
-              <Text style={[ styles.info, { color } ]}>Fire</Text>
+              <Text style={styles.label}>Weakness</Text>
+              <Text style={styles.info}>Fire</Text>
             </View>
           </View>
           <Image style={styles.image} source={sprites[index - 1]} />

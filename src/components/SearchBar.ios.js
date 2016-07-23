@@ -25,7 +25,7 @@ export default class SearchBar extends Component<void, Props, void> {
 
     return (
       <SearchBarIOS
-        searchBarStyle='minimal'
+        hideBackground
         placeholder={placeholder}
         text={value}
         onChangeText={this.props.onChangeSearch}
