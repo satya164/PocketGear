@@ -8,8 +8,10 @@ import {
   TouchableOpacity,
   ScrollView,
   StyleSheet,
+  Platform,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
 import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
@@ -17,6 +19,8 @@ import StrongAgainstList from './StrongAgainstList';
 import data from '../data.json';
 import colors from '../colors.json';
 import sprites from '../sprites';
+
+const BAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 
 const styles = StyleSheet.create({
   container: {
@@ -27,16 +31,22 @@ const styles = StyleSheet.create({
   appbar: {
     flexDirection: 'row',
     alignItems: 'center',
-    height: 56,
+    height: BAR_HEIGHT,
+    marginTop: Platform.OS === 'ios' ? 20 : 0,
   },
 
   button: {
-    padding: 12,
+    height: BAR_HEIGHT,
+    width: BAR_HEIGHT,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   title: {
+    flex: 1,
+    textAlign: Platform.OS === 'ios' ? 'center' : 'left',
     fontFamily: 'Lato',
-    fontSize: 18,
+    fontSize: Platform.OS === 'ios' ? 16 : 18,
     marginHorizontal: 8,
   },
 
@@ -80,7 +90,7 @@ const styles = StyleSheet.create({
 
   tabview: {
     flex: 1,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#f6f6f6',
   },
 
   tabbar: {
@@ -190,13 +200,21 @@ export default class PokemonInfo extends Component<void, Props, State> {
       <View {...this.props} style={[ styles.container, this.props.style ]}>
         <View style={styles.appbar}>
           <TouchableOpacity style={styles.button} onPress={this._handleGoBack}>
-            <Icon
-              name='arrow-back'
-              size={24}
-              style={{ color }}
-            />
+            {Platform.OS === 'ios' ?
+              <EvilIcons
+                name='chevron-left'
+                size={36}
+                style={{ color }}
+              /> :
+              <MaterialIcons
+                name='arrow-back'
+                size={24}
+                style={{ color }}
+              />
+            }
           </TouchableOpacity>
           <Text style={[ styles.title, { color } ]}>#{item.index}</Text>
+          <View style={styles.button} />
         </View>
         <View style={[ styles.row, styles.meta ]}>
           <View>

@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
+import { Platform } from 'react-native';
 import GridView from './GridView';
 import PokemonListCard from './PokemonListCard';
 
@@ -28,7 +29,7 @@ export default class PokemonList extends Component<void, Props, void> {
     return (
       <GridView
         {...this.props}
-        spacing={8}
+        spacing={Platform.OS === 'ios' ? 10 : 8}
         renderRow={this._renderRow}
         getNumberOfColumns={this._getNumberOfColumns}
       />

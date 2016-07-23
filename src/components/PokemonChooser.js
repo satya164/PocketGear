@@ -14,7 +14,7 @@ import data from '../data.json';
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#f6f6f6',
   },
 
   list: {
