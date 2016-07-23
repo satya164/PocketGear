@@ -51,7 +51,6 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Lato.ttf</string>
 		<string>Entypo.ttf</string>
 		<string>EvilIcons.ttf</string>
 		<string>FontAwesome.ttf</string>
@@ -60,6 +59,8 @@
 		<string>MaterialIcons.ttf</string>
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Lato.ttf</string>
+		<string>Lato_bold.ttf</string>
 	</array>
 </dict>
 </plist>
