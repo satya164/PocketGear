@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
 
   list: {
-    paddingTop: Platform.OS === 'ios' ? 64 : 62,
+    paddingTop: Platform.OS === 'ios' ? 64 : 60,
   },
 
   searchbar: {
