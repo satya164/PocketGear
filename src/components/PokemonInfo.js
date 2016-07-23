@@ -160,7 +160,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
     );
   };
 
-  _renderScene = ({ route }) => {
+  _renderScene = ({ route }: { route: Route }) => {
     switch (route.key) {
     case 'weak-against':
       return <WeakAgainstList index={this.props.index} onNavigate={this.props.onNavigate} />;
