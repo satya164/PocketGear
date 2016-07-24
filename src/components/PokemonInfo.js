@@ -215,7 +215,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
     const { pokemon } = this.state;
     const pokemonTypes = pokemon.type.map(t => t.name);
     const allTypes = db.objects('Type').slice();
-    let weaknesses = [];
+    const weaknesses = [];
 
     pokemonTypes.forEach(pt =>
       allTypes.forEach(t => {

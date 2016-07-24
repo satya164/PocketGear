@@ -1,4 +1,4 @@
-import Realm from 'realm';
+/* @flow */
 
 export default {
   name: 'Pokemon',
@@ -7,6 +7,6 @@ export default {
     id: 'int',
     name: 'string',
     description: 'string',
-    type: {type: 'list', objectType: 'Type'},
+    type: { type: 'list', objectType: 'Type' },
   },
 };

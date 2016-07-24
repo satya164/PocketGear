@@ -1,12 +1,12 @@
-import Realm from 'realm';
+/* @flow */
 
 export default {
   name: 'Type',
   primaryKey: 'name',
   properties: {
     name: 'string',
-    weaknesses: {type: 'list', objectType: 'Type'},
-    strengths: {type: 'list', objectType: 'Type'},
-    immunes: {type: 'list', objectType: 'Type'},
+    weaknesses: { type: 'list', objectType: 'Type' },
+    strengths: { type: 'list', objectType: 'Type' },
+    immunes: { type: 'list', objectType: 'Type' },
   },
 };
