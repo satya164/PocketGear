@@ -70,12 +70,12 @@ const styles = StyleSheet.create({
 
   row: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
   },
 
   meta: {
     paddingHorizontal: 16,
     marginBottom: 16,
+    alignItems: 'flex-end',
   },
 
   label: {
