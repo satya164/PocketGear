@@ -2,7 +2,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import ReactNative from 'react-native';
-import { ListView as List } from 'realm/react-native';
+import { ListView } from 'realm/react-native';
 
 const {
   Dimensions,
@@ -34,7 +34,7 @@ type DefaultProps = {
 }
 
 type State = {
-  dataSource: List.DataSource;
+  dataSource: ListView.DataSource;
   containerWidth: number;
 }
 
@@ -58,7 +58,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     super(props);
 
     this.state = {
-      dataSource: new List.DataSource({
+      dataSource: new ListView.DataSource({
         rowHasChanged: (r1, r2) => r1 !== r2,
       }),
       containerWidth: Dimensions.get('window').width,
@@ -104,7 +104,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
 
   render() {
     return (
-      <List
+      <ListView
         {...this.props}
         enableEmptySections={true}
         dataSource={this.state.dataSource}
