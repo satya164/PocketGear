@@ -5,22 +5,33 @@ import {
   View,
   StatusBar,
   StyleSheet,
+  Platform,
 } from 'react-native';
 import SearchBar from './SearchBar';
-import GridView from './GridView';
-import PokeCard from './PokeCard';
+import PokemonList from './PokemonList';
 import db from '../db';
 
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#f6f6f6',
   },
+
+  list: {
+    paddingTop: Platform.OS === 'ios' ? 64 : 60,
+  },
+
+  searchbar: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    paddingTop: Platform.OS === 'ios' ? 20 : 0,
+  }
 });
 
 type State = {
   query: string;
-  selected: ?number;
 }
 
 type Props = {
@@ -35,17 +46,12 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   state: State = {
     query: '',
-    selected: null,
   };
 
   _handleSearchChange = (query: string) => {
     this.setState({
       query
     });
-  };
-
-  _renderRow = (rowData: any) => {
-    return <PokeCard pokemon={rowData} onNavigate={this.props.onNavigate} />;
   };
 
   _getSearchResults = () => {
@@ -61,26 +67,22 @@ export default class PokemonChooser extends Component<void, Props, State> {
     return pokemons.map(p => p);
   };
 
-  _getNumberOfColumns = (width: number) => {
-    return Math.floor(width / 160);
-  };
-
   render() {
     return (
       <View style={styles.page}>
         <StatusBar backgroundColor='#ccc' />
-        <SearchBar
-          placeholder='Find Pokémon by name, type or index'
-          value={this.state.query}
-          onChangeSearch={this._handleSearchChange}
-        />
-        <GridView
-          removeClippedSubViews
-          spacing={8}
+        <PokemonList
+          contentContainerStyle={styles.list}
           data={this._getSearchResults()}
-          renderRow={this._renderRow}
-          getNumberOfColumns={this._getNumberOfColumns}
+          onNavigate={this.props.onNavigate}
         />
+        <View style={styles.searchbar}>
+          <SearchBar
+            placeholder='Find Pokémon by name, type or index'
+            value={this.state.query}
+            onChangeSearch={this._handleSearchChange}
+          />
+        </View>
       </View>
     );
   }

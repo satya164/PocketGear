@@ -23,7 +23,7 @@ type Props = {
   data: Array<any>;
   spacing: number;
   getNumberOfColumns: (width: number) => number;
-  renderRow: (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => ?React.Element;
+  renderRow: (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => ?React.Element<*>;
   onLayout?: Function;
   contentContainerStyle?: any;
   style?: any;

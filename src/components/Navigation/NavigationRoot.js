@@ -3,6 +3,7 @@
 import { Component, PropTypes } from 'react';
 import { AsyncStorage } from 'react-native';
 import { v4 } from 'react-native-uuid';
+import isEqual from 'lodash/isEqual';
 import type { Route, NavigationState, NavigationAction } from './NavigationTypeDefinitions';
 
 type Props = {
@@ -84,6 +85,18 @@ export default class NavigationRoot extends Component<void, Props, State> {
     switch (type) {
     case 'push':
       if (route) {
+        const lastRoute = routes[routes.length - 1];
+
+        if (route.name === lastRoute.name) {
+          if (route.props || lastRoute.props) {
+            if (isEqual(route.props, lastRoute.props)) {
+              return currentState;
+            }
+          } else {
+            return currentState;
+          }
+        }
+
         return {
           ...currentState,
           routes: [

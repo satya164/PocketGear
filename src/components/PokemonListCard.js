@@ -34,17 +34,20 @@ const styles = StyleSheet.create({
   },
 
   title: {
+    color: '#000',
     fontFamily: 'Lato',
     fontWeight: 'bold',
     fontSize: 14,
     textAlign: 'center',
+    opacity: 0.6,
   },
 
   subtitle: {
+    color: '#000',
     fontFamily: 'Lato',
     fontSize: 12,
     textAlign: 'center',
-    opacity: 0.5,
+    opacity: 0.3,
   },
 });
 
@@ -54,7 +57,7 @@ type Props = {
   style?: any;
 }
 
-export default class PokeCard extends Component<void, Props, void> {
+export default class PokemonListCard extends Component<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
@@ -66,7 +69,7 @@ export default class PokeCard extends Component<void, Props, void> {
     this.props.onNavigate({
       type: 'push',
       route: {
-        name: 'details',
+        name: 'info',
         props: {
           pokemonId: this.props.pokemon.id,
         },
@@ -76,23 +79,20 @@ export default class PokeCard extends Component<void, Props, void> {
 
   render() {
     const { pokemon } = this.props;
-    const types = pokemon.type.map(t => t);
-    const typeColor = types[0].name.toLowerCase() + 'Dark';
-    const color = colors[typeColor] || colors.normalDark;
+    const types = pokemon.type.map(t => t.name).join(', ');
+    const color = colors[pokemon.type[0].name.toLowerCase()];
 
     return (
       <TouchableOpacity
+        key={pokemon.name}
         onPress={this._handlePress}
         activeOpacity={0.7}
-        style={styles.block}>
-        <Text style={[ styles.index, styles.subtitle, { color } ]}>
-          #{pokemon.id}
-        </Text>
-        <Image key={pokemon.id} source={sprites[pokemon.id - 1]} style={styles.image} />
-        <Text style={[ styles.title, { color } ]}>{pokemon.name}</Text>
-        <Text style={[ styles.subtitle, { color } ]}>
-          {types.map(t => t.name).join(', ')}
-        </Text>
+        style={[ styles.block, { backgroundColor: color } ]}
+      >
+        <Text style={[ styles.index, styles.subtitle ]}>#{pokemon.id}</Text>
+        <Image source={sprites[pokemon.id - 1]} style={styles.image} />
+        <Text style={styles.title}>{pokemon.name}</Text>
+        <Text style={styles.subtitle}>{types}</Text>
       </TouchableOpacity>
     );
   }

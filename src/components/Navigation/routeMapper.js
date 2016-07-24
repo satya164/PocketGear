@@ -1,7 +1,7 @@
 /* @flow */
 
 import PokemonChooser from '../PokemonChooser';
-import PokemonDetails from '../PokemonDetails';
+import PokemonInfo from '../PokemonInfo';
 import type { Route } from './NavigationTypeDefinitions';
 
 export type RouteDescription = {
@@ -11,9 +11,9 @@ export type RouteDescription = {
 
 export default function(route: Route): RouteDescription {
   switch (route.name) {
-  case 'details':
+  case 'info':
     return {
-      component: PokemonDetails,
+      component: PokemonInfo,
     };
   default:
     return {
