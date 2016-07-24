@@ -6,7 +6,10 @@ export default {
   properties: {
     id: 'int',
     name: 'string',
-    description: 'string',
     type: { type: 'list', objectType: 'Type' },
+    description: 'string',
+    category: 'string',
+    max_cp: 'int',
+    max_hp: 'int',
   },
 };

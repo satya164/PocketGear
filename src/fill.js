@@ -33,6 +33,9 @@ export default function fill() {
           name: pokemon.name,
           type: pokemon.types.map(t => ({ name: t })),
           description: pokemon.description,
+          category: pokemon.category,
+          max_cp: pokemon.max_cp,
+          max_hp: pokemon.max_hp,
         }, true);
       })
     );

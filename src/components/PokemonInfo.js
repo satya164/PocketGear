@@ -256,7 +256,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Category</Text>
-              <Text style={styles.info}>Seed Pokémon</Text>
+              <Text style={styles.info}>{pokemon.category}</Text>
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Weakness</Text>
