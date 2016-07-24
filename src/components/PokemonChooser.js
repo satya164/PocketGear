@@ -59,12 +59,13 @@ export default class PokemonChooser extends Component<void, Props, State> {
     const pokemons = db.objects('Pokemon').sorted('id');
 
     if (query) {
-      return pokemons
-        .filtered(`name CONTAINS "${query}"`)
-        .map(p => p);
+      if (!isNaN(parseInt(query, 10))) {
+        return pokemons.filtered(`id == ${query}`).slice();
+      }
+      return pokemons.filtered(`name CONTAINS "${query}"`).slice();
     }
 
-    return pokemons.map(p => p);
+    return pokemons.slice();
   };
 
   render() {
