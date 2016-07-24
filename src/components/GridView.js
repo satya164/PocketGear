@@ -7,7 +7,6 @@ import { ListView as List } from 'realm/react-native';
 const {
   Dimensions,
   StyleSheet,
-  ListView,
   View,
 } = ReactNative;
 
@@ -46,7 +45,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     getNumberOfColumns: PropTypes.func.isRequired,
     renderRow: PropTypes.func.isRequired,
     onLayout: PropTypes.func,
-    contentContainerStyle: ListView.propTypes.style,
+    contentContainerStyle: View.propTypes.style,
     style: View.propTypes.style,
   };
 
