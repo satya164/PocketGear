@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import data from '../data.json';
 import colors from '../colors.json';
 import sprites from '../sprites';
 
@@ -51,7 +50,7 @@ const styles = StyleSheet.create({
 
 type Props = {
   onNavigate: Function;
-  index: number;
+  pokemon: any;
   style?: any;
 }
 
@@ -59,7 +58,7 @@ export default class PokeCard extends Component<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
-    index: PropTypes.number.isRequired,
+    pokemon: PropTypes.object.isRequired,
     style: View.propTypes.style,
   };
 
@@ -69,27 +68,31 @@ export default class PokeCard extends Component<void, Props, void> {
       route: {
         name: 'details',
         props: {
-          index: this.props.index,
+          pokemonId: this.props.pokemon.id,
         },
       },
     });
   };
 
   render() {
-    const { index } = this.props;
-    const item = data[index - 1];
-    const color = colors[item.types[0].toLowerCase() + 'Dark'] || colors.normalDark;
+    const { pokemon } = this.props;
+    const types = pokemon.type.map(t => t);
+    const typeColor = types[0].name.toLowerCase() + 'Dark';
+    const color = colors[typeColor] || colors.normalDark;
 
     return (
       <TouchableOpacity
         onPress={this._handlePress}
         activeOpacity={0.7}
-        style={styles.block}
-      >
-        <Text style={[ styles.index, styles.subtitle, { color } ]}>#{item.index}</Text>
-        <Image source={sprites[item.index - 1]} style={styles.image} />
-        <Text style={[ styles.title, { color } ]}>{item.name}</Text>
-        <Text style={[ styles.subtitle, { color } ]}>{item.types.join(', ')}</Text>
+        style={styles.block}>
+        <Text style={[ styles.index, styles.subtitle, { color } ]}>
+          #{pokemon.id}
+        </Text>
+        <Image key={pokemon.id} source={sprites[pokemon.id - 1]} style={styles.image} />
+        <Text style={[ styles.title, { color } ]}>{pokemon.name}</Text>
+        <Text style={[ styles.subtitle, { color } ]}>
+          {types.map(t => t.name).join(', ')}
+        </Text>
       </TouchableOpacity>
     );
   }

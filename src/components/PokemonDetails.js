@@ -11,9 +11,9 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
-import data from '../data.json';
 import colors from '../colors.json';
 import sprites from '../sprites';
+import db from '../db';
 
 const styles = StyleSheet.create({
   container: {
@@ -105,7 +105,7 @@ type NavigationState = {
 
 type Props = {
   onNavigate: Function;
-  index: number;
+  pokemonId: number;
   style?: any;
 }
 
@@ -113,11 +113,11 @@ type State = {
   navigation: NavigationState;
 }
 
-export default class PokeCard extends Component<void, Props, State> {
+export default class PokemonDetails extends Component<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
-    index: PropTypes.number.isRequired,
+    pokemonId: PropTypes.number.isRequired,
     style: ScrollView.propTypes.style,
   };
 
@@ -132,6 +132,16 @@ export default class PokeCard extends Component<void, Props, State> {
     },
   };
 
+  componentWillMount() {
+    const { pokemonId } = this.props;
+    const pokemon = db.objects('Pokemon').filtered(`id == "${pokemonId}"`);
+
+    this.setState({
+      pokemon: pokemon[0],
+    });
+  }
+
+
   _handleChangeTab = (index: number) => {
     this.setState({
       navigation: { ...this.state.navigation, index },
@@ -139,7 +149,9 @@ export default class PokeCard extends Component<void, Props, State> {
   };
 
   _getColor = () => {
-    return colors[data[this.props.index - 1].types[0].toLowerCase() + 'Dark'] || colors.normalDark;
+    const types = this.state.pokemon.type.map(t => t);
+    const typeColor = types[0].name.toLowerCase() + 'Dark';
+    return colors[typeColor] || colors.normalDark;
   };
 
   _renderLabel = ({ route }: { route: Route }) => {
@@ -170,9 +182,8 @@ export default class PokeCard extends Component<void, Props, State> {
   };
 
   render() {
-    const { index } = this.props;
-    const item = data[index - 1];
     const color = this._getColor();
+    const {pokemon} = this.state;
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
@@ -184,14 +195,16 @@ export default class PokeCard extends Component<void, Props, State> {
               style={{ color }}
             />
           </TouchableOpacity>
-          <Text style={[ styles.title, { color } ]}>#{item.index}</Text>
+          <Text style={[ styles.title, { color } ]}>#{pokemon.id}</Text>
         </View>
         <View style={[ styles.row, styles.meta ]}>
           <View>
-            <Text style={[ styles.name, { color } ]}>{item.name}</Text>
+            <Text style={[ styles.name, { color } ]}>{pokemon.name}</Text>
             <View style={styles.row}>
               <Text style={[ styles.label, { color } ]}>Type</Text>
-              <Text style={[ styles.info, { color } ]}>{item.types.join(', ')}</Text>
+              <Text style={[ styles.info, { color } ]}>
+                {pokemon.type.map(t => t.name).join(', ')}
+              </Text>
             </View>
             <View style={styles.row}>
               <Text style={[ styles.label, { color } ]}>Category</Text>
@@ -202,7 +215,7 @@ export default class PokeCard extends Component<void, Props, State> {
               <Text style={[ styles.info, { color } ]}>Fire</Text>
             </View>
           </View>
-          <Image style={styles.image} source={sprites[index - 1]} />
+          <Image style={styles.image} source={sprites[pokemon.id - 1]} />
         </View>
         <TabViewAnimated
           style={styles.tabview}

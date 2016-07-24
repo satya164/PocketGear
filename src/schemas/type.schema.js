@@ -2,11 +2,11 @@ import Realm from 'realm';
 
 export default {
   name: 'Type',
-  primaryKey: 'id',
+  primaryKey: 'name',
   properties: {
-    id: 'int',
     name: 'string',
-    vulnerableTo: {type: 'list', objectType: 'Type'},
-    resistantTo: {type: 'list', objectType: 'Type'},
+    weaknesses: {type: 'list', objectType: 'Type'},
+    strengths: {type: 'list', objectType: 'Type'},
+    immunes: {type: 'list', objectType: 'Type'},
   },
 };

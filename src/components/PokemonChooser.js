@@ -9,7 +9,7 @@ import {
 import SearchBar from './SearchBar';
 import GridView from './GridView';
 import PokeCard from './PokeCard';
-import data from '../data.json';
+import db from '../db';
 
 const styles = StyleSheet.create({
   page: {
@@ -45,23 +45,20 @@ export default class PokemonChooser extends Component<void, Props, State> {
   };
 
   _renderRow = (rowData: any) => {
-    return <PokeCard index={rowData.index} onNavigate={this.props.onNavigate} />;
+    return <PokeCard pokemon={rowData} onNavigate={this.props.onNavigate} />;
   };
 
   _getSearchResults = () => {
     const { query } = this.state;
+    const pokemons = db.objects('Pokemon').sorted('id');
 
     if (query) {
-      return data.filter(item => {
-        return (
-          item.name.toLowerCase().indexOf(query.toLowerCase()) === 0 ||
-          item.types.filter(type => type.toLowerCase().indexOf(query.toLowerCase()) === 0).length ||
-          item.index === parseInt(query, 10)
-        );
-      });
+      return pokemons
+        .filtered(`name CONTAINS "${query}"`)
+        .map(p => p);
     }
 
-    return data;
+    return pokemons.map(p => p);
   };
 
   _getNumberOfColumns = (width: number) => {
