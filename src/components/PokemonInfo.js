@@ -220,7 +220,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
     pokemonTypes.forEach(pt =>
       allTypes.forEach(t => {
         t.strengths.forEach(s => {
-          if (s.name === pt) {
+          if (s.name === pt && !weaknesses.includes(t.name)) {
             weaknesses.push(t.name);
           }
         });

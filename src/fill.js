@@ -1,5 +1,5 @@
 import db from './db';
-import pokemons from './data.json';
+import pokemons from './pokemons.json';
 import types from './types.json';
 
 export default function fill() {
@@ -27,9 +27,8 @@ export default function fill() {
     db.write(() =>
       pokemons.forEach(pokemon => {
         db.create('Pokemon', {
-          id: pokemon.index,
+          id: pokemon.id,
           name: pokemon.name,
-          image: pokemon.image,
           type: pokemon.types.map(t => ({name: t})),
           description: pokemon.description,
         }, true)

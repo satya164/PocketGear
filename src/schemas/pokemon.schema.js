@@ -6,7 +6,6 @@ export default {
   properties: {
     id: 'int',
     name: 'string',
-    image: 'string',
     description: 'string',
     type: {type: 'list', objectType: 'Type'},
   },
