@@ -14,18 +14,13 @@
       3
     ],
     "height": "0.7 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Bulbasaur candies"
     },
     "weight": "6.9 kg",
-    "max_hp": 77
+    "max_hp": 77,
+    "category": "Seed Pokémon"
   },
   {
     "name": "Ivysaur",
@@ -42,18 +37,13 @@
       3
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Bulbasaur candies"
     },
     "weight": "13.0 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Seed Pokémon"
   },
   {
     "name": "Venusaur",
@@ -70,14 +60,9 @@
       3
     ],
     "height": "2.0 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "weight": "100.0 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Seed Pokémon"
   },
   {
     "name": "Charmander",
@@ -93,17 +78,13 @@
       6
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Charmander candies"
     },
     "weight": "8.5 kg",
-    "max_hp": 67
+    "max_hp": 67,
+    "category": "Lizard Pokémon"
   },
   {
     "name": "Charmeleon",
@@ -119,17 +100,13 @@
       6
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Charmander candies"
     },
     "weight": "19.0 kg",
-    "max_hp": 97
+    "max_hp": 97,
+    "category": "Flame Pokémon"
   },
   {
     "name": "Charizard",
@@ -146,13 +123,9 @@
       6
     ],
     "height": "1.7 m",
-    "weaknesses": [
-      "Water",
-      "Electric",
-      "Rock"
-    ],
     "weight": "90.5 kg",
-    "max_hp": 129
+    "max_hp": 129,
+    "category": "Flame Pokémon"
   },
   {
     "name": "Squirtle",
@@ -168,16 +141,13 @@
       9
     ],
     "height": "0.5 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Squirtle candies"
     },
     "weight": "9.0 kg",
-    "max_hp": 75
+    "max_hp": 75,
+    "category": "Tiny Turtle Pokémon"
   },
   {
     "name": "Wartortle",
@@ -193,16 +163,13 @@
       9
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Squirtle candies"
     },
     "weight": "22.5 kg",
-    "max_hp": 99
+    "max_hp": 99,
+    "category": "Turtle Pokémon"
   },
   {
     "name": "Blastoise",
@@ -218,12 +185,9 @@
       9
     ],
     "height": "1.6 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "weight": "85.5 kg",
-    "max_hp": 130
+    "max_hp": 130,
+    "category": "Shellfish Pokémon"
   },
   {
     "name": "Caterpie",
@@ -239,17 +203,13 @@
       12
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 12,
       "name": "Caterpie candies"
     },
     "weight": "2.9 kg",
-    "max_hp": 77
+    "max_hp": 77,
+    "category": "Worm Pokémon"
   },
   {
     "name": "Metapod",
@@ -265,17 +225,13 @@
       12
     ],
     "height": "0.7 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Caterpie candies"
     },
     "weight": "9.9 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Cocoon Pokémon"
   },
   {
     "name": "Butterfree",
@@ -292,15 +248,9 @@
       12
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Fire",
-      "Electric",
-      "Ice",
-      "Flying",
-      "Rock"
-    ],
     "weight": "32.0 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Butterfly Pokémon"
   },
   {
     "name": "Weedle",
@@ -317,18 +267,13 @@
       15
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 12,
       "name": "Weedle candies"
     },
     "weight": "3.2 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Hairy Bug Pokémon"
   },
   {
     "name": "Kakuna",
@@ -345,18 +290,13 @@
       15
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Weedle candies"
     },
     "weight": "10.0 kg",
-    "max_hp": 77
+    "max_hp": 77,
+    "category": "Cocoon Pokémon"
   },
   {
     "name": "Beedrill",
@@ -373,14 +313,9 @@
       15
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
-    ],
     "weight": "29.5 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Poison Bee Pokémon"
   },
   {
     "name": "Pidgey",
@@ -397,16 +332,13 @@
       18
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 12,
       "name": "Pidgey candies"
     },
     "weight": "1.8 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Tiny Bird Pokémon"
   },
   {
     "name": "Pidgeotto",
@@ -423,16 +355,13 @@
       18
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Pidgey candies"
     },
     "weight": "30.0 kg",
-    "max_hp": 105
+    "max_hp": 105,
+    "category": "Bird Pokémon"
   },
   {
     "name": "Pidgeot",
@@ -449,12 +378,9 @@
       18
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "weight": "39.5 kg",
-    "max_hp": 137
+    "max_hp": 137,
+    "category": "Bird Pokémon"
   },
   {
     "name": "Rattata",
@@ -469,15 +395,13 @@
       20
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Rattata candies"
     },
     "weight": "3.5 kg",
-    "max_hp": 53
+    "max_hp": 53,
+    "category": "Mouse Pokémon"
   },
   {
     "name": "Raticate",
@@ -492,11 +416,9 @@
       20
     ],
     "height": "0.7 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "18.5 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Mouse Pokémon"
   },
   {
     "name": "Spearow",
@@ -512,16 +434,13 @@
       22
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Spearow candies"
     },
     "weight": "2.0 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Tiny Bird Pokémon"
   },
   {
     "name": "Fearow",
@@ -537,12 +456,9 @@
       22
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "weight": "38.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Beak Pokémon"
   },
   {
     "name": "Ekans",
@@ -557,16 +473,13 @@
       24
     ],
     "height": "2.0 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Ekans candies"
     },
     "weight": "6.9 kg",
-    "max_hp": 61
+    "max_hp": 61,
+    "category": "Snake Pokémon"
   },
   {
     "name": "Arbok",
@@ -581,12 +494,9 @@
       24
     ],
     "height": "3.5 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "weight": "65.0 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Cobra Pokémon"
   },
   {
     "name": "Pikachu",
@@ -602,15 +512,13 @@
       26
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Ground"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Pikachu candies"
     },
     "weight": "6.0 kg",
-    "max_hp": 61
+    "max_hp": 61,
+    "category": "Mouse Pokémon"
   },
   {
     "name": "Raichu",
@@ -626,11 +534,9 @@
       26
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Ground"
-    ],
     "weight": "30.0 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Mouse Pokémon"
   },
   {
     "name": "Sandshrew",
@@ -645,17 +551,13 @@
       28
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Sandshrew candies"
     },
     "weight": "12.0 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Mouse Pokémon"
   },
   {
     "name": "Sandslash",
@@ -670,13 +572,9 @@
       28
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
-    ],
     "weight": "29.5 kg",
-    "max_hp": 124
+    "max_hp": 124,
+    "category": "Mouse Pokémon"
   },
   {
     "name": "Nidoran♀",
@@ -692,12 +590,9 @@
       31
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "weight": "7.0 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Poison Pin Pokémon"
   },
   {
     "name": "Nidorina",
@@ -713,16 +608,13 @@
       31
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Nidoranâ™€ candies"
     },
     "weight": "20.0 kg",
-    "max_hp": 116
+    "max_hp": 116,
+    "category": "Poison Pin Pokémon"
   },
   {
     "name": "Nidoqueen",
@@ -739,14 +631,9 @@
       31
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Water",
-      "Ice",
-      "Ground",
-      "Psychic"
-    ],
     "weight": "60.0 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Drill Pokémon"
   },
   {
     "name": "Nidoran♂",
@@ -762,12 +649,9 @@
       34
     ],
     "height": "0.5 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "weight": "9.0 kg",
-    "max_hp": 78
+    "max_hp": 78,
+    "category": "Poison Pin Pokémon"
   },
   {
     "name": "Nidorino",
@@ -783,16 +667,13 @@
       34
     ],
     "height": "0.9 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Nidoranâ™‚ candies"
     },
     "weight": "19.5 kg",
-    "max_hp": 102
+    "max_hp": 102,
+    "category": "Poison Pin Pokémon"
   },
   {
     "name": "Nidoking",
@@ -809,14 +690,9 @@
       34
     ],
     "height": "1.4 m",
-    "weaknesses": [
-      "Water",
-      "Ice",
-      "Ground",
-      "Psychic"
-    ],
     "weight": "62.0 kg",
-    "max_hp": 133
+    "max_hp": 133,
+    "category": "Drill Pokémon"
   },
   {
     "name": "Clefairy",
@@ -832,15 +708,13 @@
       36
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Clefairy candies"
     },
     "weight": "7.5 kg",
-    "max_hp": 116
+    "max_hp": 116,
+    "category": "Fairy Pokémon"
   },
   {
     "name": "Clefable",
@@ -856,11 +730,9 @@
       36
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "40.0 kg",
-    "max_hp": 156
+    "max_hp": 156,
+    "category": "Fairy Pokémon"
   },
   {
     "name": "Vulpix",
@@ -875,17 +747,13 @@
       38
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Vulpi"
     },
     "weight": "9.9 kg",
-    "max_hp": 65
+    "max_hp": 65,
+    "category": "Fox Pokémon"
   },
   {
     "name": "Ninetales",
@@ -900,13 +768,9 @@
       38
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "weight": "19.9 kg",
-    "max_hp": 121
+    "max_hp": 121,
+    "category": "Fox Pokémon"
   },
   {
     "name": "Jigglypuff",
@@ -923,15 +787,13 @@
       40
     ],
     "height": "0.5 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Jigglypuff candies"
     },
     "weight": "5.5 kg",
-    "max_hp": 187
+    "max_hp": 187,
+    "category": "Balloon Pokémon"
   },
   {
     "name": "Wigglytuff",
@@ -948,11 +810,9 @@
       40
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "12.0 kg",
-    "max_hp": 227
+    "max_hp": 227,
+    "category": "Balloon Pokémon"
   },
   {
     "name": "Zubat",
@@ -969,18 +829,13 @@
       169
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Electric",
-      "Ice",
-      "Psychic",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Zubat candies"
     },
     "weight": "7.5 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Bat Pokémon"
   },
   {
     "name": "Golbat",
@@ -997,14 +852,9 @@
       169
     ],
     "height": "1.6 m",
-    "weaknesses": [
-      "Electric",
-      "Ice",
-      "Psychic",
-      "Rock"
-    ],
     "weight": "55.0 kg",
-    "max_hp": 124
+    "max_hp": 124,
+    "category": "Bat Pokémon"
   },
   {
     "name": "Oddish",
@@ -1028,18 +878,13 @@
       ]
     ],
     "height": "0.5 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Oddish candies"
     },
     "weight": "5.4 kg",
-    "max_hp": 77
+    "max_hp": 77,
+    "category": "Weed Pokémon"
   },
   {
     "name": "Gloom",
@@ -1063,18 +908,13 @@
       ]
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Oddish candies"
     },
     "weight": "8.6 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Weed Pokémon"
   },
   {
     "name": "Vileplume",
@@ -1098,14 +938,9 @@
       ]
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "weight": "18.6 kg",
-    "max_hp": 124
+    "max_hp": 124,
+    "category": "Flower Pokémon"
   },
   {
     "name": "Paras",
@@ -1121,20 +956,13 @@
       47
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Paras candies"
     },
     "weight": "5.4 kg",
-    "max_hp": 61
+    "max_hp": 61,
+    "category": "Mushroom Pokémon"
   },
   {
     "name": "Parasect",
@@ -1150,16 +978,9 @@
       47
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Rock"
-    ],
     "weight": "29.5 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Mushroom Pokémon"
   },
   {
     "name": "Venonat",
@@ -1175,18 +996,13 @@
       49
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Venonat candies"
     },
     "weight": "30.0 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Insect Pokémon"
   },
   {
     "name": "Venomoth",
@@ -1202,14 +1018,9 @@
       49
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
-    ],
     "weight": "12.5 kg",
-    "max_hp": 116
+    "max_hp": 116,
+    "category": "Poison Moth Pokémon"
   },
   {
     "name": "Diglett",
@@ -1224,17 +1035,13 @@
       51
     ],
     "height": "0.2 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Diglett candies"
     },
     "weight": "0.8 kg",
-    "max_hp": 21
+    "max_hp": 21,
+    "category": "Mole Pokémon"
   },
   {
     "name": "Dugtrio",
@@ -1249,13 +1056,9 @@
       51
     ],
     "height": "0.7 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
-    ],
     "weight": "33.3 kg",
-    "max_hp": 61
+    "max_hp": 61,
+    "category": "Mole Pokémon"
   },
   {
     "name": "Meowth",
@@ -1270,15 +1073,13 @@
       53
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Meowth candies"
     },
     "weight": "4.2 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Scratch Cat Pokémon"
   },
   {
     "name": "Persian",
@@ -1293,11 +1094,9 @@
       53
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "32.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Classy Cat Pokémon"
   },
   {
     "name": "Psyduck",
@@ -1312,16 +1111,13 @@
       55
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Psyduck candies"
     },
     "weight": "19.6 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Duck Pokémon"
   },
   {
     "name": "Golduck",
@@ -1336,12 +1132,9 @@
       55
     ],
     "height": "1.7 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "weight": "76.6 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Duck Pokémon"
   },
   {
     "name": "Mankey",
@@ -1356,17 +1149,13 @@
       57
     ],
     "height": "0.5 m",
-    "weaknesses": [
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Mankey candies"
     },
     "weight": "28.0 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Pig Monkey Pokémon"
   },
   {
     "name": "Primeape",
@@ -1381,13 +1170,9 @@
       57
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "weight": "32.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Pig Monkey Pokémon"
   },
   {
     "name": "Growlithe",
@@ -1402,17 +1187,13 @@
       59
     ],
     "height": "0.7 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Growlithe candies"
     },
     "weight": "19.0 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Puppy Pokémon"
   },
   {
     "name": "Arcanine",
@@ -1427,13 +1208,9 @@
       59
     ],
     "height": "1.9 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "weight": "155.0 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Legendary Pokémon"
   },
   {
     "name": "Poliwag",
@@ -1456,16 +1233,13 @@
       ]
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Poliwag candies"
     },
     "weight": "12.4 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Tadpole Pokémon"
   },
   {
     "name": "Poliwhirl",
@@ -1488,16 +1262,13 @@
       ]
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Poliwag candies"
     },
     "weight": "20.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Tadpole Pokémon"
   },
   {
     "name": "Poliwrath",
@@ -1521,15 +1292,9 @@
       ]
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "weight": "54.0 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Tadpole Pokémon"
   },
   {
     "name": "Abra",
@@ -1545,17 +1310,13 @@
       65
     ],
     "height": "0.9 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Abra candies"
     },
     "weight": "19.5 kg",
-    "max_hp": 45
+    "max_hp": 45,
+    "category": "Psi Pokémon"
   },
   {
     "name": "Kadabra",
@@ -1571,17 +1332,13 @@
       65
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Abra candies"
     },
     "weight": "56.5 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Psi Pokémon"
   },
   {
     "name": "Alakazam",
@@ -1597,13 +1354,9 @@
       65
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "48.0 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Psi Pokémon"
   },
   {
     "name": "Machop",
@@ -1619,17 +1372,13 @@
       68
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Machop candies"
     },
     "weight": "19.5 kg",
-    "max_hp": 116
+    "max_hp": 116,
+    "category": "Superpower Pokémon"
   },
   {
     "name": "Machoke",
@@ -1645,17 +1394,13 @@
       68
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Machop candies"
     },
     "weight": "70.5 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Superpower Pokémon"
   },
   {
     "name": "Machamp",
@@ -1671,13 +1416,9 @@
       68
     ],
     "height": "1.6 m",
-    "weaknesses": [
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "weight": "130.0 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Superpower Pokémon"
   },
   {
     "name": "Bellsprout",
@@ -1694,18 +1435,13 @@
       71
     ],
     "height": "0.7 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Bellsprout candies"
     },
     "weight": "4.0 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Flower Pokémon"
   },
   {
     "name": "Weepinbell",
@@ -1722,18 +1458,13 @@
       71
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Bellsprout candies"
     },
     "weight": "6.4 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Flycatcher Pokémon"
   },
   {
     "name": "Victreebel",
@@ -1750,14 +1481,9 @@
       71
     ],
     "height": "1.7 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
-    ],
     "weight": "15.5 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Flycatcher Pokémon"
   },
   {
     "name": "Tentacool",
@@ -1773,17 +1499,13 @@
       73
     ],
     "height": "0.9 m",
-    "weaknesses": [
-      "Electric",
-      "Ground",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Tentacool candies"
     },
     "weight": "45.5 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Jellyfish Pokémon"
   },
   {
     "name": "Tentacruel",
@@ -1799,13 +1521,9 @@
       73
     ],
     "height": "1.6 m",
-    "weaknesses": [
-      "Electric",
-      "Ground",
-      "Psychic"
-    ],
     "weight": "55.0 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Jellyfish Pokémon"
   },
   {
     "name": "Geodude",
@@ -1822,20 +1540,13 @@
       76
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
-      "Steel"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Geodude candies"
     },
     "weight": "20.0 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Rock Pokémon"
   },
   {
     "name": "Graveler",
@@ -1852,20 +1563,13 @@
       76
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
-      "Steel"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Geodude candies"
     },
     "weight": "105.0 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Rock Pokémon"
   },
   {
     "name": "Golem",
@@ -1882,16 +1586,9 @@
       76
     ],
     "height": "1.4 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
-      "Steel"
-    ],
     "weight": "300.0 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Megaton Pokémon"
   },
   {
     "name": "Ponyta",
@@ -1906,17 +1603,13 @@
       78
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Ponyta candies"
     },
     "weight": "30.0 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Fire Horse Pokémon"
   },
   {
     "name": "Rapidash",
@@ -1931,13 +1624,9 @@
       78
     ],
     "height": "1.7 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "weight": "95.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Fire Horse Pokémon"
   },
   {
     "name": "Slowpoke",
@@ -1959,19 +1648,13 @@
       ]
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Slowpoke candies"
     },
     "weight": "36.0 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Dopey Pokémon"
   },
   {
     "name": "Slowbro",
@@ -1993,15 +1676,9 @@
       ]
     ],
     "height": "1.6 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "78.5 kg",
-    "max_hp": 156
+    "max_hp": 156,
+    "category": "Hermit Crab Pokémon"
   },
   {
     "name": "Magnemite",
@@ -2018,17 +1695,13 @@
       462
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Fire",
-      "Water",
-      "Ground"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Magnemite candies"
     },
     "weight": "6.0 kg",
-    "max_hp": 45
+    "max_hp": 45,
+    "category": "Magnet Pokémon"
   },
   {
     "name": "Magneton",
@@ -2045,13 +1718,9 @@
       462
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fire",
-      "Water",
-      "Ground"
-    ],
     "weight": "60.0 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Magnet Pokémon"
   },
   {
     "name": "Farfetch'd",
@@ -2063,12 +1732,9 @@
     "id": 83,
     "max_cp": 1133,
     "height": "0.8 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "weight": "15.0 kg",
-    "max_hp": 88
+    "max_hp": 88,
+    "category": "Wild Duck Pokémon"
   },
   {
     "name": "Doduo",
@@ -2084,16 +1750,13 @@
       85
     ],
     "height": "1.4 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Doduo candies"
     },
     "weight": "39.2 kg",
-    "max_hp": 61
+    "max_hp": 61,
+    "category": "Twin Bird Pokémon"
   },
   {
     "name": "Dodrio",
@@ -2109,12 +1772,9 @@
       85
     ],
     "height": "1.8 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "weight": "85.2 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Triple Bird Pokémon"
   },
   {
     "name": "Seel",
@@ -2129,16 +1789,13 @@
       87
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Seel candies"
     },
     "weight": "90.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Sea Lion Pokémon"
   },
   {
     "name": "Dewgong",
@@ -2154,14 +1811,9 @@
       87
     ],
     "height": "1.7 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Rock"
-    ],
     "weight": "120.0 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Sea Lion Pokémon"
   },
   {
     "name": "Grimer",
@@ -2176,16 +1828,13 @@
       89
     ],
     "height": "0.9 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Grimer candies"
     },
     "weight": "30.0 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Sludge Pokémon"
   },
   {
     "name": "Muk",
@@ -2200,12 +1849,9 @@
       89
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "weight": "30.0 kg",
-    "max_hp": 171
+    "max_hp": 171,
+    "category": "Sludge Pokémon"
   },
   {
     "name": "Shellder",
@@ -2220,16 +1866,13 @@
       91
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Shellder candies"
     },
     "weight": "4.0 kg",
-    "max_hp": 53
+    "max_hp": 53,
+    "category": "Bivalve Pokémon"
   },
   {
     "name": "Cloyster",
@@ -2245,14 +1888,9 @@
       91
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Rock"
-    ],
     "weight": "132.5 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Bivalve Pokémon"
   },
   {
     "name": "Gastly",
@@ -2269,18 +1907,13 @@
       94
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic",
-      "Ghost",
-      "Dark"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Gastly candies"
     },
     "weight": "0.1 kg",
-    "max_hp": 53
+    "max_hp": 53,
+    "category": "Gas Pokémon"
   },
   {
     "name": "Haunter",
@@ -2297,18 +1930,13 @@
       94
     ],
     "height": "1.6 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic",
-      "Ghost",
-      "Dark"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Gastly candies"
     },
     "weight": "0.1 kg",
-    "max_hp": 77
+    "max_hp": 77,
+    "category": "Gas Pokémon"
   },
   {
     "name": "Gengar",
@@ -2325,14 +1953,9 @@
       94
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "40.5 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Shadow Pokémon"
   },
   {
     "name": "Onix",
@@ -2348,16 +1971,9 @@
       208
     ],
     "height": "8.8 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
-      "Steel"
-    ],
     "weight": "210.0 kg",
-    "max_hp": 61
+    "max_hp": 61,
+    "category": "Rock Snake Pokémon"
   },
   {
     "name": "Drowzee",
@@ -2372,17 +1988,13 @@
       97
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Drowzee candies"
     },
     "weight": "32.4 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Hypnosis Pokémon"
   },
   {
     "name": "Hypno",
@@ -2397,13 +2009,9 @@
       97
     ],
     "height": "1.6 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "75.6 kg",
-    "max_hp": 140
+    "max_hp": 140,
+    "category": "Hypnosis Pokémon"
   },
   {
     "name": "Krabby",
@@ -2418,16 +2026,13 @@
       99
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Krabby candies"
     },
     "weight": "6.5 kg",
-    "max_hp": 53
+    "max_hp": 53,
+    "category": "River Crab Pokémon"
   },
   {
     "name": "Kingler",
@@ -2442,12 +2047,9 @@
       99
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "weight": "60.0 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Pincer Pokémon"
   },
   {
     "name": "Voltorb",
@@ -2462,15 +2064,13 @@
       101
     ],
     "height": "0.5 m",
-    "weaknesses": [
-      "Ground"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Voltorb candies"
     },
     "weight": "10.4 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Ball Pokémon"
   },
   {
     "name": "Electrode",
@@ -2485,11 +2085,9 @@
       101
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Ground"
-    ],
     "weight": "66.6 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Ball Pokémon"
   },
   {
     "name": "Exeggcute",
@@ -2505,21 +2103,13 @@
       103
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "E"
     },
     "weight": "2.5 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Egg Pokémon"
   },
   {
     "name": "Exeggutor",
@@ -2535,17 +2125,9 @@
       103
     ],
     "height": "2.0 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "120.0 kg",
-    "max_hp": 156
+    "max_hp": 156,
+    "category": "Coconut Pokémon"
   },
   {
     "name": "Cubone",
@@ -2560,17 +2142,13 @@
       105
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Cubone candies"
     },
     "weight": "6.5 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Lonely Pokémon"
   },
   {
     "name": "Marowak",
@@ -2585,13 +2163,9 @@
       105
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
-    ],
     "weight": "45.0 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Bone Keeper Pokémon"
   },
   {
     "name": "Hitmonlee",
@@ -2606,13 +2180,9 @@
       106
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "weight": "49.8 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Kicking Pokémon"
   },
   {
     "name": "Hitmonchan",
@@ -2627,13 +2197,9 @@
       107
     ],
     "height": "1.4 m",
-    "weaknesses": [
-      "Flying",
-      "Psychic",
-      "Fairy"
-    ],
     "weight": "50.2 kg",
-    "max_hp": 84
+    "max_hp": 84,
+    "category": "Punching Pokémon"
   },
   {
     "name": "Lickitung",
@@ -2648,11 +2214,9 @@
       463
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "65.5 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Licking Pokémon"
   },
   {
     "name": "Koffing",
@@ -2667,16 +2231,13 @@
       110
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Koffing candies"
     },
     "weight": "1.0 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Poison Gas Pokémon"
   },
   {
     "name": "Weezing",
@@ -2691,12 +2252,9 @@
       110
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Ground",
-      "Psychic"
-    ],
     "weight": "9.5 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Poison Gas Pokémon"
   },
   {
     "name": "Rhyhorn",
@@ -2713,20 +2271,13 @@
       464
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
-      "Steel"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Rhyhorn candies"
     },
     "weight": "115.0 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Spikes Pokémon"
   },
   {
     "name": "Rhydon",
@@ -2743,16 +2294,9 @@
       464
     ],
     "height": "1.9 m",
-    "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
-      "Steel"
-    ],
     "weight": "120.0 kg",
-    "max_hp": 171
+    "max_hp": 171,
+    "category": "Drill Pokémon"
   },
   {
     "name": "Chansey",
@@ -2768,11 +2312,9 @@
       242
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "34.6 kg",
-    "max_hp": 401
+    "max_hp": 401,
+    "category": "Egg Pokémon"
   },
   {
     "name": "Tangela",
@@ -2787,15 +2329,9 @@
       465
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug"
-    ],
     "weight": "35.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Vine Pokémon"
   },
   {
     "name": "Kangaskhan",
@@ -2806,11 +2342,9 @@
     "id": 115,
     "max_cp": 1875,
     "height": "2.2 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "80.0 kg",
-    "max_hp": 171
+    "max_hp": 171,
+    "category": "Parent Pokémon"
   },
   {
     "name": "Horsea",
@@ -2826,16 +2360,13 @@
       230
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Horsea candies"
     },
     "weight": "8.0 kg",
-    "max_hp": 53
+    "max_hp": 53,
+    "category": "Dragon Pokémon"
   },
   {
     "name": "Seadra",
@@ -2851,12 +2382,9 @@
       230
     ],
     "height": "1.2 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "weight": "25.0 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Dragon Pokémon"
   },
   {
     "name": "Goldeen",
@@ -2871,16 +2399,13 @@
       119
     ],
     "height": "0.6 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Goldeen candies"
     },
     "weight": "15.0 kg",
-    "max_hp": 77
+    "max_hp": 77,
+    "category": "Goldfish Pokémon"
   },
   {
     "name": "Seaking",
@@ -2895,12 +2420,9 @@
       119
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "weight": "39.0 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Goldfish Pokémon"
   },
   {
     "name": "Staryu",
@@ -2915,16 +2437,13 @@
       121
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Staryu candies"
     },
     "weight": "34.5 kg",
-    "max_hp": 53
+    "max_hp": 53,
+    "category": "Star Shape Pokémon"
   },
   {
     "name": "Starmie",
@@ -2940,15 +2459,9 @@
       121
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "80.0 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Mysterious Pokémon"
   },
   {
     "name": "Mr. Mime",
@@ -2964,13 +2477,9 @@
       122
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "54.5 kg",
-    "max_hp": 69
+    "max_hp": 69,
+    "category": "Barrier Pokémon"
   },
   {
     "name": "Scyther",
@@ -2986,15 +2495,9 @@
       212
     ],
     "height": "1.5 m",
-    "weaknesses": [
-      "Fire",
-      "Electric",
-      "Ice",
-      "Flying",
-      "Rock"
-    ],
     "weight": "56.0 kg",
-    "max_hp": 116
+    "max_hp": 116,
+    "category": "Mantis Pokémon"
   },
   {
     "name": "Jynx",
@@ -3010,16 +2513,9 @@
       124
     ],
     "height": "1.4 m",
-    "weaknesses": [
-      "Fire",
-      "Bug",
-      "Rock",
-      "Ghost",
-      "Dark",
-      "Steel"
-    ],
     "weight": "40.6 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Human Shape Pokémon"
   },
   {
     "name": "Electabuzz",
@@ -3035,11 +2531,9 @@
       466
     ],
     "height": "1.1 m",
-    "weaknesses": [
-      "Ground"
-    ],
     "weight": "30.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Electric Pokémon"
   },
   {
     "name": "Magmar",
@@ -3055,13 +2549,9 @@
       467
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "weight": "44.5 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Spitfire Pokémon"
   },
   {
     "name": "Pinsir",
@@ -3072,13 +2562,9 @@
     "id": 127,
     "max_cp": 1950,
     "height": "1.5 m",
-    "weaknesses": [
-      "Fire",
-      "Flying",
-      "Rock"
-    ],
     "weight": "55.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Stag Beetle Pokémon"
   },
   {
     "name": "Tauros",
@@ -3089,11 +2575,9 @@
     "id": 128,
     "max_cp": 1686,
     "height": "1.4 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "88.4 kg",
-    "max_hp": 124
+    "max_hp": 124,
+    "category": "Wild Bull Pokémon"
   },
   {
     "name": "Magikarp",
@@ -3108,16 +2592,13 @@
       130
     ],
     "height": "0.9 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "evolution_requirements": {
       "amount": 400,
       "name": "Magikarp candies"
     },
     "weight": "10.0 kg",
-    "max_hp": 37
+    "max_hp": 37,
+    "category": "Fish Pokémon"
   },
   {
     "name": "Gyarados",
@@ -3133,12 +2614,9 @@
       130
     ],
     "height": "6.5 m",
-    "weaknesses": [
-      "Electric",
-      "Rock"
-    ],
     "weight": "235.0 kg",
-    "max_hp": 156
+    "max_hp": 156,
+    "category": "Atrocious Pokémon"
   },
   {
     "name": "Lapras",
@@ -3150,14 +2628,9 @@
     "id": 131,
     "max_cp": 2777,
     "height": "2.5 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Rock"
-    ],
     "weight": "220.0 kg",
-    "max_hp": 211
+    "max_hp": 211,
+    "category": "Transport Pokémon"
   },
   {
     "name": "Ditto",
@@ -3168,11 +2641,9 @@
     "id": 132,
     "max_cp": 809,
     "height": "0.3 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "4.0 kg",
-    "max_hp": 81
+    "max_hp": 81,
+    "category": "Transform Pokémon"
   },
   {
     "name": "Eevee",
@@ -3217,15 +2688,13 @@
       ]
     ],
     "height": "0.3 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Eevee candies"
     },
     "weight": "6.5 kg",
-    "max_hp": 92
+    "max_hp": 92,
+    "category": "Evolution Pokémon"
   },
   {
     "name": "Vaporeon",
@@ -3240,12 +2709,9 @@
       134
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
     "weight": "29.0 kg",
-    "max_hp": 211
+    "max_hp": 211,
+    "category": "Bubble Jet Pokémon"
   },
   {
     "name": "Jolteon",
@@ -3260,11 +2726,9 @@
       135
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Ground"
-    ],
     "weight": "24.5 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Lightning Pokémon"
   },
   {
     "name": "Flareon",
@@ -3279,13 +2743,9 @@
       136
     ],
     "height": "0.9 m",
-    "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
-    ],
     "weight": "25.0 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Flame Pokémon"
   },
   {
     "name": "Porygon",
@@ -3301,11 +2761,9 @@
       474
     ],
     "height": "0.8 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "36.5 kg",
-    "max_hp": 108
+    "max_hp": 108,
+    "category": "Virtual Pokémon"
   },
   {
     "name": "Omanyte",
@@ -3321,18 +2779,13 @@
       139
     ],
     "height": "0.4 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Omanyte candies"
     },
     "weight": "7.5 kg",
-    "max_hp": 61
+    "max_hp": 61,
+    "category": "Spiral Pokémon"
   },
   {
     "name": "Omastar",
@@ -3348,14 +2801,9 @@
       139
     ],
     "height": "1.0 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
-    ],
     "weight": "35.0 kg",
-    "max_hp": 116
+    "max_hp": 116,
+    "category": "Spiral Pokémon"
   },
   {
     "name": "Kabuto",
@@ -3371,18 +2819,13 @@
       141
     ],
     "height": "0.5 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
-    ],
     "evolution_requirements": {
       "amount": 50,
       "name": "Kabuto candies"
     },
     "weight": "11.5 kg",
-    "max_hp": 53
+    "max_hp": 53,
+    "category": "Shellfish Pokémon"
   },
   {
     "name": "Kabutops",
@@ -3398,14 +2841,9 @@
       141
     ],
     "height": "1.3 m",
-    "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
-    ],
     "weight": "40.5 kg",
-    "max_hp": 100
+    "max_hp": 100,
+    "category": "Shellfish Pokémon"
   },
   {
     "name": "Aerodactyl",
@@ -3417,15 +2855,9 @@
     "id": 142,
     "max_cp": 1994,
     "height": "1.8 m",
-    "weaknesses": [
-      "Water",
-      "Electric",
-      "Ice",
-      "Rock",
-      "Steel"
-    ],
     "weight": "59.0 kg",
-    "max_hp": 132
+    "max_hp": 132,
+    "category": "Fossil Pokémon"
   },
   {
     "name": "Snorlax",
@@ -3440,11 +2872,9 @@
       143
     ],
     "height": "2.1 m",
-    "weaknesses": [
-      "Fighting"
-    ],
     "weight": "460.0 kg",
-    "max_hp": 258
+    "max_hp": 258,
+    "category": "Sleeping Pokémon"
   },
   {
     "name": "Articuno",
@@ -3456,14 +2886,9 @@
     "id": 144,
     "max_cp": 2776,
     "height": "1.7 m",
-    "weaknesses": [
-      "Fire",
-      "Electric",
-      "Rock",
-      "Steel"
-    ],
     "weight": "55.4 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Freeze Pokémon"
   },
   {
     "name": "Zapdos",
@@ -3475,12 +2900,9 @@
     "id": 145,
     "max_cp": 2907,
     "height": "1.6 m",
-    "weaknesses": [
-      "Ice",
-      "Rock"
-    ],
     "weight": "52.6 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Electric Pokémon"
   },
   {
     "name": "Moltres",
@@ -3492,13 +2914,9 @@
     "id": 146,
     "max_cp": 3028,
     "height": "2.0 m",
-    "weaknesses": [
-      "Water",
-      "Electric",
-      "Rock"
-    ],
     "weight": "60.0 kg",
-    "max_hp": 148
+    "max_hp": 148,
+    "category": "Flame Pokémon"
   },
   {
     "name": "Dratini",
@@ -3514,17 +2932,13 @@
       149
     ],
     "height": "1.8 m",
-    "weaknesses": [
-      "Ice",
-      "Dragon",
-      "Fairy"
-    ],
     "evolution_requirements": {
       "amount": 25,
       "name": "Dratini candies"
     },
     "weight": "3.3 kg",
-    "max_hp": 70
+    "max_hp": 70,
+    "category": "Dragon Pokémon"
   },
   {
     "name": "Dragonair",
@@ -3540,17 +2954,13 @@
       149
     ],
     "height": "4.0 m",
-    "weaknesses": [
-      "Ice",
-      "Dragon",
-      "Fairy"
-    ],
     "evolution_requirements": {
       "amount": 100,
       "name": "Dratini candies"
     },
     "weight": "16.5 kg",
-    "max_hp": 102
+    "max_hp": 102,
+    "category": "Dragon Pokémon"
   },
   {
     "name": "Dragonite",
@@ -3567,14 +2977,9 @@
       149
     ],
     "height": "2.2 m",
-    "weaknesses": [
-      "Ice",
-      "Rock",
-      "Dragon",
-      "Fairy"
-    ],
     "weight": "210.0 kg",
-    "max_hp": 149
+    "max_hp": 149,
+    "category": "Dragon Pokémon"
   },
   {
     "name": "Mewtwo",
@@ -3585,13 +2990,9 @@
     "id": 150,
     "max_cp": 3904,
     "height": "2.0 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "122.0 kg",
-    "max_hp": 173
+    "max_hp": 173,
+    "category": "Genetic Pokémon"
   },
   {
     "name": "Mew",
@@ -3602,12 +3003,8 @@
     "id": 151,
     "max_cp": 3087,
     "height": "0.4 m",
-    "weaknesses": [
-      "Bug",
-      "Ghost",
-      "Dark"
-    ],
     "weight": "4.0 kg",
-    "max_hp": 163
+    "max_hp": 163,
+    "category": "New Species Pokémon"
   }
 ]
