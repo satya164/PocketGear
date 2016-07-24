@@ -107,6 +107,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     return (
       <List
         {...this.props}
+        enableEmptySections={true}
         dataSource={this.state.dataSource}
         onLayout={this._handleLayout}
         renderRow={this._renderRow}
