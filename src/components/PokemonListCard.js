@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import data from '../data.json';
 import colors from '../colors.json';
 import sprites from '../sprites';
 
@@ -54,7 +53,7 @@ const styles = StyleSheet.create({
 
 type Props = {
   onNavigate: Function;
-  index: number;
+  pokemon: any;
   style?: any;
 }
 
@@ -62,7 +61,7 @@ export default class PokemonListCard extends Component<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
-    index: PropTypes.number.isRequired,
+    pokemon: PropTypes.object.isRequired,
     style: View.propTypes.style,
   };
 
@@ -72,28 +71,28 @@ export default class PokemonListCard extends Component<void, Props, void> {
       route: {
         name: 'info',
         props: {
-          index: this.props.index,
+          pokemonId: this.props.pokemon.id,
         },
       },
     });
   };
 
   render() {
-    const { index } = this.props;
-    const item = data[index - 1];
-    const color = colors[item.types[0].toLowerCase()] || colors.normal;
+    const { pokemon } = this.props;
+    const types = pokemon.type.map(t => t.name).join(', ');
+    const color = colors[pokemon.type[0].name.toLowerCase()];
 
     return (
       <TouchableOpacity
-        key={item.name}
+        key={pokemon.name}
         onPress={this._handlePress}
         activeOpacity={0.7}
         style={[ styles.block, { backgroundColor: color } ]}
       >
-        <Text style={[ styles.index, styles.subtitle ]}>#{item.index}</Text>
-        <Image source={sprites[item.index - 1]} style={styles.image} />
-        <Text style={styles.title}>{item.name}</Text>
-        <Text style={styles.subtitle}>{item.types.join(', ')}</Text>
+        <Text style={[ styles.index, styles.subtitle ]}>#{pokemon.id}</Text>
+        <Image source={sprites[pokemon.id - 1]} style={styles.image} />
+        <Text style={styles.title}>{pokemon.name}</Text>
+        <Text style={styles.subtitle}>{types}</Text>
       </TouchableOpacity>
     );
   }

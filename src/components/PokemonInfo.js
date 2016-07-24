@@ -16,9 +16,8 @@ import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
 import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
-import data from '../data.json';
-import colors from '../colors.json';
 import sprites from '../sprites';
+import db from '../db';
 
 const BAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 
@@ -94,6 +93,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     fontSize: 13,
     marginVertical: 2,
+    width: 120,
   },
 
   tabview: {
@@ -131,19 +131,20 @@ type NavigationState = {
 
 type Props = {
   onNavigate: Function;
-  index: number;
+  pokemonId: number;
   style?: any;
 }
 
 type State = {
   navigation: NavigationState;
+  pokemon: any;
 }
 
 export default class PokemonInfo extends Component<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
-    index: PropTypes.number.isRequired,
+    pokemonId: PropTypes.number.isRequired,
     style: ScrollView.propTypes.style,
   };
 
@@ -156,7 +157,17 @@ export default class PokemonInfo extends Component<void, Props, State> {
         { key: 'details', title: 'Details' },
       ],
     },
+    pokemon: null,
   };
+
+  componentWillMount() {
+    const { pokemonId } = this.props;
+    const pokemon = db.objects('Pokemon').filtered(`id == "${pokemonId}"`);
+
+    this.setState({
+      pokemon: pokemon[0],
+    });
+  }
 
   _handleChangeTab = (index: number) => {
     this.setState({
@@ -182,11 +193,11 @@ export default class PokemonInfo extends Component<void, Props, State> {
   _renderScene = ({ route }: { route: Route }) => {
     switch (route.key) {
     case 'weak-against':
-      return <WeakAgainstList index={this.props.index} onNavigate={this.props.onNavigate} />;
+      return <WeakAgainstList pokemon={this.state.pokemon} onNavigate={this.props.onNavigate} />;
     case 'strong-against':
-      return <StrongAgainstList index={this.props.index} onNavigate={this.props.onNavigate} />;
+      return <StrongAgainstList pokemon={this.state.pokemon} onNavigate={this.props.onNavigate} />;
     case 'details':
-      return <PokemonDetails index={this.props.index} onNavigate={this.props.onNavigate} />;
+      return <PokemonDetails pokemon={this.state.pokemon} onNavigate={this.props.onNavigate} />;
     default:
       return null;
     }
@@ -201,8 +212,20 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   render() {
-    const { index } = this.props;
-    const item = data[index - 1];
+    const { pokemon } = this.state;
+    const pokemonTypes = pokemon.type.map(t => t.name);
+    const allTypes = db.objects('Type').slice();
+    let weaknesses = [];
+
+    pokemonTypes.forEach(pt =>
+      allTypes.forEach(t => {
+        t.strengths.forEach(s => {
+          if (s.name === pt && !weaknesses.includes(t.name)) {
+            weaknesses.push(t.name);
+          }
+        });
+      })
+    );
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
@@ -221,15 +244,15 @@ export default class PokemonInfo extends Component<void, Props, State> {
               />
             }
           </TouchableOpacity>
-          <Text style={styles.title}>#{item.index}</Text>
+          <Text style={styles.title}>#{pokemon.id}</Text>
           <View style={styles.button} />
         </View>
         <View style={[ styles.row, styles.meta ]}>
           <View>
-            <Text style={styles.name}>{item.name}</Text>
+            <Text style={styles.name}>{pokemon.name}</Text>
             <View style={styles.row}>
               <Text style={styles.label}>Type</Text>
-              <Text style={styles.info}>{item.types.join(', ')}</Text>
+              <Text style={styles.info}>{pokemonTypes.join(', ')}</Text>
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Category</Text>
@@ -237,10 +260,10 @@ export default class PokemonInfo extends Component<void, Props, State> {
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Weakness</Text>
-              <Text style={styles.info}>Fire</Text>
+              <Text style={styles.info}>{weaknesses.join(', ')}</Text>
             </View>
           </View>
-          <Image style={styles.image} source={sprites[index - 1]} />
+          <Image style={styles.image} source={sprites[pokemon.id - 1]} />
         </View>
         <TabViewAnimated
           style={styles.tabview}

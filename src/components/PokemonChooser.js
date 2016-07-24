@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
-import data from '../data.json';
+import db from '../db';
 
 const styles = StyleSheet.create({
   page: {
@@ -56,18 +56,16 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   _getSearchResults = () => {
     const { query } = this.state;
+    const pokemons = db.objects('Pokemon').sorted('id');
 
     if (query) {
-      return data.filter(item => {
-        return (
-          item.name.toLowerCase().indexOf(query.toLowerCase()) === 0 ||
-          item.types.filter(type => type.toLowerCase().indexOf(query.toLowerCase()) === 0).length ||
-          item.index === parseInt(query, 10)
-        );
-      });
+      if (!isNaN(Number(query))) {
+        return pokemons.filtered(`id == ${query}`).slice();
+      }
+      return pokemons.filtered(`name CONTAINS "${query}"`).slice();
     }
 
-    return data;
+    return pokemons.slice();
   };
 
   render() {

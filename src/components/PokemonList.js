@@ -18,7 +18,7 @@ export default class PokemonList extends Component<void, Props, void> {
   };
 
   _renderRow = (rowData: any) => {
-    return <PokemonListCard index={rowData.index} onNavigate={this.props.onNavigate} />;
+    return <PokemonListCard pokemon={rowData} onNavigate={this.props.onNavigate} />;
   };
 
   _getNumberOfColumns = (width: number) => {

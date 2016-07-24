@@ -9,7 +9,6 @@ import {
   ScrollView,
   StyleSheet,
 } from 'react-native';
-import data from '../data.json';
 import sprites from '../sprites';
 
 const styles = StyleSheet.create({
@@ -59,7 +58,7 @@ const styles = StyleSheet.create({
 
 
 type Props = {
-  index: number;
+  pokemon: any;
   style?: any;
   onNavigate: Function;
 }
@@ -67,31 +66,30 @@ type Props = {
 export default class PokemonDetails extends Component<void, Props, void> {
 
   static propTypes = {
-    index: PropTypes.number.isRequired,
+    pokemon: PropTypes.object.isRequired,
     style: ScrollView.propTypes.style,
     onNavigate: PropTypes.func.isRequired,
   };
 
-  _goToPokemon = (index: number) => () => {
+  _goToPokemon = (pokemonId: number) => () => {
     this.props.onNavigate({
       type: 'push',
       route: {
         name: 'info',
         props: {
-          index,
+          pokemonId,
         },
       },
     });
   };
 
   render() {
-    const { index } = this.props;
-    const item = data[index - 1];
+    const { pokemon } = this.props;
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
         <Text style={styles.description}>
-          {item.description}
+          {pokemon.description}
         </Text>
         <View style={styles.evolutions}>
           <TouchableOpacity style={styles.pokemon} onPress={this._goToPokemon(1)}>

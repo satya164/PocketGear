@@ -2,10 +2,10 @@
 
 import React, { Component, PropTypes } from 'react';
 import ReactNative from 'react-native';
+import { ListView } from 'realm/react-native';
 
 const {
   Dimensions,
-  ListView,
   StyleSheet,
   View,
 } = ReactNative;
@@ -45,7 +45,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     getNumberOfColumns: PropTypes.func.isRequired,
     renderRow: PropTypes.func.isRequired,
     onLayout: PropTypes.func,
-    contentContainerStyle: ListView.propTypes.style,
+    contentContainerStyle: View.propTypes.style,
     style: View.propTypes.style,
   };
 
@@ -106,6 +106,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     return (
       <ListView
         {...this.props}
+        enableEmptySections={true}
         dataSource={this.state.dataSource}
         onLayout={this._handleLayout}
         renderRow={this._renderRow}
