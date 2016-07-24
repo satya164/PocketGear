@@ -1,0 +1,3613 @@
+[
+  {
+    "name": "Bulbasaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+    "id": 1,
+    "max_cp": 951,
+    "evolution_chain": [
+      1,
+      2,
+      3
+    ],
+    "height": "0.7 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Bulbasaur candies"
+    },
+    "weight": "6.9 kg",
+    "max_hp": 77
+  },
+  {
+    "name": "Ivysaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+    "id": 2,
+    "max_cp": 1483,
+    "evolution_chain": [
+      1,
+      2,
+      3
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Bulbasaur candies"
+    },
+    "weight": "13.0 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.",
+    "id": 3,
+    "max_cp": 2392,
+    "evolution_chain": [
+      1,
+      2,
+      3
+    ],
+    "height": "2.0 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "weight": "100.0 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Charmander",
+    "types": [
+      "Fire"
+    ],
+    "description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
+    "id": 4,
+    "max_cp": 841,
+    "evolution_chain": [
+      4,
+      5,
+      6
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Charmander candies"
+    },
+    "weight": "8.5 kg",
+    "max_hp": 67
+  },
+  {
+    "name": "Charmeleon",
+    "types": [
+      "Fire"
+    ],
+    "description": "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
+    "id": 5,
+    "max_cp": 1411,
+    "evolution_chain": [
+      4,
+      5,
+      6
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Charmander candies"
+    },
+    "weight": "19.0 kg",
+    "max_hp": 97
+  },
+  {
+    "name": "Charizard",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "description": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
+    "id": 6,
+    "max_cp": 2413,
+    "evolution_chain": [
+      4,
+      5,
+      6
+    ],
+    "height": "1.7 m",
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Rock"
+    ],
+    "weight": "90.5 kg",
+    "max_hp": 129
+  },
+  {
+    "name": "Squirtle",
+    "types": [
+      "Water"
+    ],
+    "description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.",
+    "id": 7,
+    "max_cp": 891,
+    "evolution_chain": [
+      7,
+      8,
+      9
+    ],
+    "height": "0.5 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Squirtle candies"
+    },
+    "weight": "9.0 kg",
+    "max_hp": 75
+  },
+  {
+    "name": "Wartortle",
+    "types": [
+      "Water"
+    ],
+    "description": "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon's toughness as a battler.",
+    "id": 8,
+    "max_cp": 1435,
+    "evolution_chain": [
+      7,
+      8,
+      9
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Squirtle candies"
+    },
+    "weight": "22.5 kg",
+    "max_hp": 99
+  },
+  {
+    "name": "Blastoise",
+    "types": [
+      "Water"
+    ],
+    "description": "Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.",
+    "id": 9,
+    "max_cp": 2355,
+    "evolution_chain": [
+      7,
+      8,
+      9
+    ],
+    "height": "1.6 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "weight": "85.5 kg",
+    "max_hp": 130
+  },
+  {
+    "name": "Caterpie",
+    "types": [
+      "Bug"
+    ],
+    "description": "Caterpie has a voracious appetite. It can devour leaves bigger than its body right before your eyes. From its antenna, this Pokémon releases a terrifically strong odor.",
+    "id": 10,
+    "max_cp": 367,
+    "evolution_chain": [
+      10,
+      11,
+      12
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 12,
+      "name": "Caterpie candies"
+    },
+    "weight": "2.9 kg",
+    "max_hp": 77
+  },
+  {
+    "name": "Metapod",
+    "types": [
+      "Bug"
+    ],
+    "description": "The shell covering this Pokémon’s body is as hard as an iron slab. Metapod does not move very much. It stays still because it is preparing its soft innards for evolution inside the hard shell.",
+    "id": 11,
+    "max_cp": 397,
+    "evolution_chain": [
+      10,
+      11,
+      12
+    ],
+    "height": "0.7 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Caterpie candies"
+    },
+    "weight": "9.9 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Butterfree",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "description": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
+    "id": 12,
+    "max_cp": 1315,
+    "evolution_chain": [
+      10,
+      11,
+      12
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Fire",
+      "Electric",
+      "Ice",
+      "Flying",
+      "Rock"
+    ],
+    "weight": "32.0 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Weedle",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "description": "Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose).",
+    "id": 13,
+    "max_cp": 372,
+    "evolution_chain": [
+      13,
+      14,
+      15
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 12,
+      "name": "Weedle candies"
+    },
+    "weight": "3.2 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Kakuna",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "description": "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
+    "id": 14,
+    "max_cp": 405,
+    "evolution_chain": [
+      13,
+      14,
+      15
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Weedle candies"
+    },
+    "weight": "10.0 kg",
+    "max_hp": 77
+  },
+  {
+    "name": "Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "description": "Beedrill is extremely territorial. No one should ever approach its nest—this is for their own safety. If angered, they will attack in a furious swarm.",
+    "id": 15,
+    "max_cp": 1301,
+    "evolution_chain": [
+      13,
+      14,
+      15
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "weight": "29.5 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Pidgey",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
+    "id": 16,
+    "max_cp": 585,
+    "evolution_chain": [
+      16,
+      17,
+      18
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 12,
+      "name": "Pidgey candies"
+    },
+    "weight": "1.8 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Pidgeotto",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
+    "id": 17,
+    "max_cp": 1096,
+    "evolution_chain": [
+      16,
+      17,
+      18
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Pidgey candies"
+    },
+    "weight": "30.0 kg",
+    "max_hp": 105
+  },
+  {
+    "name": "Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon.",
+    "id": 18,
+    "max_cp": 1923,
+    "evolution_chain": [
+      16,
+      17,
+      18
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "weight": "39.5 kg",
+    "max_hp": 137
+  },
+  {
+    "name": "Rattata",
+    "types": [
+      "Normal"
+    ],
+    "description": "Rattata is cautious in the extreme. Even while it is asleep, it constantly listens by moving its ears around. It is not picky about where it lives—it will make its nest anywhere.",
+    "id": 19,
+    "max_cp": 493,
+    "evolution_chain": [
+      19,
+      20
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Rattata candies"
+    },
+    "weight": "3.5 kg",
+    "max_hp": 53
+  },
+  {
+    "name": "Raticate",
+    "types": [
+      "Normal"
+    ],
+    "description": "Raticate’s sturdy fangs grow steadily. To keep them ground down, it gnaws on rocks and logs. It may even chew on the walls of houses.",
+    "id": 20,
+    "max_cp": 1304,
+    "evolution_chain": [
+      19,
+      20
+    ],
+    "height": "0.7 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "18.5 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Spearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "Spearow has a very loud cry that can be heard over half a mile away. If its high, keening cry is heard echoing all around, it is a sign that they are warning each other of danger.",
+    "id": 21,
+    "max_cp": 591,
+    "evolution_chain": [
+      21,
+      22
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Spearow candies"
+    },
+    "weight": "2.0 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Fearow",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "Fearow is recognized by its long neck and elongated beak. They are conveniently shaped for catching prey in soil or water. It deftly moves its long and skinny beak to pluck prey.",
+    "id": 22,
+    "max_cp": 1592,
+    "evolution_chain": [
+      21,
+      22
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "weight": "38.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Ekans",
+    "types": [
+      "Poison"
+    ],
+    "description": "Ekans curls itself up in a spiral while it rests. Assuming this position allows it to quickly respond to a threat from any direction with a glare from its upraised head.",
+    "id": 23,
+    "max_cp": 718,
+    "evolution_chain": [
+      23,
+      24
+    ],
+    "height": "2.0 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Ekans candies"
+    },
+    "weight": "6.9 kg",
+    "max_hp": 61
+  },
+  {
+    "name": "Arbok",
+    "types": [
+      "Poison"
+    ],
+    "description": "This Pokémon is terrifically strong in order to constrict things with its body. It can even flatten steel oil drums. Once Arbok wraps its body around its foe, escaping its crunching embrace is impossible.",
+    "id": 24,
+    "max_cp": 1611,
+    "evolution_chain": [
+      23,
+      24
+    ],
+    "height": "3.5 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "65.0 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Pikachu",
+    "types": [
+      "Electric"
+    ],
+    "description": "Whenever Pikachu comes across something new, it blasts it with a jolt of electricity. If you come across a blackened berry, it's evidence that this Pokémon mistook the intensity of its charge.",
+    "id": 25,
+    "max_cp": 777,
+    "evolution_chain": [
+      172,
+      25,
+      26
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Ground"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Pikachu candies"
+    },
+    "weight": "6.0 kg",
+    "max_hp": 61
+  },
+  {
+    "name": "Raichu",
+    "types": [
+      "Electric"
+    ],
+    "description": "If the electrical sacs become excessively charged, Raichu plants its tail in the ground and discharges. Scorched patches of ground will be found near this Pokémon's nest.",
+    "id": 26,
+    "max_cp": 1859,
+    "evolution_chain": [
+      172,
+      25,
+      26
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Ground"
+    ],
+    "weight": "30.0 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Sandshrew",
+    "types": [
+      "Ground"
+    ],
+    "description": "Sandshrew's body is configured to absorb water without waste, enabling it to survive in an arid desert. This Pokémon curls up to protect itself from its enemies.",
+    "id": 27,
+    "max_cp": 695,
+    "evolution_chain": [
+      27,
+      28
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Sandshrew candies"
+    },
+    "weight": "12.0 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Sandslash",
+    "types": [
+      "Ground"
+    ],
+    "description": "Sandslash's body is covered by tough spikes, which are hardened sections of its hide. Once a year, the old spikes fall out, to be replaced with new spikes that grow out from beneath the old ones.",
+    "id": 28,
+    "max_cp": 1654,
+    "evolution_chain": [
+      27,
+      28
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "weight": "29.5 kg",
+    "max_hp": 124
+  },
+  {
+    "name": "Nidoran♀",
+    "types": [
+      "Poison"
+    ],
+    "description": "Nidoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn.",
+    "id": 29,
+    "max_cp": 768,
+    "evolution_chain": [
+      29,
+      30,
+      31
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "7.0 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Nidorina",
+    "types": [
+      "Poison"
+    ],
+    "description": "When Nidorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others.",
+    "id": 30,
+    "max_cp": 1267,
+    "evolution_chain": [
+      29,
+      30,
+      31
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Nidoranâ™€ candies"
+    },
+    "weight": "20.0 kg",
+    "max_hp": 116
+  },
+  {
+    "name": "Nidoqueen",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "description": "Nidoqueen's body is encased in extremely hard scales. It is adept at sending foes flying with harsh tackles. This Pokémon is at its strongest when it is defending its young.",
+    "id": 31,
+    "max_cp": 2301,
+    "evolution_chain": [
+      29,
+      30,
+      31
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Water",
+      "Ice",
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "60.0 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Nidoran♂",
+    "types": [
+      "Poison"
+    ],
+    "description": "Nidoran♂ has developed muscles for moving its ears. Thanks to them, the ears can be freely moved in any direction. Even the slightest sound does not escape this Pokémon's notice.",
+    "id": 32,
+    "max_cp": 737,
+    "evolution_chain": [
+      32,
+      33,
+      34
+    ],
+    "height": "0.5 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "9.0 kg",
+    "max_hp": 78
+  },
+  {
+    "name": "Nidorino",
+    "types": [
+      "Poison"
+    ],
+    "description": "Nidorino has a horn that is harder than a diamond. If it senses a hostile presence, all the barbs on its back bristle up at once, and it challenges the foe with all its might.",
+    "id": 33,
+    "max_cp": 1236,
+    "evolution_chain": [
+      32,
+      33,
+      34
+    ],
+    "height": "0.9 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Nidoranâ™‚ candies"
+    },
+    "weight": "19.5 kg",
+    "max_hp": 102
+  },
+  {
+    "name": "Nidoking",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "description": "Nidoking's thick tail packs enormously destructive power. With one swing, it can topple a metal transmission tower. Once this Pokémon goes on a rampage, there is no stopping it.",
+    "id": 34,
+    "max_cp": 2291,
+    "evolution_chain": [
+      32,
+      33,
+      34
+    ],
+    "height": "1.4 m",
+    "weaknesses": [
+      "Water",
+      "Ice",
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "62.0 kg",
+    "max_hp": 133
+  },
+  {
+    "name": "Clefairy",
+    "types": [
+      "Fairy"
+    ],
+    "description": "On every night of a full moon, groups of this Pokémon come out to play. When dawn arrives, the tired Clefairy return to their quiet mountain retreats and go to sleep nestled up against each other.",
+    "id": 35,
+    "max_cp": 1074,
+    "evolution_chain": [
+      173,
+      35,
+      36
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Clefairy candies"
+    },
+    "weight": "7.5 kg",
+    "max_hp": 116
+  },
+  {
+    "name": "Clefable",
+    "types": [
+      "Fairy"
+    ],
+    "description": "Clefable moves by skipping lightly as if it were flying using its wings. Its bouncy step even lets it walk on water. It is known to take strolls on lakes on quiet, moonlit nights.",
+    "id": 36,
+    "max_cp": 2217,
+    "evolution_chain": [
+      173,
+      35,
+      36
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "40.0 kg",
+    "max_hp": 156
+  },
+  {
+    "name": "Vulpix",
+    "types": [
+      "Fire"
+    ],
+    "description": "At the time of its birth, Vulpix has one white tail. The tail separates into six if this Pokémon receives plenty of love from its trainer. The six tails become magnificently curled.",
+    "id": 37,
+    "max_cp": 725,
+    "evolution_chain": [
+      37,
+      38
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Vulpi"
+    },
+    "weight": "9.9 kg",
+    "max_hp": 65
+  },
+  {
+    "name": "Ninetales",
+    "types": [
+      "Fire"
+    ],
+    "description": "Ninetales casts a sinister light from its bright red eyes to gain total control over its foe's mind. This Pokémon is said to live for one thousand years.",
+    "id": 38,
+    "max_cp": 2015,
+    "evolution_chain": [
+      37,
+      38
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "weight": "19.9 kg",
+    "max_hp": 121
+  },
+  {
+    "name": "Jigglypuff",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "description": "Jigglypuff's vocal cords can freely adjust the wavelength of its voice. This Pokémon uses this ability to sing at precisely the right wavelength to make its foes most drowsy.",
+    "id": 39,
+    "max_cp": 796,
+    "evolution_chain": [
+      174,
+      39,
+      40
+    ],
+    "height": "0.5 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Jigglypuff candies"
+    },
+    "weight": "5.5 kg",
+    "max_hp": 187
+  },
+  {
+    "name": "Wigglytuff",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "description": "Wigglytuff has large, saucerlike eyes. The surfaces of its eyes are always covered with a thin layer of tears. If any dust gets in this Pokémon's eyes, it is quickly washed away.",
+    "id": 40,
+    "max_cp": 1997,
+    "evolution_chain": [
+      174,
+      39,
+      40
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "12.0 kg",
+    "max_hp": 227
+  },
+  {
+    "name": "Zubat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "description": "Zubat remains quietly unmoving in a dark spot during the bright daylight hours. It does so because prolonged exposure to the sun causes its body to become slightly burned.",
+    "id": 41,
+    "max_cp": 550,
+    "evolution_chain": [
+      41,
+      42,
+      169
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Psychic",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Zubat candies"
+    },
+    "weight": "7.5 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Golbat",
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "description": "Golbat loves to drink the blood of living things. It is particularly active in the pitch black of night. This Pokémon flits around in the night skies, seeking fresh blood.",
+    "id": 42,
+    "max_cp": 1760,
+    "evolution_chain": [
+      41,
+      42,
+      169
+    ],
+    "height": "1.6 m",
+    "weaknesses": [
+      "Electric",
+      "Ice",
+      "Psychic",
+      "Rock"
+    ],
+    "weight": "55.0 kg",
+    "max_hp": 124
+  },
+  {
+    "name": "Oddish",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "During the daytime, Oddish buries itself in soil to absorb nutrients from the ground using its entire body. The more fertile the soil, the glossier its leaves become.",
+    "id": 43,
+    "max_cp": 1023,
+    "evolution_chain": [
+      [
+        43,
+        44,
+        45
+      ],
+      [
+        43,
+        44,
+        182
+      ]
+    ],
+    "height": "0.5 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Oddish candies"
+    },
+    "weight": "5.4 kg",
+    "max_hp": 77
+  },
+  {
+    "name": "Gloom",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "Gloom releases a foul fragrance from the pistil of its flower. When faced with danger, the stench worsens. If this Pokémon is feeling calm and secure, it does not release its usual stinky aroma.",
+    "id": 44,
+    "max_cp": 1537,
+    "evolution_chain": [
+      [
+        43,
+        44,
+        45
+      ],
+      [
+        43,
+        44,
+        182
+      ]
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Oddish candies"
+    },
+    "weight": "8.6 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Vileplume",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "Vileplume's toxic pollen triggers atrocious allergy attacks. That's why it is advisable never to approach any attractive flowers in a jungle, however pretty they may be.",
+    "id": 45,
+    "max_cp": 2307,
+    "evolution_chain": [
+      [
+        43,
+        44,
+        45
+      ],
+      [
+        43,
+        44,
+        182
+      ]
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "weight": "18.6 kg",
+    "max_hp": 124
+  },
+  {
+    "name": "Paras",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "description": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug Pokémon host. They are highly valued as a medicine for extending life.",
+    "id": 46,
+    "max_cp": 804,
+    "evolution_chain": [
+      46,
+      47
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Paras candies"
+    },
+    "weight": "5.4 kg",
+    "max_hp": 61
+  },
+  {
+    "name": "Parasect",
+    "types": [
+      "Bug",
+      "Grass"
+    ],
+    "description": "Parasect is known to infest large trees en masse and drain nutrients from the lower trunk and roots. When an infested tree dies, they move onto another tree all at once.",
+    "id": 47,
+    "max_cp": 1592,
+    "evolution_chain": [
+      46,
+      47
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Rock"
+    ],
+    "weight": "29.5 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Venonat",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "description": "Venonat is said to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even miniscule prey.",
+    "id": 48,
+    "max_cp": 912,
+    "evolution_chain": [
+      48,
+      49
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Venonat candies"
+    },
+    "weight": "30.0 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Venomoth",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "description": "Venomoth is nocturnal—it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness.",
+    "id": 49,
+    "max_cp": 1730,
+    "evolution_chain": [
+      48,
+      49
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Psychic",
+      "Rock"
+    ],
+    "weight": "12.5 kg",
+    "max_hp": 116
+  },
+  {
+    "name": "Diglett",
+    "types": [
+      "Ground"
+    ],
+    "description": "Diglett are raised in most farms. The reason is simple—wherever this Pokémon burrows, the soil is left perfectly tilled for planting crops. This soil is made ideal for growing delicious vegetables.",
+    "id": 50,
+    "max_cp": 365,
+    "evolution_chain": [
+      50,
+      51
+    ],
+    "height": "0.2 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Diglett candies"
+    },
+    "weight": "0.8 kg",
+    "max_hp": 21
+  },
+  {
+    "name": "Dugtrio",
+    "types": [
+      "Ground"
+    ],
+    "description": "Dugtrio are actually triplets that emerged from one body. As a result, each triplet thinks exactly like the other two triplets. They work cooperatively to burrow endlessly.",
+    "id": 51,
+    "max_cp": 1038,
+    "evolution_chain": [
+      50,
+      51
+    ],
+    "height": "0.7 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "weight": "33.3 kg",
+    "max_hp": 61
+  },
+  {
+    "name": "Meowth",
+    "types": [
+      "Normal"
+    ],
+    "description": "Meowth withdraws its sharp claws into its paws to slinkily sneak about without making any incriminating footsteps. For some reason, this Pokémon loves shiny coins that glitter with light.",
+    "id": 52,
+    "max_cp": 656,
+    "evolution_chain": [
+      52,
+      53
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Meowth candies"
+    },
+    "weight": "4.2 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Persian",
+    "types": [
+      "Normal"
+    ],
+    "description": "Persian has six bold whiskers that give it a look of toughness. The whiskers sense air movements to determine what is in the Pokémon's surrounding vicinity. It becomes docile if grabbed by the whiskers.",
+    "id": 53,
+    "max_cp": 1483,
+    "evolution_chain": [
+      52,
+      53
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "32.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Psyduck",
+    "types": [
+      "Water"
+    ],
+    "description": "Psyduck uses a mysterious power. When it does so, this Pokémon generates brain waves that are supposedly only seen in sleepers. This discovery spurred controversy among scholars.",
+    "id": 54,
+    "max_cp": 987,
+    "evolution_chain": [
+      54,
+      55
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Psyduck candies"
+    },
+    "weight": "19.6 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Golduck",
+    "types": [
+      "Water"
+    ],
+    "description": "The webbed flippers on its forelegs and hind legs and the streamlined body of Golduck give it frightening speed. The Pokémon is definitely much faster than even the most athletic swimmer.",
+    "id": 55,
+    "max_cp": 2206,
+    "evolution_chain": [
+      54,
+      55
+    ],
+    "height": "1.7 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "weight": "76.6 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Mankey",
+    "types": [
+      "Fighting"
+    ],
+    "description": "When Mankey starts shaking and its nasal breathing turns rough, it's a sure sign that it is becoming angry. However, because it goes into a towering rage almost instantly, it is impossible for anyone to flee its wrath.",
+    "id": 56,
+    "max_cp": 769,
+    "evolution_chain": [
+      56,
+      57
+    ],
+    "height": "0.5 m",
+    "weaknesses": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Mankey candies"
+    },
+    "weight": "28.0 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Primeape",
+    "types": [
+      "Fighting"
+    ],
+    "description": "When Primeape becomes furious, its blood circulation is boosted. In turn, its muscles are made even stronger. However, it also becomes much less intelligent at the same time.",
+    "id": 57,
+    "max_cp": 1704,
+    "evolution_chain": [
+      56,
+      57
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "weight": "32.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Growlithe",
+    "types": [
+      "Fire"
+    ],
+    "description": "Growlithe has a superb sense of smell. Once it smells anything, this Pokémon won't forget the scent, no matter what. It uses its advanced olfactory sense to determine the emotions of other living things.",
+    "id": 58,
+    "max_cp": 1199,
+    "evolution_chain": [
+      58,
+      59
+    ],
+    "height": "0.7 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Growlithe candies"
+    },
+    "weight": "19.0 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Arcanine",
+    "types": [
+      "Fire"
+    ],
+    "description": "Arcanine is known for its high speed. It is said to be capable of running over 6,200 miles in a single day and night. The fire that blazes wildly within this Pokémon's body is its source of power.",
+    "id": 59,
+    "max_cp": 2781,
+    "evolution_chain": [
+      58,
+      59
+    ],
+    "height": "1.9 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "weight": "155.0 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Poliwag",
+    "types": [
+      "Water"
+    ],
+    "description": "Poliwag has a very thin skin. It is possible to see the Pokémon's spiral innards right through the skin. Despite its thinness, however, the skin is also very flexible. Even sharp fangs bounce right off it.",
+    "id": 60,
+    "max_cp": 693,
+    "evolution_chain": [
+      [
+        60,
+        61,
+        62
+      ],
+      [
+        60,
+        61,
+        186
+      ]
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Poliwag candies"
+    },
+    "weight": "12.4 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Poliwhirl",
+    "types": [
+      "Water"
+    ],
+    "description": "The surface of Poliwhirl's body is always wet and slick with an oily fluid. Because of this greasy covering, it can easily slip and slide out of the clutches of any enemy in battle.",
+    "id": 61,
+    "max_cp": 1206,
+    "evolution_chain": [
+      [
+        60,
+        61,
+        62
+      ],
+      [
+        60,
+        61,
+        186
+      ]
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Poliwag candies"
+    },
+    "weight": "20.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Poliwrath",
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "description": "Poliwrath's highly developed, brawny muscles never grow fatigued, however much it exercises. It is so tirelessly strong, this Pokémon can swim back and forth across the ocean without effort.",
+    "id": 62,
+    "max_cp": 2321,
+    "evolution_chain": [
+      [
+        60,
+        61,
+        62
+      ],
+      [
+        60,
+        61,
+        186
+      ]
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "weight": "54.0 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Abra",
+    "types": [
+      "Psychic"
+    ],
+    "description": "Abra sleeps for eighteen hours a day. However, it can sense the presence of foes even while it is sleeping. In such a situation, this Pokémon immediately teleports to safety.",
+    "id": 63,
+    "max_cp": 508,
+    "evolution_chain": [
+      63,
+      64,
+      65
+    ],
+    "height": "0.9 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Abra candies"
+    },
+    "weight": "19.5 kg",
+    "max_hp": 45
+  },
+  {
+    "name": "Kadabra",
+    "types": [
+      "Psychic"
+    ],
+    "description": "Kadabra emits a peculiar alpha wave if it develops a headache. Only those people with a particularly strong psyche can hope to become a trainer of this Pokémon.",
+    "id": 64,
+    "max_cp": 1005,
+    "evolution_chain": [
+      63,
+      64,
+      65
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Abra candies"
+    },
+    "weight": "56.5 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "description": "Alakazam's brain continually grows, making its head far too heavy to support with its neck. This Pokémon holds its head up using its psychokinetic power instead.",
+    "id": 65,
+    "max_cp": 1654,
+    "evolution_chain": [
+      63,
+      64,
+      65
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "48.0 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Machop",
+    "types": [
+      "Fighting"
+    ],
+    "description": "Machop's muscles are special—they never get sore no matter how much they are used in exercise. This Pokémon has sufficient power to hurl a hundred adult humans.",
+    "id": 66,
+    "max_cp": 968,
+    "evolution_chain": [
+      66,
+      67,
+      68
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Machop candies"
+    },
+    "weight": "19.5 kg",
+    "max_hp": 116
+  },
+  {
+    "name": "Machoke",
+    "types": [
+      "Fighting"
+    ],
+    "description": "Machoke's thoroughly toned muscles possess the hardness of steel. This Pokémon has so much strength, it can easily hold aloft a sumo wrestler on just one finger.",
+    "id": 67,
+    "max_cp": 1606,
+    "evolution_chain": [
+      66,
+      67,
+      68
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Machop candies"
+    },
+    "weight": "70.5 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Machamp",
+    "types": [
+      "Fighting"
+    ],
+    "description": "Machamp has the power to hurl anything aside. However, trying to do any work requiring care and dexterity causes its arms to get tangled. This Pokémon tends to leap into action before it thinks.",
+    "id": 68,
+    "max_cp": 2406,
+    "evolution_chain": [
+      66,
+      67,
+      68
+    ],
+    "height": "1.6 m",
+    "weaknesses": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "weight": "130.0 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Bellsprout",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "Bellsprout's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this Pokémon spits a corrosive fluid that melts even iron.",
+    "id": 69,
+    "max_cp": 990,
+    "evolution_chain": [
+      69,
+      70,
+      71
+    ],
+    "height": "0.7 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Bellsprout candies"
+    },
+    "weight": "4.0 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Weepinbell",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "Weepinbell has a large hook on its rear end. At night, the Pokémon hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground.",
+    "id": 70,
+    "max_cp": 1567,
+    "evolution_chain": [
+      69,
+      70,
+      71
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Bellsprout candies"
+    },
+    "weight": "6.4 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "description": "Victreebel has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this Pokémon swallows it whole.",
+    "id": 71,
+    "max_cp": 2342,
+    "evolution_chain": [
+      69,
+      70,
+      71
+    ],
+    "height": "1.7 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "weight": "15.5 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Tentacool",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "description": "Tentacool's body is largely composed of water. If it is removed from the sea, it dries up like parchment. If this Pokémon happens to become dehydrated, put it back into the sea.",
+    "id": 72,
+    "max_cp": 794,
+    "evolution_chain": [
+      72,
+      73
+    ],
+    "height": "0.9 m",
+    "weaknesses": [
+      "Electric",
+      "Ground",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Tentacool candies"
+    },
+    "weight": "45.5 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Tentacruel",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "description": "Tentacruel has large red orbs on its head. The orbs glow before lashing the vicinity with a harsh ultrasonic blast. This Pokémon's outburst creates rough waves around it.",
+    "id": 73,
+    "max_cp": 2046,
+    "evolution_chain": [
+      72,
+      73
+    ],
+    "height": "1.6 m",
+    "weaknesses": [
+      "Electric",
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "55.0 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Geodude",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "description": "The longer a Geodude lives, the more its edges are chipped and worn away, making it more rounded in appearance. However, this Pokémon's heart will remain hard, craggy, and rough always.",
+    "id": 74,
+    "max_cp": 742,
+    "evolution_chain": [
+      74,
+      75,
+      76
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground",
+      "Steel"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Geodude candies"
+    },
+    "weight": "20.0 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Graveler",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "description": "Graveler grows by feeding on rocks. Apparently, it prefers to eat rocks that are covered in moss. This Pokémon eats its way through a ton of rocks on a daily basis.",
+    "id": 75,
+    "max_cp": 1294,
+    "evolution_chain": [
+      74,
+      75,
+      76
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground",
+      "Steel"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Geodude candies"
+    },
+    "weight": "105.0 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Golem",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "description": "Golem live up on mountains. If there is a large earthquake, these Pokémon will come rolling down off the mountains en masse to the foothills below.",
+    "id": 76,
+    "max_cp": 2126,
+    "evolution_chain": [
+      74,
+      75,
+      76
+    ],
+    "height": "1.4 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground",
+      "Steel"
+    ],
+    "weight": "300.0 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Ponyta",
+    "types": [
+      "Fire"
+    ],
+    "description": "Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent.",
+    "id": 77,
+    "max_cp": 1370,
+    "evolution_chain": [
+      77,
+      78
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Ponyta candies"
+    },
+    "weight": "30.0 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Rapidash",
+    "types": [
+      "Fire"
+    ],
+    "description": "Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph.",
+    "id": 78,
+    "max_cp": 2024,
+    "evolution_chain": [
+      77,
+      78
+    ],
+    "height": "1.7 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "weight": "95.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Slowpoke",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "description": "Slowpoke uses its tail to catch prey by dipping it in water at the side of a river. However, this Pokémon often forgets what it's doing and often spends entire days just loafing at water's edge.",
+    "id": 79,
+    "max_cp": 1089,
+    "evolution_chain": [
+      [
+        79,
+        80
+      ],
+      [
+        79,
+        199
+      ]
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Slowpoke candies"
+    },
+    "weight": "36.0 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "description": "Slowbro's tail has a Shellder firmly attached with a bite. As a result, the tail can't be used for fishing anymore. This causes Slowbro to grudgingly swim and catch prey instead.",
+    "id": 80,
+    "max_cp": 2409,
+    "evolution_chain": [
+      [
+        79,
+        80
+      ],
+      [
+        79,
+        199
+      ]
+    ],
+    "height": "1.6 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "78.5 kg",
+    "max_hp": 156
+  },
+  {
+    "name": "Magnemite",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "description": "Magnemite attaches itself to power lines to feed on electricity. If your house has a power outage, check your circuit breakers. You may find a large number of this Pokémon clinging to the breaker box.",
+    "id": 81,
+    "max_cp": 774,
+    "evolution_chain": [
+      81,
+      82,
+      462
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Fire",
+      "Water",
+      "Ground"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Magnemite candies"
+    },
+    "weight": "6.0 kg",
+    "max_hp": 45
+  },
+  {
+    "name": "Magneton",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "description": "Magneton emits a powerful magnetic force that is fatal to mechanical devices. As a result, large cities sound sirens to warn citizens of large-scale outbreaks of this Pokémon.",
+    "id": 82,
+    "max_cp": 1715,
+    "evolution_chain": [
+      81,
+      82,
+      462
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fire",
+      "Water",
+      "Ground"
+    ],
+    "weight": "60.0 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Farfetch'd",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks.",
+    "id": 83,
+    "max_cp": 1133,
+    "height": "0.8 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "weight": "15.0 kg",
+    "max_hp": 88
+  },
+  {
+    "name": "Doduo",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "Doduo's two heads never sleep at the same time. Its two heads take turns sleeping, so one head can always keep watch for enemies while the other one sleeps.",
+    "id": 84,
+    "max_cp": 746,
+    "evolution_chain": [
+      84,
+      85
+    ],
+    "height": "1.4 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Doduo candies"
+    },
+    "weight": "39.2 kg",
+    "max_hp": 61
+  },
+  {
+    "name": "Dodrio",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "description": "Watch out if Dodrio's three heads are looking in three separate directions. It's a sure sign that it is on its guard. Don't go near this Pokémon if it's being wary-it may decide to peck you.",
+    "id": 85,
+    "max_cp": 1677,
+    "evolution_chain": [
+      84,
+      85
+    ],
+    "height": "1.8 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "weight": "85.2 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Seel",
+    "types": [
+      "Water"
+    ],
+    "description": "Seel hunts for prey in the frigid sea underneath sheets of ice. When it needs to breathe, it punches a hole through the ice with the sharply protruding section of its head.",
+    "id": 86,
+    "max_cp": 985,
+    "evolution_chain": [
+      86,
+      87
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Seel candies"
+    },
+    "weight": "90.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Dewgong",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "description": "Dewgong loves to snooze on bitterly cold ice. The sight of this Pokémon sleeping on a glacier was mistakenly thought to be a mermaid by a mariner long ago.",
+    "id": 87,
+    "max_cp": 1975,
+    "evolution_chain": [
+      86,
+      87
+    ],
+    "height": "1.7 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Rock"
+    ],
+    "weight": "120.0 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Grimer",
+    "types": [
+      "Poison"
+    ],
+    "description": "Grimer's sludgy and rubbery body can be forced through any opening, however small it may be. This Pokémon enters sewer pipes to drink filthy wastewater.",
+    "id": 88,
+    "max_cp": 1152,
+    "evolution_chain": [
+      88,
+      89
+    ],
+    "height": "0.9 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Grimer candies"
+    },
+    "weight": "30.0 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Muk",
+    "types": [
+      "Poison"
+    ],
+    "description": "From Muk's body seeps a foul fluid that gives off a nose-bendingly horrible stench. Just one drop of this Pokémon's body fluid can turn a pool stagnant and rancid.",
+    "id": 89,
+    "max_cp": 2414,
+    "evolution_chain": [
+      88,
+      89
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "30.0 kg",
+    "max_hp": 171
+  },
+  {
+    "name": "Shellder",
+    "types": [
+      "Water"
+    ],
+    "description": "At night, this Pokémon uses its broad tongue to burrow a hole in the seafloor sand and then sleep in it. While it is sleeping, Shellder closes its shell, but leaves its tongue hanging out.",
+    "id": 90,
+    "max_cp": 715,
+    "evolution_chain": [
+      90,
+      91
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Shellder candies"
+    },
+    "weight": "4.0 kg",
+    "max_hp": 53
+  },
+  {
+    "name": "Cloyster",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "description": "Cloyster is capable of swimming in the sea. It does so by swallowing water, then jetting it out toward the rear. This Pokémon shoots spikes from its shell using the same system.",
+    "id": 91,
+    "max_cp": 1879,
+    "evolution_chain": [
+      90,
+      91
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Rock"
+    ],
+    "weight": "132.5 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Gastly",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "description": "Gastly is largely composed of gaseous matter. When exposed to a strong wind, the gaseous body quickly dwindles away. Groups of this Pokémon cluster under the eaves of houses to escape the ravages of wind.",
+    "id": 92,
+    "max_cp": 696,
+    "evolution_chain": [
+      92,
+      93,
+      94
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic",
+      "Ghost",
+      "Dark"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Gastly candies"
+    },
+    "weight": "0.1 kg",
+    "max_hp": 53
+  },
+  {
+    "name": "Haunter",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "description": "Haunter is a dangerous Pokémon. If one beckons you while floating in darkness, you must never approach it. This Pokémon will try to lick you with its tongue and steal your life away.",
+    "id": 93,
+    "max_cp": 1240,
+    "evolution_chain": [
+      92,
+      93,
+      94
+    ],
+    "height": "1.6 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic",
+      "Ghost",
+      "Dark"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Gastly candies"
+    },
+    "weight": "0.1 kg",
+    "max_hp": 77
+  },
+  {
+    "name": "Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "description": "Sometimes, on a dark night, your shadow thrown by a streetlight will suddenly and startlingly overtake you. It is actually a Gengar running past you, pretending to be your shadow.",
+    "id": 94,
+    "max_cp": 1907,
+    "evolution_chain": [
+      92,
+      93,
+      94
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "40.5 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Onix",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "description": "Onix has a magnet in its brain. It acts as a compass so that this Pokémon does not lose direction while it is tunneling. As it grows older, its body becomes increasingly rounder and smoother.",
+    "id": 95,
+    "max_cp": 745,
+    "evolution_chain": [
+      95,
+      208
+    ],
+    "height": "8.8 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground",
+      "Steel"
+    ],
+    "weight": "210.0 kg",
+    "max_hp": 61
+  },
+  {
+    "name": "Drowzee",
+    "types": [
+      "Psychic"
+    ],
+    "description": "If your nose becomes itchy while you are sleeping, it's a sure sign that one of these Pokémon is standing above your pillow and trying to eat you dream through your nostrils.",
+    "id": 96,
+    "max_cp": 955,
+    "evolution_chain": [
+      96,
+      97
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Drowzee candies"
+    },
+    "weight": "32.4 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Hypno",
+    "types": [
+      "Psychic"
+    ],
+    "description": "Hypno holds a pendulum in its hand. The arcing movement and glitter of the pendulum lull the foe into a deep state of hypnosis. While this Pokémon searches for prey, it polishes the pendulum.",
+    "id": 97,
+    "max_cp": 2012,
+    "evolution_chain": [
+      96,
+      97
+    ],
+    "height": "1.6 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "75.6 kg",
+    "max_hp": 140
+  },
+  {
+    "name": "Krabby",
+    "types": [
+      "Water"
+    ],
+    "description": "Krabby live on beaches, burrowed inside holes dug into the sand. On sandy beaches with little in the way of food, these Pokémon can be seen squabbling with each other over territory.",
+    "id": 98,
+    "max_cp": 686,
+    "evolution_chain": [
+      98,
+      99
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Krabby candies"
+    },
+    "weight": "6.5 kg",
+    "max_hp": 53
+  },
+  {
+    "name": "Kingler",
+    "types": [
+      "Water"
+    ],
+    "description": "Kingler has an enormous, oversized claw. It waves this huge claw in the air to communicate with others. However, because the claw is so heavy, the Pokémon quickly tires.",
+    "id": 99,
+    "max_cp": 1663,
+    "evolution_chain": [
+      98,
+      99
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "weight": "60.0 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Voltorb",
+    "types": [
+      "Electric"
+    ],
+    "description": "Voltorb was first sighted at a company that manufactures Poké Balls. The link between that sighting and the fact that this Pokémon looks very similar to a Poké Ball remains a mystery.",
+    "id": 100,
+    "max_cp": 733,
+    "evolution_chain": [
+      100,
+      101
+    ],
+    "height": "0.5 m",
+    "weaknesses": [
+      "Ground"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Voltorb candies"
+    },
+    "weight": "10.4 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Electrode",
+    "types": [
+      "Electric"
+    ],
+    "description": "Electrode eats electricity in the atmosphere. On days when lightning strikes, you can see this Pokémon exploding all over the place from eating too much electricity.",
+    "id": 101,
+    "max_cp": 1496,
+    "evolution_chain": [
+      100,
+      101
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Ground"
+    ],
+    "weight": "66.6 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Exeggcute",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "description": "This Pokémon consists of six eggs that form a closely knit cluster. The six eggs attract each other and spin around. When cracks increasingly appear on the eggs, Exeggcute is close to evolution.",
+    "id": 102,
+    "max_cp": 978,
+    "evolution_chain": [
+      102,
+      103
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "E"
+    },
+    "weight": "2.5 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Exeggutor",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "description": "Exeggutor originally came from the tropics. Its heads steadily grow larger from exposure to strong sunlight. It is said that when the heads fall off, they group together to form Exeggcute.",
+    "id": 103,
+    "max_cp": 2752,
+    "evolution_chain": [
+      102,
+      103
+    ],
+    "height": "2.0 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "120.0 kg",
+    "max_hp": 156
+  },
+  {
+    "name": "Cubone",
+    "types": [
+      "Ground"
+    ],
+    "description": "Cubone pines for the mother it will never see again. Seeing a likeness of its mother in the full moon, it cries. The stains on the skull the Pokémon wears are made by the tears it sheds.",
+    "id": 104,
+    "max_cp": 889,
+    "evolution_chain": [
+      104,
+      105
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Cubone candies"
+    },
+    "weight": "6.5 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Marowak",
+    "types": [
+      "Ground"
+    ],
+    "description": "Marowak is the evolved form of a Cubone that has overcome its sadness at the loss of its mother and grown tough. This Pokémon's tempered and hardened spirit is not easily broken.",
+    "id": 105,
+    "max_cp": 1505,
+    "evolution_chain": [
+      104,
+      105
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice"
+    ],
+    "weight": "45.0 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Hitmonlee",
+    "types": [
+      "Fighting"
+    ],
+    "description": "Hitmonlee's legs freely contract and stretch. Using these springlike legs, it bowls over foes with devastating kicks. After battle, it rubs down its legs and loosens the muscles to overcome fatigue.",
+    "id": 106,
+    "max_cp": 1349,
+    "evolution_chain": [
+      236,
+      106
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "weight": "49.8 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Hitmonchan",
+    "types": [
+      "Fighting"
+    ],
+    "description": "Hitmonchan is said to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity.",
+    "id": 107,
+    "max_cp": 1370,
+    "evolution_chain": [
+      236,
+      107
+    ],
+    "height": "1.4 m",
+    "weaknesses": [
+      "Flying",
+      "Psychic",
+      "Fairy"
+    ],
+    "weight": "50.2 kg",
+    "max_hp": 84
+  },
+  {
+    "name": "Lickitung",
+    "types": [
+      "Normal"
+    ],
+    "description": "Whenever Lickitung comes across something new, it will unfailingly give it a lick. It does so because it memorizes things by texture and by taste. It is somewhat put off by sour things.",
+    "id": 108,
+    "max_cp": 1477,
+    "evolution_chain": [
+      108,
+      463
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "65.5 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Koffing",
+    "types": [
+      "Poison"
+    ],
+    "description": "If Koffing becomes agitated, it raises the toxicity of its internal gases and then jets them out from all over its body. This Pokémon may also overinflate its round body, then explode.",
+    "id": 109,
+    "max_cp": 1025,
+    "evolution_chain": [
+      109,
+      110
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Koffing candies"
+    },
+    "weight": "1.0 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Weezing",
+    "types": [
+      "Poison"
+    ],
+    "description": "Weezing loves the gases given off by rotted kitchen garbage. This Pokémon will find a dirty, unkempt house and make it its home. At night, when the people in the house are asleep, it will go through the trash.",
+    "id": 110,
+    "max_cp": 2073,
+    "evolution_chain": [
+      109,
+      110
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Ground",
+      "Psychic"
+    ],
+    "weight": "9.5 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Rhyhorn",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "description": "Rhyhorn runs in a straight line, smashing everything in its path. It is not bothered even if it rushes headlong into a block of steel. This Pokémon may feel some pain from the collision the next day, however.",
+    "id": 111,
+    "max_cp": 1055,
+    "evolution_chain": [
+      111,
+      112,
+      464
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground",
+      "Steel"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Rhyhorn candies"
+    },
+    "weight": "115.0 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Rhydon",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "description": "Rhydon's horn can crush even uncut diamonds. One sweeping blow of its tail can topple a building. This Pokémon's hide is extremely tough. Even direct cannon hits don't leave a scratch.",
+    "id": 112,
+    "max_cp": 2068,
+    "evolution_chain": [
+      111,
+      112,
+      464
+    ],
+    "height": "1.9 m",
+    "weaknesses": [
+      "Water",
+      "Grass",
+      "Ice",
+      "Fighting",
+      "Ground",
+      "Steel"
+    ],
+    "weight": "120.0 kg",
+    "max_hp": 171
+  },
+  {
+    "name": "Chansey",
+    "types": [
+      "Normal"
+    ],
+    "description": "Chansey lays nutritionally excellent eggs on an everyday basis. The eggs are so delicious, they are easily and eagerly devoured by even those people who have lost their appetite.",
+    "id": 113,
+    "max_cp": 549,
+    "evolution_chain": [
+      440,
+      113,
+      242
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "34.6 kg",
+    "max_hp": 401
+  },
+  {
+    "name": "Tangela",
+    "types": [
+      "Grass"
+    ],
+    "description": "Tangela's vines snap off easily if they are grabbed. This happens without pain, allowing it to make a quick getaway. The lost vines are replaced by newly grown vines the very next day.",
+    "id": 114,
+    "max_cp": 1586,
+    "evolution_chain": [
+      114,
+      465
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Poison",
+      "Flying",
+      "Bug"
+    ],
+    "weight": "35.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "description": "If you come across a young Kangaskhan playing by itself, you must never disturb it or attempt to catch it. The baby Pokémon's parent is sure to be in the area, and it will become violently enraged at you.",
+    "id": 115,
+    "max_cp": 1875,
+    "height": "2.2 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "80.0 kg",
+    "max_hp": 171
+  },
+  {
+    "name": "Horsea",
+    "types": [
+      "Water"
+    ],
+    "description": "Horsea eats small insects and moss off of rocks. If the ocean current turns fast, this Pokémon anchors itself by wrapping its tail around rocks or coral to prevent being washed away.",
+    "id": 116,
+    "max_cp": 688,
+    "evolution_chain": [
+      116,
+      117,
+      230
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Horsea candies"
+    },
+    "weight": "8.0 kg",
+    "max_hp": 53
+  },
+  {
+    "name": "Seadra",
+    "types": [
+      "Water"
+    ],
+    "description": "Seadra sleeps after wriggling itself between the branches of coral. Those trying to harvest coral are occasionally stung by this Pokémon's poison barbs if they fail to notice it.",
+    "id": 117,
+    "max_cp": 1559,
+    "evolution_chain": [
+      116,
+      117,
+      230
+    ],
+    "height": "1.2 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "weight": "25.0 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Goldeen",
+    "types": [
+      "Water"
+    ],
+    "description": "Goldeen is a very beautiful Pokémon with fins that billow elegantly in water. However, don't let your guard down around this Pokémon—it could ram you powerfully with its horn.",
+    "id": 118,
+    "max_cp": 851,
+    "evolution_chain": [
+      118,
+      119
+    ],
+    "height": "0.6 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Goldeen candies"
+    },
+    "weight": "15.0 kg",
+    "max_hp": 77
+  },
+  {
+    "name": "Seaking",
+    "types": [
+      "Water"
+    ],
+    "description": "In the autumn, Seaking males can be seen performing courtship dances in riverbeds to woo females. During this season, this Pokémon's body coloration is at its most beautiful.",
+    "id": 119,
+    "max_cp": 1877,
+    "evolution_chain": [
+      118,
+      119
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "weight": "39.0 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Staryu",
+    "types": [
+      "Water"
+    ],
+    "description": "Staryu's center section has an organ called the core that shines bright red. If you go to a beach toward the end of summer, the glowing cores of these Pokémon look like the stars in the sky.",
+    "id": 120,
+    "max_cp": 821,
+    "evolution_chain": [
+      120,
+      121
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Staryu candies"
+    },
+    "weight": "34.5 kg",
+    "max_hp": 53
+  },
+  {
+    "name": "Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "description": "Starmie's center section-the core-glows brightly in seven colors. Because of its luminous nature, this Pokémon has been given the nickname \"the gem of the sea.\"",
+    "id": 121,
+    "max_cp": 2007,
+    "evolution_chain": [
+      120,
+      121
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "80.0 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Mr. Mime",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "description": "Mr. Mime is a master of pantomime. Its gestures and motions convince watchers that something unseeable actually exists. Once the watchers are convinced, the unseeable thing exists as if it were real.",
+    "id": 122,
+    "max_cp": 1345,
+    "evolution_chain": [
+      439,
+      122
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "54.5 kg",
+    "max_hp": 69
+  },
+  {
+    "name": "Scyther",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "description": "Scyther is blindingly fast. Its blazing speed enhances the effectiveness of the twin scythes on its forearms. This Pokémon's scythes are so effective, they can slice through thick logs in one wicked stroke.",
+    "id": 123,
+    "max_cp": 1905,
+    "evolution_chain": [
+      123,
+      212
+    ],
+    "height": "1.5 m",
+    "weaknesses": [
+      "Fire",
+      "Electric",
+      "Ice",
+      "Flying",
+      "Rock"
+    ],
+    "weight": "56.0 kg",
+    "max_hp": 116
+  },
+  {
+    "name": "Jynx",
+    "types": [
+      "Ice",
+      "Psychic"
+    ],
+    "description": "Jynx walks rhythmically, swaying and shaking its hips as if it were dancing. Its motions are so bouncingly alluring, people seeing it are compelled to shake their hips without giving any thought to what they are doing.",
+    "id": 124,
+    "max_cp": 1563,
+    "evolution_chain": [
+      238,
+      124
+    ],
+    "height": "1.4 m",
+    "weaknesses": [
+      "Fire",
+      "Bug",
+      "Rock",
+      "Ghost",
+      "Dark",
+      "Steel"
+    ],
+    "weight": "40.6 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Electabuzz",
+    "types": [
+      "Electric"
+    ],
+    "description": "When a storm arrives, gangs of this Pokémon compete with each other to scale heights that are likely to be stricken by lightning bolts. Some towns use Electabuzz in place of lightning rods.",
+    "id": 125,
+    "max_cp": 1947,
+    "evolution_chain": [
+      239,
+      125,
+      466
+    ],
+    "height": "1.1 m",
+    "weaknesses": [
+      "Ground"
+    ],
+    "weight": "30.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Magmar",
+    "types": [
+      "Fire"
+    ],
+    "description": "In battle, Magmar blows out intensely hot flames from all over its body to intimidate its opponent. This Pokémon's fiery bursts create heat waves that ignite grass and trees in its surroundings.",
+    "id": 126,
+    "max_cp": 2086,
+    "evolution_chain": [
+      240,
+      126,
+      467
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "weight": "44.5 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Pinsir",
+    "types": [
+      "Bug"
+    ],
+    "description": "Pinsir is astoundingly strong. It can grip a foe weighing twice its weight in its horns and easily lift it. This Pokémon's movements turn sluggish in cold places.",
+    "id": 127,
+    "max_cp": 1950,
+    "height": "1.5 m",
+    "weaknesses": [
+      "Fire",
+      "Flying",
+      "Rock"
+    ],
+    "weight": "55.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Tauros",
+    "types": [
+      "Normal"
+    ],
+    "description": "This Pokémon is not satisfied unless it is rampaging at all times. If there is no opponent for Tauros to battle, it will charge at thick trees and knock them down to calm itself.",
+    "id": 128,
+    "max_cp": 1686,
+    "height": "1.4 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "88.4 kg",
+    "max_hp": 124
+  },
+  {
+    "name": "Magikarp",
+    "types": [
+      "Water"
+    ],
+    "description": "Magikarp is a pathetic excuse for a Pokémon that is only capable of flopping and splashing. This behavior prompted scientists to undertake research into it.",
+    "id": 129,
+    "max_cp": 203,
+    "evolution_chain": [
+      129,
+      130
+    ],
+    "height": "0.9 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "evolution_requirements": {
+      "amount": 400,
+      "name": "Magikarp candies"
+    },
+    "weight": "10.0 kg",
+    "max_hp": 37
+  },
+  {
+    "name": "Gyarados",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "description": "When Magikarp evolves into Gyarados, its brain cells undergo a structural transformation. It is said that this transformation is to blame for this Pokémon's wildly violent nature.",
+    "id": 130,
+    "max_cp": 2498,
+    "evolution_chain": [
+      129,
+      130
+    ],
+    "height": "6.5 m",
+    "weaknesses": [
+      "Electric",
+      "Rock"
+    ],
+    "weight": "235.0 kg",
+    "max_hp": 156
+  },
+  {
+    "name": "Lapras",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "description": "People have driven Lapras almost to the point of extinction. In the evenings, this Pokémon is said to sing plaintively as it seeks what few others of its kind still remain.",
+    "id": 131,
+    "max_cp": 2777,
+    "height": "2.5 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Rock"
+    ],
+    "weight": "220.0 kg",
+    "max_hp": 211
+  },
+  {
+    "name": "Ditto",
+    "types": [
+      "Normal"
+    ],
+    "description": "Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong.",
+    "id": 132,
+    "max_cp": 809,
+    "height": "0.3 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "4.0 kg",
+    "max_hp": 81
+  },
+  {
+    "name": "Eevee",
+    "types": [
+      "Normal"
+    ],
+    "description": "Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives. Radiation from various stones causes this Pokémon to evolve.",
+    "id": 133,
+    "max_cp": 957,
+    "evolution_chain": [
+      [
+        133,
+        134
+      ],
+      [
+        133,
+        135
+      ],
+      [
+        133,
+        136
+      ],
+      [
+        133,
+        196
+      ],
+      [
+        133,
+        197
+      ],
+      [
+        133,
+        470
+      ],
+      [
+        133,
+        471
+      ],
+      [
+        133,
+        700
+      ]
+    ],
+    "height": "0.3 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Eevee candies"
+    },
+    "weight": "6.5 kg",
+    "max_hp": 92
+  },
+  {
+    "name": "Vaporeon",
+    "types": [
+      "Water"
+    ],
+    "description": "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water.",
+    "id": 134,
+    "max_cp": 2618,
+    "evolution_chain": [
+      133,
+      134
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Electric",
+      "Grass"
+    ],
+    "weight": "29.0 kg",
+    "max_hp": 211
+  },
+  {
+    "name": "Jolteon",
+    "types": [
+      "Electric"
+    ],
+    "description": "Jolteon's cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles.",
+    "id": 135,
+    "max_cp": 1968,
+    "evolution_chain": [
+      133,
+      135
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Ground"
+    ],
+    "weight": "24.5 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Flareon",
+    "types": [
+      "Fire"
+    ],
+    "description": "Flareon's fluffy fur has a functional purpose-it releases heat into the air so that its body does not get excessively hot. This Pokémon's body temperature can rise to a maximum of 1,650 degrees Fahrenheit.",
+    "id": 136,
+    "max_cp": 2448,
+    "evolution_chain": [
+      133,
+      136
+    ],
+    "height": "0.9 m",
+    "weaknesses": [
+      "Water",
+      "Ground",
+      "Rock"
+    ],
+    "weight": "25.0 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Porygon",
+    "types": [
+      "Normal"
+    ],
+    "description": "Porygon is capable of reverting itself entirely back to program data and entering cyberspace. This Pokémon is copy-protected so it cannot be duplicated by copying.",
+    "id": 137,
+    "max_cp": 1540,
+    "evolution_chain": [
+      137,
+      233,
+      474
+    ],
+    "height": "0.8 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "36.5 kg",
+    "max_hp": 108
+  },
+  {
+    "name": "Omanyte",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "description": "Omanyte is one of the ancient and long-since-extinct Pokémon that have been regenerated from fossils by people. If attacked by an enemy, it withdraws itself inside its hard shell.",
+    "id": 138,
+    "max_cp": 992,
+    "evolution_chain": [
+      138,
+      139
+    ],
+    "height": "0.4 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Omanyte candies"
+    },
+    "weight": "7.5 kg",
+    "max_hp": 61
+  },
+  {
+    "name": "Omastar",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "description": "Omastar uses its tentacles to capture its prey. It is believed to have become extinct because its shell grew too large and heavy, causing its movements to become too slow and ponderous.",
+    "id": 139,
+    "max_cp": 2058,
+    "evolution_chain": [
+      138,
+      139
+    ],
+    "height": "1.0 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "weight": "35.0 kg",
+    "max_hp": 116
+  },
+  {
+    "name": "Kabuto",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "description": "Kabuto is a Pokémon that has been regenerated from a fossil. However, in extremely rare cases, living examples have been discovered. The Pokémon has not changed at all for 300 million years.",
+    "id": 140,
+    "max_cp": 975,
+    "evolution_chain": [
+      140,
+      141
+    ],
+    "height": "0.5 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "evolution_requirements": {
+      "amount": 50,
+      "name": "Kabuto candies"
+    },
+    "weight": "11.5 kg",
+    "max_hp": 53
+  },
+  {
+    "name": "Kabutops",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "description": "Kabutops swam underwater to hunt for its prey in ancient times. The Pokémon was apparently evolving from being a water-dweller to living on land as evident from the beginnings of change in its gills and legs.",
+    "id": 141,
+    "max_cp": 1957,
+    "evolution_chain": [
+      140,
+      141
+    ],
+    "height": "1.3 m",
+    "weaknesses": [
+      "Electric",
+      "Grass",
+      "Fighting",
+      "Ground"
+    ],
+    "weight": "40.5 kg",
+    "max_hp": 100
+  },
+  {
+    "name": "Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "description": "Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from genetic material extracted from amber. It is imagined to have been the king of the skies in ancient times.",
+    "id": 142,
+    "max_cp": 1994,
+    "height": "1.8 m",
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Ice",
+      "Rock",
+      "Steel"
+    ],
+    "weight": "59.0 kg",
+    "max_hp": 132
+  },
+  {
+    "name": "Snorlax",
+    "types": [
+      "Normal"
+    ],
+    "description": "Snorlax's typical day consists of nothing more than eating and sleeping. It is such a docile Pokémon that there are children who use its expansive belly as a place to play.",
+    "id": 143,
+    "max_cp": 2901,
+    "evolution_chain": [
+      446,
+      143
+    ],
+    "height": "2.1 m",
+    "weaknesses": [
+      "Fighting"
+    ],
+    "weight": "460.0 kg",
+    "max_hp": 258
+  },
+  {
+    "name": "Articuno",
+    "types": [
+      "Ice",
+      "Flying"
+    ],
+    "description": "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.",
+    "id": 144,
+    "max_cp": 2776,
+    "height": "1.7 m",
+    "weaknesses": [
+      "Fire",
+      "Electric",
+      "Rock",
+      "Steel"
+    ],
+    "weight": "55.4 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Zapdos",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "description": "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.",
+    "id": 145,
+    "max_cp": 2907,
+    "height": "1.6 m",
+    "weaknesses": [
+      "Ice",
+      "Rock"
+    ],
+    "weight": "52.6 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Moltres",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "description": "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.",
+    "id": 146,
+    "max_cp": 3028,
+    "height": "2.0 m",
+    "weaknesses": [
+      "Water",
+      "Electric",
+      "Rock"
+    ],
+    "weight": "60.0 kg",
+    "max_hp": 148
+  },
+  {
+    "name": "Dratini",
+    "types": [
+      "Dragon"
+    ],
+    "description": "Dratini continually molts and sloughs off its old skin. It does so because the life energy within its body steadily builds to reach uncontrollable levels.",
+    "id": 147,
+    "max_cp": 867,
+    "evolution_chain": [
+      147,
+      148,
+      149
+    ],
+    "height": "1.8 m",
+    "weaknesses": [
+      "Ice",
+      "Dragon",
+      "Fairy"
+    ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Dratini candies"
+    },
+    "weight": "3.3 kg",
+    "max_hp": 70
+  },
+  {
+    "name": "Dragonair",
+    "types": [
+      "Dragon"
+    ],
+    "description": "Dragonair stores an enormous amount of energy inside its body. It is said to alter weather conditions in its vicinity by discharging energy from its crystals on its neck and tail.",
+    "id": 148,
+    "max_cp": 1593,
+    "evolution_chain": [
+      147,
+      148,
+      149
+    ],
+    "height": "4.0 m",
+    "weaknesses": [
+      "Ice",
+      "Dragon",
+      "Fairy"
+    ],
+    "evolution_requirements": {
+      "amount": 100,
+      "name": "Dratini candies"
+    },
+    "weight": "16.5 kg",
+    "max_hp": 102
+  },
+  {
+    "name": "Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "description": "Dragonite is capable of circling the globe in just 16 hours. It is a kindhearted Pokémon that leads lost and foundering ships in a storm to the safety of land.",
+    "id": 149,
+    "max_cp": 3280,
+    "evolution_chain": [
+      147,
+      148,
+      149
+    ],
+    "height": "2.2 m",
+    "weaknesses": [
+      "Ice",
+      "Rock",
+      "Dragon",
+      "Fairy"
+    ],
+    "weight": "210.0 kg",
+    "max_hp": 149
+  },
+  {
+    "name": "Mewtwo",
+    "types": [
+      "Psychic"
+    ],
+    "description": "Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon's body, they failed to endow Mewtwo with a compassionate heart.",
+    "id": 150,
+    "max_cp": 3904,
+    "height": "2.0 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "122.0 kg",
+    "max_hp": 173
+  },
+  {
+    "name": "Mew",
+    "types": [
+      "Psychic"
+    ],
+    "description": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
+    "id": 151,
+    "max_cp": 3087,
+    "height": "0.4 m",
+    "weaknesses": [
+      "Bug",
+      "Ghost",
+      "Dark"
+    ],
+    "weight": "4.0 kg",
+    "max_hp": 163
+  }
+]

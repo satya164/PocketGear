@@ -211,7 +211,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   render() {
-    const { pokemon } = this.state.pokemon;
+    const { pokemon } = this.state;
     const types = pokemon.type.map(t => t.name).join(', ');
 
     return (
