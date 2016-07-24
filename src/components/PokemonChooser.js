@@ -62,7 +62,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
       if (!isNaN(query)) {
         return pokemons.filtered(`id == ${query}`).slice();
       }
-      return pokemons.filtered(`name BEGINSWITH[c] "${query}" OR type.name ==[c] "${query}"`).slice();
+      return pokemons.filtered(`name BEGINSWITH[c] "${query}" OR type.name BEGINSWITH[c] "${query}"`).slice();
     }
 
     return pokemons.slice();
