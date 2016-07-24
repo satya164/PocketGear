@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     fontSize: 13,
     marginVertical: 2,
+    width: 120,
   },
 
   tabview: {
@@ -212,7 +213,19 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   render() {
     const { pokemon } = this.state;
-    const types = pokemon.type.map(t => t.name).join(', ');
+    const pokemonTypes = pokemon.type.map(t => t.name);
+    const allTypes = db.objects('Type').slice();
+    let weaknesses = [];
+
+    pokemonTypes.forEach(pt =>
+      allTypes.forEach(t => {
+        t.strengths.forEach(s => {
+          if (s.name === pt) {
+            weaknesses.push(t.name);
+          }
+        });
+      })
+    );
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
@@ -239,7 +252,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
             <Text style={styles.name}>{pokemon.name}</Text>
             <View style={styles.row}>
               <Text style={styles.label}>Type</Text>
-              <Text style={styles.info}>{types}</Text>
+              <Text style={styles.info}>{pokemonTypes.join(', ')}</Text>
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Category</Text>
@@ -247,7 +260,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Weakness</Text>
-              <Text style={styles.info}>Fire</Text>
+              <Text style={styles.info}>{weaknesses.join(', ')}</Text>
             </View>
           </View>
           <Image style={styles.image} source={sprites[pokemon.id - 1]} />
