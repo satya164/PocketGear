@@ -150,7 +150,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   state: State = {
     navigation: {
-      index: 0,
+      index: 2,
       routes: [
         { key: 'strong-against', title: 'Strong against' },
         { key: 'weak-against', title: 'Weak against' },
@@ -253,10 +253,6 @@ export default class PokemonInfo extends Component<void, Props, State> {
             <View style={styles.row}>
               <Text style={styles.label}>Type</Text>
               <Text style={styles.info}>{pokemonTypes.join(', ')}</Text>
-            </View>
-            <View style={styles.row}>
-              <Text style={styles.label}>Category</Text>
-              <Text style={styles.info}>{pokemon.category}</Text>
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Weakness</Text>

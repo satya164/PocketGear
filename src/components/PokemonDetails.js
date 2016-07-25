@@ -9,13 +9,22 @@ import {
   ScrollView,
   StyleSheet,
 } from 'react-native';
+import ProgressBar from './ProgressBar';
 import sprites from '../sprites';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    padding: 8,
+    padding: 16,
+  },
+
+  title: {
+    color: '#222',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginVertical: 4,
   },
 
   description: {
@@ -23,13 +32,41 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     fontSize: 14,
     lineHeight: 21,
-    margin: 8,
+    marginVertical: 4,
+  },
+
+  statistics: {
+    marginVertical: 8,
+  },
+
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 4,
+  },
+
+  label: {
+    color: '#222',
+    fontFamily: 'Lato',
+    fontSize: 12,
+  },
+
+  type: {
+    fontWeight: 'bold',
+    width: 70,
+    opacity: 0.5,
+  },
+
+  amount: {
+    textAlign: 'right',
+    width: 50,
+    marginHorizontal: 16,
   },
 
   evolutions: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    margin: 8,
+    marginVertical: 16,
   },
 
   pokemon: {
@@ -83,14 +120,35 @@ export default class PokemonDetails extends Component<void, Props, void> {
     });
   };
 
+  _renderStat = (type: string, ratio: number, amount: string | number, fill: string) => {
+    return (
+      <View style={styles.row}>
+        <Text style={[ styles.label, styles.type ]}>{type}</Text>
+        <Text style={[ styles.label, styles.amount ]}>{amount}</Text>
+        <ProgressBar ratio={ratio} fillColor={fill} />
+      </View>
+    );
+  };
+
   render() {
     const { pokemon } = this.props;
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
+        <Text style={styles.title}>
+          {pokemon.category}
+        </Text>
         <Text style={styles.description}>
           {pokemon.description}
         </Text>
+
+        <View style={styles.statistics}>
+          {this._renderStat('Attack', pokemon.attack / 300, pokemon.attack, '#EE8276')}
+          {this._renderStat('Defense', pokemon.defense / 200, pokemon.defense, '#B98BCC')}
+          {this._renderStat('Capture Rate', pokemon.capture_rate, (pokemon.capture_rate * 100).toFixed(2) + '%', '#71B7E5')}
+          {this._renderStat('Flee Rate', pokemon.flee_rate, (pokemon.flee_rate * 100).toFixed(2) + '%', '#F6B959')}
+        </View>
+
         <View style={styles.evolutions}>
           <TouchableOpacity style={styles.pokemon} onPress={this._goToPokemon(1)}>
             <Image style={styles.image} source={sprites[0]} />
