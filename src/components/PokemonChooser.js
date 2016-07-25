@@ -26,12 +26,16 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    paddingTop: Platform.OS === 'ios' ? 20 : 0,
-  }
+    ...(Platform.OS === 'ios' ? {
+      paddingTop: 20,
+      backgroundColor: '#f6f6f6',
+    } : null),
+  },
 });
 
 type State = {
   query: string;
+  atTop: boolean;
 }
 
 type Props = {
@@ -46,6 +50,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   state: State = {
     query: '',
+    atTop: true,
   };
 
   _handleSearchChange = (query: string) => {
