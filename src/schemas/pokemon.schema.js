@@ -11,5 +11,10 @@ export default {
     category: 'string',
     max_cp: 'int',
     max_hp: 'int',
+    stamina: 'int',
+    attack: 'int',
+    defense: 'int',
+    capture_rate: 'float',
+    flee_rate: 'float',
   },
 };

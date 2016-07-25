@@ -36,6 +36,11 @@ export default function fill() {
           category: pokemon.category,
           max_cp: pokemon.max_cp,
           max_hp: pokemon.max_hp,
+          stamina: pokemon.stamina,
+          attack: pokemon.attack,
+          defense: pokemon.defense,
+          capture_rate: pokemon.capture_rate,
+          flee_rate: pokemon.flee_rate
         }, true);
       })
     );
