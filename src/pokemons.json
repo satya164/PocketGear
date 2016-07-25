@@ -13,12 +13,18 @@
       2,
       3
     ],
-    "height": "0.7 m",
+    "height": {
+      "amount": 0.7,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Bulbasaur candies"
     },
-    "weight": "6.9 kg",
+    "weight": {
+      "amount": 6.9,
+      "unit": "kg"
+    },
     "max_hp": 77,
     "category": "Seed Pokémon",
     "stamina": 90,
@@ -41,12 +47,18 @@
       2,
       3
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Bulbasaur candies"
     },
-    "weight": "13.0 kg",
+    "weight": {
+      "amount": 13,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Seed Pokémon",
     "stamina": 120,
@@ -69,8 +81,14 @@
       2,
       3
     ],
-    "height": "2.0 m",
-    "weight": "100.0 kg",
+    "height": {
+      "amount": 2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 100,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Seed Pokémon",
     "stamina": 160,
@@ -92,12 +110,18 @@
       5,
       6
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Charmander candies"
     },
-    "weight": "8.5 kg",
+    "weight": {
+      "amount": 8.5,
+      "unit": "kg"
+    },
     "max_hp": 67,
     "category": "Lizard Pokémon",
     "stamina": 78,
@@ -119,12 +143,18 @@
       5,
       6
     ],
-    "height": "1.1 m",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Charmander candies"
     },
-    "weight": "19.0 kg",
+    "weight": {
+      "amount": 19,
+      "unit": "kg"
+    },
     "max_hp": 97,
     "category": "Flame Pokémon",
     "stamina": 116,
@@ -147,8 +177,14 @@
       5,
       6
     ],
-    "height": "1.7 m",
-    "weight": "90.5 kg",
+    "height": {
+      "amount": 1.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 90.5,
+      "unit": "kg"
+    },
     "max_hp": 129,
     "category": "Flame Pokémon",
     "stamina": 156,
@@ -170,12 +206,18 @@
       8,
       9
     ],
-    "height": "0.5 m",
+    "height": {
+      "amount": 0.5,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Squirtle candies"
     },
-    "weight": "9.0 kg",
+    "weight": {
+      "amount": 9,
+      "unit": "kg"
+    },
     "max_hp": 75,
     "category": "Tiny Turtle Pokémon",
     "stamina": 88,
@@ -197,12 +239,18 @@
       8,
       9
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Squirtle candies"
     },
-    "weight": "22.5 kg",
+    "weight": {
+      "amount": 22.5,
+      "unit": "kg"
+    },
     "max_hp": 99,
     "category": "Turtle Pokémon",
     "stamina": 118,
@@ -224,8 +272,14 @@
       8,
       9
     ],
-    "height": "1.6 m",
-    "weight": "85.5 kg",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 85.5,
+      "unit": "kg"
+    },
     "max_hp": 130,
     "category": "Shellfish Pokémon",
     "stamina": 158,
@@ -247,12 +301,18 @@
       11,
       12
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 12,
       "name": "Caterpie candies"
     },
-    "weight": "2.9 kg",
+    "weight": {
+      "amount": 2.9,
+      "unit": "kg"
+    },
     "max_hp": 77,
     "category": "Worm Pokémon",
     "stamina": 90,
@@ -274,12 +334,18 @@
       11,
       12
     ],
-    "height": "0.7 m",
+    "height": {
+      "amount": 0.7,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Caterpie candies"
     },
-    "weight": "9.9 kg",
+    "weight": {
+      "amount": 9.9,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Cocoon Pokémon",
     "stamina": 100,
@@ -302,8 +368,14 @@
       11,
       12
     ],
-    "height": "1.1 m",
-    "weight": "32.0 kg",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 32,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Butterfly Pokémon",
     "stamina": 120,
@@ -326,12 +398,18 @@
       14,
       15
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 12,
       "name": "Weedle candies"
     },
-    "weight": "3.2 kg",
+    "weight": {
+      "amount": 3.2,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Hairy Bug Pokémon",
     "stamina": 80,
@@ -354,12 +432,18 @@
       14,
       15
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Weedle candies"
     },
-    "weight": "10.0 kg",
+    "weight": {
+      "amount": 10,
+      "unit": "kg"
+    },
     "max_hp": 77,
     "category": "Cocoon Pokémon",
     "stamina": 90,
@@ -382,8 +466,14 @@
       14,
       15
     ],
-    "height": "1.0 m",
-    "weight": "29.5 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 29.5,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Poison Bee Pokémon",
     "stamina": 130,
@@ -406,12 +496,18 @@
       17,
       18
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 12,
       "name": "Pidgey candies"
     },
-    "weight": "1.8 kg",
+    "weight": {
+      "amount": 1.8,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Tiny Bird Pokémon",
     "stamina": 80,
@@ -434,12 +530,18 @@
       17,
       18
     ],
-    "height": "1.1 m",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Pidgey candies"
     },
-    "weight": "30.0 kg",
+    "weight": {
+      "amount": 30,
+      "unit": "kg"
+    },
     "max_hp": 105,
     "category": "Bird Pokémon",
     "stamina": 126,
@@ -462,8 +564,14 @@
       17,
       18
     ],
-    "height": "1.5 m",
-    "weight": "39.5 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 39.5,
+      "unit": "kg"
+    },
     "max_hp": 137,
     "category": "Bird Pokémon",
     "stamina": 166,
@@ -484,12 +592,18 @@
       19,
       20
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Rattata candies"
     },
-    "weight": "3.5 kg",
+    "weight": {
+      "amount": 3.5,
+      "unit": "kg"
+    },
     "max_hp": 53,
     "category": "Mouse Pokémon",
     "stamina": 60,
@@ -510,8 +624,14 @@
       19,
       20
     ],
-    "height": "0.7 m",
-    "weight": "18.5 kg",
+    "height": {
+      "amount": 0.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 18.5,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Mouse Pokémon",
     "stamina": 110,
@@ -533,12 +653,18 @@
       21,
       22
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Spearow candies"
     },
-    "weight": "2.0 kg",
+    "weight": {
+      "amount": 2,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Tiny Bird Pokémon",
     "stamina": 80,
@@ -560,8 +686,14 @@
       21,
       22
     ],
-    "height": "1.2 m",
-    "weight": "38.0 kg",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 38,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Beak Pokémon",
     "stamina": 130,
@@ -582,12 +714,18 @@
       23,
       24
     ],
-    "height": "2.0 m",
+    "height": {
+      "amount": 2,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Ekans candies"
     },
-    "weight": "6.9 kg",
+    "weight": {
+      "amount": 6.9,
+      "unit": "kg"
+    },
     "max_hp": 61,
     "category": "Snake Pokémon",
     "stamina": 70,
@@ -608,8 +746,14 @@
       23,
       24
     ],
-    "height": "3.5 m",
-    "weight": "65.0 kg",
+    "height": {
+      "amount": 3.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 65,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Cobra Pokémon",
     "stamina": 120,
@@ -631,12 +775,18 @@
       25,
       26
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Pikachu candies"
     },
-    "weight": "6.0 kg",
+    "weight": {
+      "amount": 6,
+      "unit": "kg"
+    },
     "max_hp": 61,
     "category": "Mouse Pokémon",
     "stamina": 70,
@@ -658,8 +808,14 @@
       25,
       26
     ],
-    "height": "0.8 m",
-    "weight": "30.0 kg",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 30,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Mouse Pokémon",
     "stamina": 120,
@@ -680,12 +836,18 @@
       27,
       28
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Sandshrew candies"
     },
-    "weight": "12.0 kg",
+    "weight": {
+      "amount": 12,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Mouse Pokémon",
     "stamina": 100,
@@ -706,8 +868,14 @@
       27,
       28
     ],
-    "height": "1.0 m",
-    "weight": "29.5 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 29.5,
+      "unit": "kg"
+    },
     "max_hp": 124,
     "category": "Mouse Pokémon",
     "stamina": 150,
@@ -729,8 +897,14 @@
       30,
       31
     ],
-    "height": "0.4 m",
-    "weight": "7.0 kg",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 7,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Poison Pin Pokémon",
     "stamina": 110,
@@ -752,12 +926,18 @@
       30,
       31
     ],
-    "height": "0.8 m",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Nidoranâ™€ candies"
     },
-    "weight": "20.0 kg",
+    "weight": {
+      "amount": 20,
+      "unit": "kg"
+    },
     "max_hp": 116,
     "category": "Poison Pin Pokémon",
     "stamina": 140,
@@ -780,8 +960,14 @@
       30,
       31
     ],
-    "height": "1.3 m",
-    "weight": "60.0 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 60,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Drill Pokémon",
     "stamina": 180,
@@ -803,8 +989,14 @@
       33,
       34
     ],
-    "height": "0.5 m",
-    "weight": "9.0 kg",
+    "height": {
+      "amount": 0.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 9,
+      "unit": "kg"
+    },
     "max_hp": 78,
     "category": "Poison Pin Pokémon",
     "stamina": 92,
@@ -826,12 +1018,18 @@
       33,
       34
     ],
-    "height": "0.9 m",
+    "height": {
+      "amount": 0.9,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Nidoranâ™‚ candies"
     },
-    "weight": "19.5 kg",
+    "weight": {
+      "amount": 19.5,
+      "unit": "kg"
+    },
     "max_hp": 102,
     "category": "Poison Pin Pokémon",
     "stamina": 122,
@@ -854,8 +1052,14 @@
       33,
       34
     ],
-    "height": "1.4 m",
-    "weight": "62.0 kg",
+    "height": {
+      "amount": 1.4,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 62,
+      "unit": "kg"
+    },
     "max_hp": 133,
     "category": "Drill Pokémon",
     "stamina": 162,
@@ -877,12 +1081,18 @@
       35,
       36
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Clefairy candies"
     },
-    "weight": "7.5 kg",
+    "weight": {
+      "amount": 7.5,
+      "unit": "kg"
+    },
     "max_hp": 116,
     "category": "Fairy Pokémon",
     "stamina": 140,
@@ -904,8 +1114,14 @@
       35,
       36
     ],
-    "height": "1.3 m",
-    "weight": "40.0 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 40,
+      "unit": "kg"
+    },
     "max_hp": 156,
     "category": "Fairy Pokémon",
     "stamina": 190,
@@ -926,12 +1142,18 @@
       37,
       38
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Vulpi"
     },
-    "weight": "9.9 kg",
+    "weight": {
+      "amount": 9.9,
+      "unit": "kg"
+    },
     "max_hp": 65,
     "category": "Fox Pokémon",
     "stamina": 76,
@@ -952,8 +1174,14 @@
       37,
       38
     ],
-    "height": "1.1 m",
-    "weight": "19.9 kg",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 19.9,
+      "unit": "kg"
+    },
     "max_hp": 121,
     "category": "Fox Pokémon",
     "stamina": 146,
@@ -976,12 +1204,18 @@
       39,
       40
     ],
-    "height": "0.5 m",
+    "height": {
+      "amount": 0.5,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Jigglypuff candies"
     },
-    "weight": "5.5 kg",
+    "weight": {
+      "amount": 5.5,
+      "unit": "kg"
+    },
     "max_hp": 187,
     "category": "Balloon Pokémon",
     "stamina": 230,
@@ -1004,8 +1238,14 @@
       39,
       40
     ],
-    "height": "1.0 m",
-    "weight": "12.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 12,
+      "unit": "kg"
+    },
     "max_hp": 227,
     "category": "Balloon Pokémon",
     "stamina": 280,
@@ -1028,12 +1268,18 @@
       42,
       169
     ],
-    "height": "0.8 m",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Zubat candies"
     },
-    "weight": "7.5 kg",
+    "weight": {
+      "amount": 7.5,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Bat Pokémon",
     "stamina": 80,
@@ -1056,8 +1302,14 @@
       42,
       169
     ],
-    "height": "1.6 m",
-    "weight": "55.0 kg",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 55,
+      "unit": "kg"
+    },
     "max_hp": 124,
     "category": "Bat Pokémon",
     "stamina": 150,
@@ -1087,12 +1339,18 @@
         182
       ]
     ],
-    "height": "0.5 m",
+    "height": {
+      "amount": 0.5,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Oddish candies"
     },
-    "weight": "5.4 kg",
+    "weight": {
+      "amount": 5.4,
+      "unit": "kg"
+    },
     "max_hp": 77,
     "category": "Weed Pokémon",
     "stamina": 90,
@@ -1122,12 +1380,18 @@
         182
       ]
     ],
-    "height": "0.8 m",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Oddish candies"
     },
-    "weight": "8.6 kg",
+    "weight": {
+      "amount": 8.6,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Weed Pokémon",
     "stamina": 120,
@@ -1157,8 +1421,14 @@
         182
       ]
     ],
-    "height": "1.2 m",
-    "weight": "18.6 kg",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 18.6,
+      "unit": "kg"
+    },
     "max_hp": 124,
     "category": "Flower Pokémon",
     "stamina": 150,
@@ -1180,12 +1450,18 @@
       46,
       47
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Paras candies"
     },
-    "weight": "5.4 kg",
+    "weight": {
+      "amount": 5.4,
+      "unit": "kg"
+    },
     "max_hp": 61,
     "category": "Mushroom Pokémon",
     "stamina": 70,
@@ -1207,8 +1483,14 @@
       46,
       47
     ],
-    "height": "1.0 m",
-    "weight": "29.5 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 29.5,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Mushroom Pokémon",
     "stamina": 120,
@@ -1230,12 +1512,18 @@
       48,
       49
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Venonat candies"
     },
-    "weight": "30.0 kg",
+    "weight": {
+      "amount": 30,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Insect Pokémon",
     "stamina": 120,
@@ -1257,8 +1545,14 @@
       48,
       49
     ],
-    "height": "1.5 m",
-    "weight": "12.5 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 12.5,
+      "unit": "kg"
+    },
     "max_hp": 116,
     "category": "Poison Moth Pokémon",
     "stamina": 140,
@@ -1279,12 +1573,18 @@
       50,
       51
     ],
-    "height": "0.2 m",
+    "height": {
+      "amount": 0.2,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Diglett candies"
     },
-    "weight": "0.8 kg",
+    "weight": {
+      "amount": 0.8,
+      "unit": "kg"
+    },
     "max_hp": 21,
     "category": "Mole Pokémon",
     "stamina": 20,
@@ -1305,8 +1605,14 @@
       50,
       51
     ],
-    "height": "0.7 m",
-    "weight": "33.3 kg",
+    "height": {
+      "amount": 0.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 33.3,
+      "unit": "kg"
+    },
     "max_hp": 61,
     "category": "Mole Pokémon",
     "stamina": 70,
@@ -1327,12 +1633,18 @@
       52,
       53
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Meowth candies"
     },
-    "weight": "4.2 kg",
+    "weight": {
+      "amount": 4.2,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Scratch Cat Pokémon",
     "stamina": 80,
@@ -1353,8 +1665,14 @@
       52,
       53
     ],
-    "height": "1.0 m",
-    "weight": "32.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 32,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Classy Cat Pokémon",
     "stamina": 130,
@@ -1375,12 +1693,18 @@
       54,
       55
     ],
-    "height": "0.8 m",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Psyduck candies"
     },
-    "weight": "19.6 kg",
+    "weight": {
+      "amount": 19.6,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Duck Pokémon",
     "stamina": 100,
@@ -1401,8 +1725,14 @@
       54,
       55
     ],
-    "height": "1.7 m",
-    "weight": "76.6 kg",
+    "height": {
+      "amount": 1.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 76.6,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Duck Pokémon",
     "stamina": 160,
@@ -1423,12 +1753,18 @@
       56,
       57
     ],
-    "height": "0.5 m",
+    "height": {
+      "amount": 0.5,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Mankey candies"
     },
-    "weight": "28.0 kg",
+    "weight": {
+      "amount": 28,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Pig Monkey Pokémon",
     "stamina": 80,
@@ -1449,8 +1785,14 @@
       56,
       57
     ],
-    "height": "1.0 m",
-    "weight": "32.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 32,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Pig Monkey Pokémon",
     "stamina": 130,
@@ -1471,12 +1813,18 @@
       58,
       59
     ],
-    "height": "0.7 m",
+    "height": {
+      "amount": 0.7,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Growlithe candies"
     },
-    "weight": "19.0 kg",
+    "weight": {
+      "amount": 19,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Puppy Pokémon",
     "stamina": 110,
@@ -1497,8 +1845,14 @@
       58,
       59
     ],
-    "height": "1.9 m",
-    "weight": "155.0 kg",
+    "height": {
+      "amount": 1.9,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 155,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Legendary Pokémon",
     "stamina": 180,
@@ -1527,12 +1881,18 @@
         186
       ]
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Poliwag candies"
     },
-    "weight": "12.4 kg",
+    "weight": {
+      "amount": 12.4,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Tadpole Pokémon",
     "stamina": 80,
@@ -1561,12 +1921,18 @@
         186
       ]
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Poliwag candies"
     },
-    "weight": "20.0 kg",
+    "weight": {
+      "amount": 20,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Tadpole Pokémon",
     "stamina": 130,
@@ -1596,8 +1962,14 @@
         186
       ]
     ],
-    "height": "1.3 m",
-    "weight": "54.0 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 54,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Tadpole Pokémon",
     "stamina": 180,
@@ -1619,12 +1991,18 @@
       64,
       65
     ],
-    "height": "0.9 m",
+    "height": {
+      "amount": 0.9,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Abra candies"
     },
-    "weight": "19.5 kg",
+    "weight": {
+      "amount": 19.5,
+      "unit": "kg"
+    },
     "max_hp": 45,
     "category": "Psi Pokémon",
     "stamina": 50,
@@ -1646,12 +2024,18 @@
       64,
       65
     ],
-    "height": "1.3 m",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Abra candies"
     },
-    "weight": "56.5 kg",
+    "weight": {
+      "amount": 56.5,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Psi Pokémon",
     "stamina": 80,
@@ -1673,8 +2057,14 @@
       64,
       65
     ],
-    "height": "1.5 m",
-    "weight": "48.0 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 48,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Psi Pokémon",
     "stamina": 110,
@@ -1696,12 +2086,18 @@
       67,
       68
     ],
-    "height": "0.8 m",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Machop candies"
     },
-    "weight": "19.5 kg",
+    "weight": {
+      "amount": 19.5,
+      "unit": "kg"
+    },
     "max_hp": 116,
     "category": "Superpower Pokémon",
     "stamina": 140,
@@ -1723,12 +2119,18 @@
       67,
       68
     ],
-    "height": "1.5 m",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Machop candies"
     },
-    "weight": "70.5 kg",
+    "weight": {
+      "amount": 70.5,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Superpower Pokémon",
     "stamina": 160,
@@ -1750,8 +2152,14 @@
       67,
       68
     ],
-    "height": "1.6 m",
-    "weight": "130.0 kg",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 130,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Superpower Pokémon",
     "stamina": 180,
@@ -1774,12 +2182,18 @@
       70,
       71
     ],
-    "height": "0.7 m",
+    "height": {
+      "amount": 0.7,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Bellsprout candies"
     },
-    "weight": "4.0 kg",
+    "weight": {
+      "amount": 4,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Flower Pokémon",
     "stamina": 100,
@@ -1802,12 +2216,18 @@
       70,
       71
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Bellsprout candies"
     },
-    "weight": "6.4 kg",
+    "weight": {
+      "amount": 6.4,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Flycatcher Pokémon",
     "stamina": 130,
@@ -1830,8 +2250,14 @@
       70,
       71
     ],
-    "height": "1.7 m",
-    "weight": "15.5 kg",
+    "height": {
+      "amount": 1.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 15.5,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Flycatcher Pokémon",
     "stamina": 160,
@@ -1853,12 +2279,18 @@
       72,
       73
     ],
-    "height": "0.9 m",
+    "height": {
+      "amount": 0.9,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Tentacool candies"
     },
-    "weight": "45.5 kg",
+    "weight": {
+      "amount": 45.5,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Jellyfish Pokémon",
     "stamina": 80,
@@ -1880,8 +2312,14 @@
       72,
       73
     ],
-    "height": "1.6 m",
-    "weight": "55.0 kg",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 55,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Jellyfish Pokémon",
     "stamina": 160,
@@ -1904,12 +2342,18 @@
       75,
       76
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Geodude candies"
     },
-    "weight": "20.0 kg",
+    "weight": {
+      "amount": 20,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Rock Pokémon",
     "stamina": 80,
@@ -1932,12 +2376,18 @@
       75,
       76
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Geodude candies"
     },
-    "weight": "105.0 kg",
+    "weight": {
+      "amount": 105,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Rock Pokémon",
     "stamina": 110,
@@ -1960,8 +2410,14 @@
       75,
       76
     ],
-    "height": "1.4 m",
-    "weight": "300.0 kg",
+    "height": {
+      "amount": 1.4,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 300,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Megaton Pokémon",
     "stamina": 160,
@@ -1982,12 +2438,18 @@
       77,
       78
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Ponyta candies"
     },
-    "weight": "30.0 kg",
+    "weight": {
+      "amount": 30,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Fire Horse Pokémon",
     "stamina": 100,
@@ -2008,8 +2470,14 @@
       77,
       78
     ],
-    "height": "1.7 m",
-    "weight": "95.0 kg",
+    "height": {
+      "amount": 1.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 95,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Fire Horse Pokémon",
     "stamina": 130,
@@ -2037,12 +2505,18 @@
         199
       ]
     ],
-    "height": "1.2 m",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Slowpoke candies"
     },
-    "weight": "36.0 kg",
+    "weight": {
+      "amount": 36,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Dopey Pokémon",
     "stamina": 180,
@@ -2070,8 +2544,14 @@
         199
       ]
     ],
-    "height": "1.6 m",
-    "weight": "78.5 kg",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 78.5,
+      "unit": "kg"
+    },
     "max_hp": 156,
     "category": "Hermit Crab Pokémon",
     "stamina": 190,
@@ -2094,12 +2574,18 @@
       82,
       462
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Magnemite candies"
     },
-    "weight": "6.0 kg",
+    "weight": {
+      "amount": 6,
+      "unit": "kg"
+    },
     "max_hp": 45,
     "category": "Magnet Pokémon",
     "stamina": 50,
@@ -2122,8 +2608,14 @@
       82,
       462
     ],
-    "height": "1.0 m",
-    "weight": "60.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 60,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Magnet Pokémon",
     "stamina": 100,
@@ -2141,8 +2633,14 @@
     "description": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks.",
     "id": 83,
     "max_cp": 1133,
-    "height": "0.8 m",
-    "weight": "15.0 kg",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 15,
+      "unit": "kg"
+    },
     "max_hp": 88,
     "category": "Wild Duck Pokémon",
     "stamina": 104,
@@ -2164,12 +2662,18 @@
       84,
       85
     ],
-    "height": "1.4 m",
+    "height": {
+      "amount": 1.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Doduo candies"
     },
-    "weight": "39.2 kg",
+    "weight": {
+      "amount": 39.2,
+      "unit": "kg"
+    },
     "max_hp": 61,
     "category": "Twin Bird Pokémon",
     "stamina": 70,
@@ -2191,8 +2695,14 @@
       84,
       85
     ],
-    "height": "1.8 m",
-    "weight": "85.2 kg",
+    "height": {
+      "amount": 1.8,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 85.2,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Triple Bird Pokémon",
     "stamina": 120,
@@ -2213,12 +2723,18 @@
       86,
       87
     ],
-    "height": "1.1 m",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Seel candies"
     },
-    "weight": "90.0 kg",
+    "weight": {
+      "amount": 90,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Sea Lion Pokémon",
     "stamina": 130,
@@ -2240,8 +2756,14 @@
       86,
       87
     ],
-    "height": "1.7 m",
-    "weight": "120.0 kg",
+    "height": {
+      "amount": 1.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 120,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Sea Lion Pokémon",
     "stamina": 180,
@@ -2262,12 +2784,18 @@
       88,
       89
     ],
-    "height": "0.9 m",
+    "height": {
+      "amount": 0.9,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Grimer candies"
     },
-    "weight": "30.0 kg",
+    "weight": {
+      "amount": 30,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Sludge Pokémon",
     "stamina": 160,
@@ -2288,8 +2816,14 @@
       88,
       89
     ],
-    "height": "1.2 m",
-    "weight": "30.0 kg",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 30,
+      "unit": "kg"
+    },
     "max_hp": 171,
     "category": "Sludge Pokémon",
     "stamina": 210,
@@ -2310,12 +2844,18 @@
       90,
       91
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Shellder candies"
     },
-    "weight": "4.0 kg",
+    "weight": {
+      "amount": 4,
+      "unit": "kg"
+    },
     "max_hp": 53,
     "category": "Bivalve Pokémon",
     "stamina": 60,
@@ -2337,8 +2877,14 @@
       90,
       91
     ],
-    "height": "1.5 m",
-    "weight": "132.5 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 132.5,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Bivalve Pokémon",
     "stamina": 100,
@@ -2361,12 +2907,18 @@
       93,
       94
     ],
-    "height": "1.3 m",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Gastly candies"
     },
-    "weight": "0.1 kg",
+    "weight": {
+      "amount": 0.1,
+      "unit": "kg"
+    },
     "max_hp": 53,
     "category": "Gas Pokémon",
     "stamina": 60,
@@ -2389,12 +2941,18 @@
       93,
       94
     ],
-    "height": "1.6 m",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Gastly candies"
     },
-    "weight": "0.1 kg",
+    "weight": {
+      "amount": 0.1,
+      "unit": "kg"
+    },
     "max_hp": 77,
     "category": "Gas Pokémon",
     "stamina": 90,
@@ -2417,8 +2975,14 @@
       93,
       94
     ],
-    "height": "1.5 m",
-    "weight": "40.5 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 40.5,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Shadow Pokémon",
     "stamina": 120,
@@ -2440,8 +3004,14 @@
       95,
       208
     ],
-    "height": "8.8 m",
-    "weight": "210.0 kg",
+    "height": {
+      "amount": 8.8,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 210,
+      "unit": "kg"
+    },
     "max_hp": 61,
     "category": "Rock Snake Pokémon",
     "stamina": 70,
@@ -2462,12 +3032,18 @@
       96,
       97
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Drowzee candies"
     },
-    "weight": "32.4 kg",
+    "weight": {
+      "amount": 32.4,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Hypnosis Pokémon",
     "stamina": 120,
@@ -2488,8 +3064,14 @@
       96,
       97
     ],
-    "height": "1.6 m",
-    "weight": "75.6 kg",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 75.6,
+      "unit": "kg"
+    },
     "max_hp": 140,
     "category": "Hypnosis Pokémon",
     "stamina": 170,
@@ -2510,12 +3092,18 @@
       98,
       99
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Krabby candies"
     },
-    "weight": "6.5 kg",
+    "weight": {
+      "amount": 6.5,
+      "unit": "kg"
+    },
     "max_hp": 53,
     "category": "River Crab Pokémon",
     "stamina": 60,
@@ -2536,8 +3124,14 @@
       98,
       99
     ],
-    "height": "1.3 m",
-    "weight": "60.0 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 60,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Pincer Pokémon",
     "stamina": 110,
@@ -2558,12 +3152,18 @@
       100,
       101
     ],
-    "height": "0.5 m",
+    "height": {
+      "amount": 0.5,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Voltorb candies"
     },
-    "weight": "10.4 kg",
+    "weight": {
+      "amount": 10.4,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Ball Pokémon",
     "stamina": 80,
@@ -2584,8 +3184,14 @@
       100,
       101
     ],
-    "height": "1.2 m",
-    "weight": "66.6 kg",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 66.6,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Ball Pokémon",
     "stamina": 120,
@@ -2607,12 +3213,18 @@
       102,
       103
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "E"
     },
-    "weight": "2.5 kg",
+    "weight": {
+      "amount": 2.5,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Egg Pokémon",
     "stamina": 120,
@@ -2634,8 +3246,14 @@
       102,
       103
     ],
-    "height": "2.0 m",
-    "weight": "120.0 kg",
+    "height": {
+      "amount": 2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 120,
+      "unit": "kg"
+    },
     "max_hp": 156,
     "category": "Coconut Pokémon",
     "stamina": 190,
@@ -2656,12 +3274,18 @@
       104,
       105
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Cubone candies"
     },
-    "weight": "6.5 kg",
+    "weight": {
+      "amount": 6.5,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Lonely Pokémon",
     "stamina": 100,
@@ -2682,8 +3306,14 @@
       104,
       105
     ],
-    "height": "1.0 m",
-    "weight": "45.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 45,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Bone Keeper Pokémon",
     "stamina": 120,
@@ -2704,8 +3334,14 @@
       236,
       106
     ],
-    "height": "1.5 m",
-    "weight": "49.8 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 49.8,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Kicking Pokémon",
     "stamina": 100,
@@ -2726,8 +3362,14 @@
       236,
       107
     ],
-    "height": "1.4 m",
-    "weight": "50.2 kg",
+    "height": {
+      "amount": 1.4,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 50.2,
+      "unit": "kg"
+    },
     "max_hp": 84,
     "category": "Punching Pokémon",
     "stamina": 100,
@@ -2748,8 +3390,14 @@
       108,
       463
     ],
-    "height": "1.2 m",
-    "weight": "65.5 kg",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 65.5,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Licking Pokémon",
     "stamina": 180,
@@ -2770,12 +3418,18 @@
       109,
       110
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Koffing candies"
     },
-    "weight": "1.0 kg",
+    "weight": {
+      "amount": 1,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Poison Gas Pokémon",
     "stamina": 80,
@@ -2796,8 +3450,14 @@
       109,
       110
     ],
-    "height": "1.2 m",
-    "weight": "9.5 kg",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 9.5,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Poison Gas Pokémon",
     "stamina": 130,
@@ -2820,12 +3480,18 @@
       112,
       464
     ],
-    "height": "1.0 m",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Rhyhorn candies"
     },
-    "weight": "115.0 kg",
+    "weight": {
+      "amount": 115,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Spikes Pokémon",
     "stamina": 160,
@@ -2848,8 +3514,14 @@
       112,
       464
     ],
-    "height": "1.9 m",
-    "weight": "120.0 kg",
+    "height": {
+      "amount": 1.9,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 120,
+      "unit": "kg"
+    },
     "max_hp": 171,
     "category": "Drill Pokémon",
     "stamina": 210,
@@ -2871,8 +3543,14 @@
       113,
       242
     ],
-    "height": "1.1 m",
-    "weight": "34.6 kg",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 34.6,
+      "unit": "kg"
+    },
     "max_hp": 401,
     "category": "Egg Pokémon",
     "stamina": 500,
@@ -2893,8 +3571,14 @@
       114,
       465
     ],
-    "height": "1.0 m",
-    "weight": "35.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 35,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Vine Pokémon",
     "stamina": 130,
@@ -2911,8 +3595,14 @@
     "description": "If you come across a young Kangaskhan playing by itself, you must never disturb it or attempt to catch it. The baby Pokémon's parent is sure to be in the area, and it will become violently enraged at you.",
     "id": 115,
     "max_cp": 1875,
-    "height": "2.2 m",
-    "weight": "80.0 kg",
+    "height": {
+      "amount": 2.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 80,
+      "unit": "kg"
+    },
     "max_hp": 171,
     "category": "Parent Pokémon",
     "stamina": 210,
@@ -2934,12 +3624,18 @@
       117,
       230
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Horsea candies"
     },
-    "weight": "8.0 kg",
+    "weight": {
+      "amount": 8,
+      "unit": "kg"
+    },
     "max_hp": 53,
     "category": "Dragon Pokémon",
     "stamina": 60,
@@ -2961,8 +3657,14 @@
       117,
       230
     ],
-    "height": "1.2 m",
-    "weight": "25.0 kg",
+    "height": {
+      "amount": 1.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 25,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Dragon Pokémon",
     "stamina": 110,
@@ -2983,12 +3685,18 @@
       118,
       119
     ],
-    "height": "0.6 m",
+    "height": {
+      "amount": 0.6,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Goldeen candies"
     },
-    "weight": "15.0 kg",
+    "weight": {
+      "amount": 15,
+      "unit": "kg"
+    },
     "max_hp": 77,
     "category": "Goldfish Pokémon",
     "stamina": 90,
@@ -3009,8 +3717,14 @@
       118,
       119
     ],
-    "height": "1.3 m",
-    "weight": "39.0 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 39,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Goldfish Pokémon",
     "stamina": 160,
@@ -3031,12 +3745,18 @@
       120,
       121
     ],
-    "height": "0.8 m",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Staryu candies"
     },
-    "weight": "34.5 kg",
+    "weight": {
+      "amount": 34.5,
+      "unit": "kg"
+    },
     "max_hp": 53,
     "category": "Star Shape Pokémon",
     "stamina": 60,
@@ -3058,8 +3778,14 @@
       120,
       121
     ],
-    "height": "1.1 m",
-    "weight": "80.0 kg",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 80,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Mysterious Pokémon",
     "stamina": 120,
@@ -3081,8 +3807,14 @@
       439,
       122
     ],
-    "height": "1.3 m",
-    "weight": "54.5 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 54.5,
+      "unit": "kg"
+    },
     "max_hp": 69,
     "category": "Barrier Pokémon",
     "stamina": 80,
@@ -3104,8 +3836,14 @@
       123,
       212
     ],
-    "height": "1.5 m",
-    "weight": "56.0 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 56,
+      "unit": "kg"
+    },
     "max_hp": 116,
     "category": "Mantis Pokémon",
     "stamina": 140,
@@ -3127,8 +3865,14 @@
       238,
       124
     ],
-    "height": "1.4 m",
-    "weight": "40.6 kg",
+    "height": {
+      "amount": 1.4,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 40.6,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Human Shape Pokémon",
     "stamina": 130,
@@ -3150,8 +3894,14 @@
       125,
       466
     ],
-    "height": "1.1 m",
-    "weight": "30.0 kg",
+    "height": {
+      "amount": 1.1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 30,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Electric Pokémon",
     "stamina": 130,
@@ -3173,8 +3923,14 @@
       126,
       467
     ],
-    "height": "1.3 m",
-    "weight": "44.5 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 44.5,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Spitfire Pokémon",
     "stamina": 130,
@@ -3191,8 +3947,14 @@
     "description": "Pinsir is astoundingly strong. It can grip a foe weighing twice its weight in its horns and easily lift it. This Pokémon's movements turn sluggish in cold places.",
     "id": 127,
     "max_cp": 1950,
-    "height": "1.5 m",
-    "weight": "55.0 kg",
+    "height": {
+      "amount": 1.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 55,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Stag Beetle Pokémon",
     "stamina": 130,
@@ -3209,8 +3971,14 @@
     "description": "This Pokémon is not satisfied unless it is rampaging at all times. If there is no opponent for Tauros to battle, it will charge at thick trees and knock them down to calm itself.",
     "id": 128,
     "max_cp": 1686,
-    "height": "1.4 m",
-    "weight": "88.4 kg",
+    "height": {
+      "amount": 1.4,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 88.4,
+      "unit": "kg"
+    },
     "max_hp": 124,
     "category": "Wild Bull Pokémon",
     "stamina": 150,
@@ -3231,12 +3999,18 @@
       129,
       130
     ],
-    "height": "0.9 m",
+    "height": {
+      "amount": 0.9,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 400,
       "name": "Magikarp candies"
     },
-    "weight": "10.0 kg",
+    "weight": {
+      "amount": 10,
+      "unit": "kg"
+    },
     "max_hp": 37,
     "category": "Fish Pokémon",
     "stamina": 40,
@@ -3258,8 +4032,14 @@
       129,
       130
     ],
-    "height": "6.5 m",
-    "weight": "235.0 kg",
+    "height": {
+      "amount": 6.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 235,
+      "unit": "kg"
+    },
     "max_hp": 156,
     "category": "Atrocious Pokémon",
     "stamina": 190,
@@ -3277,8 +4057,14 @@
     "description": "People have driven Lapras almost to the point of extinction. In the evenings, this Pokémon is said to sing plaintively as it seeks what few others of its kind still remain.",
     "id": 131,
     "max_cp": 2777,
-    "height": "2.5 m",
-    "weight": "220.0 kg",
+    "height": {
+      "amount": 2.5,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 220,
+      "unit": "kg"
+    },
     "max_hp": 211,
     "category": "Transport Pokémon",
     "stamina": 260,
@@ -3295,8 +4081,14 @@
     "description": "Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong.",
     "id": 132,
     "max_cp": 809,
-    "height": "0.3 m",
-    "weight": "4.0 kg",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 4,
+      "unit": "kg"
+    },
     "max_hp": 81,
     "category": "Transform Pokémon",
     "stamina": 96,
@@ -3347,12 +4139,18 @@
         700
       ]
     ],
-    "height": "0.3 m",
+    "height": {
+      "amount": 0.3,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Eevee candies"
     },
-    "weight": "6.5 kg",
+    "weight": {
+      "amount": 6.5,
+      "unit": "kg"
+    },
     "max_hp": 92,
     "category": "Evolution Pokémon",
     "stamina": 110,
@@ -3373,8 +4171,14 @@
       133,
       134
     ],
-    "height": "1.0 m",
-    "weight": "29.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 29,
+      "unit": "kg"
+    },
     "max_hp": 211,
     "category": "Bubble Jet Pokémon",
     "stamina": 260,
@@ -3395,8 +4199,14 @@
       133,
       135
     ],
-    "height": "0.8 m",
-    "weight": "24.5 kg",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 24.5,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Lightning Pokémon",
     "stamina": 130,
@@ -3417,8 +4227,14 @@
       133,
       136
     ],
-    "height": "0.9 m",
-    "weight": "25.0 kg",
+    "height": {
+      "amount": 0.9,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 25,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Flame Pokémon",
     "stamina": 130,
@@ -3440,8 +4256,14 @@
       233,
       474
     ],
-    "height": "0.8 m",
-    "weight": "36.5 kg",
+    "height": {
+      "amount": 0.8,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 36.5,
+      "unit": "kg"
+    },
     "max_hp": 108,
     "category": "Virtual Pokémon",
     "stamina": 130,
@@ -3463,12 +4285,18 @@
       138,
       139
     ],
-    "height": "0.4 m",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Omanyte candies"
     },
-    "weight": "7.5 kg",
+    "weight": {
+      "amount": 7.5,
+      "unit": "kg"
+    },
     "max_hp": 61,
     "category": "Spiral Pokémon",
     "stamina": 70,
@@ -3490,8 +4318,14 @@
       138,
       139
     ],
-    "height": "1.0 m",
-    "weight": "35.0 kg",
+    "height": {
+      "amount": 1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 35,
+      "unit": "kg"
+    },
     "max_hp": 116,
     "category": "Spiral Pokémon",
     "stamina": 140,
@@ -3513,12 +4347,18 @@
       140,
       141
     ],
-    "height": "0.5 m",
+    "height": {
+      "amount": 0.5,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 50,
       "name": "Kabuto candies"
     },
-    "weight": "11.5 kg",
+    "weight": {
+      "amount": 11.5,
+      "unit": "kg"
+    },
     "max_hp": 53,
     "category": "Shellfish Pokémon",
     "stamina": 60,
@@ -3540,8 +4380,14 @@
       140,
       141
     ],
-    "height": "1.3 m",
-    "weight": "40.5 kg",
+    "height": {
+      "amount": 1.3,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 40.5,
+      "unit": "kg"
+    },
     "max_hp": 100,
     "category": "Shellfish Pokémon",
     "stamina": 120,
@@ -3559,8 +4405,14 @@
     "description": "Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from genetic material extracted from amber. It is imagined to have been the king of the skies in ancient times.",
     "id": 142,
     "max_cp": 1994,
-    "height": "1.8 m",
-    "weight": "59.0 kg",
+    "height": {
+      "amount": 1.8,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 59,
+      "unit": "kg"
+    },
     "max_hp": 132,
     "category": "Fossil Pokémon",
     "stamina": 160,
@@ -3581,8 +4433,14 @@
       446,
       143
     ],
-    "height": "2.1 m",
-    "weight": "460.0 kg",
+    "height": {
+      "amount": 2.1,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 460,
+      "unit": "kg"
+    },
     "max_hp": 258,
     "category": "Sleeping Pokémon",
     "stamina": 320,
@@ -3600,8 +4458,14 @@
     "description": "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.",
     "id": 144,
     "max_cp": 2776,
-    "height": "1.7 m",
-    "weight": "55.4 kg",
+    "height": {
+      "amount": 1.7,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 55.4,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Freeze Pokémon",
     "stamina": 180,
@@ -3619,8 +4483,14 @@
     "description": "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.",
     "id": 145,
     "max_cp": 2907,
-    "height": "1.6 m",
-    "weight": "52.6 kg",
+    "height": {
+      "amount": 1.6,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 52.6,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Electric Pokémon",
     "stamina": 180,
@@ -3638,8 +4508,14 @@
     "description": "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.",
     "id": 146,
     "max_cp": 3028,
-    "height": "2.0 m",
-    "weight": "60.0 kg",
+    "height": {
+      "amount": 2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 60,
+      "unit": "kg"
+    },
     "max_hp": 148,
     "category": "Flame Pokémon",
     "stamina": 180,
@@ -3661,12 +4537,18 @@
       148,
       149
     ],
-    "height": "1.8 m",
+    "height": {
+      "amount": 1.8,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 25,
       "name": "Dratini candies"
     },
-    "weight": "3.3 kg",
+    "weight": {
+      "amount": 3.3,
+      "unit": "kg"
+    },
     "max_hp": 70,
     "category": "Dragon Pokémon",
     "stamina": 82,
@@ -3688,12 +4570,18 @@
       148,
       149
     ],
-    "height": "4.0 m",
+    "height": {
+      "amount": 4,
+      "unit": "m"
+    },
     "evolution_requirements": {
       "amount": 100,
       "name": "Dratini candies"
     },
-    "weight": "16.5 kg",
+    "weight": {
+      "amount": 16.5,
+      "unit": "kg"
+    },
     "max_hp": 102,
     "category": "Dragon Pokémon",
     "stamina": 122,
@@ -3716,8 +4604,14 @@
       148,
       149
     ],
-    "height": "2.2 m",
-    "weight": "210.0 kg",
+    "height": {
+      "amount": 2.2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 210,
+      "unit": "kg"
+    },
     "max_hp": 149,
     "category": "Dragon Pokémon",
     "stamina": 182,
@@ -3734,8 +4628,14 @@
     "description": "Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon's body, they failed to endow Mewtwo with a compassionate heart.",
     "id": 150,
     "max_cp": 3904,
-    "height": "2.0 m",
-    "weight": "122.0 kg",
+    "height": {
+      "amount": 2,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 122,
+      "unit": "kg"
+    },
     "max_hp": 173,
     "category": "Genetic Pokémon",
     "stamina": 212,
@@ -3752,8 +4652,14 @@
     "description": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
     "id": 151,
     "max_cp": 3087,
-    "height": "0.4 m",
-    "weight": "4.0 kg",
+    "height": {
+      "amount": 0.4,
+      "unit": "m"
+    },
+    "weight": {
+      "amount": 4,
+      "unit": "kg"
+    },
     "max_hp": 163,
     "category": "New Species Pokémon",
     "stamina": 200,
