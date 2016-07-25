@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     textAlign: Platform.OS === 'ios' ? 'center' : 'left',
     fontFamily: 'Lato',
     fontSize: Platform.OS === 'ios' ? 16 : 18,
-    marginHorizontal: 8,
+    margin: 8,
   },
 
   image: {
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
 
   row: {
     flexDirection: 'row',
+    marginVertical: 4,
   },
 
   meta: {
@@ -85,20 +86,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     opacity: 0.5,
     width: 72,
-    marginVertical: 2,
   },
 
   info: {
     color: '#222',
     fontFamily: 'Lato',
     fontSize: 13,
-    marginVertical: 2,
     width: 120,
   },
 
   tabview: {
     flex: 1,
-    backgroundColor: '#f6f6f6',
   },
 
   tabbar: {
