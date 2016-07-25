@@ -20,7 +20,12 @@
     },
     "weight": "6.9 kg",
     "max_hp": 77,
-    "category": "Seed Pokémon"
+    "category": "Seed Pokémon",
+    "stamina": 90,
+    "attack": 126,
+    "defense": 126,
+    "capture_rate": 0.16,
+    "flee_rate": 0.1
   },
   {
     "name": "Ivysaur",
@@ -43,7 +48,12 @@
     },
     "weight": "13.0 kg",
     "max_hp": 100,
-    "category": "Seed Pokémon"
+    "category": "Seed Pokémon",
+    "stamina": 120,
+    "attack": 156,
+    "defense": 158,
+    "capture_rate": 0.08,
+    "flee_rate": 0.07
   },
   {
     "name": "Venusaur",
@@ -62,7 +72,12 @@
     "height": "2.0 m",
     "weight": "100.0 kg",
     "max_hp": 132,
-    "category": "Seed Pokémon"
+    "category": "Seed Pokémon",
+    "stamina": 160,
+    "attack": 198,
+    "defense": 200,
+    "capture_rate": 0.04,
+    "flee_rate": 0.05
   },
   {
     "name": "Charmander",
@@ -84,7 +99,12 @@
     },
     "weight": "8.5 kg",
     "max_hp": 67,
-    "category": "Lizard Pokémon"
+    "category": "Lizard Pokémon",
+    "stamina": 78,
+    "attack": 128,
+    "defense": 108,
+    "capture_rate": 0.16,
+    "flee_rate": 0.1
   },
   {
     "name": "Charmeleon",
@@ -106,7 +126,12 @@
     },
     "weight": "19.0 kg",
     "max_hp": 97,
-    "category": "Flame Pokémon"
+    "category": "Flame Pokémon",
+    "stamina": 116,
+    "attack": 160,
+    "defense": 140,
+    "capture_rate": 0.08,
+    "flee_rate": 0.07
   },
   {
     "name": "Charizard",
@@ -125,7 +150,12 @@
     "height": "1.7 m",
     "weight": "90.5 kg",
     "max_hp": 129,
-    "category": "Flame Pokémon"
+    "category": "Flame Pokémon",
+    "stamina": 156,
+    "attack": 212,
+    "defense": 182,
+    "capture_rate": 0.04,
+    "flee_rate": 0.05
   },
   {
     "name": "Squirtle",
@@ -147,7 +177,12 @@
     },
     "weight": "9.0 kg",
     "max_hp": 75,
-    "category": "Tiny Turtle Pokémon"
+    "category": "Tiny Turtle Pokémon",
+    "stamina": 88,
+    "attack": 112,
+    "defense": 142,
+    "capture_rate": 0.16,
+    "flee_rate": 0.1
   },
   {
     "name": "Wartortle",
@@ -169,7 +204,12 @@
     },
     "weight": "22.5 kg",
     "max_hp": 99,
-    "category": "Turtle Pokémon"
+    "category": "Turtle Pokémon",
+    "stamina": 118,
+    "attack": 144,
+    "defense": 176,
+    "capture_rate": 0.08,
+    "flee_rate": 0.07
   },
   {
     "name": "Blastoise",
@@ -187,7 +227,12 @@
     "height": "1.6 m",
     "weight": "85.5 kg",
     "max_hp": 130,
-    "category": "Shellfish Pokémon"
+    "category": "Shellfish Pokémon",
+    "stamina": 158,
+    "attack": 186,
+    "defense": 222,
+    "capture_rate": 0.04,
+    "flee_rate": 0.05
   },
   {
     "name": "Caterpie",
@@ -209,7 +254,12 @@
     },
     "weight": "2.9 kg",
     "max_hp": 77,
-    "category": "Worm Pokémon"
+    "category": "Worm Pokémon",
+    "stamina": 90,
+    "attack": 62,
+    "defense": 66,
+    "capture_rate": 0.4,
+    "flee_rate": 0.2
   },
   {
     "name": "Metapod",
@@ -231,7 +281,12 @@
     },
     "weight": "9.9 kg",
     "max_hp": 84,
-    "category": "Cocoon Pokémon"
+    "category": "Cocoon Pokémon",
+    "stamina": 100,
+    "attack": 56,
+    "defense": 86,
+    "capture_rate": 0.2,
+    "flee_rate": 0.09
   },
   {
     "name": "Butterfree",
@@ -250,7 +305,12 @@
     "height": "1.1 m",
     "weight": "32.0 kg",
     "max_hp": 100,
-    "category": "Butterfly Pokémon"
+    "category": "Butterfly Pokémon",
+    "stamina": 120,
+    "attack": 144,
+    "defense": 144,
+    "capture_rate": 0.1,
+    "flee_rate": 0.06
   },
   {
     "name": "Weedle",
@@ -273,7 +333,12 @@
     },
     "weight": "3.2 kg",
     "max_hp": 69,
-    "category": "Hairy Bug Pokémon"
+    "category": "Hairy Bug Pokémon",
+    "stamina": 80,
+    "attack": 68,
+    "defense": 64,
+    "capture_rate": 0.4,
+    "flee_rate": 0.2
   },
   {
     "name": "Kakuna",
@@ -296,7 +361,12 @@
     },
     "weight": "10.0 kg",
     "max_hp": 77,
-    "category": "Cocoon Pokémon"
+    "category": "Cocoon Pokémon",
+    "stamina": 90,
+    "attack": 62,
+    "defense": 82,
+    "capture_rate": 0.2,
+    "flee_rate": 0.09
   },
   {
     "name": "Beedrill",
@@ -315,7 +385,12 @@
     "height": "1.0 m",
     "weight": "29.5 kg",
     "max_hp": 108,
-    "category": "Poison Bee Pokémon"
+    "category": "Poison Bee Pokémon",
+    "stamina": 130,
+    "attack": 144,
+    "defense": 130,
+    "capture_rate": 0.1,
+    "flee_rate": 0.06
   },
   {
     "name": "Pidgey",
@@ -338,7 +413,12 @@
     },
     "weight": "1.8 kg",
     "max_hp": 69,
-    "category": "Tiny Bird Pokémon"
+    "category": "Tiny Bird Pokémon",
+    "stamina": 80,
+    "attack": 94,
+    "defense": 90,
+    "capture_rate": 0.4,
+    "flee_rate": 0.2
   },
   {
     "name": "Pidgeotto",
@@ -361,7 +441,12 @@
     },
     "weight": "30.0 kg",
     "max_hp": 105,
-    "category": "Bird Pokémon"
+    "category": "Bird Pokémon",
+    "stamina": 126,
+    "attack": 126,
+    "defense": 122,
+    "capture_rate": 0.2,
+    "flee_rate": 0.09
   },
   {
     "name": "Pidgeot",
@@ -380,7 +465,12 @@
     "height": "1.5 m",
     "weight": "39.5 kg",
     "max_hp": 137,
-    "category": "Bird Pokémon"
+    "category": "Bird Pokémon",
+    "stamina": 166,
+    "attack": 170,
+    "defense": 166,
+    "capture_rate": 0.1,
+    "flee_rate": 0.06
   },
   {
     "name": "Rattata",
@@ -401,7 +491,12 @@
     },
     "weight": "3.5 kg",
     "max_hp": 53,
-    "category": "Mouse Pokémon"
+    "category": "Mouse Pokémon",
+    "stamina": 60,
+    "attack": 92,
+    "defense": 86,
+    "capture_rate": 0.4,
+    "flee_rate": 0.2
   },
   {
     "name": "Raticate",
@@ -418,7 +513,12 @@
     "height": "0.7 m",
     "weight": "18.5 kg",
     "max_hp": 92,
-    "category": "Mouse Pokémon"
+    "category": "Mouse Pokémon",
+    "stamina": 110,
+    "attack": 146,
+    "defense": 150,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Spearow",
@@ -440,7 +540,12 @@
     },
     "weight": "2.0 kg",
     "max_hp": 69,
-    "category": "Tiny Bird Pokémon"
+    "category": "Tiny Bird Pokémon",
+    "stamina": 80,
+    "attack": 102,
+    "defense": 78,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Fearow",
@@ -458,7 +563,12 @@
     "height": "1.2 m",
     "weight": "38.0 kg",
     "max_hp": 108,
-    "category": "Beak Pokémon"
+    "category": "Beak Pokémon",
+    "stamina": 130,
+    "attack": 168,
+    "defense": 146,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Ekans",
@@ -479,7 +589,12 @@
     },
     "weight": "6.9 kg",
     "max_hp": 61,
-    "category": "Snake Pokémon"
+    "category": "Snake Pokémon",
+    "stamina": 70,
+    "attack": 112,
+    "defense": 112,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Arbok",
@@ -496,7 +611,12 @@
     "height": "3.5 m",
     "weight": "65.0 kg",
     "max_hp": 100,
-    "category": "Cobra Pokémon"
+    "category": "Cobra Pokémon",
+    "stamina": 120,
+    "attack": 166,
+    "defense": 166,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Pikachu",
@@ -518,7 +638,12 @@
     },
     "weight": "6.0 kg",
     "max_hp": 61,
-    "category": "Mouse Pokémon"
+    "category": "Mouse Pokémon",
+    "stamina": 70,
+    "attack": 124,
+    "defense": 108,
+    "capture_rate": 0.16,
+    "flee_rate": 0.1
   },
   {
     "name": "Raichu",
@@ -536,7 +661,12 @@
     "height": "0.8 m",
     "weight": "30.0 kg",
     "max_hp": 100,
-    "category": "Mouse Pokémon"
+    "category": "Mouse Pokémon",
+    "stamina": 120,
+    "attack": 200,
+    "defense": 154,
+    "capture_rate": 0.08,
+    "flee_rate": 0.06
   },
   {
     "name": "Sandshrew",
@@ -557,7 +687,12 @@
     },
     "weight": "12.0 kg",
     "max_hp": 84,
-    "category": "Mouse Pokémon"
+    "category": "Mouse Pokémon",
+    "stamina": 100,
+    "attack": 90,
+    "defense": 114,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Sandslash",
@@ -574,7 +709,12 @@
     "height": "1.0 m",
     "weight": "29.5 kg",
     "max_hp": 124,
-    "category": "Mouse Pokémon"
+    "category": "Mouse Pokémon",
+    "stamina": 150,
+    "attack": 150,
+    "defense": 172,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Nidoran♀",
@@ -592,7 +732,12 @@
     "height": "0.4 m",
     "weight": "7.0 kg",
     "max_hp": 92,
-    "category": "Poison Pin Pokémon"
+    "category": "Poison Pin Pokémon",
+    "stamina": 110,
+    "attack": 100,
+    "defense": 104,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Nidorina",
@@ -614,7 +759,12 @@
     },
     "weight": "20.0 kg",
     "max_hp": 116,
-    "category": "Poison Pin Pokémon"
+    "category": "Poison Pin Pokémon",
+    "stamina": 140,
+    "attack": 132,
+    "defense": 136,
+    "capture_rate": 0.2,
+    "flee_rate": 0.07
   },
   {
     "name": "Nidoqueen",
@@ -633,7 +783,12 @@
     "height": "1.3 m",
     "weight": "60.0 kg",
     "max_hp": 148,
-    "category": "Drill Pokémon"
+    "category": "Drill Pokémon",
+    "stamina": 180,
+    "attack": 184,
+    "defense": 190,
+    "capture_rate": 0.1,
+    "flee_rate": 0.05
   },
   {
     "name": "Nidoran♂",
@@ -651,7 +806,12 @@
     "height": "0.5 m",
     "weight": "9.0 kg",
     "max_hp": 78,
-    "category": "Poison Pin Pokémon"
+    "category": "Poison Pin Pokémon",
+    "stamina": 92,
+    "attack": 110,
+    "defense": 94,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Nidorino",
@@ -673,7 +833,12 @@
     },
     "weight": "19.5 kg",
     "max_hp": 102,
-    "category": "Poison Pin Pokémon"
+    "category": "Poison Pin Pokémon",
+    "stamina": 122,
+    "attack": 142,
+    "defense": 128,
+    "capture_rate": 0.2,
+    "flee_rate": 0.07
   },
   {
     "name": "Nidoking",
@@ -692,7 +857,12 @@
     "height": "1.4 m",
     "weight": "62.0 kg",
     "max_hp": 133,
-    "category": "Drill Pokémon"
+    "category": "Drill Pokémon",
+    "stamina": 162,
+    "attack": 204,
+    "defense": 170,
+    "capture_rate": 0.1,
+    "flee_rate": 0.05
   },
   {
     "name": "Clefairy",
@@ -714,7 +884,12 @@
     },
     "weight": "7.5 kg",
     "max_hp": 116,
-    "category": "Fairy Pokémon"
+    "category": "Fairy Pokémon",
+    "stamina": 140,
+    "attack": 116,
+    "defense": 124,
+    "capture_rate": 0.24,
+    "flee_rate": 0.1
   },
   {
     "name": "Clefable",
@@ -732,7 +907,12 @@
     "height": "1.3 m",
     "weight": "40.0 kg",
     "max_hp": 156,
-    "category": "Fairy Pokémon"
+    "category": "Fairy Pokémon",
+    "stamina": 190,
+    "attack": 178,
+    "defense": 178,
+    "capture_rate": 0.08,
+    "flee_rate": 0.06
   },
   {
     "name": "Vulpix",
@@ -753,7 +933,12 @@
     },
     "weight": "9.9 kg",
     "max_hp": 65,
-    "category": "Fox Pokémon"
+    "category": "Fox Pokémon",
+    "stamina": 76,
+    "attack": 106,
+    "defense": 118,
+    "capture_rate": 0.24,
+    "flee_rate": 0.1
   },
   {
     "name": "Ninetales",
@@ -770,7 +955,12 @@
     "height": "1.1 m",
     "weight": "19.9 kg",
     "max_hp": 121,
-    "category": "Fox Pokémon"
+    "category": "Fox Pokémon",
+    "stamina": 146,
+    "attack": 176,
+    "defense": 194,
+    "capture_rate": 0.08,
+    "flee_rate": 0.06
   },
   {
     "name": "Jigglypuff",
@@ -793,7 +983,12 @@
     },
     "weight": "5.5 kg",
     "max_hp": 187,
-    "category": "Balloon Pokémon"
+    "category": "Balloon Pokémon",
+    "stamina": 230,
+    "attack": 98,
+    "defense": 54,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Wigglytuff",
@@ -812,7 +1007,12 @@
     "height": "1.0 m",
     "weight": "12.0 kg",
     "max_hp": 227,
-    "category": "Balloon Pokémon"
+    "category": "Balloon Pokémon",
+    "stamina": 280,
+    "attack": 168,
+    "defense": 108,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Zubat",
@@ -835,7 +1035,12 @@
     },
     "weight": "7.5 kg",
     "max_hp": 69,
-    "category": "Bat Pokémon"
+    "category": "Bat Pokémon",
+    "stamina": 80,
+    "attack": 88,
+    "defense": 90,
+    "capture_rate": 0.4,
+    "flee_rate": 0.2
   },
   {
     "name": "Golbat",
@@ -854,7 +1059,12 @@
     "height": "1.6 m",
     "weight": "55.0 kg",
     "max_hp": 124,
-    "category": "Bat Pokémon"
+    "category": "Bat Pokémon",
+    "stamina": 150,
+    "attack": 164,
+    "defense": 164,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Oddish",
@@ -884,7 +1094,12 @@
     },
     "weight": "5.4 kg",
     "max_hp": 77,
-    "category": "Weed Pokémon"
+    "category": "Weed Pokémon",
+    "stamina": 90,
+    "attack": 134,
+    "defense": 130,
+    "capture_rate": 0.48,
+    "flee_rate": 0.15
   },
   {
     "name": "Gloom",
@@ -914,7 +1129,12 @@
     },
     "weight": "8.6 kg",
     "max_hp": 100,
-    "category": "Weed Pokémon"
+    "category": "Weed Pokémon",
+    "stamina": 120,
+    "attack": 162,
+    "defense": 158,
+    "capture_rate": 0.24,
+    "flee_rate": 0.07
   },
   {
     "name": "Vileplume",
@@ -940,7 +1160,12 @@
     "height": "1.2 m",
     "weight": "18.6 kg",
     "max_hp": 124,
-    "category": "Flower Pokémon"
+    "category": "Flower Pokémon",
+    "stamina": 150,
+    "attack": 202,
+    "defense": 190,
+    "capture_rate": 0.12,
+    "flee_rate": 0.05
   },
   {
     "name": "Paras",
@@ -962,7 +1187,12 @@
     },
     "weight": "5.4 kg",
     "max_hp": 61,
-    "category": "Mushroom Pokémon"
+    "category": "Mushroom Pokémon",
+    "stamina": 70,
+    "attack": 122,
+    "defense": 120,
+    "capture_rate": 0.32,
+    "flee_rate": 0.15
   },
   {
     "name": "Parasect",
@@ -980,7 +1210,12 @@
     "height": "1.0 m",
     "weight": "29.5 kg",
     "max_hp": 100,
-    "category": "Mushroom Pokémon"
+    "category": "Mushroom Pokémon",
+    "stamina": 120,
+    "attack": 162,
+    "defense": 170,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Venonat",
@@ -1002,7 +1237,12 @@
     },
     "weight": "30.0 kg",
     "max_hp": 100,
-    "category": "Insect Pokémon"
+    "category": "Insect Pokémon",
+    "stamina": 120,
+    "attack": 108,
+    "defense": 118,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Venomoth",
@@ -1020,7 +1260,12 @@
     "height": "1.5 m",
     "weight": "12.5 kg",
     "max_hp": 116,
-    "category": "Poison Moth Pokémon"
+    "category": "Poison Moth Pokémon",
+    "stamina": 140,
+    "attack": 172,
+    "defense": 154,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Diglett",
@@ -1041,7 +1286,12 @@
     },
     "weight": "0.8 kg",
     "max_hp": 21,
-    "category": "Mole Pokémon"
+    "category": "Mole Pokémon",
+    "stamina": 20,
+    "attack": 108,
+    "defense": 86,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Dugtrio",
@@ -1058,7 +1308,12 @@
     "height": "0.7 m",
     "weight": "33.3 kg",
     "max_hp": 61,
-    "category": "Mole Pokémon"
+    "category": "Mole Pokémon",
+    "stamina": 70,
+    "attack": 148,
+    "defense": 140,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Meowth",
@@ -1079,7 +1334,12 @@
     },
     "weight": "4.2 kg",
     "max_hp": 69,
-    "category": "Scratch Cat Pokémon"
+    "category": "Scratch Cat Pokémon",
+    "stamina": 80,
+    "attack": 104,
+    "defense": 94,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Persian",
@@ -1096,7 +1356,12 @@
     "height": "1.0 m",
     "weight": "32.0 kg",
     "max_hp": 108,
-    "category": "Classy Cat Pokémon"
+    "category": "Classy Cat Pokémon",
+    "stamina": 130,
+    "attack": 156,
+    "defense": 146,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Psyduck",
@@ -1117,7 +1382,12 @@
     },
     "weight": "19.6 kg",
     "max_hp": 84,
-    "category": "Duck Pokémon"
+    "category": "Duck Pokémon",
+    "stamina": 100,
+    "attack": 132,
+    "defense": 112,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Golduck",
@@ -1134,7 +1404,12 @@
     "height": "1.7 m",
     "weight": "76.6 kg",
     "max_hp": 132,
-    "category": "Duck Pokémon"
+    "category": "Duck Pokémon",
+    "stamina": 160,
+    "attack": 194,
+    "defense": 176,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Mankey",
@@ -1155,7 +1430,12 @@
     },
     "weight": "28.0 kg",
     "max_hp": 69,
-    "category": "Pig Monkey Pokémon"
+    "category": "Pig Monkey Pokémon",
+    "stamina": 80,
+    "attack": 122,
+    "defense": 96,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Primeape",
@@ -1172,7 +1452,12 @@
     "height": "1.0 m",
     "weight": "32.0 kg",
     "max_hp": 108,
-    "category": "Pig Monkey Pokémon"
+    "category": "Pig Monkey Pokémon",
+    "stamina": 130,
+    "attack": 178,
+    "defense": 150,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Growlithe",
@@ -1193,7 +1478,12 @@
     },
     "weight": "19.0 kg",
     "max_hp": 92,
-    "category": "Puppy Pokémon"
+    "category": "Puppy Pokémon",
+    "stamina": 110,
+    "attack": 156,
+    "defense": 110,
+    "capture_rate": 0.24,
+    "flee_rate": 0.1
   },
   {
     "name": "Arcanine",
@@ -1210,7 +1500,12 @@
     "height": "1.9 m",
     "weight": "155.0 kg",
     "max_hp": 148,
-    "category": "Legendary Pokémon"
+    "category": "Legendary Pokémon",
+    "stamina": 180,
+    "attack": 230,
+    "defense": 180,
+    "capture_rate": 0.08,
+    "flee_rate": 0.06
   },
   {
     "name": "Poliwag",
@@ -1239,7 +1534,12 @@
     },
     "weight": "12.4 kg",
     "max_hp": 69,
-    "category": "Tadpole Pokémon"
+    "category": "Tadpole Pokémon",
+    "stamina": 80,
+    "attack": 108,
+    "defense": 98,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Poliwhirl",
@@ -1268,7 +1568,12 @@
     },
     "weight": "20.0 kg",
     "max_hp": 108,
-    "category": "Tadpole Pokémon"
+    "category": "Tadpole Pokémon",
+    "stamina": 130,
+    "attack": 132,
+    "defense": 132,
+    "capture_rate": 0.2,
+    "flee_rate": 0.07
   },
   {
     "name": "Poliwrath",
@@ -1294,7 +1599,12 @@
     "height": "1.3 m",
     "weight": "54.0 kg",
     "max_hp": 148,
-    "category": "Tadpole Pokémon"
+    "category": "Tadpole Pokémon",
+    "stamina": 180,
+    "attack": 180,
+    "defense": 202,
+    "capture_rate": 0.1,
+    "flee_rate": 0.05
   },
   {
     "name": "Abra",
@@ -1316,7 +1626,12 @@
     },
     "weight": "19.5 kg",
     "max_hp": 45,
-    "category": "Psi Pokémon"
+    "category": "Psi Pokémon",
+    "stamina": 50,
+    "attack": 110,
+    "defense": 76,
+    "capture_rate": 0.4,
+    "flee_rate": 0.99
   },
   {
     "name": "Kadabra",
@@ -1338,7 +1653,12 @@
     },
     "weight": "56.5 kg",
     "max_hp": 69,
-    "category": "Psi Pokémon"
+    "category": "Psi Pokémon",
+    "stamina": 80,
+    "attack": 150,
+    "defense": 112,
+    "capture_rate": 0.2,
+    "flee_rate": 0.07
   },
   {
     "name": "Alakazam",
@@ -1356,7 +1676,12 @@
     "height": "1.5 m",
     "weight": "48.0 kg",
     "max_hp": 92,
-    "category": "Psi Pokémon"
+    "category": "Psi Pokémon",
+    "stamina": 110,
+    "attack": 186,
+    "defense": 152,
+    "capture_rate": 0.1,
+    "flee_rate": 0.05
   },
   {
     "name": "Machop",
@@ -1378,7 +1703,12 @@
     },
     "weight": "19.5 kg",
     "max_hp": 116,
-    "category": "Superpower Pokémon"
+    "category": "Superpower Pokémon",
+    "stamina": 140,
+    "attack": 118,
+    "defense": 96,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Machoke",
@@ -1400,7 +1730,12 @@
     },
     "weight": "70.5 kg",
     "max_hp": 132,
-    "category": "Superpower Pokémon"
+    "category": "Superpower Pokémon",
+    "stamina": 160,
+    "attack": 154,
+    "defense": 144,
+    "capture_rate": 0.2,
+    "flee_rate": 0.07
   },
   {
     "name": "Machamp",
@@ -1418,7 +1753,12 @@
     "height": "1.6 m",
     "weight": "130.0 kg",
     "max_hp": 148,
-    "category": "Superpower Pokémon"
+    "category": "Superpower Pokémon",
+    "stamina": 180,
+    "attack": 198,
+    "defense": 180,
+    "capture_rate": 0.1,
+    "flee_rate": 0.05
   },
   {
     "name": "Bellsprout",
@@ -1441,7 +1781,12 @@
     },
     "weight": "4.0 kg",
     "max_hp": 84,
-    "category": "Flower Pokémon"
+    "category": "Flower Pokémon",
+    "stamina": 100,
+    "attack": 158,
+    "defense": 78,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Weepinbell",
@@ -1464,7 +1809,12 @@
     },
     "weight": "6.4 kg",
     "max_hp": 108,
-    "category": "Flycatcher Pokémon"
+    "category": "Flycatcher Pokémon",
+    "stamina": 130,
+    "attack": 190,
+    "defense": 110,
+    "capture_rate": 0.2,
+    "flee_rate": 0.07
   },
   {
     "name": "Victreebel",
@@ -1483,7 +1833,12 @@
     "height": "1.7 m",
     "weight": "15.5 kg",
     "max_hp": 132,
-    "category": "Flycatcher Pokémon"
+    "category": "Flycatcher Pokémon",
+    "stamina": 160,
+    "attack": 222,
+    "defense": 152,
+    "capture_rate": 0.1,
+    "flee_rate": 0.05
   },
   {
     "name": "Tentacool",
@@ -1505,7 +1860,12 @@
     },
     "weight": "45.5 kg",
     "max_hp": 69,
-    "category": "Jellyfish Pokémon"
+    "category": "Jellyfish Pokémon",
+    "stamina": 80,
+    "attack": 106,
+    "defense": 136,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Tentacruel",
@@ -1523,7 +1883,12 @@
     "height": "1.6 m",
     "weight": "55.0 kg",
     "max_hp": 132,
-    "category": "Jellyfish Pokémon"
+    "category": "Jellyfish Pokémon",
+    "stamina": 160,
+    "attack": 170,
+    "defense": 196,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Geodude",
@@ -1546,7 +1911,12 @@
     },
     "weight": "20.0 kg",
     "max_hp": 69,
-    "category": "Rock Pokémon"
+    "category": "Rock Pokémon",
+    "stamina": 80,
+    "attack": 106,
+    "defense": 118,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Graveler",
@@ -1569,7 +1939,12 @@
     },
     "weight": "105.0 kg",
     "max_hp": 92,
-    "category": "Rock Pokémon"
+    "category": "Rock Pokémon",
+    "stamina": 110,
+    "attack": 142,
+    "defense": 156,
+    "capture_rate": 0.2,
+    "flee_rate": 0.07
   },
   {
     "name": "Golem",
@@ -1588,7 +1963,12 @@
     "height": "1.4 m",
     "weight": "300.0 kg",
     "max_hp": 132,
-    "category": "Megaton Pokémon"
+    "category": "Megaton Pokémon",
+    "stamina": 160,
+    "attack": 176,
+    "defense": 198,
+    "capture_rate": 0.1,
+    "flee_rate": 0.05
   },
   {
     "name": "Ponyta",
@@ -1609,7 +1989,12 @@
     },
     "weight": "30.0 kg",
     "max_hp": 84,
-    "category": "Fire Horse Pokémon"
+    "category": "Fire Horse Pokémon",
+    "stamina": 100,
+    "attack": 168,
+    "defense": 138,
+    "capture_rate": 0.32,
+    "flee_rate": 0.1
   },
   {
     "name": "Rapidash",
@@ -1626,7 +2011,12 @@
     "height": "1.7 m",
     "weight": "95.0 kg",
     "max_hp": 108,
-    "category": "Fire Horse Pokémon"
+    "category": "Fire Horse Pokémon",
+    "stamina": 130,
+    "attack": 200,
+    "defense": 170,
+    "capture_rate": 0.12,
+    "flee_rate": 0.06
   },
   {
     "name": "Slowpoke",
@@ -1654,7 +2044,12 @@
     },
     "weight": "36.0 kg",
     "max_hp": 148,
-    "category": "Dopey Pokémon"
+    "category": "Dopey Pokémon",
+    "stamina": 180,
+    "attack": 110,
+    "defense": 110,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Slowbro",
@@ -1678,7 +2073,12 @@
     "height": "1.6 m",
     "weight": "78.5 kg",
     "max_hp": 156,
-    "category": "Hermit Crab Pokémon"
+    "category": "Hermit Crab Pokémon",
+    "stamina": 190,
+    "attack": 184,
+    "defense": 198,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Magnemite",
@@ -1701,7 +2101,12 @@
     },
     "weight": "6.0 kg",
     "max_hp": 45,
-    "category": "Magnet Pokémon"
+    "category": "Magnet Pokémon",
+    "stamina": 50,
+    "attack": 128,
+    "defense": 138,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Magneton",
@@ -1720,7 +2125,12 @@
     "height": "1.0 m",
     "weight": "60.0 kg",
     "max_hp": 84,
-    "category": "Magnet Pokémon"
+    "category": "Magnet Pokémon",
+    "stamina": 100,
+    "attack": 186,
+    "defense": 180,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Farfetch'd",
@@ -1734,7 +2144,12 @@
     "height": "0.8 m",
     "weight": "15.0 kg",
     "max_hp": 88,
-    "category": "Wild Duck Pokémon"
+    "category": "Wild Duck Pokémon",
+    "stamina": 104,
+    "attack": 138,
+    "defense": 132,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Doduo",
@@ -1756,7 +2171,12 @@
     },
     "weight": "39.2 kg",
     "max_hp": 61,
-    "category": "Twin Bird Pokémon"
+    "category": "Twin Bird Pokémon",
+    "stamina": 70,
+    "attack": 126,
+    "defense": 96,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Dodrio",
@@ -1774,7 +2194,12 @@
     "height": "1.8 m",
     "weight": "85.2 kg",
     "max_hp": 100,
-    "category": "Triple Bird Pokémon"
+    "category": "Triple Bird Pokémon",
+    "stamina": 120,
+    "attack": 182,
+    "defense": 150,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Seel",
@@ -1795,7 +2220,12 @@
     },
     "weight": "90.0 kg",
     "max_hp": 108,
-    "category": "Sea Lion Pokémon"
+    "category": "Sea Lion Pokémon",
+    "stamina": 130,
+    "attack": 104,
+    "defense": 138,
+    "capture_rate": 0.4,
+    "flee_rate": 0.09
   },
   {
     "name": "Dewgong",
@@ -1813,7 +2243,12 @@
     "height": "1.7 m",
     "weight": "120.0 kg",
     "max_hp": 148,
-    "category": "Sea Lion Pokémon"
+    "category": "Sea Lion Pokémon",
+    "stamina": 180,
+    "attack": 156,
+    "defense": 192,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Grimer",
@@ -1834,7 +2269,12 @@
     },
     "weight": "30.0 kg",
     "max_hp": 132,
-    "category": "Sludge Pokémon"
+    "category": "Sludge Pokémon",
+    "stamina": 160,
+    "attack": 124,
+    "defense": 110,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Muk",
@@ -1851,7 +2291,12 @@
     "height": "1.2 m",
     "weight": "30.0 kg",
     "max_hp": 171,
-    "category": "Sludge Pokémon"
+    "category": "Sludge Pokémon",
+    "stamina": 210,
+    "attack": 180,
+    "defense": 188,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Shellder",
@@ -1872,7 +2317,12 @@
     },
     "weight": "4.0 kg",
     "max_hp": 53,
-    "category": "Bivalve Pokémon"
+    "category": "Bivalve Pokémon",
+    "stamina": 60,
+    "attack": 120,
+    "defense": 112,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Cloyster",
@@ -1890,7 +2340,12 @@
     "height": "1.5 m",
     "weight": "132.5 kg",
     "max_hp": 84,
-    "category": "Bivalve Pokémon"
+    "category": "Bivalve Pokémon",
+    "stamina": 100,
+    "attack": 196,
+    "defense": 196,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Gastly",
@@ -1913,7 +2368,12 @@
     },
     "weight": "0.1 kg",
     "max_hp": 53,
-    "category": "Gas Pokémon"
+    "category": "Gas Pokémon",
+    "stamina": 60,
+    "attack": 136,
+    "defense": 82,
+    "capture_rate": 0.32,
+    "flee_rate": 0.1
   },
   {
     "name": "Haunter",
@@ -1936,7 +2396,12 @@
     },
     "weight": "0.1 kg",
     "max_hp": 77,
-    "category": "Gas Pokémon"
+    "category": "Gas Pokémon",
+    "stamina": 90,
+    "attack": 172,
+    "defense": 118,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Gengar",
@@ -1955,7 +2420,12 @@
     "height": "1.5 m",
     "weight": "40.5 kg",
     "max_hp": 100,
-    "category": "Shadow Pokémon"
+    "category": "Shadow Pokémon",
+    "stamina": 120,
+    "attack": 204,
+    "defense": 156,
+    "capture_rate": 0.08,
+    "flee_rate": 0.05
   },
   {
     "name": "Onix",
@@ -1973,7 +2443,12 @@
     "height": "8.8 m",
     "weight": "210.0 kg",
     "max_hp": 61,
-    "category": "Rock Snake Pokémon"
+    "category": "Rock Snake Pokémon",
+    "stamina": 70,
+    "attack": 90,
+    "defense": 186,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Drowzee",
@@ -1994,7 +2469,12 @@
     },
     "weight": "32.4 kg",
     "max_hp": 100,
-    "category": "Hypnosis Pokémon"
+    "category": "Hypnosis Pokémon",
+    "stamina": 120,
+    "attack": 104,
+    "defense": 140,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Hypno",
@@ -2011,7 +2491,12 @@
     "height": "1.6 m",
     "weight": "75.6 kg",
     "max_hp": 140,
-    "category": "Hypnosis Pokémon"
+    "category": "Hypnosis Pokémon",
+    "stamina": 170,
+    "attack": 162,
+    "defense": 196,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Krabby",
@@ -2032,7 +2517,12 @@
     },
     "weight": "6.5 kg",
     "max_hp": 53,
-    "category": "River Crab Pokémon"
+    "category": "River Crab Pokémon",
+    "stamina": 60,
+    "attack": 116,
+    "defense": 110,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Kingler",
@@ -2049,7 +2539,12 @@
     "height": "1.3 m",
     "weight": "60.0 kg",
     "max_hp": 92,
-    "category": "Pincer Pokémon"
+    "category": "Pincer Pokémon",
+    "stamina": 110,
+    "attack": 178,
+    "defense": 168,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Voltorb",
@@ -2070,7 +2565,12 @@
     },
     "weight": "10.4 kg",
     "max_hp": 69,
-    "category": "Ball Pokémon"
+    "category": "Ball Pokémon",
+    "stamina": 80,
+    "attack": 102,
+    "defense": 124,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Electrode",
@@ -2087,7 +2587,12 @@
     "height": "1.2 m",
     "weight": "66.6 kg",
     "max_hp": 100,
-    "category": "Ball Pokémon"
+    "category": "Ball Pokémon",
+    "stamina": 120,
+    "attack": 150,
+    "defense": 174,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Exeggcute",
@@ -2109,7 +2614,12 @@
     },
     "weight": "2.5 kg",
     "max_hp": 100,
-    "category": "Egg Pokémon"
+    "category": "Egg Pokémon",
+    "stamina": 120,
+    "attack": 110,
+    "defense": 132,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Exeggutor",
@@ -2127,7 +2637,12 @@
     "height": "2.0 m",
     "weight": "120.0 kg",
     "max_hp": 156,
-    "category": "Coconut Pokémon"
+    "category": "Coconut Pokémon",
+    "stamina": 190,
+    "attack": 232,
+    "defense": 164,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Cubone",
@@ -2148,7 +2663,12 @@
     },
     "weight": "6.5 kg",
     "max_hp": 84,
-    "category": "Lonely Pokémon"
+    "category": "Lonely Pokémon",
+    "stamina": 100,
+    "attack": 102,
+    "defense": 150,
+    "capture_rate": 0.32,
+    "flee_rate": 0.1
   },
   {
     "name": "Marowak",
@@ -2165,7 +2685,12 @@
     "height": "1.0 m",
     "weight": "45.0 kg",
     "max_hp": 100,
-    "category": "Bone Keeper Pokémon"
+    "category": "Bone Keeper Pokémon",
+    "stamina": 120,
+    "attack": 140,
+    "defense": 202,
+    "capture_rate": 0.12,
+    "flee_rate": 0.06
   },
   {
     "name": "Hitmonlee",
@@ -2182,7 +2707,12 @@
     "height": "1.5 m",
     "weight": "49.8 kg",
     "max_hp": 84,
-    "category": "Kicking Pokémon"
+    "category": "Kicking Pokémon",
+    "stamina": 100,
+    "attack": 148,
+    "defense": 172,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Hitmonchan",
@@ -2199,7 +2729,12 @@
     "height": "1.4 m",
     "weight": "50.2 kg",
     "max_hp": 84,
-    "category": "Punching Pokémon"
+    "category": "Punching Pokémon",
+    "stamina": 100,
+    "attack": 138,
+    "defense": 204,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Lickitung",
@@ -2216,7 +2751,12 @@
     "height": "1.2 m",
     "weight": "65.5 kg",
     "max_hp": 148,
-    "category": "Licking Pokémon"
+    "category": "Licking Pokémon",
+    "stamina": 180,
+    "attack": 126,
+    "defense": 160,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Koffing",
@@ -2237,7 +2777,12 @@
     },
     "weight": "1.0 kg",
     "max_hp": 69,
-    "category": "Poison Gas Pokémon"
+    "category": "Poison Gas Pokémon",
+    "stamina": 80,
+    "attack": 136,
+    "defense": 142,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Weezing",
@@ -2254,7 +2799,12 @@
     "height": "1.2 m",
     "weight": "9.5 kg",
     "max_hp": 108,
-    "category": "Poison Gas Pokémon"
+    "category": "Poison Gas Pokémon",
+    "stamina": 130,
+    "attack": 190,
+    "defense": 198,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Rhyhorn",
@@ -2277,7 +2827,12 @@
     },
     "weight": "115.0 kg",
     "max_hp": 132,
-    "category": "Spikes Pokémon"
+    "category": "Spikes Pokémon",
+    "stamina": 160,
+    "attack": 110,
+    "defense": 116,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Rhydon",
@@ -2296,7 +2851,12 @@
     "height": "1.9 m",
     "weight": "120.0 kg",
     "max_hp": 171,
-    "category": "Drill Pokémon"
+    "category": "Drill Pokémon",
+    "stamina": 210,
+    "attack": 166,
+    "defense": 160,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Chansey",
@@ -2314,7 +2874,12 @@
     "height": "1.1 m",
     "weight": "34.6 kg",
     "max_hp": 401,
-    "category": "Egg Pokémon"
+    "category": "Egg Pokémon",
+    "stamina": 500,
+    "attack": 40,
+    "defense": 60,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Tangela",
@@ -2331,7 +2896,12 @@
     "height": "1.0 m",
     "weight": "35.0 kg",
     "max_hp": 108,
-    "category": "Vine Pokémon"
+    "category": "Vine Pokémon",
+    "stamina": 130,
+    "attack": 164,
+    "defense": 152,
+    "capture_rate": 0.32,
+    "flee_rate": 0.09
   },
   {
     "name": "Kangaskhan",
@@ -2344,7 +2914,12 @@
     "height": "2.2 m",
     "weight": "80.0 kg",
     "max_hp": 171,
-    "category": "Parent Pokémon"
+    "category": "Parent Pokémon",
+    "stamina": 210,
+    "attack": 142,
+    "defense": 178,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Horsea",
@@ -2366,7 +2941,12 @@
     },
     "weight": "8.0 kg",
     "max_hp": 53,
-    "category": "Dragon Pokémon"
+    "category": "Dragon Pokémon",
+    "stamina": 60,
+    "attack": 122,
+    "defense": 100,
+    "capture_rate": 0.4,
+    "flee_rate": 0.1
   },
   {
     "name": "Seadra",
@@ -2384,7 +2964,12 @@
     "height": "1.2 m",
     "weight": "25.0 kg",
     "max_hp": 92,
-    "category": "Dragon Pokémon"
+    "category": "Dragon Pokémon",
+    "stamina": 110,
+    "attack": 176,
+    "defense": 150,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Goldeen",
@@ -2405,7 +2990,12 @@
     },
     "weight": "15.0 kg",
     "max_hp": 77,
-    "category": "Goldfish Pokémon"
+    "category": "Goldfish Pokémon",
+    "stamina": 90,
+    "attack": 112,
+    "defense": 126,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Seaking",
@@ -2422,7 +3012,12 @@
     "height": "1.3 m",
     "weight": "39.0 kg",
     "max_hp": 132,
-    "category": "Goldfish Pokémon"
+    "category": "Goldfish Pokémon",
+    "stamina": 160,
+    "attack": 172,
+    "defense": 160,
+    "capture_rate": 0.16,
+    "flee_rate": 0.07
   },
   {
     "name": "Staryu",
@@ -2443,7 +3038,12 @@
     },
     "weight": "34.5 kg",
     "max_hp": 53,
-    "category": "Star Shape Pokémon"
+    "category": "Star Shape Pokémon",
+    "stamina": 60,
+    "attack": 130,
+    "defense": 128,
+    "capture_rate": 0.4,
+    "flee_rate": 0.15
   },
   {
     "name": "Starmie",
@@ -2461,7 +3061,12 @@
     "height": "1.1 m",
     "weight": "80.0 kg",
     "max_hp": 100,
-    "category": "Mysterious Pokémon"
+    "category": "Mysterious Pokémon",
+    "stamina": 120,
+    "attack": 194,
+    "defense": 192,
+    "capture_rate": 0.16,
+    "flee_rate": 0.06
   },
   {
     "name": "Mr. Mime",
@@ -2479,7 +3084,12 @@
     "height": "1.3 m",
     "weight": "54.5 kg",
     "max_hp": 69,
-    "category": "Barrier Pokémon"
+    "category": "Barrier Pokémon",
+    "stamina": 80,
+    "attack": 154,
+    "defense": 196,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Scyther",
@@ -2497,7 +3107,12 @@
     "height": "1.5 m",
     "weight": "56.0 kg",
     "max_hp": 116,
-    "category": "Mantis Pokémon"
+    "category": "Mantis Pokémon",
+    "stamina": 140,
+    "attack": 176,
+    "defense": 180,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Jynx",
@@ -2515,7 +3130,12 @@
     "height": "1.4 m",
     "weight": "40.6 kg",
     "max_hp": 108,
-    "category": "Human Shape Pokémon"
+    "category": "Human Shape Pokémon",
+    "stamina": 130,
+    "attack": 172,
+    "defense": 134,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Electabuzz",
@@ -2533,7 +3153,12 @@
     "height": "1.1 m",
     "weight": "30.0 kg",
     "max_hp": 108,
-    "category": "Electric Pokémon"
+    "category": "Electric Pokémon",
+    "stamina": 130,
+    "attack": 198,
+    "defense": 160,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Magmar",
@@ -2551,7 +3176,12 @@
     "height": "1.3 m",
     "weight": "44.5 kg",
     "max_hp": 108,
-    "category": "Spitfire Pokémon"
+    "category": "Spitfire Pokémon",
+    "stamina": 130,
+    "attack": 214,
+    "defense": 158,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Pinsir",
@@ -2564,7 +3194,12 @@
     "height": "1.5 m",
     "weight": "55.0 kg",
     "max_hp": 108,
-    "category": "Stag Beetle Pokémon"
+    "category": "Stag Beetle Pokémon",
+    "stamina": 130,
+    "attack": 184,
+    "defense": 186,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Tauros",
@@ -2577,7 +3212,12 @@
     "height": "1.4 m",
     "weight": "88.4 kg",
     "max_hp": 124,
-    "category": "Wild Bull Pokémon"
+    "category": "Wild Bull Pokémon",
+    "stamina": 150,
+    "attack": 148,
+    "defense": 184,
+    "capture_rate": 0.24,
+    "flee_rate": 0.09
   },
   {
     "name": "Magikarp",
@@ -2598,7 +3238,12 @@
     },
     "weight": "10.0 kg",
     "max_hp": 37,
-    "category": "Fish Pokémon"
+    "category": "Fish Pokémon",
+    "stamina": 40,
+    "attack": 42,
+    "defense": 84,
+    "capture_rate": 0.56,
+    "flee_rate": 0.15
   },
   {
     "name": "Gyarados",
@@ -2616,7 +3261,12 @@
     "height": "6.5 m",
     "weight": "235.0 kg",
     "max_hp": 156,
-    "category": "Atrocious Pokémon"
+    "category": "Atrocious Pokémon",
+    "stamina": 190,
+    "attack": 192,
+    "defense": 196,
+    "capture_rate": 0.08,
+    "flee_rate": 0.07
   },
   {
     "name": "Lapras",
@@ -2630,7 +3280,12 @@
     "height": "2.5 m",
     "weight": "220.0 kg",
     "max_hp": 211,
-    "category": "Transport Pokémon"
+    "category": "Transport Pokémon",
+    "stamina": 260,
+    "attack": 186,
+    "defense": 190,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Ditto",
@@ -2643,7 +3298,12 @@
     "height": "0.3 m",
     "weight": "4.0 kg",
     "max_hp": 81,
-    "category": "Transform Pokémon"
+    "category": "Transform Pokémon",
+    "stamina": 96,
+    "attack": 110,
+    "defense": 110,
+    "capture_rate": 0.16,
+    "flee_rate": 0.1
   },
   {
     "name": "Eevee",
@@ -2694,7 +3354,12 @@
     },
     "weight": "6.5 kg",
     "max_hp": 92,
-    "category": "Evolution Pokémon"
+    "category": "Evolution Pokémon",
+    "stamina": 110,
+    "attack": 114,
+    "defense": 128,
+    "capture_rate": 0.32,
+    "flee_rate": 0.1
   },
   {
     "name": "Vaporeon",
@@ -2711,7 +3376,12 @@
     "height": "1.0 m",
     "weight": "29.0 kg",
     "max_hp": 211,
-    "category": "Bubble Jet Pokémon"
+    "category": "Bubble Jet Pokémon",
+    "stamina": 260,
+    "attack": 186,
+    "defense": 168,
+    "capture_rate": 0.12,
+    "flee_rate": 0.06
   },
   {
     "name": "Jolteon",
@@ -2728,7 +3398,12 @@
     "height": "0.8 m",
     "weight": "24.5 kg",
     "max_hp": 108,
-    "category": "Lightning Pokémon"
+    "category": "Lightning Pokémon",
+    "stamina": 130,
+    "attack": 192,
+    "defense": 174,
+    "capture_rate": 0.12,
+    "flee_rate": 0.06
   },
   {
     "name": "Flareon",
@@ -2745,7 +3420,12 @@
     "height": "0.9 m",
     "weight": "25.0 kg",
     "max_hp": 108,
-    "category": "Flame Pokémon"
+    "category": "Flame Pokémon",
+    "stamina": 130,
+    "attack": 238,
+    "defense": 178,
+    "capture_rate": 0.12,
+    "flee_rate": 0.06
   },
   {
     "name": "Porygon",
@@ -2763,7 +3443,12 @@
     "height": "0.8 m",
     "weight": "36.5 kg",
     "max_hp": 108,
-    "category": "Virtual Pokémon"
+    "category": "Virtual Pokémon",
+    "stamina": 130,
+    "attack": 156,
+    "defense": 158,
+    "capture_rate": 0.32,
+    "flee_rate": 0.09
   },
   {
     "name": "Omanyte",
@@ -2785,7 +3470,12 @@
     },
     "weight": "7.5 kg",
     "max_hp": 61,
-    "category": "Spiral Pokémon"
+    "category": "Spiral Pokémon",
+    "stamina": 70,
+    "attack": 132,
+    "defense": 160,
+    "capture_rate": 0.32,
+    "flee_rate": 0.09
   },
   {
     "name": "Omastar",
@@ -2803,7 +3493,12 @@
     "height": "1.0 m",
     "weight": "35.0 kg",
     "max_hp": 116,
-    "category": "Spiral Pokémon"
+    "category": "Spiral Pokémon",
+    "stamina": 140,
+    "attack": 180,
+    "defense": 202,
+    "capture_rate": 0.12,
+    "flee_rate": 0.05
   },
   {
     "name": "Kabuto",
@@ -2825,7 +3520,12 @@
     },
     "weight": "11.5 kg",
     "max_hp": 53,
-    "category": "Shellfish Pokémon"
+    "category": "Shellfish Pokémon",
+    "stamina": 60,
+    "attack": 148,
+    "defense": 142,
+    "capture_rate": 0.32,
+    "flee_rate": 0.09
   },
   {
     "name": "Kabutops",
@@ -2843,7 +3543,12 @@
     "height": "1.3 m",
     "weight": "40.5 kg",
     "max_hp": 100,
-    "category": "Shellfish Pokémon"
+    "category": "Shellfish Pokémon",
+    "stamina": 120,
+    "attack": 190,
+    "defense": 190,
+    "capture_rate": 0.12,
+    "flee_rate": 0.05
   },
   {
     "name": "Aerodactyl",
@@ -2857,7 +3562,12 @@
     "height": "1.8 m",
     "weight": "59.0 kg",
     "max_hp": 132,
-    "category": "Fossil Pokémon"
+    "category": "Fossil Pokémon",
+    "stamina": 160,
+    "attack": 182,
+    "defense": 162,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Snorlax",
@@ -2874,7 +3584,12 @@
     "height": "2.1 m",
     "weight": "460.0 kg",
     "max_hp": 258,
-    "category": "Sleeping Pokémon"
+    "category": "Sleeping Pokémon",
+    "stamina": 320,
+    "attack": 180,
+    "defense": 180,
+    "capture_rate": 0.16,
+    "flee_rate": 0.09
   },
   {
     "name": "Articuno",
@@ -2888,7 +3603,12 @@
     "height": "1.7 m",
     "weight": "55.4 kg",
     "max_hp": 148,
-    "category": "Freeze Pokémon"
+    "category": "Freeze Pokémon",
+    "stamina": 180,
+    "attack": 198,
+    "defense": 242,
+    "capture_rate": 0,
+    "flee_rate": 0.1
   },
   {
     "name": "Zapdos",
@@ -2902,7 +3622,12 @@
     "height": "1.6 m",
     "weight": "52.6 kg",
     "max_hp": 148,
-    "category": "Electric Pokémon"
+    "category": "Electric Pokémon",
+    "stamina": 180,
+    "attack": 232,
+    "defense": 194,
+    "capture_rate": 0,
+    "flee_rate": 0.1
   },
   {
     "name": "Moltres",
@@ -2916,7 +3641,12 @@
     "height": "2.0 m",
     "weight": "60.0 kg",
     "max_hp": 148,
-    "category": "Flame Pokémon"
+    "category": "Flame Pokémon",
+    "stamina": 180,
+    "attack": 242,
+    "defense": 194,
+    "capture_rate": 0,
+    "flee_rate": 0.1
   },
   {
     "name": "Dratini",
@@ -2938,7 +3668,12 @@
     },
     "weight": "3.3 kg",
     "max_hp": 70,
-    "category": "Dragon Pokémon"
+    "category": "Dragon Pokémon",
+    "stamina": 82,
+    "attack": 128,
+    "defense": 110,
+    "capture_rate": 0.32,
+    "flee_rate": 0.09
   },
   {
     "name": "Dragonair",
@@ -2960,7 +3695,12 @@
     },
     "weight": "16.5 kg",
     "max_hp": 102,
-    "category": "Dragon Pokémon"
+    "category": "Dragon Pokémon",
+    "stamina": 122,
+    "attack": 170,
+    "defense": 152,
+    "capture_rate": 0.08,
+    "flee_rate": 0.06
   },
   {
     "name": "Dragonite",
@@ -2979,7 +3719,12 @@
     "height": "2.2 m",
     "weight": "210.0 kg",
     "max_hp": 149,
-    "category": "Dragon Pokémon"
+    "category": "Dragon Pokémon",
+    "stamina": 182,
+    "attack": 250,
+    "defense": 212,
+    "capture_rate": 0.04,
+    "flee_rate": 0.05
   },
   {
     "name": "Mewtwo",
@@ -2992,7 +3737,12 @@
     "height": "2.0 m",
     "weight": "122.0 kg",
     "max_hp": 173,
-    "category": "Genetic Pokémon"
+    "category": "Genetic Pokémon",
+    "stamina": 212,
+    "attack": 284,
+    "defense": 202,
+    "capture_rate": 0,
+    "flee_rate": 0.1
   },
   {
     "name": "Mew",
@@ -3005,6 +3755,11 @@
     "height": "0.4 m",
     "weight": "4.0 kg",
     "max_hp": 163,
-    "category": "New Species Pokémon"
+    "category": "New Species Pokémon",
+    "stamina": 200,
+    "attack": 220,
+    "defense": 220,
+    "capture_rate": 0,
+    "flee_rate": 0.1
   }
 ]
