@@ -21,23 +21,21 @@ export default class WeakAgainstList extends Component<void, Props, void> {
   }
 
   componentDidMount() {
-    if (!this.state.pokemons.length) {
-      InteractionManager.runAfterInteractions(() => {
-        let pokemons = [];
-        this.props.pokemon.type.forEach(type => {
-          db.objects('Pokemon').forEach(p => {
-            p.type.forEach(t => {
-              t.strengths.forEach(s => {
-                if (s.name === type.name && !pokemons.includes(p)) {
-                  pokemons.push(p);
-                }
-              });
+    InteractionManager.runAfterInteractions(() => {
+      let pokemons = [];
+      this.props.pokemon.type.forEach(type => {
+        db.objects('Pokemon').forEach(p => {
+          p.type.forEach(t => {
+            t.strengths.forEach(s => {
+              if (s.name === type.name && !pokemons.includes(p)) {
+                pokemons.push(p);
+              }
             });
           });
         });
-        this.setState({pokemons});
       });
-    }
+      this.setState({pokemons});
+    });
   }
 
   render() {
