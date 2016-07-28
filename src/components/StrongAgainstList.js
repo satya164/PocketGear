@@ -16,14 +16,11 @@ export default class StrongAgainstList extends Component<void, Props, void> {
     pokemon: PropTypes.object.isRequired,
   };
 
-  constructor(props, ctx) {
-    super(props, ctx);
-    this.state = {
-      pokemons: [],
-    };
+  state = {
+    pokemons: [],
   }
 
-  render() {
+  componentDidMount() {
     if (!this.state.pokemons.length) {
       InteractionManager.runAfterInteractions(() => {
         let pokemons = [];
@@ -41,7 +38,9 @@ export default class StrongAgainstList extends Component<void, Props, void> {
         this.setState({pokemons});
       });
     }
+  }
 
+  render() {
     return (
       <PokemonList data={this.state.pokemons} onNavigate={this.props.onNavigate} />
     );
