@@ -6,7 +6,10 @@ export default {
   properties: {
     id: 'int',
     name: 'string',
-    type: { type: 'list', objectType: 'Type' },
+    type: {
+      type: 'list',
+      objectType: 'Type',
+    },
     description: 'string',
     category: 'string',
     max_cp: 'int',
@@ -16,5 +19,11 @@ export default {
     defense: 'int',
     capture_rate: 'float',
     flee_rate: 'float',
+    height: 'Height',
+    weight: 'Weight',
+    evolution_chain: {
+      type: 'list',
+      objectType: 'Evolution',
+    },
   },
 };

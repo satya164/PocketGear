@@ -40,7 +40,12 @@ export default function fill() {
           attack: pokemon.attack,
           defense: pokemon.defense,
           capture_rate: pokemon.capture_rate,
-          flee_rate: pokemon.flee_rate
+          flee_rate: pokemon.flee_rate,
+          height: pokemon.height,
+          weight: pokemon.weight,
+          evolution_chain: pokemon.evolution_chain ? (
+            Array.isArray(pokemon.evolution_chain[0]) ? pokemon.evolution_chain : [ pokemon.evolution_chain ]
+          ).map(chains => ({ chains: chains.map(id => ({ id })) })) : [],
         }, true);
       })
     );
