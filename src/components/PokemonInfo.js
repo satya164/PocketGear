@@ -1,5 +1,6 @@
 /* @flow */
 
+import find from 'lodash/find';
 import React, { PropTypes, Component } from 'react';
 import {
   View,
@@ -19,7 +20,7 @@ import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
 import sprites from '../sprites';
-import db from '../db';
+import store from '../store';
 
 const BAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 
@@ -164,10 +165,11 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   componentWillMount() {
     const { pokemonId } = this.props;
-    const pokemon = db.objects('Pokemon').filtered(`id == "${pokemonId}"`);
+    const pokemons = store.getPokemons();
+    const pokemon = find(pokemons, { id: pokemonId });
 
     this.setState({
-      pokemon: pokemon[0],
+      pokemon,
     });
   }
 
@@ -227,19 +229,8 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   render() {
     const { pokemon } = this.state;
-    const pokemonTypes = pokemon.type.map(t => t.name);
-    const allTypes = db.objects('Type').slice();
-    const weaknesses = [];
-
-    pokemonTypes.forEach(pt =>
-      allTypes.forEach(t => {
-        t.strengths.forEach(s => {
-          if (s.name === pt && !weaknesses.includes(t.name)) {
-            weaknesses.push(t.name);
-          }
-        });
-      })
-    );
+    const types = store.getTypes();
+    const { weaknesses } = find(types, ({ name }) => pokemon.types.includes(name));
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
@@ -266,7 +257,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
             <Text style={styles.name}>{pokemon.name}</Text>
             <View style={styles.row}>
               <Text style={styles.label}>Type</Text>
-              <Text style={styles.info}>{pokemonTypes.join(', ')}</Text>
+              <Text style={styles.info}>{pokemon.types.join(', ')}</Text>
             </View>
             <View style={styles.row}>
               <Text style={styles.label}>Weakness</Text>

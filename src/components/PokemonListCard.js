@@ -79,8 +79,8 @@ export default class PokemonListCard extends Component<void, Props, void> {
 
   render() {
     const { pokemon } = this.props;
-    const types = pokemon.type.map(t => t.name).join(', ');
-    const color = colors[pokemon.type[0].name.toLowerCase()];
+    const types = pokemon.types.join(', ');
+    const color = colors[pokemon.types[0].toLowerCase()];
 
     return (
       <TouchableOpacity

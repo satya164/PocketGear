@@ -2,10 +2,10 @@
 
 import React, { Component, PropTypes } from 'react';
 import ReactNative from 'react-native';
-import { ListView } from 'realm/react-native';
 
 const {
   Dimensions,
+  ListView,
   StyleSheet,
   View,
 } = ReactNative;
@@ -84,7 +84,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
       <View
         style={{
           margin: this.props.spacing / 2,
-          width: (this.state.containerWidth - (this.props.spacing * 3)) / this.props.getNumberOfColumns(this.state.containerWidth)
+          width: (this.state.containerWidth - (this.props.spacing * 3)) / this.props.getNumberOfColumns(this.state.containerWidth),
         }}
       >
         {this.props.renderRow(rowData, sectionID, rowID, highlightRow)}
