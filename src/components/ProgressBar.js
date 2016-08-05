@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     height: 4,
-    backgroundColor: 'rgba(0, 0, 0, .1)',
+    backgroundColor: 'rgba(0, 0, 0, .06)',
   },
 });
 
