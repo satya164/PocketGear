@@ -177,7 +177,7 @@
     "keyword-spacing": 1,
     "linebreak-style": 1,
     "lines-around-comment": 0,
-    "max-nested-callbacks": [1, 3],
+    "max-nested-callbacks": 0,
     "new-cap": 0,
     "new-parens": 2,
     "newline-after-var": 0,

@@ -148,7 +148,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   state: State = {
     navigation: {
-      index: 2,
+      index: 0,
       routes: [
         { key: 'strong-against', title: 'Strong against' },
         { key: 'weak-against', title: 'Weak against' },

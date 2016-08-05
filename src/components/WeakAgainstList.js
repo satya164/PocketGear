@@ -6,37 +6,44 @@ import PokemonList from './PokemonList';
 import db from '../db';
 
 type Props = {
+  pokemon: Object;
   onNavigate: Function;
 }
 
-export default class WeakAgainstList extends Component<void, Props, void> {
+type State = {
+  pokemons: Array<Object>;
+}
+
+export default class WeakAgainstList extends Component<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
     pokemon: PropTypes.object.isRequired,
   };
 
-  state = {
+  state: State = {
     pokemons: [],
-  }
+  };
 
   componentDidMount() {
-    InteractionManager.runAfterInteractions(() => {
-      let pokemons = [];
-      this.props.pokemon.type.forEach(type => {
-        db.objects('Pokemon').forEach(p => {
-          p.type.forEach(t => {
-            t.strengths.forEach(s => {
-              if (s.name === type.name && !pokemons.includes(p)) {
-                pokemons.push(p);
-              }
-            });
+    InteractionManager.runAfterInteractions(this._updateData);
+  }
+
+  _updateData = () => {
+    const pokemons = [];
+    this.props.pokemon.type.forEach(type => {
+      db.objects('Pokemon').forEach(p => {
+        p.type.forEach(t => {
+          t.strengths.forEach(s => {
+            if (s.name === type.name && !pokemons.includes(p)) {
+              pokemons.push(p);
+            }
           });
         });
       });
-      this.setState({pokemons});
     });
-  }
+    this.setState({ pokemons });
+  };
 
   render() {
     return (
