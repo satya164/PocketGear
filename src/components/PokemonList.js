@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
+import shallowCompare from 'react-addons-shallow-compare';
 import {
   Platform,
   StyleSheet,
@@ -27,6 +28,10 @@ export default class PokemonList extends Component<void, Props, void> {
     data: PropTypes.arrayOf(PropTypes.object).isRequired,
     style: GridView.propTypes.style,
   };
+
+  shouldComponentUpdate(nextProps: Props, nextState: void) {
+    return shallowCompare(this, nextProps, nextState);
+  }
 
   _renderRow = (rowData: any) => {
     return <PokemonListCard pokemon={rowData} onNavigate={this.props.onNavigate} />;

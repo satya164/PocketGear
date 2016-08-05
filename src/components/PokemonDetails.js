@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
+import shallowCompare from 'react-addons-shallow-compare';
 import {
   View,
   Image,
@@ -107,6 +108,10 @@ export default class PokemonDetails extends Component<void, Props, void> {
     style: ScrollView.propTypes.style,
     onNavigate: PropTypes.func.isRequired,
   };
+
+  shouldComponentUpdate(nextProps: Props, nextState: void) {
+    return shallowCompare(this, nextProps, nextState);
+  }
 
   _goToPokemon = (pokemonId: number) => () => {
     this.props.onNavigate({

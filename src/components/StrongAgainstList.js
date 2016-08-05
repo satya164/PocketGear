@@ -1,7 +1,7 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
-import { InteractionManager } from 'react-native';
+import shallowCompare from 'react-addons-shallow-compare';
 import PokemonList from './PokemonList';
 import db from '../db';
 
@@ -25,8 +25,12 @@ export default class StrongAgainstList extends Component<void, Props, State> {
     pokemons: [],
   };
 
-  componentDidMount() {
-    InteractionManager.runAfterInteractions(this._updateData);
+  componentWillMount() {
+    this._updateData();
+  }
+
+  shouldComponentUpdate(nextProps: Props, nextState: State) {
+    return shallowCompare(this, nextProps, nextState);
   }
 
   _updateData = () => {
