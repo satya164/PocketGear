@@ -34,11 +34,8 @@ const styles = StyleSheet.create({
   },
 
   appbar: {
-    position: 'absolute',
     flexDirection: 'row',
     alignItems: 'center',
-    left: 0,
-    right: 0,
     height: BAR_HEIGHT,
     marginTop: Platform.OS === 'ios' ? 20 : 0,
   },
@@ -48,8 +45,8 @@ const styles = StyleSheet.create({
   },
 
   button: {
+    padding: 12,
     height: BAR_HEIGHT,
-    width: BAR_HEIGHT,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -69,13 +66,20 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 
-  name: {
+  label: {
     color: '#222',
     fontFamily: 'Montserrat',
+    width: 160,
+  },
+
+  name: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginTop: 56,
-    marginBottom: 4,
+    marginVertical: 4,
+  },
+
+  types: {
+    fontSize: 13,
   },
 
   row: {
@@ -92,13 +96,6 @@ const styles = StyleSheet.create({
 
   basic: {
     flex: 1,
-  },
-
-  info: {
-    color: '#222',
-    fontFamily: 'Montserrat',
-    fontSize: 13,
-    width: 120,
   },
 
   tabview: {
@@ -236,8 +233,8 @@ export default class PokemonInfo extends Component<void, Props, State> {
         </View>
         <View style={[ styles.row, styles.meta ]}>
           <View style={styles.basic}>
-            <Text style={styles.name}>{pokemon.name}</Text>
-            <Text style={styles.info}>{pokemon.types.join(', ')}</Text>
+            <Text style={[ styles.label, styles.name ]}>{pokemon.name}</Text>
+            <Text style={[ styles.label, styles.types ]}>{pokemon.types.join(', ')}</Text>
           </View>
           <Image style={styles.image} source={sprites[pokemon.id - 1]} />
         </View>
