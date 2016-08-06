@@ -6,6 +6,7 @@ import { InteractionManager } from 'react-native';
 import shallowCompare from 'react-addons-shallow-compare';
 import PokemonList from './PokemonList';
 import Placeholder from './Placeholder';
+import NoResults from './NoResults';
 import store from '../store';
 
 type Props = {
@@ -60,6 +61,15 @@ export default class WeakAgainstList extends Component<void, Props, State> {
   render() {
     if (this.state.loading) {
       return <Placeholder />;
+    }
+
+    if (this.state.pokemons.length === 0) {
+      return (
+        <NoResults
+          source={require('../../assets/images/ultra-ball.png')}
+          label={`${this.props.pokemon.name} is unbeatable`}
+        />
+      );
     }
 
     return (

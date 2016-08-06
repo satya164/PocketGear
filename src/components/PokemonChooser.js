@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
+import NoResults from './NoResults';
 import store from '../store';
 
 const styles = StyleSheet.create({
@@ -80,11 +81,14 @@ export default class PokemonChooser extends Component<void, Props, State> {
     return (
       <View style={styles.page}>
         <StatusBar backgroundColor='#ccc' />
-        <PokemonList
-          contentContainerStyle={styles.list}
-          data={pokemons}
-          onNavigate={this.props.onNavigate}
-        />
+        {pokemons.length ?
+          <PokemonList
+            contentContainerStyle={styles.list}
+            data={pokemons}
+            onNavigate={this.props.onNavigate}
+          /> :
+          <NoResults source={require('../../assets/images/open-pokeball.png')} label='No Pokémon found' />
+        }
         <View style={styles.searchbar}>
           <SearchBar
             placeholder='Find Pokémon by name, type or index'

@@ -6,6 +6,7 @@ import { InteractionManager } from 'react-native';
 import shallowCompare from 'react-addons-shallow-compare';
 import PokemonList from './PokemonList';
 import Placeholder from './Placeholder';
+import NoResults from './NoResults';
 import store from '../store';
 
 type Props = {
@@ -61,6 +62,16 @@ export default class StrongAgainstList extends Component<void, Props, State> {
     if (this.state.loading) {
       return <Placeholder />;
     }
+
+    if (this.state.pokemons.length === 0) {
+      return (
+        <NoResults
+          source={require('../../assets/images/togepi.png')}
+          label={`${this.props.pokemon.name} is weak, but cute`}
+        />
+      );
+    }
+
 
     return (
       <PokemonList data={this.state.pokemons} onNavigate={this.props.onNavigate} />
