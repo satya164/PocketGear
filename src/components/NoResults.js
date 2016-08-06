@@ -31,7 +31,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function NoResults({ source, label }) {
+type Props = {
+  source: any;
+  label: string;
+}
+
+export default function NoResults({ source, label }: Props) {
   return (
     <View style={styles.container}>
       <Image style={styles.item} source={source} />

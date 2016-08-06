@@ -8,14 +8,17 @@ import PokemonList from './PokemonList';
 import Placeholder from './Placeholder';
 import NoResults from './NoResults';
 import store from '../store';
+import type {
+  Pokemon,
+} from '../typeDefinitions';
 
 type Props = {
-  pokemon: Object;
+  pokemon: Pokemon;
   onNavigate: Function;
 }
 
 type State = {
-  pokemons: Array<Object>;
+  pokemons: Array<Pokemon>;
   loading: boolean;
 }
 
@@ -49,7 +52,7 @@ export default class WeakAgainstList extends Component<void, Props, State> {
 
   _updateData = () => {
     const { pokemon } = this.props;
-    const typeDetails = find(store.getTypes(), ({ name }) => pokemon.types.includes(name));
+    const typeDetails = find(store.getTypeChart(), ({ name }) => pokemon.types.includes(name));
     const { strengths, weaknesses } = typeDetails;
     const pokemons = store.getPokemons().filter(({ types }) => (
       types.some(t => weaknesses.includes(t)) && !types.some(t => strengths.includes(t))

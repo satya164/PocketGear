@@ -10,6 +10,9 @@ import {
 } from 'react-native';
 import colors from '../colors.json';
 import sprites from '../sprites';
+import type {
+  Pokemon,
+} from '../typeDefinitions';
 
 const styles = StyleSheet.create({
   block: {
@@ -53,7 +56,7 @@ const styles = StyleSheet.create({
 
 type Props = {
   onNavigate: Function;
-  pokemon: any;
+  pokemon: Pokemon;
   style?: any;
 }
 

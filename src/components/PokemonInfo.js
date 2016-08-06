@@ -1,6 +1,7 @@
 /* @flow */
 
 import find from 'lodash/find';
+import memoize from 'lodash/memoize';
 import React, { PropTypes, Component } from 'react';
 import {
   View,
@@ -19,6 +20,10 @@ import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
 import sprites from '../sprites';
 import store from '../store';
+import type {
+  PokemonID,
+  Pokemon,
+} from '../typeDefinitions';
 
 const BAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 
@@ -130,13 +135,12 @@ type NavigationState = {
 
 type Props = {
   onNavigate: Function;
-  pokemonId: number;
+  pokemonId: PokemonID;
   style?: any;
 }
 
 type State = {
   navigation: NavigationState;
-  pokemon: any;
 }
 
 export default class PokemonInfo extends Component<void, Props, State> {
@@ -156,18 +160,13 @@ export default class PokemonInfo extends Component<void, Props, State> {
         { key: 'details', title: 'Details' },
       ],
     },
-    pokemon: null,
   };
 
-  componentWillMount() {
-    const { pokemonId } = this.props;
+  _getPokemon = memoize((id: PokemonID): Pokemon => {
     const pokemons = store.getPokemons();
-    const pokemon = find(pokemons, { id: pokemonId });
-
-    this.setState({
-      pokemon,
-    });
-  }
+    const pokemon = find(pokemons, { id });
+    return pokemon;
+  });
 
   _handleChangeTab = (index: number) => {
     this.setState({
@@ -191,13 +190,14 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   _renderScene = ({ route }: { route: Route }) => {
+    const pokemon = this._getPokemon(this.props.pokemonId);
     switch (route.key) {
     case 'weak-against':
-      return <WeakAgainstList pokemon={this.state.pokemon} onNavigate={this.props.onNavigate} />;
+      return <WeakAgainstList pokemon={pokemon} onNavigate={this.props.onNavigate} />;
     case 'strong-against':
-      return <StrongAgainstList pokemon={this.state.pokemon} onNavigate={this.props.onNavigate} />;
+      return <StrongAgainstList pokemon={pokemon} onNavigate={this.props.onNavigate} />;
     case 'details':
-      return <PokemonDetails pokemon={this.state.pokemon} onNavigate={this.props.onNavigate} />;
+      return <PokemonDetails pokemon={pokemon} onNavigate={this.props.onNavigate} />;
     default:
       return null;
     }
@@ -212,8 +212,8 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   render() {
-    const { pokemon } = this.state;
-    const types = store.getTypes();
+    const pokemon = this._getPokemon(this.props.pokemonId);
+    const types = store.getTypeChart();
     const { weaknesses } = find(types, ({ name }) => pokemon.types.includes(name));
 
     return (

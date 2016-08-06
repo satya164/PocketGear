@@ -1,29 +1,36 @@
 /* @flow */
 
 import pokemons from './data/pokemons.json';
-import fastAttacks from './data/fast_attacks.json';
+import quickAttacks from './data/quick_attacks.json';
 import specialAttacks from './data/special_attacks.json';
-import types from './data/types.json';
+import typeChart from './data/type_chart.json';
+import type {
+  Pokemon,
+  QuickAttack,
+  SpecialAttack,
+  TypeChart,
+} from './typeDefinitions';
 
-function getPokemons() {
+
+function getPokemons(): Array<Pokemon> {
   return pokemons;
 }
 
-function getFastAttacks() {
-  return fastAttacks;
+function getQuickAttacks(): Array<QuickAttack> {
+  return quickAttacks;
 }
 
-function getSpecialAttacks() {
+function getSpecialAttacks(): Array<SpecialAttack> {
   return specialAttacks;
 }
 
-function getTypes() {
-  return types;
+function getTypeChart(): Array<TypeChart> {
+  return typeChart;
 }
 
 export default {
   getPokemons,
-  getFastAttacks,
+  getQuickAttacks,
   getSpecialAttacks,
-  getTypes,
+  getTypeChart,
 };

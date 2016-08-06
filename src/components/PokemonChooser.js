@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
 
 type State = {
   query: string;
-  atTop: boolean;
 }
 
 type Props = {
@@ -53,7 +52,6 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   state: State = {
     query: '',
-    atTop: true,
   };
 
   _handleSearchChange = (query: string) => {

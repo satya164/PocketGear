@@ -8,6 +8,9 @@ import {
 } from 'react-native';
 import GridView from './GridView';
 import PokemonListCard from './PokemonListCard';
+import type {
+  Pokemon,
+} from '../typeDefinitions';
 
 const styles = StyleSheet.create({
   grid: {
@@ -17,7 +20,7 @@ const styles = StyleSheet.create({
 
 type Props = {
   onNavigate: Function;
-  data: any;
+  data: Array<Pokemon>;
   style?: any;
 }
 
