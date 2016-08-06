@@ -3,12 +3,14 @@
 import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import {
+  InteractionManager,
   View,
   Text,
   ScrollView,
   StyleSheet,
 } from 'react-native';
 import ProgressBar from './ProgressBar';
+import Placeholder from './Placeholder';
 
 const styles = StyleSheet.create({
   container: {
@@ -72,7 +74,11 @@ type Props = {
   onNavigate: Function;
 }
 
-export default class PokemonDetails extends Component<void, Props, void> {
+type State = {
+  loading: boolean;
+}
+
+export default class PokemonDetails extends Component<void, Props, State> {
 
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
@@ -80,9 +86,21 @@ export default class PokemonDetails extends Component<void, Props, void> {
     onNavigate: PropTypes.func.isRequired,
   };
 
-  shouldComponentUpdate(nextProps: Props, nextState: void) {
+  state: State = {
+    loading: true,
+  };
+
+  componentDidMount() {
+    InteractionManager.runAfterInteractions(this._setLoading);
+  }
+
+  shouldComponentUpdate(nextProps: Props, nextState: State) {
     return shallowCompare(this, nextProps, nextState);
   }
+
+  _setLoading = () => {
+    this.setState({ loading: false });
+  };
 
   _goToPokemon = (pokemonId: number) => () => {
     this.props.onNavigate({
@@ -107,6 +125,10 @@ export default class PokemonDetails extends Component<void, Props, void> {
   };
 
   render() {
+    if (this.state.loading) {
+      return <Placeholder />;
+    }
+
     const { pokemon } = this.props;
 
     return (

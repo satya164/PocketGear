@@ -5,7 +5,6 @@ import React, { PropTypes, Component } from 'react';
 import {
   View,
   Image,
-  InteractionManager,
   Text,
   TouchableOpacity,
   ScrollView,
@@ -15,7 +14,6 @@ import {
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
-import Placeholder from './Placeholder';
 import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
@@ -139,7 +137,6 @@ type Props = {
 type State = {
   navigation: NavigationState;
   pokemon: any;
-  loading: boolean;
 }
 
 export default class PokemonInfo extends Component<void, Props, State> {
@@ -160,7 +157,6 @@ export default class PokemonInfo extends Component<void, Props, State> {
       ],
     },
     pokemon: null,
-    loading: true,
   };
 
   componentWillMount() {
@@ -172,14 +168,6 @@ export default class PokemonInfo extends Component<void, Props, State> {
       pokemon,
     });
   }
-
-  componentDidMount() {
-    InteractionManager.runAfterInteractions(this._setLoading);
-  }
-
-  _setLoading = () => {
-    this.setState({ loading: false });
-  };
 
   _handleChangeTab = (index: number) => {
     this.setState({
@@ -203,10 +191,6 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   _renderScene = ({ route }: { route: Route }) => {
-    if (this.state.loading) {
-      return <Placeholder />;
-    }
-
     switch (route.key) {
     case 'weak-against':
       return <WeakAgainstList pokemon={this.state.pokemon} onNavigate={this.props.onNavigate} />;
