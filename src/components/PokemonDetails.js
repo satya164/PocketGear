@@ -22,48 +22,55 @@ const styles = StyleSheet.create({
     padding: 16,
   },
 
-  title: {
+  item: {
+    marginVertical: 16,
+  },
+
+  text: {
     color: '#222',
     fontFamily: 'Lato',
+  },
+
+  strong: {
+    fontWeight: 'bold',
+  },
+
+  title: {
     fontWeight: 'bold',
     fontSize: 16,
     marginVertical: 4,
   },
 
   description: {
-    color: '#222',
-    fontFamily: 'Lato',
-    fontSize: 14,
     lineHeight: 21,
     marginVertical: 4,
   },
 
-  statistics: {
-    marginVertical: 8,
-  },
-
   row: {
     flexDirection: 'row',
-    alignItems: 'center',
     marginVertical: 4,
   },
 
-  label: {
-    color: '#222',
-    fontFamily: 'Lato',
+  center: {
+    alignItems: 'center',
+  },
+
+  small: {
     fontSize: 12,
   },
 
   type: {
-    fontWeight: 'bold',
-    width: 70,
-    opacity: 0.5,
+    width: 120,
   },
 
   amount: {
     textAlign: 'right',
-    width: 50,
-    marginHorizontal: 16,
+    width: 60,
+  },
+
+  subtitle: {
+    fontSize: 12,
+    opacity: 0.5,
   },
 });
 
@@ -116,10 +123,10 @@ export default class PokemonDetails extends Component<void, Props, State> {
 
   _renderStat = (type: string, ratio: number, amount: string | number, fill: string) => {
     return (
-      <View style={styles.row}>
-        <Text style={[ styles.label, styles.type ]}>{type}</Text>
-        <Text style={[ styles.label, styles.amount ]}>{amount}</Text>
+      <View style={[ styles.row, styles.center ]}>
+        <Text style={[ styles.text, styles.small, styles.subtitle, styles.type, styles.strong ]}>{type}</Text>
         <ProgressBar ratio={ratio} fillColor={fill} />
+        <Text style={[ styles.text, styles.small, styles.amount ]}>{amount}</Text>
       </View>
     );
   };
@@ -134,17 +141,17 @@ export default class PokemonDetails extends Component<void, Props, State> {
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
         <View style={styles.content}>
-          <Text style={styles.title}>
+          <Text style={[ styles.text, styles.title ]}>
             {pokemon.category}
           </Text>
-          <Text style={styles.description}>
+          <Text style={[ styles.text, styles.description ]}>
             {pokemon.description}
           </Text>
 
-          <View style={styles.statistics}>
+          <View style={styles.item}>
             {this._renderStat('Attack', pokemon.attack / 300, pokemon.attack, '#ff8a65')}
             {this._renderStat('Defense', pokemon.defense / 200, pokemon.defense, '#9575cd')}
-            {this._renderStat('Capture Rate', pokemon.capture_rate, (pokemon.capture_rate * 100).toFixed(2) + '%', '#4fc3f7')}
+            {this._renderStat('Capture Rate', pokemon.capture_rate, (pokemon.capture_rate * 100).toFixed(2) + '%', '#f06292')}
             {this._renderStat('Flee Rate', pokemon.flee_rate, (pokemon.flee_rate * 100).toFixed(2) + '%', '#ffd54f')}
             {this._renderStat('Max CP', pokemon.max_cp / 3904, pokemon.max_cp, '#e57373')}
             {this._renderStat('Max HP', pokemon.max_hp / 163, pokemon.max_hp, '#4db6ac')}
