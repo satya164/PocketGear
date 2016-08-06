@@ -18,7 +18,9 @@ const styles = StyleSheet.create({
 
   text: {
     color: '#222',
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
+    fontSize: 13,
+    lineHeight: 20,
   },
 
   row: {
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     backgroundColor: '#4fc3f7',
     marginHorizontal: 2,
-    marginVertical: 8,
+    marginVertical: 6,
   },
 
   damage: {
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
   },
 
   subtitle: {
-    fontSize: 12,
+    fontSize: 11,
     opacity: 0.5,
   },
 });

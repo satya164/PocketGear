@@ -24,8 +24,8 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		45F8D7932AD44C1C8AAFB065 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F885DB53ADA4BB987C99A8D /* FontAwesome.ttf */; };
 		52076978AA7D470B9BF5CABB /* libRNSearchBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D952C301CED54E889F1067AE /* libRNSearchBar.a */; };
-		52EB9EF11D5579B700C76F2B /* Lato.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EB9EEF1D5579B700C76F2B /* Lato.ttf */; };
-		52EB9EF21D5579B700C76F2B /* Lato_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EB9EF01D5579B700C76F2B /* Lato_bold.ttf */; };
+		52EB9EF11D5579B700C76F2B /* Montserrat.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52EB9EEF1D5579B700C76F2B /* Montserrat.otf */; };
+		52EB9EF21D5579B700C76F2B /* Montserrat_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52EB9EF01D5579B700C76F2B /* Montserrat_bold.otf */; };
 		537FF8B2F6B74B51A3AE4EB3 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3B022E75527495CB01F6682 /* Foundation.ttf */; };
 		6D4A6205D85143D786EF33CE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F19764030ABD40AAB2D10FD9 /* Entypo.ttf */; };
 		8297C86B3A6B496FB1BA45D8 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A112112DE07472E8B24DBB7 /* libRNVectorIcons.a */; };
@@ -154,8 +154,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		3B020F558FF345A9B4B0E664 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		4014082E364D4EDF9E38E518 /* RNSearchBar.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSearchBar.xcodeproj; path = "../node_modules/react-native-search-bar/RNSearchBar.xcodeproj"; sourceTree = "<group>"; };
-		52EB9EEF1D5579B700C76F2B /* Lato.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lato.ttf; sourceTree = "<group>"; };
-		52EB9EF01D5579B700C76F2B /* Lato_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lato_bold.ttf; sourceTree = "<group>"; };
+		52EB9EEF1D5579B700C76F2B /* Montserrat.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.otf; sourceTree = "<group>"; };
+		52EB9EF01D5579B700C76F2B /* Montserrat_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat_bold.otf; sourceTree = "<group>"; };
 		75618D3E2B94496F86A05496 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -314,8 +314,8 @@
 		52EB9EEE1D5579B700C76F2B /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				52EB9EEF1D5579B700C76F2B /* Lato.ttf */,
-				52EB9EF01D5579B700C76F2B /* Lato_bold.ttf */,
+				52EB9EEF1D5579B700C76F2B /* Montserrat.otf */,
+				52EB9EF01D5579B700C76F2B /* Montserrat_bold.otf */,
 			);
 			name = fonts;
 			path = ../assets/fonts;
@@ -622,10 +622,10 @@
 				DD6AD06064EE4BFC9FF8A3B7 /* EvilIcons.ttf in Resources */,
 				45F8D7932AD44C1C8AAFB065 /* FontAwesome.ttf in Resources */,
 				537FF8B2F6B74B51A3AE4EB3 /* Foundation.ttf in Resources */,
-				52EB9EF11D5579B700C76F2B /* Lato.ttf in Resources */,
+				52EB9EF11D5579B700C76F2B /* Montserrat.otf in Resources */,
 				B109B876F1A14F1D9E8DD2D2 /* Ionicons.ttf in Resources */,
 				D2494C4F67604FC4A511DA2C /* MaterialIcons.ttf in Resources */,
-				52EB9EF21D5579B700C76F2B /* Lato_bold.ttf in Resources */,
+				52EB9EF21D5579B700C76F2B /* Montserrat_bold.otf in Resources */,
 				EEE4246C088F469D94F60FB1 /* Octicons.ttf in Resources */,
 				832FABFF32874FD9A63A965A /* Zocial.ttf in Resources */,
 			);

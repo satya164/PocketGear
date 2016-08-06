@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     flex: 1,
     color: '#222',
     textAlign: Platform.OS === 'ios' ? 'center' : 'left',
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
     fontSize: Platform.OS === 'ios' ? 16 : 18,
     margin: 8,
   },
@@ -71,11 +71,11 @@ const styles = StyleSheet.create({
 
   name: {
     color: '#222',
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
     fontSize: 18,
     fontWeight: 'bold',
     marginTop: 56,
-    marginBottom: 8,
+    marginBottom: 4,
   },
 
   row: {
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
 
   info: {
     color: '#222',
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
     fontSize: 13,
     width: 120,
   },
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
 
   tablabel: {
     color: '#222',
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
     fontSize: 10,
     fontWeight: 'bold',
     marginVertical: 8,

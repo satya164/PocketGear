@@ -22,9 +22,9 @@ const styles = StyleSheet.create({
   },
 
   label: {
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
     fontWeight: 'bold',
-    fontSize: 14,
+    fontSize: 13,
     color: '#222',
     opacity: 0.5,
     margin: 8,

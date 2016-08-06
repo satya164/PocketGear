@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 16,
     borderRadius: 2,
-    elevation: 1,
   },
 
   image: {
@@ -38,17 +37,17 @@ const styles = StyleSheet.create({
 
   title: {
     color: '#000',
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
     fontWeight: 'bold',
-    fontSize: 14,
+    fontSize: 13,
     textAlign: 'center',
     opacity: 0.6,
   },
 
   subtitle: {
     color: '#000',
-    fontFamily: 'Lato',
-    fontSize: 12,
+    fontFamily: 'Montserrat',
+    fontSize: 11,
     textAlign: 'center',
     opacity: 0.3,
   },

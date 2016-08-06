@@ -35,7 +35,9 @@ const styles = StyleSheet.create({
 
   text: {
     color: '#222',
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
+    fontSize: 13,
+    lineHeight: 20,
   },
 
   title: {
@@ -44,7 +46,7 @@ const styles = StyleSheet.create({
   },
 
   description: {
-    lineHeight: 21,
+    lineHeight: 20,
     marginVertical: 4,
   },
 

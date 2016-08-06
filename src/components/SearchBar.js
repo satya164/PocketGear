@@ -25,11 +25,11 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    fontFamily: 'Lato',
+    fontFamily: 'Montserrat',
     flex: 1,
     margin: 0,
     padding: 0,
-  }
+  },
 });
 
 type Props = {
