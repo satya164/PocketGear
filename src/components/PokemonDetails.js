@@ -37,10 +37,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
   },
 
-  strong: {
-    fontWeight: 'bold',
-  },
-
   title: {
     fontWeight: 'bold',
     fontSize: 16,
@@ -61,10 +57,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  small: {
-    fontSize: 12,
-  },
-
   type: {
     width: 120,
   },
@@ -72,11 +64,6 @@ const styles = StyleSheet.create({
   amount: {
     textAlign: 'right',
     width: 60,
-  },
-
-  subtitle: {
-    fontSize: 12,
-    opacity: 0.5,
   },
 });
 
@@ -130,9 +117,9 @@ export default class PokemonDetails extends Component<void, Props, State> {
   _renderStat = (type: string, ratio: number, amount: string | number, fill: string) => {
     return (
       <View style={[ styles.row, styles.center ]}>
-        <Text style={[ styles.text, styles.small, styles.subtitle, styles.type, styles.strong ]}>{type}</Text>
+        <Text style={[ styles.text, styles.type ]}>{type}</Text>
         <ProgressBar ratio={ratio} fillColor={fill} />
-        <Text style={[ styles.text, styles.small, styles.amount ]}>{amount}</Text>
+        <Text style={[ styles.text, styles.amount ]}>{amount}</Text>
       </View>
     );
   };
