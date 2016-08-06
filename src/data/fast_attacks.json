@@ -1,7 +1,7 @@
 [
   {
     "name": "Acid",
-    "type": "poison",
+    "type": "Poison",
     "damage": 10,
     "energy_increase": 7,
     "duration": 1050,
@@ -23,7 +23,7 @@
   },
   {
     "name": "Bite",
-    "type": "dark",
+    "type": "Dark",
     "damage": 6,
     "energy_increase": 7,
     "duration": 500,
@@ -47,8 +47,8 @@
   },
   {
     "name": "Bubble",
-    "type": "water",
-    "damage": 15,
+    "type": "Water",
+    "damage": 25,
     "energy_increase": 15,
     "duration": 2300,
     "known_by": [
@@ -63,8 +63,8 @@
   },
   {
     "name": "Bug Bite",
-    "type": "bug",
-    "damage": 6,
+    "type": "Bug",
+    "damage": 5,
     "energy_increase": 7,
     "duration": 450,
     "known_by": [
@@ -82,7 +82,7 @@
   },
   {
     "name": "Bullet Punch",
-    "type": "steel",
+    "type": "Steel",
     "damage": 10,
     "energy_increase": 7,
     "duration": 1200,
@@ -93,8 +93,8 @@
   },
   {
     "name": "Confusion",
-    "type": "psychic",
-    "damage": 12,
+    "type": "Psychic",
+    "damage": 15,
     "energy_increase": 7,
     "duration": 1510,
     "known_by": [
@@ -116,7 +116,7 @@
   },
   {
     "name": "Cut",
-    "type": "normal",
+    "type": "Normal",
     "damage": 12,
     "energy_increase": 7,
     "duration": 1130,
@@ -126,7 +126,7 @@
   },
   {
     "name": "Dragon Breath",
-    "type": "dragon",
+    "type": "Dragon",
     "damage": 6,
     "energy_increase": 7,
     "duration": 500,
@@ -140,7 +140,7 @@
   },
   {
     "name": "Ember",
-    "type": "fire",
+    "type": "Fire",
     "damage": 10,
     "energy_increase": 7,
     "duration": 1050,
@@ -160,7 +160,7 @@
   },
   {
     "name": "Feint Attack",
-    "type": "dark",
+    "type": "Dark",
     "damage": 12,
     "energy_increase": 7,
     "duration": 1040,
@@ -174,8 +174,8 @@
   },
   {
     "name": "Fire Fang",
-    "type": "fire",
-    "damage": 7,
+    "type": "Fire",
+    "damage": 10,
     "energy_increase": 4,
     "duration": 840,
     "known_by": [
@@ -184,8 +184,8 @@
   },
   {
     "name": "Frost Breath",
-    "type": "ice",
-    "damage": 12,
+    "type": "Ice",
+    "damage": 9,
     "energy_increase": 7,
     "duration": 810,
     "known_by": [
@@ -198,7 +198,7 @@
   },
   {
     "name": "Fury Cutter",
-    "type": "bug",
+    "type": "Bug",
     "damage": 3,
     "energy_increase": 12,
     "duration": 400,
@@ -213,8 +213,8 @@
   },
   {
     "name": "Ice Shard",
-    "type": "ice",
-    "damage": 10,
+    "type": "Ice",
+    "damage": 15,
     "energy_increase": 7,
     "duration": 1400,
     "known_by": [
@@ -227,7 +227,7 @@
   },
   {
     "name": "Karate Chop",
-    "type": "fighting",
+    "type": "Fighting",
     "damage": 6,
     "energy_increase": 7,
     "duration": 800,
@@ -242,8 +242,8 @@
   },
   {
     "name": "Lick",
-    "type": "ghost",
-    "damage": 10,
+    "type": "Ghost",
+    "damage": 5,
     "energy_increase": 7,
     "duration": 500,
     "known_by": [
@@ -255,7 +255,7 @@
   },
   {
     "name": "Low Kick",
-    "type": "fighting",
+    "type": "Fighting",
     "damage": 5,
     "energy_increase": 7,
     "duration": 600,
@@ -271,8 +271,8 @@
   },
   {
     "name": "Metal Claw",
-    "type": "steel",
-    "damage": 12,
+    "type": "Steel",
+    "damage": 8,
     "energy_increase": 7,
     "duration": 630,
     "known_by": [
@@ -282,8 +282,8 @@
   },
   {
     "name": "Mud Shot",
-    "type": "ground",
-    "damage": 12,
+    "type": "Ground",
+    "damage": 6,
     "energy_increase": 7,
     "duration": 550,
     "known_by": [
@@ -306,8 +306,8 @@
   },
   {
     "name": "Mud Slap",
-    "type": "ground",
-    "damage": 6,
+    "type": "Ground",
+    "damage": 15,
     "energy_increase": 9,
     "duration": 1350,
     "known_by": [
@@ -321,7 +321,7 @@
   },
   {
     "name": "Peck",
-    "type": "flying",
+    "type": "Flying",
     "damage": 10,
     "energy_increase": 10,
     "duration": 1150,
@@ -336,8 +336,8 @@
   },
   {
     "name": "Poison Jab",
-    "type": "poison",
-    "damage": 15,
+    "type": "Poison",
+    "damage": 12,
     "energy_increase": 7,
     "duration": 1050,
     "known_by": [
@@ -352,7 +352,7 @@
   },
   {
     "name": "Poison Sting",
-    "type": "poison",
+    "type": "Poison",
     "damage": 6,
     "energy_increase": 4,
     "duration": 575,
@@ -368,8 +368,8 @@
   },
   {
     "name": "Pound",
-    "type": "normal",
-    "damage": 8,
+    "type": "Normal",
+    "damage": 7,
     "energy_increase": 7,
     "duration": 540,
     "known_by": [
@@ -386,8 +386,8 @@
   },
   {
     "name": "Psycho Cut",
-    "type": "psychic",
-    "damage": 15,
+    "type": "Psychic",
+    "damage": 7,
     "energy_increase": 7,
     "duration": 570,
     "known_by": [
@@ -398,7 +398,7 @@
   },
   {
     "name": "Quick Attack",
-    "type": "normal",
+    "type": "Normal",
     "damage": 10,
     "energy_increase": 7,
     "duration": 1330,
@@ -419,7 +419,7 @@
   },
   {
     "name": "Razor Leaf",
-    "type": "grass",
+    "type": "Grass",
     "damage": 15,
     "energy_increase": 7,
     "duration": 1450,
@@ -435,8 +435,8 @@
   },
   {
     "name": "Rock Smash",
-    "type": "fighting",
-    "damage": 5,
+    "type": "Fighting",
+    "damage": 15,
     "energy_increase": 7,
     "duration": 1410,
     "known_by": [
@@ -451,7 +451,7 @@
   },
   {
     "name": "Rock Throw",
-    "type": "rock",
+    "type": "Rock",
     "damage": 12,
     "energy_increase": 7,
     "duration": 1360,
@@ -465,8 +465,8 @@
   },
   {
     "name": "Scratch",
-    "type": "normal",
-    "damage": 10,
+    "type": "Normal",
+    "damage": 6,
     "energy_increase": 7,
     "duration": 500,
     "known_by": [
@@ -483,8 +483,8 @@
   },
   {
     "name": "Shadow Claw",
-    "type": "ghost",
-    "damage": 16,
+    "type": "Ghost",
+    "damage": 11,
     "energy_increase": 7,
     "duration": 950,
     "known_by": [
@@ -494,7 +494,7 @@
   },
   {
     "name": "Spark",
-    "type": "electric",
+    "type": "Electric",
     "damage": 7,
     "energy_increase": 4,
     "duration": 700,
@@ -508,7 +508,7 @@
   },
   {
     "name": "Splash",
-    "type": "water",
+    "type": "Water",
     "damage": 0,
     "energy_increase": 7,
     "duration": 1230,
@@ -518,7 +518,7 @@
   },
   {
     "name": "Steel Wing",
-    "type": "steel",
+    "type": "Steel",
     "damage": 15,
     "energy_increase": 4,
     "duration": 1330,
@@ -534,7 +534,7 @@
   },
   {
     "name": "Sucker Punch",
-    "type": "dark",
+    "type": "Dark",
     "damage": 7,
     "energy_increase": 4,
     "duration": 700,
@@ -546,7 +546,7 @@
   },
   {
     "name": "Tackle",
-    "type": "normal",
+    "type": "Normal",
     "damage": 12,
     "energy_increase": 7,
     "duration": 1100,
@@ -572,7 +572,7 @@
   },
   {
     "name": "Thunder Shock",
-    "type": "electric",
+    "type": "Electric",
     "damage": 5,
     "energy_increase": 7,
     "duration": 600,
@@ -588,8 +588,8 @@
   },
   {
     "name": "Vine Whip",
-    "type": "grass",
-    "damage": 10,
+    "type": "Grass",
+    "damage": 7,
     "energy_increase": 7,
     "duration": 650,
     "known_by": [
@@ -602,8 +602,8 @@
   },
   {
     "name": "Water Gun",
-    "type": "water",
-    "damage": 10,
+    "type": "Water",
+    "damage": 6,
     "energy_increase": 7,
     "duration": 500,
     "known_by": [
@@ -625,8 +625,8 @@
   },
   {
     "name": "Wing Attack",
-    "type": "flying",
-    "damage": 12,
+    "type": "Flying",
+    "damage": 9,
     "energy_increase": 7,
     "duration": 750,
     "known_by": [
@@ -638,8 +638,8 @@
   },
   {
     "name": "Zen Headbutt",
-    "type": "psychic",
-    "damage": 15,
+    "type": "Psychic",
+    "damage": 12,
     "energy_increase": 4,
     "duration": 1050,
     "known_by": [
