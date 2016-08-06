@@ -1,5 +1,7 @@
 /* @flow */
 
+import find from 'lodash/find';
+import filter from 'lodash/filter';
 import React, { PropTypes, Component } from 'react';
 import {
   View,
@@ -9,7 +11,7 @@ import {
 } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
-import db from '../db';
+import store from '../store';
 
 const styles = StyleSheet.create({
   page: {
@@ -55,31 +57,32 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   _handleSearchChange = (query: string) => {
     this.setState({
-      query
+      query,
     });
   };
 
   _getSearchResults = () => {
     const { query } = this.state;
-    const pokemons = db.objects('Pokemon').sorted('id');
+    const pokemons = store.getPokemons();
 
     if (query) {
       if (!isNaN(query)) {
-        return pokemons.filtered(`id == ${query}`).slice();
+        return find(pokemons, { id: parseInt(query, 10) });
       }
-      return pokemons.filtered(`name BEGINSWITH[c] "${query}" OR type.name BEGINSWITH[c] "${query}"`).slice();
+      return filter(pokemons, (pokemon => pokemon.name.indexOf(query) === 0));
     }
 
-    return pokemons.slice();
+    return pokemons;
   };
 
   render() {
+    const pokemons = this._getSearchResults();
     return (
       <View style={styles.page}>
         <StatusBar backgroundColor='#ccc' />
         <PokemonList
           contentContainerStyle={styles.list}
-          data={this._getSearchResults()}
+          data={pokemons}
           onNavigate={this.props.onNavigate}
         />
         <View style={styles.searchbar}>

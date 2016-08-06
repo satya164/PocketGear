@@ -1,9 +1,10 @@
 /* @flow */
 
+import find from 'lodash/find';
 import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import PokemonList from './PokemonList';
-import db from '../db';
+import store from '../store';
 
 type Props = {
   pokemon: Object;
@@ -34,18 +35,13 @@ export default class StrongAgainstList extends Component<void, Props, State> {
   }
 
   _updateData = () => {
-    const pokemons = [];
-    this.props.pokemon.type.forEach(type => {
-      db.objects('Pokemon').forEach(p => {
-        p.type.forEach(t => {
-          t.weaknesses.forEach(s => {
-            if (s.name === type.name && !pokemons.includes(p)) {
-              pokemons.push(p);
-            }
-          });
-        });
-      });
-    });
+    const { pokemon } = this.props;
+    const typeDetails = find(store.getTypes(), ({ name }) => pokemon.types.includes(name));
+    const { strengths, weaknesses } = typeDetails;
+    const pokemons = store.getPokemons().filter(({ types }) => (
+      types.some(t => strengths.includes(t)) && !types.some(t => weaknesses.includes(t))
+    ));
+
     this.setState({ pokemons });
   };
 

@@ -31,7 +31,7 @@
   },
 
   "rules": {
-    "comma-dangle": 0,
+    "comma-dangle": [1, "always-multiline"],
     "max-depth": 0,
     "max-len": 0,
     "max-params": 0,
@@ -189,7 +189,7 @@
     "no-lonely-if": 0,
     "no-mixed-spaces-and-tabs": [1, "smart-tabs"],
     "no-multiple-empty-lines": 1,
-    "no-nested-ternary": 1,
+    "no-nested-ternary": 0,
     "no-new-object": 1,
     "no-new-symbol": 2,
     "no-spaced-func": 1,
