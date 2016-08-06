@@ -87,6 +87,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginBottom: 16,
     alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+  },
+
+  basic: {
+    flex: 1,
   },
 
   info: {
@@ -230,7 +235,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
           <View style={styles.button} />
         </View>
         <View style={[ styles.row, styles.meta ]}>
-          <View>
+          <View style={styles.basic}>
             <Text style={styles.name}>{pokemon.name}</Text>
             <Text style={styles.info}>{pokemon.types.join(', ')}</Text>
           </View>
