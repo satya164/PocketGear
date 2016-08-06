@@ -72,7 +72,7 @@ export default class WeakAgainstList extends Component<void, Props, State> {
       return (
         <NoResults
           source={require('../../assets/images/ultra-ball.png')}
-          label={`${this.props.pokemon.name} is unbeatable`}
+          label={`${this.props.pokemon.name} seems unbeatable`}
         />
       );
     }
