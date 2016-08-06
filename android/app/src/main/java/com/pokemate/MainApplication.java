@@ -1,4 +1,4 @@
-package com.pokematch;
+package com.pokemate;
 
 import android.app.Application;
 import android.util.Log;

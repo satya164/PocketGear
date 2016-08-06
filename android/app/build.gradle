@@ -65,9 +65,8 @@ import com.android.build.OutputFile
  * ]
  */
 
-
 project.ext.vectoricons = [
-   iconFontNames: [ "MaterialIcons.ttf" ]
+    iconFontNames: [ "MaterialIcons.ttf" ]
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -93,7 +92,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.pokematch"
+        applicationId "com.pokemate"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
