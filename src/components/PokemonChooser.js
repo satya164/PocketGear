@@ -69,7 +69,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
       if (!isNaN(query)) {
         return find(pokemons, { id: parseInt(query, 10) });
       }
-      return filter(pokemons, (pokemon => pokemon.name.indexOf(query) === 0));
+      return filter(pokemons, (pokemon => pokemon.name.toLowerCase().indexOf(query.toLowerCase()) === 0));
     }
 
     return pokemons;
