@@ -34,8 +34,11 @@ const styles = StyleSheet.create({
   },
 
   appbar: {
+    position: 'absolute',
     flexDirection: 'row',
     alignItems: 'center',
+    left: 0,
+    right: 0,
     height: BAR_HEIGHT,
     marginTop: Platform.OS === 'ios' ? 20 : 0,
   },
@@ -71,7 +74,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato',
     fontSize: 18,
     fontWeight: 'bold',
-    marginVertical: 2,
+    marginTop: 56,
+    marginBottom: 8,
   },
 
   row: {
@@ -83,15 +87,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginBottom: 16,
     alignItems: 'flex-end',
-  },
-
-  label: {
-    color: '#222',
-    fontFamily: 'Lato',
-    fontSize: 12,
-    fontWeight: 'bold',
-    opacity: 0.5,
-    width: 72,
   },
 
   info: {
@@ -162,7 +157,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
     },
   };
 
-  _getPokemon = memoize((id: PokemonID): Pokemon => {
+  _getPokemon: (id: PokemonID) => Pokemon = memoize((id: PokemonID) => {
     const pokemons = store.getPokemons();
     const pokemon = find(pokemons, { id });
     return pokemon;
@@ -213,8 +208,6 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   render() {
     const pokemon = this._getPokemon(this.props.pokemonId);
-    const types = store.getTypeChart();
-    const { weaknesses } = find(types, ({ name }) => pokemon.types.includes(name));
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
@@ -239,14 +232,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
         <View style={[ styles.row, styles.meta ]}>
           <View>
             <Text style={styles.name}>{pokemon.name}</Text>
-            <View style={styles.row}>
-              <Text style={styles.label}>Type</Text>
-              <Text style={styles.info}>{pokemon.types.join(', ')}</Text>
-            </View>
-            <View style={styles.row}>
-              <Text style={styles.label}>Weakness</Text>
-              <Text style={styles.info}>{weaknesses.join(', ')}</Text>
-            </View>
+            <Text style={styles.info}>{pokemon.types.join(', ')}</Text>
           </View>
           <Image style={styles.image} source={sprites[pokemon.id - 1]} />
         </View>

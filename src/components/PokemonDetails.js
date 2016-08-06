@@ -176,17 +176,17 @@ export default class PokemonDetails extends Component<void, Props, State> {
           </Text>
 
           <View style={styles.item}>
+            {attacks.quick.map(this._renderAttack)}
+            {attacks.special.map(this._renderAttack)}
+          </View>
+
+          <View style={styles.item}>
             {this._renderStat('Attack', pokemon.attack / 300, pokemon.attack, '#ff8a65')}
             {this._renderStat('Defense', pokemon.defense / 200, pokemon.defense, '#9575cd')}
             {this._renderStat('Capture Rate', pokemon.capture_rate, (pokemon.capture_rate * 100).toFixed(2) + '%', '#f06292')}
             {this._renderStat('Flee Rate', pokemon.flee_rate, (pokemon.flee_rate * 100).toFixed(2) + '%', '#ffd54f')}
             {this._renderStat('Max CP', pokemon.max_cp / 3904, pokemon.max_cp, '#e57373')}
             {this._renderStat('Max HP', pokemon.max_hp / 163, pokemon.max_hp, '#4db6ac')}
-          </View>
-
-          <View style={styles.item}>
-            {attacks.quick.map(this._renderAttack)}
-            {attacks.special.map(this._renderAttack)}
           </View>
         </View>
       </ScrollView>
