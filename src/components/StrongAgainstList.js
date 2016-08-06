@@ -52,7 +52,9 @@ export default class StrongAgainstList extends Component<void, Props, State> {
     const { strengths, weaknesses } = typeDetails;
     const pokemons = store.getPokemons().filter(({ types }) => (
       types.some(t => strengths.includes(t)) && !types.some(t => weaknesses.includes(t))
-    ));
+    ))
+    .filter(({ attack }) => pokemon.attack > attack)
+    .sort((a, b) => a.attack - b.attack);
 
     this.setState({ pokemons });
   };
