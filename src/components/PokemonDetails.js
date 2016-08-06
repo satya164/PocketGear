@@ -11,6 +11,12 @@ import {
 } from 'react-native';
 import ProgressBar from './ProgressBar';
 import Placeholder from './Placeholder';
+import Attack from './Attack';
+import store from '../store';
+import type {
+  QuickAttack,
+  SpecialAttack,
+} from '../typeDefinitions';
 
 const styles = StyleSheet.create({
   container: {
@@ -131,12 +137,33 @@ export default class PokemonDetails extends Component<void, Props, State> {
     );
   };
 
+  _renderAttack = (attack: QuickAttack | SpecialAttack) => {
+    return (
+      <Attack
+        key={attack.name}
+        style={styles.row}
+        attack={attack}
+      />
+    );
+  };
+
+  _getAttacks = (id: number) => {
+    const quickAttacks = store.getQuickAttacks();
+    const specialAttacks = store.getSpecialAttacks();
+
+    return {
+      quick: quickAttacks.filter(attack => attack.known_by.includes(id)).sort((a, b) => b.damage - a.damage),
+      special: specialAttacks.filter(attack => attack.known_by.includes(id)).sort((a, b) => b.damage - a.damage),
+    };
+  };
+
   render() {
     if (this.state.loading) {
       return <Placeholder />;
     }
 
     const { pokemon } = this.props;
+    const attacks = this._getAttacks(pokemon.id);
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
@@ -155,6 +182,11 @@ export default class PokemonDetails extends Component<void, Props, State> {
             {this._renderStat('Flee Rate', pokemon.flee_rate, (pokemon.flee_rate * 100).toFixed(2) + '%', '#ffd54f')}
             {this._renderStat('Max CP', pokemon.max_cp / 3904, pokemon.max_cp, '#e57373')}
             {this._renderStat('Max HP', pokemon.max_hp / 163, pokemon.max_hp, '#4db6ac')}
+          </View>
+
+          <View style={styles.item}>
+            {attacks.quick.map(this._renderAttack)}
+            {attacks.special.map(this._renderAttack)}
           </View>
         </View>
       </ScrollView>
