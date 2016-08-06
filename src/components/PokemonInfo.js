@@ -18,8 +18,9 @@ import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
 import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
-import sprites from '../sprites';
 import store from '../store';
+import sprites from '../sprites';
+import colors from '../colors.json';
 import type {
   PokemonID,
   Pokemon,
@@ -79,7 +80,23 @@ const styles = StyleSheet.create({
   },
 
   types: {
-    fontSize: 13,
+    flexDirection: 'row',
+    marginHorizontal: -2,
+  },
+
+  type: {
+    borderRadius: 2,
+    paddingVertical: 3,
+    paddingHorizontal: 6,
+    margin: 2,
+  },
+
+  typeText: {
+    color: '#000',
+    fontFamily: 'Montserrat',
+    fontWeight: 'bold',
+    fontSize: 11,
+    opacity: 0.6,
   },
 
   row: {
@@ -234,7 +251,16 @@ export default class PokemonInfo extends Component<void, Props, State> {
         <View style={[ styles.row, styles.meta ]}>
           <View style={styles.basic}>
             <Text style={[ styles.label, styles.name ]}>{pokemon.name}</Text>
-            <Text style={[ styles.label, styles.types ]}>{pokemon.types.join(', ')}</Text>
+            <View style={styles.types}>
+              {pokemon.types.map(type => {
+                const color = colors[type.toLowerCase()];
+                return (
+                  <View key={type} style={[ styles.type, { backgroundColor: color } ]}>
+                    <Text style={styles.typeText}>{type}</Text>
+                  </View>
+                );
+              })}
+            </View>
           </View>
           <Image style={styles.image} source={sprites[pokemon.id - 1]} />
         </View>
