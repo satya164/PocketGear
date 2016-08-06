@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
 
   item: {
-    marginVertical: 16,
+    marginVertical: 8,
   },
 
   text: {
@@ -40,9 +40,8 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
 
-  title: {
+  strong: {
     fontWeight: 'bold',
-    marginVertical: 4,
   },
 
   description: {
@@ -57,6 +56,10 @@ const styles = StyleSheet.create({
 
   center: {
     alignItems: 'center',
+  },
+
+  label: {
+    width: 60,
   },
 
   type: {
@@ -157,12 +160,27 @@ export default class PokemonDetails extends Component<void, Props, State> {
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
         <View style={styles.content}>
-          <Text style={[ styles.text, styles.title ]}>
-            {pokemon.category}
-          </Text>
-          <Text style={[ styles.text, styles.description ]}>
-            {pokemon.description}
-          </Text>
+
+          <View style={styles.item}>
+            <View style={[ styles.row, styles.center ]}>
+              <Text style={[ styles.text, styles.strong, styles.label ]}>Height</Text>
+              <Text style={styles.text}>{pokemon.height.amount} {pokemon.height.unit}</Text>
+            </View>
+            <View style={[ styles.row, styles.center ]}>
+              <Text style={[ styles.text, styles.strong, styles.label ]}>Width</Text>
+              <Text style={styles.text}>{pokemon.weight.amount} {pokemon.weight.unit}</Text>
+            </View>
+          </View>
+
+          <View style={styles.item}>
+            <Text style={[ styles.text, styles.strong ]}>
+              {pokemon.category}
+            </Text>
+
+            <Text style={[ styles.text, styles.description ]}>
+              {pokemon.description}
+            </Text>
+          </View>
 
           <View style={styles.item}>
             {attacks.quick.map(this._renderAttack)}
