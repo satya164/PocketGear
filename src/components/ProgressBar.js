@@ -12,12 +12,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 4,
     backgroundColor: 'rgba(0, 0, 0, .06)',
-    borderRadius: 2,
   },
 
-  fill: {
-    borderTopLeftRadius: 2,
-    borderBottomLeftRadius: 2,
+  round: {
+    borderRadius: 2,
   },
 });
 
@@ -51,8 +49,8 @@ export default class ProgressBar extends Component<DefaultProps, Props, void> {
     } = this.props;
 
     return (
-      <View style={[ styles.bar, style ]}>
-        <View style={[ { flex: ratio, backgroundColor: fillColor }, styles.fill ]} />
+      <View style={[ styles.bar, styles.round, style ]}>
+        <View style={[ { flex: ratio, backgroundColor: fillColor }, styles.round ]} />
         <View style={{ flex: 1 - ratio }} />
       </View>
     );
