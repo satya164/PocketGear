@@ -14,6 +14,7 @@ import Placeholder from './Placeholder';
 import Attack from './Attack';
 import store from '../store';
 import type {
+  Pokemon,
   QuickAttack,
   SpecialAttack,
 } from '../typeDefinitions';
@@ -39,7 +40,6 @@ const styles = StyleSheet.create({
 
   title: {
     fontWeight: 'bold',
-    fontSize: 16,
     marginVertical: 4,
   },
 
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
 
 
 type Props = {
-  pokemon: any;
+  pokemon: Pokemon;
   style?: any;
   onNavigate: Function;
 }

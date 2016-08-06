@@ -4,6 +4,7 @@ import find from 'lodash/find';
 import filter from 'lodash/filter';
 import React, { PropTypes, Component } from 'react';
 import {
+  KeyboardAvoidingView,
   View,
   StatusBar,
   StyleSheet,
@@ -77,7 +78,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
   render() {
     const pokemons = this._getSearchResults();
     return (
-      <View style={styles.page}>
+      <KeyboardAvoidingView style={styles.page}>
         <StatusBar backgroundColor='#ccc' />
         {pokemons.length ?
           <PokemonList
@@ -94,7 +95,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
             onChangeSearch={this._handleSearchChange}
           />
         </View>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }
