@@ -57,7 +57,11 @@ export default class WeakAgainstList extends Component<void, Props, State> {
     const pokemons = store.getPokemons().filter(({ types }) => (
       types.some(t => weaknesses.includes(t)) && !types.some(t => strengths.includes(t))
     ))
-    .filter(({ attack }) => pokemon.attack < attack)
+    .filter(({ attack, stamina, defense }) =>
+      pokemon.attack < attack ||
+      pokemon.stamina < stamina ||
+      pokemon.defense < defense
+    )
     .sort((a, b) => b.attack - a.attack);
 
     this.setState({ pokemons });
