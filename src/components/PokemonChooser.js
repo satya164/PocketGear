@@ -7,7 +7,6 @@ import React, { PropTypes, Component } from 'react';
 import {
   KeyboardAvoidingView,
   View,
-  StatusBar,
   StyleSheet,
   Platform,
 } from 'react-native';
@@ -22,7 +21,7 @@ import type {
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: '#f6f6f6',
+    backgroundColor: '#f4f4f4',
   },
 
   list: {
@@ -36,7 +35,7 @@ const styles = StyleSheet.create({
     right: 0,
     ...(Platform.OS === 'ios' ? {
       paddingTop: 20,
-      backgroundColor: '#f6f6f6',
+      backgroundColor: '#f4f4f4',
     } : null),
   },
 });
@@ -113,7 +112,6 @@ export default class PokemonChooser extends Component<void, Props, State> {
   render() {
     return (
       <KeyboardAvoidingView style={styles.page}>
-        <StatusBar backgroundColor='#d6d6d6' />
         {this.state.results.length ?
           <PokemonList
             scrollsToTop
