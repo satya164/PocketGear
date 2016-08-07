@@ -83,7 +83,7 @@ export default class Attack extends Component<void, Props, void> {
             {attack.damage}
           </Text>
           <Text style={[ styles.text, styles.subtitle ]}>
-            {attack.duration / 1000}s
+            {attack.duration / 1000} s
           </Text>
         </View>
       </View>

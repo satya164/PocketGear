@@ -167,7 +167,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
               <Text style={styles.text}>{pokemon.height.amount} {pokemon.height.unit}</Text>
             </View>
             <View style={[ styles.row, styles.center ]}>
-              <Text style={[ styles.text, styles.strong, styles.label ]}>Width</Text>
+              <Text style={[ styles.text, styles.strong, styles.label ]}>Weight</Text>
               <Text style={styles.text}>{pokemon.weight.amount} {pokemon.weight.unit}</Text>
             </View>
           </View>
