@@ -3,7 +3,6 @@
 import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import {
-  InteractionManager,
   View,
   Text,
   ScrollView,
@@ -98,7 +97,8 @@ export default class PokemonDetails extends Component<void, Props, State> {
   };
 
   componentDidMount() {
-    InteractionManager.runAfterInteractions(this._setLoading);
+    // FIXME: InteractionManager seems buggy - #8624
+    setTimeout(this._setLoading, 200);
   }
 
   shouldComponentUpdate(nextProps: Props, nextState: State) {

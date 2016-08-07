@@ -2,7 +2,6 @@
 
 import find from 'lodash/find';
 import React, { PropTypes, Component } from 'react';
-import { InteractionManager } from 'react-native';
 import shallowCompare from 'react-addons-shallow-compare';
 import PokemonList from './PokemonList';
 import Placeholder from './Placeholder';
@@ -39,7 +38,8 @@ export default class WeakAgainstList extends Component<void, Props, State> {
   }
 
   componentDidMount() {
-    InteractionManager.runAfterInteractions(this._setLoading);
+    // FIXME: InteractionManager seems buggy - #8624
+    setTimeout(this._setLoading, 200);
   }
 
   shouldComponentUpdate(nextProps: Props, nextState: State) {
