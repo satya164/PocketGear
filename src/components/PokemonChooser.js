@@ -87,6 +87,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
         <StatusBar backgroundColor='#ccc' />
         {pokemons.length ?
           <PokemonList
+            keyboardShouldPersistTaps
             contentContainerStyle={styles.list}
             data={pokemons}
             onNavigate={this.props.onNavigate}

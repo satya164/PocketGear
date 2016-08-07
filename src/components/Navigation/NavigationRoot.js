@@ -2,6 +2,7 @@
 
 import { Component, PropTypes } from 'react';
 import { AsyncStorage } from 'react-native';
+import dismissKeyboard from 'react-native/Libraries/Utilities/dismissKeyboard';
 import { v4 } from 'react-native-uuid';
 import isEqual from 'lodash/isEqual';
 import type { Route, NavigationState, NavigationAction } from './NavigationTypeDefinitions';
@@ -122,6 +123,8 @@ export default class NavigationRoot extends Component<void, Props, State> {
   };
 
   _handleNavigate = ({ type, route }: NavigationAction) => {
+    dismissKeyboard();
+
     const nextNavigationState = this._reduceState(this.state.navigation, {
       type,
       route: { key: v4(), ...route },
