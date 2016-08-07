@@ -36,6 +36,12 @@ export default class PokemonList extends Component<void, Props, void> {
     return shallowCompare(this, nextProps, nextState);
   }
 
+  scrollTo(options: any) {
+    this._root.scrollTo(options);
+  }
+
+  _root: Object;
+
   _renderRow = (rowData: any) => {
     return <PokemonListCard pokemon={rowData} onNavigate={this.props.onNavigate} />;
   };
@@ -43,6 +49,8 @@ export default class PokemonList extends Component<void, Props, void> {
   _getNumberOfColumns = (width: number) => {
     return Math.floor(width / 160);
   };
+
+  _setRef = (c: Object) => (this._root = c);
 
   render() {
     return (
@@ -52,6 +60,7 @@ export default class PokemonList extends Component<void, Props, void> {
         spacing={Platform.OS === 'ios' ? 10 : 8}
         renderRow={this._renderRow}
         getNumberOfColumns={this._getNumberOfColumns}
+        ref={this._setRef}
       />
     );
   }

@@ -2,6 +2,7 @@
 
 import find from 'lodash/find';
 import filter from 'lodash/filter';
+import debounce from 'lodash/debounce';
 import React, { PropTypes, Component } from 'react';
 import {
   KeyboardAvoidingView,
@@ -14,6 +15,9 @@ import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
 import NoResults from './NoResults';
 import store from '../store';
+import type {
+  Pokemon,
+} from '../typeDefinitions';
 
 const styles = StyleSheet.create({
   page: {
@@ -39,6 +43,7 @@ const styles = StyleSheet.create({
 
 type State = {
   query: string;
+  results: Array<Pokemon>
 }
 
 type Props = {
@@ -53,16 +58,10 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   state: State = {
     query: '',
+    results: store.getPokemons(),
   };
 
-  _handleSearchChange = (query: string) => {
-    this.setState({
-      query,
-    });
-  };
-
-  _getSearchResults = () => {
-    const { query } = this.state;
+  _getResults = (query: string) => {
     const pokemons = store.getPokemons();
 
     if (query) {
@@ -80,19 +79,55 @@ export default class PokemonChooser extends Component<void, Props, State> {
     return pokemons;
   };
 
+  _updateResults = debounce(() => {
+    const results = this._getResults(this.state.query);
+    this.setState({
+      results,
+    }, () => {
+      if (this._list) {
+        this._list.scrollTo({
+          x: 0,
+          y: 0,
+          animated: false,
+        });
+      }
+    });
+  }, 200);
+
+  _handleSearchChange = (query: string) => {
+    if (this.state.query === query) {
+      return;
+    }
+    this.setState({
+      query,
+    });
+    this._updateResults();
+  };
+
+  _list: ?Object;
+
+  _setRef = (c: Object) => (this._list = c);
+
+  _unsetRef = () => (this._list = null);
+
   render() {
-    const pokemons = this._getSearchResults();
     return (
       <KeyboardAvoidingView style={styles.page}>
         <StatusBar backgroundColor='#d6d6d6' />
-        {pokemons.length ?
+        {this.state.results.length ?
           <PokemonList
+            scrollsToTop
             keyboardShouldPersistTaps
             contentContainerStyle={styles.list}
-            data={pokemons}
+            data={this.state.results}
             onNavigate={this.props.onNavigate}
+            ref={this._setRef}
           /> :
-          <NoResults source={require('../../assets/images/open-pokeball.png')} label='No Pokémon found' />
+          <NoResults
+            label='No Pokémon found'
+            source={require('../../assets/images/open-pokeball.png')}
+            ref={this._unsetRef}
+          />
         }
         <View style={styles.searchbar}>
           <SearchBar

@@ -79,6 +79,12 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     });
   }
 
+  scrollTo(options: any) {
+    this._root.scrollTo(options);
+  }
+
+  _root: Object;
+
   _renderRow = (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => {
     return (
       <View
@@ -102,6 +108,8 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     });
   };
 
+  _setRef = (c: Object) => (this._root = c);
+
   render() {
     return (
       <ListView
@@ -111,6 +119,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
         onLayout={this._handleLayout}
         renderRow={this._renderRow}
         contentContainerStyle={[ styles.grid, { padding: this.props.spacing / 2 }, this.props.contentContainerStyle ]}
+        ref={this._setRef}
       />
     );
   }
