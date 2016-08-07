@@ -1,5 +1,6 @@
 /* @flow */
 
+import difference from 'lodash/difference';
 import React, { PropTypes, Component } from 'react';
 import {
   View,
@@ -109,10 +110,32 @@ export default class Evolution extends Component<void, Props, void> {
     }
 
     chains = chains.map(chain =>
+      // Remove Pokemons from a newer generation
+      chain.filter(id =>
+        pokemons[id - 1]
+      )
+    )
+    .filter(it => it.length > 1)
+    // Remove evolution chains which are subset of another
+    // Will happen when we remove pokemons from newer generation
+    .filter((it, i, self) => {
+      const items = self.filter(c => c !== it);
+      if (items.length === 0) {
+        return true;
+      }
+      return items.some(c =>
+        difference(it, c).length
+      );
+    })
+    .map(chain =>
       chain.map(id =>
         pokemons[id - 1]
-      ).filter(el => el)
-    ).filter(it => it.length !== 1);
+      )
+    );
+
+    if (chains.length === 0) {
+      return null;
+    }
 
     return (
       <View {...this.props}>
