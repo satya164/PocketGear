@@ -12,9 +12,11 @@ import {
 import ProgressBar from './ProgressBar';
 import Placeholder from './Placeholder';
 import Attack from './Attack';
+import Evolution from './Evolution';
 import store from '../store';
 import type {
   Pokemon,
+  PokemonID,
   QuickAttack,
   SpecialAttack,
 } from '../typeDefinitions';
@@ -107,7 +109,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
     this.setState({ loading: false });
   };
 
-  _goToPokemon = (pokemonId: number) => () => {
+  _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.onNavigate({
       type: 'push',
       route: {
@@ -195,6 +197,16 @@ export default class PokemonDetails extends Component<void, Props, State> {
             {this._renderStat('Max CP', pokemon.max_cp / 3904, pokemon.max_cp, '#e57373')}
             {this._renderStat('Max HP', pokemon.max_hp / 163, pokemon.max_hp, '#4db6ac')}
           </View>
+
+          {pokemon.evolution_chain ?
+            <Evolution
+              style={styles.item}
+              evolutionChain={pokemon.evolution_chain}
+              evolutionRequirements={pokemon.evolution_requirements}
+              onNavigate={this.props.onNavigate}
+            /> :
+            null
+          }
         </View>
       </ScrollView>
     );
