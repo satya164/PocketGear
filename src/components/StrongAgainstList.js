@@ -71,7 +71,7 @@ export default class StrongAgainstList extends Component<void, Props, State> {
     if (this.state.pokemons.length === 0) {
       return (
         <NoResults
-          source={require('../../assets/images/togepi.png')}
+          source={require('../../assets/images/chansey.png')}
           label={`${this.props.pokemon.name} seems weak`}
         />
       );
