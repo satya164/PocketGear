@@ -84,7 +84,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
     const pokemons = this._getSearchResults();
     return (
       <KeyboardAvoidingView style={styles.page}>
-        <StatusBar backgroundColor='#ccc' />
+        <StatusBar backgroundColor='#d6d6d6' />
         {pokemons.length ?
           <PokemonList
             keyboardShouldPersistTaps
