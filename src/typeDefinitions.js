@@ -34,6 +34,14 @@ export type Pokemon = {
     amount: number;
     name: string;
   };
+  evolution_cp_multipilers?: Array<{
+    id: PokemonID;
+    multipilers: {
+      minimum: number;
+      maximum: number;
+      average: number;
+    };
+  }>;
   height: {
     amount: number;
     unit: 'm' | 'cm';

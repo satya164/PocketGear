@@ -27,11 +27,15 @@
     "defense": 126,
     "capture_rate": 0.16,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.53,
-      "maximum": 1.58,
-      "average": 1.555
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 2,
+        "multipliers": {
+          "minimum": 1.53,
+          "maximum": 1.58
+        }
+      }
+    ],
     "evolution_chains": [
       [
         1,
@@ -68,11 +72,15 @@
     "defense": 158,
     "capture_rate": 0.08,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.2,
-      "maximum": 1.61,
-      "average": 1.405
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 3,
+        "multipliers": {
+          "minimum": 1.2,
+          "maximum": 1.61
+        }
+      }
+    ],
     "evolution_chains": [
       [
         1,
@@ -140,11 +148,15 @@
     "defense": 108,
     "capture_rate": 0.16,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.64,
-      "maximum": 1.7,
-      "average": 1.67
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 5,
+        "multipliers": {
+          "minimum": 1.64,
+          "maximum": 1.7
+        }
+      }
+    ],
     "evolution_chains": [
       [
         4,
@@ -180,11 +192,15 @@
     "defense": 140,
     "capture_rate": 0.08,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.71,
-      "maximum": 1.73,
-      "average": 1.72
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 6,
+        "multipliers": {
+          "minimum": 1.71,
+          "maximum": 1.73
+        }
+      }
+    ],
     "evolution_chains": [
       [
         4,
@@ -252,11 +268,15 @@
     "defense": 142,
     "capture_rate": 0.16,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.63,
-      "maximum": 1.66,
-      "average": 1.645
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 8,
+        "multipliers": {
+          "minimum": 1.63,
+          "maximum": 1.66
+        }
+      }
+    ],
     "evolution_chains": [
       [
         7,
@@ -292,11 +312,15 @@
     "defense": 176,
     "capture_rate": 0.08,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.4,
-      "maximum": 1.65,
-      "average": 1.525
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 9,
+        "multipliers": {
+          "minimum": 1.4,
+          "maximum": 1.65
+        }
+      }
+    ],
     "evolution_chains": [
       [
         7,
@@ -363,11 +387,15 @@
     "defense": 66,
     "capture_rate": 0.4,
     "flee_rate": 0.2,
-    "evolution_cp_multipilers": {
-      "minimum": 1.04,
-      "maximum": 1.08,
-      "average": 1.06
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 11,
+        "multipliers": {
+          "minimum": 1.04,
+          "maximum": 1.08
+        }
+      }
+    ],
     "evolution_chains": [
       [
         10,
@@ -403,11 +431,15 @@
     "defense": 86,
     "capture_rate": 0.2,
     "flee_rate": 0.09,
-    "evolution_cp_multipilers": {
-      "minimum": 3.52,
-      "maximum": 3.79,
-      "average": 3.655
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 12,
+        "multipliers": {
+          "minimum": 3.52,
+          "maximum": 3.79
+        }
+      }
+    ],
     "evolution_chains": [
       [
         10,
@@ -476,11 +508,15 @@
     "defense": 64,
     "capture_rate": 0.4,
     "flee_rate": 0.2,
-    "evolution_cp_multipilers": {
-      "minimum": 1.06,
-      "maximum": 1.1,
-      "average": 1.08
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 14,
+        "multipliers": {
+          "minimum": 1.06,
+          "maximum": 1.1
+        }
+      }
+    ],
     "evolution_chains": [
       [
         13,
@@ -517,11 +553,15 @@
     "defense": 82,
     "capture_rate": 0.2,
     "flee_rate": 0.09,
-    "evolution_cp_multipilers": {
-      "minimum": 3.3,
-      "maximum": 3.42,
-      "average": 3.36
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 15,
+        "multipliers": {
+          "minimum": 3.3,
+          "maximum": 3.42
+        }
+      }
+    ],
     "evolution_chains": [
       [
         13,
@@ -590,11 +630,15 @@
     "defense": 90,
     "capture_rate": 0.4,
     "flee_rate": 0.2,
-    "evolution_cp_multipilers": {
-      "minimum": 1.82,
-      "maximum": 1.95,
-      "average": 1.885
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 17,
+        "multipliers": {
+          "minimum": 1.82,
+          "maximum": 1.95
+        }
+      }
+    ],
     "evolution_chains": [
       [
         16,
@@ -631,11 +675,15 @@
     "defense": 122,
     "capture_rate": 0.2,
     "flee_rate": 0.09,
-    "evolution_cp_multipilers": {
-      "minimum": 1.73,
-      "maximum": 1.78,
-      "average": 1.755
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 18,
+        "multipliers": {
+          "minimum": 1.73,
+          "maximum": 1.78
+        }
+      }
+    ],
     "evolution_chains": [
       [
         16,
@@ -703,11 +751,15 @@
     "defense": 86,
     "capture_rate": 0.4,
     "flee_rate": 0.2,
-    "evolution_cp_multipilers": {
-      "minimum": 2.61,
-      "maximum": 2.73,
-      "average": 2.67
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 20,
+        "multipliers": {
+          "minimum": 2.61,
+          "maximum": 2.73
+        }
+      }
+    ],
     "evolution_chains": [
       [
         19,
@@ -773,11 +825,15 @@
     "defense": 78,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 2.58,
-      "maximum": 2.81,
-      "average": 2.695
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 22,
+        "multipliers": {
+          "minimum": 2.58,
+          "maximum": 2.81
+        }
+      }
+    ],
     "evolution_chains": [
       [
         21,
@@ -843,11 +899,15 @@
     "defense": 112,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 2.2,
-      "maximum": 2.33,
-      "average": 2.265
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 24,
+        "multipliers": {
+          "minimum": 2.2,
+          "maximum": 2.33
+        }
+      }
+    ],
     "evolution_chains": [
       [
         23,
@@ -912,11 +972,15 @@
     "defense": 108,
     "capture_rate": 0.16,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.33,
-      "maximum": 2.38,
-      "average": 2.355
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 26,
+        "multipliers": {
+          "minimum": 2.33,
+          "maximum": 2.38
+        }
+      }
+    ],
     "evolution_chains": [
       [
         172,
@@ -983,11 +1047,15 @@
     "defense": 114,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.35,
-      "maximum": 2.76,
-      "average": 2.555
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 28,
+        "multipliers": {
+          "minimum": 2.35,
+          "maximum": 2.76
+        }
+      }
+    ],
     "evolution_chains": [
       [
         27,
@@ -1052,11 +1120,15 @@
     "defense": 104,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.62,
-      "maximum": 1.66,
-      "average": 1.64
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 30,
+        "multipliers": {
+          "minimum": 1.62,
+          "maximum": 1.66
+        }
+      }
+    ],
     "evolution_chains": [
       [
         29,
@@ -1092,11 +1164,15 @@
     "defense": 136,
     "capture_rate": 0.2,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.8,
-      "maximum": 2.04,
-      "average": 1.92
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 31,
+        "multipliers": {
+          "minimum": 1.8,
+          "maximum": 2.04
+        }
+      }
+    ],
     "evolution_chains": [
       [
         29,
@@ -1164,11 +1240,15 @@
     "defense": 94,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.65,
-      "maximum": 1.7,
-      "average": 1.675
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 33,
+        "multipliers": {
+          "minimum": 1.65,
+          "maximum": 1.7
+        }
+      }
+    ],
     "evolution_chains": [
       [
         32,
@@ -1204,11 +1284,15 @@
     "defense": 128,
     "capture_rate": 0.2,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.64,
-      "maximum": 1.86,
-      "average": 1.75
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 34,
+        "multipliers": {
+          "minimum": 1.64,
+          "maximum": 1.86
+        }
+      }
+    ],
     "evolution_chains": [
       [
         32,
@@ -1276,11 +1360,15 @@
     "defense": 124,
     "capture_rate": 0.24,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.02,
-      "maximum": 2.2,
-      "average": 2.11
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 36,
+        "multipliers": {
+          "minimum": 2.02,
+          "maximum": 2.2
+        }
+      }
+    ],
     "evolution_chains": [
       [
         173,
@@ -1347,11 +1435,15 @@
     "defense": 118,
     "capture_rate": 0.24,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.68,
-      "maximum": 2.74,
-      "average": 2.71
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 38,
+        "multipliers": {
+          "minimum": 2.68,
+          "maximum": 2.74
+        }
+      }
+    ],
     "evolution_chains": [
       [
         37,
@@ -1417,11 +1509,15 @@
     "defense": 54,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.41,
-      "maximum": 2.47,
-      "average": 2.44
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 40,
+        "multipliers": {
+          "minimum": 2.41,
+          "maximum": 2.47
+        }
+      }
+    ],
     "evolution_chains": [
       [
         174,
@@ -1490,11 +1586,15 @@
     "defense": 90,
     "capture_rate": 0.4,
     "flee_rate": 0.2,
-    "evolution_cp_multipilers": {
-      "minimum": 2.9,
-      "maximum": 3.33,
-      "average": 3.115
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 42,
+        "multipliers": {
+          "minimum": 2.9,
+          "maximum": 3.33
+        }
+      }
+    ],
     "evolution_chains": [
       [
         41,
@@ -1563,11 +1663,15 @@
     "defense": 130,
     "capture_rate": 0.48,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.48,
-      "maximum": 1.51,
-      "average": 1.495
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 44,
+        "multipliers": {
+          "minimum": 1.48,
+          "maximum": 1.51
+        }
+      }
+    ],
     "evolution_chains": [
       [
         43,
@@ -1609,11 +1713,15 @@
     "defense": 158,
     "capture_rate": 0.24,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.48,
-      "maximum": 1.53,
-      "average": 1.505
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 45,
+        "multipliers": {
+          "minimum": 1.48,
+          "maximum": 1.53
+        }
+      }
+    ],
     "evolution_chains": [
       [
         43,
@@ -1692,11 +1800,15 @@
     "defense": 120,
     "capture_rate": 0.32,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.92,
-      "maximum": 2.02,
-      "average": 1.97
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 47,
+        "multipliers": {
+          "minimum": 1.92,
+          "maximum": 2.02
+        }
+      }
+    ],
     "evolution_chains": [
       [
         46,
@@ -1763,11 +1875,15 @@
     "defense": 118,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.85,
-      "maximum": 1.9,
-      "average": 1.875
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 49,
+        "multipliers": {
+          "minimum": 1.85,
+          "maximum": 1.9
+        }
+      }
+    ],
     "evolution_chains": [
       [
         48,
@@ -1833,11 +1949,15 @@
     "defense": 86,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.68,
-      "maximum": 2.77,
-      "average": 2.725
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 51,
+        "multipliers": {
+          "minimum": 2.68,
+          "maximum": 2.77
+        }
+      }
+    ],
     "evolution_chains": [
       [
         50,
@@ -1902,11 +2022,15 @@
     "defense": 94,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.98,
-      "maximum": 2.24,
-      "average": 2.11
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 53,
+        "multipliers": {
+          "minimum": 1.98,
+          "maximum": 2.24
+        }
+      }
+    ],
     "evolution_chains": [
       [
         52,
@@ -1971,11 +2095,15 @@
     "defense": 112,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.22,
-      "maximum": 2.29,
-      "average": 2.255
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 55,
+        "multipliers": {
+          "minimum": 2.22,
+          "maximum": 2.29
+        }
+      }
+    ],
     "evolution_chains": [
       [
         54,
@@ -2040,11 +2168,15 @@
     "defense": 96,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.15,
-      "maximum": 2.28,
-      "average": 2.215
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 57,
+        "multipliers": {
+          "minimum": 2.15,
+          "maximum": 2.28
+        }
+      }
+    ],
     "evolution_chains": [
       [
         56,
@@ -2109,11 +2241,15 @@
     "defense": 110,
     "capture_rate": 0.24,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.25,
-      "maximum": 2.36,
-      "average": 2.305
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 59,
+        "multipliers": {
+          "minimum": 2.25,
+          "maximum": 2.36
+        }
+      }
+    ],
     "evolution_chains": [
       [
         58,
@@ -2178,11 +2314,15 @@
     "defense": 98,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.72,
-      "maximum": 1.89,
-      "average": 1.805
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 61,
+        "multipliers": {
+          "minimum": 1.72,
+          "maximum": 1.89
+        }
+      }
+    ],
     "evolution_chains": [
       [
         60,
@@ -2223,11 +2363,15 @@
     "defense": 132,
     "capture_rate": 0.2,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.9,
-      "maximum": 1.96,
-      "average": 1.93
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 62,
+        "multipliers": {
+          "minimum": 1.9,
+          "maximum": 1.96
+        }
+      }
+    ],
     "evolution_chains": [
       [
         60,
@@ -2305,11 +2449,15 @@
     "defense": 76,
     "capture_rate": 0.4,
     "flee_rate": 0.99,
-    "evolution_cp_multipilers": {
-      "minimum": 1.36,
-      "maximum": 2,
-      "average": 1.68
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 64,
+        "multipliers": {
+          "minimum": 1.36,
+          "maximum": 2
+        }
+      }
+    ],
     "evolution_chains": [
       [
         63,
@@ -2345,11 +2493,15 @@
     "defense": 112,
     "capture_rate": 0.2,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.41,
-      "maximum": 1.65,
-      "average": 1.53
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 65,
+        "multipliers": {
+          "minimum": 1.41,
+          "maximum": 1.65
+        }
+      }
+    ],
     "evolution_chains": [
       [
         63,
@@ -2416,11 +2568,15 @@
     "defense": 96,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.62,
-      "maximum": 1.67,
-      "average": 1.645
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 67,
+        "multipliers": {
+          "minimum": 1.62,
+          "maximum": 1.67
+        }
+      }
+    ],
     "evolution_chains": [
       [
         66,
@@ -2456,11 +2612,15 @@
     "defense": 144,
     "capture_rate": 0.2,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.48,
-      "maximum": 1.7,
-      "average": 1.59
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 68,
+        "multipliers": {
+          "minimum": 1.48,
+          "maximum": 1.7
+        }
+      }
+    ],
     "evolution_chains": [
       [
         66,
@@ -2528,11 +2688,15 @@
     "defense": 78,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 1.54,
-      "maximum": 1.6,
-      "average": 1.57
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 70,
+        "multipliers": {
+          "minimum": 1.54,
+          "maximum": 1.6
+        }
+      }
+    ],
     "evolution_chains": [
       [
         69,
@@ -2569,11 +2733,15 @@
     "defense": 110,
     "capture_rate": 0.2,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.47,
-      "maximum": 1.52,
-      "average": 1.495
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 71,
+        "multipliers": {
+          "minimum": 1.47,
+          "maximum": 1.52
+        }
+      }
+    ],
     "evolution_chains": [
       [
         69,
@@ -2642,11 +2810,15 @@
     "defense": 136,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 2.47,
-      "maximum": 2.6,
-      "average": 2.535
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 73,
+        "multipliers": {
+          "minimum": 2.47,
+          "maximum": 2.6
+        }
+      }
+    ],
     "evolution_chains": [
       [
         72,
@@ -2713,11 +2885,15 @@
     "defense": 118,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.71,
-      "maximum": 1.76,
-      "average": 1.735
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 75,
+        "multipliers": {
+          "minimum": 1.71,
+          "maximum": 1.76
+        }
+      }
+    ],
     "evolution_chains": [
       [
         74,
@@ -2754,11 +2930,15 @@
     "defense": 156,
     "capture_rate": 0.2,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.63,
-      "maximum": 1.72,
-      "average": 1.675
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 76,
+        "multipliers": {
+          "minimum": 1.63,
+          "maximum": 1.72
+        }
+      }
+    ],
     "evolution_chains": [
       [
         74,
@@ -2826,11 +3006,15 @@
     "defense": 138,
     "capture_rate": 0.32,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.47,
-      "maximum": 1.6,
-      "average": 1.535
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 78,
+        "multipliers": {
+          "minimum": 1.47,
+          "maximum": 1.6
+        }
+      }
+    ],
     "evolution_chains": [
       [
         77,
@@ -2896,11 +3080,15 @@
     "defense": 110,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.19,
-      "maximum": 2.21,
-      "average": 2.2
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 80,
+        "multipliers": {
+          "minimum": 2.19,
+          "maximum": 2.21
+        }
+      }
+    ],
     "evolution_chains": [
       [
         79,
@@ -2975,11 +3163,15 @@
     "defense": 138,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.16,
-      "maximum": 2.2,
-      "average": 2.18
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 82,
+        "multipliers": {
+          "minimum": 2.16,
+          "maximum": 2.2
+        }
+      }
+    ],
     "evolution_chains": [
       [
         81,
@@ -3073,11 +3265,15 @@
     "defense": 96,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.11,
-      "maximum": 2.24,
-      "average": 2.175
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 85,
+        "multipliers": {
+          "minimum": 2.11,
+          "maximum": 2.24
+        }
+      }
+    ],
     "evolution_chains": [
       [
         84,
@@ -3143,11 +3339,15 @@
     "defense": 138,
     "capture_rate": 0.4,
     "flee_rate": 0.09,
-    "evolution_cp_multipilers": {
-      "minimum": 1.96,
-      "maximum": 2.03,
-      "average": 1.995
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 87,
+        "multipliers": {
+          "minimum": 1.96,
+          "maximum": 2.03
+        }
+      }
+    ],
     "evolution_chains": [
       [
         86,
@@ -3213,11 +3413,15 @@
     "defense": 110,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.03,
-      "maximum": 2.17,
-      "average": 2.1
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 89,
+        "multipliers": {
+          "minimum": 2.03,
+          "maximum": 2.17
+        }
+      }
+    ],
     "evolution_chains": [
       [
         88,
@@ -3282,11 +3486,15 @@
     "defense": 112,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.62,
-      "maximum": 2.65,
-      "average": 2.635
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 91,
+        "multipliers": {
+          "minimum": 2.62,
+          "maximum": 2.65
+        }
+      }
+    ],
     "evolution_chains": [
       [
         90,
@@ -3353,11 +3561,15 @@
     "defense": 82,
     "capture_rate": 0.32,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.75,
-      "maximum": 1.83,
-      "average": 1.79
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 93,
+        "multipliers": {
+          "minimum": 1.75,
+          "maximum": 1.83
+        }
+      }
+    ],
     "evolution_chains": [
       [
         92,
@@ -3394,11 +3606,15 @@
     "defense": 118,
     "capture_rate": 0.16,
     "flee_rate": 0.07,
-    "evolution_cp_multipilers": {
-      "minimum": 1.53,
-      "maximum": 1.8,
-      "average": 1.665
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 94,
+        "multipliers": {
+          "minimum": 1.53,
+          "maximum": 1.8
+        }
+      }
+    ],
     "evolution_chains": [
       [
         92,
@@ -3497,11 +3713,15 @@
     "defense": 140,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.05,
-      "maximum": 2.11,
-      "average": 2.08
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 97,
+        "multipliers": {
+          "minimum": 2.05,
+          "maximum": 2.11
+        }
+      }
+    ],
     "evolution_chains": [
       [
         96,
@@ -3566,11 +3786,15 @@
     "defense": 110,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 2.35,
-      "maximum": 2.4,
-      "average": 2.375
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 99,
+        "multipliers": {
+          "minimum": 2.35,
+          "maximum": 2.4
+        }
+      }
+    ],
     "evolution_chains": [
       [
         98,
@@ -3635,11 +3859,15 @@
     "defense": 124,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.01,
-      "maximum": 2.03,
-      "average": 2.02
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 101,
+        "multipliers": {
+          "minimum": 2.01,
+          "maximum": 2.03
+        }
+      }
+    ],
     "evolution_chains": [
       [
         100,
@@ -3705,11 +3933,15 @@
     "defense": 132,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.7,
-      "maximum": 3.18,
-      "average": 2.94
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 103,
+        "multipliers": {
+          "minimum": 2.7,
+          "maximum": 3.18
+        }
+      }
+    ],
     "evolution_chains": [
       [
         102,
@@ -3775,11 +4007,15 @@
     "defense": 150,
     "capture_rate": 0.32,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.65,
-      "maximum": 1.67,
-      "average": 1.66
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 105,
+        "multipliers": {
+          "minimum": 1.65,
+          "maximum": 1.67
+        }
+      }
+    ],
     "evolution_chains": [
       [
         104,
@@ -3934,11 +4170,15 @@
     "defense": 142,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.95,
-      "maximum": 2.1,
-      "average": 2.025
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 110,
+        "multipliers": {
+          "minimum": 1.95,
+          "maximum": 2.1
+        }
+      }
+    ],
     "evolution_chains": [
       [
         109,
@@ -4004,11 +4244,15 @@
     "defense": 116,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 1.9,
-      "maximum": 1.91,
-      "average": 1.905
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 112,
+        "multipliers": {
+          "minimum": 1.9,
+          "maximum": 1.91
+        }
+      }
+    ],
     "evolution_chains": [
       [
         111,
@@ -4161,11 +4405,15 @@
     "defense": 100,
     "capture_rate": 0.4,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": {
-      "minimum": 2.19,
-      "maximum": 2.23,
-      "average": 2.21
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 117,
+        "multipliers": {
+          "minimum": 2.19,
+          "maximum": 2.23
+        }
+      }
+    ],
     "evolution_chains": [
       [
         116,
@@ -4232,11 +4480,15 @@
     "defense": 126,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 2.14,
-      "maximum": 2.24,
-      "average": 2.19
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 119,
+        "multipliers": {
+          "minimum": 2.14,
+          "maximum": 2.24
+        }
+      }
+    ],
     "evolution_chains": [
       [
         118,
@@ -4301,11 +4553,15 @@
     "defense": 128,
     "capture_rate": 0.4,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 2.35,
-      "maximum": 2.44,
-      "average": 2.395
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 121,
+        "multipliers": {
+          "minimum": 2.35,
+          "maximum": 2.44
+        }
+      }
+    ],
     "evolution_chains": [
       [
         120,
@@ -4574,11 +4830,15 @@
     "defense": 84,
     "capture_rate": 0.56,
     "flee_rate": 0.15,
-    "evolution_cp_multipilers": {
-      "minimum": 10.1,
-      "maximum": 11.96,
-      "average": 11.03
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 130,
+        "multipliers": {
+          "minimum": 10.1,
+          "maximum": 11.96
+        }
+      }
+    ],
     "evolution_chains": [
       [
         129,
@@ -4693,29 +4953,26 @@
     "defense": 128,
     "capture_rate": 0.32,
     "flee_rate": 0.1,
-    "evolution_cp_multipilers": [
+    "evolution_cp_multipliers": [
       {
         "id": 134,
-        "multipilers": {
+        "multipliers": {
           "minimum": 2.62,
-          "maximum": 2.67,
-          "average": 2.645
+          "maximum": 2.67
         }
       },
       {
         "id": 135,
-        "multipilers": {
+        "multipliers": {
           "minimum": 2.01,
-          "maximum": 2.09,
-          "average": 2.05
+          "maximum": 2.09
         }
       },
       {
         "id": 136,
-        "multipilers": {
+        "multipliers": {
           "minimum": 2.46,
-          "maximum": 2.64,
-          "average": 2.55
+          "maximum": 2.64
         }
       }
     ],
@@ -4903,11 +5160,15 @@
     "defense": 160,
     "capture_rate": 0.32,
     "flee_rate": 0.09,
-    "evolution_cp_multipilers": {
-      "minimum": 1.99,
-      "maximum": 2.12,
-      "average": 2.055
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 139,
+        "multipliers": {
+          "minimum": 1.99,
+          "maximum": 2.12
+        }
+      }
+    ],
     "evolution_chains": [
       [
         138,
@@ -4974,11 +5235,15 @@
     "defense": 142,
     "capture_rate": 0.32,
     "flee_rate": 0.09,
-    "evolution_cp_multipilers": {
-      "minimum": 1.97,
-      "maximum": 2.37,
-      "average": 2.17
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 141,
+        "multipliers": {
+          "minimum": 1.97,
+          "maximum": 2.37
+        }
+      }
+    ],
     "evolution_chains": [
       [
         140,
@@ -5174,11 +5439,15 @@
     "defense": 110,
     "capture_rate": 0.32,
     "flee_rate": 0.09,
-    "evolution_cp_multipilers": {
-      "minimum": 1.8,
-      "maximum": 1.85,
-      "average": 1.825
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 148,
+        "multipliers": {
+          "minimum": 1.8,
+          "maximum": 1.85
+        }
+      }
+    ],
     "evolution_chains": [
       [
         147,
@@ -5214,11 +5483,15 @@
     "defense": 152,
     "capture_rate": 0.08,
     "flee_rate": 0.06,
-    "evolution_cp_multipilers": {
-      "minimum": 2.03,
-      "maximum": 2.08,
-      "average": 2.055
-    },
+    "evolution_cp_multipliers": [
+      {
+        "id": 149,
+        "multipliers": {
+          "minimum": 2.03,
+          "maximum": 2.08
+        }
+      }
+    ],
     "evolution_chains": [
       [
         147,
