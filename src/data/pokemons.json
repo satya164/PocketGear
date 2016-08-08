@@ -982,6 +982,10 @@
       30,
       31
     ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Nidoran♀ candies"
+    },
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -1022,7 +1026,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Nidoranâ™€ candies"
+      "name": "Nidoran♀ candies"
     },
     "weight": {
       "amount": 20,
@@ -1084,6 +1088,10 @@
       33,
       34
     ],
+    "evolution_requirements": {
+      "amount": 25,
+      "name": "Nidoran♂ candies"
+    },
     "height": {
       "amount": 0.5,
       "unit": "m"
@@ -1124,7 +1132,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Nidoranâ™‚ candies"
+      "name": "Nidoran♂ candies"
     },
     "weight": {
       "amount": 19.5,
