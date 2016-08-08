@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
 
   arrow: {
     margin: 8,
+    marginBottom: 21,
     fontSize: 16,
-    fontWeight: 'bold',
     color: '#000',
     opacity: 0.5,
   },
