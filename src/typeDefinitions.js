@@ -29,7 +29,7 @@ export type Pokemon = {
   category: string;
   description: string;
   max_cp: number;
-  evolution_chain?: Array<PokemonID> | Array<Array<PokemonID>>;
+  evolution_chains?: Array<Array<PokemonID>>;
   evolution_requirements: {
     amount: number;
     name: string;

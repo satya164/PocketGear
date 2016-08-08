@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  evolutionChain: Array<PokemonID> | Array<Array<PokemonID>>;
+  evolutionChains: Array<Array<PokemonID>>;
   evolutionRequirements: ?{ amount: number; name: string; };
   onNavigate: Function;
 }
@@ -77,7 +77,7 @@ type Props = {
 export default class Evolution extends Component<void, Props, void> {
 
   static propTypes = {
-    evolutionChain: PropTypes.array.isRequired,
+    evolutionChains: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)).isRequired,
     evolutionRequirements: PropTypes.object,
     onNavigate: PropTypes.func.isRequired,
   };
@@ -96,20 +96,12 @@ export default class Evolution extends Component<void, Props, void> {
 
   render() {
     const {
-      evolutionChain,
+      evolutionChains,
       evolutionRequirements,
     } = this.props;
     const pokemons = store.getPokemons();
 
-    let chains;
-
-    if (typeof evolutionChain[0] === 'number') {
-      chains = [ (evolutionChain: any) ];
-    } else {
-      chains = (evolutionChain: any);
-    }
-
-    chains = chains.map(chain =>
+    const chains = evolutionChains.map(chain =>
       // Remove Pokemons from a newer generation
       chain.filter(id =>
         pokemons[id - 1]

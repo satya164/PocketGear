@@ -198,10 +198,10 @@ export default class PokemonDetails extends Component<void, Props, State> {
             {this._renderStat('Max HP', pokemon.max_hp / 163, pokemon.max_hp, '#4db6ac')}
           </View>
 
-          {pokemon.evolution_chain ?
+          {pokemon.evolution_chains ?
             <Evolution
               style={styles.item}
-              evolutionChain={pokemon.evolution_chain}
+              evolutionChains={pokemon.evolution_chains}
               evolutionRequirements={pokemon.evolution_requirements}
               onNavigate={this.props.onNavigate}
             /> :
