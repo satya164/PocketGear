@@ -1,4 +1,4 @@
-package com.pokemate;
+package com.wibblystuff.poke;
 
 import com.facebook.react.ReactActivity;
 
