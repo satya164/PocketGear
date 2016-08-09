@@ -12,6 +12,7 @@ import {
 import sprites from '../sprites';
 import store from '../store';
 import type {
+  Pokemon,
   PokemonID,
 } from '../typeDefinitions';
 
@@ -69,16 +70,14 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  evolutionChains: Array<Array<PokemonID>>;
-  evolutionRequirements: ?{ amount: number; name: string; };
+  pokemon: Pokemon;
   onNavigate: Function;
 }
 
 export default class Evolution extends Component<void, Props, void> {
 
   static propTypes = {
-    evolutionChains: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)).isRequired,
-    evolutionRequirements: PropTypes.object,
+    pokemon: PropTypes.object.isRequired,
     onNavigate: PropTypes.func.isRequired,
   };
 
@@ -95,13 +94,11 @@ export default class Evolution extends Component<void, Props, void> {
   };
 
   render() {
-    const {
-      evolutionChains,
-      evolutionRequirements,
-    } = this.props;
+    const { pokemon } = this.props;
+    const evolutionChains = pokemon.evolution_chains;
     const pokemons = store.getPokemons();
 
-    const chains = evolutionChains.map(chain =>
+    const chains = evolutionChains ? evolutionChains.map(chain =>
       // Remove Pokemons from a newer generation
       chain.filter(id =>
         pokemons[id - 1]
@@ -123,7 +120,7 @@ export default class Evolution extends Component<void, Props, void> {
       chain.map(id =>
         pokemons[id - 1]
       )
-    );
+    ) : [];
 
     if (chains.length === 0) {
       return null;
@@ -132,23 +129,23 @@ export default class Evolution extends Component<void, Props, void> {
     return (
       <View {...this.props}>
         <Text style={styles.title}>Evolution</Text>
-        {evolutionRequirements ?
-          <Text style={styles.requirements}>
-            {evolutionRequirements.amount} {evolutionRequirements.name}
+        {pokemon.evolution_requirements ?
+          <Text style={[ styles.text, styles.requirements ]}>
+            {pokemon.evolution_requirements.amount} {pokemon.evolution_requirements.name}
           </Text> :
           null
         }
         {chains.map((chain, i) => (
           <View key={'outer-' + i} style={styles.container}>
-            {chain.map((pokemon, index) => (
+            {chain.map((p, index) => (
               <TouchableOpacity
-                key={pokemon.id}
+                key={p.id}
                 style={styles.item}
-                onPress={() => this._goToPokemon(pokemon.id)}
+                onPress={() => this._goToPokemon(p.id)}
               >
                 <View style={styles.pokemon}>
-                  <Image source={sprites[pokemon.id - 1]} style={styles.image} />
-                  <Text style={styles.label}>{pokemon.name}</Text>
+                  <Image source={sprites[p.id - 1]} style={styles.image} />
+                  <Text style={styles.label}>{p.name}</Text>
                 </View>
                 {index !== chain.length - 1 ?
                   <Text style={styles.arrow}>→</Text> :

@@ -12,6 +12,7 @@ import ProgressBar from './ProgressBar';
 import Placeholder from './Placeholder';
 import Attack from './Attack';
 import Evolution from './Evolution';
+import CPCalculator from './CPCalculator';
 import store from '../store';
 import type {
   Pokemon,
@@ -199,12 +200,24 @@ export default class PokemonDetails extends Component<void, Props, State> {
           </View>
 
           {pokemon.evolution_chains ?
-            <Evolution
-              style={styles.item}
-              evolutionChains={pokemon.evolution_chains}
-              evolutionRequirements={pokemon.evolution_requirements}
-              onNavigate={this.props.onNavigate}
-            /> :
+            <View style={styles.item}>
+              <Evolution
+                style={styles.item}
+                pokemon={pokemon}
+                onNavigate={this.props.onNavigate}
+              />
+            </View> :
+            null
+          }
+
+          {pokemon.evolution_cp_multipliers ?
+            <View style={styles.item}>
+              <CPCalculator
+                style={styles.item}
+                pokemon={pokemon}
+                onNavigate={this.props.onNavigate}
+              />
+            </View> :
             null
           }
         </View>
