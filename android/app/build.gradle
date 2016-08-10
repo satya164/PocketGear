@@ -95,7 +95,7 @@ android {
         applicationId "com.wibblystuff.poke"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 2
+        versionCode 4
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
@@ -111,10 +111,10 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file(POKEMATE_RELEASE_STORE_FILE)
-            storePassword POKEMATE_RELEASE_STORE_PASSWORD
-            keyAlias POKEMATE_RELEASE_KEY_ALIAS
-            keyPassword POKEMATE_RELEASE_KEY_PASSWORD
+            storeFile file(MEWDB_RELEASE_STORE_FILE)
+            storePassword MEWDB_RELEASE_STORE_PASSWORD
+            keyAlias MEWDB_RELEASE_KEY_ALIAS
+            keyPassword MEWDB_RELEASE_KEY_PASSWORD
         }
     }
     buildTypes {

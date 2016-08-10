@@ -3,4 +3,4 @@
 import { AppRegistry } from 'react-native';
 import Home from './src/components/Home';
 
-AppRegistry.registerComponent('Pokemate', () => Home);
+AppRegistry.registerComponent('MewDB', () => Home);
