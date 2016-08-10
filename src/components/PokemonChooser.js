@@ -1,6 +1,5 @@
 /* @flow */
 
-import find from 'lodash/find';
 import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
 import React, { PropTypes, Component } from 'react';
@@ -65,7 +64,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
     if (query) {
       if (!isNaN(query)) {
-        return find(pokemons, { id: parseInt(query, 10) });
+        return filter(pokemons, p => p.id === parseInt(query, 10));
       }
       return filter(pokemons, (pokemon => {
         return (
