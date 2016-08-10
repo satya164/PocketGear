@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
 
   input: {
     fontFamily: 'Montserrat',
+    color: '#000',
     flex: 1,
     margin: 0,
     padding: 0,
