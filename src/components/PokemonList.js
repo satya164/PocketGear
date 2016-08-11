@@ -3,6 +3,7 @@
 import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import {
+  Dimensions,
   Platform,
   StyleSheet,
 } from 'react-native';
@@ -23,6 +24,12 @@ type Props = {
   data: Array<Pokemon>;
   style?: any;
 }
+
+const CARD_WIDTH = 160;
+
+// FIXME: We set the list size to fix ListView not loading all items
+const win = Dimensions.get('window');
+const LIST_SIZE = (win.height / CARD_WIDTH) * (win.width / CARD_WIDTH);
 
 export default class PokemonList extends Component<void, Props, void> {
 
@@ -47,7 +54,7 @@ export default class PokemonList extends Component<void, Props, void> {
   };
 
   _getNumberOfColumns = (width: number) => {
-    return Math.floor(width / 160);
+    return Math.floor(width / CARD_WIDTH);
   };
 
   _setRef = (c: Object) => (this._root = c);
@@ -56,6 +63,8 @@ export default class PokemonList extends Component<void, Props, void> {
     return (
       <GridView
         {...this.props}
+        initialListSize={LIST_SIZE}
+        pageSize={LIST_SIZE}
         style={[ styles.grid, this.props.style ]}
         spacing={Platform.OS === 'ios' ? 10 : 8}
         renderRow={this._renderRow}
