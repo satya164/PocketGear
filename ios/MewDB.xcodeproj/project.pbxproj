@@ -750,6 +750,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = MewDB;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -772,6 +773,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = MewDB;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
