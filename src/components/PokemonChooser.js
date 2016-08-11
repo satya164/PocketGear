@@ -20,7 +20,7 @@ import type {
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: '#f4f4f4',
+    backgroundColor: '#fafafa',
   },
 
   list: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     right: 0,
     ...(Platform.OS === 'ios' ? {
       paddingTop: 20,
-      backgroundColor: '#f4f4f4',
+      backgroundColor: '#fafafa',
     } : null),
   },
 });

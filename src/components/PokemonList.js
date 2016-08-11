@@ -14,7 +14,7 @@ import type {
 
 const styles = StyleSheet.create({
   grid: {
-    backgroundColor: '#f4f4f4',
+    backgroundColor: '#fafafa',
   },
 });
 
