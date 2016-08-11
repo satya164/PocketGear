@@ -63,7 +63,6 @@ export default class PokemonList extends Component<void, Props, void> {
     return (
       <GridView
         {...this.props}
-        initialListSize={LIST_SIZE}
         pageSize={LIST_SIZE}
         style={[ styles.grid, this.props.style ]}
         spacing={Platform.OS === 'ios' ? 10 : 8}
