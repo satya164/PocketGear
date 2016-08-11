@@ -86,11 +86,13 @@ export default class GridView extends Component<DefaultProps, Props, State> {
   _root: Object;
 
   _renderRow = (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => {
+    const { containerWidth } = this.state;
+    const { spacing, getNumberOfColumns } = this.props;
     return (
       <View
         style={{
-          margin: this.props.spacing / 2,
-          width: (this.state.containerWidth - (this.props.spacing * 3)) / this.props.getNumberOfColumns(this.state.containerWidth),
+          margin: spacing / 2,
+          width: ((containerWidth - spacing) / getNumberOfColumns(containerWidth)) - spacing,
         }}
       >
         {this.props.renderRow(rowData, sectionID, rowID, highlightRow)}
