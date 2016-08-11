@@ -180,7 +180,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
               {pokemon.category}
             </Text>
 
-            <Text style={[ styles.text, styles.description ]}>
+            <Text selectable style={[ styles.text, styles.description ]}>
               {pokemon.description}
             </Text>
           </View>
