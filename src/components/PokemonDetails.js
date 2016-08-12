@@ -170,17 +170,6 @@ export default class PokemonDetails extends Component<void, Props, State> {
         <View style={styles.content}>
 
           <View style={styles.item}>
-            <View style={[ styles.row, styles.center ]}>
-              <Text selectable style={[ styles.text, styles.strong, styles.label ]}>Height</Text>
-              <Text selectable style={styles.text}>{pokemon.height.amount} {pokemon.height.unit}</Text>
-            </View>
-            <View style={[ styles.row, styles.center ]}>
-              <Text selectable style={[ styles.text, styles.strong, styles.label ]}>Weight</Text>
-              <Text selectable style={styles.text}>{pokemon.weight.amount} {pokemon.weight.unit}</Text>
-            </View>
-          </View>
-
-          <View style={styles.item}>
             <Text selectable style={[ styles.text, styles.strong ]}>
               {pokemon.category}
             </Text>
@@ -198,6 +187,17 @@ export default class PokemonDetails extends Component<void, Props, State> {
                 <Text selectable style={styles.text}>{meaning}</Text>
               </View>
             ))}
+          </View>
+
+          <View style={styles.item}>
+            <View style={[ styles.row, styles.center ]}>
+              <Text selectable style={[ styles.text, styles.strong, styles.label ]}>Height</Text>
+              <Text selectable style={styles.text}>{pokemon.height.amount} {pokemon.height.unit}</Text>
+            </View>
+            <View style={[ styles.row, styles.center ]}>
+              <Text selectable style={[ styles.text, styles.strong, styles.label ]}>Weight</Text>
+              <Text selectable style={styles.text}>{pokemon.weight.amount} {pokemon.weight.unit}</Text>
+            </View>
           </View>
 
           <View style={styles.item}>
