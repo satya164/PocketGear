@@ -59,6 +59,7 @@ export type Pokemon = {
   defense: number;
   capture_rate: number;
   flee_rate: number;
+  easter_eggs?: Array<string>;
 }
 
 export type TypeChart = {

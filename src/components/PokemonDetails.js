@@ -178,7 +178,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
             {pokemon.name_origin.map(({ term, meaning }) => (
               <View key={term}>
                 <Text selectable style={styles.text}>
-                  <Text style={[ styles.text, styles.strong, styles.term ]}>{term}</Text>
+                  <Text style={[ styles.text, styles.strong ]}>{term}</Text>
                   <Text>{'    '}</Text>
                   <Text>{meaning}</Text>
                 </Text>
@@ -229,6 +229,23 @@ export default class PokemonDetails extends Component<void, Props, State> {
                 pokemon={pokemon}
                 onNavigate={this.props.onNavigate}
               />
+            </View> :
+            null
+          }
+
+          {pokemon.easter_eggs ?
+            <View style={styles.item}>
+              <Text style={[ styles.text, styles.strong ]}>
+                {pokemon.easter_eggs.length > 1 ? 'Tips' : 'Tip'}
+              </Text>
+
+              {pokemon.easter_eggs.map(tip => (
+                <View key={tip}>
+                  <Text selectable style={[ styles.text, styles.description ]}>
+                    {tip}
+                  </Text>
+                </View>
+              ))}
             </View> :
             null
           }
