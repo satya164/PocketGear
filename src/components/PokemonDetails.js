@@ -64,11 +64,6 @@ const styles = StyleSheet.create({
     width: 60,
   },
 
-  hyphen: {
-    marginHorizontal: 8,
-    opacity: 0.5,
-  },
-
   type: {
     width: 120,
   },
@@ -181,10 +176,12 @@ export default class PokemonDetails extends Component<void, Props, State> {
 
           <View style={styles.item}>
             {pokemon.name_origin.map(({ term, meaning }) => (
-              <View key={term} style={[ styles.row, styles.center ]}>
-                <Text selectable style={[ styles.text, styles.strong, styles.term ]}>{term}</Text>
-                <Text style={[ styles.text, styles.hyphen ]}>-</Text>
-                <Text selectable style={styles.text}>{meaning}</Text>
+              <View key={term}>
+                <Text selectable style={styles.text}>
+                  <Text style={[ styles.text, styles.strong, styles.term ]}>{term}</Text>
+                  <Text>{'    '}</Text>
+                  <Text>{meaning}</Text>
+                </Text>
               </View>
             ))}
           </View>
