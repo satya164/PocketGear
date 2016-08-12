@@ -41,6 +41,10 @@ export type Pokemon = {
       maximum: number;
     };
   }>;
+  name_origin: Array<{
+    term: string;
+    meaning: string;
+  }>;
   height: {
     amount: number;
     unit: 'm' | 'cm';
