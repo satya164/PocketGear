@@ -6,14 +6,14 @@
   "ice": "#AAEFF2",
   "electric": "#FFD686",
   "normal": "#F5DBD3",
-  "fairy": "#FFADED",
-  "poison": "#E0BDFF",
+  "fairy": "#FFC2EB",
+  "poison": "#E2C2FF",
   "fighting": "#FAACA5",
   "psychic": "#B8C1F5",
   "fire": "#FFAD94",
   "rock": "#D1D1D1",
-  "flying": "#4A90E2",
-  "steel": "#607D8B",
+  "flying": "#99C2E0",
+  "steel": "#ABC5D1",
   "ghost": "#CCB8D6",
-  "water": "#99C2E0"
+  "water": "#ADCCFF"
 }
