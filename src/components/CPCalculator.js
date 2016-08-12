@@ -10,6 +10,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Heading from './Heading';
 import sprites from '../sprites';
 import store from '../store';
 import type {
@@ -39,10 +40,6 @@ const styles = StyleSheet.create({
 
   value: {
     marginHorizontal: 4,
-  },
-
-  title: {
-    fontWeight: 'bold',
   },
 
   small: {
@@ -154,7 +151,7 @@ export default class CPCalculator extends Component<void, Props, State> {
 
     return (
       <View {...this.props}>
-        <Text style={[ styles.text, styles.title ]}>CP after evolution</Text>
+        <Heading>CP after evolution</Heading>
         <View style={styles.row}>
           <TouchableOpacity onPress={this._handleDecrement} style={styles.button}>
             <MaterialIcons

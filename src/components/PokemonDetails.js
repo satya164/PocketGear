@@ -8,6 +8,8 @@ import {
   ScrollView,
   StyleSheet,
 } from 'react-native';
+import Heading from './Heading';
+import Paragraph from './Paragraph';
 import ProgressBar from './ProgressBar';
 import Placeholder from './Placeholder';
 import Attack from './Attack';
@@ -39,16 +41,10 @@ const styles = StyleSheet.create({
     color: '#222',
     fontFamily: 'Montserrat',
     fontSize: 13,
-    lineHeight: 20,
   },
 
   strong: {
     fontWeight: 'bold',
-  },
-
-  description: {
-    lineHeight: 20,
-    marginVertical: 4,
   },
 
   row: {
@@ -165,23 +161,18 @@ export default class PokemonDetails extends Component<void, Props, State> {
         <View style={styles.content}>
 
           <View style={styles.item}>
-            <Text selectable style={[ styles.text, styles.strong ]}>
-              {pokemon.category}
-            </Text>
-
-            <Text selectable style={[ styles.text, styles.description ]}>
-              {pokemon.description}
-            </Text>
+            <Heading selectable>{pokemon.category}</Heading>
+            <Paragraph>{pokemon.description}</Paragraph>
           </View>
 
           <View style={styles.item}>
             {pokemon.name_origin.map(({ term, meaning }) => (
               <View key={term}>
-                <Text selectable style={styles.text}>
+                <Paragraph>
                   <Text style={[ styles.text, styles.strong ]}>{term}</Text>
                   <Text>{'    '}</Text>
                   <Text>{meaning}</Text>
-                </Text>
+                </Paragraph>
               </View>
             ))}
           </View>
@@ -235,15 +226,11 @@ export default class PokemonDetails extends Component<void, Props, State> {
 
           {pokemon.easter_eggs ?
             <View style={styles.item}>
-              <Text style={[ styles.text, styles.strong ]}>
-                {pokemon.easter_eggs.length > 1 ? 'Tips' : 'Tip'}
-              </Text>
+              <Heading>{pokemon.easter_eggs.length > 1 ? 'Tips' : 'Tip'}</Heading>
 
               {pokemon.easter_eggs.map(tip => (
                 <View key={tip}>
-                  <Text selectable style={[ styles.text, styles.description ]}>
-                    {tip}
-                  </Text>
+                  <Paragraph>{tip}</Paragraph>
                 </View>
               ))}
             </View> :

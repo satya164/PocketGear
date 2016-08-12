@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
+import Heading from './Heading';
 import sprites from '../sprites';
 import store from '../store';
 import type {
@@ -28,13 +29,6 @@ const styles = StyleSheet.create({
     height: 48,
     width: 64,
     resizeMode: 'contain',
-  },
-
-  title: {
-    fontFamily: 'Montserrat',
-    fontSize: 13,
-    color: '#222',
-    fontWeight: 'bold',
   },
 
   requirements: {
@@ -128,9 +122,9 @@ export default class Evolution extends Component<void, Props, void> {
 
     return (
       <View {...this.props}>
-        <Text style={styles.title}>Evolution</Text>
+        <Heading>Evolution</Heading>
         {pokemon.evolution_requirements ?
-          <Text style={[ styles.text, styles.requirements ]}>
+          <Text style={styles.requirements}>
             {pokemon.evolution_requirements.amount} {pokemon.evolution_requirements.name}
           </Text> :
           null
