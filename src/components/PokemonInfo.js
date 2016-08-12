@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat',
     fontWeight: 'bold',
     fontSize: 11,
-    opacity: 0.6,
+    opacity: 0.5,
   },
 
   row: {

@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 13,
     textAlign: 'center',
-    opacity: 0.6,
+    opacity: 0.7,
   },
 
   subtitle: {
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat',
     fontSize: 11,
     textAlign: 'center',
-    opacity: 0.3,
+    opacity: 0.5,
   },
 });
 
