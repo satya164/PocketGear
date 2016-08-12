@@ -45,6 +45,10 @@ export type Pokemon = {
     term: string;
     meaning: string;
   }>;
+  egg_distance?: {
+    amount: number;
+    unit: 'km';
+  };
   height: {
     amount: number;
     unit: 'm' | 'cm';

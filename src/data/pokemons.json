@@ -52,7 +52,11 @@
         "term": "-saur",
         "meaning": "Greek suffix meaning 'lizard'"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Ivysaur",
@@ -203,7 +207,11 @@
         "term": "salamander",
         "meaning": "lizard-like amphibian"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Charmeleon",
@@ -357,7 +365,11 @@
         "term": "turtle",
         "meaning": "water-based reptile"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Wartortle",
@@ -506,7 +518,11 @@
         "term": "caterpillar",
         "meaning": "an insect"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Metapod",
@@ -657,7 +673,11 @@
         "term": "needle",
         "meaning": "sharp implement"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Kakuna",
@@ -801,7 +821,11 @@
         "term": "pigeon",
         "meaning": "a species of bird"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Pidgeotto",
@@ -943,7 +967,11 @@
         "term": "rat-a-tat-tat",
         "meaning": "repeated fast knocking sound"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Raticate",
@@ -1037,7 +1065,11 @@
         "term": "sparrow",
         "meaning": "a species of bird"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Fearow",
@@ -1127,7 +1159,11 @@
         "term": "snake",
         "meaning": "a species of reptile; 'ekans' spelled backwards is 'snake'"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Arbok",
@@ -1220,7 +1256,11 @@
     ],
     "easter_eggs": [
       "When you're offered to choose your starter, running away from them will eventually spawn a Pikachu."
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Raichu",
@@ -1314,7 +1354,11 @@
         "term": "shrew",
         "meaning": "a rodent"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Sandslash",
@@ -1412,7 +1456,11 @@
         "term": "♀",
         "meaning": "female symbol"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Nidorina",
@@ -1566,7 +1614,11 @@
         "term": "♂",
         "meaning": "male symbol"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Nidorino",
@@ -1716,7 +1768,11 @@
         "term": "fairy",
         "meaning": "imp, sprite"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Clefable",
@@ -1810,7 +1866,11 @@
         "term": "six",
         "meaning": "its number of tails"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Ninetales",
@@ -1905,7 +1965,11 @@
         "term": "puff",
         "meaning": "inflated, cloud-shaped"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Wigglytuff",
@@ -2002,7 +2066,11 @@
         "term": "bat",
         "meaning": "cave-dwelling flying mammal"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Golbat",
@@ -2104,7 +2172,11 @@
         "term": "radish",
         "meaning": "vegetable"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Gloom",
@@ -2261,7 +2333,11 @@
         "term": "parasite",
         "meaning": "an annoying insect or bacteria"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Parasect",
@@ -2356,7 +2432,11 @@
         "term": "gnat",
         "meaning": "an insect"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Venomoth",
@@ -2450,7 +2530,11 @@
         "term": "-lett",
         "meaning": "suffix meaning 'small'"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Dugtrio",
@@ -2539,7 +2623,11 @@
         "term": "meow",
         "meaning": "the sound a cat makes"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Persian",
@@ -2628,7 +2716,11 @@
         "term": "duck",
         "meaning": "a species of bird"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Golduck",
@@ -2721,7 +2813,11 @@
         "term": "manky",
         "meaning": "inferior, worthless"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Primeape",
@@ -2818,7 +2914,11 @@
         "term": "lithe",
         "meaning": "gracefully slender"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Arcanine",
@@ -2917,7 +3017,11 @@
         "term": "wag",
         "meaning": "tail movement"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Poliwhirl",
@@ -3073,7 +3177,11 @@
         "term": "abracadabra",
         "meaning": "magical word, sometimes used with 'alakazam'"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Kadabra",
@@ -3214,7 +3322,11 @@
         "term": "chop",
         "meaning": "A karate chop"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Machoke",
@@ -3364,7 +3476,11 @@
         "term": "sprout",
         "meaning": "grow, bloom"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Weepinbell",
@@ -3519,7 +3635,11 @@
         "term": "cool",
         "meaning": "low temperature, impressive"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Tentacruel",
@@ -3615,7 +3735,11 @@
         "term": "dude",
         "meaning": "person (usually male)"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Graveler",
@@ -3757,7 +3881,11 @@
         "term": "ponytail",
         "meaning": "a hairstyle that resembles a pony's tail"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Rapidash",
@@ -3859,7 +3987,11 @@
         "term": "slowpoke",
         "meaning": "nickname for a slow person"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Slowbro",
@@ -3959,7 +4091,11 @@
         "term": "mite",
         "meaning": "small thing"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Magneton",
@@ -4032,7 +4168,11 @@
         "term": "far-fetched",
         "meaning": "unlikely"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Doduo",
@@ -4086,7 +4226,11 @@
         "term": "duo",
         "meaning": "group of two"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Dodrio",
@@ -4176,7 +4320,11 @@
         "term": "seal",
         "meaning": "an aquatic mammal"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Dewgong",
@@ -4266,7 +4414,11 @@
         "term": "grime",
         "meaning": "dirt"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Muk",
@@ -4355,7 +4507,11 @@
         "term": "shelter",
         "meaning": "to protect"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Cloyster",
@@ -4455,7 +4611,11 @@
         "term": "ghastly",
         "meaning": "horrifying"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Haunter",
@@ -4581,7 +4741,11 @@
         "term": "onyx",
         "meaning": "a type of rock"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Drowzee",
@@ -4634,7 +4798,11 @@
         "term": "zee",
         "meaning": "the letter 'z', often used to denote sleep"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Hypno",
@@ -4723,7 +4891,11 @@
         "term": "crabby",
         "meaning": "irritable, bad-tempered"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Kingler",
@@ -4816,7 +4988,11 @@
         "term": "orb",
         "meaning": "spherical object"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Electrode",
@@ -4910,7 +5086,11 @@
         "term": "execute",
         "meaning": "to exterminate"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Exeggutor",
@@ -5004,7 +5184,11 @@
         "term": "bone",
         "meaning": "structure making up a skeleton"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Marowak",
@@ -5088,7 +5272,11 @@
         "term": "lee",
         "meaning": "from Bruce Lee, martial arts actor"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Hitmonchan",
@@ -5132,7 +5320,11 @@
         "term": "chan",
         "meaning": "from Jackie Chan, martial arts actor"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Lickitung",
@@ -5172,7 +5364,11 @@
         "term": "tongue",
         "meaning": "muscle in mouth"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Koffing",
@@ -5221,7 +5417,11 @@
         "term": "coughing",
         "meaning": "expulsion of air from the lungs"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Weezing",
@@ -5312,7 +5512,11 @@
         "term": "horn",
         "meaning": "the spike on a rhino's head"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Rhydon",
@@ -5391,7 +5595,11 @@
         "term": "chance",
         "meaning": "probability"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Tangela",
@@ -5427,7 +5635,11 @@
         "term": "tangle",
         "meaning": "twisted mesh of strands (e.g. vines)"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Kangaskhan",
@@ -5461,7 +5673,11 @@
         "term": "Genghis Khan",
         "meaning": "Mongolian leader"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Horsea",
@@ -5515,7 +5731,11 @@
         "term": "horsie",
         "meaning": "cutesy slang for 'horse'"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Seadra",
@@ -5609,7 +5829,11 @@
         "term": "queen",
         "meaning": "royalty"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Seaking",
@@ -5702,7 +5926,11 @@
         "term": "you",
         "meaning": "opposite of me (from Starmie)"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Starmie",
@@ -5784,7 +6012,11 @@
         "term": "mime artist",
         "meaning": "a silent performer"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Scyther",
@@ -5821,7 +6053,11 @@
         "term": "scythe",
         "meaning": "sword-like implement"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Jynx",
@@ -5858,7 +6094,11 @@
         "term": "jinx",
         "meaning": "curse or bad luck"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Electabuzz",
@@ -5899,7 +6139,11 @@
         "term": "buzz",
         "meaning": "noise that comes from electricity"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Magmar",
@@ -5936,7 +6180,11 @@
         "term": "magma",
         "meaning": "the melted rock in a volcano"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Pinsir",
@@ -5966,7 +6214,11 @@
         "term": "pincer",
         "meaning": "crab's claw"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Tauros",
@@ -5996,7 +6248,11 @@
         "term": "Taurus",
         "meaning": "mythical Greek bull & star sign"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Magikarp",
@@ -6049,7 +6305,11 @@
         "term": "carp",
         "meaning": "a species of fish"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
+    }
   },
   {
     "name": "Gyarados",
@@ -6117,7 +6377,11 @@
         "term": "Loch Ness",
         "meaning": "lake where the mythical 'Loch Ness Monster' (on which Lapras is based) supposedly resides"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Ditto",
@@ -6241,7 +6505,11 @@
     ],
     "easter_eggs": [
       "Before evolving, name your Eevee as Rainer to get Vaporeon, Sparky to get Jolteon and Pyro to get Flareon."
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Vaporeon",
@@ -6398,7 +6666,11 @@
         "term": "polygon",
         "meaning": "a many sided figure"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
+    }
   },
   {
     "name": "Omanyte",
@@ -6452,7 +6724,11 @@
         "term": "-ite",
         "meaning": "suffix meaning 'closely related'"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Omastar",
@@ -6543,7 +6819,11 @@
         "term": "kabuto",
         "meaning": "Japanese for 'helmet'"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Kabutops",
@@ -6619,7 +6899,11 @@
         "term": "pterodactyl",
         "meaning": "prehistoric flying reptile"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Snorlax",
@@ -6659,7 +6943,11 @@
         "term": "lax",
         "meaning": "lazy"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Articuno",
@@ -6818,7 +7106,11 @@
         "term": "tiny",
         "meaning": "small"
       }
-    ]
+    ],
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
+    }
   },
   {
     "name": "Dragonair",
