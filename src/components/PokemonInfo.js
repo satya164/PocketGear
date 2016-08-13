@@ -15,12 +15,12 @@ import {
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
+import PokemonType from './PokemonType';
 import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
 import store from '../store';
 import sprites from '../sprites';
-import colors from '../colors.json';
 import type {
   PokemonID,
   Pokemon,
@@ -82,21 +82,6 @@ const styles = StyleSheet.create({
   types: {
     flexDirection: 'row',
     marginHorizontal: -2,
-  },
-
-  type: {
-    borderRadius: 2,
-    paddingVertical: 3,
-    paddingHorizontal: 6,
-    margin: 2,
-  },
-
-  typeText: {
-    color: '#000',
-    fontFamily: 'Montserrat',
-    fontWeight: 'bold',
-    fontSize: 11,
-    opacity: 0.5,
   },
 
   row: {
@@ -253,12 +238,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
             <Text style={[ styles.label, styles.name ]}>{pokemon.name}</Text>
             <View style={styles.types}>
               {pokemon.types.map(type => {
-                const color = colors[type.toLowerCase()];
-                return (
-                  <View key={type} style={[ styles.type, { backgroundColor: color } ]}>
-                    <Text style={styles.typeText}>{type}</Text>
-                  </View>
-                );
+                return <PokemonType key={type} type={type} />;
               })}
             </View>
           </View>

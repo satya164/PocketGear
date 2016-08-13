@@ -12,6 +12,7 @@ import Heading from './Heading';
 import Paragraph from './Paragraph';
 import ProgressBar from './ProgressBar';
 import Placeholder from './Placeholder';
+import PokemonType from './PokemonType';
 import Attack from './Attack';
 import Evolution from './Evolution';
 import CPCalculator from './CPCalculator';
@@ -52,15 +53,22 @@ const styles = StyleSheet.create({
     marginVertical: 4,
   },
 
+  wrap: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginVertical: -4,
+  },
+
   center: {
     alignItems: 'center',
   },
 
-  label: {
+  measurement: {
     width: 60,
   },
 
-  type: {
+  label: {
     width: 120,
   },
 
@@ -121,7 +129,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
   _renderStat = (type: string, ratio: number, amount: string | number, fill: string) => {
     return (
       <View style={[ styles.row, styles.center ]}>
-        <Text style={[ styles.text, styles.type ]}>{type}</Text>
+        <Text style={[ styles.text, styles.label ]}>{type}</Text>
         <ProgressBar ratio={ratio} fillColor={fill} />
         <Text style={[ styles.text, styles.amount ]}>{amount}</Text>
       </View>
@@ -155,6 +163,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
 
     const { pokemon } = this.props;
     const attacks = this._getAttacks(pokemon.id);
+    const typeDetails = store.getTypeChart().find(({ name }) => pokemon.types.includes(name));
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
@@ -179,13 +188,43 @@ export default class PokemonDetails extends Component<void, Props, State> {
 
           <View style={styles.item}>
             <View style={[ styles.row, styles.center ]}>
-              <Text selectable style={[ styles.text, styles.strong, styles.label ]}>Height</Text>
+              <Text selectable style={[ styles.text, styles.strong, styles.measurement ]}>Height</Text>
               <Text selectable style={styles.text}>{pokemon.height.amount} {pokemon.height.unit}</Text>
             </View>
             <View style={[ styles.row, styles.center ]}>
-              <Text selectable style={[ styles.text, styles.strong, styles.label ]}>Weight</Text>
+              <Text selectable style={[ styles.text, styles.strong, styles.measurement ]}>Weight</Text>
               <Text selectable style={styles.text}>{pokemon.weight.amount} {pokemon.weight.unit}</Text>
             </View>
+          </View>
+
+          <View style={styles.item}>
+            {typeDetails.strengths.length ?
+              <View style={[ styles.row, styles.item ]}>
+                <Text style={[ styles.text, styles.label ]}>Strong against</Text>
+                <View style={styles.wrap}>
+                  {typeDetails.strengths.map(type => <PokemonType key={type} type={type} />)}
+                </View>
+              </View> :
+              null
+            }
+            {typeDetails.immunes.length ?
+              <View style={[ styles.row, styles.item ]}>
+                <Text style={[ styles.text, styles.label ]}>Immune against</Text>
+                <View style={styles.wrap}>
+                  {typeDetails.immunes.map(type => <PokemonType key={type} type={type} />)}
+                </View>
+              </View> :
+              null
+            }
+            {typeDetails.weaknesses.length ?
+              <View style={[ styles.row, styles.item ]}>
+                <Text style={[ styles.text, styles.label ]}>Weak against</Text>
+                <View style={styles.wrap}>
+                  {typeDetails.weaknesses.map(type => <PokemonType key={type} type={type} />)}
+                </View>
+              </View> :
+              null
+            }
           </View>
 
           <View style={styles.item}>
