@@ -53,16 +53,11 @@ export default class StrongAgainstList extends Component<void, Props, State> {
   _updateData = () => {
     const { pokemon } = this.props;
     const typeDetails = find(store.getTypeChart(), ({ name }) => pokemon.types.includes(name));
-    const { strengths, weaknesses } = typeDetails;
+    const { strengths, immunes, weaknesses } = typeDetails;
     const pokemons = store.getPokemons().filter(({ types }) => (
-      types.some(t => strengths.includes(t)) && !types.some(t => weaknesses.includes(t))
+      types.some(t => strengths.includes(t) || immunes.includes(t)) && !types.some(t => weaknesses.includes(t))
     ))
-    .filter(({ attack, stamina, defense }) =>
-      pokemon.attack > attack ||
-      pokemon.stamina > stamina ||
-      pokemon.defense > defense
-    )
-    .sort((a, b) => a.attack - b.attack);
+    .sort((a, b) => (a.attack + a.defense + a.stamina) - (b.attack + b.defense + b.stamina));
 
     this.setState({ pokemons });
   };
