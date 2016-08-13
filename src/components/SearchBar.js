@@ -2,6 +2,7 @@
 
 import React, { PropTypes, Component } from 'react';
 import {
+  Platform,
   View,
   TextInput,
   TouchableOpacity,
@@ -9,11 +10,15 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+const LOLLIPOP = 21;
+
 const styles = StyleSheet.create({
   bar: {
     flexDirection: 'row',
     backgroundColor: '#fff',
     height: 56,
+    borderBottomColor: 'rgba(0, 0, 0, 0.16)',
+    borderBottomWidth: Platform.Version && Platform.Version >= LOLLIPOP ? 0 : StyleSheet.hairlineWidth,
     elevation: 2,
   },
 
