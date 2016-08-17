@@ -209,7 +209,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
             }
             {typeDetails.immunes.length ?
               <View style={[ styles.row, styles.item ]}>
-                <Text style={[ styles.text, styles.label ]}>Immune against</Text>
+                <Text style={[ styles.text, styles.label ]}>Immune to</Text>
                 <View style={styles.wrap}>
                   {typeDetails.immunes.map(type => <PokemonType key={type} type={type} />)}
                 </View>
