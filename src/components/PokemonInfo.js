@@ -128,11 +128,6 @@ type Route = {
   title: string;
 }
 
-type NavigationState = {
-  index: number;
-  routes: Array<Route>;
-}
-
 type Props = {
   onNavigate: Function;
   pokemonId: PokemonID;
@@ -140,7 +135,8 @@ type Props = {
 }
 
 type State = {
-  navigation: NavigationState;
+  index: number;
+  routes: Array<Route>;
   loading: boolean;
 }
 
@@ -153,14 +149,12 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   state: State = {
-    navigation: {
-      index: 0,
-      routes: [
-        { key: 'weak-against', title: 'Weak against' },
-        { key: 'strong-against', title: 'Strong against' },
-        { key: 'details', title: 'Details' },
-      ],
-    },
+    index: 0,
+    routes: [
+      { key: 'weak-against', title: 'Weak against' },
+      { key: 'strong-against', title: 'Strong against' },
+      { key: 'details', title: 'Details' },
+    ],
     loading: true,
   };
 
@@ -169,7 +163,9 @@ export default class PokemonInfo extends Component<void, Props, State> {
   }
 
   _setLoading = () => {
-    this.setState({ loading: false });
+    this.setState({
+      loading: false,
+    });
   };
 
   _getPokemon: (id: PokemonID) => Pokemon = memoize((id: PokemonID) => {
@@ -180,7 +176,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   _handleChangeTab = (index: number) => {
     this.setState({
-      navigation: { ...this.state.navigation, index },
+      index,
     });
   };
 
@@ -262,7 +258,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
         </View>
         <TabViewAnimated
           style={styles.tabview}
-          navigationState={this.state.navigation}
+          navigationState={this.state}
           renderScene={this._renderPage}
           renderHeader={this._renderHeader}
           onRequestChangeTab={this._handleChangeTab}
