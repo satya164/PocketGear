@@ -6,7 +6,10 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
-import colors from '../colors.json';
+import store from '../store';
+import type {
+  PokemonType,
+} from '../typeDefinitions';
 
 const styles = StyleSheet.create({
 
@@ -28,12 +31,12 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  type: string;
+  type: PokemonType;
   style?: any;
 }
 
-export default function PokemonType({ type, style }: Props) {
-  const color = colors[type.toLowerCase()];
+export default function PokemonTypeLabel({ type, style }: Props) {
+  const color = store.getColor(type);
   return (
     <View style={[ styles.type, { backgroundColor: color }, style ]}>
       <Text style={styles.text}>{type}</Text>

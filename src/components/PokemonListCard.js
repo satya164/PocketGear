@@ -8,8 +8,7 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import colors from '../colors.json';
-import sprites from '../sprites';
+import store from '../store';
 import type {
   Pokemon,
 } from '../typeDefinitions';
@@ -82,7 +81,8 @@ export default class PokemonListCard extends Component<void, Props, void> {
   render() {
     const { pokemon } = this.props;
     const types = pokemon.types.join(', ');
-    const color = colors[pokemon.types[0].toLowerCase()];
+    const color = store.getColor(pokemon.types[0]);
+    const sprite = store.getSprite(pokemon.id);
 
     return (
       <TouchableOpacity
@@ -92,7 +92,7 @@ export default class PokemonListCard extends Component<void, Props, void> {
         style={[ styles.block, { backgroundColor: color } ]}
       >
         <Text style={[ styles.index, styles.subtitle ]}>#{pokemon.id}</Text>
-        <Image source={sprites[pokemon.id - 1]} style={styles.image} />
+        <Image source={sprite} style={styles.image} />
         <Text style={styles.title}>{pokemon.name}</Text>
         <Text style={styles.subtitle}>{types}</Text>
       </TouchableOpacity>

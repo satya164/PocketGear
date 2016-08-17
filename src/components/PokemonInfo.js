@@ -15,12 +15,11 @@ import {
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
-import PokemonType from './PokemonType';
+import PokemonTypeLabel from './PokemonTypeLabel';
 import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
 import store from '../store';
-import sprites from '../sprites';
 import type {
   PokemonID,
   Pokemon,
@@ -212,6 +211,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
   render() {
     const pokemon = this._getPokemon(this.props.pokemonId);
+    const sprite = store.getSprite(this.props.pokemonId);
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
@@ -237,12 +237,12 @@ export default class PokemonInfo extends Component<void, Props, State> {
           <View style={styles.basic}>
             <Text style={[ styles.label, styles.name ]}>{pokemon.name}</Text>
             <View style={styles.types}>
-              {pokemon.types.map(type => {
-                return <PokemonType key={type} type={type} />;
-              })}
+              {pokemon.types.map(type =>
+                <PokemonTypeLabel key={type} type={type} />
+              )}
             </View>
           </View>
-          <Image style={styles.image} source={sprites[pokemon.id - 1]} />
+          <Image style={styles.image} source={sprite} />
         </View>
         <TabViewAnimated
           style={styles.tabview}

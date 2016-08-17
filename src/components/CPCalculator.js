@@ -11,7 +11,6 @@ import {
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Heading from './Heading';
-import sprites from '../sprites';
 import store from '../store';
 import type {
   Pokemon,
@@ -183,7 +182,7 @@ export default class CPCalculator extends Component<void, Props, State> {
             return (
               <TouchableOpacity key={it.id} onPress={() => this._goToPokemon(it.id)}>
                 <View style={styles.pokemon}>
-                    <Image source={sprites[it.id - 1]} style={styles.image} />
+                    <Image source={store.getSprite(it.id)} style={styles.image} />
                     <Text style={[ styles.text, styles.small ]}>
                       {poke.name}
                     </Text>

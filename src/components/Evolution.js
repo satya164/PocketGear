@@ -10,7 +10,6 @@ import {
   StyleSheet,
 } from 'react-native';
 import Heading from './Heading';
-import sprites from '../sprites';
 import store from '../store';
 import type {
   Pokemon,
@@ -138,7 +137,7 @@ export default class Evolution extends Component<void, Props, void> {
                 onPress={() => this._goToPokemon(p.id)}
               >
                 <View style={styles.pokemon}>
-                  <Image source={sprites[p.id - 1]} style={styles.image} />
+                  <Image source={store.getSprite(p.id)} style={styles.image} />
                   <Text style={styles.label}>{p.name}</Text>
                 </View>
                 {index !== chain.length - 1 ?

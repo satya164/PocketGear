@@ -12,7 +12,7 @@ import Heading from './Heading';
 import Paragraph from './Paragraph';
 import ProgressBar from './ProgressBar';
 import Placeholder from './Placeholder';
-import PokemonType from './PokemonType';
+import PokemonTypeLabel from './PokemonTypeLabel';
 import Attack from './Attack';
 import Evolution from './Evolution';
 import CPCalculator from './CPCalculator';
@@ -202,7 +202,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
               <View style={[ styles.row, styles.item ]}>
                 <Text style={[ styles.text, styles.label ]}>Strong against</Text>
                 <View style={styles.wrap}>
-                  {typeDetails.strengths.map(type => <PokemonType key={type} type={type} />)}
+                  {typeDetails.strengths.map(type => <PokemonTypeLabel key={type} type={type} />)}
                 </View>
               </View> :
               null
@@ -211,7 +211,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
               <View style={[ styles.row, styles.item ]}>
                 <Text style={[ styles.text, styles.label ]}>Immune to</Text>
                 <View style={styles.wrap}>
-                  {typeDetails.immunes.map(type => <PokemonType key={type} type={type} />)}
+                  {typeDetails.immunes.map(type => <PokemonTypeLabel key={type} type={type} />)}
                 </View>
               </View> :
               null
@@ -220,7 +220,7 @@ export default class PokemonDetails extends Component<void, Props, State> {
               <View style={[ styles.row, styles.item ]}>
                 <Text style={[ styles.text, styles.label ]}>Weak against</Text>
                 <View style={styles.wrap}>
-                  {typeDetails.weaknesses.map(type => <PokemonType key={type} type={type} />)}
+                  {typeDetails.weaknesses.map(type => <PokemonTypeLabel key={type} type={type} />)}
                 </View>
               </View> :
               null
