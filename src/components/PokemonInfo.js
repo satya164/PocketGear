@@ -4,18 +4,20 @@ import find from 'lodash/find';
 import memoize from 'lodash/memoize';
 import React, { PropTypes, Component } from 'react';
 import {
-  View,
   Image,
-  Text,
-  TouchableOpacity,
+  InteractionManager,
+  Platform,
   ScrollView,
   StyleSheet,
-  Platform,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
 import PokemonTypeLabel from './PokemonTypeLabel';
+import Placeholder from './Placeholder';
 import PokemonDetails from './PokemonDetails';
 import WeakAgainstList from './WeakAgainstList';
 import StrongAgainstList from './StrongAgainstList';
@@ -139,6 +141,7 @@ type Props = {
 
 type State = {
   navigation: NavigationState;
+  loading: boolean;
 }
 
 export default class PokemonInfo extends Component<void, Props, State> {
@@ -158,6 +161,15 @@ export default class PokemonInfo extends Component<void, Props, State> {
         { key: 'details', title: 'Details' },
       ],
     },
+    loading: true,
+  };
+
+  componentDidMount() {
+    InteractionManager.runAfterInteractions(this._setLoading);
+  }
+
+  _setLoading = () => {
+    this.setState({ loading: false });
   };
 
   _getPokemon: (id: PokemonID) => Pokemon = memoize((id: PokemonID) => {
@@ -188,6 +200,10 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   _renderScene = ({ route }: { route: Route }) => {
+    if (this.state.loading) {
+      return <Placeholder />;
+    }
+
     const pokemon = this._getPokemon(this.props.pokemonId);
     switch (route.key) {
     case 'weak-against':

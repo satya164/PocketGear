@@ -4,7 +4,6 @@ import find from 'lodash/find';
 import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import PokemonList from './PokemonList';
-import Placeholder from './Placeholder';
 import NoResults from './NoResults';
 import store from '../store';
 import type {
@@ -18,7 +17,6 @@ type Props = {
 
 type State = {
   pokemons: Array<Pokemon>;
-  loading: boolean;
 }
 
 export default class WeakAgainstList extends Component<void, Props, State> {
@@ -30,25 +28,15 @@ export default class WeakAgainstList extends Component<void, Props, State> {
 
   state: State = {
     pokemons: [],
-    loading: true,
   };
 
   componentWillMount() {
     this._updateData();
   }
 
-  componentDidMount() {
-    // FIXME: InteractionManager seems buggy - #8624
-    setTimeout(this._setLoading, 200);
-  }
-
   shouldComponentUpdate(nextProps: Props, nextState: State) {
     return shallowCompare(this, nextProps, nextState);
   }
-
-  _setLoading = () => {
-    this.setState({ loading: false });
-  };
 
   _updateData = () => {
     const { pokemon } = this.props;
@@ -63,10 +51,6 @@ export default class WeakAgainstList extends Component<void, Props, State> {
   };
 
   render() {
-    if (this.state.loading) {
-      return <Placeholder />;
-    }
-
     if (this.state.pokemons.length === 0) {
       return (
         <NoResults

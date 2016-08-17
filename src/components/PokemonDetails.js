@@ -11,7 +11,6 @@ import {
 import Heading from './Heading';
 import Paragraph from './Paragraph';
 import ProgressBar from './ProgressBar';
-import Placeholder from './Placeholder';
 import PokemonTypeLabel from './PokemonTypeLabel';
 import Attack from './Attack';
 import Evolution from './Evolution';
@@ -85,11 +84,7 @@ type Props = {
   onNavigate: Function;
 }
 
-type State = {
-  loading: boolean;
-}
-
-export default class PokemonDetails extends Component<void, Props, State> {
+export default class PokemonDetails extends Component<void, Props, void> {
 
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
@@ -97,22 +92,9 @@ export default class PokemonDetails extends Component<void, Props, State> {
     onNavigate: PropTypes.func.isRequired,
   };
 
-  state: State = {
-    loading: true,
-  };
-
-  componentDidMount() {
-    // FIXME: InteractionManager seems buggy - #8624
-    setTimeout(this._setLoading, 200);
-  }
-
-  shouldComponentUpdate(nextProps: Props, nextState: State) {
+  shouldComponentUpdate(nextProps: Props, nextState: void) {
     return shallowCompare(this, nextProps, nextState);
   }
-
-  _setLoading = () => {
-    this.setState({ loading: false });
-  };
 
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.onNavigate({
@@ -157,10 +139,6 @@ export default class PokemonDetails extends Component<void, Props, State> {
   };
 
   render() {
-    if (this.state.loading) {
-      return <Placeholder />;
-    }
-
     const { pokemon } = this.props;
     const attacks = this._getAttacks(pokemon.id);
     const typeDetails = store.getTypeChart().find(({ name }) => pokemon.types.includes(name));
