@@ -1,6 +1,5 @@
 /* @flow */
 
-import find from 'lodash/find';
 import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import PokemonList from './PokemonList';
@@ -40,11 +39,14 @@ export default class WeakAgainstList extends Component<void, Props, State> {
 
   _updateData = () => {
     const { pokemon } = this.props;
-    const typeDetails = find(store.getTypeChart(), ({ name }) => pokemon.types.includes(name));
-    const { strengths, immunes, weaknesses } = typeDetails;
-    const pokemons = store.getPokemons().filter(({ types }) => (
-      types.some(t => weaknesses.includes(t)) && !types.some(t => strengths.includes(t) || immunes.includes(t))
-    ))
+    const typeChart = store.getTypeChart();
+    const weakAgainst = typeChart.filter(t =>
+      pokemon.types.some(type => t.super_effective.includes(type)) &&
+      !pokemon.types.some(type => t.not_very_effective.includes(type))
+    ).map(t => t.name);
+    const pokemons = store.getPokemons().filter(({ types }) =>
+      types.every(t => weakAgainst.includes(t))
+    )
     .sort((a, b) => (b.attack + b.defense + b.stamina) - (a.attack + a.defense + a.stamina));
 
     this.setState({ pokemons });

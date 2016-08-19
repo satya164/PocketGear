@@ -68,9 +68,8 @@ export type Pokemon = {
 
 export type TypeChart = {
   name: PokemonType;
-  immunes: Array<PokemonType>;
-  weaknesses: Array<PokemonType>;
-  strengths: Array<PokemonType>;
+  super_effective: Array<PokemonType>;
+  not_very_effective: Array<PokemonType>;
 }
 
 export type Attack = {

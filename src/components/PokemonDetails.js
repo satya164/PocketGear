@@ -141,7 +141,17 @@ export default class PokemonDetails extends Component<void, Props, void> {
   render() {
     const { pokemon } = this.props;
     const attacks = this._getAttacks(pokemon.id);
-    const typeDetails = store.getTypeChart().find(({ name }) => pokemon.types.includes(name));
+    const typeChart = store.getTypeChart();
+    const typeDetails = typeChart.find(({ name }) => pokemon.types[0] === name);
+    const strongAgainst = typeDetails.super_effective;
+    const resistantTo = typeChart.filter(t =>
+      pokemon.types.some(type => t.not_very_effective.includes(type)) &&
+      !pokemon.types.some(type => t.super_effective.includes(type))
+    ).map(t => t.name);
+    const weakAgainst = typeChart.filter(t =>
+      pokemon.types.some(type => t.super_effective.includes(type)) &&
+      !pokemon.types.some(type => t.not_very_effective.includes(type))
+    ).map(t => t.name);
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
@@ -176,29 +186,29 @@ export default class PokemonDetails extends Component<void, Props, void> {
           </View>
 
           <View style={styles.item}>
-            {typeDetails.strengths.length ?
+            {strongAgainst.length ?
               <View style={[ styles.row, styles.item ]}>
-                <Text style={[ styles.text, styles.label ]}>Strong against</Text>
+                <Text style={[ styles.text, styles.label ]}>Effective against</Text>
                 <View style={styles.wrap}>
-                  {typeDetails.strengths.map(type => <PokemonTypeLabel key={type} type={type} />)}
+                  {strongAgainst.map(type => <PokemonTypeLabel key={type} type={type} />)}
                 </View>
               </View> :
               null
             }
-            {typeDetails.immunes.length ?
+            {resistantTo.length ?
               <View style={[ styles.row, styles.item ]}>
-                <Text style={[ styles.text, styles.label ]}>Immune to</Text>
+                <Text style={[ styles.text, styles.label ]}>Resistant to</Text>
                 <View style={styles.wrap}>
-                  {typeDetails.immunes.map(type => <PokemonTypeLabel key={type} type={type} />)}
+                  {resistantTo.map(type => <PokemonTypeLabel key={type} type={type} />)}
                 </View>
               </View> :
               null
             }
-            {typeDetails.weaknesses.length ?
+            {weakAgainst.length ?
               <View style={[ styles.row, styles.item ]}>
                 <Text style={[ styles.text, styles.label ]}>Weak against</Text>
                 <View style={styles.wrap}>
-                  {typeDetails.weaknesses.map(type => <PokemonTypeLabel key={type} type={type} />)}
+                  {weakAgainst.map(type => <PokemonTypeLabel key={type} type={type} />)}
                 </View>
               </View> :
               null

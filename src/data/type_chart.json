@@ -1,91 +1,227 @@
 [{
   "name": "Normal",
-  "immunes": ["Ghost"],
-  "weaknesses": ["Rock", "Steel"],
-  "strengths": []
-}, {
-  "name": "Fire",
-  "immunes": [],
-  "weaknesses": ["Fire", "Water", "Rock", "Dragon"],
-  "strengths": ["Grass", "Ice", "Bug", "Steel"]
-}, {
-  "name": "Water",
-  "immunes": [],
-  "weaknesses": ["Water", "Grass", "Dragon"],
-  "strengths": ["Fire", "Ground", "Rock"]
-}, {
-  "name": "Electric",
-  "immunes": ["Ground"],
-  "weaknesses": ["Electric", "Grass", "Dragon"],
-  "strengths": ["Water", "Flying"]
-}, {
-  "name": "Grass",
-  "immunes": [],
-  "weaknesses": ["Fire", "Grass", "Poison", "Flying", "Bug", "Dragon", "Steel"],
-  "strengths": ["Water", "Ground", "Rock"]
-}, {
-  "name": "Ice",
-  "immunes": [],
-  "weaknesses": ["Fire", "Water", "Ice", "Steel"],
-  "strengths": ["Grass", "Ground", "Flying", "Dragon"]
+  "super_effective": [],
+  "not_very_effective": [
+    "Rock",
+    "Ghost",
+    "Steel"
+  ]
 }, {
   "name": "Fighting",
-  "immunes": ["Ghost"],
-  "weaknesses": ["Poison", "Flying", "Psychic", "Bug", "Fairy"],
-  "strengths": ["Normal", "Ice", "Rock", "Dark", "Steel"]
-}, {
-  "name": "Poison",
-  "immunes": ["Steel"],
-  "weaknesses": ["Poison", "Ground", "Rock", "Ghost"],
-  "strengths": ["Grass", "Fairy"]
-}, {
-  "name": "Ground",
-  "immunes": ["Flying"],
-  "weaknesses": ["Grass", "Bug"],
-  "strengths": ["Fire", "Electric", "Poison", "Rock", "Steel"]
+  "super_effective": [
+    "Normal",
+    "Rock",
+    "Steel",
+    "Ice",
+    "Dark"
+  ],
+  "not_very_effective": [
+    "Flying",
+    "Poison",
+    "Bug",
+    "Ghost",
+    "Psychic",
+    "Fairy"
+  ]
 }, {
   "name": "Flying",
-  "immunes": [],
-  "weaknesses": ["Electric", "Rock", "Steel"],
-  "strengths": ["Grass", "Fighting", "Bug"]
+  "super_effective": [
+    "Fighting",
+    "Bug",
+    "Grass"
+  ],
+  "not_very_effective": [
+    "Rock",
+    "Steel",
+    "Electric"
+  ]
 }, {
-  "name": "Psychic",
-  "immunes": ["Dark"],
-  "weaknesses": ["Psychic", "Steel"],
-  "strengths": ["Fighting", "Poison"]
+  "name": "Poison",
+  "super_effective": [
+    "Grass",
+    "Fairy"
+  ],
+  "not_very_effective": [
+    "Poison",
+    "Ground",
+    "Rock",
+    "Ghost",
+    "Steel"
+  ]
 }, {
-  "name": "Bug",
-  "immunes": [],
-  "weaknesses": ["Fire", "Fighting", "Poison", "Flying", "Ghost", "Steel", "Fairy"],
-  "strengths": ["Grass", "Psychic", "Dark"]
+  "name": "Ground",
+  "super_effective": [
+    "Poison",
+    "Rock",
+    "Steel",
+    "Fire",
+    "Electric"
+  ],
+  "not_very_effective": [
+    "Flying",
+    "Bug",
+    "Grass"
+  ]
 }, {
   "name": "Rock",
-  "immunes": [],
-  "weaknesses": ["Fighting", "Ground", "Steel"],
-  "strengths": ["Fire", "Ice", "Flying", "Bug"]
+  "super_effective": [
+    "Flying",
+    "Bug",
+    "Fire",
+    "Ice"
+  ],
+  "not_very_effective": [
+    "Fighting",
+    "Ground",
+    "Steel"
+  ]
+}, {
+  "name": "Bug",
+  "super_effective": [
+    "Grass",
+    "Psychic",
+    "Dark"
+  ],
+  "not_very_effective": [
+    "Fighting",
+    "Flying",
+    "Poison",
+    "Ghost",
+    "Steel",
+    "Fire",
+    "Fairy"
+  ]
 }, {
   "name": "Ghost",
-  "immunes": ["Normal"],
-  "weaknesses": ["Dark"],
-  "strengths": ["Psychic", "Ghost"]
-}, {
-  "name": "Dragon",
-  "immunes": ["Fairy"],
-  "weaknesses": ["Steel"],
-  "strengths": ["Dragon"]
-}, {
-  "name": "Dark",
-  "immunes": [],
-  "weaknesses": ["Fighting", "Dark", "Fairy"],
-  "strengths": ["Psychic", "Ghost"]
+  "super_effective": [
+    "Ghost",
+    "Psychic"
+  ],
+  "not_very_effective": [
+    "Normal",
+    "Dark"
+  ]
 }, {
   "name": "Steel",
-  "immunes": [],
-  "weaknesses": ["Fire", "Water", "Electric", "Steel"],
-  "strengths": ["Ice", "Rock", "Fairy"]
+  "super_effective": [
+    "Rock",
+    "Ice",
+    "Fairy"
+  ],
+  "not_very_effective": [
+    "Steel",
+    "Fire",
+    "Water",
+    "Electric"
+  ]
+}, {
+  "name": "Fire",
+  "super_effective": [
+    "Bug",
+    "Steel",
+    "Grass",
+    "Ice"
+  ],
+  "not_very_effective": [
+    "Rock",
+    "Fire",
+    "Water",
+    "Dragon"
+  ]
+}, {
+  "name": "Water",
+  "super_effective": [
+    "Ground",
+    "Rock",
+    "Fire"
+  ],
+  "not_very_effective": [
+    "Water",
+    "Grass",
+    "Dragon"
+  ]
+}, {
+  "name": "Grass",
+  "super_effective": [
+    "Ground",
+    "Rock",
+    "Water"
+  ],
+  "not_very_effective": [
+    "Flying",
+    "Poison",
+    "Bug",
+    "Steel",
+    "Fire",
+    "Grass",
+    "Dragon"
+  ]
+}, {
+  "name": "Electric",
+  "super_effective": [
+    "Flying",
+    "Water"
+  ],
+  "not_very_effective": [
+    "Ground",
+    "Grass",
+    "Electric",
+    "Ice"
+  ]
+}, {
+  "name": "Psychic",
+  "super_effective": [
+    "Fighting",
+    "Poison"
+  ],
+  "not_very_effective": [
+    "Steel",
+    "Psychic",
+    "Dark"
+  ]
+}, {
+  "name": "Ice",
+  "super_effective": [
+    "Flying",
+    "Ground",
+    "Grass",
+    "Dragon"
+  ],
+  "not_very_effective": [
+    "Steel",
+    "Fire",
+    "Water",
+    "Ice"
+  ]
+}, {
+  "name": "Dragon",
+  "super_effective": [
+    "Ice"
+  ],
+  "not_very_effective": [
+    "Steel",
+    "Fairy"
+  ]
+}, {
+  "name": "Dark",
+  "super_effective": [
+    "Ghost"
+  ],
+  "not_very_effective": [
+    "Fighting",
+    "Dark",
+    "Fairy"
+  ]
 }, {
   "name": "Fairy",
-  "immunes": [],
-  "weaknesses": ["Fire", "Poison", "Steel"],
-  "strengths": ["Fighting", "Dragon", "Dark"]
+  "super_effective": [
+    "Fighting",
+    "Dragon",
+    "Dark"
+  ],
+  "not_very_effective": [
+    "Poison",
+    "Steel",
+    "Fire"
+  ]
 }]
