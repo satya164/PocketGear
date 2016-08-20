@@ -12,9 +12,9 @@ import {
 import GridView from './GridView';
 import More from './More';
 import PokemonListCard from './PokemonListCard';
-import getWeakAgainstPokemons from '../helpers/getWeakAgainstPokemons';
-import getStrongAgainstPokemons from '../helpers/getStrongAgainstPokemons';
-import findClosestMatch from '../helpers/findClosestMatch';
+import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
+import getStrongAgainstPokemons from '../utils/getStrongAgainstPokemons';
+import findClosestMatch from '../utils/findClosestMatch';
 import type {
   Pokemon,
   PokemonID,

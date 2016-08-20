@@ -12,7 +12,7 @@ import Placeholder from './Placeholder';
 import Appbar from './Appbar';
 import PokemonList from './PokemonList';
 import NoResults from './NoResults';
-import getWeakAgainstPokemons from '../helpers/getWeakAgainstPokemons';
+import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
 import store from '../store';
 import type {
   Pokemon,

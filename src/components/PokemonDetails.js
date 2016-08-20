@@ -14,11 +14,11 @@ import ProgressBar from './ProgressBar';
 import PokemonTypeLabel from './PokemonTypeLabel';
 import Attack from './Attack';
 import Evolution from './Evolution';
-import getQuickAttacks from '../helpers/getQuickAttacks';
-import getSpecialAttacks from '../helpers/getSpecialAttacks';
-import getStrongAgainstTypes from '../helpers/getStrongAgainstTypes';
-import getWeakAgainstTypes from '../helpers/getWeakAgainstTypes';
-import getResistantToTypes from '../helpers/getResistantToTypes';
+import getQuickAttacks from '../utils/getQuickAttacks';
+import getSpecialAttacks from '../utils/getSpecialAttacks';
+import getStrongAgainstTypes from '../utils/getStrongAgainstTypes';
+import getWeakAgainstTypes from '../utils/getWeakAgainstTypes';
+import getResistantToTypes from '../utils/getResistantToTypes';
 import store from '../store';
 import type {
   Pokemon,
