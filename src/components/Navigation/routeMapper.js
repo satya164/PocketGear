@@ -2,6 +2,8 @@
 
 import PokemonChooser from '../PokemonChooser';
 import PokemonInfo from '../PokemonInfo';
+import StrongAgainstList from '../StrongAgainstList';
+import WeakAgainstList from '../WeakAgainstList';
 import type { Route } from './NavigationTypeDefinitions';
 
 export type RouteDescription = {
@@ -14,6 +16,14 @@ export default function(route: Route): RouteDescription {
   case 'info':
     return {
       component: PokemonInfo,
+    };
+  case 'strong-against':
+    return {
+      component: StrongAgainstList,
+    };
+  case 'weak-against':
+    return {
+      component: WeakAgainstList,
     };
   default:
     return {

@@ -14,7 +14,11 @@ import ProgressBar from './ProgressBar';
 import PokemonTypeLabel from './PokemonTypeLabel';
 import Attack from './Attack';
 import Evolution from './Evolution';
-import CPCalculator from './CPCalculator';
+import getQuickAttacks from '../helpers/getQuickAttacks';
+import getSpecialAttacks from '../helpers/getSpecialAttacks';
+import getStrongAgainstTypes from '../helpers/getStrongAgainstTypes';
+import getWeakAgainstTypes from '../helpers/getWeakAgainstTypes';
+import getResistantToTypes from '../helpers/getResistantToTypes';
 import store from '../store';
 import type {
   Pokemon,
@@ -128,30 +132,14 @@ export default class PokemonDetails extends Component<void, Props, void> {
     );
   };
 
-  _getAttacks = (id: number) => {
-    const quickAttacks = store.getQuickAttacks();
-    const specialAttacks = store.getSpecialAttacks();
-
-    return {
-      quick: quickAttacks.filter(attack => attack.known_by.includes(id)).sort((a, b) => b.damage - a.damage),
-      special: specialAttacks.filter(attack => attack.known_by.includes(id)).sort((a, b) => b.damage - a.damage),
-    };
-  };
-
   render() {
     const { pokemon } = this.props;
-    const attacks = this._getAttacks(pokemon.id);
-    const typeChart = store.getTypeChart();
-    const typeDetails = typeChart.find(({ name }) => pokemon.types[0] === name);
-    const strongAgainst = typeDetails.super_effective;
-    const resistantTo = typeChart.filter(t =>
-      pokemon.types.some(type => t.not_very_effective.includes(type)) &&
-      !pokemon.types.some(type => t.super_effective.includes(type))
-    ).map(t => t.name);
-    const weakAgainst = typeChart.filter(t =>
-      pokemon.types.some(type => t.super_effective.includes(type)) &&
-      !pokemon.types.some(type => t.not_very_effective.includes(type))
-    ).map(t => t.name);
+    const maxValues = store.getMaxValues();
+    const quickAttacks = getQuickAttacks(pokemon.id);
+    const specialAttacks = getSpecialAttacks(pokemon.id);
+    const strongAgainst = getStrongAgainstTypes(pokemon);
+    const resistantTo = getResistantToTypes(pokemon);
+    const weakAgainst = getWeakAgainstTypes(pokemon);
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
@@ -188,7 +176,7 @@ export default class PokemonDetails extends Component<void, Props, void> {
           <View style={styles.item}>
             {strongAgainst.length ?
               <View style={[ styles.row, styles.item ]}>
-                <Text style={[ styles.text, styles.label ]}>Effective against</Text>
+                <Text style={[ styles.text, styles.label ]}>Strong against</Text>
                 <View style={styles.wrap}>
                   {strongAgainst.map(type => <PokemonTypeLabel key={type} type={type} />)}
                 </View>
@@ -216,34 +204,23 @@ export default class PokemonDetails extends Component<void, Props, void> {
           </View>
 
           <View style={styles.item}>
-            {attacks.quick.map(this._renderAttack)}
-            {attacks.special.map(this._renderAttack)}
+            {quickAttacks.map(this._renderAttack)}
+            {specialAttacks.map(this._renderAttack)}
           </View>
 
           <View style={styles.item}>
-            {this._renderStat('Attack', pokemon.attack / 300, pokemon.attack, '#ff8a65')}
-            {this._renderStat('Defense', pokemon.defense / 200, pokemon.defense, '#9575cd')}
-            {this._renderStat('Stamina', pokemon.stamina / 320, pokemon.stamina, '#5499c7')}
+            {this._renderStat('Attack', pokemon.attack / maxValues.attack, pokemon.attack, '#ff8a65')}
+            {this._renderStat('Defense', pokemon.defense / maxValues.defense, pokemon.defense, '#9575cd')}
+            {this._renderStat('Stamina', pokemon.stamina / maxValues.stamina, pokemon.stamina, '#5499c7')}
             {this._renderStat('Capture Rate', pokemon.capture_rate, (pokemon.capture_rate * 100).toFixed(2) + '%', '#f06292')}
             {this._renderStat('Flee Rate', pokemon.flee_rate, (pokemon.flee_rate * 100).toFixed(2) + '%', '#ffd54f')}
-            {this._renderStat('Max CP', pokemon.max_cp / 3904, pokemon.max_cp, '#e57373')}
-            {this._renderStat('Max HP', pokemon.max_hp / 163, pokemon.max_hp, '#4db6ac')}
+            {this._renderStat('Max CP', pokemon.max_cp / maxValues.max_cp, pokemon.max_cp, '#e57373')}
+            {this._renderStat('Max HP', pokemon.max_hp / maxValues.max_hp, pokemon.max_hp, '#4db6ac')}
           </View>
 
           {pokemon.evolution_chains ?
             <View style={styles.item}>
               <Evolution
-                style={styles.item}
-                pokemon={pokemon}
-                onNavigate={this.props.onNavigate}
-              />
-            </View> :
-            null
-          }
-
-          {pokemon.evolution_cp_multipliers ?
-            <View style={styles.item}>
-              <CPCalculator
                 style={styles.item}
                 pokemon={pokemon}
                 onNavigate={this.props.onNavigate}

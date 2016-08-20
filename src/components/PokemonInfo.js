@@ -6,28 +6,24 @@ import React, { PropTypes, Component } from 'react';
 import {
   Image,
   InteractionManager,
-  Platform,
   ScrollView,
   StyleSheet,
+  Platform,
   Text,
-  TouchableOpacity,
   View,
 } from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
+import Appbar from './Appbar';
 import PokemonTypeLabel from './PokemonTypeLabel';
 import Placeholder from './Placeholder';
 import PokemonDetails from './PokemonDetails';
-import WeakAgainstList from './WeakAgainstList';
-import StrongAgainstList from './StrongAgainstList';
+import PokemonMatches from './PokemonMatches';
+import PokemonTools from './PokemonTools';
 import store from '../store';
 import type {
   PokemonID,
   Pokemon,
 } from '../typeDefinitions';
-
-const BAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 
 const styles = StyleSheet.create({
   container: {
@@ -36,30 +32,8 @@ const styles = StyleSheet.create({
   },
 
   appbar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    height: BAR_HEIGHT,
-    marginTop: Platform.OS === 'ios' ? 20 : 0,
-  },
-
-  icon: {
-    color: '#222',
-  },
-
-  button: {
-    height: BAR_HEIGHT,
-    width: BAR_HEIGHT - 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  title: {
-    flex: 1,
-    color: '#222',
-    textAlign: Platform.OS === 'ios' ? 'center' : 'left',
-    fontFamily: 'Montserrat',
-    fontSize: Platform.OS === 'ios' ? 16 : 18,
-    margin: 8,
+    elevation: 0,
+    borderBottomWidth: 0,
   },
 
   image: {
@@ -151,9 +125,9 @@ export default class PokemonInfo extends Component<void, Props, State> {
   state: State = {
     index: 0,
     routes: [
-      { key: 'weak-against', title: 'Weak against' },
-      { key: 'strong-against', title: 'Strong against' },
       { key: 'details', title: 'Details' },
+      { key: 'matches', title: 'Matches' },
+      { key: 'tools', title: 'Tools' },
     ],
     loading: true,
   };
@@ -202,12 +176,12 @@ export default class PokemonInfo extends Component<void, Props, State> {
 
     const pokemon = this._getPokemon(this.props.pokemonId);
     switch (route.key) {
-    case 'weak-against':
-      return <WeakAgainstList pokemon={pokemon} onNavigate={this.props.onNavigate} />;
-    case 'strong-against':
-      return <StrongAgainstList pokemon={pokemon} onNavigate={this.props.onNavigate} />;
     case 'details':
       return <PokemonDetails pokemon={pokemon} onNavigate={this.props.onNavigate} />;
+    case 'matches':
+      return <PokemonMatches pokemon={pokemon} onNavigate={this.props.onNavigate} />;
+    case 'tools':
+      return <PokemonTools pokemon={pokemon} onNavigate={this.props.onNavigate} />;
     default:
       return null;
     }
@@ -217,34 +191,15 @@ export default class PokemonInfo extends Component<void, Props, State> {
     return <TabViewPage {...props} renderScene={this._renderScene} />;
   };
 
-  _handleGoBack = () => {
-    this.props.onNavigate({ type: 'pop' });
-  };
-
   render() {
     const pokemon = this._getPokemon(this.props.pokemonId);
     const sprite = store.getSprite(this.props.pokemonId);
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
-        <View style={styles.appbar}>
-          <TouchableOpacity style={styles.button} onPress={this._handleGoBack}>
-            {Platform.OS === 'ios' ?
-              <EvilIcons
-                name='chevron-left'
-                size={36}
-                style={styles.icon}
-              /> :
-              <MaterialIcons
-                name='arrow-back'
-                size={24}
-                style={styles.icon}
-              />
-            }
-          </TouchableOpacity>
-          <Text style={styles.title}>#{pokemon.id}</Text>
-          <View style={styles.button} />
-        </View>
+        <Appbar style={styles.appbar} onNavigate={this.props.onNavigate}>
+          {'#' + pokemon.id}
+        </Appbar>
         <View style={[ styles.row, styles.meta ]}>
           <View style={styles.basic}>
             <Text style={[ styles.label, styles.name ]}>{pokemon.name}</Text>

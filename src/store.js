@@ -15,6 +15,14 @@ import type {
   TypeChart,
 } from './typeDefinitions';
 
+const MAX_VALUES = {
+  attack: 300,
+  defense: 200,
+  stamina: 320,
+  max_hp: 163,
+  max_cp: 3904,
+};
+
 function getPokemons(): Array<Pokemon> {
   return pokemons;
 }
@@ -39,6 +47,10 @@ function getColor(type: PokemonType): string {
   return colors[type.toLowerCase()];
 }
 
+function getMaxValues() {
+  return MAX_VALUES;
+}
+
 export default {
   getPokemons,
   getQuickAttacks,
@@ -46,4 +58,5 @@ export default {
   getTypeChart,
   getSprite,
   getColor,
+  getMaxValues,
 };
