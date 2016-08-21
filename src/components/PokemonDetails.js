@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
 
   measurement: {
-    width: 60,
+    width: 80,
   },
 
   label: {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
 
   amount: {
     textAlign: 'right',
-    width: 60,
+    width: 80,
   },
 });
 

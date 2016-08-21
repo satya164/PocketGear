@@ -10,5 +10,5 @@ export default function getSpecialAttacks(id: PokemonID) {
 
   return specialAttacks.filter(attack =>
     attack.known_by.includes(id)
-  ).sort((a, b) => b.damage - a.damage);
+  ).sort((a, b) => (b.damage / b.duration) - (a.damage / a.duration));
 }

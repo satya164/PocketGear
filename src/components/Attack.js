@@ -42,13 +42,19 @@ const styles = StyleSheet.create({
   },
 
   damage: {
-    width: 60,
+    width: 80,
     alignItems: 'flex-end',
   },
 
   subtitle: {
+    fontFamily: 'Montserrat',
     fontSize: 11,
-    opacity: 0.5,
+    color: '#999',
+    marginVertical: 4,
+  },
+
+  numbers: {
+    fontSize: 10,
   },
 });
 
@@ -71,7 +77,7 @@ export default class Attack extends Component<void, Props, void> {
           <Text style={styles.text}>
             {attack.name}
           </Text>
-          <Text style={[ styles.text, styles.subtitle ]}>
+          <Text style={styles.subtitle}>
             {attack.type}
           </Text>
         </View>
@@ -80,10 +86,10 @@ export default class Attack extends Component<void, Props, void> {
         }) : <View style={styles.spacer} />}
         <View style={styles.damage}>
           <Text style={styles.text}>
-            {attack.damage}
+            {(attack.damage / (attack.duration / 1000)).toFixed(1)} dps
           </Text>
-          <Text style={[ styles.text, styles.subtitle ]}>
-            {attack.duration / 1000} s
+          <Text style={[ styles.subtitle, styles.numbers ]}>
+            {attack.damage} / {(attack.duration / 1000)} s
           </Text>
         </View>
       </View>
