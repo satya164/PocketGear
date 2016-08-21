@@ -13,10 +13,6 @@ export default function findClosestMatch(pokemons: Array<Pokemon>, pokemon: Poke
     if (difference === 0) {
       return p;
     }
-  }
-
-  for (const p of items) {
-    const difference = compareStrength(pokemon, p);
     if (stronger) {
       if (difference < 0) {
         return p;
