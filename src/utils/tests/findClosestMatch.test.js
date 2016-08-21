@@ -64,3 +64,25 @@ test('should match closest weaker pokemon', t => {
   const match = findClosestMatch(pokemons, pokemon, false);
   t.is(match, pokemons.find(p => p.id === 2));
 });
+
+test('should match strongest pokemon if stronger than all', t => {
+  const pokemon = {
+    id: 5,
+    attack: 210,
+    defense: 230,
+    stamina: 158,
+  };
+  const match = findClosestMatch(pokemons, pokemon, false);
+  t.is(match, pokemons.find(p => p.id === 1));
+});
+
+test('should match weakest pokemon if weaker than all', t => {
+  const pokemon = {
+    id: 5,
+    attack: 104,
+    defense: 96,
+    stamina: 72,
+  };
+  const match = findClosestMatch(pokemons, pokemon, true);
+  t.is(match, pokemons.find(p => p.id === 2));
+});

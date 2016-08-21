@@ -28,9 +28,5 @@ export default function findClosestMatch(pokemons: Array<Pokemon>, pokemon: Poke
     }
   }
 
-  if (stronger) {
-    return items[0];
-  } else {
-    return items[items.length - 1];
-  }
+  return items[items.length - 1];
 }
