@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     opacity: 0.5,
     margin: 4,
     marginTop: 16,
+    backgroundColor: 'transparent',
   },
 });
 
