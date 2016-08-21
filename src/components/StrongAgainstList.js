@@ -1,36 +1,73 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  InteractionManager,
+} from 'react-native';
 import shallowCompare from 'react-addons-shallow-compare';
+import Placeholder from './Placeholder';
+import Appbar from './Appbar';
 import PokemonList from './PokemonList';
 import NoResults from './NoResults';
+import getStrongAgainstPokemons from '../utils/getStrongAgainstPokemons';
 import store from '../store';
 import type {
   Pokemon,
+  PokemonID,
 } from '../typeDefinitions';
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+
+  content: {
+    flex: 1,
+    backgroundColor: '#fafafa',
+  },
+
+  title: {
+    fontFamily: 'Montserrat',
+    color: '#222',
+    fontSize: 16,
+  },
+
+  subtitle: {
+    fontFamily: 'Montserrat',
+    color: '#000',
+    opacity: 0.5,
+    fontSize: 11,
+  },
+});
+
 type Props = {
-  pokemon: Pokemon;
+  pokemonId: PokemonID;
   onNavigate: Function;
 }
 
 type State = {
   pokemons: Array<Pokemon>;
+  loading: boolean;
 }
 
 export default class StrongAgainstList extends Component<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
-    pokemon: PropTypes.object.isRequired,
+    pokemonId: PropTypes.number.isRequired,
   };
 
   state: State = {
     pokemons: [],
+    loading: true,
   };
 
   componentWillMount() {
-    this._updateData();
+    InteractionManager.runAfterInteractions(this._updateData);
   }
 
   shouldComponentUpdate(nextProps: Props, nextState: State) {
@@ -38,30 +75,34 @@ export default class StrongAgainstList extends Component<void, Props, State> {
   }
 
   _updateData = () => {
-    const { pokemon } = this.props;
-    const typeChart = store.getTypeChart();
-    const typeDetails = typeChart.find(({ name }) => pokemon.types.includes(name));
-    const strongAgainst = typeDetails.super_effective;
-    const pokemons = store.getPokemons().filter(({ types }) =>
-      types.every(t => strongAgainst.includes(t))
-    )
-    .sort((a, b) => (a.attack + a.defense + a.stamina) - (b.attack + b.defense + b.stamina));
-
-    this.setState({ pokemons });
+    const pokemon = store.getPokemons().find(p => p.id === this.props.pokemonId);
+    const pokemons = getStrongAgainstPokemons(pokemon);
+    this.setState({
+      pokemons,
+      loading: false,
+    });
   };
 
   render() {
-    if (this.state.pokemons.length === 0) {
-      return (
-        <NoResults
-          source={require('../../assets/images/chansey.png')}
-          label={`${this.props.pokemon.name} seems weak`}
-        />
-      );
-    }
-
+    const pokemon = store.getPokemons().find(p => p.id === this.props.pokemonId);
     return (
-      <PokemonList data={this.state.pokemons} onNavigate={this.props.onNavigate} />
+      <View style={styles.container}>
+        <Appbar onNavigate={this.props.onNavigate}>
+          <Text style={styles.title}>{pokemon.name}</Text>
+          <Text style={styles.subtitle}>Strong against</Text>
+        </Appbar>
+        <View style={styles.content}>
+          {this.state.loading ?
+            <Placeholder style={styles.container} /> :
+            this.state.pokemons.length ?
+              <PokemonList data={this.state.pokemons} onNavigate={this.props.onNavigate} /> :
+              <NoResults
+                source={require('../../assets/images/chansey.png')}
+                label={`${pokemon.name} seems weak`}
+              />
+          }
+        </View>
+      </View>
     );
   }
 }

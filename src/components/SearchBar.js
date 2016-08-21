@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     height: 56,
     borderBottomColor: 'rgba(0, 0, 0, 0.16)',
     borderBottomWidth: Platform.Version && Platform.Version >= LOLLIPOP ? 0 : StyleSheet.hairlineWidth,
-    elevation: 2,
+    elevation: 1,
   },
 
   icon: {

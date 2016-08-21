@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Montserrat',
     fontWeight: 'bold',
-    fontSize: 13,
+    fontSize: 11,
     color: '#222',
     opacity: 0.5,
     margin: 8,
