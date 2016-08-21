@@ -2,28 +2,16 @@
 
 import React, { PropTypes, Component } from 'react';
 import {
-  Platform,
-  View,
   TextInput,
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
-const LOLLIPOP = 21;
+import AppbarShell from './AppbarShell';
 
 const styles = StyleSheet.create({
-  bar: {
-    flexDirection: 'row',
-    backgroundColor: '#fff',
-    height: 56,
-    borderBottomColor: 'rgba(0, 0, 0, 0.16)',
-    borderBottomWidth: Platform.Version && Platform.Version >= LOLLIPOP ? 0 : StyleSheet.hairlineWidth,
-    elevation: 1,
-  },
-
   icon: {
-    color: '#676767',
+    color: 'rgba(0, 0, 0, .32)',
     margin: 16,
     height: 24,
     width: 24,
@@ -63,7 +51,7 @@ export default class SearchBar extends Component<void, Props, void> {
     } = this.props;
 
     return (
-      <View style={styles.bar}>
+      <AppbarShell {...this.props}>
         <Icon
           style={styles.icon}
           name='search'
@@ -73,7 +61,7 @@ export default class SearchBar extends Component<void, Props, void> {
           style={styles.input}
           placeholder={placeholder}
           value={value}
-          placeholderTextColor='#949494'
+          placeholderTextColor='rgba(0, 0, 0, .32)'
           underlineColorAndroid='transparent'
           onChangeText={this.props.onChangeSearch}
         />
@@ -87,7 +75,7 @@ export default class SearchBar extends Component<void, Props, void> {
           </TouchableOpacity> :
           null
         }
-      </View>
+      </AppbarShell>
     );
   }
 }

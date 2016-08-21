@@ -10,29 +10,16 @@ import {
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
-
-const BAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
-const LOLLIPOP = 21;
+import AppbarShell from './AppbarShell';
 
 const styles = StyleSheet.create({
-  appbar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    height: BAR_HEIGHT,
-    marginTop: Platform.OS === 'ios' ? 20 : 0,
-    backgroundColor: '#fff',
-    elevation: 1,
-    borderBottomColor: 'rgba(0, 0, 0, 0.16)',
-    borderBottomWidth: Platform.OS === 'android' && Platform.Version >= LOLLIPOP ? 0 : StyleSheet.hairlineWidth,
-  },
-
   icon: {
     color: '#222',
   },
 
   button: {
-    height: BAR_HEIGHT,
-    width: BAR_HEIGHT - 8,
+    height: AppbarShell.HEIGHT,
+    width: AppbarShell.HEIGHT - 8,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -71,7 +58,7 @@ export default class Appbar extends Component<void, Props, void> {
 
   render() {
     return (
-      <View {...this.props} style={[ styles.appbar, this.props.style ]}>
+      <AppbarShell {...this.props}>
         <TouchableOpacity style={styles.button} onPress={this._handleGoBack}>
           {Platform.OS === 'ios' ?
             <EvilIcons
@@ -95,7 +82,7 @@ export default class Appbar extends Component<void, Props, void> {
           }
         </View>
         <View style={styles.button} />
-      </View>
+      </AppbarShell>
     );
   }
 }
