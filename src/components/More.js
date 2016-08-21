@@ -12,8 +12,8 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 const styles = StyleSheet.create({
   card: {
     flex: 1,
-    backgroundColor: '#ececec',
     borderRadius: 2,
+    backgroundColor: '#e7e7e7',
   },
 
   center: {
@@ -25,21 +25,21 @@ const styles = StyleSheet.create({
     height: 36,
     width: 36,
     borderRadius: 18,
-    backgroundColor: 'rgba(0, 0, 0, .04)',
+    borderWidth: StyleSheet.hairlineWidth * 3,
+    borderColor: 'rgba(0, 0, 0, .5)',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   icon: {
-    color: 'rgba(0, 0, 0, .32)',
+    color: 'rgba(0, 0, 0, .5)',
   },
 
   more: {
     fontFamily: 'Montserrat',
     fontSize: 9,
     fontWeight: 'bold',
-    color: '#000',
-    opacity: 0.32,
+    color: 'rgba(0, 0, 0, .5)',
     marginVertical: 4,
   },
 });
