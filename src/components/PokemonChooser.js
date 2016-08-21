@@ -41,7 +41,9 @@ const styles = StyleSheet.create({
 
 type State = {
   query: string;
-  results: Array<Pokemon>
+  results: {
+    pokemons: Array<Pokemon>;
+  };
 }
 
 type Props = {
@@ -56,7 +58,9 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   state: State = {
     query: '',
-    results: store.getPokemons(),
+    results: {
+      pokemons: store.getPokemons(),
+    },
   };
 
   _getResults = (query: string) => {
@@ -78,9 +82,9 @@ export default class PokemonChooser extends Component<void, Props, State> {
   };
 
   _updateResults = debounce(() => {
-    const results = this._getResults(this.state.query);
+    const pokemons = this._getResults(this.state.query);
     this.setState({
-      results,
+      results: { pokemons },
     }, () => {
       if (this._list) {
         this._list.scrollTo({
@@ -111,7 +115,7 @@ export default class PokemonChooser extends Component<void, Props, State> {
   render() {
     return (
       <KeyboardAvoidingView style={styles.page}>
-        {this.state.results.length ?
+        {this.state.results.pokemons.length ?
           <PokemonList
             scrollsToTop
             keyboardShouldPersistTaps

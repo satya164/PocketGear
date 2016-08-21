@@ -11,7 +11,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const styles = StyleSheet.create({
   card: {
-    flex: 1,
+    height: 167,
     borderRadius: 2,
     backgroundColor: '#e7e7e7',
   },

@@ -21,7 +21,9 @@ const styles = StyleSheet.create({
 
 type Props = {
   onNavigate: Function;
-  data: Array<Pokemon>;
+  data: {
+    pokemons: Array<Pokemon>;
+  };
   style?: any;
 }
 
@@ -35,7 +37,9 @@ export default class PokemonList extends Component<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
-    data: PropTypes.arrayOf(PropTypes.object).isRequired,
+    data: PropTypes.shape({
+      pokemons: PropTypes.arrayOf(PropTypes.object),
+    }).isRequired,
     style: GridView.propTypes.style,
   };
 

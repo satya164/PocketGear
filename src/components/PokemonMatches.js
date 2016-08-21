@@ -4,8 +4,6 @@ import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import {
   Text,
-  View,
-  ScrollView,
   Platform,
   StyleSheet,
 } from 'react-native';
@@ -32,10 +30,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 11,
     opacity: 0.5,
-    marginHorizontal: 8,
-  },
-
-  section: {
+    margin: 4,
     marginTop: 16,
   },
 });
@@ -54,6 +49,8 @@ type RowData = {
   type: 'more';
   strongAgainst?: boolean;
 }
+
+type SectionData = Array<RowData>
 
 export default class PokemonMatches extends Component<void, Props, void> {
 
@@ -103,11 +100,14 @@ export default class PokemonMatches extends Component<void, Props, void> {
     });
   };
 
+  _renderSectionHeader = (sectionData: SectionData, sectionID: string) => {
+    return <Text style={styles.heading}>{sectionID}</Text>;
+  };
+
   _renderRow = (rowData: RowData) => {
     switch (rowData.type) {
-    case 'pokemon': {
+    case 'pokemon':
       return <PokemonListCard pokemon={rowData.pokemon} onNavigate={this.props.onNavigate} />;
-    }
     case 'more':
       return <More onPress={rowData.strongAgainst ? this._handleStrongPress : this._handleWeakPress} />;
     default:
@@ -124,49 +124,38 @@ export default class PokemonMatches extends Component<void, Props, void> {
     const weakAgainstPokemons = getWeakAgainstPokemons(pokemon);
     const strongAgainstPokemons = getStrongAgainstPokemons(pokemon);
 
-    const strongAgainstData: ?Array<RowData> = strongAgainstPokemons.length ? [
+    const strongAgainstData: ?SectionData = strongAgainstPokemons.length ? [
       { type: 'pokemon', pokemon: findClosestMatch(strongAgainstPokemons, pokemon, false) },
     ] : null;
     if (strongAgainstData && strongAgainstPokemons.length > 1) {
       strongAgainstData.push({ type: 'more', strongAgainst: true });
     }
-    const weakAgainstData: ?Array<RowData> = weakAgainstPokemons.length ? [
+    const weakAgainstData: ?SectionData = weakAgainstPokemons.length ? [
       { type: 'pokemon', pokemon: findClosestMatch(weakAgainstPokemons, pokemon) },
     ] : null;
     if (weakAgainstData && weakAgainstPokemons.length > 1) {
       weakAgainstData.push({ type: 'more' });
     }
 
+    const data = {};
+
+    if (strongAgainstData) {
+      data[`Strong against (${strongAgainstPokemons.length})`] = strongAgainstData;
+    }
+
+    if (weakAgainstData) {
+      data[`Weak against (${weakAgainstPokemons.length})`] = weakAgainstData;
+    }
+
     return (
-      <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
-        {strongAgainstData ?
-          <View style={styles.section}>
-            <Text style={styles.heading}>Strong against ({strongAgainstPokemons.length})</Text>
-            <GridView
-              data={strongAgainstData}
-              spacing={Platform.OS === 'ios' ? 10 : 8}
-              renderRow={this._renderRow}
-              getNumberOfColumns={this._getNumberOfColumns}
-              scrollEnabled={false}
-            />
-          </View> :
-          null
-        }
-        {weakAgainstData ?
-          <View style={styles.section}>
-            <Text style={styles.heading}>Weak against ({weakAgainstPokemons.length})</Text>
-            <GridView
-              {...this.props}
-              data={weakAgainstData}
-              spacing={Platform.OS === 'ios' ? 10 : 8}
-              renderRow={this._renderRow}
-              getNumberOfColumns={this._getNumberOfColumns}
-              scrollEnabled={false}
-            />
-          </View> :
-          null
-        }
-      </ScrollView>
+      <GridView
+        data={data}
+        style={styles.container}
+        spacing={Platform.OS === 'ios' ? 10 : 8}
+        renderRow={this._renderRow}
+        renderSectionHeader={this._renderSectionHeader}
+        getNumberOfColumns={this._getNumberOfColumns}
+      />
     );
   }
 }

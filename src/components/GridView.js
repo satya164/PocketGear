@@ -19,9 +19,10 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  data: Array<any>;
+  data: { [key: string]: Array<any> };
   spacing: number;
   getNumberOfColumns: (width: number) => number;
+  renderSectionHeader?: (sectionData: any, sectionID: string) => ?React.Element<*>;
   renderRow: (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => ?React.Element<*>;
   onLayout?: Function;
   contentContainerStyle?: any;
@@ -40,9 +41,10 @@ type State = {
 
 export default class GridView extends Component<DefaultProps, Props, State> {
   static propTypes = {
-    data: PropTypes.array.isRequired,
+    data: PropTypes.objectOf(PropTypes.array).isRequired,
     spacing: PropTypes.number.isRequired,
     getNumberOfColumns: PropTypes.func.isRequired,
+    renderSectionHeader: PropTypes.func,
     renderRow: PropTypes.func.isRequired,
     onLayout: PropTypes.func,
     contentContainerStyle: View.propTypes.style,
@@ -60,6 +62,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     this.state = {
       dataSource: new ListView.DataSource({
         rowHasChanged: (r1, r2) => r1 !== r2,
+        sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
       }),
       containerWidth: Dimensions.get('window').width,
     };
@@ -69,13 +72,13 @@ export default class GridView extends Component<DefaultProps, Props, State> {
 
   componentWillMount() {
     this.setState({
-      dataSource: this.state.dataSource.cloneWithRows(this.props.data),
+      dataSource: this.state.dataSource.cloneWithRowsAndSections(this.props.data),
     });
   }
 
   componentWillReceiveProps(nextProps: Props) {
     this.setState({
-      dataSource: this.state.dataSource.cloneWithRows(nextProps.data),
+      dataSource: this.state.dataSource.cloneWithRowsAndSections(nextProps.data),
     });
   }
 
@@ -84,6 +87,15 @@ export default class GridView extends Component<DefaultProps, Props, State> {
   }
 
   _root: Object;
+
+  _renderSectionHeader = (sectionData: any, sectionID: string) => {
+    const header = this.props.renderSectionHeader ? this.props.renderSectionHeader(sectionData, sectionID) : null;
+    if (header === null) {
+      return null;
+    }
+    const { containerWidth } = this.state;
+    return <View style={{ width: containerWidth }}>{header}</View>;
+  };
 
   _renderRow = (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => {
     const { containerWidth } = this.state;
@@ -116,9 +128,10 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     return (
       <ListView
         {...this.props}
-        enableEmptySections
+        enableEmptySections={false}
         dataSource={this.state.dataSource}
         onLayout={this._handleLayout}
+        renderSectionHeader={this._renderSectionHeader}
         renderRow={this._renderRow}
         contentContainerStyle={[ styles.grid, { padding: this.props.spacing / 2 }, this.props.contentContainerStyle ]}
         ref={this._setRef}

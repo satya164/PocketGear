@@ -50,7 +50,9 @@ type Props = {
 }
 
 type State = {
-  pokemons: Array<Pokemon>;
+  data: {
+    pokemons: Array<Pokemon>;
+  };
   loading: boolean;
 }
 
@@ -62,7 +64,9 @@ export default class StrongAgainstList extends Component<void, Props, State> {
   };
 
   state: State = {
-    pokemons: [],
+    data: {
+      pokemons: [],
+    },
     loading: true,
   };
 
@@ -78,7 +82,7 @@ export default class StrongAgainstList extends Component<void, Props, State> {
     const pokemon = store.getPokemons().find(p => p.id === this.props.pokemonId);
     const pokemons = getStrongAgainstPokemons(pokemon);
     this.setState({
-      pokemons,
+      data: { pokemons },
       loading: false,
     });
   };
@@ -94,8 +98,8 @@ export default class StrongAgainstList extends Component<void, Props, State> {
         <View style={styles.content}>
           {this.state.loading ?
             <Placeholder style={styles.container} /> :
-            this.state.pokemons.length ?
-              <PokemonList data={this.state.pokemons} onNavigate={this.props.onNavigate} /> :
+            this.state.data.pokemons.length ?
+              <PokemonList data={this.state.data} onNavigate={this.props.onNavigate} /> :
               <NoResults
                 source={require('../../assets/images/chansey.png')}
                 label={`${pokemon.name} seems weak`}

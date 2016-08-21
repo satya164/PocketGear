@@ -25,6 +25,8 @@ import type {
   Pokemon,
 } from '../typeDefinitions';
 
+const LOLLIPOP = 21;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
