@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint .",
     "flow": "flow",
-    "test": "ava"
+    "test": "nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "lodash": "^4.14.1",
@@ -22,6 +23,7 @@
     "ava": "^0.16.0",
     "babel-eslint": "^6.1.2",
     "babel-preset-react-native": "^1.9.0",
+    "coveralls": "^2.11.12",
     "eslint": "^3.2.2",
     "eslint-plugin-ava": "^2.5.0",
     "eslint-plugin-babel": "^3.3.0",
@@ -31,6 +33,7 @@
     "flow-bin": "^0.27.0",
     "mock-require-assets": "^0.0.1",
     "mockery": "^1.7.0",
+    "nyc": "^8.1.0",
     "react-native-mock": "^0.2.6"
   },
   "ava": {
