@@ -3,9 +3,10 @@
 import store from '../store';
 import type {
   Pokemon,
+  PokemonType,
 } from '../typeDefinitions';
 
-export default function getWeakAgainstTypes(pokemon: Pokemon) {
+export default function getWeakAgainstTypes(pokemon: Pokemon): Array<PokemonType> {
   const typeChart = store.getTypeChart();
   const weakAgainst = typeChart.filter(t =>
     pokemon.types.some(type => t.super_effective.includes(type)) &&
