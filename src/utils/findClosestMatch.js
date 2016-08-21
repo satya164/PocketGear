@@ -6,13 +6,17 @@ import type {
 } from '../typeDefinitions';
 
 export default function findClosestMatch(pokemons: Array<Pokemon>, pokemon: Pokemon, stronger: boolean = true) {
-  const items = pokemons.sort((a, b) => compareStrength(b, a));
+  const items = pokemons.sort((a, b) => stronger ? compareStrength(a, b) : compareStrength(b, a));
 
-  for (const p of pokemons) {
+  for (const p of items) {
     const difference = compareStrength(pokemon, p);
     if (difference === 0) {
       return p;
     }
+  }
+
+  for (const p of items) {
+    const difference = compareStrength(pokemon, p);
     if (stronger) {
       if (difference < 0) {
         return p;
@@ -25,8 +29,8 @@ export default function findClosestMatch(pokemons: Array<Pokemon>, pokemon: Poke
   }
 
   if (stronger) {
-    return items[items.length - 1];
-  } else {
     return items[0];
+  } else {
+    return items[items.length - 1];
   }
 }

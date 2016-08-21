@@ -30,6 +30,7 @@
     "eslint-plugin-react-native": "^1.2.1",
     "flow-bin": "^0.27.0",
     "mock-require-assets": "^0.0.1",
+    "mockery": "^1.7.0",
     "react-native-mock": "^0.2.6"
   },
   "ava": {
