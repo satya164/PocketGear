@@ -4,7 +4,6 @@ import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import {
   Dimensions,
-  Platform,
   StyleSheet,
 } from 'react-native';
 import GridView from './GridView';
@@ -69,7 +68,7 @@ export default class PokemonList extends Component<void, Props, void> {
         {...this.props}
         pageSize={LIST_SIZE}
         style={[ styles.grid, this.props.style ]}
-        spacing={Platform.OS === 'ios' ? 10 : 8}
+        spacing={8}
         renderRow={this._renderRow}
         getNumberOfColumns={this._getNumberOfColumns}
         ref={this._setRef}

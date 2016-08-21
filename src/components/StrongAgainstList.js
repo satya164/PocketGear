@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Montserrat',
     color: '#222',
-    fontSize: 16,
+    fontSize: 15,
   },
 
   subtitle: {

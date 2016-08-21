@@ -4,7 +4,6 @@ import React, { PropTypes, Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import {
   Text,
-  Platform,
   StyleSheet,
 } from 'react-native';
 import GridView from './GridView';
@@ -151,7 +150,7 @@ export default class PokemonMatches extends Component<void, Props, void> {
       <GridView
         data={data}
         style={styles.container}
-        spacing={Platform.OS === 'ios' ? 10 : 8}
+        spacing={8}
         renderRow={this._renderRow}
         renderSectionHeader={this._renderSectionHeader}
         getNumberOfColumns={this._getNumberOfColumns}
