@@ -84,6 +84,8 @@ const styles = StyleSheet.create({
   tabbar: {
     backgroundColor: '#fff',
     elevation: 1,
+    borderBottomColor: 'rgba(0, 0, 0, 0.16)',
+    borderBottomWidth: Platform.OS === 'android' && Platform.Version >= LOLLIPOP ? 0 : StyleSheet.hairlineWidth,
   },
 
   tablabel: {
