@@ -35,6 +35,9 @@ local.properties
 node_modules/
 npm-debug.log
 
+# Istanbul
+.nyc_output/
+
 # BUCK
 buck-out/
 \.buckd/
