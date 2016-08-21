@@ -7,6 +7,16 @@ import type {
 
 export default function getStrongAgainstTypes(pokemon: Pokemon) {
   const typeChart = store.getTypeChart();
-  const typeDetails = typeChart.find(({ name }) => pokemon.types.includes(name));
-  return typeDetails.super_effective;
+  const types = typeChart
+    .filter(({ name }) => pokemon.types.includes(name))
+    .reduce((acc, curr) => {
+      const merged = [ ...acc ];
+      for (const type of curr.super_effective) {
+        if (!merged.includes(type)) {
+          merged.push(type);
+        }
+      }
+      return merged;
+    }, []);
+  return types;
 }
