@@ -32,6 +32,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		832FABFF32874FD9A63A965A /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDE03CCF95441DEA5B43089 /* Zocial.ttf */; };
 		B109B876F1A14F1D9E8DD2D2 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B020F558FF345A9B4B0E664 /* Ionicons.ttf */; };
+		CC97CEEC1D5CC628005E03E5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC97CEEB1D5CC628005E03E5 /* Default-568h@2x.png */; };
 		D2494C4F67604FC4A511DA2C /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75618D3E2B94496F86A05496 /* MaterialIcons.ttf */; };
 		DD6AD06064EE4BFC9FF8A3B7 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBEF18E34A814B7BB4028853 /* EvilIcons.ttf */; };
 		EEE4246C088F469D94F60FB1 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5C5DBDE41364F1D89E5DD49 /* Octicons.ttf */; };
@@ -162,6 +163,7 @@
 		9F885DB53ADA4BB987C99A8D /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		A43CC2BA13C14A019C073F49 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		CBEF18E34A814B7BB4028853 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		CC97CEEB1D5CC628005E03E5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D3B022E75527495CB01F6682 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D952C301CED54E889F1067AE /* libRNSearchBar.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSearchBar.a; sourceTree = "<group>"; };
 		E5C5DBDE41364F1D89E5DD49 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CC97CEEB1D5CC628005E03E5 /* Default-568h@2x.png */,
 				52EB9EEE1D5579B700C76F2B /* fonts */,
 				13B07FAE1A68108700A75B9A /* MewDB */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -445,6 +448,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = ZR9AJZ7SXG;
 					};
 				};
 			};
@@ -625,6 +631,7 @@
 				52EB9EF11D5579B700C76F2B /* Montserrat.otf in Resources */,
 				B109B876F1A14F1D9E8DD2D2 /* Ionicons.ttf in Resources */,
 				D2494C4F67604FC4A511DA2C /* MaterialIcons.ttf in Resources */,
+				CC97CEEC1D5CC628005E03E5 /* Default-568h@2x.png in Resources */,
 				52EB9EF21D5579B700C76F2B /* Montserrat_bold.otf in Resources */,
 				EEE4246C088F469D94F60FB1 /* Octicons.ttf in Resources */,
 				832FABFF32874FD9A63A965A /* Zocial.ttf in Resources */,
@@ -734,6 +741,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,6 +757,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azapps.MewDB;
 				PRODUCT_NAME = MewDB;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -758,6 +767,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -772,6 +782,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azapps.MewDB;
 				PRODUCT_NAME = MewDB;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
