@@ -26,6 +26,7 @@ export default class SearchBar extends Component<void, Props, void> {
     return (
       <SearchBarIOS
         hideBackground
+        showsCancelButton={true}
         placeholder={placeholder}
         text={value}
         onChangeText={this.props.onChangeSearch}
