@@ -16,11 +16,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React Native!"
 
-@interface MewDBTests : XCTestCase
+@interface PokeDBTests : XCTestCase
 
 @end
 
-@implementation MewDBTests
+@implementation PokeDBTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

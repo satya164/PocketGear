@@ -128,10 +128,10 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file(MEWDB_RELEASE_STORE_FILE)
-            storePassword MEWDB_RELEASE_STORE_PASSWORD
-            keyAlias MEWDB_RELEASE_KEY_ALIAS
-            keyPassword MEWDB_RELEASE_KEY_PASSWORD
+            storeFile file(POKEDB_RELEASE_STORE_FILE)
+            storePassword POKEDB_RELEASE_STORE_PASSWORD
+            keyAlias POKEDB_RELEASE_KEY_ALIAS
+            keyPassword POKEDB_RELEASE_KEY_PASSWORD
         }
     }
     buildTypes {
