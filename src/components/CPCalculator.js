@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Heading from './Heading';
+import TouchableButton from './TouchableButton';
 import store from '../store';
 import type {
   Pokemon,
@@ -160,26 +161,26 @@ export default class CPCalculator extends Component<void, Props, State> {
         <Heading>CP after evolution</Heading>
         <View style={styles.row}>
           <View style={[ styles.spinbutton, styles.row ]}>
-            <TouchableOpacity onPress={this._handleDecrement} style={styles.button}>
+            <TouchableButton onPress={this._handleDecrement} style={styles.button}>
               <MaterialIcons
                 name='remove'
                 size={16}
                 style={styles.icon}
               />
-            </TouchableOpacity>
+            </TouchableButton>
             <TextInput
               keyboardType='numeric'
               value={isNaN(this.state.value) ? '' : this.state.value.toString()}
               onChangeText={this._handleChange}
               style={[ styles.text, styles.input ]}
             />
-            <TouchableOpacity onPressIn={this._handleIncrement} style={styles.button}>
+            <TouchableButton onPress={this._handleIncrement} style={styles.button}>
               <MaterialIcons
                 name='add'
                 size={16}
                 style={styles.icon}
               />
-            </TouchableOpacity>
+            </TouchableButton>
           </View>
         </View>
         <View style={styles.container}>
