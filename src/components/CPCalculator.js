@@ -53,20 +53,27 @@ const styles = StyleSheet.create({
 
   input: {
     textAlign: 'center',
-    height: 44,
+    height: 36,
     width: 60,
-    padding: 8,
+    padding: 0,
     marginVertical: 0,
     marginHorizontal: 8,
   },
 
   button: {
-    backgroundColor: 'rgba(0, 0, 0, .06)',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
     height: 24,
     width: 24,
     borderRadius: 12,
+  },
+
+  spinbutton: {
+    backgroundColor: 'rgba(0, 0, 0, .06)',
+    borderRadius: 24,
+    paddingHorizontal: 8,
+    marginVertical: 12,
   },
 
   icon: {
@@ -152,26 +159,28 @@ export default class CPCalculator extends Component<void, Props, State> {
       <View {...this.props}>
         <Heading>CP after evolution</Heading>
         <View style={styles.row}>
-          <TouchableOpacity onPress={this._handleDecrement} style={styles.button}>
-            <MaterialIcons
-              name='remove'
-              size={16}
-              style={styles.icon}
+          <View style={[ styles.spinbutton, styles.row ]}>
+            <TouchableOpacity onPress={this._handleDecrement} style={styles.button}>
+              <MaterialIcons
+                name='remove'
+                size={16}
+                style={styles.icon}
+              />
+            </TouchableOpacity>
+            <TextInput
+              keyboardType='numeric'
+              value={isNaN(this.state.value) ? '' : this.state.value.toString()}
+              onChangeText={this._handleChange}
+              style={[ styles.text, styles.input ]}
             />
-          </TouchableOpacity>
-          <TextInput
-            keyboardType='numeric'
-            value={isNaN(this.state.value) ? '' : this.state.value.toString()}
-            onChangeText={this._handleChange}
-            style={[ styles.text, styles.input ]}
-          />
-          <TouchableOpacity onPressIn={this._handleIncrement} style={styles.button}>
-            <MaterialIcons
-              name='add'
-              size={16}
-              style={styles.icon}
-            />
-          </TouchableOpacity>
+            <TouchableOpacity onPressIn={this._handleIncrement} style={styles.button}>
+              <MaterialIcons
+                name='add'
+                size={16}
+                style={styles.icon}
+              />
+            </TouchableOpacity>
+          </View>
         </View>
         <View style={styles.container}>
           {pokemon.evolution_cp_multipliers ? pokemon.evolution_cp_multipliers.map(it => {
