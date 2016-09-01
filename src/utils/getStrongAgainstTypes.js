@@ -1,15 +1,17 @@
 /* @flow */
 
 import store from '../store';
+import getAttackTypesForPokemon from './getAttackTypesForPokemon';
 import type {
   Pokemon,
   PokemonType,
 } from '../typeDefinitions';
 
 export default function getStrongAgainstTypes(pokemon: Pokemon): Array<PokemonType> {
+  const types = getAttackTypesForPokemon(pokemon);
   const typeChart = store.getTypeChart();
-  const types = typeChart
-    .filter(({ name }) => pokemon.types.includes(name))
+  return typeChart
+    .filter(({ name }) => types.includes(name))
     .reduce((acc, curr) => {
       const merged = [ ...acc ];
       for (const type of curr.super_effective) {
@@ -19,5 +21,4 @@ export default function getStrongAgainstTypes(pokemon: Pokemon): Array<PokemonTy
       }
       return merged;
     }, []);
-  return types;
 }
