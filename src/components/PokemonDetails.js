@@ -135,8 +135,8 @@ export default class PokemonDetails extends Component<void, Props, void> {
   render() {
     const { pokemon } = this.props;
     const maxValues = store.getMaxValues();
-    const quickAttacks = getQuickAttacks(pokemon.id);
-    const specialAttacks = getSpecialAttacks(pokemon.id);
+    const quickAttacks = getQuickAttacks(pokemon);
+    const specialAttacks = getSpecialAttacks(pokemon);
     const strongAgainst = getStrongAgainstTypes(pokemon);
     const resistantTo = getResistantToTypes(pokemon);
     const weakAgainst = getWeakAgainstTypes(pokemon);
