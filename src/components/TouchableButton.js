@@ -41,7 +41,7 @@ export default class TouchableButton extends Component<void, Props, void> {
         this._handled = true;
         this.props.onPress(e);
       }, 50);
-    }, 3000);
+    }, 750);
   };
 
   _handlePressOut = () => {
