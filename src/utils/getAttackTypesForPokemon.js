@@ -12,6 +12,7 @@ export default function getAttackTypesForPokemon(pokemon: Pokemon): Array<Pokemo
 
   const types = quickAttacks
     .concat(specialAttacks)
+    .filter(attack => attack.damage) // ignore attacks with 0 damage, e.g.- Splash
     .map(attack => attack.type)
     .filter((type, i, self) =>
       self.indexOf(type) === i
