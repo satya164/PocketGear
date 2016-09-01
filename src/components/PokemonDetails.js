@@ -138,8 +138,11 @@ export default class PokemonDetails extends Component<void, Props, void> {
     const quickAttacks = getQuickAttacks(pokemon);
     const specialAttacks = getSpecialAttacks(pokemon);
     const strongAgainst = getStrongAgainstTypes(pokemon);
-    const resistantTo = getResistantToTypes(pokemon);
     const weakAgainst = getWeakAgainstTypes(pokemon);
+    const resistantTo = getResistantToTypes(pokemon)
+      .filter(type =>
+        !(strongAgainst.includes(type) || weakAgainst.includes(type))
+      );
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
