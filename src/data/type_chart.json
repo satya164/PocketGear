@@ -196,7 +196,7 @@
 }, {
   "name": "Dragon",
   "super_effective": [
-    "Ice"
+    "Dragon"
   ],
   "not_very_effective": [
     "Steel",
@@ -205,7 +205,8 @@
 }, {
   "name": "Dark",
   "super_effective": [
-    "Ghost"
+    "Ghost",
+    "Psychic"
   ],
   "not_very_effective": [
     "Fighting",
