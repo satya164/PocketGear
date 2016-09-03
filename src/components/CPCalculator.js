@@ -5,13 +5,11 @@ import {
   View,
   Image,
   Text,
-  TextInput,
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Heading from './Heading';
-import TouchableButton from './TouchableButton';
+import SpinButton from './SpinButton';
 import store from '../store';
 import type {
   Pokemon,
@@ -52,33 +50,9 @@ const styles = StyleSheet.create({
     margin: 4,
   },
 
-  input: {
-    textAlign: 'center',
-    height: 36,
-    width: 60,
-    padding: 0,
-    marginVertical: 0,
-    marginHorizontal: 8,
-  },
-
-  button: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: 24,
-    width: 24,
-    borderRadius: 12,
-  },
-
   spinbutton: {
-    backgroundColor: 'rgba(0, 0, 0, .06)',
-    borderRadius: 24,
-    paddingHorizontal: 8,
     marginVertical: 12,
-  },
-
-  icon: {
-    color: '#222',
+    width: 120,
   },
 
   row: {
@@ -113,7 +87,7 @@ export default class CPCalculator extends Component<void, Props, State> {
     super(props);
 
     this.state = {
-      value: Math.round(this.props.pokemon.max_cp / 3),
+      value: Math.round(this.props.pokemon.average_cp),
     };
   }
 
@@ -131,24 +105,10 @@ export default class CPCalculator extends Component<void, Props, State> {
     });
   };
 
-  _handleChange = (text: string) => {
+  _handleChangeValue = (value: number) => {
     this.setState({
-      value: parseInt(text, 10),
+      value,
     });
-  };
-
-  _handleIncrement = () => {
-    this.setState({
-      value: this.state.value + 1,
-    });
-  };
-
-  _handleDecrement = () => {
-    if (this.state.value > 1) {
-      this.setState({
-        value: this.state.value - 1,
-      });
-    }
   };
 
   render() {
@@ -159,30 +119,11 @@ export default class CPCalculator extends Component<void, Props, State> {
     return (
       <View {...this.props}>
         <Heading>CP after evolution</Heading>
-        <View style={styles.row}>
-          <View style={[ styles.spinbutton, styles.row ]}>
-            <TouchableButton onPress={this._handleDecrement} style={styles.button}>
-              <MaterialIcons
-                name='remove'
-                size={16}
-                style={styles.icon}
-              />
-            </TouchableButton>
-            <TextInput
-              keyboardType='numeric'
-              value={isNaN(this.state.value) ? '' : this.state.value.toString()}
-              onChangeText={this._handleChange}
-              style={[ styles.text, styles.input ]}
-            />
-            <TouchableButton onPress={this._handleIncrement} style={styles.button}>
-              <MaterialIcons
-                name='add'
-                size={16}
-                style={styles.icon}
-              />
-            </TouchableButton>
-          </View>
-        </View>
+        <SpinButton
+          value={this.state.value}
+          onChangeValue={this._handleChangeValue}
+          style={styles.spinbutton}
+        />
         <View style={styles.container}>
           {pokemon.evolution_cp_multipliers ? pokemon.evolution_cp_multipliers.map(it => {
             const poke = pokemons.find(p => p.id === it.id);
