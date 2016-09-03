@@ -7,7 +7,7 @@
     ],
     "description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
     "id": 1,
-    "max_cp": 951,
+    "max_cp": 1071,
     "height": {
       "amount": 0.7,
       "unit": "m"
@@ -20,7 +20,7 @@
       "amount": 6.9,
       "unit": "kg"
     },
-    "max_hp": 77,
+    "max_hp": 82,
     "category": "Seed Pokémon",
     "stamina": 90,
     "attack": 126,
@@ -56,7 +56,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 951,
+    "average_hp": 77
   },
   {
     "name": "Ivysaur",
@@ -66,7 +68,7 @@
     ],
     "description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
     "id": 2,
-    "max_cp": 1483,
+    "max_cp": 1632,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -79,7 +81,7 @@
       "amount": 13,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Seed Pokémon",
     "stamina": 120,
     "attack": 156,
@@ -111,7 +113,9 @@
         "term": "-saur",
         "meaning": "Greek suffix meaning 'lizard'"
       }
-    ]
+    ],
+    "average_cp": 1483,
+    "average_hp": 100
   },
   {
     "name": "Venusaur",
@@ -121,7 +125,7 @@
     ],
     "description": "There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.",
     "id": 3,
-    "max_cp": 2392,
+    "max_cp": 2580,
     "height": {
       "amount": 2,
       "unit": "m"
@@ -130,7 +134,7 @@
       "amount": 100,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Seed Pokémon",
     "stamina": 160,
     "attack": 198,
@@ -153,7 +157,9 @@
         "term": "-saur",
         "meaning": "Greek suffix meaning 'lizard'"
       }
-    ]
+    ],
+    "average_cp": 2392,
+    "average_hp": 132
   },
   {
     "name": "Charmander",
@@ -162,7 +168,7 @@
     ],
     "description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
     "id": 4,
-    "max_cp": 841,
+    "max_cp": 955,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -175,7 +181,7 @@
       "amount": 8.5,
       "unit": "kg"
     },
-    "max_hp": 67,
+    "max_hp": 73,
     "category": "Lizard Pokémon",
     "stamina": 78,
     "attack": 128,
@@ -211,7 +217,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 841,
+    "average_hp": 67
   },
   {
     "name": "Charmeleon",
@@ -220,7 +228,7 @@
     ],
     "description": "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
     "id": 5,
-    "max_cp": 1411,
+    "max_cp": 1557,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -233,7 +241,7 @@
       "amount": 19,
       "unit": "kg"
     },
-    "max_hp": 97,
+    "max_hp": 103,
     "category": "Flame Pokémon",
     "stamina": 116,
     "attack": 160,
@@ -265,7 +273,9 @@
         "term": "chameleon",
         "meaning": "a species of lizard"
       }
-    ]
+    ],
+    "average_cp": 1411,
+    "average_hp": 97
   },
   {
     "name": "Charizard",
@@ -275,7 +285,7 @@
     ],
     "description": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
     "id": 6,
-    "max_cp": 2413,
+    "max_cp": 2602,
     "height": {
       "amount": 1.7,
       "unit": "m"
@@ -284,7 +294,7 @@
       "amount": 90.5,
       "unit": "kg"
     },
-    "max_hp": 129,
+    "max_hp": 135,
     "category": "Flame Pokémon",
     "stamina": 156,
     "attack": 212,
@@ -307,7 +317,9 @@
         "term": "lizard",
         "meaning": "a reptile"
       }
-    ]
+    ],
+    "average_cp": 2413,
+    "average_hp": 129
   },
   {
     "name": "Squirtle",
@@ -316,7 +328,7 @@
     ],
     "description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.",
     "id": 7,
-    "max_cp": 891,
+    "max_cp": 1008,
     "height": {
       "amount": 0.5,
       "unit": "m"
@@ -329,7 +341,7 @@
       "amount": 9,
       "unit": "kg"
     },
-    "max_hp": 75,
+    "max_hp": 81,
     "category": "Tiny Turtle Pokémon",
     "stamina": 88,
     "attack": 112,
@@ -369,7 +381,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 891,
+    "average_hp": 75
   },
   {
     "name": "Wartortle",
@@ -378,7 +392,7 @@
     ],
     "description": "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon's toughness as a battler.",
     "id": 8,
-    "max_cp": 1435,
+    "max_cp": 1582,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -391,7 +405,7 @@
       "amount": 22.5,
       "unit": "kg"
     },
-    "max_hp": 99,
+    "max_hp": 105,
     "category": "Turtle Pokémon",
     "stamina": 118,
     "attack": 144,
@@ -427,7 +441,9 @@
         "term": "turtle",
         "meaning": "water-based reptile"
       }
-    ]
+    ],
+    "average_cp": 1435,
+    "average_hp": 99
   },
   {
     "name": "Blastoise",
@@ -436,7 +452,7 @@
     ],
     "description": "Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.",
     "id": 9,
-    "max_cp": 2355,
+    "max_cp": 2542,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -445,7 +461,7 @@
       "amount": 85.5,
       "unit": "kg"
     },
-    "max_hp": 130,
+    "max_hp": 136,
     "category": "Shellfish Pokémon",
     "stamina": 158,
     "attack": 186,
@@ -468,7 +484,9 @@
         "term": "tortoise",
         "meaning": "large reptile with a protective shell"
       }
-    ]
+    ],
+    "average_cp": 2355,
+    "average_hp": 130
   },
   {
     "name": "Caterpie",
@@ -477,7 +495,7 @@
     ],
     "description": "Caterpie has a voracious appetite. It can devour leaves bigger than its body right before your eyes. From its antenna, this Pokémon releases a terrifically strong odor.",
     "id": 10,
-    "max_cp": 367,
+    "max_cp": 443,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -490,7 +508,7 @@
       "amount": 2.9,
       "unit": "kg"
     },
-    "max_hp": 77,
+    "max_hp": 82,
     "category": "Worm Pokémon",
     "stamina": 90,
     "attack": 62,
@@ -522,7 +540,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 367,
+    "average_hp": 77
   },
   {
     "name": "Metapod",
@@ -531,7 +551,7 @@
     ],
     "description": "The shell covering this Pokémon's body is as hard as an iron slab. Metapod does not move very much. It stays still because it is preparing its soft innards for evolution inside the hard shell.",
     "id": 11,
-    "max_cp": 397,
+    "max_cp": 477,
     "height": {
       "amount": 0.7,
       "unit": "m"
@@ -544,7 +564,7 @@
       "amount": 9.9,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Cocoon Pokémon",
     "stamina": 100,
     "attack": 56,
@@ -576,7 +596,9 @@
         "term": "pod",
         "meaning": "a cocoon"
       }
-    ]
+    ],
+    "average_cp": 397,
+    "average_hp": 84
   },
   {
     "name": "Butterfree",
@@ -586,7 +608,7 @@
     ],
     "description": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
     "id": 12,
-    "max_cp": 1315,
+    "max_cp": 1454,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -595,7 +617,7 @@
       "amount": 32,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Butterfly Pokémon",
     "stamina": 120,
     "attack": 144,
@@ -618,7 +640,9 @@
         "term": "free",
         "meaning": "without limit, now it's able to fly"
       }
-    ]
+    ],
+    "average_cp": 1315,
+    "average_hp": 100
   },
   {
     "name": "Weedle",
@@ -628,7 +652,7 @@
     ],
     "description": "Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose).",
     "id": 13,
-    "max_cp": 372,
+    "max_cp": 449,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -641,7 +665,7 @@
       "amount": 3.2,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Hairy Bug Pokémon",
     "stamina": 80,
     "attack": 68,
@@ -677,7 +701,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 372,
+    "average_hp": 69
   },
   {
     "name": "Kakuna",
@@ -687,7 +713,7 @@
     ],
     "description": "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
     "id": 14,
-    "max_cp": 405,
+    "max_cp": 485,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -700,7 +726,7 @@
       "amount": 10,
       "unit": "kg"
     },
-    "max_hp": 77,
+    "max_hp": 82,
     "category": "Cocoon Pokémon",
     "stamina": 90,
     "attack": 62,
@@ -728,7 +754,9 @@
         "term": "cocoon",
         "meaning": "a pupal casing made by some insects"
       }
-    ]
+    ],
+    "average_cp": 405,
+    "average_hp": 77
   },
   {
     "name": "Beedrill",
@@ -738,7 +766,7 @@
     ],
     "description": "Beedrill is extremely territorial. No one should ever approach its nest—this is for their own safety. If angered, they will attack in a furious swarm.",
     "id": 15,
-    "max_cp": 1301,
+    "max_cp": 1439,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -747,7 +775,7 @@
       "amount": 29.5,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Poison Bee Pokémon",
     "stamina": 130,
     "attack": 144,
@@ -770,7 +798,9 @@
         "term": "drill",
         "meaning": "pointed tool"
       }
-    ]
+    ],
+    "average_cp": 1301,
+    "average_hp": 108
   },
   {
     "name": "Pidgey",
@@ -780,7 +810,7 @@
     ],
     "description": "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
     "id": 16,
-    "max_cp": 585,
+    "max_cp": 679,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -793,7 +823,7 @@
       "amount": 1.8,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Tiny Bird Pokémon",
     "stamina": 80,
     "attack": 94,
@@ -825,7 +855,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 585,
+    "average_hp": 69
   },
   {
     "name": "Pidgeotto",
@@ -835,7 +867,7 @@
     ],
     "description": "Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
     "id": 17,
-    "max_cp": 1096,
+    "max_cp": 1223,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -848,7 +880,7 @@
       "amount": 30,
       "unit": "kg"
     },
-    "max_hp": 105,
+    "max_hp": 111,
     "category": "Bird Pokémon",
     "stamina": 126,
     "attack": 126,
@@ -876,7 +908,9 @@
         "term": "pigeon",
         "meaning": "a species of bird"
       }
-    ]
+    ],
+    "average_cp": 1096,
+    "average_hp": 105
   },
   {
     "name": "Pidgeot",
@@ -886,7 +920,7 @@
     ],
     "description": "This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon.",
     "id": 18,
-    "max_cp": 1923,
+    "max_cp": 2091,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -895,7 +929,7 @@
       "amount": 39.5,
       "unit": "kg"
     },
-    "max_hp": 137,
+    "max_hp": 143,
     "category": "Bird Pokémon",
     "stamina": 166,
     "attack": 170,
@@ -914,7 +948,9 @@
         "term": "pigeon",
         "meaning": "a species of bird"
       }
-    ]
+    ],
+    "average_cp": 1923,
+    "average_hp": 137
   },
   {
     "name": "Rattata",
@@ -923,7 +959,7 @@
     ],
     "description": "Rattata is cautious in the extreme. Even while it is asleep, it constantly listens by moving its ears around. It is not picky about where it lives—it will make its nest anywhere.",
     "id": 19,
-    "max_cp": 493,
+    "max_cp": 581,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -936,7 +972,7 @@
       "amount": 3.5,
       "unit": "kg"
     },
-    "max_hp": 53,
+    "max_hp": 59,
     "category": "Mouse Pokémon",
     "stamina": 60,
     "attack": 92,
@@ -971,7 +1007,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 493,
+    "average_hp": 53
   },
   {
     "name": "Raticate",
@@ -980,7 +1018,7 @@
     ],
     "description": "Raticate's sturdy fangs grow steadily. To keep them ground down, it gnaws on rocks and logs. It may even chew on the walls of houses.",
     "id": 20,
-    "max_cp": 1304,
+    "max_cp": 1444,
     "height": {
       "amount": 0.7,
       "unit": "m"
@@ -989,7 +1027,7 @@
       "amount": 18.5,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Mouse Pokémon",
     "stamina": 110,
     "attack": 146,
@@ -1011,7 +1049,9 @@
         "term": "eradicate",
         "meaning": "to exterminate"
       }
-    ]
+    ],
+    "average_cp": 1304,
+    "average_hp": 92
   },
   {
     "name": "Spearow",
@@ -1021,7 +1061,7 @@
     ],
     "description": "Spearow has a very loud cry that can be heard over half a mile away. If its high, keening cry is heard echoing all around, it is a sign that they are warning each other of danger.",
     "id": 21,
-    "max_cp": 591,
+    "max_cp": 686,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -1034,7 +1074,7 @@
       "amount": 2,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Tiny Bird Pokémon",
     "stamina": 80,
     "attack": 102,
@@ -1069,7 +1109,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 591,
+    "average_hp": 69
   },
   {
     "name": "Fearow",
@@ -1079,7 +1121,7 @@
     ],
     "description": "Fearow is recognized by its long neck and elongated beak. They are conveniently shaped for catching prey in soil or water. It deftly moves its long and skinny beak to pluck prey.",
     "id": 22,
-    "max_cp": 1592,
+    "max_cp": 1746,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -1088,7 +1130,7 @@
       "amount": 38,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Beak Pokémon",
     "stamina": 130,
     "attack": 168,
@@ -1110,7 +1152,9 @@
         "term": "sparrow",
         "meaning": "a species of bird"
       }
-    ]
+    ],
+    "average_cp": 1592,
+    "average_hp": 108
   },
   {
     "name": "Ekans",
@@ -1119,7 +1163,7 @@
     ],
     "description": "Ekans curls itself up in a spiral while it rests. Assuming this position allows it to quickly respond to a threat from any direction with a glare from its upraised head.",
     "id": 23,
-    "max_cp": 718,
+    "max_cp": 824,
     "height": {
       "amount": 2,
       "unit": "m"
@@ -1132,7 +1176,7 @@
       "amount": 6.9,
       "unit": "kg"
     },
-    "max_hp": 61,
+    "max_hp": 67,
     "category": "Snake Pokémon",
     "stamina": 70,
     "attack": 112,
@@ -1163,7 +1207,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 718,
+    "average_hp": 61
   },
   {
     "name": "Arbok",
@@ -1172,7 +1218,7 @@
     ],
     "description": "This Pokémon is terrifically strong in order to constrict things with its body. It can even flatten steel oil drums. Once Arbok wraps its body around its foe, escaping its crunching embrace is impossible.",
     "id": 24,
-    "max_cp": 1611,
+    "max_cp": 1767,
     "height": {
       "amount": 3.5,
       "unit": "m"
@@ -1181,7 +1227,7 @@
       "amount": 65,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Cobra Pokémon",
     "stamina": 120,
     "attack": 166,
@@ -1199,7 +1245,9 @@
         "term": "cobra",
         "meaning": "a type of snake; 'arbok' spelled backwards is 'kobra'"
       }
-    ]
+    ],
+    "average_cp": 1611,
+    "average_hp": 100
   },
   {
     "name": "Pikachu",
@@ -1208,7 +1256,7 @@
     ],
     "description": "Whenever Pikachu comes across something new, it blasts it with a jolt of electricity. If you come across a blackened berry, it's evidence that this Pokémon mistook the intensity of its charge.",
     "id": 25,
-    "max_cp": 777,
+    "max_cp": 887,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -1221,7 +1269,7 @@
       "amount": 6,
       "unit": "kg"
     },
-    "max_hp": 61,
+    "max_hp": 67,
     "category": "Mouse Pokémon",
     "stamina": 70,
     "attack": 124,
@@ -1260,7 +1308,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 777,
+    "average_hp": 61
   },
   {
     "name": "Raichu",
@@ -1269,7 +1319,7 @@
     ],
     "description": "If the electrical sacs become excessively charged, Raichu plants its tail in the ground and discharges. Scorched patches of ground will be found near this Pokémon's nest.",
     "id": 26,
-    "max_cp": 1859,
+    "max_cp": 2028,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -1278,7 +1328,7 @@
       "amount": 30,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Mouse Pokémon",
     "stamina": 120,
     "attack": 200,
@@ -1301,7 +1351,9 @@
         "term": "chu",
         "meaning": "Japanese for 'squeak'"
       }
-    ]
+    ],
+    "average_cp": 1859,
+    "average_hp": 100
   },
   {
     "name": "Sandshrew",
@@ -1310,7 +1362,7 @@
     ],
     "description": "Sandshrew's body is configured to absorb water without waste, enabling it to survive in an arid desert. This Pokémon curls up to protect itself from its enemies.",
     "id": 27,
-    "max_cp": 695,
+    "max_cp": 798,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -1323,7 +1375,7 @@
       "amount": 12,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Mouse Pokémon",
     "stamina": 100,
     "attack": 90,
@@ -1358,7 +1410,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 695,
+    "average_hp": 84
   },
   {
     "name": "Sandslash",
@@ -1367,7 +1421,7 @@
     ],
     "description": "Sandslash's body is covered by tough spikes, which are hardened sections of its hide. Once a year, the old spikes fall out, to be replaced with new spikes that grow out from beneath the old ones.",
     "id": 28,
-    "max_cp": 1654,
+    "max_cp": 1810,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -1376,7 +1430,7 @@
       "amount": 29.5,
       "unit": "kg"
     },
-    "max_hp": 124,
+    "max_hp": 130,
     "category": "Mouse Pokémon",
     "stamina": 150,
     "attack": 150,
@@ -1398,7 +1452,9 @@
         "term": "slash",
         "meaning": "to swipe"
       }
-    ]
+    ],
+    "average_cp": 1654,
+    "average_hp": 124
   },
   {
     "name": "Nidoran♀",
@@ -1407,7 +1463,7 @@
     ],
     "description": "Nidoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn.",
     "id": 29,
-    "max_cp": 768,
+    "max_cp": 876,
     "evolution_requirements": {
       "amount": 25,
       "name": "Nidoran♀ candies"
@@ -1420,7 +1476,7 @@
       "amount": 7,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Poison Pin Pokémon",
     "stamina": 110,
     "attack": 100,
@@ -1460,7 +1516,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 768,
+    "average_hp": 92
   },
   {
     "name": "Nidorina",
@@ -1469,7 +1527,7 @@
     ],
     "description": "When Nidorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others.",
     "id": 30,
-    "max_cp": 1267,
+    "max_cp": 1404,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -1482,7 +1540,7 @@
       "amount": 20,
       "unit": "kg"
     },
-    "max_hp": 116,
+    "max_hp": 122,
     "category": "Poison Pin Pokémon",
     "stamina": 140,
     "attack": 132,
@@ -1514,7 +1572,9 @@
         "term": "rhino",
         "meaning": "large African mammal"
       }
-    ]
+    ],
+    "average_cp": 1267,
+    "average_hp": 116
   },
   {
     "name": "Nidoqueen",
@@ -1524,7 +1584,7 @@
     ],
     "description": "Nidoqueen's body is encased in extremely hard scales. It is adept at sending foes flying with harsh tackles. This Pokémon is at its strongest when it is defending its young.",
     "id": 31,
-    "max_cp": 2301,
+    "max_cp": 2485,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -1533,7 +1593,7 @@
       "amount": 60,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Drill Pokémon",
     "stamina": 180,
     "attack": 184,
@@ -1556,7 +1616,9 @@
         "term": "queen",
         "meaning": "royalty (female)"
       }
-    ]
+    ],
+    "average_cp": 2301,
+    "average_hp": 148
   },
   {
     "name": "Nidoran♂",
@@ -1565,7 +1627,7 @@
     ],
     "description": "Nidoran♂ has developed muscles for moving its ears. Thanks to them, the ears can be freely moved in any direction. Even the slightest sound does not escape this Pokémon's notice.",
     "id": 32,
-    "max_cp": 737,
+    "max_cp": 843,
     "evolution_requirements": {
       "amount": 25,
       "name": "Nidoran♂ candies"
@@ -1578,7 +1640,7 @@
       "amount": 9,
       "unit": "kg"
     },
-    "max_hp": 78,
+    "max_hp": 84,
     "category": "Poison Pin Pokémon",
     "stamina": 92,
     "attack": 110,
@@ -1618,7 +1680,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 737,
+    "average_hp": 78
   },
   {
     "name": "Nidorino",
@@ -1627,7 +1691,7 @@
     ],
     "description": "Nidorino has a horn that is harder than a diamond. If it senses a hostile presence, all the barbs on its back bristle up at once, and it challenges the foe with all its might.",
     "id": 33,
-    "max_cp": 1236,
+    "max_cp": 1372,
     "height": {
       "amount": 0.9,
       "unit": "m"
@@ -1640,7 +1704,7 @@
       "amount": 19.5,
       "unit": "kg"
     },
-    "max_hp": 102,
+    "max_hp": 108,
     "category": "Poison Pin Pokémon",
     "stamina": 122,
     "attack": 142,
@@ -1672,7 +1736,9 @@
         "term": "rhino",
         "meaning": "large African mammal"
       }
-    ]
+    ],
+    "average_cp": 1236,
+    "average_hp": 102
   },
   {
     "name": "Nidoking",
@@ -1682,7 +1748,7 @@
     ],
     "description": "Nidoking's thick tail packs enormously destructive power. With one swing, it can topple a metal transmission tower. Once this Pokémon goes on a rampage, there is no stopping it.",
     "id": 34,
-    "max_cp": 2291,
+    "max_cp": 2475,
     "height": {
       "amount": 1.4,
       "unit": "m"
@@ -1691,7 +1757,7 @@
       "amount": 62,
       "unit": "kg"
     },
-    "max_hp": 133,
+    "max_hp": 139,
     "category": "Drill Pokémon",
     "stamina": 162,
     "attack": 204,
@@ -1714,7 +1780,9 @@
         "term": "king",
         "meaning": "royalty (male)"
       }
-    ]
+    ],
+    "average_cp": 2291,
+    "average_hp": 133
   },
   {
     "name": "Clefairy",
@@ -1723,7 +1791,7 @@
     ],
     "description": "On every night of a full moon, groups of this Pokémon come out to play. When dawn arrives, the tired Clefairy return to their quiet mountain retreats and go to sleep nestled up against each other.",
     "id": 35,
-    "max_cp": 1074,
+    "max_cp": 1200,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -1736,7 +1804,7 @@
       "amount": 7.5,
       "unit": "kg"
     },
-    "max_hp": 116,
+    "max_hp": 122,
     "category": "Fairy Pokémon",
     "stamina": 140,
     "attack": 116,
@@ -1772,7 +1840,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 1074,
+    "average_hp": 116
   },
   {
     "name": "Clefable",
@@ -1781,7 +1851,7 @@
     ],
     "description": "Clefable moves by skipping lightly as if it were flying using its wings. Its bouncy step even lets it walk on water. It is known to take strolls on lakes on quiet, moonlit nights.",
     "id": 36,
-    "max_cp": 2217,
+    "max_cp": 2397,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -1790,7 +1860,7 @@
       "amount": 40,
       "unit": "kg"
     },
-    "max_hp": 156,
+    "max_hp": 162,
     "category": "Fairy Pokémon",
     "stamina": 190,
     "attack": 178,
@@ -1813,7 +1883,9 @@
         "term": "fable",
         "meaning": "story, fairytale"
       }
-    ]
+    ],
+    "average_cp": 2217,
+    "average_hp": 156
   },
   {
     "name": "Vulpix",
@@ -1822,7 +1894,7 @@
     ],
     "description": "At the time of its birth, Vulpix has one white tail. The tail separates into six if this Pokémon receives plenty of love from its trainer. The six tails become magnificently curled.",
     "id": 37,
-    "max_cp": 725,
+    "max_cp": 831,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -1835,7 +1907,7 @@
       "amount": 9.9,
       "unit": "kg"
     },
-    "max_hp": 65,
+    "max_hp": 71,
     "category": "Fox Pokémon",
     "stamina": 76,
     "attack": 106,
@@ -1870,7 +1942,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 725,
+    "average_hp": 65
   },
   {
     "name": "Ninetales",
@@ -1879,7 +1953,7 @@
     ],
     "description": "Ninetales casts a sinister light from its bright red eyes to gain total control over its foe's mind. This Pokémon is said to live for one thousand years.",
     "id": 38,
-    "max_cp": 2015,
+    "max_cp": 2188,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -1888,7 +1962,7 @@
       "amount": 19.9,
       "unit": "kg"
     },
-    "max_hp": 121,
+    "max_hp": 127,
     "category": "Fox Pokémon",
     "stamina": 146,
     "attack": 176,
@@ -1910,7 +1984,9 @@
         "term": "tales",
         "meaning": "corruption of 'tails'"
       }
-    ]
+    ],
+    "average_cp": 2015,
+    "average_hp": 121
   },
   {
     "name": "Jigglypuff",
@@ -1920,7 +1996,7 @@
     ],
     "description": "Jigglypuff's vocal cords can freely adjust the wavelength of its voice. This Pokémon uses this ability to sing at precisely the right wavelength to make its foes most drowsy.",
     "id": 39,
-    "max_cp": 796,
+    "max_cp": 917,
     "height": {
       "amount": 0.5,
       "unit": "m"
@@ -1933,7 +2009,7 @@
       "amount": 5.5,
       "unit": "kg"
     },
-    "max_hp": 187,
+    "max_hp": 193,
     "category": "Balloon Pokémon",
     "stamina": 230,
     "attack": 98,
@@ -1969,7 +2045,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 796,
+    "average_hp": 187
   },
   {
     "name": "Wigglytuff",
@@ -1979,7 +2057,7 @@
     ],
     "description": "Wigglytuff has large, saucerlike eyes. The surfaces of its eyes are always covered with a thin layer of tears. If any dust gets in this Pokémon's eyes, it is quickly washed away.",
     "id": 40,
-    "max_cp": 1997,
+    "max_cp": 2177,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -1988,7 +2066,7 @@
       "amount": 12,
       "unit": "kg"
     },
-    "max_hp": 227,
+    "max_hp": 233,
     "category": "Balloon Pokémon",
     "stamina": 280,
     "attack": 168,
@@ -2011,7 +2089,9 @@
         "term": "tough",
         "meaning": "hard"
       }
-    ]
+    ],
+    "average_cp": 1997,
+    "average_hp": 227
   },
   {
     "name": "Zubat",
@@ -2021,7 +2101,7 @@
     ],
     "description": "Zubat remains quietly unmoving in a dark spot during the bright daylight hours. It does so because prolonged exposure to the sun causes its body to become slightly burned.",
     "id": 41,
-    "max_cp": 550,
+    "max_cp": 642,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -2034,7 +2114,7 @@
       "amount": 7.5,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Bat Pokémon",
     "stamina": 80,
     "attack": 88,
@@ -2070,7 +2150,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 550,
+    "average_hp": 69
   },
   {
     "name": "Golbat",
@@ -2080,7 +2162,7 @@
     ],
     "description": "Golbat loves to drink the blood of living things. It is particularly active in the pitch black of night. This Pokémon flits around in the night skies, seeking fresh blood.",
     "id": 42,
-    "max_cp": 1760,
+    "max_cp": 1921,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -2089,7 +2171,7 @@
       "amount": 55,
       "unit": "kg"
     },
-    "max_hp": 124,
+    "max_hp": 130,
     "category": "Bat Pokémon",
     "stamina": 150,
     "attack": 164,
@@ -2112,7 +2194,9 @@
         "term": "bat",
         "meaning": "cave-dwelling flying mammal"
       }
-    ]
+    ],
+    "average_cp": 1760,
+    "average_hp": 124
   },
   {
     "name": "Oddish",
@@ -2122,7 +2206,7 @@
     ],
     "description": "During the daytime, Oddish buries itself in soil to absorb nutrients from the ground using its entire body. The more fertile the soil, the glossier its leaves become.",
     "id": 43,
-    "max_cp": 1023,
+    "max_cp": 1148,
     "height": {
       "amount": 0.5,
       "unit": "m"
@@ -2135,7 +2219,7 @@
       "amount": 5.4,
       "unit": "kg"
     },
-    "max_hp": 77,
+    "max_hp": 82,
     "category": "Weed Pokémon",
     "stamina": 90,
     "attack": 134,
@@ -2176,7 +2260,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1023,
+    "average_hp": 77
   },
   {
     "name": "Gloom",
@@ -2186,7 +2272,7 @@
     ],
     "description": "Gloom releases a foul fragrance from the pistil of its flower. When faced with danger, the stench worsens. If this Pokémon is feeling calm and secure, it does not release its usual stinky aroma.",
     "id": 44,
-    "max_cp": 1537,
+    "max_cp": 1689,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -2199,7 +2285,7 @@
       "amount": 8.6,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Weed Pokémon",
     "stamina": 120,
     "attack": 162,
@@ -2236,7 +2322,9 @@
         "term": "bloom",
         "meaning": "blossoming"
       }
-    ]
+    ],
+    "average_cp": 1537,
+    "average_hp": 100
   },
   {
     "name": "Vileplume",
@@ -2246,7 +2334,7 @@
     ],
     "description": "Vileplume's toxic pollen triggers atrocious allergy attacks. That's why it is advisable never to approach any attractive flowers in a jungle, however pretty they may be.",
     "id": 45,
-    "max_cp": 2307,
+    "max_cp": 2492,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -2255,7 +2343,7 @@
       "amount": 18.6,
       "unit": "kg"
     },
-    "max_hp": 124,
+    "max_hp": 130,
     "category": "Flower Pokémon",
     "stamina": 150,
     "attack": 202,
@@ -2283,7 +2371,9 @@
         "term": "plume",
         "meaning": "cluster of showy flowers/petals"
       }
-    ]
+    ],
+    "average_cp": 2307,
+    "average_hp": 124
   },
   {
     "name": "Paras",
@@ -2293,7 +2383,7 @@
     ],
     "description": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug Pokémon host. They are highly valued as a medicine for extending life.",
     "id": 46,
-    "max_cp": 804,
+    "max_cp": 916,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -2306,7 +2396,7 @@
       "amount": 5.4,
       "unit": "kg"
     },
-    "max_hp": 61,
+    "max_hp": 67,
     "category": "Mushroom Pokémon",
     "stamina": 70,
     "attack": 122,
@@ -2337,7 +2427,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 804,
+    "average_hp": 61
   },
   {
     "name": "Parasect",
@@ -2347,7 +2439,7 @@
     ],
     "description": "Parasect is known to infest large trees en masse and drain nutrients from the lower trunk and roots. When an infested tree dies, they move onto another tree all at once.",
     "id": 47,
-    "max_cp": 1592,
+    "max_cp": 1747,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -2356,7 +2448,7 @@
       "amount": 29.5,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Mushroom Pokémon",
     "stamina": 120,
     "attack": 162,
@@ -2378,7 +2470,9 @@
         "term": "insect",
         "meaning": "a bug"
       }
-    ]
+    ],
+    "average_cp": 1592,
+    "average_hp": 100
   },
   {
     "name": "Venonat",
@@ -2388,7 +2482,7 @@
     ],
     "description": "Venonat is said to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even miniscule prey.",
     "id": 48,
-    "max_cp": 912,
+    "max_cp": 1029,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -2401,7 +2495,7 @@
       "amount": 30,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Insect Pokémon",
     "stamina": 120,
     "attack": 108,
@@ -2436,7 +2530,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 912,
+    "average_hp": 100
   },
   {
     "name": "Venomoth",
@@ -2446,7 +2542,7 @@
     ],
     "description": "Venomoth is nocturnal—it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness.",
     "id": 49,
-    "max_cp": 1730,
+    "max_cp": 1890,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -2455,7 +2551,7 @@
       "amount": 12.5,
       "unit": "kg"
     },
-    "max_hp": 116,
+    "max_hp": 122,
     "category": "Poison Moth Pokémon",
     "stamina": 140,
     "attack": 172,
@@ -2477,7 +2573,9 @@
         "term": "moth",
         "meaning": "an insect"
       }
-    ]
+    ],
+    "average_cp": 1730,
+    "average_hp": 116
   },
   {
     "name": "Diglett",
@@ -2486,7 +2584,7 @@
     ],
     "description": "Diglett are raised in most farms. The reason is simple—wherever this Pokémon burrows, the soil is left perfectly tilled for planting crops. This soil is made ideal for growing delicious vegetables.",
     "id": 50,
-    "max_cp": 365,
+    "max_cp": 456,
     "height": {
       "amount": 0.2,
       "unit": "m"
@@ -2499,7 +2597,7 @@
       "amount": 0.8,
       "unit": "kg"
     },
-    "max_hp": 21,
+    "max_hp": 27,
     "category": "Mole Pokémon",
     "stamina": 20,
     "attack": 108,
@@ -2534,7 +2632,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 365,
+    "average_hp": 21
   },
   {
     "name": "Dugtrio",
@@ -2543,7 +2643,7 @@
     ],
     "description": "Dugtrio are actually triplets that emerged from one body. As a result, each triplet thinks exactly like the other two triplets. They work cooperatively to burrow endlessly.",
     "id": 51,
-    "max_cp": 1038,
+    "max_cp": 1168,
     "height": {
       "amount": 0.7,
       "unit": "m"
@@ -2552,7 +2652,7 @@
       "amount": 33.3,
       "unit": "kg"
     },
-    "max_hp": 61,
+    "max_hp": 67,
     "category": "Mole Pokémon",
     "stamina": 70,
     "attack": 148,
@@ -2574,7 +2674,9 @@
         "term": "trio",
         "meaning": "group of three things"
       }
-    ]
+    ],
+    "average_cp": 1038,
+    "average_hp": 61
   },
   {
     "name": "Meowth",
@@ -2583,7 +2685,7 @@
     ],
     "description": "Meowth withdraws its sharp claws into its paws to slinkily sneak about without making any incriminating footsteps. For some reason, this Pokémon loves shiny coins that glitter with light.",
     "id": 52,
-    "max_cp": 656,
+    "max_cp": 756,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -2596,7 +2698,7 @@
       "amount": 4.2,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Scratch Cat Pokémon",
     "stamina": 80,
     "attack": 104,
@@ -2627,7 +2729,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 656,
+    "average_hp": 69
   },
   {
     "name": "Persian",
@@ -2636,7 +2740,7 @@
     ],
     "description": "Persian has six bold whiskers that give it a look of toughness. The whiskers sense air movements to determine what is in the Pokémon's surrounding vicinity. It becomes docile if grabbed by the whiskers.",
     "id": 53,
-    "max_cp": 1483,
+    "max_cp": 1631,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -2645,7 +2749,7 @@
       "amount": 32,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Classy Cat Pokémon",
     "stamina": 130,
     "attack": 156,
@@ -2663,7 +2767,9 @@
         "term": "persian",
         "meaning": "a long-haired breed of cat"
       }
-    ]
+    ],
+    "average_cp": 1483,
+    "average_hp": 108
   },
   {
     "name": "Psyduck",
@@ -2672,7 +2778,7 @@
     ],
     "description": "Psyduck uses a mysterious power. When it does so, this Pokémon generates brain waves that are supposedly only seen in sleepers. This discovery spurred controversy among scholars.",
     "id": 54,
-    "max_cp": 987,
+    "max_cp": 1109,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -2685,7 +2791,7 @@
       "amount": 19.6,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Duck Pokémon",
     "stamina": 100,
     "attack": 132,
@@ -2720,7 +2826,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 987,
+    "average_hp": 84
   },
   {
     "name": "Golduck",
@@ -2729,7 +2837,7 @@
     ],
     "description": "The webbed flippers on its forelegs and hind legs and the streamlined body of Golduck give it frightening speed. The Pokémon is definitely much faster than even the most athletic swimmer.",
     "id": 55,
-    "max_cp": 2206,
+    "max_cp": 2386,
     "height": {
       "amount": 1.7,
       "unit": "m"
@@ -2738,7 +2846,7 @@
       "amount": 76.6,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Duck Pokémon",
     "stamina": 160,
     "attack": 194,
@@ -2760,7 +2868,9 @@
         "term": "duck",
         "meaning": "a species of bird"
       }
-    ]
+    ],
+    "average_cp": 2206,
+    "average_hp": 132
   },
   {
     "name": "Mankey",
@@ -2769,7 +2879,7 @@
     ],
     "description": "When Mankey starts shaking and its nasal breathing turns rough, it's a sure sign that it is becoming angry. However, because it goes into a towering rage almost instantly, it is impossible for anyone to flee its wrath.",
     "id": 56,
-    "max_cp": 769,
+    "max_cp": 878,
     "height": {
       "amount": 0.5,
       "unit": "m"
@@ -2782,7 +2892,7 @@
       "amount": 28,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Pig Monkey Pokémon",
     "stamina": 80,
     "attack": 122,
@@ -2817,7 +2927,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 769,
+    "average_hp": 69
   },
   {
     "name": "Primeape",
@@ -2826,7 +2938,7 @@
     ],
     "description": "When Primeape becomes furious, its blood circulation is boosted. In turn, its muscles are made even stronger. However, it also becomes much less intelligent at the same time.",
     "id": 57,
-    "max_cp": 1704,
+    "max_cp": 1864,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -2835,7 +2947,7 @@
       "amount": 32,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Pig Monkey Pokémon",
     "stamina": 130,
     "attack": 178,
@@ -2861,7 +2973,9 @@
         "term": "ape",
         "meaning": "a species of primate"
       }
-    ]
+    ],
+    "average_cp": 1704,
+    "average_hp": 108
   },
   {
     "name": "Growlithe",
@@ -2870,7 +2984,7 @@
     ],
     "description": "Growlithe has a superb sense of smell. Once it smells anything, this Pokémon won't forget the scent, no matter what. It uses its advanced olfactory sense to determine the emotions of other living things.",
     "id": 58,
-    "max_cp": 1199,
+    "max_cp": 1335,
     "height": {
       "amount": 0.7,
       "unit": "m"
@@ -2883,7 +2997,7 @@
       "amount": 19,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Puppy Pokémon",
     "stamina": 110,
     "attack": 156,
@@ -2918,7 +3032,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1199,
+    "average_hp": 92
   },
   {
     "name": "Arcanine",
@@ -2927,7 +3043,7 @@
     ],
     "description": "Arcanine is known for its high speed. It is said to be capable of running over 6,200 miles in a single day and night. The fire that blazes wildly within this Pokémon's body is its source of power.",
     "id": 59,
-    "max_cp": 2781,
+    "max_cp": 2983,
     "height": {
       "amount": 1.9,
       "unit": "m"
@@ -2936,7 +3052,7 @@
       "amount": 155,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Legendary Pokémon",
     "stamina": 180,
     "attack": 230,
@@ -2958,7 +3074,9 @@
         "term": "canine",
         "meaning": "relating to dogs"
       }
-    ]
+    ],
+    "average_cp": 2781,
+    "average_hp": 148
   },
   {
     "name": "Poliwag",
@@ -2967,7 +3085,7 @@
     ],
     "description": "Poliwag has a very thin skin. It is possible to see the Pokémon's spiral innards right through the skin. Despite its thinness, however, the skin is also very flexible. Even sharp fangs bounce right off it.",
     "id": 60,
-    "max_cp": 693,
+    "max_cp": 795,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -2980,7 +3098,7 @@
       "amount": 12.4,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Tadpole Pokémon",
     "stamina": 80,
     "attack": 108,
@@ -3021,7 +3139,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 693,
+    "average_hp": 69
   },
   {
     "name": "Poliwhirl",
@@ -3030,7 +3150,7 @@
     ],
     "description": "The surface of Poliwhirl's body is always wet and slick with an oily fluid. Because of this greasy covering, it can easily slip and slide out of the clutches of any enemy in battle.",
     "id": 61,
-    "max_cp": 1206,
+    "max_cp": 1340,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -3043,7 +3163,7 @@
       "amount": 20,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Tadpole Pokémon",
     "stamina": 130,
     "attack": 132,
@@ -3080,7 +3200,9 @@
         "term": "whirl",
         "meaning": "circular pattern"
       }
-    ]
+    ],
+    "average_cp": 1206,
+    "average_hp": 108
   },
   {
     "name": "Poliwrath",
@@ -3090,7 +3212,7 @@
     ],
     "description": "Poliwrath's highly developed, brawny muscles never grow fatigued, however much it exercises. It is so tirelessly strong, this Pokémon can swim back and forth across the ocean without effort.",
     "id": 62,
-    "max_cp": 2321,
+    "max_cp": 2505,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -3099,7 +3221,7 @@
       "amount": 54,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Tadpole Pokémon",
     "stamina": 180,
     "attack": 180,
@@ -3127,7 +3249,9 @@
         "term": "wrath",
         "meaning": "anger"
       }
-    ]
+    ],
+    "average_cp": 2321,
+    "average_hp": 148
   },
   {
     "name": "Abra",
@@ -3136,7 +3260,7 @@
     ],
     "description": "Abra sleeps for eighteen hours a day. However, it can sense the presence of foes even while it is sleeping. In such a situation, this Pokémon immediately teleports to safety.",
     "id": 63,
-    "max_cp": 508,
+    "max_cp": 600,
     "height": {
       "amount": 0.9,
       "unit": "m"
@@ -3149,7 +3273,7 @@
       "amount": 19.5,
       "unit": "kg"
     },
-    "max_hp": 45,
+    "max_hp": 51,
     "category": "Psi Pokémon",
     "stamina": 50,
     "attack": 110,
@@ -3181,7 +3305,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 508,
+    "average_hp": 45
   },
   {
     "name": "Kadabra",
@@ -3190,7 +3316,7 @@
     ],
     "description": "Kadabra emits a peculiar alpha wave if it develops a headache. Only those people with a particularly strong psyche can hope to become a trainer of this Pokémon.",
     "id": 64,
-    "max_cp": 1005,
+    "max_cp": 1131,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -3203,7 +3329,7 @@
       "amount": 56.5,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Psi Pokémon",
     "stamina": 80,
     "attack": 150,
@@ -3231,7 +3357,9 @@
         "term": "abracadabra",
         "meaning": "magical word, sometimes used with 'alakazam'"
       }
-    ]
+    ],
+    "average_cp": 1005,
+    "average_hp": 69
   },
   {
     "name": "Alakazam",
@@ -3240,7 +3368,7 @@
     ],
     "description": "Alakazam's brain continually grows, making its head far too heavy to support with its neck. This Pokémon holds its head up using its psychokinetic power instead.",
     "id": 65,
-    "max_cp": 1654,
+    "max_cp": 1813,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -3249,7 +3377,7 @@
       "amount": 48,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Psi Pokémon",
     "stamina": 110,
     "attack": 186,
@@ -3268,7 +3396,9 @@
         "term": "alakazam",
         "meaning": "magical word, sometimes used with 'abracadabra'"
       }
-    ]
+    ],
+    "average_cp": 1654,
+    "average_hp": 92
   },
   {
     "name": "Machop",
@@ -3277,7 +3407,7 @@
     ],
     "description": "Machop's muscles are special—they never get sore no matter how much they are used in exercise. This Pokémon has sufficient power to hurl a hundred adult humans.",
     "id": 66,
-    "max_cp": 968,
+    "max_cp": 1089,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -3290,7 +3420,7 @@
       "amount": 19.5,
       "unit": "kg"
     },
-    "max_hp": 116,
+    "max_hp": 122,
     "category": "Superpower Pokémon",
     "stamina": 140,
     "attack": 118,
@@ -3326,7 +3456,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 968,
+    "average_hp": 116
   },
   {
     "name": "Machoke",
@@ -3335,7 +3467,7 @@
     ],
     "description": "Machoke's thoroughly toned muscles possess the hardness of steel. This Pokémon has so much strength, it can easily hold aloft a sumo wrestler on just one finger.",
     "id": 67,
-    "max_cp": 1606,
+    "max_cp": 1760,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -3348,7 +3480,7 @@
       "amount": 70.5,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Superpower Pokémon",
     "stamina": 160,
     "attack": 154,
@@ -3380,7 +3512,9 @@
         "term": "choke",
         "meaning": "To strangle"
       }
-    ]
+    ],
+    "average_cp": 1606,
+    "average_hp": 132
   },
   {
     "name": "Machamp",
@@ -3389,7 +3523,7 @@
     ],
     "description": "Machamp has the power to hurl anything aside. However, trying to do any work requiring care and dexterity causes its arms to get tangled. This Pokémon tends to leap into action before it thinks.",
     "id": 68,
-    "max_cp": 2406,
+    "max_cp": 2594,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -3398,7 +3532,7 @@
       "amount": 130,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Superpower Pokémon",
     "stamina": 180,
     "attack": 198,
@@ -3421,7 +3555,9 @@
         "term": "champ",
         "meaning": "A winner"
       }
-    ]
+    ],
+    "average_cp": 2406,
+    "average_hp": 148
   },
   {
     "name": "Bellsprout",
@@ -3431,7 +3567,7 @@
     ],
     "description": "Bellsprout's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this Pokémon spits a corrosive fluid that melts even iron.",
     "id": 69,
-    "max_cp": 990,
+    "max_cp": 1117,
     "height": {
       "amount": 0.7,
       "unit": "m"
@@ -3444,7 +3580,7 @@
       "amount": 4,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Flower Pokémon",
     "stamina": 100,
     "attack": 158,
@@ -3480,7 +3616,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 990,
+    "average_hp": 84
   },
   {
     "name": "Weepinbell",
@@ -3490,7 +3628,7 @@
     ],
     "description": "Weepinbell has a large hook on its rear end. At night, the Pokémon hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground.",
     "id": 70,
-    "max_cp": 1567,
+    "max_cp": 1723,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -3503,7 +3641,7 @@
       "amount": 6.4,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Flycatcher Pokémon",
     "stamina": 130,
     "attack": 190,
@@ -3535,7 +3673,9 @@
         "term": "bell",
         "meaning": "ringing device (shape)"
       }
-    ]
+    ],
+    "average_cp": 1567,
+    "average_hp": 108
   },
   {
     "name": "Victreebel",
@@ -3545,7 +3685,7 @@
     ],
     "description": "Victreebel has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this Pokémon swallows it whole.",
     "id": 71,
-    "max_cp": 2342,
+    "max_cp": 2530,
     "height": {
       "amount": 1.7,
       "unit": "m"
@@ -3554,7 +3694,7 @@
       "amount": 15.5,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Flycatcher Pokémon",
     "stamina": 160,
     "attack": 222,
@@ -3581,7 +3721,9 @@
         "term": "bell",
         "meaning": "ringing device (shape)"
       }
-    ]
+    ],
+    "average_cp": 2342,
+    "average_hp": 132
   },
   {
     "name": "Tentacool",
@@ -3591,7 +3733,7 @@
     ],
     "description": "Tentacool's body is largely composed of water. If it is removed from the sea, it dries up like parchment. If this Pokémon happens to become dehydrated, put it back into the sea.",
     "id": 72,
-    "max_cp": 794,
+    "max_cp": 905,
     "height": {
       "amount": 0.9,
       "unit": "m"
@@ -3604,7 +3746,7 @@
       "amount": 45.5,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Jellyfish Pokémon",
     "stamina": 80,
     "attack": 106,
@@ -3639,7 +3781,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 794,
+    "average_hp": 69
   },
   {
     "name": "Tentacruel",
@@ -3649,7 +3793,7 @@
     ],
     "description": "Tentacruel has large red orbs on its head. The orbs glow before lashing the vicinity with a harsh ultrasonic blast. This Pokémon's outburst creates rough waves around it.",
     "id": 73,
-    "max_cp": 2046,
+    "max_cp": 2220,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -3658,7 +3802,7 @@
       "amount": 55,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Jellyfish Pokémon",
     "stamina": 160,
     "attack": 170,
@@ -3680,7 +3824,9 @@
         "term": "cruel",
         "meaning": "mean"
       }
-    ]
+    ],
+    "average_cp": 2046,
+    "average_hp": 132
   },
   {
     "name": "Geodude",
@@ -3690,7 +3836,7 @@
     ],
     "description": "The longer a Geodude lives, the more its edges are chipped and worn away, making it more rounded in appearance. However, this Pokémon's heart will remain hard, craggy, and rough always.",
     "id": 74,
-    "max_cp": 742,
+    "max_cp": 849,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -3703,7 +3849,7 @@
       "amount": 20,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Rock Pokémon",
     "stamina": 80,
     "attack": 106,
@@ -3739,7 +3885,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 742,
+    "average_hp": 69
   },
   {
     "name": "Graveler",
@@ -3749,7 +3897,7 @@
     ],
     "description": "Graveler grows by feeding on rocks. Apparently, it prefers to eat rocks that are covered in moss. This Pokémon eats its way through a ton of rocks on a daily basis.",
     "id": 75,
-    "max_cp": 1294,
+    "max_cp": 1433,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -3762,7 +3910,7 @@
       "amount": 105,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Rock Pokémon",
     "stamina": 110,
     "attack": 142,
@@ -3790,7 +3938,9 @@
         "term": "gravel",
         "meaning": "small rocks/pebbles"
       }
-    ]
+    ],
+    "average_cp": 1294,
+    "average_hp": 92
   },
   {
     "name": "Golem",
@@ -3800,7 +3950,7 @@
     ],
     "description": "Golem live up on mountains. If there is a large earthquake, these Pokémon will come rolling down off the mountains en masse to the foothills below.",
     "id": 76,
-    "max_cp": 2126,
+    "max_cp": 2303,
     "height": {
       "amount": 1.4,
       "unit": "m"
@@ -3809,7 +3959,7 @@
       "amount": 300,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Megaton Pokémon",
     "stamina": 160,
     "attack": 176,
@@ -3828,7 +3978,9 @@
         "term": "golem",
         "meaning": "stone figure from Jewish folklore"
       }
-    ]
+    ],
+    "average_cp": 2126,
+    "average_hp": 132
   },
   {
     "name": "Ponyta",
@@ -3837,7 +3989,7 @@
     ],
     "description": "Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent.",
     "id": 77,
-    "max_cp": 1370,
+    "max_cp": 1516,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -3850,7 +4002,7 @@
       "amount": 30,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Fire Horse Pokémon",
     "stamina": 100,
     "attack": 168,
@@ -3885,7 +4037,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1370,
+    "average_hp": 84
   },
   {
     "name": "Rapidash",
@@ -3894,7 +4048,7 @@
     ],
     "description": "Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph.",
     "id": 78,
-    "max_cp": 2024,
+    "max_cp": 2199,
     "height": {
       "amount": 1.7,
       "unit": "m"
@@ -3903,7 +4057,7 @@
       "amount": 95,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Fire Horse Pokémon",
     "stamina": 130,
     "attack": 200,
@@ -3929,7 +4083,9 @@
         "term": "dash",
         "meaning": "move quickly"
       }
-    ]
+    ],
+    "average_cp": 2024,
+    "average_hp": 108
   },
   {
     "name": "Slowpoke",
@@ -3939,7 +4095,7 @@
     ],
     "description": "Slowpoke uses its tail to catch prey by dipping it in water at the side of a river. However, this Pokémon often forgets what it's doing and often spends entire days just loafing at water's edge.",
     "id": 79,
-    "max_cp": 1089,
+    "max_cp": 1218,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -3952,7 +4108,7 @@
       "amount": 36,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Dopey Pokémon",
     "stamina": 180,
     "attack": 110,
@@ -3991,7 +4147,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1089,
+    "average_hp": 148
   },
   {
     "name": "Slowbro",
@@ -4001,7 +4159,7 @@
     ],
     "description": "Slowbro's tail has a Shellder firmly attached with a bite. As a result, the tail can't be used for fishing anymore. This causes Slowbro to grudgingly swim and catch prey instead.",
     "id": 80,
-    "max_cp": 2409,
+    "max_cp": 2597,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -4010,7 +4168,7 @@
       "amount": 78.5,
       "unit": "kg"
     },
-    "max_hp": 156,
+    "max_hp": 162,
     "category": "Hermit Crab Pokémon",
     "stamina": 190,
     "attack": 184,
@@ -4036,7 +4194,9 @@
         "term": "bro",
         "meaning": "friend, pal"
       }
-    ]
+    ],
+    "average_cp": 2409,
+    "average_hp": 156
   },
   {
     "name": "Magnemite",
@@ -4046,7 +4206,7 @@
     ],
     "description": "Magnemite attaches itself to power lines to feed on electricity. If your house has a power outage, check your circuit breakers. You may find a large number of this Pokémon clinging to the breaker box.",
     "id": 81,
-    "max_cp": 774,
+    "max_cp": 890,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -4059,7 +4219,7 @@
       "amount": 6,
       "unit": "kg"
     },
-    "max_hp": 45,
+    "max_hp": 51,
     "category": "Magnet Pokémon",
     "stamina": 50,
     "attack": 128,
@@ -4095,7 +4255,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 774,
+    "average_hp": 45
   },
   {
     "name": "Magneton",
@@ -4105,7 +4267,7 @@
     ],
     "description": "Magneton emits a powerful magnetic force that is fatal to mechanical devices. As a result, large cities sound sirens to warn citizens of large-scale outbreaks of this Pokémon.",
     "id": 82,
-    "max_cp": 1715,
+    "max_cp": 1879,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -4114,7 +4276,7 @@
       "amount": 60,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Magnet Pokémon",
     "stamina": 100,
     "attack": 186,
@@ -4137,7 +4299,9 @@
         "term": "ton",
         "meaning": "large or heavy object"
       }
-    ]
+    ],
+    "average_cp": 1715,
+    "average_hp": 84
   },
   {
     "name": "Farfetch'd",
@@ -4147,7 +4311,7 @@
     ],
     "description": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks.",
     "id": 83,
-    "max_cp": 1133,
+    "max_cp": 1263,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -4156,7 +4320,7 @@
       "amount": 15,
       "unit": "kg"
     },
-    "max_hp": 88,
+    "max_hp": 94,
     "category": "Wild Duck Pokémon",
     "stamina": 104,
     "attack": 138,
@@ -4172,7 +4336,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1133,
+    "average_hp": 88
   },
   {
     "name": "Doduo",
@@ -4182,7 +4348,7 @@
     ],
     "description": "Doduo's two heads never sleep at the same time. Its two heads take turns sleeping, so one head can always keep watch for enemies while the other one sleeps.",
     "id": 84,
-    "max_cp": 746,
+    "max_cp": 855,
     "height": {
       "amount": 1.4,
       "unit": "m"
@@ -4195,7 +4361,7 @@
       "amount": 39.2,
       "unit": "kg"
     },
-    "max_hp": 61,
+    "max_hp": 67,
     "category": "Twin Bird Pokémon",
     "stamina": 70,
     "attack": 126,
@@ -4230,7 +4396,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 746,
+    "average_hp": 61
   },
   {
     "name": "Dodrio",
@@ -4240,7 +4408,7 @@
     ],
     "description": "Watch out if Dodrio's three heads are looking in three separate directions. It's a sure sign that it is on its guard. Don't go near this Pokémon if it's being wary-it may decide to peck you.",
     "id": 85,
-    "max_cp": 1677,
+    "max_cp": 1836,
     "height": {
       "amount": 1.8,
       "unit": "m"
@@ -4249,7 +4417,7 @@
       "amount": 85.2,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Triple Bird Pokémon",
     "stamina": 120,
     "attack": 182,
@@ -4271,7 +4439,9 @@
         "term": "trio",
         "meaning": "group of three"
       }
-    ]
+    ],
+    "average_cp": 1677,
+    "average_hp": 100
   },
   {
     "name": "Seel",
@@ -4280,7 +4450,7 @@
     ],
     "description": "Seel hunts for prey in the frigid sea underneath sheets of ice. When it needs to breathe, it punches a hole through the ice with the sharply protruding section of its head.",
     "id": 86,
-    "max_cp": 985,
+    "max_cp": 1107,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -4293,7 +4463,7 @@
       "amount": 90,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Sea Lion Pokémon",
     "stamina": 130,
     "attack": 104,
@@ -4324,7 +4494,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 985,
+    "average_hp": 108
   },
   {
     "name": "Dewgong",
@@ -4334,7 +4506,7 @@
     ],
     "description": "Dewgong loves to snooze on bitterly cold ice. The sight of this Pokémon sleeping on a glacier was mistakenly thought to be a mermaid by a mariner long ago.",
     "id": 87,
-    "max_cp": 1975,
+    "max_cp": 2145,
     "height": {
       "amount": 1.7,
       "unit": "m"
@@ -4343,7 +4515,7 @@
       "amount": 120,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Sea Lion Pokémon",
     "stamina": 180,
     "attack": 156,
@@ -4365,7 +4537,9 @@
         "term": "dew",
         "meaning": "moisture often found on grass or plants"
       }
-    ]
+    ],
+    "average_cp": 1975,
+    "average_hp": 148
   },
   {
     "name": "Grimer",
@@ -4374,7 +4548,7 @@
     ],
     "description": "Grimer's sludgy and rubbery body can be forced through any opening, however small it may be. This Pokémon enters sewer pipes to drink filthy wastewater.",
     "id": 88,
-    "max_cp": 1152,
+    "max_cp": 1284,
     "height": {
       "amount": 0.9,
       "unit": "m"
@@ -4387,7 +4561,7 @@
       "amount": 30,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Sludge Pokémon",
     "stamina": 160,
     "attack": 124,
@@ -4418,7 +4592,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1152,
+    "average_hp": 132
   },
   {
     "name": "Muk",
@@ -4427,7 +4603,7 @@
     ],
     "description": "From Muk's body seeps a foul fluid that gives off a nose-bendingly horrible stench. Just one drop of this Pokémon's body fluid can turn a pool stagnant and rancid.",
     "id": 89,
-    "max_cp": 2414,
+    "max_cp": 2602,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -4436,7 +4612,7 @@
       "amount": 30,
       "unit": "kg"
     },
-    "max_hp": 171,
+    "max_hp": 177,
     "category": "Sludge Pokémon",
     "stamina": 210,
     "attack": 180,
@@ -4454,7 +4630,9 @@
         "term": "muck",
         "meaning": "dirt"
       }
-    ]
+    ],
+    "average_cp": 2414,
+    "average_hp": 171
   },
   {
     "name": "Shellder",
@@ -4463,7 +4641,7 @@
     ],
     "description": "At night, this Pokémon uses its broad tongue to burrow a hole in the seafloor sand and then sleep in it. While it is sleeping, Shellder closes its shell, but leaves its tongue hanging out.",
     "id": 90,
-    "max_cp": 715,
+    "max_cp": 822,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -4476,7 +4654,7 @@
       "amount": 4,
       "unit": "kg"
     },
-    "max_hp": 53,
+    "max_hp": 59,
     "category": "Bivalve Pokémon",
     "stamina": 60,
     "attack": 120,
@@ -4511,7 +4689,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 715,
+    "average_hp": 53
   },
   {
     "name": "Cloyster",
@@ -4521,7 +4701,7 @@
     ],
     "description": "Cloyster is capable of swimming in the sea. It does so by swallowing water, then jetting it out toward the rear. This Pokémon shoots spikes from its shell using the same system.",
     "id": 91,
-    "max_cp": 1879,
+    "max_cp": 2052,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -4530,7 +4710,7 @@
       "amount": 132.5,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Bivalve Pokémon",
     "stamina": 100,
     "attack": 196,
@@ -4556,7 +4736,9 @@
         "term": "cloister",
         "meaning": "isolated religious building"
       }
-    ]
+    ],
+    "average_cp": 1879,
+    "average_hp": 84
   },
   {
     "name": "Gastly",
@@ -4566,7 +4748,7 @@
     ],
     "description": "Gastly is largely composed of gaseous matter. When exposed to a strong wind, the gaseous body quickly dwindles away. Groups of this Pokémon cluster under the eaves of houses to escape the ravages of wind.",
     "id": 92,
-    "max_cp": 696,
+    "max_cp": 804,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -4579,7 +4761,7 @@
       "amount": 0.1,
       "unit": "kg"
     },
-    "max_hp": 53,
+    "max_hp": 59,
     "category": "Gas Pokémon",
     "stamina": 60,
     "attack": 136,
@@ -4615,7 +4797,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 696,
+    "average_hp": 53
   },
   {
     "name": "Haunter",
@@ -4625,7 +4809,7 @@
     ],
     "description": "Haunter is a dangerous Pokémon. If one beckons you while floating in darkness, you must never approach it. This Pokémon will try to lick you with its tongue and steal your life away.",
     "id": 93,
-    "max_cp": 1240,
+    "max_cp": 1380,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -4638,7 +4822,7 @@
       "amount": 0.1,
       "unit": "kg"
     },
-    "max_hp": 77,
+    "max_hp": 82,
     "category": "Gas Pokémon",
     "stamina": 90,
     "attack": 172,
@@ -4666,7 +4850,9 @@
         "term": "haunter",
         "meaning": "a person who scares others"
       }
-    ]
+    ],
+    "average_cp": 1240,
+    "average_hp": 77
   },
   {
     "name": "Gengar",
@@ -4676,7 +4862,7 @@
     ],
     "description": "Sometimes, on a dark night, your shadow thrown by a streetlight will suddenly and startlingly overtake you. It is actually a Gengar running past you, pretending to be your shadow.",
     "id": 94,
-    "max_cp": 1907,
+    "max_cp": 2078,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -4685,7 +4871,7 @@
       "amount": 40.5,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Shadow Pokémon",
     "stamina": 120,
     "attack": 204,
@@ -4704,7 +4890,9 @@
         "term": "doppelgänger",
         "meaning": "a person's exact double or 'shadow'"
       }
-    ]
+    ],
+    "average_cp": 1907,
+    "average_hp": 100
   },
   {
     "name": "Onix",
@@ -4714,7 +4902,7 @@
     ],
     "description": "Onix has a magnet in its brain. It acts as a compass so that this Pokémon does not lose direction while it is tunneling. As it grows older, its body becomes increasingly rounder and smoother.",
     "id": 95,
-    "max_cp": 745,
+    "max_cp": 857,
     "height": {
       "amount": 8.8,
       "unit": "m"
@@ -4723,7 +4911,7 @@
       "amount": 210,
       "unit": "kg"
     },
-    "max_hp": 61,
+    "max_hp": 67,
     "category": "Rock Snake Pokémon",
     "stamina": 70,
     "attack": 90,
@@ -4745,7 +4933,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 745,
+    "average_hp": 61
   },
   {
     "name": "Drowzee",
@@ -4754,7 +4944,7 @@
     ],
     "description": "If your nose becomes itchy while you are sleeping, it's a sure sign that one of these Pokémon is standing above your pillow and trying to eat you dream through your nostrils.",
     "id": 96,
-    "max_cp": 955,
+    "max_cp": 1075,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -4767,7 +4957,7 @@
       "amount": 32.4,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Hypnosis Pokémon",
     "stamina": 120,
     "attack": 104,
@@ -4802,7 +4992,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 955,
+    "average_hp": 100
   },
   {
     "name": "Hypno",
@@ -4811,7 +5003,7 @@
     ],
     "description": "Hypno holds a pendulum in its hand. The arcing movement and glitter of the pendulum lull the foe into a deep state of hypnosis. While this Pokémon searches for prey, it polishes the pendulum.",
     "id": 97,
-    "max_cp": 2012,
+    "max_cp": 2184,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -4820,7 +5012,7 @@
       "amount": 75.6,
       "unit": "kg"
     },
-    "max_hp": 140,
+    "max_hp": 146,
     "category": "Hypnosis Pokémon",
     "stamina": 170,
     "attack": 162,
@@ -4838,7 +5030,9 @@
         "term": "hypnosis",
         "meaning": "a trance or sleep"
       }
-    ]
+    ],
+    "average_cp": 2012,
+    "average_hp": 140
   },
   {
     "name": "Krabby",
@@ -4847,7 +5041,7 @@
     ],
     "description": "Krabby live on beaches, burrowed inside holes dug into the sand. On sandy beaches with little in the way of food, these Pokémon can be seen squabbling with each other over territory.",
     "id": 98,
-    "max_cp": 686,
+    "max_cp": 792,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -4860,7 +5054,7 @@
       "amount": 6.5,
       "unit": "kg"
     },
-    "max_hp": 53,
+    "max_hp": 59,
     "category": "River Crab Pokémon",
     "stamina": 60,
     "attack": 116,
@@ -4895,7 +5089,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 686,
+    "average_hp": 53
   },
   {
     "name": "Kingler",
@@ -4904,7 +5100,7 @@
     ],
     "description": "Kingler has an enormous, oversized claw. It waves this huge claw in the air to communicate with others. However, because the claw is so heavy, the Pokémon quickly tires.",
     "id": 99,
-    "max_cp": 1663,
+    "max_cp": 1823,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -4913,7 +5109,7 @@
       "amount": 60,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Pincer Pokémon",
     "stamina": 110,
     "attack": 178,
@@ -4935,7 +5131,9 @@
         "term": "fiddler",
         "meaning": "a species of crab"
       }
-    ]
+    ],
+    "average_cp": 1663,
+    "average_hp": 92
   },
   {
     "name": "Voltorb",
@@ -4944,7 +5142,7 @@
     ],
     "description": "Voltorb was first sighted at a company that manufactures Poké Balls. The link between that sighting and the fact that this Pokémon looks very similar to a Poké Ball remains a mystery.",
     "id": 100,
-    "max_cp": 733,
+    "max_cp": 839,
     "height": {
       "amount": 0.5,
       "unit": "m"
@@ -4957,7 +5155,7 @@
       "amount": 10.4,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Ball Pokémon",
     "stamina": 80,
     "attack": 102,
@@ -4992,7 +5190,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 733,
+    "average_hp": 69
   },
   {
     "name": "Electrode",
@@ -5001,7 +5201,7 @@
     ],
     "description": "Electrode eats electricity in the atmosphere. On days when lightning strikes, you can see this Pokémon exploding all over the place from eating too much electricity.",
     "id": 101,
-    "max_cp": 1496,
+    "max_cp": 1646,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -5010,7 +5210,7 @@
       "amount": 66.6,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Ball Pokémon",
     "stamina": 120,
     "attack": 150,
@@ -5032,7 +5232,9 @@
         "term": "explode",
         "meaning": "to self-destruct"
       }
-    ]
+    ],
+    "average_cp": 1496,
+    "average_hp": 100
   },
   {
     "name": "Exeggcute",
@@ -5042,7 +5244,7 @@
     ],
     "description": "This Pokémon consists of six eggs that form a closely knit cluster. The six eggs attract each other and spin around. When cracks increasingly appear on the eggs, Exeggcute is close to evolution.",
     "id": 102,
-    "max_cp": 978,
+    "max_cp": 1099,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -5055,7 +5257,7 @@
       "amount": 2.5,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Egg Pokémon",
     "stamina": 120,
     "attack": 110,
@@ -5090,7 +5292,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 978,
+    "average_hp": 100
   },
   {
     "name": "Exeggutor",
@@ -5100,7 +5304,7 @@
     ],
     "description": "Exeggutor originally came from the tropics. Its heads steadily grow larger from exposure to strong sunlight. It is said that when the heads fall off, they group together to form Exeggcute.",
     "id": 103,
-    "max_cp": 2752,
+    "max_cp": 2955,
     "height": {
       "amount": 2,
       "unit": "m"
@@ -5109,7 +5313,7 @@
       "amount": 120,
       "unit": "kg"
     },
-    "max_hp": 156,
+    "max_hp": 162,
     "category": "Coconut Pokémon",
     "stamina": 190,
     "attack": 232,
@@ -5131,7 +5335,9 @@
         "term": "executor",
         "meaning": "an exterminator"
       }
-    ]
+    ],
+    "average_cp": 2752,
+    "average_hp": 156
   },
   {
     "name": "Cubone",
@@ -5140,7 +5346,7 @@
     ],
     "description": "Cubone pines for the mother it will never see again. Seeing a likeness of its mother in the full moon, it cries. The stains on the skull the Pokémon wears are made by the tears it sheds.",
     "id": 104,
-    "max_cp": 889,
+    "max_cp": 1006,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -5153,7 +5359,7 @@
       "amount": 6.5,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Lonely Pokémon",
     "stamina": 100,
     "attack": 102,
@@ -5188,7 +5394,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 889,
+    "average_hp": 84
   },
   {
     "name": "Marowak",
@@ -5197,7 +5405,7 @@
     ],
     "description": "Marowak is the evolved form of a Cubone that has overcome its sadness at the loss of its mother and grown tough. This Pokémon's tempered and hardened spirit is not easily broken.",
     "id": 105,
-    "max_cp": 1505,
+    "max_cp": 1656,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -5206,7 +5414,7 @@
       "amount": 45,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Bone Keeper Pokémon",
     "stamina": 120,
     "attack": 140,
@@ -5228,7 +5436,9 @@
         "term": "whack",
         "meaning": "to hit"
       }
-    ]
+    ],
+    "average_cp": 1505,
+    "average_hp": 100
   },
   {
     "name": "Hitmonlee",
@@ -5237,7 +5447,7 @@
     ],
     "description": "Hitmonlee's legs freely contract and stretch. Using these springlike legs, it bowls over foes with devastating kicks. After battle, it rubs down its legs and loosens the muscles to overcome fatigue.",
     "id": 106,
-    "max_cp": 1349,
+    "max_cp": 1492,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -5246,7 +5456,7 @@
       "amount": 49.8,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Kicking Pokémon",
     "stamina": 100,
     "attack": 148,
@@ -5276,7 +5486,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1349,
+    "average_hp": 84
   },
   {
     "name": "Hitmonchan",
@@ -5285,7 +5497,7 @@
     ],
     "description": "Hitmonchan is said to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity.",
     "id": 107,
-    "max_cp": 1370,
+    "max_cp": 1516,
     "height": {
       "amount": 1.4,
       "unit": "m"
@@ -5294,7 +5506,7 @@
       "amount": 50.2,
       "unit": "kg"
     },
-    "max_hp": 84,
+    "max_hp": 90,
     "category": "Punching Pokémon",
     "stamina": 100,
     "attack": 138,
@@ -5324,7 +5536,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1370,
+    "average_hp": 84
   },
   {
     "name": "Lickitung",
@@ -5333,7 +5547,7 @@
     ],
     "description": "Whenever Lickitung comes across something new, it will unfailingly give it a lick. It does so because it memorizes things by texture and by taste. It is somewhat put off by sour things.",
     "id": 108,
-    "max_cp": 1477,
+    "max_cp": 1626,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -5342,7 +5556,7 @@
       "amount": 65.5,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Licking Pokémon",
     "stamina": 180,
     "attack": 126,
@@ -5368,7 +5582,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1477,
+    "average_hp": 148
   },
   {
     "name": "Koffing",
@@ -5377,7 +5593,7 @@
     ],
     "description": "If Koffing becomes agitated, it raises the toxicity of its internal gases and then jets them out from all over its body. This Pokémon may also overinflate its round body, then explode.",
     "id": 109,
-    "max_cp": 1025,
+    "max_cp": 1151,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -5390,7 +5606,7 @@
       "amount": 1,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Poison Gas Pokémon",
     "stamina": 80,
     "attack": 136,
@@ -5421,7 +5637,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1025,
+    "average_hp": 69
   },
   {
     "name": "Weezing",
@@ -5430,7 +5648,7 @@
     ],
     "description": "Weezing loves the gases given off by rotted kitchen garbage. This Pokémon will find a dirty, unkempt house and make it its home. At night, when the people in the house are asleep, it will go through the trash.",
     "id": 110,
-    "max_cp": 2073,
+    "max_cp": 2250,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -5439,7 +5657,7 @@
       "amount": 9.5,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Poison Gas Pokémon",
     "stamina": 130,
     "attack": 190,
@@ -5457,7 +5675,9 @@
         "term": "wheezing",
         "meaning": "breathing with difficulty"
       }
-    ]
+    ],
+    "average_cp": 2073,
+    "average_hp": 108
   },
   {
     "name": "Rhyhorn",
@@ -5467,7 +5687,7 @@
     ],
     "description": "Rhyhorn runs in a straight line, smashing everything in its path. It is not bothered even if it rushes headlong into a block of steel. This Pokémon may feel some pain from the collision the next day, however.",
     "id": 111,
-    "max_cp": 1055,
+    "max_cp": 1182,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -5480,7 +5700,7 @@
       "amount": 115,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Spikes Pokémon",
     "stamina": 160,
     "attack": 110,
@@ -5516,7 +5736,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1055,
+    "average_hp": 132
   },
   {
     "name": "Rhydon",
@@ -5526,7 +5748,7 @@
     ],
     "description": "Rhydon's horn can crush even uncut diamonds. One sweeping blow of its tail can topple a building. This Pokémon's hide is extremely tough. Even direct cannon hits don't leave a scratch.",
     "id": 112,
-    "max_cp": 2068,
+    "max_cp": 2243,
     "height": {
       "amount": 1.9,
       "unit": "m"
@@ -5535,7 +5757,7 @@
       "amount": 120,
       "unit": "kg"
     },
-    "max_hp": 171,
+    "max_hp": 177,
     "category": "Drill Pokémon",
     "stamina": 210,
     "attack": 166,
@@ -5558,7 +5780,9 @@
         "term": "don",
         "meaning": "of great size/importance; lord or master"
       }
-    ]
+    ],
+    "average_cp": 2068,
+    "average_hp": 171
   },
   {
     "name": "Chansey",
@@ -5567,7 +5791,7 @@
     ],
     "description": "Chansey lays nutritionally excellent eggs on an everyday basis. The eggs are so delicious, they are easily and eagerly devoured by even those people who have lost their appetite.",
     "id": 113,
-    "max_cp": 549,
+    "max_cp": 675,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -5576,7 +5800,7 @@
       "amount": 34.6,
       "unit": "kg"
     },
-    "max_hp": 401,
+    "max_hp": 407,
     "category": "Egg Pokémon",
     "stamina": 500,
     "attack": 40,
@@ -5599,7 +5823,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 549,
+    "average_hp": 401
   },
   {
     "name": "Tangela",
@@ -5608,7 +5834,7 @@
     ],
     "description": "Tangela's vines snap off easily if they are grabbed. This happens without pain, allowing it to make a quick getaway. The lost vines are replaced by newly grown vines the very next day.",
     "id": 114,
-    "max_cp": 1586,
+    "max_cp": 1739,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -5617,7 +5843,7 @@
       "amount": 35,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Vine Pokémon",
     "stamina": 130,
     "attack": 164,
@@ -5639,7 +5865,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1586,
+    "average_hp": 108
   },
   {
     "name": "Kangaskhan",
@@ -5648,7 +5876,7 @@
     ],
     "description": "If you come across a young Kangaskhan playing by itself, you must never disturb it or attempt to catch it. The baby Pokémon's parent is sure to be in the area, and it will become violently enraged at you.",
     "id": 115,
-    "max_cp": 1875,
+    "max_cp": 2043,
     "height": {
       "amount": 2.2,
       "unit": "m"
@@ -5657,7 +5885,7 @@
       "amount": 80,
       "unit": "kg"
     },
-    "max_hp": 171,
+    "max_hp": 177,
     "category": "Parent Pokémon",
     "stamina": 210,
     "attack": 142,
@@ -5677,7 +5905,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1875,
+    "average_hp": 171
   },
   {
     "name": "Horsea",
@@ -5686,7 +5916,7 @@
     ],
     "description": "Horsea eats small insects and moss off of rocks. If the ocean current turns fast, this Pokémon anchors itself by wrapping its tail around rocks or coral to prevent being washed away.",
     "id": 116,
-    "max_cp": 688,
+    "max_cp": 794,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -5699,7 +5929,7 @@
       "amount": 8,
       "unit": "kg"
     },
-    "max_hp": 53,
+    "max_hp": 59,
     "category": "Dragon Pokémon",
     "stamina": 60,
     "attack": 122,
@@ -5735,7 +5965,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 688,
+    "average_hp": 53
   },
   {
     "name": "Seadra",
@@ -5744,7 +5976,7 @@
     ],
     "description": "Seadra sleeps after wriggling itself between the branches of coral. Those trying to harvest coral are occasionally stung by this Pokémon's poison barbs if they fail to notice it.",
     "id": 117,
-    "max_cp": 1559,
+    "max_cp": 1713,
     "height": {
       "amount": 1.2,
       "unit": "m"
@@ -5753,7 +5985,7 @@
       "amount": 25,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Dragon Pokémon",
     "stamina": 110,
     "attack": 176,
@@ -5776,7 +6008,9 @@
         "term": "dragon",
         "meaning": "mythical fire-breathing creature"
       }
-    ]
+    ],
+    "average_cp": 1559,
+    "average_hp": 92
   },
   {
     "name": "Goldeen",
@@ -5785,7 +6019,7 @@
     ],
     "description": "Goldeen is a very beautiful Pokémon with fins that billow elegantly in water. However, don't let your guard down around this Pokémon—it could ram you powerfully with its horn.",
     "id": 118,
-    "max_cp": 851,
+    "max_cp": 965,
     "height": {
       "amount": 0.6,
       "unit": "m"
@@ -5798,7 +6032,7 @@
       "amount": 15,
       "unit": "kg"
     },
-    "max_hp": 77,
+    "max_hp": 82,
     "category": "Goldfish Pokémon",
     "stamina": 90,
     "attack": 112,
@@ -5833,7 +6067,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 851,
+    "average_hp": 77
   },
   {
     "name": "Seaking",
@@ -5842,7 +6078,7 @@
     ],
     "description": "In the autumn, Seaking males can be seen performing courtship dances in riverbeds to woo females. During this season, this Pokémon's body coloration is at its most beautiful.",
     "id": 119,
-    "max_cp": 1877,
+    "max_cp": 2043,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -5851,7 +6087,7 @@
       "amount": 39,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Goldfish Pokémon",
     "stamina": 160,
     "attack": 172,
@@ -5873,7 +6109,9 @@
         "term": "king",
         "meaning": "royalty"
       }
-    ]
+    ],
+    "average_cp": 1877,
+    "average_hp": 132
   },
   {
     "name": "Staryu",
@@ -5882,7 +6120,7 @@
     ],
     "description": "Staryu's center section has an organ called the core that shines bright red. If you go to a beach toward the end of summer, the glowing cores of these Pokémon look like the stars in the sky.",
     "id": 120,
-    "max_cp": 821,
+    "max_cp": 937,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -5895,7 +6133,7 @@
       "amount": 34.5,
       "unit": "kg"
     },
-    "max_hp": 53,
+    "max_hp": 59,
     "category": "Star Shape Pokémon",
     "stamina": 60,
     "attack": 130,
@@ -5930,7 +6168,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 821,
+    "average_hp": 53
   },
   {
     "name": "Starmie",
@@ -5940,7 +6180,7 @@
     ],
     "description": "Starmie's center section-the core-glows brightly in seven colors. Because of its luminous nature, this Pokémon has been given the nickname \"the gem of the sea.\"",
     "id": 121,
-    "max_cp": 2007,
+    "max_cp": 2182,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -5949,7 +6189,7 @@
       "amount": 80,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Mysterious Pokémon",
     "stamina": 120,
     "attack": 194,
@@ -5971,7 +6211,9 @@
         "term": "me",
         "meaning": "opposite of you (from Staryu)"
       }
-    ]
+    ],
+    "average_cp": 2007,
+    "average_hp": 100
   },
   {
     "name": "Mr. Mime",
@@ -5981,7 +6223,7 @@
     ],
     "description": "Mr. Mime is a master of pantomime. Its gestures and motions convince watchers that something unseeable actually exists. Once the watchers are convinced, the unseeable thing exists as if it were real.",
     "id": 122,
-    "max_cp": 1345,
+    "max_cp": 1494,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -5990,7 +6232,7 @@
       "amount": 54.5,
       "unit": "kg"
     },
-    "max_hp": 69,
+    "max_hp": 75,
     "category": "Barrier Pokémon",
     "stamina": 80,
     "attack": 154,
@@ -6016,7 +6258,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1345,
+    "average_hp": 69
   },
   {
     "name": "Scyther",
@@ -6026,7 +6270,7 @@
     ],
     "description": "Scyther is blindingly fast. Its blazing speed enhances the effectiveness of the twin scythes on its forearms. This Pokémon's scythes are so effective, they can slice through thick logs in one wicked stroke.",
     "id": 123,
-    "max_cp": 1905,
+    "max_cp": 2073,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -6035,7 +6279,7 @@
       "amount": 56,
       "unit": "kg"
     },
-    "max_hp": 116,
+    "max_hp": 122,
     "category": "Mantis Pokémon",
     "stamina": 140,
     "attack": 176,
@@ -6057,7 +6301,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1905,
+    "average_hp": 116
   },
   {
     "name": "Jynx",
@@ -6067,7 +6313,7 @@
     ],
     "description": "Jynx walks rhythmically, swaying and shaking its hips as if it were dancing. Its motions are so bouncingly alluring, people seeing it are compelled to shake their hips without giving any thought to what they are doing.",
     "id": 124,
-    "max_cp": 1563,
+    "max_cp": 1716,
     "height": {
       "amount": 1.4,
       "unit": "m"
@@ -6076,7 +6322,7 @@
       "amount": 40.6,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Human Shape Pokémon",
     "stamina": 130,
     "attack": 172,
@@ -6098,7 +6344,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1563,
+    "average_hp": 108
   },
   {
     "name": "Electabuzz",
@@ -6107,7 +6355,7 @@
     ],
     "description": "When a storm arrives, gangs of this Pokémon compete with each other to scale heights that are likely to be stricken by lightning bolts. Some towns use Electabuzz in place of lightning rods.",
     "id": 125,
-    "max_cp": 1947,
+    "max_cp": 2119,
     "height": {
       "amount": 1.1,
       "unit": "m"
@@ -6116,7 +6364,7 @@
       "amount": 30,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Electric Pokémon",
     "stamina": 130,
     "attack": 198,
@@ -6143,7 +6391,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1947,
+    "average_hp": 108
   },
   {
     "name": "Magmar",
@@ -6152,7 +6402,7 @@
     ],
     "description": "In battle, Magmar blows out intensely hot flames from all over its body to intimidate its opponent. This Pokémon's fiery bursts create heat waves that ignite grass and trees in its surroundings.",
     "id": 126,
-    "max_cp": 2086,
+    "max_cp": 2265,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -6161,7 +6411,7 @@
       "amount": 44.5,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Spitfire Pokémon",
     "stamina": 130,
     "attack": 214,
@@ -6184,7 +6434,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 2086,
+    "average_hp": 108
   },
   {
     "name": "Pinsir",
@@ -6193,7 +6445,7 @@
     ],
     "description": "Pinsir is astoundingly strong. It can grip a foe weighing twice its weight in its horns and easily lift it. This Pokémon's movements turn sluggish in cold places.",
     "id": 127,
-    "max_cp": 1950,
+    "max_cp": 2121,
     "height": {
       "amount": 1.5,
       "unit": "m"
@@ -6202,7 +6454,7 @@
       "amount": 55,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Stag Beetle Pokémon",
     "stamina": 130,
     "attack": 184,
@@ -6218,7 +6470,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1950,
+    "average_hp": 108
   },
   {
     "name": "Tauros",
@@ -6227,7 +6481,7 @@
     ],
     "description": "This Pokémon is not satisfied unless it is rampaging at all times. If there is no opponent for Tauros to battle, it will charge at thick trees and knock them down to calm itself.",
     "id": 128,
-    "max_cp": 1686,
+    "max_cp": 1844,
     "height": {
       "amount": 1.4,
       "unit": "m"
@@ -6236,7 +6490,7 @@
       "amount": 88.4,
       "unit": "kg"
     },
-    "max_hp": 124,
+    "max_hp": 130,
     "category": "Wild Bull Pokémon",
     "stamina": 150,
     "attack": 148,
@@ -6252,7 +6506,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1686,
+    "average_hp": 124
   },
   {
     "name": "Magikarp",
@@ -6261,7 +6517,7 @@
     ],
     "description": "Magikarp is a pathetic excuse for a Pokémon that is only capable of flopping and splashing. This behavior prompted scientists to undertake research into it.",
     "id": 129,
-    "max_cp": 203,
+    "max_cp": 262,
     "height": {
       "amount": 0.9,
       "unit": "m"
@@ -6274,7 +6530,7 @@
       "amount": 10,
       "unit": "kg"
     },
-    "max_hp": 37,
+    "max_hp": 43,
     "category": "Fish Pokémon",
     "stamina": 40,
     "attack": 42,
@@ -6309,7 +6565,9 @@
     "egg_distance": {
       "amount": 2,
       "unit": "km"
-    }
+    },
+    "average_cp": 203,
+    "average_hp": 37
   },
   {
     "name": "Gyarados",
@@ -6319,7 +6577,7 @@
     ],
     "description": "When Magikarp evolves into Gyarados, its brain cells undergo a structural transformation. It is said that this transformation is to blame for this Pokémon's wildly violent nature.",
     "id": 130,
-    "max_cp": 2498,
+    "max_cp": 2688,
     "height": {
       "amount": 6.5,
       "unit": "m"
@@ -6328,7 +6586,7 @@
       "amount": 235,
       "unit": "kg"
     },
-    "max_hp": 156,
+    "max_hp": 162,
     "category": "Atrocious Pokémon",
     "stamina": 190,
     "attack": 192,
@@ -6346,7 +6604,9 @@
         "term": "gyre",
         "meaning": "thrash and turn about"
       }
-    ]
+    ],
+    "average_cp": 2498,
+    "average_hp": 156
   },
   {
     "name": "Lapras",
@@ -6356,7 +6616,7 @@
     ],
     "description": "People have driven Lapras almost to the point of extinction. In the evenings, this Pokémon is said to sing plaintively as it seeks what few others of its kind still remain.",
     "id": 131,
-    "max_cp": 2777,
+    "max_cp": 2980,
     "height": {
       "amount": 2.5,
       "unit": "m"
@@ -6365,7 +6625,7 @@
       "amount": 220,
       "unit": "kg"
     },
-    "max_hp": 211,
+    "max_hp": 217,
     "category": "Transport Pokémon",
     "stamina": 260,
     "attack": 186,
@@ -6381,7 +6641,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 2777,
+    "average_hp": 211
   },
   {
     "name": "Ditto",
@@ -6390,7 +6652,7 @@
     ],
     "description": "Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong.",
     "id": 132,
-    "max_cp": 809,
+    "max_cp": 919,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -6399,7 +6661,7 @@
       "amount": 4,
       "unit": "kg"
     },
-    "max_hp": 81,
+    "max_hp": 87,
     "category": "Transform Pokémon",
     "stamina": 96,
     "attack": 110,
@@ -6411,7 +6673,9 @@
         "term": "ditto",
         "meaning": "a duplicate or copy"
       }
-    ]
+    ],
+    "average_cp": 809,
+    "average_hp": 81
   },
   {
     "name": "Eevee",
@@ -6420,7 +6684,7 @@
     ],
     "description": "Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives. Radiation from various stones causes this Pokémon to evolve.",
     "id": 133,
-    "max_cp": 957,
+    "max_cp": 1077,
     "height": {
       "amount": 0.3,
       "unit": "m"
@@ -6433,7 +6697,7 @@
       "amount": 6.5,
       "unit": "kg"
     },
-    "max_hp": 92,
+    "max_hp": 98,
     "category": "Evolution Pokémon",
     "stamina": 110,
     "attack": 114,
@@ -6509,7 +6773,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 957,
+    "average_hp": 92
   },
   {
     "name": "Vaporeon",
@@ -6518,7 +6784,7 @@
     ],
     "description": "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow it to live underwater. This Pokémon has the ability to freely control water.",
     "id": 134,
-    "max_cp": 2618,
+    "max_cp": 2816,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -6527,7 +6793,7 @@
       "amount": 29,
       "unit": "kg"
     },
-    "max_hp": 211,
+    "max_hp": 217,
     "category": "Bubble Jet Pokémon",
     "stamina": 260,
     "attack": 186,
@@ -6549,7 +6815,9 @@
         "term": "eon",
         "meaning": "long period of time (implying evolution)"
       }
-    ]
+    ],
+    "average_cp": 2618,
+    "average_hp": 211
   },
   {
     "name": "Jolteon",
@@ -6558,7 +6826,7 @@
     ],
     "description": "Jolteon's cells generate a low level of electricity. This power is amplified by the static electricity of its fur, enabling the Pokémon to drop thunderbolts. The bristling fur is made of electrically charged needles.",
     "id": 135,
-    "max_cp": 1968,
+    "max_cp": 2140,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -6567,7 +6835,7 @@
       "amount": 24.5,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Lightning Pokémon",
     "stamina": 130,
     "attack": 192,
@@ -6589,7 +6857,9 @@
         "term": "eon",
         "meaning": "long period of time (implying evolution)"
       }
-    ]
+    ],
+    "average_cp": 1968,
+    "average_hp": 108
   },
   {
     "name": "Flareon",
@@ -6598,7 +6868,7 @@
     ],
     "description": "Flareon's fluffy fur has a functional purpose-it releases heat into the air so that its body does not get excessively hot. This Pokémon's body temperature can rise to a maximum of 1,650 degrees Fahrenheit.",
     "id": 136,
-    "max_cp": 2448,
+    "max_cp": 2643,
     "height": {
       "amount": 0.9,
       "unit": "m"
@@ -6607,7 +6877,7 @@
       "amount": 25,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Flame Pokémon",
     "stamina": 130,
     "attack": 238,
@@ -6629,7 +6899,9 @@
         "term": "eon",
         "meaning": "long period of time (implying evolution)"
       }
-    ]
+    ],
+    "average_cp": 2448,
+    "average_hp": 108
   },
   {
     "name": "Porygon",
@@ -6638,7 +6910,7 @@
     ],
     "description": "Porygon is capable of reverting itself entirely back to program data and entering cyberspace. This Pokémon is copy-protected so it cannot be duplicated by copying.",
     "id": 137,
-    "max_cp": 1540,
+    "max_cp": 1691,
     "height": {
       "amount": 0.8,
       "unit": "m"
@@ -6647,7 +6919,7 @@
       "amount": 36.5,
       "unit": "kg"
     },
-    "max_hp": 108,
+    "max_hp": 114,
     "category": "Virtual Pokémon",
     "stamina": 130,
     "attack": 156,
@@ -6670,7 +6942,9 @@
     "egg_distance": {
       "amount": 5,
       "unit": "km"
-    }
+    },
+    "average_cp": 1540,
+    "average_hp": 108
   },
   {
     "name": "Omanyte",
@@ -6680,7 +6954,7 @@
     ],
     "description": "Omanyte is one of the ancient and long-since-extinct Pokémon that have been regenerated from fossils by people. If attacked by an enemy, it withdraws itself inside its hard shell.",
     "id": 138,
-    "max_cp": 992,
+    "max_cp": 1119,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -6693,7 +6967,7 @@
       "amount": 7.5,
       "unit": "kg"
     },
-    "max_hp": 61,
+    "max_hp": 67,
     "category": "Spiral Pokémon",
     "stamina": 70,
     "attack": 132,
@@ -6728,7 +7002,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 992,
+    "average_hp": 61
   },
   {
     "name": "Omastar",
@@ -6738,7 +7014,7 @@
     ],
     "description": "Omastar uses its tentacles to capture its prey. It is believed to have become extinct because its shell grew too large and heavy, causing its movements to become too slow and ponderous.",
     "id": 139,
-    "max_cp": 2058,
+    "max_cp": 2233,
     "height": {
       "amount": 1,
       "unit": "m"
@@ -6747,7 +7023,7 @@
       "amount": 35,
       "unit": "kg"
     },
-    "max_hp": 116,
+    "max_hp": 122,
     "category": "Spiral Pokémon",
     "stamina": 140,
     "attack": 180,
@@ -6769,7 +7045,9 @@
         "term": "star",
         "meaning": "pointed shape"
       }
-    ]
+    ],
+    "average_cp": 2058,
+    "average_hp": 116
   },
   {
     "name": "Kabuto",
@@ -6779,7 +7057,7 @@
     ],
     "description": "Kabuto is a Pokémon that has been regenerated from a fossil. However, in extremely rare cases, living examples have been discovered. The Pokémon has not changed at all for 300 million years.",
     "id": 140,
-    "max_cp": 975,
+    "max_cp": 1104,
     "height": {
       "amount": 0.5,
       "unit": "m"
@@ -6792,7 +7070,7 @@
       "amount": 11.5,
       "unit": "kg"
     },
-    "max_hp": 53,
+    "max_hp": 59,
     "category": "Shellfish Pokémon",
     "stamina": 60,
     "attack": 148,
@@ -6823,7 +7101,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 975,
+    "average_hp": 53
   },
   {
     "name": "Kabutops",
@@ -6833,7 +7113,7 @@
     ],
     "description": "Kabutops swam underwater to hunt for its prey in ancient times. The Pokémon was apparently evolving from being a water-dweller to living on land as evident from the beginnings of change in its gills and legs.",
     "id": 141,
-    "max_cp": 1957,
+    "max_cp": 2130,
     "height": {
       "amount": 1.3,
       "unit": "m"
@@ -6842,7 +7122,7 @@
       "amount": 40.5,
       "unit": "kg"
     },
-    "max_hp": 100,
+    "max_hp": 106,
     "category": "Shellfish Pokémon",
     "stamina": 120,
     "attack": 190,
@@ -6864,7 +7144,9 @@
         "term": "top",
         "meaning": "above"
       }
-    ]
+    ],
+    "average_cp": 1957,
+    "average_hp": 100
   },
   {
     "name": "Aerodactyl",
@@ -6874,7 +7156,7 @@
     ],
     "description": "Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from genetic material extracted from amber. It is imagined to have been the king of the skies in ancient times.",
     "id": 142,
-    "max_cp": 1994,
+    "max_cp": 2165,
     "height": {
       "amount": 1.8,
       "unit": "m"
@@ -6883,7 +7165,7 @@
       "amount": 59,
       "unit": "kg"
     },
-    "max_hp": 132,
+    "max_hp": 138,
     "category": "Fossil Pokémon",
     "stamina": 160,
     "attack": 182,
@@ -6903,7 +7185,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 1994,
+    "average_hp": 132
   },
   {
     "name": "Snorlax",
@@ -6912,7 +7196,7 @@
     ],
     "description": "Snorlax's typical day consists of nothing more than eating and sleeping. It is such a docile Pokémon that there are children who use its expansive belly as a place to play.",
     "id": 143,
-    "max_cp": 2901,
+    "max_cp": 3112,
     "height": {
       "amount": 2.1,
       "unit": "m"
@@ -6921,7 +7205,7 @@
       "amount": 460,
       "unit": "kg"
     },
-    "max_hp": 258,
+    "max_hp": 264,
     "category": "Sleeping Pokémon",
     "stamina": 320,
     "attack": 180,
@@ -6947,7 +7231,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 2901,
+    "average_hp": 258
   },
   {
     "name": "Articuno",
@@ -6957,7 +7243,7 @@
     ],
     "description": "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.",
     "id": 144,
-    "max_cp": 2776,
+    "max_cp": 2978,
     "height": {
       "amount": 1.7,
       "unit": "m"
@@ -6966,7 +7252,7 @@
       "amount": 55.4,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Freeze Pokémon",
     "stamina": 180,
     "attack": 198,
@@ -6982,7 +7268,9 @@
         "term": "uno",
         "meaning": "Spanish for one"
       }
-    ]
+    ],
+    "average_cp": 2776,
+    "average_hp": 148
   },
   {
     "name": "Zapdos",
@@ -6992,7 +7280,7 @@
     ],
     "description": "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.",
     "id": 145,
-    "max_cp": 2907,
+    "max_cp": 3114,
     "height": {
       "amount": 1.6,
       "unit": "m"
@@ -7001,7 +7289,7 @@
       "amount": 52.6,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Electric Pokémon",
     "stamina": 180,
     "attack": 232,
@@ -7017,7 +7305,9 @@
         "term": "dos",
         "meaning": "Spanish for two"
       }
-    ]
+    ],
+    "average_cp": 2907,
+    "average_hp": 148
   },
   {
     "name": "Moltres",
@@ -7027,7 +7317,7 @@
     ],
     "description": "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.",
     "id": 146,
-    "max_cp": 3028,
+    "max_cp": 3240,
     "height": {
       "amount": 2,
       "unit": "m"
@@ -7036,7 +7326,7 @@
       "amount": 60,
       "unit": "kg"
     },
-    "max_hp": 148,
+    "max_hp": 154,
     "category": "Flame Pokémon",
     "stamina": 180,
     "attack": 242,
@@ -7052,7 +7342,9 @@
         "term": "tres",
         "meaning": "Spanish for three"
       }
-    ]
+    ],
+    "average_cp": 3028,
+    "average_hp": 148
   },
   {
     "name": "Dratini",
@@ -7061,7 +7353,7 @@
     ],
     "description": "Dratini continually molts and sloughs off its old skin. It does so because the life energy within its body steadily builds to reach uncontrollable levels.",
     "id": 147,
-    "max_cp": 867,
+    "max_cp": 983,
     "height": {
       "amount": 1.8,
       "unit": "m"
@@ -7074,7 +7366,7 @@
       "amount": 3.3,
       "unit": "kg"
     },
-    "max_hp": 70,
+    "max_hp": 76,
     "category": "Dragon Pokémon",
     "stamina": 82,
     "attack": 128,
@@ -7110,7 +7402,9 @@
     "egg_distance": {
       "amount": 10,
       "unit": "km"
-    }
+    },
+    "average_cp": 867,
+    "average_hp": 70
   },
   {
     "name": "Dragonair",
@@ -7119,7 +7413,7 @@
     ],
     "description": "Dragonair stores an enormous amount of energy inside its body. It is said to alter weather conditions in its vicinity by discharging energy from its crystals on its neck and tail.",
     "id": 148,
-    "max_cp": 1593,
+    "max_cp": 1747,
     "height": {
       "amount": 4,
       "unit": "m"
@@ -7132,7 +7426,7 @@
       "amount": 16.5,
       "unit": "kg"
     },
-    "max_hp": 102,
+    "max_hp": 108,
     "category": "Dragon Pokémon",
     "stamina": 122,
     "attack": 170,
@@ -7164,7 +7458,9 @@
         "term": "air",
         "meaning": "relating to its majesty"
       }
-    ]
+    ],
+    "average_cp": 1593,
+    "average_hp": 102
   },
   {
     "name": "Dragonite",
@@ -7174,7 +7470,7 @@
     ],
     "description": "Dragonite is capable of circling the globe in just 16 hours. It is a kindhearted Pokémon that leads lost and foundering ships in a storm to the safety of land.",
     "id": 149,
-    "max_cp": 3280,
+    "max_cp": 3500,
     "height": {
       "amount": 2.2,
       "unit": "m"
@@ -7183,7 +7479,7 @@
       "amount": 210,
       "unit": "kg"
     },
-    "max_hp": 149,
+    "max_hp": 155,
     "category": "Dragon Pokémon",
     "stamina": 182,
     "attack": 250,
@@ -7206,7 +7502,9 @@
         "term": "knight",
         "meaning": "noble cavalier"
       }
-    ]
+    ],
+    "average_cp": 3280,
+    "average_hp": 149
   },
   {
     "name": "Mewtwo",
@@ -7215,7 +7513,7 @@
     ],
     "description": "Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon's body, they failed to endow Mewtwo with a compassionate heart.",
     "id": 150,
-    "max_cp": 3904,
+    "max_cp": 4144,
     "height": {
       "amount": 2,
       "unit": "m"
@@ -7224,7 +7522,7 @@
       "amount": 122,
       "unit": "kg"
     },
-    "max_hp": 173,
+    "max_hp": 179,
     "category": "Genetic Pokémon",
     "stamina": 212,
     "attack": 284,
@@ -7240,7 +7538,9 @@
         "term": "two",
         "meaning": "the second iteration of Mew"
       }
-    ]
+    ],
+    "average_cp": 3904,
+    "average_hp": 173
   },
   {
     "name": "Mew",
@@ -7249,7 +7549,7 @@
     ],
     "description": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
     "id": 151,
-    "max_cp": 3087,
+    "max_cp": 3299,
     "height": {
       "amount": 0.4,
       "unit": "m"
@@ -7258,7 +7558,7 @@
       "amount": 4,
       "unit": "kg"
     },
-    "max_hp": 163,
+    "max_hp": 169,
     "category": "New Species Pokémon",
     "stamina": 200,
     "attack": 220,
@@ -7270,6 +7570,8 @@
         "term": "mew",
         "meaning": "cat sound"
       }
-    ]
+    ],
+    "average_cp": 3087,
+    "average_hp": 163
   }
 ]

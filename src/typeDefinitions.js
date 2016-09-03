@@ -28,7 +28,31 @@ export type Pokemon = {
   types: Array<PokemonType>;
   category: string;
   description: string;
+  name_origin: Array<{
+    term: string;
+    meaning: string;
+  }>;
+  height: {
+    amount: number;
+    unit: 'm' | 'cm';
+  };
+  weight: {
+    amount: number;
+    unit: 'g' | 'kg';
+  };
+  average_cp: number;
+  average_hp: number;
   max_cp: number;
+  max_hp: number;
+  stamina: number;
+  attack: number;
+  defense: number;
+  capture_rate: number;
+  flee_rate: number;
+  egg_distance?: {
+    amount: number;
+    unit: 'km';
+  };
   evolution_chains?: Array<Array<PokemonID>>;
   evolution_requirements: {
     amount: number;
@@ -41,28 +65,6 @@ export type Pokemon = {
       maximum: number;
     };
   }>;
-  name_origin: Array<{
-    term: string;
-    meaning: string;
-  }>;
-  egg_distance?: {
-    amount: number;
-    unit: 'km';
-  };
-  height: {
-    amount: number;
-    unit: 'm' | 'cm';
-  };
-  weight: {
-    amount: number;
-    unit: 'g' | 'kg';
-  };
-  max_hp: number;
-  stamina: number;
-  attack: number;
-  defense: number;
-  capture_rate: number;
-  flee_rate: number;
   easter_eggs?: Array<string>;
 }
 
