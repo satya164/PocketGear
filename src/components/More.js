@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   card: {
     height: 167,
     borderRadius: 2,
-    backgroundColor: '#e7e7e7',
+    backgroundColor: '#f0f0f0',
   },
 
   center: {
@@ -25,20 +25,20 @@ const styles = StyleSheet.create({
     height: 36,
     width: 36,
     borderRadius: 18,
-    backgroundColor: 'rgba(0, 0, 0, .06)',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   icon: {
-    color: 'rgba(0, 0, 0, .5)',
+    color: '#222',
   },
 
   more: {
     fontFamily: 'Montserrat',
     fontSize: 9,
     fontWeight: 'bold',
-    color: 'rgba(0, 0, 0, .5)',
+    color: '#222',
     marginVertical: 4,
   },
 });
