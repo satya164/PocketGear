@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
 
   strong: {
-    fontWeight: 'bold',
+    fontFamily: 'MontserratBold',
   },
 
   row: {

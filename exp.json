@@ -1,0 +1,20 @@
+{
+  "name": "PocketGear",
+  "description": "PocketGear is a clean and simple Pokédex app for Pokémon GO you'll ever need, made by Pokémon enthusiasts to help you trainers get the best out of your Pokémons.",
+  "slug": "pocketgear",
+  "sdkVersion": "10.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#D85D61",
+  "iconUrl": "https://s3.amazonaws.com/exp-us-standard/icons/pocket-gear.png",
+  "loading": {
+    "iconUrl": "https://s3.amazonaws.com/exp-us-standard/icons/pocket-gear.png",
+    "hideExponentText": false
+  },
+  "androidStatusBarColor": "#000000",
+  "packagerOpts": {
+    "assetExts": [
+      "ttf", "otf",
+    ]
+  }
+}

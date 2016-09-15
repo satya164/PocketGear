@@ -24,18 +24,16 @@ const styles = StyleSheet.create({
   },
 
   list: {
-    paddingTop: Platform.OS === 'ios' ? 64 : 60,
+    paddingTop: Platform.OS === 'android' ? 85 : 65,
   },
 
   searchbar: {
     position: 'absolute',
+    elevation: 2,
     top: 0,
     left: 0,
     right: 0,
-    ...(Platform.OS === 'ios' ? {
-      paddingTop: 20,
-      backgroundColor: '#fafafa',
-    } : null),
+    backgroundColor: '#fafafa',
   },
 });
 

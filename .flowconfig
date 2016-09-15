@@ -34,8 +34,13 @@ flow/
 [options]
 module.system=haste
 
+esproposal.decorators=ignore
 esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable
+esproposal.export_star_as=enable
+
+experimental.strict_type_args=true
+
 
 experimental.strict_type_args=true
 

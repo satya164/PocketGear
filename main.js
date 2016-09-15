@@ -1,6 +1,7 @@
 /* @flow */
 
+import Exponent from 'exponent';
 import { AppRegistry } from 'react-native';
 import Home from './src/components/Home';
 
-AppRegistry.registerComponent('PocketGear', () => Home);
+Exponent.registerRootComponent(Home);
