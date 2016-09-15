@@ -11,13 +11,15 @@
   },
   "dependencies": {
     "lodash": "^4.15.0",
-    "react": "~15.3.1",
+    "react": "15.3.1",
     "react-addons-shallow-compare": "~15.3.1",
-    "react-native": "^0.33.0",
+    "react-native": "github:exponentjs/react-native#sdk-10.0.1",
     "react-native-search-bar": "^2.16.0",
     "react-native-tab-view": "0.0.28",
     "react-native-uuid": "^1.4.8",
-    "react-native-vector-icons": "^2.1.0"
+    "react-native-vector-icons": "github:exponentjs/react-native-vector-icons",
+    "@exponent/vector-icons": "^1.0.1",
+    "exponent": "^10.0.0"
   },
   "devDependencies": {
     "ava": "^0.16.0",
@@ -47,5 +49,6 @@
       "react-native-mock/mock"
     ],
     "babel": "inherit"
-  }
+  },
+  "main": "main.js"
 }

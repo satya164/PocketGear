@@ -23,8 +23,7 @@ const styles = StyleSheet.create({
 
   text: {
     color: '#000',
-    fontFamily: 'Montserrat',
-    fontWeight: 'bold',
+    fontFamily: 'MontserratBold',
     fontSize: 11,
     opacity: 0.5,
   },
