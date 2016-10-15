@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
 
 type Route = {
   key: string;
-  title: string;
+  title?: string;
 }
 
 type Props = {
@@ -159,7 +159,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
   };
 
   _renderLabel = ({ route }: { route: Route }) => {
-    return <Text style={styles.tablabel}>{route.title.toUpperCase()}</Text>;
+    return <Text style={styles.tablabel}>{route.title && route.title.toUpperCase()}</Text>;
   }
 
   _renderHeader = (props: any) => {

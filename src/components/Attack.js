@@ -81,7 +81,7 @@ export default class Attack extends Component<void, Props, void> {
             {attack.type}
           </Text>
         </View>
-        {attack.energy_requirement ? Array.from({ length: attack.energy_requirement }).map((_, i) => {
+        {typeof (attack: any).energy_requirement === 'number' ? Array.from({ length: (attack: any).energy_requirement }).map((_, i) => {
           return <View key={i} style={styles.energy} />;
         }) : <View style={styles.spacer} />}
         <View style={styles.damage}>

@@ -80,6 +80,9 @@ export default class WeakAgainstList extends Component<void, Props, State> {
 
   _updateData = () => {
     const pokemon = store.getPokemons().find(p => p.id === this.props.pokemonId);
+    if (!pokemon) {
+      return;
+    }
     const pokemons = getWeakAgainstPokemons(pokemon);
     this.setState({
       data: { pokemons },
@@ -89,6 +92,9 @@ export default class WeakAgainstList extends Component<void, Props, State> {
 
   render() {
     const pokemon = store.getPokemons().find(p => p.id === this.props.pokemonId);
+    if (!pokemon) {
+      return null;
+    }
     return (
       <View style={styles.container}>
         <Appbar onNavigate={this.props.onNavigate}>

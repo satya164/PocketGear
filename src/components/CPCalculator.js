@@ -130,6 +130,9 @@ export default class CPCalculator extends Component<void, Props, State> {
             const minimum = (this.state.value || 0) * it.multipliers.minimum;
             const maximum = (this.state.value || 0) * it.multipliers.maximum;
             const average = (minimum + maximum) / 2;
+            if (!poke) {
+              return null;
+            }
             return (
               <TouchableOpacity key={it.id} onPress={() => this._goToPokemon(it.id)}>
                 <View style={styles.pokemon}>

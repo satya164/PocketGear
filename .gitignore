@@ -30,6 +30,10 @@ project.xcworkspace
 .gradle
 local.properties
 
+# VSCode
+.vscode/
+tsconfig.json
+
 # node.js
 #
 node_modules/
