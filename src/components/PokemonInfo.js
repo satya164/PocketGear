@@ -12,7 +12,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import { TabViewAnimated, TabViewPage, TabBarTop } from 'react-native-tab-view';
+import { TabViewAnimated, TabBarTop } from 'react-native-tab-view';
 import Appbar from './Appbar';
 import PokemonTypeLabel from './PokemonTypeLabel';
 import Placeholder from './Placeholder';
@@ -191,10 +191,6 @@ export default class PokemonInfo extends Component<void, Props, State> {
     }
   };
 
-  _renderPage = (props: any) => {
-    return <TabViewPage {...props} renderScene={this._renderScene} />;
-  };
-
   render() {
     const pokemon = this._getPokemon(this.props.pokemonId);
     const sprite = store.getSprite(this.props.pokemonId);
@@ -218,7 +214,7 @@ export default class PokemonInfo extends Component<void, Props, State> {
         <TabViewAnimated
           style={styles.tabview}
           navigationState={this.state}
-          renderScene={this._renderPage}
+          renderScene={this._renderScene}
           renderHeader={this._renderHeader}
           onRequestChangeTab={this._handleChangeTab}
         />

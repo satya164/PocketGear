@@ -1,4 +1,5 @@
-import test from 'ava';
+/* eslint-env jest */
+
 import findClosestMatch from '../findClosestMatch';
 
 const pokemons = [
@@ -28,7 +29,7 @@ const pokemons = [
   },
 ];
 
-test('should match if stats are same', t => {
+test('should match if stats are same', () => {
   const pokemon = {
     id: 5,
     attack: 138,
@@ -37,13 +38,13 @@ test('should match if stats are same', t => {
   };
   const strong = findClosestMatch(pokemons, pokemon, false);
   const weak = findClosestMatch(pokemons, pokemon, true);
-  t.notDeepEqual(strong, pokemon);
-  t.notDeepEqual(weak, pokemon);
-  t.deepEqual({ ...strong, id: 5 }, pokemon);
-  t.deepEqual({ ...weak, id: 5 }, pokemon);
+  expect(strong).not.toEqual(pokemon);
+  expect(weak).not.toEqual(pokemon);
+  expect({ ...strong, id: 5 }).toEqual(pokemon);
+  expect({ ...weak, id: 5 }).toEqual(pokemon);
 });
 
-test('should match closest stronger pokemon', t => {
+test('should match closest stronger pokemon', () => {
   const pokemon = {
     id: 5,
     attack: 124,
@@ -51,10 +52,10 @@ test('should match closest stronger pokemon', t => {
     stamina: 82,
   };
   const match = findClosestMatch(pokemons, pokemon, true);
-  t.is(match, pokemons.find(p => p.id === 4));
+  expect(match).toBe(pokemons.find(p => p.id === 4));
 });
 
-test('should match closest weaker pokemon', t => {
+test('should match closest weaker pokemon', () => {
   const pokemon = {
     id: 5,
     attack: 108,
@@ -62,10 +63,10 @@ test('should match closest weaker pokemon', t => {
     stamina: 53,
   };
   const match = findClosestMatch(pokemons, pokemon, false);
-  t.is(match, pokemons.find(p => p.id === 2));
+  expect(match).toBe(pokemons.find(p => p.id === 2));
 });
 
-test('should match strongest pokemon if stronger than all', t => {
+test('should match strongest pokemon if stronger than all', () => {
   const pokemon = {
     id: 5,
     attack: 210,
@@ -73,10 +74,10 @@ test('should match strongest pokemon if stronger than all', t => {
     stamina: 158,
   };
   const match = findClosestMatch(pokemons, pokemon, false);
-  t.is(match, pokemons.find(p => p.id === 1));
+  expect(match).toBe(pokemons.find(p => p.id === 1));
 });
 
-test('should match weakest pokemon if weaker than all', t => {
+test('should match weakest pokemon if weaker than all', () => {
   const pokemon = {
     id: 5,
     attack: 104,
@@ -84,5 +85,5 @@ test('should match weakest pokemon if weaker than all', t => {
     stamina: 72,
   };
   const match = findClosestMatch(pokemons, pokemon, true);
-  t.is(match, pokemons.find(p => p.id === 2));
+  expect(match).toBe(pokemons.find(p => p.id === 2));
 });

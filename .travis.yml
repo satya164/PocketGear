@@ -12,5 +12,6 @@ install:
   - yarn
 before_script:
   - npm run flow -- check
+  - npm run lint
 after_success:
   - npm run coverage

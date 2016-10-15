@@ -1,7 +1,8 @@
-import test from 'ava';
+/* eslint-env jest */
+
 import compareStrength from '../compareStrength';
 
-test('should compare strength', t => {
+test('should compare strength', () => {
   const a = {
     attack: 190,
     defense: 200,
@@ -12,5 +13,5 @@ test('should compare strength', t => {
     defense: 108,
     stamina: 78,
   };
-  t.true(compareStrength(a, b) > 0);
+  expect(compareStrength(a, b)).toBeGreaterThan(0);
 });

@@ -6,45 +6,35 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint .",
     "flow": "flow",
-    "test": "nyc ava",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "jest",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "lodash": "^4.16.4",
     "react": "~15.3.2",
     "react-addons-shallow-compare": "~15.3.2",
     "react-native": "^0.35.0",
-    "react-native-tab-view": "^0.0.33",
+    "react-native-tab-view": "^0.0.34",
     "react-native-uuid": "^1.4.8",
     "react-native-vector-icons": "^2.1.0"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
     "babel-eslint": "^7.0.0",
+    "babel-jest": "^16.0.0",
     "babel-preset-react-native": "^1.9.0",
     "coveralls": "^2.11.14",
     "eslint": "^3.8.0",
-    "eslint-plugin-ava": "^3.1.1",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-react": "^6.4.1",
     "eslint-plugin-react-native": "^2.0.0",
     "flow-bin": "^0.32.0",
-    "mock-require-assets": "^0.0.1",
-    "mockery": "^2.0.0",
-    "nyc": "^8.3.1",
-    "react-native-mock": "^0.2.7"
+    "jest": "^16.0.1",
+    "jest-react-native": "^16.0.0",
+    "react-test-renderer": "^15.3.2"
   },
-  "ava": {
-    "files": [
-      "**/*.test.js"
-    ],
-    "require": [
-      "babel-register",
-      "babel-polyfill",
-      "mock-require-assets",
-      "react-native-mock/mock"
-    ],
-    "babel": "inherit"
+  "jest": {
+    "preset": "jest-react-native",
+    "collectCoverage": true
   }
 }

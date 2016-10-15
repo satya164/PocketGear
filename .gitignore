@@ -40,7 +40,7 @@ node_modules/
 npm-debug.log
 
 # Istanbul
-.nyc_output/
+coverage/
 
 # BUCK
 buck-out/
