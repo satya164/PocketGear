@@ -2,7 +2,7 @@
 
 PocketGear is a clean and simple Pokédex app for Pokémon GO you'll ever need, made by Pokémon enthusiasts to help you trainers get the best out of your Pokémons.
 
-[Download for iOS](https://itunes.apple.com/in/app/pokedb/id1143037838) | [Download for Android](https://play.google.com/store/apps/details?id=com.wibblystuff.poke)
+[Download for iOS](https://itunes.apple.com/in/app/pokedb/id1143037838) | [Download for Android](https://play.google.com/store/apps/details?id=com.wibblystuff.gear)
 
 ## Features
 - Search and get details on any Generation I Pokémon

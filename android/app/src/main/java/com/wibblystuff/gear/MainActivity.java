@@ -1,4 +1,4 @@
-package com.wibblystuff.poke;
+package com.wibblystuff.gear;
 
 import android.os.Bundle;
 
