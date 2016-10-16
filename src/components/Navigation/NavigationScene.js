@@ -86,10 +86,7 @@ export default class Scene extends Component<void, Props, void> {
           NavigationCard.CardStackStyleInterpolator.forVertical(this.props) :
           undefined
         }
-        panHandlers={routeDesc.type === 'modal' ?
-          NavigationCard.CardStackPanResponder.forVertical(this.props) :
-          undefined
-        }
+        panHandlers={null}
         renderScene={this._renderScene}
         onNavigateBack={this.props.onNavigateBack}
       />
