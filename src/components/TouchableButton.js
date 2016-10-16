@@ -1,9 +1,7 @@
 /* @flow */
 
 import React, { PropTypes, Component } from 'react';
-import {
-  TouchableOpacity,
-} from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
 type Props = {
   onPress: Function;

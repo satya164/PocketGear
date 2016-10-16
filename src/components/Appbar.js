@@ -5,11 +5,11 @@ import {
   Platform,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import TouchableItem from './TouchableItem';
 import AppbarShell from './AppbarShell';
 
 const styles = StyleSheet.create({
@@ -59,7 +59,11 @@ export default class Appbar extends Component<void, Props, void> {
   render() {
     return (
       <AppbarShell {...this.props}>
-        <TouchableOpacity style={styles.button} onPress={this._handleGoBack}>
+        <TouchableItem
+          borderless
+          style={styles.button}
+          onPress={this._handleGoBack}
+        >
           {Platform.OS === 'ios' ?
             <EvilIcons
               name='chevron-left'
@@ -72,7 +76,7 @@ export default class Appbar extends Component<void, Props, void> {
               style={styles.icon}
             />
           }
-        </TouchableOpacity>
+        </TouchableItem>
         <View style={styles.content}>
           {typeof this.props.children === 'string' ?
             <Text numberOfLines={1} style={styles.title}>

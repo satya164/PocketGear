@@ -5,9 +5,9 @@ import {
   View,
   Image,
   Text,
-  TouchableOpacity,
   StyleSheet,
 } from 'react-native';
+import TouchableItem from './TouchableItem';
 import store from '../store';
 import type {
   Pokemon,
@@ -85,7 +85,7 @@ export default class PokemonListCard extends Component<void, Props, void> {
     const sprite = store.getSprite(pokemon.id);
 
     return (
-      <TouchableOpacity
+      <TouchableItem
         key={pokemon.name}
         onPress={this._handlePress}
         activeOpacity={0.7}
@@ -95,7 +95,7 @@ export default class PokemonListCard extends Component<void, Props, void> {
         <Image source={sprite} style={styles.image} />
         <Text style={styles.title}>{pokemon.name}</Text>
         <Text style={styles.subtitle}>{types}</Text>
-      </TouchableOpacity>
+      </TouchableItem>
     );
   }
 }
