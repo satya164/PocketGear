@@ -11,9 +11,9 @@ import {
 const LOLLIPOP = 21;
 
 type Props = {
-  delayPressIn?: number;
+  delayPressIn: number;
+  pressColor: string;
   borderless?: boolean;
-  pressColor?: string;
   children?: React.Element<any>;
   style?: any;
 }
