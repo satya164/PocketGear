@@ -128,6 +128,7 @@ export default class GridView extends Component<DefaultProps, Props, State> {
     return (
       <ListView
         {...this.props}
+        removeClippedSubviews={false}
         enableEmptySections={false}
         dataSource={this.state.dataSource}
         onLayout={this._handleLayout}

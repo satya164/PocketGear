@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: Platform.OS === 'ios' ? 32 : 56,
     paddingRight: 8,
     borderRadius: 5,
-    backgroundColor: '#fff',
+    backgroundColor: Platform.OS === 'ios' ? '#fafafa' : '#fff',
   },
 });
 

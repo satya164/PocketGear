@@ -18,8 +18,15 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === 'ios' ? 20 : 0,
     backgroundColor: '#fff',
     elevation: 2,
+    shadowColor: 'black',
+    shadowOpacity: 0.1,
+    shadowRadius: StyleSheet.hairlineWidth,
+    shadowOffset: {
+      height: StyleSheet.hairlineWidth,
+    },
     borderBottomColor: 'rgba(0, 0, 0, 0.16)',
-    borderBottomWidth: Platform.OS === 'android' && Platform.Version >= LOLLIPOP ? 0 : StyleSheet.hairlineWidth,
+    borderBottomWidth: Platform.OS === 'android' && Platform.Version < LOLLIPOP ? StyleSheet.hairlineWidth : 0,
+    zIndex: 1,
   },
 });
 

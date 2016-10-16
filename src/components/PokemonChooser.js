@@ -4,9 +4,9 @@ import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
 import React, { PropTypes, Component } from 'react';
 import {
+  View,
   KeyboardAvoidingView,
   StyleSheet,
-  Platform,
 } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
@@ -17,13 +17,18 @@ import type {
 } from '../typeDefinitions';
 
 const styles = StyleSheet.create({
-  page: {
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+
+  content: {
     flex: 1,
     backgroundColor: '#fafafa',
   },
 
   searchbar: {
-    backgroundColor: Platform.OS === 'ios' ? '#fafafa' : '#fff',
+    backgroundColor: '#fff',
   },
 });
 
@@ -102,27 +107,29 @@ export default class PokemonChooser extends Component<void, Props, State> {
 
   render() {
     return (
-      <KeyboardAvoidingView style={styles.page}>
+      <KeyboardAvoidingView style={styles.container}>
         <SearchBar
           placeholder='Find Pokémon by name, type or index'
           value={this.state.query}
           onChangeSearch={this._handleSearchChange}
           style={styles.searchbar}
         />
-        {this.state.results.pokemons.length ?
-          <PokemonList
-            scrollsToTop
-            keyboardShouldPersistTaps
-            data={this.state.results}
-            onNavigate={this.props.onNavigate}
-            ref={this._setRef}
-          /> :
-          <NoResults
-            label='No Pokémon found'
-            source={require('../../assets/images/open-pokeball.png')}
-            ref={this._unsetRef}
-          />
-        }
+        <View style={styles.content}>
+          {this.state.results.pokemons.length ?
+            <PokemonList
+              scrollsToTop
+              keyboardShouldPersistTaps
+              data={this.state.results}
+              onNavigate={this.props.onNavigate}
+              ref={this._setRef}
+            /> :
+            <NoResults
+              label='No Pokémon found'
+              source={require('../../assets/images/open-pokeball.png')}
+              ref={this._unsetRef}
+            />
+          }
+        </View>
       </KeyboardAvoidingView>
     );
   }

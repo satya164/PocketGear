@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
   appbar: {
     elevation: 0,
     borderBottomWidth: 0,
+    shadowOpacity: 0,
   },
 
   image: {
@@ -85,7 +86,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     elevation: 1,
     borderBottomColor: 'rgba(0, 0, 0, 0.16)',
-    borderBottomWidth: Platform.OS === 'android' && Platform.Version >= LOLLIPOP ? 0 : StyleSheet.hairlineWidth,
+    borderBottomWidth: Platform.OS === 'android' && Platform.Version < LOLLIPOP ? StyleSheet.hairlineWidth : 0,
   },
 
   tablabel: {
