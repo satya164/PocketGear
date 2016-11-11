@@ -8,7 +8,7 @@ import routeMapper from './Navigation/routeMapper';
 
 const PERSISTANCE_KEY = process.env.NODE_ENV !== 'production' ? 'FLAT_PERSISTENCE_0' : null;
 
-export default class Home extends Component<void, void, void> {
+export default class Home extends Component<void, *, void> {
   _renderScene = (props: any) => {
     return (
       <NavigationScene

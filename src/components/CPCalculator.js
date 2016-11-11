@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
   },
 
   amount: {
+    fontFamily: 'MontserratBold',
     fontSize: 18,
-    fontWeight: 'bold',
     margin: 4,
   },
 

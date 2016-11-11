@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 export default function Placeholder() {
   return (
     <View style={styles.container}>
-      <ActivityIndicator size='small' />
+      <ActivityIndicator size='small' color='#000' />
     </View>
   );
 }

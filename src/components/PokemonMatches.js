@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
 
   heading: {
     color: '#000',
-    fontFamily: 'Montserrat',
-    fontWeight: 'bold',
+    fontFamily: 'MontserratBold',
     fontSize: 11,
     opacity: 0.5,
     margin: 4,

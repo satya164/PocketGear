@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
 
   name: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'MontserratBold',
     marginVertical: 4,
   },
 
@@ -91,9 +91,8 @@ const styles = StyleSheet.create({
 
   tablabel: {
     color: '#222',
-    fontFamily: 'Montserrat',
+    fontFamily: 'MontserratBold',
     fontSize: 10,
-    fontWeight: 'bold',
     marginVertical: 8,
   },
 
