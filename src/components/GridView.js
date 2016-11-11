@@ -72,13 +72,17 @@ export default class GridView extends Component<DefaultProps, Props, State> {
 
   componentWillMount() {
     this.setState({
-      dataSource: this.state.dataSource.cloneWithRowsAndSections(this.props.data),
+      dataSource: this.state.dataSource.cloneWithRowsAndSections(
+        this._processData(this.state.containerWidth, this.props)
+      ),
     });
   }
 
   componentWillReceiveProps(nextProps: Props) {
     this.setState({
-      dataSource: this.state.dataSource.cloneWithRowsAndSections(nextProps.data),
+      dataSource: this.state.dataSource.cloneWithRowsAndSections(
+        this._processData(this.state.containerWidth, nextProps)
+      ),
     });
   }
 
@@ -98,18 +102,27 @@ export default class GridView extends Component<DefaultProps, Props, State> {
   };
 
   _renderRow = (rowData: any, sectionID: string, rowID: string, highlightRow: boolean) => {
-    const { containerWidth } = this.state;
-    const { spacing, getNumberOfColumns } = this.props;
     return (
-      <View
-        style={{
-          margin: spacing / 2,
-          width: ((containerWidth - spacing) / getNumberOfColumns(containerWidth)) - spacing,
-        }}
-      >
-        {this.props.renderRow(rowData, sectionID, rowID, highlightRow)}
+      <View style={rowData.style}>
+        {this.props.renderRow(rowData.tile, sectionID, rowID, highlightRow)}
       </View>
     );
+  };
+
+  _processData = (containerWidth: number, props: Props) => {
+    const { getNumberOfColumns, spacing, data } = props;
+    const style = {
+      width: ((containerWidth - spacing) / getNumberOfColumns(containerWidth)) - spacing,
+      margin: spacing / 2,
+    };
+    const nextData = {};
+    for (const prop in data) {
+      nextData[prop] = data[prop].map(tile => ({
+        tile,
+        style,
+      }));
+    }
+    return nextData;
   };
 
   _handleLayout = (e: any) => {
@@ -117,8 +130,17 @@ export default class GridView extends Component<DefaultProps, Props, State> {
       this.props.onLayout(e);
     }
 
+    if (this.state.containerWidth === e.nativeEvent.layout.width) {
+      return;
+    }
+
+    const containerWidth = e.nativeEvent.layout.width;
+
     this.setState({
-      containerWidth: e.nativeEvent.layout.width,
+      containerWidth,
+      dataSource: this.state.dataSource.cloneWithRowsAndSections(
+        this._processData(containerWidth, this.props)
+      ),
     });
   };
 
