@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
   StyleSheet,
@@ -29,7 +29,7 @@ type DefaultProps = {
   fillColor: string;
 }
 
-export default class ProgressBar extends Component<DefaultProps, Props, void> {
+export default class ProgressBar extends PureComponent<DefaultProps, Props, void> {
 
   static propTypes = {
     ratio: PropTypes.number.isRequired,

@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
   Text,
@@ -62,7 +62,7 @@ type Props = {
   attack: QuickAttack | SpecialAttack;
 }
 
-export default class Attack extends Component<void, Props, void> {
+export default class Attack extends PureComponent<void, Props, void> {
 
   static propTypes = {
     attack: PropTypes.object.isRequired,

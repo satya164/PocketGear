@@ -1,13 +1,12 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
   Text,
   StyleSheet,
   InteractionManager,
 } from 'react-native';
-import shallowCompare from 'react-addons-shallow-compare';
 import Placeholder from './Placeholder';
 import Appbar from './Appbar';
 import PokemonList from './PokemonList';
@@ -56,7 +55,7 @@ type State = {
   loading: boolean;
 }
 
-export default class WeakAgainstList extends Component<void, Props, State> {
+export default class WeakAgainstList extends PureComponent<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
@@ -72,10 +71,6 @@ export default class WeakAgainstList extends Component<void, Props, State> {
 
   componentWillMount() {
     InteractionManager.runAfterInteractions(this._updateData);
-  }
-
-  shouldComponentUpdate(nextProps: Props, nextState: State) {
-    return shallowCompare(this, nextProps, nextState);
   }
 
   _updateData = () => {

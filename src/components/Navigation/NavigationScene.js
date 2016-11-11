@@ -1,7 +1,7 @@
 /* @flow */
 /* eslint-disable no-undefined */
 
-import React, { Component, PropTypes } from 'react';
+import React, { PureComponent, PropTypes } from 'react';
 import {
   View,
   StyleSheet,
@@ -41,7 +41,7 @@ export type RouteDescription = {
   component: ReactClass<any>;
 }
 
-export default class Scene extends Component<void, Props, void> {
+export default class Scene extends PureComponent<void, Props, void> {
   static propTypes = {
     scene: PropTypes.shape({
       index: PropTypes.number.isRequired,

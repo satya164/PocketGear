@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   Platform,
   StyleSheet,
@@ -35,7 +35,7 @@ type Props = {
   children?: any;
 }
 
-export default class AppbarShell extends Component<void, Props, void> {
+export default class AppbarShell extends PureComponent<void, Props, void> {
 
   static propTypes = {
     children: PropTypes.node.isRequired,

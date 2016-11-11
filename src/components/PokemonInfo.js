@@ -2,7 +2,7 @@
 
 import find from 'lodash/find';
 import memoize from 'lodash/memoize';
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   Image,
   InteractionManager,
@@ -118,7 +118,7 @@ type State = {
   loading: boolean;
 }
 
-export default class PokemonInfo extends Component<void, Props, State> {
+export default class PokemonInfo extends PureComponent<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,

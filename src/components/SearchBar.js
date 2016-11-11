@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   Platform,
   TextInput,
@@ -54,7 +54,7 @@ type Props = {
   style?: any;
 }
 
-export default class SearchBar extends Component<void, Props, void> {
+export default class SearchBar extends PureComponent<void, Props, void> {
 
   static propTypes = {
     placeholder: PropTypes.string,

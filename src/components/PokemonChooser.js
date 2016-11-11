@@ -2,7 +2,7 @@
 
 import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
   KeyboardAvoidingView,
@@ -43,7 +43,7 @@ type Props = {
   onNavigate: Function;
 }
 
-export default class PokemonChooser extends Component<void, Props, State> {
+export default class PokemonChooser extends PureComponent<void, Props, State> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,

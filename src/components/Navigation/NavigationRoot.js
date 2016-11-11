@@ -1,6 +1,6 @@
 /* @flow */
 
-import { Component, PropTypes } from 'react';
+import { PureComponent, PropTypes } from 'react';
 import { AsyncStorage } from 'react-native';
 import dismissKeyboard from 'react-native/Libraries/Utilities/dismissKeyboard';
 import { v4 } from 'react-native-uuid';
@@ -18,7 +18,7 @@ type State = {
   navigation: NavigationState;
 }
 
-export default class NavigationRoot extends Component<void, Props, State> {
+export default class NavigationRoot extends PureComponent<void, Props, State> {
   static propTypes = {
     renderNavigator: PropTypes.func.isRequired,
   };

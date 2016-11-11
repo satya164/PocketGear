@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
   Image,
@@ -76,7 +76,7 @@ type State = {
   value: number;
 }
 
-export default class CPCalculator extends Component<void, Props, State> {
+export default class CPCalculator extends PureComponent<void, Props, State> {
 
   static propTypes = {
     pokemon: PropTypes.object,

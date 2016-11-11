@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   Platform,
   StyleSheet,
@@ -44,7 +44,7 @@ type Props = {
   onNavigate: Function;
 }
 
-export default class Appbar extends Component<void, Props, void> {
+export default class Appbar extends PureComponent<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,

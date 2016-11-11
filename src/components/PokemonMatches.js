@@ -1,7 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   Text,
   StyleSheet,
@@ -51,17 +50,13 @@ type RowData = {
 
 type SectionData = Array<RowData>
 
-export default class PokemonMatches extends Component<void, Props, void> {
+export default class PokemonMatches extends PureComponent<void, Props, void> {
 
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
     style: GridView.propTypes.style,
     onNavigate: PropTypes.func.isRequired,
   };
-
-  shouldComponentUpdate(nextProps: Props, nextState: void) {
-    return shallowCompare(this, nextProps, nextState);
-  }
 
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.onNavigate({

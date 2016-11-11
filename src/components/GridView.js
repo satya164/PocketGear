@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { Component, PropTypes } from 'react';
+import React, { PureComponent, PropTypes } from 'react';
 import ReactNative from 'react-native';
 
 const {
@@ -39,7 +39,7 @@ type State = {
   containerWidth: number;
 }
 
-export default class GridView extends Component<DefaultProps, Props, State> {
+export default class GridView extends PureComponent<DefaultProps, Props, State> {
   static propTypes = {
     data: PropTypes.objectOf(PropTypes.array).isRequired,
     spacing: PropTypes.number.isRequired,

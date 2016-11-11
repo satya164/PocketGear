@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import { TouchableOpacity } from 'react-native';
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
   children?: any;
 }
 
-export default class TouchableButton extends Component<void, Props, void> {
+export default class TouchableButton extends PureComponent<void, Props, void> {
 
   static propTypes = {
     onPress: PropTypes.func.isRequired,

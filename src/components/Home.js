@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import NavigationRoot from './Navigation/NavigationRoot';
 import NavigationScene from './Navigation/NavigationScene';
 import NavigationView from './Navigation/NavigationView';
@@ -8,7 +8,7 @@ import routeMapper from './Navigation/routeMapper';
 
 const PERSISTANCE_KEY = process.env.NODE_ENV !== 'production' ? 'FLAT_PERSISTENCE_0' : null;
 
-export default class Home extends Component<void, *, void> {
+export default class Home extends PureComponent<void, *, void> {
   _renderScene = (props: any) => {
     return (
       <NavigationScene

@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
   Image,
@@ -57,7 +57,7 @@ type Props = {
   style?: any;
 }
 
-export default class PokemonListCard extends Component<void, Props, void> {
+export default class PokemonListCard extends PureComponent<void, Props, void> {
 
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,

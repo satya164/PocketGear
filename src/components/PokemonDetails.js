@@ -1,7 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
+import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
   Text,
@@ -88,17 +87,13 @@ type Props = {
   onNavigate: Function;
 }
 
-export default class PokemonDetails extends Component<void, Props, void> {
+export default class PokemonDetails extends PureComponent<void, Props, void> {
 
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
     style: ScrollView.propTypes.style,
     onNavigate: PropTypes.func.isRequired,
   };
-
-  shouldComponentUpdate(nextProps: Props, nextState: void) {
-    return shallowCompare(this, nextProps, nextState);
-  }
 
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.onNavigate({
