@@ -28,7 +28,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.6.0",
     "eslint-plugin-react-native": "^2.0.0",
-    "flow-bin": "^0.32.0",
+    "flow-bin": "^0.33.0",
     "jest": "^17.0.0",
     "jest-react-native": "^17.0.0",
     "react-test-renderer": "^15.3.2"
