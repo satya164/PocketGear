@@ -32,39 +32,47 @@ export type Pokemon = {
     term: string;
     meaning: string;
   }>;
-  height: {
-    amount: number;
-    unit: 'm' | 'cm';
+  measurements: {
+    height: {
+      amount: number;
+      unit: 'm' | 'cm';
+    };
+    weight: {
+      amount: number;
+      unit: 'g' | 'kg';
+    };
   };
-  weight: {
-    amount: number;
-    unit: 'g' | 'kg';
+  stats: {
+    stamina: number;
+    attack: number;
+    defense: number;
   };
-  average_cp: number;
-  average_hp: number;
-  max_cp: number;
-  max_hp: number;
-  stamina: number;
-  attack: number;
-  defense: number;
-  capture_rate: number;
-  flee_rate: number;
-  egg_distance?: {
-    amount: number;
-    unit: 'km';
+  points?: { // TODO
+    average_cp: number;
+    average_hp: number;
+    max_cp: number;
+    max_hp: number;
   };
-  evolution_chains?: Array<Array<PokemonID>>;
-  evolution_requirements: {
-    amount: number;
-    name: string;
-  };
-  evolution_cp_multipliers?: Array<{
+  evolution_chains?: Array<Array<PokemonID>>; // TODO
+  evolution_cp_multipliers?: Array<{ // TODO
     id: PokemonID;
     multipliers: {
       minimum: number;
       maximum: number;
     };
   }>;
+  egg_distance?: {
+    amount: number;
+    unit: 'km';
+  };
+  evolution_requirements: {
+    amount: number;
+    name: string;
+  };
+  encounter: {
+    capture_rate: number;
+    flee_rate: number;
+  };
   easter_eggs?: Array<string>;
 }
 
