@@ -10,28 +10,28 @@
     "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
-    "lodash": "^4.16.6",
-    "react": "~15.3.2",
-    "react-addons-shallow-compare": "~15.3.2",
-    "react-native": "~0.37.0",
-    "react-native-tab-view": "^0.0.38",
-    "react-native-uuid": "^1.4.8",
-    "react-native-vector-icons": "^3.0.0"
+    "lodash": "^4.17.2",
+    "react": "^15.4.1",
+    "react-addons-shallow-compare": "^15.4.1",
+    "react-native": "^0.39.2",
+    "react-native-tab-view": "^0.0.40",
+    "react-native-vector-icons": "^3.0.0",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.0",
-    "babel-jest": "^17.0.0",
-    "babel-preset-react-native": "^1.9.0",
-    "coveralls": "^2.11.14",
-    "eslint": "^3.9.1",
-    "eslint-plugin-babel": "^3.3.0",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-preset-react-native": "^1.9.1",
+    "coveralls": "^2.11.15",
+    "eslint": "^3.12.2",
+    "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.6.0",
-    "eslint-plugin-react-native": "^2.0.0",
-    "flow-bin": "^0.33.0",
-    "jest": "^17.0.0",
-    "jest-react-native": "^17.0.0",
-    "react-test-renderer": "^15.3.2"
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-react-native": "^2.2.1",
+    "flow-bin": "0.35.0",
+    "jest": "^18.0.0",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "^15.4.1"
   },
   "jest": {
     "preset": "jest-react-native",

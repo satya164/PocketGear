@@ -3,7 +3,7 @@
 import { PureComponent, PropTypes } from 'react';
 import { AsyncStorage } from 'react-native';
 import dismissKeyboard from 'react-native/Libraries/Utilities/dismissKeyboard';
-import { v4 } from 'react-native-uuid';
+import { v4 } from 'uuid';
 import isEqual from 'lodash/isEqual';
 import type { Route, NavigationState, NavigationAction } from './NavigationTypeDefinitions';
 
