@@ -122,7 +122,7 @@ export default class Evolution extends PureComponent<void, Props, void> {
     return (
       <View {...this.props}>
         <Heading>Evolution</Heading>
-        {pokemon.evolution_requirements ?
+        {pokemon.evolution_requirements && pokemon.evolution_requirements.name ?
           <Text style={styles.requirements}>
             {pokemon.evolution_requirements.amount} {pokemon.evolution_requirements.name}
           </Text> :

@@ -34,7 +34,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Bulbasaur candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -103,7 +103,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Ivysaur candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.08,
@@ -165,9 +165,6 @@
         "amount": 100,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Venusaur candies"
     },
     "encounter": {
       "capture_rate": 0.04,
@@ -231,7 +228,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Charmander candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -299,7 +296,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Charmeleon candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.08,
@@ -361,9 +358,6 @@
         "amount": 90.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Charizard candies"
     },
     "encounter": {
       "capture_rate": 0.04,
@@ -427,7 +421,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Squirtle candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -499,7 +493,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Wartortle candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.08,
@@ -565,9 +559,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Blastoise candies"
-    },
     "encounter": {
       "capture_rate": 0.04,
       "flee_rate": 0.05
@@ -628,7 +619,7 @@
     },
     "evolution_requirements": {
       "amount": 12,
-      "name": "Caterpie candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -690,7 +681,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Metapod candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -753,9 +744,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Butterfree candies"
-    },
     "encounter": {
       "capture_rate": 0.1,
       "flee_rate": 0.06
@@ -817,7 +805,7 @@
     },
     "evolution_requirements": {
       "amount": 12,
-      "name": "Weedle candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -884,7 +872,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Kakuna candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -942,9 +930,6 @@
         "amount": 29.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Beedrill candies"
     },
     "encounter": {
       "capture_rate": 0.1,
@@ -1009,7 +994,7 @@
     },
     "evolution_requirements": {
       "amount": 12,
-      "name": "Pidgey candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -1074,7 +1059,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Pidgeotto candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -1132,9 +1117,6 @@
         "amount": 39.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Pidgeot candies"
     },
     "encounter": {
       "capture_rate": 0.1,
@@ -1194,7 +1176,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Rattata candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -1259,9 +1241,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Raticate candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -1324,7 +1303,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Spearow candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -1390,9 +1369,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Fearow candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -1454,7 +1430,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Ekans candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -1515,9 +1491,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Arbok candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -1575,7 +1548,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Pikachu candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -1644,9 +1617,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Raichu candies"
-    },
     "encounter": {
       "capture_rate": 0.08,
       "flee_rate": 0.06
@@ -1709,7 +1679,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Sandshrew candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -1774,9 +1744,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Sandslash candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -1838,7 +1805,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Nidoran_female candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -1910,7 +1877,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Nidorina candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -1972,9 +1939,6 @@
         "amount": 60,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Nidoqueen candies"
     },
     "encounter": {
       "capture_rate": 0.1,
@@ -2038,7 +2002,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Nidoran_male candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -2110,7 +2074,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Nidorino candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -2172,9 +2136,6 @@
         "amount": 62,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Nidoking candies"
     },
     "encounter": {
       "capture_rate": 0.1,
@@ -2238,7 +2199,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Clefairy candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.24,
@@ -2304,9 +2265,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Clefable candies"
-    },
     "encounter": {
       "capture_rate": 0.08,
       "flee_rate": 0.06
@@ -2369,7 +2327,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Vulpix candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.24,
@@ -2434,9 +2392,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Ninetales candies"
-    },
     "encounter": {
       "capture_rate": 0.08,
       "flee_rate": 0.06
@@ -2500,7 +2455,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Jigglypuff candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -2567,9 +2522,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Wigglytuff candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -2633,7 +2585,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Zubat candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -2700,9 +2652,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Golbat candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -2766,7 +2715,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Oddish candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.48,
@@ -2840,7 +2789,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Gloom candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.24,
@@ -2907,9 +2856,6 @@
         "amount": 18.6,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Vileplume candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -2979,7 +2925,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Paras candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -3040,9 +2986,6 @@
         "amount": 29.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Parasect candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -3106,7 +3049,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Venonat candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -3172,9 +3115,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Venomoth candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -3237,7 +3177,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Diglett candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -3303,9 +3243,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Dugtrio candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -3367,7 +3304,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Meowth candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -3428,9 +3365,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Persian candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -3488,7 +3422,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Psyduck candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -3553,9 +3487,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Golduck candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -3617,7 +3548,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Mankey candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -3681,9 +3612,6 @@
         "amount": 32,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Primeape candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -3750,7 +3678,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Growlithe candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.24,
@@ -3815,9 +3743,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Arcanine candies"
-    },
     "encounter": {
       "capture_rate": 0.08,
       "flee_rate": 0.06
@@ -3879,7 +3804,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Poliwag candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -3952,7 +3877,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Poliwhirl candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -4020,9 +3945,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Poliwrath candies"
-    },
     "encounter": {
       "capture_rate": 0.1,
       "flee_rate": 0.05
@@ -4089,7 +4011,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Abra candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -4153,7 +4075,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Kadabra candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -4210,9 +4132,6 @@
         "amount": 48,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Alakazam candies"
     },
     "encounter": {
       "capture_rate": 0.1,
@@ -4272,7 +4191,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Machop candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -4340,7 +4259,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Machoke candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -4401,9 +4320,6 @@
         "amount": 130,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Machamp candies"
     },
     "encounter": {
       "capture_rate": 0.1,
@@ -4468,7 +4384,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Bellsprout candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -4537,7 +4453,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Weepinbell candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -4599,9 +4515,6 @@
         "amount": 15.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Victreebel candies"
     },
     "encounter": {
       "capture_rate": 0.1,
@@ -4670,7 +4583,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Tentacool candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -4736,9 +4649,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Tentacruel candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -4801,7 +4711,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Geodude candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -4871,7 +4781,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Graveler candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.2,
@@ -4931,9 +4841,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Golem candies"
-    },
     "encounter": {
       "capture_rate": 0.1,
       "flee_rate": 0.05
@@ -4992,7 +4899,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Ponyta candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -5056,9 +4963,6 @@
         "amount": 95,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Rapidash candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -5126,7 +5030,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Slowpoke candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -5196,9 +5100,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Slowbro candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -5265,7 +5166,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Magnemite candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -5332,9 +5233,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Magneton candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -5396,9 +5294,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Farfetchd candies"
-    },
     "encounter": {
       "capture_rate": 0.24,
       "flee_rate": 0.09
@@ -5455,7 +5350,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Doduo candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -5521,9 +5416,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Dodrio candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -5586,7 +5478,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Seel candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -5647,9 +5539,6 @@
         "amount": 120,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Dewgong candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -5713,7 +5602,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Grimer candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -5775,9 +5664,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Muk candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -5835,7 +5721,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Shellder candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -5900,9 +5786,6 @@
         "amount": 132.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Cloyster candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -5970,7 +5853,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Gastly candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -6039,7 +5922,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Haunter candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -6099,9 +5982,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Gengar candies"
-    },
     "encounter": {
       "capture_rate": 0.08,
       "flee_rate": 0.05
@@ -6158,9 +6038,6 @@
         "amount": 210,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Onix candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -6223,7 +6100,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Drowzee candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -6288,9 +6165,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Hypno candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -6348,7 +6222,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Krabby candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -6413,9 +6287,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Kingler candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -6477,7 +6348,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Voltorb candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -6542,9 +6413,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Electrode candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -6606,7 +6474,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Exeggcute candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -6672,9 +6540,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Exeggutor candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -6736,7 +6601,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Cubone candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -6801,9 +6666,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Marowak candies"
-    },
     "encounter": {
       "capture_rate": 0.12,
       "flee_rate": 0.06
@@ -6863,9 +6725,6 @@
         "amount": 49.8,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Hitmonlee candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -6935,9 +6794,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Hitmonchan candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.09
@@ -7005,9 +6861,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Lickitung candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.09
@@ -7073,7 +6926,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Koffing candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -7134,9 +6987,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Weezing candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -7195,7 +7045,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Rhyhorn candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -7262,9 +7112,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Rhydon candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -7326,9 +7173,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Chansey candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.09
@@ -7387,9 +7231,6 @@
         "amount": 35,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Tangela candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -7450,9 +7291,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Kangaskhan candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.09
@@ -7512,7 +7350,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Horsea candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -7578,9 +7416,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Seadra candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -7643,7 +7478,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Goldeen candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -7708,9 +7543,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Seaking candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.07
@@ -7773,7 +7605,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Staryu candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.4,
@@ -7841,9 +7673,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Starmie candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.06
@@ -7903,9 +7732,6 @@
         "amount": 54.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Mr_mime candies"
     },
     "encounter": {
       "capture_rate": 0.24,
@@ -7971,9 +7797,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Scyther candies"
-    },
     "encounter": {
       "capture_rate": 0.24,
       "flee_rate": 0.09
@@ -8034,9 +7857,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Jynx candies"
-    },
     "encounter": {
       "capture_rate": 0.24,
       "flee_rate": 0.09
@@ -8095,9 +7915,6 @@
         "amount": 30,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Electabuzz candies"
     },
     "encounter": {
       "capture_rate": 0.24,
@@ -8163,9 +7980,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Magmar candies"
-    },
     "encounter": {
       "capture_rate": 0.24,
       "flee_rate": 0.09
@@ -8226,9 +8040,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Pinsir candies"
-    },
     "encounter": {
       "capture_rate": 0.24,
       "flee_rate": 0.09
@@ -8282,9 +8093,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Tauros candies"
-    },
     "encounter": {
       "capture_rate": 0.24,
       "flee_rate": 0.09
@@ -8337,7 +8145,7 @@
     },
     "evolution_requirements": {
       "amount": 400,
-      "name": "Magikarp candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.56,
@@ -8403,9 +8211,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Gyarados candies"
-    },
     "encounter": {
       "capture_rate": 0.08,
       "flee_rate": 0.07
@@ -8462,9 +8267,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Lapras candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.09
@@ -8514,9 +8316,6 @@
         "amount": 4,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Ditto candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -8569,7 +8368,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Eevee candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -8660,9 +8459,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Vaporeon candies"
-    },
     "encounter": {
       "capture_rate": 0.12,
       "flee_rate": 0.06
@@ -8721,9 +8517,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Jolteon candies"
-    },
     "encounter": {
       "capture_rate": 0.12,
       "flee_rate": 0.06
@@ -8781,9 +8574,6 @@
         "amount": 25,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Flareon candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -8844,9 +8634,6 @@
         "amount": 36.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Porygon candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -8911,7 +8698,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Omanyte candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -8978,9 +8765,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Omastar candies"
-    },
     "encounter": {
       "capture_rate": 0.12,
       "flee_rate": 0.05
@@ -9043,7 +8827,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Kabuto candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -9105,9 +8889,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Kabutops candies"
-    },
     "encounter": {
       "capture_rate": 0.12,
       "flee_rate": 0.05
@@ -9168,9 +8949,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Aerodactyl candies"
-    },
     "encounter": {
       "capture_rate": 0.16,
       "flee_rate": 0.09
@@ -9227,9 +9005,6 @@
         "amount": 460,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Snorlax candies"
     },
     "encounter": {
       "capture_rate": 0.16,
@@ -9294,9 +9069,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Articuno candies"
-    },
     "encounter": {
       "flee_rate": 0.1
     },
@@ -9349,9 +9121,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Zapdos candies"
-    },
     "encounter": {
       "flee_rate": 0.1
     },
@@ -9403,9 +9172,6 @@
         "amount": 60,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Moltres candies"
     },
     "encounter": {
       "flee_rate": 0.1
@@ -9460,7 +9226,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Dratini candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -9527,7 +9293,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Dragonair candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.08,
@@ -9590,9 +9356,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Dragonite candies"
-    },
     "encounter": {
       "capture_rate": 0.04,
       "flee_rate": 0.05
@@ -9653,9 +9416,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Mewtwo candies"
-    },
     "encounter": {
       "flee_rate": 0.1
     },
@@ -9714,9 +9474,6 @@
         "unit": "kg"
       }
     },
-    "evolution_requirements": {
-      "name": "Mew candies"
-    },
     "encounter": {
       "flee_rate": 0.1
     },
@@ -9765,7 +9522,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Chikorita candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.32,
@@ -9827,7 +9584,7 @@
     },
     "evolution_requirements": {
       "amount": 100,
-      "name": "Bayleef candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.25,
@@ -9886,9 +9643,6 @@
         "amount": 100.5,
         "unit": "kg"
       }
-    },
-    "evolution_requirements": {
-      "name": "Meganium candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -9949,8 +9703,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Cyndaquil candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10011,8 +9764,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Quilava candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10073,8 +9825,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Typhlosion candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10135,8 +9886,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Totodile candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10197,8 +9947,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Croconaw candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10259,8 +10008,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Feraligatr candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10321,8 +10069,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Sentret candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10382,8 +10129,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Furret candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10444,8 +10190,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Hoothoot candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10502,8 +10247,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Noctowl candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10564,8 +10308,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Ledyba candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10622,8 +10365,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Ledian candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10680,8 +10422,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Spinarak candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10742,8 +10483,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Ariados candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10804,8 +10544,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Crobat candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10867,8 +10606,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Chinchou candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10925,8 +10663,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Lanturn candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -10989,7 +10726,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Pichu candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11053,7 +10790,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Cleffa candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11114,7 +10851,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Igglybuff candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11178,7 +10915,7 @@
     },
     "evolution_requirements": {
       "amount": 50,
-      "name": "Togepi candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11242,8 +10979,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Togetic candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11304,8 +11040,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Natu candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11361,8 +11096,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Xatu candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11421,8 +11155,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Mareep candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11482,8 +11215,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Flaaffy candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11543,8 +11275,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Ampharos candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11608,8 +11339,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Bellossom candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11670,8 +11400,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Marill candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11732,8 +11461,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Azumarill candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11797,8 +11525,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Sudowoodo candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11857,8 +11584,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Politoed candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11919,8 +11645,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Hoppip candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -11981,8 +11706,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Skiploom candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12043,8 +11767,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Jumpluff candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12104,8 +11827,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Aipom candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12168,8 +11890,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Sunkern candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12232,8 +11953,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Sunflora candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12293,8 +12013,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Yanma candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12350,8 +12069,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Wooper candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12407,8 +12125,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Quagsire candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12468,8 +12185,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Espeon candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12529,8 +12245,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Umbreon candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12590,8 +12305,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Murkrow candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12655,8 +12369,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Slowking candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12715,8 +12428,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Misdreavus candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12779,8 +12491,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Unown candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12829,8 +12540,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Wobbuffet candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12890,8 +12600,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Girafarig candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -12944,8 +12653,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Pineco candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13001,8 +12709,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Forretress candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13061,8 +12768,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Dunsparce candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13116,8 +12822,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Gligar candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13177,8 +12882,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Steelix candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13237,8 +12941,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Snubbull candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13297,8 +13000,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Granbull candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13358,8 +13060,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Qwilfish candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13413,8 +13114,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Scizor candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13470,8 +13170,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Shuckle candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13525,8 +13224,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Heracross candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13580,8 +13278,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Sneasel candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13640,8 +13337,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Teddiursa candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13700,8 +13396,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Ursaring candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13760,8 +13455,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Slugma candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13821,8 +13515,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Magcargo candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13882,8 +13575,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Swinub candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -13944,8 +13636,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Piloswine candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14006,8 +13697,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Corsola candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14060,8 +13750,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Remoraid candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14120,8 +13809,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Octillery candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14181,8 +13869,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Delibird candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14240,8 +13927,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Mantine candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14301,8 +13987,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Skarmory candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14356,8 +14041,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Houndour candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14417,8 +14101,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Houndoom candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14478,8 +14161,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Kingdra candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14539,8 +14221,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Phanpy candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14599,8 +14280,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Donphan candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14659,8 +14339,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Porygon2 candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14720,8 +14399,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Stantler candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14774,8 +14452,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Smeargle candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14832,7 +14509,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Tyrogue candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14899,8 +14576,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Hitmontop candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -14968,7 +14644,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Smoochum candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15031,7 +14707,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Elekid candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15095,7 +14771,7 @@
     },
     "evolution_requirements": {
       "amount": 25,
-      "name": "Magby candies"
+      "name": "candies"
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15155,8 +14831,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Miltank candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15209,8 +14884,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Blissey candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15266,8 +14940,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Raikou candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15320,8 +14993,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Entei candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15374,8 +15046,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Suicune candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15429,8 +15100,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Larvitar candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15491,8 +15161,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Pupitar candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15553,8 +15222,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Tyranitar candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15615,8 +15283,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Lugia candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15666,8 +15333,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Ho_oh candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
@@ -15717,8 +15383,7 @@
       }
     },
     "evolution_requirements": {
-      "amount": 1,
-      "name": "Celebi candies"
+      "amount": 1
     },
     "encounter": {
       "capture_rate": 0.12,
