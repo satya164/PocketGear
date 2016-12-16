@@ -9786,7 +9786,14 @@
         "meaning": "Spanish suffix meaning ‘small’"
       }
     ],
-    "description": "In battle, Chikorita waves its leaf around to keep the foe at bay. However, a sweet fragrance also wafts from the leaf, becalming the battling Pokémon and creating a cozy, friendly atmosphere all around."
+    "description": "In battle, Chikorita waves its leaf around to keep the foe at bay. However, a sweet fragrance also wafts from the leaf, becalming the battling Pokémon and creating a cozy, friendly atmosphere all around.",
+    "evolution_chains": [
+      [
+        152,
+        153,
+        154
+      ]
+    ]
   },
   {
     "id": 153,
@@ -9841,7 +9848,14 @@
         "meaning": "plant foliage"
       }
     ],
-    "description": "Bayleef’s neck is ringed by curled-up leaves. Inside each tubular leaf is a small shoot of a tree. The fragrance of this shoot makes people peppy."
+    "description": "Bayleef’s neck is ringed by curled-up leaves. Inside each tubular leaf is a small shoot of a tree. The fragrance of this shoot makes people peppy.",
+    "evolution_chains": [
+      [
+        152,
+        153,
+        154
+      ]
+    ]
   },
   {
     "id": 154,
@@ -9895,7 +9909,14 @@
         "meaning": "a type of plant"
       }
     ],
-    "description": "The fragrance of Meganium’s flower soothes and calms emotions. In battle, this Pokémon gives off more of its becalming scent to blunt the foe’s fighting spirit."
+    "description": "The fragrance of Meganium’s flower soothes and calms emotions. In battle, this Pokémon gives off more of its becalming scent to blunt the foe’s fighting spirit.",
+    "evolution_chains": [
+      [
+        152,
+        153,
+        154
+      ]
+    ]
   },
   {
     "id": 155,
@@ -9950,7 +9971,14 @@
         "meaning": "sharp feather/needle"
       }
     ],
-    "description": "Cyndaquil protects itself by flaring up the flames on its back. The flames are vigorous if the Pokémon is angry. However, if it is tired, the flames splutter fitfully with incomplete combustion."
+    "description": "Cyndaquil protects itself by flaring up the flames on its back. The flames are vigorous if the Pokémon is angry. However, if it is tired, the flames splutter fitfully with incomplete combustion.",
+    "evolution_chains": [
+      [
+        155,
+        156,
+        157
+      ]
+    ]
   },
   {
     "id": 156,
@@ -10005,7 +10033,14 @@
         "meaning": "magma that flows out of a volcano"
       }
     ],
-    "description": "Quilava keeps its foes at bay with the intensity of its flames and gusts of superheated air. This Pokémon applies its outstanding nimbleness to dodge attacks even while scorching the foe with flames."
+    "description": "Quilava keeps its foes at bay with the intensity of its flames and gusts of superheated air. This Pokémon applies its outstanding nimbleness to dodge attacks even while scorching the foe with flames.",
+    "evolution_chains": [
+      [
+        155,
+        156,
+        157
+      ]
+    ]
   },
   {
     "id": 157,
@@ -10060,7 +10095,14 @@
         "meaning": "eruption, blast"
       }
     ],
-    "description": "Typhlosion obscures itself behind a shimmering heat haze that it creates using its intensely hot flames. This Pokémon creates blazing explosive blasts that burn everything to cinders."
+    "description": "Typhlosion obscures itself behind a shimmering heat haze that it creates using its intensely hot flames. This Pokémon creates blazing explosive blasts that burn everything to cinders.",
+    "evolution_chains": [
+      [
+        155,
+        156,
+        157
+      ]
+    ]
   },
   {
     "id": 158,
@@ -10115,7 +10157,14 @@
         "meaning": "a species of reptile"
       }
     ],
-    "description": "Despite the smallness of its body, Totodile's jaws are very powerful. While the Pokémon may think it is just playfully nipping, its bite has enough power to cause serious injury."
+    "description": "Despite the smallness of its body, Totodile's jaws are very powerful. While the Pokémon may think it is just playfully nipping, its bite has enough power to cause serious injury.",
+    "evolution_chains": [
+      [
+        158,
+        159,
+        160
+      ]
+    ]
   },
   {
     "id": 159,
@@ -10170,7 +10219,14 @@
         "meaning": "to chew on"
       }
     ],
-    "description": "Once Croconaw has clamped its jaws on its foe, it will absolutely not let go. Because the tips of its fangs are forked back like barbed fishhooks, they become impossible to remove when they have sunk in."
+    "description": "Once Croconaw has clamped its jaws on its foe, it will absolutely not let go. Because the tips of its fangs are forked back like barbed fishhooks, they become impossible to remove when they have sunk in.",
+    "evolution_chains": [
+      [
+        158,
+        159,
+        160
+      ]
+    ]
   },
   {
     "id": 160,
@@ -10225,7 +10281,14 @@
         "meaning": "a species of reptile"
       }
     ],
-    "description": "Feraligatr intimidates its foes by opening its huge mouth. In battle, it will kick the ground hard with its thick and powerful hind legs to charge at the foe at an incredible speed."
+    "description": "Feraligatr intimidates its foes by opening its huge mouth. In battle, it will kick the ground hard with its thick and powerful hind legs to charge at the foe at an incredible speed.",
+    "evolution_chains": [
+      [
+        158,
+        159,
+        160
+      ]
+    ]
   },
   {
     "id": 161,
@@ -10280,7 +10343,13 @@
         "meaning": "a rodent mammal"
       }
     ],
-    "description": "When Sentret sleeps, it does so while another stands guard. The sentry wakes the others at the first sign of danger. When this Pokémon becomes separated from its pack, it becomes incapable of sleep due to fear."
+    "description": "When Sentret sleeps, it does so while another stands guard. The sentry wakes the others at the first sign of danger. When this Pokémon becomes separated from its pack, it becomes incapable of sleep due to fear.",
+    "evolution_chains": [
+      [
+        161,
+        162
+      ]
+    ]
   },
   {
     "id": 162,
@@ -10335,7 +10404,13 @@
         "meaning": "a mammal in the weasel family"
       }
     ],
-    "description": "Furret has a very slim build. When under attack, it can slickly squirm through narrow spaces and get away. In spite of its short limbs, this Pokémon is very nimble and fleet."
+    "description": "Furret has a very slim build. When under attack, it can slickly squirm through narrow spaces and get away. In spite of its short limbs, this Pokémon is very nimble and fleet.",
+    "evolution_chains": [
+      [
+        161,
+        162
+      ]
+    ]
   },
   {
     "id": 163,
@@ -10387,7 +10462,13 @@
         "meaning": "a sound that owls make"
       }
     ],
-    "description": "Hoothoot has an internal organ that senses and tracks the earth’s rotation. Using this special organ, this Pokémon begins hooting at precisely the same time every day."
+    "description": "Hoothoot has an internal organ that senses and tracks the earth’s rotation. Using this special organ, this Pokémon begins hooting at precisely the same time every day.",
+    "evolution_chains": [
+      [
+        163,
+        164
+      ]
+    ]
   },
   {
     "id": 164,
@@ -10443,7 +10524,13 @@
         "meaning": "a species of bird"
       }
     ],
-    "description": "Noctowl never fails at catching prey in darkness. This Pokémon owes its success to its superior vision that allows it to see in minimal light, and to its soft, supple wings that make no sound in flight."
+    "description": "Noctowl never fails at catching prey in darkness. This Pokémon owes its success to its superior vision that allows it to see in minimal light, and to its soft, supple wings that make no sound in flight.",
+    "evolution_chains": [
+      [
+        163,
+        164
+      ]
+    ]
   },
   {
     "id": 165,
@@ -10495,7 +10582,13 @@
         "meaning": "a species of insect"
       }
     ],
-    "description": "Ledyba secretes an aromatic fluid from where its legs join its body. This fluid is used for communicating with others. This Pokémon conveys its feelings to others by altering the fluid’s scent."
+    "description": "Ledyba secretes an aromatic fluid from where its legs join its body. This fluid is used for communicating with others. This Pokémon conveys its feelings to others by altering the fluid’s scent.",
+    "evolution_chains": [
+      [
+        165,
+        166
+      ]
+    ]
   },
   {
     "id": 166,
@@ -10547,7 +10640,13 @@
         "meaning": "a species of insect"
       }
     ],
-    "description": "It is said that in lands with clean air, where the stars fill the sky, there live Ledian in countless numbers. There is a good reason for this—the Pokémon uses the light of the stars as its energy."
+    "description": "It is said that in lands with clean air, where the stars fill the sky, there live Ledian in countless numbers. There is a good reason for this—the Pokémon uses the light of the stars as its energy.",
+    "evolution_chains": [
+      [
+        165,
+        166
+      ]
+    ]
   },
   {
     "id": 167,
@@ -10603,7 +10702,13 @@
         "meaning": "a spider"
       }
     ],
-    "description": "The web spun by Spinarak can be considered its second nervous system. It is said that this Pokémon can determine what kind of prey is touching its web just by the tiny vibrations it feels through the web’s strands."
+    "description": "The web spun by Spinarak can be considered its second nervous system. It is said that this Pokémon can determine what kind of prey is touching its web just by the tiny vibrations it feels through the web’s strands.",
+    "evolution_chains": [
+      [
+        167,
+        168
+      ]
+    ]
   },
   {
     "id": 168,
@@ -10659,7 +10764,13 @@
         "meaning": "Spanish word for two"
       }
     ],
-    "description": "Ariados’s feet are tipped with tiny hooked claws that enable it to scuttle on ceilings and vertical walls. This Pokémon constricts the foe with thin and strong silk webbing."
+    "description": "Ariados’s feet are tipped with tiny hooked claws that enable it to scuttle on ceilings and vertical walls. This Pokémon constricts the foe with thin and strong silk webbing.",
+    "evolution_chains": [
+      [
+        167,
+        168
+      ]
+    ]
   },
   {
     "id": 169,
@@ -10715,7 +10826,14 @@
         "meaning": "cave-dwelling flying mammal"
       }
     ],
-    "description": "Crobat sneaks up on its intended prey using wings that barely make a sound. This Pokémon rests by hanging on a tree branch with its rear legs that serve as wings."
+    "description": "Crobat sneaks up on its intended prey using wings that barely make a sound. This Pokémon rests by hanging on a tree branch with its rear legs that serve as wings.",
+    "evolution_chains": [
+      [
+        41,
+        42,
+        169
+      ]
+    ]
   },
   {
     "id": 170,
@@ -10767,7 +10885,13 @@
         "meaning": "Japanese for ‘lantern’"
       }
     ],
-    "description": "Chinchou’s two antennas are filled with cells that generate strong electricity. This Pokémon’s cells create so much electrical power, it even makes itself tingle slightly."
+    "description": "Chinchou’s two antennas are filled with cells that generate strong electricity. This Pokémon’s cells create so much electrical power, it even makes itself tingle slightly.",
+    "evolution_chains": [
+      [
+        170,
+        171
+      ]
+    ]
   },
   {
     "id": 171,
@@ -10823,7 +10947,13 @@
         "meaning": "vase, container (Lanturn swallows prey whole)"
       }
     ],
-    "description": "Lanturn is known to emit light. If you peer down into the dark sea from a ship at night, you can sometimes see this Pokémon’s light rising from the depths where it swims. It gives the sea an appearance of a starlit night."
+    "description": "Lanturn is known to emit light. If you peer down into the dark sea from a ship at night, you can sometimes see this Pokémon’s light rising from the depths where it swims. It gives the sea an appearance of a starlit night.",
+    "evolution_chains": [
+      [
+        170,
+        171
+      ]
+    ]
   },
   {
     "id": 172,
@@ -10880,7 +11010,14 @@
         "meaning": "Japanese for ‘squeak’"
       }
     ],
-    "description": "When Pichu plays with others, it may short out electricity with another Pichu, creating a shower of sparks. In that event, this Pokémon will begin crying, startled by the flash of sparks."
+    "description": "When Pichu plays with others, it may short out electricity with another Pichu, creating a shower of sparks. In that event, this Pokémon will begin crying, startled by the flash of sparks.",
+    "evolution_chains": [
+      [
+        172,
+        25,
+        26
+      ]
+    ]
   },
   {
     "id": 173,
@@ -10933,7 +11070,14 @@
         "meaning": "musical symbol"
       }
     ],
-    "description": "On nights with many shooting stars, Cleffa can be seen dancing in a ring. They dance through the night and stop only at the break of day, when these Pokémon quench their thirst with the morning dew."
+    "description": "On nights with many shooting stars, Cleffa can be seen dancing in a ring. They dance through the night and stop only at the break of day, when these Pokémon quench their thirst with the morning dew.",
+    "evolution_chains": [
+      [
+        173,
+        35,
+        36
+      ]
+    ]
   },
   {
     "id": 174,
@@ -10991,7 +11135,14 @@
         "meaning": "to shine"
       }
     ],
-    "description": "Igglybuff has a soft and plushy body that feels very much like a marshmallow. From this body wafts a gently sweet fragrance that soothes and calms the emotions of its foes."
+    "description": "Igglybuff has a soft and plushy body that feels very much like a marshmallow. From this body wafts a gently sweet fragrance that soothes and calms the emotions of its foes.",
+    "evolution_chains": [
+      [
+        174,
+        39,
+        40
+      ]
+    ]
   },
   {
     "id": 175,
@@ -11048,7 +11199,14 @@
         "meaning": "to chirp"
       }
     ],
-    "description": "As its energy, Togepi uses the positive emotions of compassion and pleasure exuded by people and Pokémon. This Pokémon stores up feelings of happiness inside its shell, then shares them with others."
+    "description": "As its energy, Togepi uses the positive emotions of compassion and pleasure exuded by people and Pokémon. This Pokémon stores up feelings of happiness inside its shell, then shares them with others.",
+    "evolution_chains": [
+      [
+        175,
+        176,
+        468
+      ]
+    ]
   },
   {
     "id": 176,
@@ -11106,7 +11264,14 @@
         "meaning": "chick"
       }
     ],
-    "description": "Togetic is said to be a Pokémon that brings good fortune. When the Pokémon spots someone who is pure of heart, it is said to appear and share its happiness with that person."
+    "description": "Togetic is said to be a Pokémon that brings good fortune. When the Pokémon spots someone who is pure of heart, it is said to appear and share its happiness with that person.",
+    "evolution_chains": [
+      [
+        175,
+        176,
+        468
+      ]
+    ]
   },
   {
     "id": 177,
@@ -11157,7 +11322,13 @@
         "meaning": "the first man, in Samoan mythology"
       }
     ],
-    "description": "Natu has a highly developed jumping ability. The Pokémon flaps and leaps onto tree branches that are taller than grown-up people to pick at the tree’s new shoots."
+    "description": "Natu has a highly developed jumping ability. The Pokémon flaps and leaps onto tree branches that are taller than grown-up people to pick at the tree’s new shoots.",
+    "evolution_chains": [
+      [
+        177,
+        178
+      ]
+    ]
   },
   {
     "id": 178,
@@ -11212,7 +11383,13 @@
         "meaning": "the first man, in Samoan mythology"
       }
     ],
-    "description": "Xatu is known to stand motionless while staring at the sun all day long. Some people revere it as a mystical Pokémon out of their belief that Xatu is in possession of the power to see into the future."
+    "description": "Xatu is known to stand motionless while staring at the sun all day long. Some people revere it as a mystical Pokémon out of their belief that Xatu is in possession of the power to see into the future.",
+    "evolution_chains": [
+      [
+        177,
+        178
+      ]
+    ]
   },
   {
     "id": 179,
@@ -11266,7 +11443,14 @@
         "meaning": "a species of mammal"
       }
     ],
-    "description": "Mareep’s fluffy coat of wool rubs together and builds a static charge. The more static electricity is charged, the more brightly the lightbulb at the tip of its tail glows."
+    "description": "Mareep’s fluffy coat of wool rubs together and builds a static charge. The more static electricity is charged, the more brightly the lightbulb at the tip of its tail glows.",
+    "evolution_chains": [
+      [
+        179,
+        180,
+        181
+      ]
+    ]
   },
   {
     "id": 180,
@@ -11320,7 +11504,14 @@
         "meaning": "sheep noise"
       }
     ],
-    "description": "Flaaffy’s wool quality changes so that it can generate a high amount of static electricity with a small amount of wool. The bare and slick parts of its hide are shielded against electricity."
+    "description": "Flaaffy’s wool quality changes so that it can generate a high amount of static electricity with a small amount of wool. The bare and slick parts of its hide are shielded against electricity.",
+    "evolution_chains": [
+      [
+        179,
+        180,
+        181
+      ]
+    ]
   },
   {
     "id": 181,
@@ -11378,7 +11569,14 @@
         "meaning": "Ancient Egyptian ruler (which Ampharos is designed after)"
       }
     ],
-    "description": "Ampharos gives off so much light that it can be seen even from space. People in the old days used the light of this Pokémon to send signals back and forth with others far away."
+    "description": "Ampharos gives off so much light that it can be seen even from space. People in the old days used the light of this Pokémon to send signals back and forth with others far away.",
+    "evolution_chains": [
+      [
+        179,
+        180,
+        181
+      ]
+    ]
   },
   {
     "id": 182,
@@ -11432,7 +11630,14 @@
         "meaning": "plant flowers"
       }
     ],
-    "description": "A Bellossom grows flowers more beautifully if it has evolved from a smelly Gloom—the more stinky the better. At night, this Pokémon closes its petals and goes to sleep."
+    "description": "A Bellossom grows flowers more beautifully if it has evolved from a smelly Gloom—the more stinky the better. At night, this Pokémon closes its petals and goes to sleep.",
+    "evolution_chains": [
+      [
+        43,
+        44,
+        182
+      ]
+    ]
   },
   {
     "id": 183,
@@ -11487,7 +11692,14 @@
         "meaning": "small river or brook"
       }
     ],
-    "description": "When fishing for food at the edge of a fast-running stream, Marill wraps its tail around the trunk of a tree. This Pokémon’s tail is flexible and configured to stretch."
+    "description": "When fishing for food at the edge of a fast-running stream, Marill wraps its tail around the trunk of a tree. This Pokémon’s tail is flexible and configured to stretch.",
+    "evolution_chains": [
+      [
+        298,
+        183,
+        184
+      ]
+    ]
   },
   {
     "id": 184,
@@ -11546,7 +11758,14 @@
         "meaning": "brook, small river"
       }
     ],
-    "description": "Azumarill can make balloons out of air. It makes these air balloons if it spots a drowning Pokémon. The air balloons enable the Pokémon in trouble to breathe."
+    "description": "Azumarill can make balloons out of air. It makes these air balloons if it spots a drowning Pokémon. The air balloons enable the Pokémon in trouble to breathe.",
+    "evolution_chains": [
+      [
+        298,
+        183,
+        184
+      ]
+    ]
   },
   {
     "id": 185,
@@ -11600,7 +11819,13 @@
         "meaning": "matter that trees are made of"
       }
     ],
-    "description": "Sudowoodo camouflages itself as a tree to avoid being attacked by enemies. However, because its hands remain green throughout the year, the Pokémon is easily identified as a fake during the winter."
+    "description": "Sudowoodo camouflages itself as a tree to avoid being attacked by enemies. However, because its hands remain green throughout the year, the Pokémon is easily identified as a fake during the winter.",
+    "evolution_chains": [
+      [
+        438,
+        185
+      ]
+    ]
   },
   {
     "id": 186,
@@ -11654,7 +11879,14 @@
         "meaning": "a species of amphibian"
       }
     ],
-    "description": "The curled hair on Politoed’s head is proof of its status as a king. It is said that the longer and more curled the hair, the more respect this Pokémon earns from its peers."
+    "description": "The curled hair on Politoed’s head is proof of its status as a king. It is said that the longer and more curled the hair, the more respect this Pokémon earns from its peers.",
+    "evolution_chains": [
+      [
+        60,
+        61,
+        186
+      ]
+    ]
   },
   {
     "id": 187,
@@ -11709,7 +11941,14 @@
         "meaning": "seed"
       }
     ],
-    "description": "This Pokémon drifts and floats with the wind. If it senses the approach of strong winds, Hoppip links its leaves with other Hoppip to prepare against being blown away."
+    "description": "This Pokémon drifts and floats with the wind. If it senses the approach of strong winds, Hoppip links its leaves with other Hoppip to prepare against being blown away.",
+    "evolution_chains": [
+      [
+        187,
+        188,
+        189
+      ]
+    ]
   },
   {
     "id": 188,
@@ -11764,7 +12003,14 @@
         "meaning": "blossoming"
       }
     ],
-    "description": "Skiploom’s flower blossoms when the temperature rises above 64 degrees Fahrenheit. How much the flower opens depends on the temperature. For that reason, this Pokémon is sometimes used as a thermometer."
+    "description": "Skiploom’s flower blossoms when the temperature rises above 64 degrees Fahrenheit. How much the flower opens depends on the temperature. For that reason, this Pokémon is sometimes used as a thermometer.",
+    "evolution_chains": [
+      [
+        187,
+        188,
+        189
+      ]
+    ]
   },
   {
     "id": 189,
@@ -11819,7 +12065,14 @@
         "meaning": "light downy material"
       }
     ],
-    "description": "Jumpluff rides warm southern winds to cross the sea and fly to foreign lands. The Pokémon descends to the ground when it encounters cold air while it is floating."
+    "description": "Jumpluff rides warm southern winds to cross the sea and fly to foreign lands. The Pokémon descends to the ground when it encounters cold air while it is floating.",
+    "evolution_chains": [
+      [
+        187,
+        188,
+        189
+      ]
+    ]
   },
   {
     "id": 190,
@@ -11877,7 +12130,13 @@
         "meaning": "cheerleading decoration"
       }
     ],
-    "description": "Aipom’s tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy."
+    "description": "Aipom’s tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy.",
+    "evolution_chains": [
+      [
+        190,
+        424
+      ]
+    ]
   },
   {
     "id": 191,
@@ -11935,7 +12194,13 @@
         "meaning": "settled into the ground"
       }
     ],
-    "description": "Sunkern tries to move as little as it possibly can. It does so because it tries to conserve all the nutrients it has stored in its body for its evolution. It will not eat a thing, subsisting only on morning dew."
+    "description": "Sunkern tries to move as little as it possibly can. It does so because it tries to conserve all the nutrients it has stored in its body for its evolution. It will not eat a thing, subsisting only on morning dew.",
+    "evolution_chains": [
+      [
+        191,
+        192
+      ]
+    ]
   },
   {
     "id": 192,
@@ -11989,7 +12254,13 @@
         "meaning": "relating to plants"
       }
     ],
-    "description": "Sunflora converts solar energy into nutrition. It moves around actively in the daytime when it is warm. It stops moving as soon as the sun goes down for the night."
+    "description": "Sunflora converts solar energy into nutrition. It moves around actively in the daytime when it is warm. It stops moving as soon as the sun goes down for the night.",
+    "evolution_chains": [
+      [
+        191,
+        192
+      ]
+    ]
   },
   {
     "id": 193,
@@ -12040,7 +12311,13 @@
         "meaning": "Japanese for ‘large dragonfly’"
       }
     ],
-    "description": "Yanma is capable of seeing 360 degrees without having to move its eyes. It is a great flier that is adept at making sudden stops and turning midair. This Pokémon uses its flying ability to quickly chase down targeted prey."
+    "description": "Yanma is capable of seeing 360 degrees without having to move its eyes. It is a great flier that is adept at making sudden stops and turning midair. This Pokémon uses its flying ability to quickly chase down targeted prey.",
+    "evolution_chains": [
+      [
+        193,
+        469
+      ]
+    ]
   },
   {
     "id": 194,
@@ -12091,7 +12368,13 @@
         "meaning": "Japanese name for a pet salamander/axolotl"
       }
     ],
-    "description": "Wooper usually lives in water. However, it occasionally comes out onto land in search of food. On land, it coats its body with a gooey, toxic film."
+    "description": "Wooper usually lives in water. However, it occasionally comes out onto land in search of food. On land, it coats its body with a gooey, toxic film.",
+    "evolution_chains": [
+      [
+        194,
+        195
+      ]
+    ]
   },
   {
     "id": 195,
@@ -12146,7 +12429,13 @@
         "meaning": "master, lord"
       }
     ],
-    "description": "Quagsire hunts for food by leaving its mouth wide open in water and waiting for its prey to blunder in unaware. Because the Pokémon does not move, it does not get very hungry."
+    "description": "Quagsire hunts for food by leaving its mouth wide open in water and waiting for its prey to blunder in unaware. Because the Pokémon does not move, it does not get very hungry.",
+    "evolution_chains": [
+      [
+        194,
+        195
+      ]
+    ]
   },
   {
     "id": 196,
@@ -12201,7 +12490,13 @@
         "meaning": "long period of time (implying evolution)"
       }
     ],
-    "description": "Espeon is extremely loyal to any Trainer it considers to be worthy. It is said that this Pokémon developed its precognitive powers to protect its Trainer from harm."
+    "description": "Espeon is extremely loyal to any Trainer it considers to be worthy. It is said that this Pokémon developed its precognitive powers to protect its Trainer from harm.",
+    "evolution_chains": [
+      [
+        133,
+        196
+      ]
+    ]
   },
   {
     "id": 197,
@@ -12256,7 +12551,13 @@
         "meaning": "long period of time (implying evolution)"
       }
     ],
-    "description": "Umbreon evolved as a result of exposure to the moon’s waves. It hides silently in darkness and waits for its foes to make a move. The rings on its body glow when it leaps to attack."
+    "description": "Umbreon evolved as a result of exposure to the moon’s waves. It hides silently in darkness and waits for its foes to make a move. The rings on its body glow when it leaps to attack.",
+    "evolution_chains": [
+      [
+        133,
+        197
+      ]
+    ]
   },
   {
     "id": 198,
@@ -12315,7 +12616,13 @@
         "meaning": "a group of crows"
       }
     ],
-    "description": "Murkrow was feared and loathed as the alleged bearer of ill fortune. This Pokémon shows strong interest in anything that sparkles or glitters. It will even try to steal rings from women."
+    "description": "Murkrow was feared and loathed as the alleged bearer of ill fortune. This Pokémon shows strong interest in anything that sparkles or glitters. It will even try to steal rings from women.",
+    "evolution_chains": [
+      [
+        198,
+        430
+      ]
+    ]
   },
   {
     "id": 199,
@@ -12370,7 +12677,13 @@
         "meaning": "royalty"
       }
     ],
-    "description": "Slowking undertakes research every day in an effort to solve the mysteries of the world. However, this Pokémon apparently forgets everything it has learned if the Shellder on its head comes off."
+    "description": "Slowking undertakes research every day in an effort to solve the mysteries of the world. However, this Pokémon apparently forgets everything it has learned if the Shellder on its head comes off.",
+    "evolution_chains": [
+      [
+        79,
+        199
+      ]
+    ]
   },
   {
     "id": 200,
@@ -12428,7 +12741,13 @@
         "meaning": "rob, steal"
       }
     ],
-    "description": "Misdreavus frightens people with a creepy, sobbing cry. The Pokémon apparently uses its red spheres to absorb the fearful feelings of foes and turn them into nutrition."
+    "description": "Misdreavus frightens people with a creepy, sobbing cry. The Pokémon apparently uses its red spheres to absorb the fearful feelings of foes and turn them into nutrition.",
+    "evolution_chains": [
+      [
+        200,
+        429
+      ]
+    ]
   },
   {
     "id": 201,
@@ -12532,7 +12851,13 @@
         "meaning": "strike repeatedly (relating to Wobbuffet’s punching bag shape)"
       }
     ],
-    "description": "Wobbuffet does nothing but endure attacks—it won’t attack on its own. However, it won’t endure an attack on its tail. When that happens, the Pokémon will try to take the foe with it using Destiny Bond."
+    "description": "Wobbuffet does nothing but endure attacks—it won’t attack on its own. However, it won’t endure an attack on its tail. When that happens, the Pokémon will try to take the foe with it using Destiny Bond.",
+    "evolution_chains": [
+      [
+        360,
+        202
+      ]
+    ]
   },
   {
     "id": 203,
@@ -12637,7 +12962,13 @@
         "meaning": "seed of a pine tree"
       }
     ],
-    "description": "Pineco hangs from a tree branch and patiently waits for prey to come along. If the Pokémon is disturbed while eating by someone shaking its tree, it drops down to the ground and explodes with no warning."
+    "description": "Pineco hangs from a tree branch and patiently waits for prey to come along. If the Pokémon is disturbed while eating by someone shaking its tree, it drops down to the ground and explodes with no warning.",
+    "evolution_chains": [
+      [
+        204,
+        205
+      ]
+    ]
   },
   {
     "id": 205,
@@ -12692,7 +13023,13 @@
         "meaning": "castle/fortress tower, often holding weapons"
       }
     ],
-    "description": "Forretress conceals itself inside its hardened steel shell. The shell is opened when the Pokémon is catching prey, but it does so at such a quick pace that the shell’s inside cannot be seen."
+    "description": "Forretress conceals itself inside its hardened steel shell. The shell is opened when the Pokémon is catching prey, but it does so at such a quick pace that the shell’s inside cannot be seen.",
+    "evolution_chains": [
+      [
+        204,
+        205
+      ]
+    ]
   },
   {
     "id": 206,
@@ -12801,7 +13138,13 @@
         "meaning": "grotesque carved ornament"
       }
     ],
-    "description": "Gligar glides through the air without a sound as if it were sliding. This Pokémon hangs on to the face of its foe using its clawed hind legs and the large pincers on its forelegs, then injects the prey with its poison barb."
+    "description": "Gligar glides through the air without a sound as if it were sliding. This Pokémon hangs on to the face of its foe using its clawed hind legs and the large pincers on its forelegs, then injects the prey with its poison barb.",
+    "evolution_chains": [
+      [
+        207,
+        472
+      ]
+    ]
   },
   {
     "id": 208,
@@ -12856,7 +13199,13 @@
         "meaning": "a type of rock; Onix is Steelix’s prevolution"
       }
     ],
-    "description": "Steelix lives even further underground than Onix. This Pokémon is known to dig toward the earth’s core. There are records of this Pokémon reaching a depth of over six-tenths of a mile underground."
+    "description": "Steelix lives even further underground than Onix. This Pokémon is known to dig toward the earth’s core. There are records of this Pokémon reaching a depth of over six-tenths of a mile underground.",
+    "evolution_chains": [
+      [
+        95,
+        208
+      ]
+    ]
   },
   {
     "id": 209,
@@ -12910,7 +13259,13 @@
         "meaning": "gruff breed of dog"
       }
     ],
-    "description": "By baring its fangs and making a scary face, Snubbull sends smaller Pokémon scurrying away in terror. However, this Pokémon seems a little sad at making its foes flee."
+    "description": "By baring its fangs and making a scary face, Snubbull sends smaller Pokémon scurrying away in terror. However, this Pokémon seems a little sad at making its foes flee.",
+    "evolution_chains": [
+      [
+        209,
+        210
+      ]
+    ]
   },
   {
     "id": 210,
@@ -12964,7 +13319,13 @@
         "meaning": "gruff breed of dog"
       }
     ],
-    "description": "Granbull has a particularly well-developed lower jaw. The enormous fangs are heavy, causing the Pokémon to tip its head back for balance. Unless it is startled, it will not try to bite indiscriminately."
+    "description": "Granbull has a particularly well-developed lower jaw. The enormous fangs are heavy, causing the Pokémon to tip its head back for balance. Unless it is startled, it will not try to bite indiscriminately.",
+    "evolution_chains": [
+      [
+        209,
+        210
+      ]
+    ]
   },
   {
     "id": 211,
@@ -13070,7 +13431,13 @@
         "meaning": "cutting implements"
       }
     ],
-    "description": "Scizor has a body with the hardness of steel. It is not easily fazed by ordinary sorts of attacks. This Pokémon flaps its wings to regulate its body temperature."
+    "description": "Scizor has a body with the hardness of steel. It is not easily fazed by ordinary sorts of attacks. This Pokémon flaps its wings to regulate its body temperature.",
+    "evolution_chains": [
+      [
+        123,
+        212
+      ]
+    ]
   },
   {
     "id": 213,
@@ -13235,7 +13602,13 @@
         "meaning": "small mammal with a long body"
       }
     ],
-    "description": "Sneasel scales trees by punching its hooked claws into the bark. This Pokémon seeks out unguarded nests and steals eggs for food while the parents are away."
+    "description": "Sneasel scales trees by punching its hooked claws into the bark. This Pokémon seeks out unguarded nests and steals eggs for food while the parents are away.",
+    "evolution_chains": [
+      [
+        215,
+        461
+      ]
+    ]
   },
   {
     "id": 216,
@@ -13289,7 +13662,13 @@
         "meaning": "Latin for ‘bear’"
       }
     ],
-    "description": "This Pokémon likes to lick its palms that are sweetened by being soaked in honey. Teddiursa concocts its own honey by blending fruits and pollen collected by Beedrill."
+    "description": "This Pokémon likes to lick its palms that are sweetened by being soaked in honey. Teddiursa concocts its own honey by blending fruits and pollen collected by Beedrill.",
+    "evolution_chains": [
+      [
+        216,
+        217
+      ]
+    ]
   },
   {
     "id": 217,
@@ -13343,7 +13722,13 @@
         "meaning": "circle, target; refers to its design"
       }
     ],
-    "description": "In the forests inhabited by Ursaring, it is said that there are many streams and towering trees where they gather food. This Pokémon walks through its forest gathering food every day."
+    "description": "In the forests inhabited by Ursaring, it is said that there are many streams and towering trees where they gather food. This Pokémon walks through its forest gathering food every day.",
+    "evolution_chains": [
+      [
+        216,
+        217
+      ]
+    ]
   },
   {
     "id": 218,
@@ -13397,7 +13782,13 @@
         "meaning": "the melted rock in a volcano"
       }
     ],
-    "description": "Slugma does not have any blood in its body. Instead, intensely hot magma circulates throughout this Pokémon’s body, carrying essential nutrients and oxygen to its organs."
+    "description": "Slugma does not have any blood in its body. Instead, intensely hot magma circulates throughout this Pokémon’s body, carrying essential nutrients and oxygen to its organs.",
+    "evolution_chains": [
+      [
+        218,
+        219
+      ]
+    ]
   },
   {
     "id": 219,
@@ -13452,7 +13843,13 @@
         "meaning": "French for ‘snail’"
       }
     ],
-    "description": "Magcargo’s body temperature is approximately 18,000 degrees Fahrenheit. Water is vaporized on contact. If this Pokémon is caught in the rain, the raindrops instantly turn into steam, cloaking the area in a thick fog."
+    "description": "Magcargo’s body temperature is approximately 18,000 degrees Fahrenheit. Water is vaporized on contact. If this Pokémon is caught in the rain, the raindrops instantly turn into steam, cloaking the area in a thick fog.",
+    "evolution_chains": [
+      [
+        218,
+        219
+      ]
+    ]
   },
   {
     "id": 220,
@@ -13507,7 +13904,14 @@
         "meaning": "lump/knob (referring to its nose)"
       }
     ],
-    "description": "Swinub roots for food by rubbing its snout against the ground. Its favorite food is a mushroom that grows under the cover of dead grass. This Pokémon occasionally roots out hot springs."
+    "description": "Swinub roots for food by rubbing its snout against the ground. Its favorite food is a mushroom that grows under the cover of dead grass. This Pokémon occasionally roots out hot springs.",
+    "evolution_chains": [
+      [
+        220,
+        221,
+        473
+      ]
+    ]
   },
   {
     "id": 221,
@@ -13562,7 +13966,14 @@
         "meaning": "of or relating to pigs"
       }
     ],
-    "description": "Piloswine is covered by a thick coat of long hair that enables it to endure the freezing cold. This Pokémon uses its tusks to dig up food that has been buried under ice."
+    "description": "Piloswine is covered by a thick coat of long hair that enables it to endure the freezing cold. This Pokémon uses its tusks to dig up food that has been buried under ice.",
+    "evolution_chains": [
+      [
+        220,
+        221,
+        473
+      ]
+    ]
   },
   {
     "id": 222,
@@ -13671,7 +14082,13 @@
         "meaning": "sudden attack"
       }
     ],
-    "description": "Remoraid sucks in water, then expels it at high velocity using its abdominal muscles to shoot down flying prey. When evolution draws near, this Pokémon travels downstream from rivers."
+    "description": "Remoraid sucks in water, then expels it at high velocity using its abdominal muscles to shoot down flying prey. When evolution draws near, this Pokémon travels downstream from rivers.",
+    "evolution_chains": [
+      [
+        223,
+        224
+      ]
+    ]
   },
   {
     "id": 224,
@@ -13725,7 +14142,13 @@
         "meaning": "weapons"
       }
     ],
-    "description": "Octillery grabs onto its foe using its tentacles. This Pokémon tries to immobilize it before delivering the finishing blow. If the foe turns out to be too strong, Octillery spews ink to escape."
+    "description": "Octillery grabs onto its foe using its tentacles. This Pokémon tries to immobilize it before delivering the finishing blow. If the foe turns out to be too strong, Octillery spews ink to escape.",
+    "evolution_chains": [
+      [
+        223,
+        224
+      ]
+    ]
   },
   {
     "id": 225,
@@ -13839,7 +14262,13 @@
         "meaning": "sharp point or fork"
       }
     ],
-    "description": "On sunny days, schools of Mantine can be seen elegantly leaping over the sea’s waves. This Pokémon is not bothered by the Remoraid that hitches rides."
+    "description": "On sunny days, schools of Mantine can be seen elegantly leaping over the sea’s waves. This Pokémon is not bothered by the Remoraid that hitches rides.",
+    "evolution_chains": [
+      [
+        458,
+        226
+      ]
+    ]
   },
   {
     "id": 227,
@@ -13949,7 +14378,13 @@
         "meaning": "sullen, gloomy"
       }
     ],
-    "description": "Houndour hunt as a coordinated pack. They communicate with each other using a variety of cries to corner their prey. This Pokémon’s remarkable teamwork is unparalleled."
+    "description": "Houndour hunt as a coordinated pack. They communicate with each other using a variety of cries to corner their prey. This Pokémon’s remarkable teamwork is unparalleled.",
+    "evolution_chains": [
+      [
+        228,
+        229
+      ]
+    ]
   },
   {
     "id": 229,
@@ -14004,7 +14439,13 @@
         "meaning": "adverse fate"
       }
     ],
-    "description": "In a Houndoom pack, the one with its horns raked sharply toward the back serves a leadership role. These Pokémon choose their leader by fighting among themselves."
+    "description": "In a Houndoom pack, the one with its horns raked sharply toward the back serves a leadership role. These Pokémon choose their leader by fighting among themselves.",
+    "evolution_chains": [
+      [
+        228,
+        229
+      ]
+    ]
   },
   {
     "id": 230,
@@ -14059,7 +14500,14 @@
         "meaning": "mythical fire-breathing creature"
       }
     ],
-    "description": "Kingdra sleeps on the seafloor where it is otherwise devoid of life. When a storm arrives, the Pokémon is said to awaken and wander about in search of prey."
+    "description": "Kingdra sleeps on the seafloor where it is otherwise devoid of life. When a storm arrives, the Pokémon is said to awaken and wander about in search of prey.",
+    "evolution_chains": [
+      [
+        116,
+        117,
+        230
+      ]
+    ]
   },
   {
     "id": 231,
@@ -14113,7 +14561,13 @@
         "meaning": "a small creature"
       }
     ],
-    "description": "Phanpy uses its long nose to shower itself. When others gather around, they thoroughly douse each other with water. These Pokémon can be seen drying their soaking-wet bodies at the edge of water."
+    "description": "Phanpy uses its long nose to shower itself. When others gather around, they thoroughly douse each other with water. These Pokémon can be seen drying their soaking-wet bodies at the edge of water.",
+    "evolution_chains": [
+      [
+        231,
+        232
+      ]
+    ]
   },
   {
     "id": 232,
@@ -14167,7 +14621,13 @@
         "meaning": "large mammal native to India and Africa"
       }
     ],
-    "description": "If Donphan were to tackle with its hard body, even a house could be destroyed. Using its massive strength, the Pokémon helps clear rock and mud slides that block mountain trails."
+    "description": "If Donphan were to tackle with its hard body, even a house could be destroyed. Using its massive strength, the Pokémon helps clear rock and mud slides that block mountain trails.",
+    "evolution_chains": [
+      [
+        231,
+        232
+      ]
+    ]
   },
   {
     "id": 233,
@@ -14221,7 +14681,14 @@
         "meaning": "as in ‘Version 2’"
       }
     ],
-    "description": "Porygon2 was created by humans using the power of science. The man-made Pokémon has been endowed with artificial intelligence that enables it to learn new gestures and emotions on its own."
+    "description": "Porygon2 was created by humans using the power of science. The man-made Pokémon has been endowed with artificial intelligence that enables it to learn new gestures and emotions on its own.",
+    "evolution_chains": [
+      [
+        137,
+        233,
+        474
+      ]
+    ]
   },
   {
     "id": 234,
@@ -14386,7 +14853,21 @@
         "meaning": "a mischievous person"
       }
     ],
-    "description": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the Trainer must establish and uphold various training methods."
+    "description": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the Trainer must establish and uphold various training methods.",
+    "evolution_chains": [
+      [
+        236,
+        106
+      ],
+      [
+        236,
+        107
+      ],
+      [
+        236,
+        237
+      ]
+    ]
   },
   {
     "id": 237,
@@ -14444,7 +14925,13 @@
         "meaning": "spinning top on which it’s based"
       }
     ],
-    "description": "Hitmontop spins on its head at high speed, all the while delivering kicks. This technique is a remarkable mix of both offense and defense at the same time. The Pokémon travels faster spinning than it does walking."
+    "description": "Hitmontop spins on its head at high speed, all the while delivering kicks. This technique is a remarkable mix of both offense and defense at the same time. The Pokémon travels faster spinning than it does walking.",
+    "evolution_chains": [
+      [
+        236,
+        237
+      ]
+    ]
   },
   {
     "id": 238,
@@ -14502,7 +14989,13 @@
         "meaning": "smooch them"
       }
     ],
-    "description": "Smoochum actively runs about, but also falls quite often. Whenever the chance arrives, it will look for its reflection to make sure its face hasn’t become dirty."
+    "description": "Smoochum actively runs about, but also falls quite often. Whenever the chance arrives, it will look for its reflection to make sure its face hasn’t become dirty.",
+    "evolution_chains": [
+      [
+        238,
+        124
+      ]
+    ]
   },
   {
     "id": 239,
@@ -14559,7 +15052,14 @@
         "meaning": "a child"
       }
     ],
-    "description": "Elekid stores electricity in its body. If it touches metal and accidentally discharges all its built-up electricity, this Pokémon begins swinging its arms in circles to recharge itself."
+    "description": "Elekid stores electricity in its body. If it touches metal and accidentally discharges all its built-up electricity, this Pokémon begins swinging its arms in circles to recharge itself.",
+    "evolution_chains": [
+      [
+        239,
+        125,
+        466
+      ]
+    ]
   },
   {
     "id": 240,
@@ -14616,7 +15116,14 @@
         "meaning": "newborn child"
       }
     ],
-    "description": "Magby’s state of health is determined by observing the fire it breathes. If the Pokémon is spouting yellow flames from its mouth, it is in good health. When it is fatigued, black smoke will be mixed in with the flames."
+    "description": "Magby’s state of health is determined by observing the fire it breathes. If the Pokémon is spouting yellow flames from its mouth, it is in good health. When it is fatigued, black smoke will be mixed in with the flames.",
+    "evolution_chains": [
+      [
+        240,
+        126,
+        467
+      ]
+    ]
   },
   {
     "id": 241,
@@ -14720,7 +15227,14 @@
         "meaning": "happiness (required for evolution from Chansey)"
       }
     ],
-    "description": "Blissey senses sadness with its fluffy coat of fur. If it does so, this Pokémon will rush over to a sad person, no matter how far away, to share a Lucky Egg that brings a smile to any face."
+    "description": "Blissey senses sadness with its fluffy coat of fur. If it does so, this Pokémon will rush over to a sad person, no matter how far away, to share a Lucky Egg that brings a smile to any face.",
+    "evolution_chains": [
+      [
+        440,
+        113,
+        242
+      ]
+    ]
   },
   {
     "id": 243,
@@ -14937,7 +15451,14 @@
         "meaning": "from Latin ‘tardus’ meaning slow"
       }
     ],
-    "description": "Larvitar is born deep under the ground. To come up to the surface, this Pokémon must eat its way through the soil above. Until it does so, Larvitar cannot see its parents."
+    "description": "Larvitar is born deep under the ground. To come up to the surface, this Pokémon must eat its way through the soil above. Until it does so, Larvitar cannot see its parents.",
+    "evolution_chains": [
+      [
+        246,
+        247,
+        248
+      ]
+    ]
   },
   {
     "id": 247,
@@ -14992,7 +15513,14 @@
         "meaning": "from Latin ‘tardus’ meaning slow"
       }
     ],
-    "description": "Pupitar creates a gas inside its body that it compresses and forcefully ejects to propel itself like a jet. The body is very durable—it avoids damage even if it hits solid steel."
+    "description": "Pupitar creates a gas inside its body that it compresses and forcefully ejects to propel itself like a jet. The body is very durable—it avoids damage even if it hits solid steel.",
+    "evolution_chains": [
+      [
+        246,
+        247,
+        248
+      ]
+    ]
   },
   {
     "id": 248,
@@ -15047,7 +15575,14 @@
         "meaning": "from Latin ‘tardus’ meaning slow"
       }
     ],
-    "description": "Tyranitar is so overwhelmingly powerful, it can bring down a whole mountain to make its nest. This Pokémon wanders about in mountains seeking new opponents to fight."
+    "description": "Tyranitar is so overwhelmingly powerful, it can bring down a whole mountain to make its nest. This Pokémon wanders about in mountains seeking new opponents to fight.",
+    "evolution_chains": [
+      [
+        246,
+        247,
+        248
+      ]
+    ]
   },
   {
     "id": 249,

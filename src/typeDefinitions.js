@@ -53,7 +53,7 @@ export type Pokemon = {
     max_cp: number;
     max_hp: number;
   };
-  evolution_chains?: Array<Array<PokemonID>>; // TODO
+  evolution_chains?: Array<Array<PokemonID>>;
   evolution_cp_multipliers?: Array<{ // TODO
     id: PokemonID;
     multipliers: {
