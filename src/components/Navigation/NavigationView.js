@@ -8,7 +8,6 @@ const {
   Animated,
   BackAndroid,
   NavigationExperimental,
-  Platform,
   StyleSheet,
 } = ReactNative;
 
@@ -95,7 +94,7 @@ export default class NavigationView extends PureComponent<void, Props, void> {
       speed,
       restSpeedThreshold,
       restDisplacementThreshold,
-      useNativeDriver: Platform.OS === 'android',
+      useNativeDriver: true,
     };
   }
 
