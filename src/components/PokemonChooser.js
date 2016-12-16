@@ -56,7 +56,8 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
     },
   };
 
-  _getResults = (query: string) => {
+  _getResults = (text: string) => {
+    const query = text.toLowerCase().trim();
     const pokemons = store.getPokemons();
 
     if (query) {
@@ -65,8 +66,10 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
       }
       return filter(pokemons, (pokemon => {
         return (
-          pokemon.name.toLowerCase().indexOf(query.toLowerCase()) === 0 ||
-          pokemon.types.some(type => type.toLowerCase().indexOf(query.toLowerCase()) === 0)
+          pokemon.name.toLowerCase().startsWith(query) ||
+          query.split(',').map(q => q.trim()).every(q =>
+            pokemon.types.some(type => type.toLowerCase().startsWith(q))
+          )
         );
       }));
     }
