@@ -22,7 +22,7 @@ export type PokemonType =
 
 export type PokemonID = number;
 
-export type Pokemon = {
+export type Pokemon = {|
   id: PokemonID;
   name: string;
   types: Array<PokemonType>;
@@ -74,27 +74,27 @@ export type Pokemon = {
     flee_rate: number;
   };
   easter_eggs?: Array<string>;
-}
+|}
 
-export type TypeChart = {
+export type TypeChart = {|
   name: PokemonType;
   super_effective: Array<PokemonType>;
   not_very_effective: Array<PokemonType>;
-}
+|}
 
-export type Attack = {
+export type Attack = {|
   name: string;
   type: PokemonType;
   damage: number;
   duration: number;
   known_by: Array<PokemonID>;
-}
+|}
 
-export type QuickAttack = Attack & {
+export type QuickAttack = Attack & {|
   energy_increase: number;
-}
+|}
 
-export type SpecialAttack = Attack & {
+export type SpecialAttack = Attack & {|
   critical_hit_chance: number;
   energy_requirement: number;
-}
+|}
