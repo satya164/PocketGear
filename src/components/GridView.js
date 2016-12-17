@@ -56,19 +56,13 @@ export default class GridView extends PureComponent<DefaultProps, Props, State> 
     spacing: 0,
   };
 
-  constructor(props: Props) {
-    super(props);
-
-    this.state = {
-      dataSource: new ListView.DataSource({
-        rowHasChanged: (r1, r2) => r1 !== r2,
-        sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
-      }),
-      containerWidth: Dimensions.get('window').width,
-    };
-  }
-
-  state: State;
+  state: State = {
+    dataSource: new ListView.DataSource({
+      rowHasChanged: (r1, r2) => r1 !== r2,
+      sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
+    }),
+    containerWidth: Dimensions.get('window').width,
+  };
 
   componentWillMount() {
     this.setState({

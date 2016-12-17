@@ -2,7 +2,6 @@
 
 import React, { PropTypes, PureComponent } from 'react';
 import {
-  Dimensions,
   StyleSheet,
 } from 'react-native';
 import GridView from './GridView';
@@ -26,10 +25,6 @@ type Props = {
 }
 
 const CARD_WIDTH = 160;
-
-// FIXME: We set the list size to fix ListView not loading all items
-const win = Dimensions.get('window');
-const LIST_SIZE = (win.height / CARD_WIDTH) * (win.width / CARD_WIDTH);
 
 export default class PokemonList extends PureComponent<void, Props, void> {
 
@@ -61,7 +56,7 @@ export default class PokemonList extends PureComponent<void, Props, void> {
     return (
       <GridView
         {...this.props}
-        pageSize={LIST_SIZE}
+        pageSize={2}
         style={[ styles.grid, this.props.style ]}
         spacing={8}
         renderRow={this._renderRow}
