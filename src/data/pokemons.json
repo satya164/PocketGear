@@ -75,7 +75,10 @@
           "maximum": 1.58
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 981
+    }
   },
   {
     "id": 2,
@@ -149,7 +152,10 @@
           "maximum": 1.61
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1552
+    }
   },
   {
     "id": 3,
@@ -210,7 +216,10 @@
         2,
         3
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2568
+    }
   },
   {
     "id": 4,
@@ -287,7 +296,10 @@
           "maximum": 1.7
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 831
+    }
   },
   {
     "id": 5,
@@ -360,7 +372,10 @@
           "maximum": 1.73
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1484
+    }
   },
   {
     "id": 6,
@@ -421,7 +436,10 @@
         5,
         6
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2686
+    }
   },
   {
     "id": 7,
@@ -502,7 +520,10 @@
           "maximum": 1.66
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 808
+    }
   },
   {
     "id": 8,
@@ -579,7 +600,10 @@
           "maximum": 1.65
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1324
+    }
   },
   {
     "id": 9,
@@ -639,7 +663,10 @@
         8,
         9
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2291
+    }
   },
   {
     "id": 10,
@@ -710,7 +737,10 @@
           "maximum": 1.08
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 393
+    }
   },
   {
     "id": 11,
@@ -781,7 +811,10 @@
           "maximum": 3.79
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 419
+    }
   },
   {
     "id": 12,
@@ -842,7 +875,10 @@
         11,
         12
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1701
+    }
   },
   {
     "id": 13,
@@ -918,7 +954,10 @@
           "maximum": 1.1
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 397
+    }
   },
   {
     "id": 14,
@@ -986,7 +1025,10 @@
           "maximum": 3.42
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 392
+    }
   },
   {
     "id": 15,
@@ -1047,7 +1089,10 @@
         14,
         15
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1777
+    }
   },
   {
     "id": 16,
@@ -1121,7 +1166,10 @@
           "maximum": 1.95
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 580
+    }
   },
   {
     "id": 17,
@@ -1191,7 +1239,10 @@
           "maximum": 1.78
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1085
+    }
   },
   {
     "id": 18,
@@ -1248,7 +1299,10 @@
         17,
         18
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1994
+    }
   },
   {
     "id": 19,
@@ -1324,7 +1378,10 @@
           "maximum": 2.73
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 588
+    }
   },
   {
     "id": 20,
@@ -1383,7 +1440,10 @@
         19,
         20
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1587
+    }
   },
   {
     "id": 21,
@@ -1460,7 +1520,10 @@
           "maximum": 2.81
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 673
+    }
   },
   {
     "id": 22,
@@ -1520,7 +1583,10 @@
         21,
         22
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1814
+    }
   },
   {
     "id": 23,
@@ -1592,7 +1658,10 @@
           "maximum": 2.33
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 778
+    }
   },
   {
     "id": 24,
@@ -1647,7 +1716,10 @@
         23,
         24
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1908
+    }
   },
   {
     "id": 25,
@@ -1727,7 +1799,10 @@
           "maximum": 2.38
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 787
+    }
   },
   {
     "id": 26,
@@ -1787,7 +1862,10 @@
         25,
         26
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2025
+    }
   },
   {
     "id": 27,
@@ -1863,7 +1941,10 @@
           "maximum": 2.76
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1219
+    }
   },
   {
     "id": 28,
@@ -1922,7 +2003,10 @@
         27,
         28
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2366
+    }
   },
   {
     "id": 29,
@@ -2003,7 +2087,10 @@
           "maximum": 1.66
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 736
+    }
   },
   {
     "id": 30,
@@ -2076,7 +2163,10 @@
           "maximum": 2.04
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1218
+    }
   },
   {
     "id": 31,
@@ -2137,7 +2227,10 @@
         30,
         31
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2338
+    }
   },
   {
     "id": 32,
@@ -2218,7 +2311,10 @@
           "maximum": 1.7
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 739
+    }
   },
   {
     "id": 33,
@@ -2291,7 +2387,10 @@
           "maximum": 1.86
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1252
+    }
   },
   {
     "id": 34,
@@ -2352,7 +2451,10 @@
         33,
         34
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2386
+    }
   },
   {
     "id": 35,
@@ -2429,7 +2531,10 @@
           "maximum": 2.2
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1085
+    }
   },
   {
     "id": 36,
@@ -2489,7 +2594,10 @@
         35,
         36
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2353
+    }
   },
   {
     "id": 37,
@@ -2565,7 +2673,10 @@
           "maximum": 2.74
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 774
+    }
   },
   {
     "id": 38,
@@ -2624,7 +2735,10 @@
         37,
         38
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2184
+    }
   },
   {
     "id": 39,
@@ -2703,7 +2817,10 @@
           "maximum": 2.47
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 713
+    }
   },
   {
     "id": 40,
@@ -2764,7 +2881,10 @@
         39,
         40
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1906
+    }
   },
   {
     "id": 41,
@@ -2842,7 +2962,10 @@
           "maximum": 3.33
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 569
+    }
   },
   {
     "id": 42,
@@ -2903,7 +3026,10 @@
         42,
         169
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1830
+    }
   },
   {
     "id": 43,
@@ -2986,7 +3112,10 @@
           "maximum": 1.51
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1069
+    }
   },
   {
     "id": 44,
@@ -3065,7 +3194,10 @@
           "maximum": 1.53
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1512
+    }
   },
   {
     "id": 45,
@@ -3131,7 +3263,10 @@
         44,
         182
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2367
+    }
   },
   {
     "id": 46,
@@ -3204,7 +3339,10 @@
           "maximum": 2.02
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 836
+    }
   },
   {
     "id": 47,
@@ -3264,7 +3402,10 @@
         46,
         47
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1657
+    }
   },
   {
     "id": 48,
@@ -3341,7 +3482,10 @@
           "maximum": 1.9
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 902
+    }
   },
   {
     "id": 49,
@@ -3401,7 +3545,10 @@
         48,
         49
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1937
+    }
   },
   {
     "id": 50,
@@ -3478,7 +3625,10 @@
           "maximum": 2.77
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 465
+    }
   },
   {
     "id": 51,
@@ -3538,7 +3688,10 @@
         50,
         51
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1612
+    }
   },
   {
     "id": 52,
@@ -3610,7 +3763,10 @@
           "maximum": 2.24
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 679
+    }
   },
   {
     "id": 53,
@@ -3665,7 +3821,10 @@
         52,
         53
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1614
+    }
   },
   {
     "id": 54,
@@ -3741,7 +3900,10 @@
           "maximum": 2.29
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 966
+    }
   },
   {
     "id": 55,
@@ -3800,7 +3962,10 @@
         54,
         55
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2270
+    }
   },
   {
     "id": 56,
@@ -3876,7 +4041,10 @@
           "maximum": 2.28
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1002
+    }
   },
   {
     "id": 57,
@@ -3939,7 +4107,10 @@
         56,
         57
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2105
+    }
   },
   {
     "id": 58,
@@ -4015,7 +4186,10 @@
           "maximum": 2.36
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1110
+    }
   },
   {
     "id": 59,
@@ -4074,7 +4248,10 @@
         58,
         59
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2839
+    }
   },
   {
     "id": 60,
@@ -4156,7 +4333,10 @@
           "maximum": 1.89
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 695
+    }
   },
   {
     "id": 61,
@@ -4234,7 +4414,10 @@
           "maximum": 1.96
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1313
+    }
   },
   {
     "id": 62,
@@ -4300,7 +4483,10 @@
         61,
         186
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2441
+    }
   },
   {
     "id": 63,
@@ -4372,7 +4558,10 @@
           "maximum": 2
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1148
+    }
   },
   {
     "id": 64,
@@ -4441,7 +4630,10 @@
           "maximum": 1.65
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1859
+    }
   },
   {
     "id": 65,
@@ -4497,7 +4689,10 @@
         64,
         65
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2887
+    }
   },
   {
     "id": 66,
@@ -4574,7 +4769,10 @@
           "maximum": 1.67
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1199
+    }
   },
   {
     "id": 67,
@@ -4647,7 +4845,10 @@
           "maximum": 1.7
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1910
+    }
   },
   {
     "id": 68,
@@ -4707,7 +4908,10 @@
         67,
         68
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2889
+    }
   },
   {
     "id": 69,
@@ -4785,7 +4989,10 @@
           "maximum": 1.6
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 916
+    }
   },
   {
     "id": 70,
@@ -4859,7 +5066,10 @@
           "maximum": 1.52
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1475
+    }
   },
   {
     "id": 71,
@@ -4924,7 +5134,10 @@
         70,
         71
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2268
+    }
   },
   {
     "id": 72,
@@ -5001,7 +5214,10 @@
           "maximum": 2.6
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 956
+    }
   },
   {
     "id": 73,
@@ -5061,7 +5277,10 @@
         72,
         73
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2374
+    }
   },
   {
     "id": 74,
@@ -5139,7 +5358,10 @@
           "maximum": 1.76
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1193
+    }
   },
   {
     "id": 75,
@@ -5210,7 +5432,10 @@
           "maximum": 1.72
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1815
+    }
   },
   {
     "id": 76,
@@ -5268,7 +5493,10 @@
         75,
         76
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2916
+    }
   },
   {
     "id": 77,
@@ -5344,7 +5572,10 @@
           "maximum": 1.6
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1502
+    }
   },
   {
     "id": 78,
@@ -5407,7 +5638,10 @@
         77,
         78
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2252
+    }
   },
   {
     "id": 79,
@@ -5488,7 +5722,10 @@
           "maximum": 2.21
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1204
+    }
   },
   {
     "id": 80,
@@ -5552,7 +5789,10 @@
         79,
         199
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2482
+    }
   },
   {
     "id": 81,
@@ -5630,7 +5870,10 @@
           "maximum": 2.2
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1083
+    }
   },
   {
     "id": 82,
@@ -5691,7 +5934,10 @@
         82,
         462
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2237
+    }
   },
   {
     "id": 83,
@@ -5745,7 +5991,10 @@
         "meaning": "unlikely"
       }
     ],
-    "description": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
+    "description": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks.",
+    "points": {
+      "max_cp": 1430
+    }
   },
   {
     "id": 84,
@@ -5822,7 +6071,10 @@
           "maximum": 2.24
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1011
+    }
   },
   {
     "id": 85,
@@ -5882,7 +6134,10 @@
         84,
         85
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2205
+    }
   },
   {
     "id": 86,
@@ -5955,7 +6210,10 @@
           "maximum": 2.03
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 899
+    }
   },
   {
     "id": 87,
@@ -6015,7 +6273,10 @@
         86,
         87
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1894
+    }
   },
   {
     "id": 88,
@@ -6088,7 +6349,10 @@
           "maximum": 2.17
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1269
+    }
   },
   {
     "id": 89,
@@ -6144,7 +6408,10 @@
         88,
         89
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2709
+    }
   },
   {
     "id": 90,
@@ -6220,7 +6487,10 @@
           "maximum": 2.65
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 958
+    }
   },
   {
     "id": 91,
@@ -6284,7 +6554,10 @@
         90,
         91
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2475
+    }
   },
   {
     "id": 92,
@@ -6362,7 +6635,10 @@
           "maximum": 1.83
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1002
+    }
   },
   {
     "id": 93,
@@ -6432,7 +6708,10 @@
           "maximum": 1.8
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1716
+    }
   },
   {
     "id": 94,
@@ -6490,7 +6769,10 @@
         93,
         94
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2619
+    }
   },
   {
     "id": 95,
@@ -6550,7 +6832,10 @@
         95,
         208
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1002
+    }
   },
   {
     "id": 96,
@@ -6626,7 +6911,10 @@
           "maximum": 2.11
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 992
+    }
   },
   {
     "id": 97,
@@ -6681,7 +6969,10 @@
         96,
         97
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2048
+    }
   },
   {
     "id": 98,
@@ -6757,7 +7048,10 @@
           "maximum": 2.4
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1386
+    }
   },
   {
     "id": 99,
@@ -6816,7 +7110,10 @@
         98,
         99
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2694
+    }
   },
   {
     "id": 100,
@@ -6892,7 +7189,10 @@
           "maximum": 2.03
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 857
+    }
   },
   {
     "id": 101,
@@ -6951,7 +7251,10 @@
         100,
         101
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1945
+    }
   },
   {
     "id": 102,
@@ -7027,7 +7330,10 @@
           "maximum": 3.18
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1102
+    }
   },
   {
     "id": 103,
@@ -7087,7 +7393,10 @@
         102,
         103
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2942
+    }
   },
   {
     "id": 104,
@@ -7163,7 +7472,10 @@
           "maximum": 1.67
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 943
+    }
   },
   {
     "id": 105,
@@ -7222,7 +7534,10 @@
         104,
         105
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1691
+    }
   },
   {
     "id": 106,
@@ -7290,7 +7605,10 @@
         236,
         106
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2406
+    }
   },
   {
     "id": 107,
@@ -7358,7 +7676,10 @@
         236,
         107
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2098
+    }
   },
   {
     "id": 108,
@@ -7421,7 +7742,10 @@
         108,
         463
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1322
+    }
   },
   {
     "id": 109,
@@ -7493,7 +7817,10 @@
           "maximum": 2.1
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1091
+    }
   },
   {
     "id": 110,
@@ -7548,7 +7875,10 @@
         109,
         110
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2183
+    }
   },
   {
     "id": 111,
@@ -7626,7 +7956,10 @@
           "maximum": 1.91
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1679
+    }
   },
   {
     "id": 112,
@@ -7687,7 +8020,10 @@
         112,
         464
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3300
+    }
   },
   {
     "id": 113,
@@ -7748,7 +8084,10 @@
         113,
         242
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1469
+    }
   },
   {
     "id": 114,
@@ -7806,7 +8145,10 @@
         114,
         465
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2208
+    }
   },
   {
     "id": 115,
@@ -7863,7 +8205,10 @@
         "meaning": "Mongolian leader"
       }
     ],
-    "description": "If you come across a young Kangaskhan playing by itself, you must never disturb it or attempt to catch it. The baby Pokémon's parent is sure to be in the area, and it will become violently enraged at you."
+    "description": "If you come across a young Kangaskhan playing by itself, you must never disturb it or attempt to catch it. The baby Pokémon's parent is sure to be in the area, and it will become violently enraged at you.",
+    "points": {
+      "max_cp": 2463
+    }
   },
   {
     "id": 116,
@@ -7940,7 +8285,10 @@
           "maximum": 2.23
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 921
+    }
   },
   {
     "id": 117,
@@ -8000,7 +8348,10 @@
         117,
         230
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1979
+    }
   },
   {
     "id": 118,
@@ -8076,7 +8427,10 @@
           "maximum": 2.24
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1006
+    }
   },
   {
     "id": 119,
@@ -8135,7 +8489,10 @@
         118,
         119
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2040
+    }
   },
   {
     "id": 120,
@@ -8212,7 +8569,10 @@
           "maximum": 2.44
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 926
+    }
   },
   {
     "id": 121,
@@ -8274,7 +8634,10 @@
         120,
         121
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2303
+    }
   },
   {
     "id": 122,
@@ -8338,7 +8701,10 @@
         439,
         122
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1984
+    }
   },
   {
     "id": 123,
@@ -8398,7 +8764,10 @@
         123,
         212
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2464
+    }
   },
   {
     "id": 124,
@@ -8458,7 +8827,10 @@
         238,
         124
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2512
+    }
   },
   {
     "id": 125,
@@ -8522,7 +8894,10 @@
         125,
         466
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2196
+    }
   },
   {
     "id": 126,
@@ -8582,7 +8957,10 @@
         126,
         467
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2254
+    }
   },
   {
     "id": 127,
@@ -8635,7 +9013,10 @@
         "meaning": "crab’s claw"
       }
     ],
-    "description": "Pinsir is astoundingly strong. It can grip a foe weighing twice its weight in its horns and easily lift it. This Pokémon's movements turn sluggish in cold places."
+    "description": "Pinsir is astoundingly strong. It can grip a foe weighing twice its weight in its horns and easily lift it. This Pokémon's movements turn sluggish in cold places.",
+    "points": {
+      "max_cp": 2770
+    }
   },
   {
     "id": 128,
@@ -8688,7 +9069,10 @@
         "meaning": "mythical Greek bull & star sign"
       }
     ],
-    "description": "This Pokémon is not satisfied unless it is rampaging at all times. If there is no opponent for Tauros to battle, it will charge at thick trees and knock them down to calm itself."
+    "description": "This Pokémon is not satisfied unless it is rampaging at all times. If there is no opponent for Tauros to battle, it will charge at thick trees and knock them down to calm itself.",
+    "points": {
+      "max_cp": 2488
+    }
   },
   {
     "id": 129,
@@ -8761,7 +9145,10 @@
           "maximum": 11.96
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 220
+    }
   },
   {
     "id": 130,
@@ -8817,7 +9204,10 @@
         129,
         130
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3281
+    }
   },
   {
     "id": 131,
@@ -8871,7 +9261,10 @@
         "meaning": "lake where the mythical ‘Loch Ness Monster’ (on which Lapras is based) supposedly resides"
       }
     ],
-    "description": "People have driven Lapras almost to the point of extinction. In the evenings, this Pokémon is said to sing plaintively as it seeks what few others of its kind still remain."
+    "description": "People have driven Lapras almost to the point of extinction. In the evenings, this Pokémon is said to sing plaintively as it seeks what few others of its kind still remain.",
+    "points": {
+      "max_cp": 2603
+    }
   },
   {
     "id": 132,
@@ -8917,7 +9310,10 @@
         "meaning": "a duplicate or copy"
       }
     ],
-    "description": "Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong."
+    "description": "Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong.",
+    "points": {
+      "max_cp": 718
+    }
   },
   {
     "id": 133,
@@ -9034,7 +9430,10 @@
           "maximum": 2.64
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 969
+    }
   },
   {
     "id": 134,
@@ -9092,7 +9491,10 @@
         133,
         134
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3157
+    }
   },
   {
     "id": 135,
@@ -9150,7 +9552,10 @@
         133,
         135
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2730
+    }
   },
   {
     "id": 136,
@@ -9208,7 +9613,10 @@
         133,
         136
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2904
+    }
   },
   {
     "id": 137,
@@ -9269,7 +9677,10 @@
         233,
         474
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1567
+    }
   },
   {
     "id": 138,
@@ -9346,7 +9757,10 @@
           "maximum": 2.12
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1345
+    }
   },
   {
     "id": 139,
@@ -9407,7 +9821,10 @@
         138,
         139
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2685
+    }
   },
   {
     "id": 140,
@@ -9480,7 +9897,10 @@
           "maximum": 2.37
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1172
+    }
   },
   {
     "id": 141,
@@ -9540,7 +9960,10 @@
         140,
         141
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2517
+    }
   },
   {
     "id": 142,
@@ -9598,7 +10021,10 @@
         "meaning": "prehistoric flying reptile"
       }
     ],
-    "description": "Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from genetic material extracted from amber. It is imagined to have been the king of the skies in ancient times."
+    "description": "Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from genetic material extracted from amber. It is imagined to have been the king of the skies in ancient times.",
+    "points": {
+      "max_cp": 2608
+    }
   },
   {
     "id": 143,
@@ -9661,7 +10087,10 @@
         446,
         143
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3355
+    }
   },
   {
     "id": 144,
@@ -9713,7 +10142,10 @@
         "meaning": "Spanish for one"
       }
     ],
-    "description": "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall."
+    "description": "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.",
+    "points": {
+      "max_cp": 2933
+    }
   },
   {
     "id": 145,
@@ -9765,7 +10197,10 @@
         "meaning": "Spanish for two"
       }
     ],
-    "description": "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts."
+    "description": "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.",
+    "points": {
+      "max_cp": 3330
+    }
   },
   {
     "id": 146,
@@ -9817,7 +10252,10 @@
         "meaning": "Spanish for three"
       }
     ],
-    "description": "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself."
+    "description": "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.",
+    "points": {
+      "max_cp": 3272
+    }
   },
   {
     "id": 147,
@@ -9893,7 +10331,10 @@
           "maximum": 1.85
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 860
+    }
   },
   {
     "id": 148,
@@ -9965,7 +10406,10 @@
           "maximum": 2.08
         }
       }
-    ]
+    ],
+    "points": {
+      "max_cp": 1609
+    }
   },
   {
     "id": 149,
@@ -10026,7 +10470,10 @@
         148,
         149
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3581
+    }
   },
   {
     "id": 150,
@@ -10078,7 +10525,10 @@
         "meaning": "the second iteration of Mew"
       }
     ],
-    "description": "Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon's body, they failed to endow Mewtwo with a compassionate heart."
+    "description": "Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon's body, they failed to endow Mewtwo with a compassionate heart.",
+    "points": {
+      "max_cp": 4760
+    }
   },
   {
     "id": 151,
@@ -10132,7 +10582,10 @@
         "meaning": "cat sound"
       }
     ],
-    "description": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people."
+    "description": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
+    "points": {
+      "max_cp": 3090
+    }
   },
   {
     "id": 152,
@@ -10194,7 +10647,10 @@
         153,
         154
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 801
+    }
   },
   {
     "id": 153,
@@ -10256,7 +10712,10 @@
         153,
         154
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1296
+    }
   },
   {
     "id": 154,
@@ -10314,7 +10773,10 @@
         153,
         154
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2227
+    }
   },
   {
     "id": 155,
@@ -10375,7 +10837,10 @@
         156,
         157
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 831
+    }
   },
   {
     "id": 156,
@@ -10436,7 +10901,10 @@
         156,
         157
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1484
+    }
   },
   {
     "id": 157,
@@ -10497,7 +10965,10 @@
         156,
         157
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2686
+    }
   },
   {
     "id": 158,
@@ -10558,7 +11029,10 @@
         159,
         160
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1011
+    }
   },
   {
     "id": 159,
@@ -10619,7 +11093,10 @@
         159,
         160
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1598
+    }
   },
   {
     "id": 160,
@@ -10680,7 +11157,10 @@
         159,
         160
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2721
+    }
   },
   {
     "id": 161,
@@ -10740,7 +11220,10 @@
         161,
         162
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 519
+    }
   },
   {
     "id": 162,
@@ -10800,7 +11283,10 @@
         161,
         162
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1667
+    }
   },
   {
     "id": 163,
@@ -10857,7 +11343,10 @@
         163,
         164
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 640
+    }
   },
   {
     "id": 164,
@@ -10918,7 +11407,10 @@
         163,
         164
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2245
+    }
   },
   {
     "id": 165,
@@ -10975,7 +11467,10 @@
         165,
         166
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 663
+    }
   },
   {
     "id": 166,
@@ -11032,7 +11527,10 @@
         165,
         166
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1275
+    }
   },
   {
     "id": 167,
@@ -11093,7 +11591,10 @@
         167,
         168
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 685
+    }
   },
   {
     "id": 168,
@@ -11154,7 +11655,10 @@
         167,
         168
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1647
+    }
   },
   {
     "id": 169,
@@ -11216,7 +11720,10 @@
         42,
         169
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2466
+    }
   },
   {
     "id": 170,
@@ -11273,7 +11780,10 @@
         170,
         171
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1067
+    }
   },
   {
     "id": 171,
@@ -11334,7 +11844,10 @@
         170,
         171
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2077
+    }
   },
   {
     "id": 172,
@@ -11398,7 +11911,10 @@
         25,
         26
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 376
+    }
   },
   {
     "id": 173,
@@ -11458,7 +11974,10 @@
         35,
         36
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 620
+    }
   },
   {
     "id": 174,
@@ -11523,7 +12042,10 @@
         39,
         40
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 512
+    }
   },
   {
     "id": 175,
@@ -11587,7 +12109,10 @@
         176,
         468
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 540
+    }
   },
   {
     "id": 176,
@@ -11651,7 +12176,10 @@
         176,
         468
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1553
+    }
   },
   {
     "id": 177,
@@ -11707,7 +12235,10 @@
         177,
         178
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 925
+    }
   },
   {
     "id": 178,
@@ -11767,7 +12298,10 @@
         177,
         178
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1975
+    }
   },
   {
     "id": 179,
@@ -11827,7 +12361,10 @@
         180,
         181
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 887
+    }
   },
   {
     "id": 180,
@@ -11887,7 +12424,10 @@
         180,
         181
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1402
+    }
   },
   {
     "id": 181,
@@ -11951,7 +12491,10 @@
         180,
         181
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2695
+    }
   },
   {
     "id": 182,
@@ -12011,7 +12554,10 @@
         44,
         182
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2108
+    }
   },
   {
     "id": 183,
@@ -12072,7 +12618,10 @@
         183,
         184
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 420
+    }
   },
   {
     "id": 184,
@@ -12137,7 +12686,10 @@
         183,
         184
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1503
+    }
   },
   {
     "id": 185,
@@ -12196,7 +12748,10 @@
         438,
         185
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2065
+    }
   },
   {
     "id": 186,
@@ -12256,7 +12811,10 @@
         61,
         186
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2371
+    }
   },
   {
     "id": 187,
@@ -12317,7 +12875,10 @@
         188,
         189
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 508
+    }
   },
   {
     "id": 188,
@@ -12378,7 +12939,10 @@
         188,
         189
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 882
+    }
   },
   {
     "id": 189,
@@ -12439,7 +13003,10 @@
         188,
         189
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1553
+    }
   },
   {
     "id": 190,
@@ -12502,7 +13069,10 @@
         190,
         424
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1188
+    }
   },
   {
     "id": 191,
@@ -12565,7 +13135,10 @@
         191,
         192
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 316
+    }
   },
   {
     "id": 192,
@@ -12624,7 +13197,10 @@
         191,
         192
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2048
+    }
   },
   {
     "id": 193,
@@ -12680,7 +13256,10 @@
         193,
         469
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1326
+    }
   },
   {
     "id": 194,
@@ -12736,7 +13315,10 @@
         194,
         195
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 596
+    }
   },
   {
     "id": 195,
@@ -12796,7 +13378,10 @@
         194,
         195
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1929
+    }
   },
   {
     "id": 196,
@@ -12856,7 +13441,10 @@
         133,
         196
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3000
+    }
   },
   {
     "id": 197,
@@ -12916,7 +13504,10 @@
         133,
         197
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2052
+    }
   },
   {
     "id": 198,
@@ -12980,7 +13571,10 @@
         198,
         430
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1392
+    }
   },
   {
     "id": 199,
@@ -13040,7 +13634,10 @@
         79,
         199
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2482
+    }
   },
   {
     "id": 200,
@@ -13103,7 +13700,10 @@
         200,
         429
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1781
+    }
   },
   {
     "id": 201,
@@ -13152,7 +13752,10 @@
         "meaning": "not known ;)"
       }
     ],
-    "description": "This Pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various Unown. Research into this topic is ongoing but nothing is known."
+    "description": "This Pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various Unown. Research into this topic is ongoing but nothing is known.",
+    "points": {
+      "max_cp": 1022
+    }
   },
   {
     "id": 202,
@@ -13211,7 +13814,10 @@
         360,
         202
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1024
+    }
   },
   {
     "id": 203,
@@ -13265,7 +13871,10 @@
         "meaning": "Girafarig reads the same backwards as forwards, reflecting its symmetric design"
       }
     ],
-    "description": "Girafarig’s rear head contains a tiny brain that is too small for thinking. However, the rear head doesn’t need to sleep, so it can keep watch over its surroundings 24 hours a day."
+    "description": "Girafarig’s rear head contains a tiny brain that is too small for thinking. However, the rear head doesn’t need to sleep, so it can keep watch over its surroundings 24 hours a day.",
+    "points": {
+      "max_cp": 1863
+    }
   },
   {
     "id": 204,
@@ -13320,7 +13929,10 @@
         204,
         205
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1045
+    }
   },
   {
     "id": 205,
@@ -13380,7 +13992,10 @@
         204,
         205
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2263
+    }
   },
   {
     "id": 206,
@@ -13433,7 +14048,10 @@
         "meaning": "rare"
       }
     ],
-    "description": "Dunsparce has a drill for its tail. It uses this tail to burrow into the ground backward. This Pokémon is known to make its nest in complex shapes deep under the ground."
+    "description": "Dunsparce has a drill for its tail. It uses this tail to burrow into the ground backward. This Pokémon is known to make its nest in complex shapes deep under the ground.",
+    "points": {
+      "max_cp": 1615
+    }
   },
   {
     "id": 207,
@@ -13493,7 +14111,10 @@
         207,
         472
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1758
+    }
   },
   {
     "id": 208,
@@ -13553,7 +14174,10 @@
         95,
         208
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2439
+    }
   },
   {
     "id": 209,
@@ -13612,7 +14236,10 @@
         209,
         210
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1124
+    }
   },
   {
     "id": 210,
@@ -13671,7 +14298,10 @@
         209,
         210
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2440
+    }
   },
   {
     "id": 211,
@@ -13725,7 +14355,10 @@
         "meaning": "marine creature"
       }
     ],
-    "description": "Qwilfish sucks in water, inflating itself. This Pokémon uses the pressure of the water it swallowed to shoot toxic quills all at once from all over its body. It finds swimming somewhat challenging."
+    "description": "Qwilfish sucks in water, inflating itself. This Pokémon uses the pressure of the water it swallowed to shoot toxic quills all at once from all over its body. It finds swimming somewhat challenging.",
+    "points": {
+      "max_cp": 2013
+    }
   },
   {
     "id": 212,
@@ -13781,7 +14414,10 @@
         123,
         212
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2801
+    }
   },
   {
     "id": 213,
@@ -13835,7 +14471,10 @@
         "meaning": "water-based reptile"
       }
     ],
-    "description": "Shuckle quietly hides itself under rocks, keeping its body concealed inside its hard shell while eating berries it has stored away. The berries mix with its body fluids to become a juice."
+    "description": "Shuckle quietly hides itself under rocks, keeping its body concealed inside its hard shell while eating berries it has stored away. The berries mix with its body fluids to become a juice.",
+    "points": {
+      "max_cp": 300
+    }
   },
   {
     "id": 214,
@@ -13889,7 +14528,10 @@
         "meaning": "intersecting lines"
       }
     ],
-    "description": "Heracross has sharp claws on its feet. These are planted firmly into the ground or the bark of a tree, giving the Pokémon a secure and solid footing to forcefully fling away foes with its proud horn."
+    "description": "Heracross has sharp claws on its feet. These are planted firmly into the ground or the bark of a tree, giving the Pokémon a secure and solid footing to forcefully fling away foes with its proud horn.",
+    "points": {
+      "max_cp": 2938
+    }
   },
   {
     "id": 215,
@@ -13949,7 +14591,10 @@
         215,
         461
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1868
+    }
   },
   {
     "id": 216,
@@ -14008,7 +14653,10 @@
         216,
         217
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1184
+    }
   },
   {
     "id": 217,
@@ -14067,7 +14715,10 @@
         216,
         217
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2760
+    }
   },
   {
     "id": 218,
@@ -14126,7 +14777,10 @@
         218,
         219
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 750
+    }
   },
   {
     "id": 219,
@@ -14186,7 +14840,10 @@
         218,
         219
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1846
+    }
   },
   {
     "id": 220,
@@ -14247,7 +14904,10 @@
         221,
         473
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 663
+    }
   },
   {
     "id": 221,
@@ -14308,7 +14968,10 @@
         221,
         473
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2284
+    }
   },
   {
     "id": 222,
@@ -14362,7 +15025,10 @@
         "meaning": "of or relating to the Sun"
       }
     ],
-    "description": "Clusters of Corsola congregate in warm seas where they serve as ideal hiding places for smaller Pokémon. When the water temperature falls, this Pokémon migrates to the southern seas."
+    "description": "Clusters of Corsola congregate in warm seas where they serve as ideal hiding places for smaller Pokémon. When the water temperature falls, this Pokémon migrates to the southern seas.",
+    "points": {
+      "max_cp": 1378
+    }
   },
   {
     "id": 223,
@@ -14421,7 +15087,10 @@
         223,
         224
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 749
+    }
   },
   {
     "id": 224,
@@ -14480,7 +15149,10 @@
         223,
         224
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2124
+    }
   },
   {
     "id": 225,
@@ -14538,7 +15210,10 @@
         "meaning": "winged animal"
       }
     ],
-    "description": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of the world’s highest mountain, thanks to one of these Pokémon sharing its food."
+    "description": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of the world’s highest mountain, thanks to one of these Pokémon sharing its food.",
+    "points": {
+      "max_cp": 937
+    }
   },
   {
     "id": 226,
@@ -14598,7 +15273,10 @@
         458,
         226
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2310
+    }
   },
   {
     "id": 227,
@@ -14652,7 +15330,10 @@
         "meaning": "storage unit for weapons"
       }
     ],
-    "description": "Skarmory’s steel wings become tattered and bashed in from repeated battles. Once a year, the battered wings grow back completely, restoring the cutting edges to their pristine state."
+    "description": "Skarmory’s steel wings become tattered and bashed in from repeated battles. Once a year, the battered wings grow back completely, restoring the cutting edges to their pristine state.",
+    "points": {
+      "max_cp": 2045
+    }
   },
   {
     "id": 228,
@@ -14712,7 +15393,10 @@
         228,
         229
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1110
+    }
   },
   {
     "id": 229,
@@ -14772,7 +15456,10 @@
         228,
         229
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2529
+    }
   },
   {
     "id": 230,
@@ -14833,7 +15520,10 @@
         117,
         230
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2424
+    }
   },
   {
     "id": 231,
@@ -14892,7 +15582,10 @@
         231,
         232
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1175
+    }
   },
   {
     "id": 232,
@@ -14951,7 +15644,10 @@
         231,
         232
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3022
+    }
   },
   {
     "id": 233,
@@ -15011,7 +15707,10 @@
         233,
         474
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 2546
+    }
   },
   {
     "id": 234,
@@ -15064,7 +15763,10 @@
         "meaning": "a deer’s ‘horns’"
       }
     ],
-    "description": "Stantler’s magnificent antlers were traded at high prices as works of art. As a result, this Pokémon was hunted close to extinction by those who were after the priceless antlers."
+    "description": "Stantler’s magnificent antlers were traded at high prices as works of art. As a result, this Pokémon was hunted close to extinction by those who were after the priceless antlers.",
+    "points": {
+      "max_cp": 1988
+    }
   },
   {
     "id": 235,
@@ -15117,7 +15819,10 @@
         "meaning": "a breed of dog"
       }
     ],
-    "description": "Smeargle marks the boundaries of its territory using a body fluid that leaks out from the tip of its tail. Over 5,000 different marks left by this Pokémon have been found."
+    "description": "Smeargle marks the boundaries of its territory using a body fluid that leaks out from the tip of its tail. Over 5,000 different marks left by this Pokémon have been found.",
+    "points": {
+      "max_cp": 389
+    }
   },
   {
     "id": 236,
@@ -15188,7 +15893,10 @@
         236,
         237
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 404
+    }
   },
   {
     "id": 237,
@@ -15251,7 +15959,10 @@
         236,
         237
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1905
+    }
   },
   {
     "id": 238,
@@ -15315,7 +16026,10 @@
         238,
         124
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1230
+    }
   },
   {
     "id": 239,
@@ -15379,7 +16093,10 @@
         125,
         466
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1073
+    }
   },
   {
     "id": 240,
@@ -15443,7 +16160,10 @@
         126,
         467
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1178
+    }
   },
   {
     "id": 241,
@@ -15496,7 +16216,10 @@
         "meaning": "large storage unit or heavily amored vehicle"
       }
     ],
-    "description": "Miltank gives over five gallons of milk on a daily basis. Its sweet milk is enjoyed by children and grown-ups alike. People who can’t drink milk turn it into yogurt and eat it instead."
+    "description": "Miltank gives over five gallons of milk on a daily basis. Its sweet milk is enjoyed by children and grown-ups alike. People who can’t drink milk turn it into yogurt and eat it instead.",
+    "points": {
+      "max_cp": 2325
+    }
   },
   {
     "id": 242,
@@ -15552,7 +16275,10 @@
         113,
         242
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3219
+    }
   },
   {
     "id": 243,
@@ -15605,7 +16331,10 @@
         "meaning": "Japanese for ‘emperor’"
       }
     ],
-    "description": "Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves shuddering through the air and shake the ground as if lightning bolts had come crashing down."
+    "description": "Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves shuddering through the air and shake the ground as if lightning bolts had come crashing down.",
+    "points": {
+      "max_cp": 3349
+    }
   },
   {
     "id": 244,
@@ -15658,7 +16387,10 @@
         "meaning": "Japanese for ‘emperor’"
       }
     ],
-    "description": "Entei embodies the passion of magma. This Pokémon is thought to have been born in the eruption of a volcano. It sends up massive bursts of fire that utterly consume all that they touch."
+    "description": "Entei embodies the passion of magma. This Pokémon is thought to have been born in the eruption of a volcano. It sends up massive bursts of fire that utterly consume all that they touch.",
+    "points": {
+      "max_cp": 3377
+    }
   },
   {
     "id": 245,
@@ -15711,7 +16443,10 @@
         "meaning": "Japanese for ‘monarch’"
       }
     ],
-    "description": "Suicune embodies the compassion of a pure spring of water. It runs across the land with gracefulness. This Pokémon has the power to purify dirty water."
+    "description": "Suicune embodies the compassion of a pure spring of water. It runs across the land with gracefulness. This Pokémon has the power to purify dirty water.",
+    "points": {
+      "max_cp": 2823
+    }
   },
   {
     "id": 246,
@@ -15772,7 +16507,10 @@
         247,
         248
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 904
+    }
   },
   {
     "id": 247,
@@ -15833,7 +16571,10 @@
         247,
         248
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 1608
+    }
   },
   {
     "id": 248,
@@ -15894,7 +16635,10 @@
         247,
         248
       ]
-    ]
+    ],
+    "points": {
+      "max_cp": 3670
+    }
   },
   {
     "id": 249,
@@ -15944,7 +16688,10 @@
         "meaning": "Latin for ‘lie dormant’"
       }
     ],
-    "description": "Lugia’s wings pack devastating power—a light fluttering of its wings can blow apart regular houses. As a result, this Pokémon chooses to live out of sight deep under the sea."
+    "description": "Lugia’s wings pack devastating power—a light fluttering of its wings can blow apart regular houses. As a result, this Pokémon chooses to live out of sight deep under the sea.",
+    "points": {
+      "max_cp": 3598
+    }
   },
   {
     "id": 250,
@@ -15994,7 +16741,10 @@
         "meaning": "Chinese phoenix"
       }
     ],
-    "description": "Ho-Oh’s feathers glow in seven colors depending on the angle at which they are struck by light. These feathers are said to bring happiness to the bearers. This Pokémon is said to live at the foot of a rainbow."
+    "description": "Ho-Oh’s feathers glow in seven colors depending on the angle at which they are struck by light. These feathers are said to bring happiness to the bearers. This Pokémon is said to live at the foot of a rainbow.",
+    "points": {
+      "max_cp": 4650
+    }
   },
   {
     "id": 251,
@@ -16048,6 +16798,9 @@
         "meaning": "one’s existence"
       }
     ],
-    "description": "This Pokémon came from the future by crossing over time. It is thought that so long as Celebi appears, a bright and shining future awaits us."
+    "description": "This Pokémon came from the future by crossing over time. It is thought that so long as Celebi appears, a bright and shining future awaits us.",
+    "points": {
+      "max_cp": 3090
+    }
   }
 ]

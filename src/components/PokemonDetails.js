@@ -215,8 +215,7 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
             {this._renderStat('Stamina', pokemon.stats.stamina / maxValues.stamina, pokemon.stats.stamina, '#5499c7')}
             {this._renderStat('Capture Rate', pokemon.encounter.capture_rate, (pokemon.encounter.capture_rate * 100).toFixed(2) + '%', '#f06292')}
             {this._renderStat('Flee Rate', pokemon.encounter.flee_rate, (pokemon.encounter.flee_rate * 100).toFixed(2) + '%', '#ffd54f')}
-            {/* this._renderStat('Max CP', pokemon.points.max_cp / maxValues.max_cp, pokemon.points.max_cp, '#e57373') */}
-            {/* this._renderStat('Max HP', pokemon.points.max_hp / maxValues.max_hp, pokemon.points.max_hp, '#4db6ac') */}
+            {this._renderStat('Max CP', pokemon.points.max_cp / maxValues.max_cp, pokemon.points.max_cp, '#e57373')}
           </View>
 
           {pokemon.evolution_chains ?

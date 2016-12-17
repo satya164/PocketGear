@@ -87,7 +87,7 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
     super(props);
 
     this.state = {
-      value: Math.round(this.props.pokemon.points ? this.props.pokemon.points.average_cp : 0),
+      value: Math.round(this.props.pokemon.points.max_cp / 2),
     };
   }
 

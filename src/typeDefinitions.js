@@ -51,11 +51,8 @@ export type Pokemon = {|
     attack: number;
     defense: number;
   };
-  points?: { // TODO
-    average_cp: number;
-    average_hp: number;
+  points: {
     max_cp: number;
-    max_hp: number;
   };
   evolution_chains?: Array<Array<PokemonID>>;
   evolution_cp_multipliers: Array<{
