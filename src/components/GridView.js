@@ -1,14 +1,13 @@
 /* @flow */
 
 import React, { PureComponent, PropTypes } from 'react';
-import ReactNative from 'react-native';
-
-const {
+import {
+  Platform,
   Dimensions,
   ListView,
   StyleSheet,
   View,
-} = ReactNative;
+} from 'react-native';
 
 const styles = StyleSheet.create({
   grid: {
@@ -144,7 +143,7 @@ export default class GridView extends PureComponent<DefaultProps, Props, State> 
     return (
       <ListView
         {...this.props}
-        removeClippedSubviews={false}
+        removeClippedSubviews={Platform.OS !== 'ios'}
         enableEmptySections={false}
         dataSource={this.state.dataSource}
         onLayout={this._handleLayout}

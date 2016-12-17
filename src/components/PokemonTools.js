@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
 
   item: {
-    marginVertical: 8,
+    marginVertical: 16,
   },
 });
 
@@ -56,30 +56,14 @@ export default class PokemonTools extends PureComponent<void, Props, void> {
   };
 
   render() {
-    const { pokemon } = this.props;
-
-    if (!pokemon.evolution_cp_multipliers) {
-      return (
-        <NoResults
-          source={require('../../assets/images/pokegear.png')}
-          label='Nothing here'
-        />
-      );
-    }
-
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
         <View style={styles.content}>
-          {pokemon.evolution_cp_multipliers ?
-            <View style={styles.item}>
-              <CPCalculator
-                style={styles.item}
-                pokemon={pokemon}
-                onNavigate={this.props.onNavigate}
-              />
-            </View> :
-            null
-          }
+          <CPCalculator
+            style={styles.item}
+            pokemon={this.props.pokemon}
+            onNavigate={this.props.onNavigate}
+          />
         </View>
       </ScrollView>
     );

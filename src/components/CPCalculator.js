@@ -116,6 +116,16 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
 
     const pokemons = store.getPokemons();
 
+    if (!pokemon.evolution_cp_multipliers) {
+      return (
+        <View {...this.props}>
+          <Text style={styles.text}>
+            CP Calculator is not available for this Pokémon.
+          </Text>
+        </View>
+      );
+    }
+
     return (
       <View {...this.props}>
         <Heading>CP after evolution</Heading>
@@ -125,7 +135,7 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
           style={styles.spinbutton}
         />
         <View style={styles.container}>
-          {pokemon.evolution_cp_multipliers ? pokemon.evolution_cp_multipliers.map(it => {
+          {pokemon.evolution_cp_multipliers.map(it => {
             const poke = pokemons.find(p => p.id === it.id);
             const minimum = (this.state.value || 0) * it.multipliers.minimum;
             const maximum = (this.state.value || 0) * it.multipliers.maximum;
@@ -149,7 +159,7 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
                   </View>
               </TouchableOpacity>
             );
-          }) : null}
+          })}
         </View>
       </View>
     );
