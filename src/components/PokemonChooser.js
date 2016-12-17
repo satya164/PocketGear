@@ -66,9 +66,10 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
       }
       return filter(pokemons, (pokemon => {
         return (
-          pokemon.name.toLowerCase().startsWith(query) ||
+          /* String#startsWith doesn't work properly for unicode */
+          pokemon.name.toLowerCase().indexOf(query) === 0 ||
           query.split(',').map(q => q.trim()).every(q =>
-            pokemon.types.some(type => type.toLowerCase().startsWith(q))
+            pokemon.types.some(type => type.toLowerCase().indexOf(q) === 0)
           )
         );
       }));
