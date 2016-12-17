@@ -7,7 +7,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Vine Whip",
         "Tackle"
       ],
@@ -76,7 +76,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Vine Whip"
       ],
@@ -141,7 +141,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Vine Whip"
       ],
@@ -201,7 +201,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Scratch"
       ],
@@ -269,7 +269,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Scratch"
       ],
@@ -334,7 +334,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Wing Attack"
       ],
@@ -394,7 +394,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bubble",
         "Tackle"
       ],
@@ -466,7 +466,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Bite"
       ],
@@ -534,7 +534,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Bite"
       ],
@@ -594,7 +594,7 @@
       "Bug"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Tackle"
       ],
@@ -656,7 +656,7 @@
       "Bug"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Tackle"
       ],
@@ -719,7 +719,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Confusion"
       ],
@@ -780,7 +780,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Poison Sting"
       ],
@@ -847,7 +847,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Poison Sting"
       ],
@@ -906,7 +906,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Poison Jab"
       ],
@@ -967,7 +967,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Quick Attack",
         "Tackle"
       ],
@@ -1032,7 +1032,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Wing Attack",
         "Steel Wing"
       ],
@@ -1093,7 +1093,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Wing Attack",
         "Steel Wing"
       ],
@@ -1149,7 +1149,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Quick Attack"
       ],
@@ -1216,7 +1216,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bite",
         "Quick Attack"
       ],
@@ -1276,7 +1276,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Peck",
         "Quick Attack"
       ],
@@ -1344,7 +1344,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Peck",
         "Steel Wing"
       ],
@@ -1403,7 +1403,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Poison Sting",
         "Acid"
       ],
@@ -1466,7 +1466,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bite",
         "Acid"
       ],
@@ -1521,7 +1521,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Thunder Shock",
         "Quick Attack"
       ],
@@ -1592,7 +1592,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Thunder Shock",
         "Spark"
       ],
@@ -1652,7 +1652,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Scratch",
         "Mud Shot"
       ],
@@ -1719,7 +1719,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Metal Claw",
         "Mud Shot"
       ],
@@ -1778,7 +1778,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bite",
         "Poison Sting"
       ],
@@ -1850,7 +1850,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bite",
         "Poison Sting"
       ],
@@ -1915,7 +1915,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Poison Jab",
         "Bite"
       ],
@@ -1975,7 +1975,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Peck",
         "Poison Sting"
       ],
@@ -2047,7 +2047,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Poison Jab",
         "Poison Sting"
       ],
@@ -2112,7 +2112,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Poison Jab",
         "Fury Cutter"
       ],
@@ -2172,7 +2172,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Zen Headbutt"
       ],
@@ -2240,7 +2240,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Zen Headbutt"
       ],
@@ -2300,7 +2300,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Quick Attack",
         "Ember"
       ],
@@ -2367,7 +2367,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Feint Attack",
         "Ember"
       ],
@@ -2427,7 +2427,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Feint Attack"
       ],
@@ -2497,7 +2497,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Feint Attack"
       ],
@@ -2558,7 +2558,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Quick Attack",
         "Bite"
       ],
@@ -2627,7 +2627,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Wing Attack",
         "Bite"
       ],
@@ -2688,7 +2688,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Acid"
       ],
@@ -2762,7 +2762,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Acid"
       ],
@@ -2832,7 +2832,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Acid"
       ],
@@ -2898,7 +2898,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Scratch",
         "Bug Bite"
       ],
@@ -2962,7 +2962,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Fury Cutter"
       ],
@@ -3022,7 +3022,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Confusion"
       ],
@@ -3090,7 +3090,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bug Bite",
         "Confusion"
       ],
@@ -3149,7 +3149,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Slap",
         "Scratch",
         "Mud Shot"
@@ -3217,7 +3217,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Sucker Punch",
         "Mud Slap",
         "Mud Shot"
@@ -3277,7 +3277,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Scratch",
         "Bite"
       ],
@@ -3340,7 +3340,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Scratch",
         "Feint Attack"
       ],
@@ -3395,7 +3395,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Zen Headbutt"
       ],
@@ -3462,7 +3462,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Confusion"
       ],
@@ -3521,7 +3521,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Karate Chop",
         "Scratch"
       ],
@@ -3588,7 +3588,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Low Kick",
         "Karate Chop"
       ],
@@ -3651,7 +3651,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Bite"
       ],
@@ -3718,7 +3718,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Fire Fang",
         "Bite"
       ],
@@ -3777,7 +3777,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bubble",
         "Mud Shot"
       ],
@@ -3850,7 +3850,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bubble",
         "Mud Shot"
       ],
@@ -3920,7 +3920,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bubble",
         "Mud Shot"
       ],
@@ -3985,7 +3985,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Zen Headbutt"
       ],
       "cinematic": [
@@ -4048,7 +4048,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Psycho Cut",
         "Confusion"
       ],
@@ -4108,7 +4108,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Psycho Cut",
         "Confusion"
       ],
@@ -4164,7 +4164,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Low Kick",
         "Karate Chop"
       ],
@@ -4232,7 +4232,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Low Kick",
         "Karate Chop"
       ],
@@ -4296,7 +4296,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bullet Punch",
         "Karate Chop"
       ],
@@ -4357,7 +4357,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Vine Whip",
         "Acid"
       ],
@@ -4426,7 +4426,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Acid"
       ],
@@ -4491,7 +4491,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Acid"
       ],
@@ -4556,7 +4556,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bubble",
         "Poison Sting"
       ],
@@ -4624,7 +4624,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Acid",
         "Poison Jab"
       ],
@@ -4684,7 +4684,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Rock Throw",
         "Tackle"
       ],
@@ -4753,7 +4753,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Rock Throw",
         "Mud Slap",
         "Mud Shot"
@@ -4815,7 +4815,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Rock Throw",
         "Mud Slap",
         "Mud Shot"
@@ -4872,7 +4872,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Ember"
       ],
@@ -4939,7 +4939,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Low Kick",
         "Ember"
       ],
@@ -5003,7 +5003,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Confusion"
       ],
@@ -5075,7 +5075,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Confusion"
       ],
@@ -5139,7 +5139,7 @@
       "Steel"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Spark",
         "Thunder Shock"
       ],
@@ -5208,7 +5208,7 @@
       "Steel"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Spark",
         "Thunder Shock"
       ],
@@ -5269,7 +5269,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Cut",
         "Fury Cutter"
       ],
@@ -5323,7 +5323,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Peck",
         "Quick Attack"
       ],
@@ -5391,7 +5391,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Feint Attack",
         "Steel Wing"
       ],
@@ -5450,7 +5450,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ice Shard",
         "Lick",
         "Water Gun"
@@ -5515,7 +5515,7 @@
       "Ice"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Frost Breath",
         "Ice Shard"
       ],
@@ -5574,7 +5574,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Poison Jab",
         "Mud Slap",
         "Acid"
@@ -5638,7 +5638,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Lick",
         "Poison Jab",
         "Acid"
@@ -5694,7 +5694,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ice Shard",
         "Tackle"
       ],
@@ -5762,7 +5762,7 @@
       "Ice"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Frost Breath",
         "Ice Shard"
       ],
@@ -5826,7 +5826,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Lick",
         "Sucker Punch"
       ],
@@ -5895,7 +5895,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Shadow Claw",
         "Lick"
       ],
@@ -5956,7 +5956,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Sucker Punch",
         "Shadow Claw"
       ],
@@ -6014,7 +6014,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Rock Throw",
         "Tackle"
       ],
@@ -6073,7 +6073,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Confusion"
       ],
@@ -6140,7 +6140,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Zen Headbutt",
         "Confusion"
       ],
@@ -6195,7 +6195,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bubble",
         "Mud Shot"
       ],
@@ -6262,7 +6262,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Metal Claw",
         "Mud Shot"
       ],
@@ -6321,7 +6321,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Spark",
         "Tackle"
       ],
@@ -6388,7 +6388,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Spark",
         "Tackle"
       ],
@@ -6448,7 +6448,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Confusion"
       ],
       "cinematic": [
@@ -6515,7 +6515,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Confusion",
         "Zen Headbutt"
       ],
@@ -6574,7 +6574,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Slap",
         "Rock Smash"
       ],
@@ -6641,7 +6641,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Slap",
         "Rock Smash"
       ],
@@ -6700,7 +6700,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Low Kick",
         "Rock Smash"
       ],
@@ -6768,7 +6768,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bullet Punch",
         "Rock Smash"
       ],
@@ -6836,7 +6836,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Lick",
         "Zen Headbutt"
       ],
@@ -6899,7 +6899,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Acid"
       ],
@@ -6962,7 +6962,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Acid"
       ],
@@ -7018,7 +7018,7 @@
       "Rock"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Slap",
         "Rock Smash"
       ],
@@ -7087,7 +7087,7 @@
       "Rock"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Slap",
         "Rock Smash"
       ],
@@ -7147,7 +7147,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Zen Headbutt"
       ],
@@ -7208,7 +7208,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Vine Whip"
       ],
       "cinematic": [
@@ -7266,7 +7266,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Slap",
         "Low Kick"
       ],
@@ -7323,7 +7323,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Bubble"
       ],
@@ -7391,7 +7391,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Dragon Breath"
       ],
@@ -7451,7 +7451,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Peck",
         "Mud Shot"
       ],
@@ -7518,7 +7518,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Peck",
         "Poison Jab"
       ],
@@ -7577,7 +7577,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Water Gun",
         "Quick Attack"
@@ -7646,7 +7646,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Water Gun",
         "Quick Attack"
@@ -7708,7 +7708,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Confusion",
         "Zen Headbutt"
       ],
@@ -7772,7 +7772,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Fury Cutter",
         "Steel Wing"
       ],
@@ -7832,7 +7832,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Frost Breath",
         "Pound"
       ],
@@ -7891,7 +7891,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Thunder Shock",
         "Low Kick"
       ],
@@ -7955,7 +7955,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Karate Chop"
       ],
@@ -8015,7 +8015,7 @@
       "Bug"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Rock Smash",
         "Fury Cutter"
       ],
@@ -8068,7 +8068,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Zen Headbutt"
       ],
@@ -8121,7 +8121,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Splash"
       ],
       "cinematic": [
@@ -8186,7 +8186,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bite",
         "Dragon Breath"
       ],
@@ -8242,7 +8242,7 @@
       "Ice"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Frost Breath",
         "Ice Shard"
       ],
@@ -8295,7 +8295,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Transform"
       ],
       "cinematic": [
@@ -8341,7 +8341,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Quick Attack",
         "Tackle"
       ],
@@ -8435,7 +8435,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun"
       ],
       "cinematic": [
@@ -8493,7 +8493,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Thunder Shock"
       ],
       "cinematic": [
@@ -8551,7 +8551,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember"
       ],
       "cinematic": [
@@ -8609,7 +8609,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Zen Headbutt",
         "Tackle",
         "Quick Attack"
@@ -8671,7 +8671,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Mud Shot"
       ],
@@ -8739,7 +8739,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Shot",
         "Water Gun",
         "Rock Throw"
@@ -8800,7 +8800,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Scratch",
         "Mud Shot"
       ],
@@ -8864,7 +8864,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Mud Shot",
         "Fury Cutter"
       ],
@@ -8924,7 +8924,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Steel Wing",
         "Bite"
       ],
@@ -8981,7 +8981,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Zen Headbutt",
         "Lick"
       ],
@@ -9045,7 +9045,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Frost Breath"
       ],
       "cinematic": [
@@ -9097,7 +9097,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Thunder Shock"
       ],
       "cinematic": [
@@ -9149,7 +9149,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember"
       ],
       "cinematic": [
@@ -9200,7 +9200,7 @@
       "Dragon"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Dragon Breath"
       ],
       "cinematic": [
@@ -9267,7 +9267,7 @@
       "Dragon"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Dragon Breath"
       ],
       "cinematic": [
@@ -9331,7 +9331,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Dragon Breath",
         "Steel Wing"
       ],
@@ -9391,7 +9391,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Psycho Cut",
         "Confusion"
       ],
@@ -9443,7 +9443,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound"
       ],
       "cinematic": [
@@ -9497,7 +9497,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Tackle"
       ],
@@ -9559,7 +9559,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Tackle"
       ],
@@ -9621,7 +9621,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Razor Leaf",
         "Vine Whip"
       ],
@@ -9679,7 +9679,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Tackle"
       ],
@@ -9740,7 +9740,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Tackle"
       ],
@@ -9801,7 +9801,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Shadow Claw"
       ],
@@ -9862,7 +9862,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Scratch"
       ],
@@ -9923,7 +9923,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Scratch"
       ],
@@ -9984,7 +9984,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Bite"
       ],
@@ -10045,7 +10045,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Scratch",
         "Quick Attack"
       ],
@@ -10105,7 +10105,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Quick Attack",
         "Sucker Punch"
       ],
@@ -10166,7 +10166,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Peck"
       ],
@@ -10223,7 +10223,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Peck"
       ],
@@ -10284,7 +10284,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Bug Bite"
       ],
@@ -10341,7 +10341,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle",
         "Bug Bite"
       ],
@@ -10398,7 +10398,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Poison Sting",
         "Bug Bite"
       ],
@@ -10459,7 +10459,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Poison Sting",
         "Bug Bite"
       ],
@@ -10520,7 +10520,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Wing Attack",
         "Bite"
       ],
@@ -10582,7 +10582,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Bubble",
         "Spark"
       ],
@@ -10639,7 +10639,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Water Gun",
         "Spark"
       ],
@@ -10699,7 +10699,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Thunder Shock",
         "Quick Attack"
       ],
@@ -10763,7 +10763,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Zen Headbutt"
       ],
@@ -10824,7 +10824,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Pound",
         "Feint Attack"
       ],
@@ -10888,7 +10888,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Zen Headbutt",
         "Peck"
       ],
@@ -10953,7 +10953,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Zen Headbutt",
         "Steel Wing"
       ],
@@ -11017,7 +11017,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Peck"
       ],
       "cinematic": [
@@ -11073,7 +11073,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11132,7 +11132,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11192,7 +11192,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11252,7 +11252,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11316,7 +11316,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11377,7 +11377,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11438,7 +11438,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11502,7 +11502,7 @@
       "Rock"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11561,7 +11561,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11622,7 +11622,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11683,7 +11683,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11744,7 +11744,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11804,7 +11804,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11867,7 +11867,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11930,7 +11930,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -11990,7 +11990,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12046,7 +12046,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12102,7 +12102,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12161,7 +12161,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Confusion",
         "Zen Headbutt"
       ],
@@ -12221,7 +12221,7 @@
       "Dark"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Feint Attack",
         "Bite"
       ],
@@ -12282,7 +12282,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12346,7 +12346,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12405,7 +12405,7 @@
       "Ghost"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12468,7 +12468,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12517,7 +12517,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12577,7 +12577,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12630,7 +12630,7 @@
       "Bug"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12686,7 +12686,7 @@
       "Steel"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12745,7 +12745,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12799,7 +12799,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12859,7 +12859,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12918,7 +12918,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -12977,7 +12977,7 @@
       "Fairy"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13037,7 +13037,7 @@
       "Poison"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13091,7 +13091,7 @@
       "Steel"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13147,7 +13147,7 @@
       "Rock"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13201,7 +13201,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13255,7 +13255,7 @@
       "Ice"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13314,7 +13314,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13373,7 +13373,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13432,7 +13432,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13492,7 +13492,7 @@
       "Rock"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13552,7 +13552,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13613,7 +13613,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13674,7 +13674,7 @@
       "Rock"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13727,7 +13727,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13786,7 +13786,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13846,7 +13846,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13904,7 +13904,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -13964,7 +13964,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14018,7 +14018,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14078,7 +14078,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14138,7 +14138,7 @@
       "Dragon"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14198,7 +14198,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14257,7 +14257,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14316,7 +14316,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14376,7 +14376,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14429,7 +14429,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14482,7 +14482,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Rock Smash",
         "Low Kick"
       ],
@@ -14553,7 +14553,7 @@
       "Fighting"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14617,7 +14617,7 @@
       "Psychic"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Frost Breath",
         "Pound"
       ],
@@ -14680,7 +14680,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Thunder Shock",
         "Low Kick"
       ],
@@ -14744,7 +14744,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Ember",
         "Karate Chop"
       ],
@@ -14808,7 +14808,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14861,7 +14861,7 @@
       "Normal"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14917,7 +14917,7 @@
       "Electric"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -14970,7 +14970,7 @@
       "Fire"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -15023,7 +15023,7 @@
       "Water"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -15077,7 +15077,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -15138,7 +15138,7 @@
       "Ground"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -15199,7 +15199,7 @@
       "Dark"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -15260,7 +15260,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -15310,7 +15310,7 @@
       "Flying"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [
@@ -15360,7 +15360,7 @@
       "Grass"
     ],
     "moves": {
-      "quik": [
+      "quick": [
         "Tackle"
       ],
       "cinematic": [

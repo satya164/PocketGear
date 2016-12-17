@@ -22,8 +22,7 @@ import store from '../store';
 import type {
   Pokemon,
   PokemonID,
-  QuickAttack,
-  SpecialAttack,
+  Move,
 } from '../typeDefinitions';
 
 const styles = StyleSheet.create({
@@ -117,12 +116,12 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
     );
   };
 
-  _renderAttack = (attack: QuickAttack | SpecialAttack) => {
+  _renderAttack = (move: Move) => {
     return (
       <Attack
-        key={attack.name}
+        key={move.name}
         style={styles.row}
-        attack={attack}
+        move={move}
       />
     );
   };

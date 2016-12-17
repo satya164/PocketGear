@@ -1,8 +1,7 @@
 /* @flow */
 
 import pokemons from './data/pokemons.json';
-import quickAttacks from './data/quick_attacks.json';
-import specialAttacks from './data/special_attacks.json';
+import moves from './data/moves.json';
 import typeChart from './data/type_chart.json';
 import colors from './colors.json';
 import sprites from './sprites';
@@ -10,8 +9,7 @@ import type {
   Pokemon,
   PokemonID,
   PokemonType,
-  QuickAttack,
-  SpecialAttack,
+  Move,
   TypeChart,
 } from './typeDefinitions';
 
@@ -27,12 +25,8 @@ function getPokemons(): Array<Pokemon> {
   return pokemons;
 }
 
-function getQuickAttacks(): Array<QuickAttack> {
-  return quickAttacks;
-}
-
-function getSpecialAttacks(): Array<SpecialAttack> {
-  return specialAttacks;
+function getMoves(): Array<Move> {
+  return moves;
 }
 
 function getTypeChart(): Array<TypeChart> {
@@ -53,8 +47,7 @@ function getMaxValues() {
 
 export default {
   getPokemons,
-  getQuickAttacks,
-  getSpecialAttacks,
+  getMoves,
   getTypeChart,
   getSprite,
   getColor,

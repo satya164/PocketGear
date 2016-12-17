@@ -32,6 +32,10 @@ export type Pokemon = {|
     term: string;
     meaning: string;
   }>;
+  moves: {
+    quick: Array<string>;
+    cinematic: Array<string>;
+  };
   measurements: {
     height: {
       amount: number;
@@ -82,19 +86,14 @@ export type TypeChart = {|
   not_very_effective: Array<PokemonType>;
 |}
 
-export type Attack = {|
+export type Move = {|
   name: string;
   type: PokemonType;
-  damage: number;
+  power: number;
   duration: number;
-  known_by: Array<PokemonID>;
-|}
-
-export type QuickAttack = Attack & {|
-  energy_increase: number;
-|}
-
-export type SpecialAttack = Attack & {|
-  critical_hit_chance: number;
-  energy_requirement: number;
+  energy_delta: number;
+  accuracy_chance: number;
+  critical_chance?: number;
+  stamina_loss: number;
+  quick: boolean;
 |}

@@ -6,11 +6,11 @@ import type {
 } from '../typeDefinitions';
 
 export default function getQuickAttacks(pokemon: Pokemon) {
-  const quickAttacks = store.getQuickAttacks();
+  const moves = store.getMoves();
 
-  return quickAttacks
-    .filter(attack =>
-      attack.known_by.includes(pokemon.id)
+  return moves
+    .filter(move =>
+      pokemon.moves.quick.includes(move.name)
     )
-    .sort((a, b) => (b.damage / b.duration) - (a.damage / a.duration));
+    .sort((a, b) => (b.power / b.duration) - (a.power / a.duration));
 }

@@ -6,10 +6,7 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
-import type {
-  QuickAttack,
-  SpecialAttack,
-} from '../typeDefinitions';
+import type { Move } from '../typeDefinitions';
 
 const styles = StyleSheet.create({
   spacer: {
@@ -59,37 +56,37 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  attack: QuickAttack | SpecialAttack;
+  move: Move;
 }
 
 export default class Attack extends PureComponent<void, Props, void> {
 
   static propTypes = {
-    attack: PropTypes.object.isRequired,
+    move: PropTypes.object.isRequired,
   };
 
   render() {
-    const { attack } = this.props;
+    const { move } = this.props;
 
     return (
       <View style={styles.row}>
         <View style={styles.type}>
           <Text style={styles.text}>
-            {attack.name}
+            {move.name}
           </Text>
           <Text style={styles.subtitle}>
-            {attack.type}
+            {move.type}
           </Text>
         </View>
-        {typeof (attack: any).energy_requirement === 'number' ? Array.from({ length: (attack: any).energy_requirement }).map((_, i) => {
+        {!move.quick && move.energy_delta ? Array.from({ length: Math.abs(Math.round(100 / move.energy_delta)) }).map((_, i) => {
           return <View key={i} style={styles.energy} />;
         }) : <View style={styles.spacer} />}
         <View style={styles.damage}>
           <Text style={styles.text}>
-            {(attack.damage / (attack.duration / 1000)).toFixed(1)} dps
+            {(move.power / (move.duration / 1000)).toFixed(1)} dps
           </Text>
           <Text style={[ styles.subtitle, styles.numbers ]}>
-            {attack.damage} / {(attack.duration / 1000)} s
+            {move.power} / {(move.duration / 1000)} s
           </Text>
         </View>
       </View>
