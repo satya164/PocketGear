@@ -66,6 +66,10 @@ export type Pokemon = {|
     amount: number;
     unit: 'km';
   };
+  buddy_distance?: {
+    amount: number;
+    unit: 'km';
+  };
   evolution_requirements: {
     amount: number;
     name: string;

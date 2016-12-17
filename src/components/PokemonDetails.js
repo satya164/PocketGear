@@ -54,6 +54,14 @@ const styles = StyleSheet.create({
     marginVertical: 4,
   },
 
+  origin: {
+    marginVertical: 10,
+  },
+
+  term: {
+    marginVertical: 2,
+  },
+
   wrap: {
     flex: 1,
     flexDirection: 'row',
@@ -66,7 +74,7 @@ const styles = StyleSheet.create({
   },
 
   measurement: {
-    width: 80,
+    width: 120,
   },
 
   label: {
@@ -147,17 +155,36 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
             <Paragraph>{pokemon.description}</Paragraph>
           </View>
 
-          <View style={styles.item}>
+          <View style={styles.origin}>
             {pokemon.name_origin.map(({ term, meaning }) => (
-              <View key={term}>
-                <Paragraph>
-                  <Text style={[ styles.text, styles.strong ]}>{term}</Text>
-                  <Text>{'    '}</Text>
-                  <Text>{meaning}</Text>
-                </Paragraph>
-              </View>
+              <Paragraph style={styles.term} key={term}>
+                <Text style={[ styles.text, styles.strong ]}>{term}</Text>
+                <Text>{'    '}</Text>
+                <Text>{meaning}</Text>
+              </Paragraph>
             ))}
           </View>
+
+          {pokemon.egg_distance || pokemon.buddy_distance ?
+            <View style={styles.item}>
+            {pokemon.egg_distance ?
+              <View style={[ styles.row, styles.center ]}>
+                <Text selectable style={[ styles.text, styles.strong, styles.measurement ]}>Egg Group</Text>
+                <Text selectable style={styles.text}>
+                  {pokemon.egg_distance.amount} {pokemon.egg_distance.unit}
+                </Text>
+              </View> : null
+            }
+            {pokemon.buddy_distance ?
+              <View style={[ styles.row, styles.center ]}>
+                <Text selectable style={[ styles.text, styles.strong, styles.measurement ]}>Candy Distance</Text>
+                <Text selectable style={styles.text}>
+                  {pokemon.buddy_distance.amount} {pokemon.buddy_distance.unit}
+                </Text>
+              </View> : null
+            }
+          </View> : null
+          }
 
           <View style={styles.item}>
             <View style={[ styles.row, styles.center ]}>
