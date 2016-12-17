@@ -7,12 +7,12 @@ import type {
 } from '../typeDefinitions';
 
 export default function getWeakAgainstTypes(pokemon: Pokemon): Array<PokemonType> {
-  const types = pokemon.types;
+  const { types } = pokemon;
   const typeChart = store.getTypeChart();
-  const weakAgainst = typeChart.filter(t =>
-    types.some(type => t.super_effective.includes(type)) &&
-    !types.some(type => t.not_very_effective.includes(type))
-  ).map(t => t.name);
 
-  return weakAgainst;
+  return typeChart
+    .filter(t =>
+      types.some(it => t.super_effective.includes(it))
+    )
+    .map(t => t.name);
 }

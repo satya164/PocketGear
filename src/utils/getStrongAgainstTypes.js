@@ -1,5 +1,6 @@
 /* @flow */
 
+import intersection from 'lodash/intersection';
 import store from '../store';
 import getAttackTypesForPokemon from './getAttackTypesForPokemon';
 import type {
@@ -8,17 +9,19 @@ import type {
 } from '../typeDefinitions';
 
 export default function getStrongAgainstTypes(pokemon: Pokemon): Array<PokemonType> {
-  const types = getAttackTypesForPokemon(pokemon);
+  const types = intersection(pokemon.types, getAttackTypesForPokemon(pokemon));
   const typeChart = store.getTypeChart();
+
   return typeChart
-    .filter(({ name }) => types.includes(name))
+    .filter(t => types.includes(t.name))
+    .map(t => t.super_effective)
     .reduce((acc, curr) => {
-      const merged = [ ...acc ];
-      for (const type of curr.super_effective) {
-        if (!merged.includes(type)) {
-          merged.push(type);
+      const next = acc.slice();
+      curr.forEach(t => {
+        if (!acc.includes(t)) {
+          next.push(t);
         }
-      }
-      return merged;
+      });
+      return next;
     }, []);
 }

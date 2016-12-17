@@ -1,5 +1,6 @@
 /* @flow */
 
+import difference from 'lodash/difference';
 import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
@@ -139,12 +140,12 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
     const maxValues = store.getMaxValues();
     const quickAttacks = getQuickAttacks(pokemon);
     const specialAttacks = getSpecialAttacks(pokemon);
-    const strongAgainst = getStrongAgainstTypes(pokemon);
-    const weakAgainst = getWeakAgainstTypes(pokemon);
-    const resistantTo = getResistantToTypes(pokemon)
-      .filter(type =>
-        !(strongAgainst.includes(type) || weakAgainst.includes(type))
-      );
+    const strongAgainstAll = getStrongAgainstTypes(pokemon);
+    const weakAgainstAll = getWeakAgainstTypes(pokemon);
+    const resistantToAll = getResistantToTypes(pokemon);
+    const strongAgainst = difference(strongAgainstAll, weakAgainstAll);
+    const weakAgainst = difference(weakAgainstAll, strongAgainstAll);
+    const resistantTo = difference(resistantToAll, [ ...weakAgainst, ...strongAgainst ]);
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
