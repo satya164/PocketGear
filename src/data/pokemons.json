@@ -66,6 +66,15 @@
         2,
         3
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 2,
+        "multipliers": {
+          "minimum": 1.53,
+          "maximum": 1.58
+        }
+      }
     ]
   },
   {
@@ -131,6 +140,15 @@
         2,
         3
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 3,
+        "multipliers": {
+          "minimum": 1.2,
+          "maximum": 1.61
+        }
+      }
     ]
   },
   {
@@ -260,6 +278,15 @@
         5,
         6
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 5,
+        "multipliers": {
+          "minimum": 1.64,
+          "maximum": 1.7
+        }
+      }
     ]
   },
   {
@@ -324,6 +351,15 @@
         5,
         6
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 6,
+        "multipliers": {
+          "minimum": 1.71,
+          "maximum": 1.73
+        }
+      }
     ]
   },
   {
@@ -457,6 +493,15 @@
         8,
         9
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 8,
+        "multipliers": {
+          "minimum": 1.63,
+          "maximum": 1.66
+        }
+      }
     ]
   },
   {
@@ -525,6 +570,15 @@
         8,
         9
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 9,
+        "multipliers": {
+          "minimum": 1.4,
+          "maximum": 1.65
+        }
+      }
     ]
   },
   {
@@ -647,6 +701,15 @@
         11,
         12
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 11,
+        "multipliers": {
+          "minimum": 1.04,
+          "maximum": 1.08
+        }
+      }
     ]
   },
   {
@@ -709,6 +772,15 @@
         11,
         12
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 12,
+        "multipliers": {
+          "minimum": 3.52,
+          "maximum": 3.79
+        }
+      }
     ]
   },
   {
@@ -837,6 +909,15 @@
         14,
         15
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 14,
+        "multipliers": {
+          "minimum": 1.06,
+          "maximum": 1.1
+        }
+      }
     ]
   },
   {
@@ -896,6 +977,15 @@
         14,
         15
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 15,
+        "multipliers": {
+          "minimum": 3.3,
+          "maximum": 3.42
+        }
+      }
     ]
   },
   {
@@ -1022,6 +1112,15 @@
         17,
         18
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 17,
+        "multipliers": {
+          "minimum": 1.82,
+          "maximum": 1.95
+        }
+      }
     ]
   },
   {
@@ -1083,6 +1182,15 @@
         17,
         18
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 18,
+        "multipliers": {
+          "minimum": 1.73,
+          "maximum": 1.78
+        }
+      }
     ]
   },
   {
@@ -1207,6 +1315,15 @@
         19,
         20
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 20,
+        "multipliers": {
+          "minimum": 2.61,
+          "maximum": 2.73
+        }
+      }
     ]
   },
   {
@@ -1334,6 +1451,15 @@
         21,
         22
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 22,
+        "multipliers": {
+          "minimum": 2.58,
+          "maximum": 2.81
+        }
+      }
     ]
   },
   {
@@ -1457,6 +1583,15 @@
         23,
         24
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 24,
+        "multipliers": {
+          "minimum": 2.2,
+          "maximum": 2.33
+        }
+      }
     ]
   },
   {
@@ -1583,6 +1718,15 @@
         25,
         26
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 26,
+        "multipliers": {
+          "minimum": 2.33,
+          "maximum": 2.38
+        }
+      }
     ]
   },
   {
@@ -1710,6 +1854,15 @@
         27,
         28
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 28,
+        "multipliers": {
+          "minimum": 2.35,
+          "maximum": 2.76
+        }
+      }
     ]
   },
   {
@@ -1841,6 +1994,15 @@
         30,
         31
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 30,
+        "multipliers": {
+          "minimum": 1.62,
+          "maximum": 1.66
+        }
+      }
     ]
   },
   {
@@ -1905,6 +2067,15 @@
         30,
         31
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 31,
+        "multipliers": {
+          "minimum": 1.8,
+          "maximum": 2.04
+        }
+      }
     ]
   },
   {
@@ -2038,6 +2209,15 @@
         33,
         34
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 33,
+        "multipliers": {
+          "minimum": 1.65,
+          "maximum": 1.7
+        }
+      }
     ]
   },
   {
@@ -2102,6 +2282,15 @@
         33,
         34
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 34,
+        "multipliers": {
+          "minimum": 1.64,
+          "maximum": 1.86
+        }
+      }
     ]
   },
   {
@@ -2231,6 +2420,15 @@
         35,
         36
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 36,
+        "multipliers": {
+          "minimum": 2.02,
+          "maximum": 2.2
+        }
+      }
     ]
   },
   {
@@ -2358,6 +2556,15 @@
         37,
         38
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 38,
+        "multipliers": {
+          "minimum": 2.68,
+          "maximum": 2.74
+        }
+      }
     ]
   },
   {
@@ -2487,6 +2694,15 @@
         39,
         40
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 40,
+        "multipliers": {
+          "minimum": 2.41,
+          "maximum": 2.47
+        }
+      }
     ]
   },
   {
@@ -2617,6 +2833,15 @@
         42,
         169
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 42,
+        "multipliers": {
+          "minimum": 2.9,
+          "maximum": 3.33
+        }
+      }
     ]
   },
   {
@@ -2752,6 +2977,15 @@
         44,
         182
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 44,
+        "multipliers": {
+          "minimum": 1.48,
+          "maximum": 1.51
+        }
+      }
     ]
   },
   {
@@ -2822,6 +3056,15 @@
         44,
         182
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 45,
+        "multipliers": {
+          "minimum": 1.48,
+          "maximum": 1.53
+        }
+      }
     ]
   },
   {
@@ -2952,6 +3195,15 @@
         46,
         47
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 47,
+        "multipliers": {
+          "minimum": 1.92,
+          "maximum": 2.02
+        }
+      }
     ]
   },
   {
@@ -3080,6 +3332,15 @@
         48,
         49
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 49,
+        "multipliers": {
+          "minimum": 1.85,
+          "maximum": 1.9
+        }
+      }
     ]
   },
   {
@@ -3208,6 +3469,15 @@
         50,
         51
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 51,
+        "multipliers": {
+          "minimum": 2.68,
+          "maximum": 2.77
+        }
+      }
     ]
   },
   {
@@ -3331,6 +3601,15 @@
         52,
         53
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 53,
+        "multipliers": {
+          "minimum": 1.98,
+          "maximum": 2.24
+        }
+      }
     ]
   },
   {
@@ -3453,6 +3732,15 @@
         54,
         55
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 55,
+        "multipliers": {
+          "minimum": 2.22,
+          "maximum": 2.29
+        }
+      }
     ]
   },
   {
@@ -3579,6 +3867,15 @@
         56,
         57
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 57,
+        "multipliers": {
+          "minimum": 2.15,
+          "maximum": 2.28
+        }
+      }
     ]
   },
   {
@@ -3709,6 +4006,15 @@
         58,
         59
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 59,
+        "multipliers": {
+          "minimum": 2.25,
+          "maximum": 2.36
+        }
+      }
     ]
   },
   {
@@ -3841,6 +4147,15 @@
         61,
         186
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 61,
+        "multipliers": {
+          "minimum": 1.72,
+          "maximum": 1.89
+        }
+      }
     ]
   },
   {
@@ -3910,6 +4225,15 @@
         61,
         186
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 62,
+        "multipliers": {
+          "minimum": 1.9,
+          "maximum": 1.96
+        }
+      }
     ]
   },
   {
@@ -4039,6 +4363,15 @@
         64,
         65
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 64,
+        "multipliers": {
+          "minimum": 1.36,
+          "maximum": 2
+        }
+      }
     ]
   },
   {
@@ -4099,6 +4432,15 @@
         64,
         65
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 65,
+        "multipliers": {
+          "minimum": 1.41,
+          "maximum": 1.65
+        }
+      }
     ]
   },
   {
@@ -4223,6 +4565,15 @@
         67,
         68
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 67,
+        "multipliers": {
+          "minimum": 1.62,
+          "maximum": 1.67
+        }
+      }
     ]
   },
   {
@@ -4287,6 +4638,15 @@
         67,
         68
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 68,
+        "multipliers": {
+          "minimum": 1.48,
+          "maximum": 1.7
+        }
+      }
     ]
   },
   {
@@ -4416,6 +4776,15 @@
         70,
         71
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 70,
+        "multipliers": {
+          "minimum": 1.54,
+          "maximum": 1.6
+        }
+      }
     ]
   },
   {
@@ -4481,6 +4850,15 @@
         70,
         71
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 71,
+        "multipliers": {
+          "minimum": 1.47,
+          "maximum": 1.52
+        }
+      }
     ]
   },
   {
@@ -4614,6 +4992,15 @@
         72,
         73
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 73,
+        "multipliers": {
+          "minimum": 2.47,
+          "maximum": 2.6
+        }
+      }
     ]
   },
   {
@@ -4743,6 +5130,15 @@
         75,
         76
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 75,
+        "multipliers": {
+          "minimum": 1.71,
+          "maximum": 1.76
+        }
+      }
     ]
   },
   {
@@ -4805,6 +5201,15 @@
         75,
         76
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 76,
+        "multipliers": {
+          "minimum": 1.63,
+          "maximum": 1.72
+        }
+      }
     ]
   },
   {
@@ -4930,6 +5335,15 @@
         77,
         78
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 78,
+        "multipliers": {
+          "minimum": 1.47,
+          "maximum": 1.6
+        }
+      }
     ]
   },
   {
@@ -5065,6 +5479,15 @@
         79,
         199
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 80,
+        "multipliers": {
+          "minimum": 2.19,
+          "maximum": 2.21
+        }
+      }
     ]
   },
   {
@@ -5198,6 +5621,15 @@
         82,
         462
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 82,
+        "multipliers": {
+          "minimum": 2.16,
+          "maximum": 2.2
+        }
+      }
     ]
   },
   {
@@ -5381,6 +5813,15 @@
         84,
         85
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 85,
+        "multipliers": {
+          "minimum": 2.11,
+          "maximum": 2.24
+        }
+      }
     ]
   },
   {
@@ -5505,6 +5946,15 @@
         86,
         87
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 87,
+        "multipliers": {
+          "minimum": 1.96,
+          "maximum": 2.03
+        }
+      }
     ]
   },
   {
@@ -5629,6 +6079,15 @@
         88,
         89
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 89,
+        "multipliers": {
+          "minimum": 2.03,
+          "maximum": 2.17
+        }
+      }
     ]
   },
   {
@@ -5752,6 +6211,15 @@
         90,
         91
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 91,
+        "multipliers": {
+          "minimum": 2.62,
+          "maximum": 2.65
+        }
+      }
     ]
   },
   {
@@ -5885,6 +6353,15 @@
         93,
         94
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 93,
+        "multipliers": {
+          "minimum": 1.75,
+          "maximum": 1.83
+        }
+      }
     ]
   },
   {
@@ -5946,6 +6423,15 @@
         93,
         94
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 94,
+        "multipliers": {
+          "minimum": 1.53,
+          "maximum": 1.8
+        }
+      }
     ]
   },
   {
@@ -6131,6 +6617,15 @@
         96,
         97
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 97,
+        "multipliers": {
+          "minimum": 2.05,
+          "maximum": 2.11
+        }
+      }
     ]
   },
   {
@@ -6253,6 +6748,15 @@
         98,
         99
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 99,
+        "multipliers": {
+          "minimum": 2.35,
+          "maximum": 2.4
+        }
+      }
     ]
   },
   {
@@ -6379,6 +6883,15 @@
         100,
         101
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 101,
+        "multipliers": {
+          "minimum": 2.01,
+          "maximum": 2.03
+        }
+      }
     ]
   },
   {
@@ -6505,6 +7018,15 @@
         102,
         103
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 103,
+        "multipliers": {
+          "minimum": 2.7,
+          "maximum": 3.18
+        }
+      }
     ]
   },
   {
@@ -6632,6 +7154,15 @@
         104,
         105
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 105,
+        "multipliers": {
+          "minimum": 1.65,
+          "maximum": 1.67
+        }
+      }
     ]
   },
   {
@@ -6953,6 +7484,15 @@
         109,
         110
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 110,
+        "multipliers": {
+          "minimum": 1.95,
+          "maximum": 2.1
+        }
+      }
     ]
   },
   {
@@ -7077,6 +7617,15 @@
         112,
         464
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 112,
+        "multipliers": {
+          "minimum": 1.9,
+          "maximum": 1.91
+        }
+      }
     ]
   },
   {
@@ -7382,6 +7931,15 @@
         117,
         230
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 117,
+        "multipliers": {
+          "minimum": 2.19,
+          "maximum": 2.23
+        }
+      }
     ]
   },
   {
@@ -7509,6 +8067,15 @@
         118,
         119
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 119,
+        "multipliers": {
+          "minimum": 2.14,
+          "maximum": 2.24
+        }
+      }
     ]
   },
   {
@@ -7636,6 +8203,15 @@
         120,
         121
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 121,
+        "multipliers": {
+          "minimum": 2.35,
+          "maximum": 2.44
+        }
+      }
     ]
   },
   {
@@ -8176,6 +8752,15 @@
         129,
         130
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 130,
+        "multipliers": {
+          "minimum": 10.1,
+          "maximum": 11.96
+        }
+      }
     ]
   },
   {
@@ -8426,6 +9011,29 @@
         133,
         700
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 134,
+        "multipliers": {
+          "minimum": 2.62,
+          "maximum": 2.67
+        }
+      },
+      {
+        "id": 135,
+        "multipliers": {
+          "minimum": 2.01,
+          "maximum": 2.09
+        }
+      },
+      {
+        "id": 136,
+        "multipliers": {
+          "minimum": 2.46,
+          "maximum": 2.64
+        }
+      }
     ]
   },
   {
@@ -8729,6 +9337,15 @@
         138,
         139
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 139,
+        "multipliers": {
+          "minimum": 1.99,
+          "maximum": 2.12
+        }
+      }
     ]
   },
   {
@@ -8854,6 +9471,15 @@
         140,
         141
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 141,
+        "multipliers": {
+          "minimum": 1.97,
+          "maximum": 2.37
+        }
+      }
     ]
   },
   {
@@ -9258,6 +9884,15 @@
         148,
         149
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 148,
+        "multipliers": {
+          "minimum": 1.8,
+          "maximum": 1.85
+        }
+      }
     ]
   },
   {
@@ -9321,6 +9956,15 @@
         148,
         149
       ]
+    ],
+    "evolution_cp_multipliers": [
+      {
+        "id": 149,
+        "multipliers": {
+          "minimum": 2.03,
+          "maximum": 2.08
+        }
+      }
     ]
   },
   {

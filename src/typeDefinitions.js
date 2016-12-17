@@ -58,7 +58,7 @@ export type Pokemon = {|
     max_hp: number;
   };
   evolution_chains?: Array<Array<PokemonID>>;
-  evolution_cp_multipliers?: Array<{ // TODO
+  evolution_cp_multipliers: Array<{
     id: PokemonID;
     multipliers: {
       minimum: number;
