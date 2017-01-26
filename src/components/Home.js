@@ -1,40 +1,19 @@
 /* @flow */
 
-import React, { PureComponent } from 'react';
-import NavigationRoot from './Navigation/NavigationRoot';
-import NavigationScene from './Navigation/NavigationScene';
-import NavigationView from './Navigation/NavigationView';
-import routeMapper from './Navigation/routeMapper';
+import { StackNavigator } from 'react-navigation';
+import PokemonChooser from './PokemonChooser';
+import PokemonInfo from './PokemonInfo';
+import StrongAgainstList from './StrongAgainstList';
+import WeakAgainstList from './WeakAgainstList';
 
-const PERSISTANCE_KEY = process.env.NODE_ENV !== 'production' ? 'FLAT_PERSISTENCE_0' : null;
+const Home = StackNavigator({
+  Main: { screen: PokemonChooser },
+  StrongAgainst: { screen: StrongAgainstList },
+  WeakAgainst: { screen: WeakAgainstList },
+  Info: { screen: PokemonInfo },
+}, {
+  initialRouteName: 'Main',
+  headerMode: 'none',
+});
 
-export default class Home extends PureComponent<void, *, void> {
-  _renderScene = (props: any) => {
-    return (
-      <NavigationScene
-        {...props}
-        key={props.scene.key}
-        routeMapper={routeMapper}
-      />
-    );
-  };
-
-  _renderNavigator = (props: any) => {
-    return (
-      <NavigationView
-        {...props}
-        renderScene={this._renderScene}
-      />
-    );
-  };
-
-  render() {
-    return (
-      <NavigationRoot
-        initialRoute={{ name: 'home' }}
-        persistenceKey={PERSISTANCE_KEY}
-        renderNavigator={this._renderNavigator}
-      />
-    );
-  }
-}
+export default Home;

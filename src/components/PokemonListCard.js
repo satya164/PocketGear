@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  onNavigate: Function;
+  navigation: Object;
   pokemon: Pokemon;
   style?: any;
 }
@@ -60,20 +60,14 @@ type Props = {
 export default class PokemonListCard extends PureComponent<void, Props, void> {
 
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
     pokemon: PropTypes.object.isRequired,
     style: View.propTypes.style,
   };
 
   _handlePress = () => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'info',
-        props: {
-          pokemonId: this.props.pokemon.id,
-        },
-      },
+    this.props.navigation.navigate('Info', {
+      pokemonId: this.props.pokemon.id,
     });
   };
 

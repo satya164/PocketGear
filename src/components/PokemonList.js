@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  onNavigate: Function;
+  navigation: Object;
   data: {
     pokemons: Array<Pokemon>;
   };
@@ -29,7 +29,7 @@ const CARD_WIDTH = 160;
 export default class PokemonList extends PureComponent<void, Props, void> {
 
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
     data: PropTypes.shape({
       pokemons: PropTypes.arrayOf(PropTypes.object),
     }).isRequired,
@@ -43,7 +43,7 @@ export default class PokemonList extends PureComponent<void, Props, void> {
   _root: Object;
 
   _renderRow = (rowData: any) => {
-    return <PokemonListCard pokemon={rowData} onNavigate={this.props.onNavigate} />;
+    return <PokemonListCard pokemon={rowData} navigation={this.props.navigation} />;
   };
 
   _getNumberOfColumns = (width: number) => {

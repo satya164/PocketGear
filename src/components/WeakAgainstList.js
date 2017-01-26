@@ -44,8 +44,7 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  onNavigate: Function;
-  pokemonId: PokemonID;
+  navigation: Object;
 }
 
 type State = {
@@ -58,8 +57,7 @@ type State = {
 export default class WeakAgainstList extends PureComponent<void, Props, State> {
 
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired,
-    pokemonId: PropTypes.number.isRequired,
+    navigation: PropTypes.object.isRequired,
   };
 
   state: State = {
@@ -74,7 +72,7 @@ export default class WeakAgainstList extends PureComponent<void, Props, State> {
   }
 
   _updateData = () => {
-    const pokemon = store.getPokemons().find(p => p.id === this.props.pokemonId);
+    const pokemon = store.getPokemons().find(p => p.id === this.props.navigation.state.params.pokemonId);
     if (!pokemon) {
       return;
     }
@@ -86,13 +84,13 @@ export default class WeakAgainstList extends PureComponent<void, Props, State> {
   };
 
   render() {
-    const pokemon = store.getPokemons().find(p => p.id === this.props.pokemonId);
+    const pokemon = store.getPokemons().find(p => p.id === this.props.navigation.state.params.pokemonId);
     if (!pokemon) {
       return null;
     }
     return (
       <View style={styles.container}>
-        <Appbar onNavigate={this.props.onNavigate}>
+        <Appbar navigation={this.props.navigation}>
           <Text style={styles.title}>{pokemon.name}</Text>
           <Text style={styles.subtitle}>Weak against</Text>
         </Appbar>
@@ -100,7 +98,7 @@ export default class WeakAgainstList extends PureComponent<void, Props, State> {
           {this.state.loading ?
             <Placeholder /> :
             this.state.data.pokemons.length ?
-              <PokemonList data={this.state.data} onNavigate={this.props.onNavigate} /> :
+              <PokemonList data={this.state.data} navigation={this.props.navigation} /> :
               <NoResults
                 source={require('../../assets/images/chansey.png')}
                 label={`${pokemon.name} seems unbeatable`}

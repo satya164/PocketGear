@@ -40,13 +40,13 @@ type State = {
 }
 
 type Props = {
-  onNavigate: Function;
+  navigation: Object;
 }
 
 export default class PokemonChooser extends PureComponent<void, Props, State> {
 
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
   };
 
   state: State = {
@@ -110,6 +110,7 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
   _unsetRef = () => (this._list = null);
 
   render() {
+    console.log(this.props);
     return (
       <KeyboardAvoidingView style={styles.container}>
         <SearchBar
@@ -122,9 +123,9 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
           {this.state.results.pokemons.length ?
             <PokemonList
               scrollsToTop
-              keyboardShouldPersistTaps
+              keyboardShouldPersistTaps='handled'
               data={this.state.results}
-              onNavigate={this.props.onNavigate}
+              navigation={this.props.navigation}
               ref={this._setRef}
             /> :
             <NoResults

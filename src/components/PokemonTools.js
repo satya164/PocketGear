@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 type Props = {
   pokemon: Pokemon;
   style?: any;
-  onNavigate: Function;
+  navigation: Object;
 }
 
 export default class PokemonTools extends PureComponent<void, Props, void> {
@@ -40,18 +40,12 @@ export default class PokemonTools extends PureComponent<void, Props, void> {
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
     style: ScrollView.propTypes.style,
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
   };
 
   _goToPokemon = (pokemonId: PokemonID) => () => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'info',
-        props: {
-          pokemonId,
-        },
-      },
+    this.props.navigation.navigate('Info', {
+      pokemonId,
     });
   };
 
@@ -62,7 +56,7 @@ export default class PokemonTools extends PureComponent<void, Props, void> {
           <CPCalculator
             style={styles.item}
             pokemon={this.props.pokemon}
-            onNavigate={this.props.onNavigate}
+            navigation={this.props.navigation}
           />
         </View>
       </ScrollView>

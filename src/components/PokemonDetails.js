@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
 type Props = {
   pokemon: Pokemon;
   style?: any;
-  onNavigate: Function;
+  navigation: Object;
 }
 
 export default class PokemonDetails extends PureComponent<void, Props, void> {
@@ -100,18 +100,12 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
     style: ScrollView.propTypes.style,
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
   };
 
   _goToPokemon = (pokemonId: PokemonID) => () => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'info',
-        props: {
-          pokemonId,
-        },
-      },
+    this.props.navigation.navigate('Info', {
+      pokemonId,
     });
   };
 
@@ -146,6 +140,8 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
     const strongAgainst = difference(strongAgainstAll, weakAgainstAll);
     const weakAgainst = difference(weakAgainstAll, strongAgainstAll);
     const resistantTo = difference(resistantToAll, [ ...weakAgainst, ...strongAgainst ]);
+
+    console.log(this.props);
 
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
@@ -251,7 +247,7 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
               <Evolution
                 style={styles.item}
                 pokemon={pokemon}
-                onNavigate={this.props.onNavigate}
+                navigation={this.props.navigation}
               />
             </View> :
             null

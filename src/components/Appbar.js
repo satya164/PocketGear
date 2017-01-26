@@ -41,19 +41,19 @@ const styles = StyleSheet.create({
 type Props = {
   style?: any;
   children?: any;
-  onNavigate: Function;
+  navigation: Object;
 }
 
 export default class Appbar extends PureComponent<void, Props, void> {
 
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
     children: PropTypes.node.isRequired,
     style: View.propTypes.style,
   };
 
   _handleGoBack = () => {
-    this.props.onNavigate({ type: 'pop' });
+    this.props.navigation.goBack(null);
   };
 
   render() {
