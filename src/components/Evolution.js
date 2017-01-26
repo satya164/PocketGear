@@ -64,25 +64,19 @@ const styles = StyleSheet.create({
 
 type Props = {
   pokemon: Pokemon;
-  onNavigate: Function;
+  navigation: Object;
 }
 
 export default class Evolution extends PureComponent<void, Props, void> {
 
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
   };
 
   _goToPokemon = (pokemonId: PokemonID) => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'info',
-        props: {
-          pokemonId,
-        },
-      },
+    this.props.navigation.navigate('Info', {
+      pokemonId,
     });
   };
 

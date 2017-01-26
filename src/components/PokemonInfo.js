@@ -12,10 +12,11 @@ import {
   Text,
   View,
 } from 'react-native';
-import { TabViewAnimated, TabBarTop } from 'react-native-tab-view';
+import {
+  TabNavigator,
+} from 'react-navigation';
 import Appbar from './Appbar';
 import PokemonTypeLabel from './PokemonTypeLabel';
-import Placeholder from './Placeholder';
 import PokemonDetails from './PokemonDetails';
 import PokemonMatches from './PokemonMatches';
 import PokemonTools from './PokemonTools';
@@ -107,8 +108,7 @@ type Route = {
 }
 
 type Props = {
-  onNavigate: Function;
-  pokemonId: PokemonID;
+  navigation: Object;
   style?: any;
 }
 
@@ -118,13 +118,32 @@ type State = {
   loading: boolean;
 }
 
-export default class PokemonInfo extends PureComponent<void, Props, State> {
+const InfoTabs = TabNavigator({
+  Details: { screen: PokemonDetails },
+  Matches: { screen: PokemonMatches },
+  Tools: { screen: PokemonTools },
+}, {
+  ...TabNavigator.Presets.AndroidTopTabs,
+  tabBarOptions: {
+    style: styles.tabbar,
+    indicatorStyle: styles.indicator,
+    labelStyle: styles.tablabel,
+    activeTintColor: '#222',
+    inactiveTintColor: '#222',
+  },
+  backBehavior: 'none',
+  initialRouteName: 'Details',
+  order: [ 'Details', 'Matches', 'Tools' ],
+});
+
+class PokemonInfo extends PureComponent<void, Props, State> {
 
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired,
-    pokemonId: PropTypes.number.isRequired,
+    navigation: PropTypes.object.isRequired,
     style: ScrollView.propTypes.style,
   };
+
+  static router = InfoTabs.router;
 
   state: State = {
     index: 0,
@@ -158,46 +177,13 @@ export default class PokemonInfo extends PureComponent<void, Props, State> {
     });
   };
 
-  _renderLabel = ({ route }: { route: Route }) => {
-    return <Text style={styles.tablabel}>{route.title && route.title.toUpperCase()}</Text>;
-  }
-
-  _renderHeader = (props: any) => {
-    return (
-      <TabBarTop
-        {...props}
-        renderLabel={this._renderLabel}
-        indicatorStyle={styles.indicator}
-        style={styles.tabbar}
-      />
-    );
-  };
-
-  _renderScene = ({ route }: { route: Route }) => {
-    if (this.state.loading) {
-      return <Placeholder />;
-    }
-
-    const pokemon = this._getPokemon(this.props.pokemonId);
-    switch (route.key) {
-    case 'details':
-      return <PokemonDetails pokemon={pokemon} onNavigate={this.props.onNavigate} />;
-    case 'matches':
-      return <PokemonMatches pokemon={pokemon} onNavigate={this.props.onNavigate} />;
-    case 'tools':
-      return <PokemonTools pokemon={pokemon} onNavigate={this.props.onNavigate} />;
-    default:
-      return null;
-    }
-  };
-
   render() {
-    const pokemon = this._getPokemon(this.props.pokemonId);
-    const sprite = store.getSprite(this.props.pokemonId);
+    const pokemon = this._getPokemon(this.props.navigation.state.params.pokemonId);
+    const sprite = store.getSprite(this.props.navigation.state.params.pokemonId);
 
     return (
       <View {...this.props} style={[ styles.container, this.props.style ]}>
-        <Appbar style={styles.appbar} onNavigate={this.props.onNavigate}>
+        <Appbar style={styles.appbar} navigation={this.props.navigation}>
           {'#' + pokemon.id}
         </Appbar>
         <View style={[ styles.row, styles.meta ]}>
@@ -211,14 +197,13 @@ export default class PokemonInfo extends PureComponent<void, Props, State> {
           </View>
           <Image style={styles.image} source={sprite} />
         </View>
-        <TabViewAnimated
-          style={styles.tabview}
-          navigationState={this.state}
-          renderScene={this._renderScene}
-          renderHeader={this._renderHeader}
-          onRequestChangeTab={this._handleChangeTab}
+        <InfoTabs
+          screenProps={{ pokemon }}
+          navigation={this.props.navigation}
         />
       </View>
     );
   }
 }
+
+export default PokemonInfo;

@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
 
 type Props = {
   pokemon: Pokemon;
-  onNavigate: Function;
+  navigation: Object;
 }
 
 type State = {
@@ -80,7 +80,7 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
 
   static propTypes = {
     pokemon: PropTypes.object,
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
   };
 
   constructor(props: Props) {
@@ -94,14 +94,8 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
   state: State;
 
   _goToPokemon = (pokemonId: PokemonID) => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'info',
-        props: {
-          pokemonId,
-        },
-      },
+    this.props.navigation.navigate('Info', {
+      pokemonId,
     });
   };
 

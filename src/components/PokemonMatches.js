@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 type Props = {
   pokemon: Pokemon;
   style?: any;
-  onNavigate: Function;
+  navigation: Object;
 }
 
 type RowData = {
@@ -55,42 +55,24 @@ export default class PokemonMatches extends PureComponent<void, Props, void> {
   static propTypes = {
     pokemon: PropTypes.object.isRequired,
     style: GridView.propTypes.style,
-    onNavigate: PropTypes.func.isRequired,
+    navigation: PropTypes.object.isRequired,
   };
 
   _goToPokemon = (pokemonId: PokemonID) => () => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'info',
-        props: {
-          pokemonId,
-        },
-      },
+    this.props.navigation.navigate('Info', {
+      pokemonId,
     });
   };
 
   _handleStrongPress = () => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'strong-against',
-        props: {
-          pokemonId: this.props.pokemon.id,
-        },
-      },
+    this.props.navigation.navigate('StrongAgainst', {
+      pokemonId: this.props.pokemon.id,
     });
   };
 
   _handleWeakPress = () => {
-    this.props.onNavigate({
-      type: 'push',
-      route: {
-        name: 'weak-against',
-        props: {
-          pokemonId: this.props.pokemon.id,
-        },
-      },
+    this.props.navigation.navigate('WeakAgainst', {
+      pokemonId: this.props.pokemon.id,
     });
   };
 
@@ -101,7 +83,7 @@ export default class PokemonMatches extends PureComponent<void, Props, void> {
   _renderRow = (rowData: RowData) => {
     switch (rowData.type) {
     case 'pokemon':
-      return <PokemonListCard pokemon={rowData.pokemon} onNavigate={this.props.onNavigate} />;
+      return <PokemonListCard pokemon={rowData.pokemon} navigation={this.props.navigation} />;
     case 'more':
       return <More onPress={rowData.strongAgainst ? this._handleStrongPress : this._handleWeakPress} />;
     default:
