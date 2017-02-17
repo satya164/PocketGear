@@ -6,7 +6,6 @@ import {
   ScrollView,
   StyleSheet,
 } from 'react-native';
-import NoResults from './NoResults';
 import CPCalculator from './CPCalculator';
 import type {
   PokemonID,
