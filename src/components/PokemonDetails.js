@@ -21,7 +21,6 @@ import getWeakAgainstTypes from '../utils/getWeakAgainstTypes';
 import getResistantToTypes from '../utils/getResistantToTypes';
 import store from '../store';
 import type {
-  Pokemon,
   PokemonID,
   Move,
 } from '../typeDefinitions';
@@ -47,7 +46,7 @@ const styles = StyleSheet.create({
   },
 
   strong: {
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
   },
 
   row: {
@@ -90,7 +89,7 @@ const styles = StyleSheet.create({
 
 
 type Props = {
-  pokemon: Pokemon;
+  screenProps: Object;
   style?: any;
   navigation: Object;
 }
@@ -98,7 +97,7 @@ type Props = {
 export default class PokemonDetails extends PureComponent<void, Props, void> {
 
   static propTypes = {
-    pokemon: PropTypes.object.isRequired,
+    screenProps: PropTypes.object.isRequired,
     style: ScrollView.propTypes.style,
     navigation: PropTypes.object.isRequired,
   };
@@ -130,7 +129,7 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
   };
 
   render() {
-    const { pokemon } = this.props;
+    const { pokemon } = this.props.screenProps;
     const maxValues = store.getMaxValues();
     const quickAttacks = getQuickAttacks(pokemon);
     const specialAttacks = getSpecialAttacks(pokemon);

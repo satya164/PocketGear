@@ -6,10 +6,8 @@ import {
   ScrollView,
   StyleSheet,
 } from 'react-native';
-import NoResults from './NoResults';
 import CPCalculator from './CPCalculator';
 import type {
-  Pokemon,
   PokemonID,
 } from '../typeDefinitions';
 
@@ -30,7 +28,7 @@ const styles = StyleSheet.create({
 
 
 type Props = {
-  pokemon: Pokemon;
+  screenProps: Object;
   style?: any;
   navigation: Object;
 }
@@ -38,7 +36,7 @@ type Props = {
 export default class PokemonTools extends PureComponent<void, Props, void> {
 
   static propTypes = {
-    pokemon: PropTypes.object.isRequired,
+    screenProps: PropTypes.object.isRequired,
     style: ScrollView.propTypes.style,
     navigation: PropTypes.object.isRequired,
   };
@@ -55,7 +53,7 @@ export default class PokemonTools extends PureComponent<void, Props, void> {
         <View style={styles.content}>
           <CPCalculator
             style={styles.item}
-            pokemon={this.props.pokemon}
+            pokemon={this.props.screenProps.pokemon}
             navigation={this.props.navigation}
           />
         </View>

@@ -38,7 +38,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat.otf</string>
-		<string>Montserrat_bold.otf</string>
+		<string>MontserratBold.otf</string>
 		<string>Entypo.ttf</string>
 		<string>EvilIcons.ttf</string>
 		<string>FontAwesome.ttf</string>
