@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 
 
 type Props = {
-  pokemon: Pokemon;
+  screenProps: Object;
   style?: any;
   navigation: Object;
 }
@@ -53,7 +53,7 @@ type SectionData = Array<RowData>
 export default class PokemonMatches extends PureComponent<void, Props, void> {
 
   static propTypes = {
-    pokemon: PropTypes.object.isRequired,
+    screenProps: PropTypes.object.isRequired,
     style: GridView.propTypes.style,
     navigation: PropTypes.object.isRequired,
   };
@@ -66,13 +66,13 @@ export default class PokemonMatches extends PureComponent<void, Props, void> {
 
   _handleStrongPress = () => {
     this.props.navigation.navigate('StrongAgainst', {
-      pokemonId: this.props.pokemon.id,
+      pokemonId: this.props.screenProps.pokemon.id,
     });
   };
 
   _handleWeakPress = () => {
     this.props.navigation.navigate('WeakAgainst', {
-      pokemonId: this.props.pokemon.id,
+      pokemonId: this.props.screenProps.pokemon.id,
     });
   };
 
@@ -96,7 +96,7 @@ export default class PokemonMatches extends PureComponent<void, Props, void> {
   };
 
   render() {
-    const { pokemon } = this.props;
+    const { pokemon } = this.props.screenProps;
     const weakAgainstPokemons = getWeakAgainstPokemons(pokemon);
     const strongAgainstPokemons = getStrongAgainstPokemons(pokemon);
 
