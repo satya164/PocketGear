@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
 
   label: {
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
     fontSize: 11,
     color: '#222',
     opacity: 0.5,

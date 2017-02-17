@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
 
   strong: {
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
   },
 
   row: {
