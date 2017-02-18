@@ -118,10 +118,13 @@ type State = {
   loading: boolean;
 }
 
+/* $FlowFixMe */
+console.ignoredYellowBox = [ 'Behaviour of screenProps has changed' ];
+
 const InfoTabs = TabNavigator({
-  Details: { screen: PokemonDetails },
-  Matches: { screen: PokemonMatches },
-  Tools: { screen: PokemonTools },
+  Details: { screen: ({ screenProps, ...rest }) => <PokemonDetails {...rest} pokemon={screenProps.pokemon} /> },
+  Matches: { screen: ({ screenProps, ...rest }) => <PokemonMatches {...rest} pokemon={screenProps.pokemon} /> },
+  Tools: { screen: ({ screenProps, ...rest }) => <PokemonTools {...rest} pokemon={screenProps.pokemon} /> },
 }, {
   ...TabNavigator.Presets.AndroidTopTabs,
   tabBarOptions: {
