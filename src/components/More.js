@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
 
   more: {
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
     fontSize: 9,
     color: '#222',
     marginVertical: 4,

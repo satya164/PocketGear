@@ -8,7 +8,7 @@ import {
 
 const styles = StyleSheet.create({
   heading: {
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
     fontSize: 15,
     color: '#222',
     lineHeight: 23,

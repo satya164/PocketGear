@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 
   name: {
     fontSize: 18,
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
     marginVertical: 4,
   },
 
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
 
   tablabel: {
     color: '#222',
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
     fontSize: 10,
     marginVertical: 8,
   },

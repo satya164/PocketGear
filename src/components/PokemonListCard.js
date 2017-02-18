@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 
   title: {
     color: '#000',
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
     fontSize: 13,
     textAlign: 'center',
     opacity: 0.7,
