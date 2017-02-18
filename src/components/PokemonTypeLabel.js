@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 
   text: {
     color: '#000',
-    fontFamily: 'MontserratBold',
+    fontFamily: 'Montserrat-SemiBold',
     fontSize: 11,
     opacity: 0.5,
   },
