@@ -1590,7 +1590,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Snake Pokémon",
@@ -1962,7 +1962,7 @@
   },
   {
     "id": 29,
-    "name": "Nidoran",
+    "name": "Nidoran♀",
     "types": [
       "Poison"
     ],
@@ -2001,7 +2001,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Poison Pin Pokémon",
@@ -2179,7 +2179,7 @@
   },
   {
     "id": 32,
-    "name": "Nidoran",
+    "name": "Nidoran♂",
     "types": [
       "Poison"
     ],
@@ -2218,7 +2218,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Poison Pin Pokémon",
@@ -3006,7 +3006,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Weed Pokémon",
@@ -3362,7 +3362,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Insect Pokémon",
@@ -3503,7 +3503,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Mole Pokémon",
@@ -4413,7 +4413,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Psi Pokémon",
@@ -4616,7 +4616,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Superpower Pokémon",
@@ -4834,7 +4834,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Flower Pokémon",
@@ -5547,7 +5547,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Dopey Pokémon",
@@ -6448,7 +6448,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Gas Pokémon",
@@ -6662,7 +6662,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 10,
+      "amount": 5,
       "unit": "km"
     },
     "category": "Rock Snake Pokémon",
@@ -6862,7 +6862,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "River Crab Pokémon",
@@ -7149,7 +7149,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Egg Pokémon",
@@ -8219,7 +8219,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 5,
+      "amount": 2,
       "unit": "km"
     },
     "category": "Goldfish Pokémon",
@@ -8564,7 +8564,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 10,
+      "amount": 5,
       "unit": "km"
     },
     "category": "Mantis Pokémon",
@@ -8815,7 +8815,7 @@
       "unit": "km"
     },
     "egg_distance": {
-      "amount": 10,
+      "amount": 5,
       "unit": "km"
     },
     "category": "Stag Beetle Pokémon",
@@ -9172,7 +9172,7 @@
       "Before evolving, name your Eevee as Rainer to get Vaporeon, Sparky to get Jolteon, Pyro to get Flareon, Sakura to get Espeon and Tamao to get Umbreon. This works only for the first evolution for each eeveelution."
     ],
     "egg_distance": {
-      "amount": 10,
+      "amount": 5,
       "unit": "km"
     },
     "category": "Evolution Pokémon",
@@ -10447,6 +10447,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -10637,6 +10641,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -10827,6 +10835,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -11687,6 +11699,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -11747,6 +11763,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -11812,6 +11832,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -11876,6 +11900,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -11997,6 +12025,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -12122,6 +12154,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
@@ -12496,6 +12532,10 @@
     "description": "Sudowoodo camouflages itself as a tree to avoid being attacked by enemies. However, because its hands remain green throughout the year, the Pokémon is easily identified as a fake during the winter.",
     "points": {
       "max_cp": 2065
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
@@ -12808,6 +12848,10 @@
     "description": "Aipom’s tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy.",
     "points": {
       "max_cp": 1188
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -12989,6 +13033,10 @@
     "description": "Yanma is capable of seeing 360 degrees without having to move its eyes. It is a great flier that is adept at making sudden stops and turning midair. This Pokémon uses its flying ability to quickly chase down targeted prey.",
     "points": {
       "max_cp": 1326
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -13051,6 +13099,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -13407,6 +13459,10 @@
     "description": "Misdreavus frightens people with a creepy, sobbing cry. The Pokémon apparently uses its red spheres to absorb the fearful feelings of foes and turn them into nutrition.",
     "points": {
       "max_cp": 1781
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -13510,6 +13566,10 @@
     "description": "Wobbuffet does nothing but endure attacks—it won’t attack on its own. However, it won’t endure an attack on its tail. When that happens, the Pokémon will try to take the foe with it using Destiny Bond.",
     "points": {
       "max_cp": 1024
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -13567,6 +13627,10 @@
     "description": "Girafarig’s rear head contains a tiny brain that is too small for thinking. However, the rear head doesn’t need to sleep, so it can keep watch over its surroundings 24 hours a day.",
     "points": {
       "max_cp": 1863
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -13628,6 +13692,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
@@ -13801,6 +13869,10 @@
     "description": "Gligar glides through the air without a sound as if it were sliding. This Pokémon hangs on to the face of its foe using its clawed hind legs and the large pincers on its forelegs, then injects the prey with its poison barb.",
     "points": {
       "max_cp": 1758
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
@@ -14042,6 +14114,10 @@
     "description": "Qwilfish sucks in water, inflating itself. This Pokémon uses the pressure of the water it swallowed to shoot toxic quills all at once from all over its body. It finds swimming somewhat challenging.",
     "points": {
       "max_cp": 2013
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -14155,6 +14231,10 @@
     "description": "Shuckle quietly hides itself under rocks, keeping its body concealed inside its hard shell while eating berries it has stored away. The berries mix with its body fluids to become a juice.",
     "points": {
       "max_cp": 300
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -14269,6 +14349,10 @@
     "description": "Sneasel scales trees by punching its hooked claws into the bark. This Pokémon seeks out unguarded nests and steals eggs for food while the parents are away.",
     "points": {
       "max_cp": 1868
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -14458,6 +14542,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -14766,6 +14854,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 2,
+      "unit": "km"
     }
   },
   {
@@ -14943,6 +15035,10 @@
     "description": "On sunny days, schools of Mantine can be seen elegantly leaping over the sea’s waves. This Pokémon is not bothered by the Remoraid that hitches rides.",
     "points": {
       "max_cp": 2310
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
@@ -15000,6 +15096,10 @@
     "description": "Skarmory’s steel wings become tattered and bashed in from repeated battles. Once a year, the battered wings grow back completely, restoring the cutting edges to their pristine state.",
     "points": {
       "max_cp": 2045
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
@@ -15248,6 +15348,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -15422,6 +15526,10 @@
     "description": "Stantler’s magnificent antlers were traded at high prices as works of art. As a result, this Pokémon was hunted close to extinction by those who were after the priceless antlers.",
     "points": {
       "max_cp": 1988
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -15549,6 +15657,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -15677,6 +15789,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -15741,6 +15857,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -15805,6 +15925,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 5,
+      "unit": "km"
     }
   },
   {
@@ -15861,6 +15985,10 @@
     "description": "Miltank gives over five gallons of milk on a daily basis. Its sweet milk is enjoyed by children and grown-ups alike. People who can’t drink milk turn it into yogurt and eat it instead.",
     "points": {
       "max_cp": 2325
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
@@ -16147,6 +16275,10 @@
           "item_requirement": null
         }
       ]
+    },
+    "egg_distance": {
+      "amount": 10,
+      "unit": "km"
     }
   },
   {
