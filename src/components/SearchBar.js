@@ -48,34 +48,42 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
+  onChangeText: Function;
+  onFocus?: Function;
+  onBlur?: Function;
   placeholder: string;
   value: string;
-  onChangeSearch: Function;
   style?: any;
 }
 
 export default class SearchBar extends PureComponent<void, Props, void> {
 
   static propTypes = {
+    onChangeText: PropTypes.func.isRequired,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func,
     placeholder: PropTypes.string,
     value: PropTypes.string.isRequired,
-    onChangeSearch: PropTypes.func.isRequired,
     style: AppbarShell.propTypes.style,
   };
 
   _handleClearPress = () => {
-    this.props.onChangeSearch('');
+    this.props.onChangeText('');
   };
 
   render() {
     const {
+      onChangeText,
+      onFocus,
+      onBlur,
       placeholder,
       value,
       style,
+      ...rest
     } = this.props;
 
     return (
-      <AppbarShell {...this.props} style={[ styles.container, style ]}>
+      <AppbarShell {...rest} style={[ styles.container, style ]}>
         <TextInput
           style={styles.input}
           placeholder={placeholder}
@@ -83,7 +91,9 @@ export default class SearchBar extends PureComponent<void, Props, void> {
           selectionColor='rgba(0, 0, 0, .32)'
           placeholderTextColor='rgba(0, 0, 0, .32)'
           underlineColorAndroid='transparent'
-          onChangeText={this.props.onChangeSearch}
+          onChangeText={onChangeText}
+          onFocus={onFocus}
+          onBlur={onBlur}
           returnKeyType='done'
         />
         <Icon
