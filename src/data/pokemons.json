@@ -4409,7 +4409,7 @@
       "flee_rate": 0.99
     },
     "buddy_distance": {
-      "amount": 3,
+      "amount": 1,
       "unit": "km"
     },
     "egg_distance": {
@@ -4612,7 +4612,7 @@
       "flee_rate": 0.1
     },
     "buddy_distance": {
-      "amount": 3,
+      "amount": 1,
       "unit": "km"
     },
     "egg_distance": {
