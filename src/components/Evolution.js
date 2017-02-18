@@ -117,7 +117,7 @@ export default class Evolution extends PureComponent<void, Props, void> {
                 <Text style={styles.label}>{pokemon.name}</Text>
               </View>
               <Text style={styles.arrow}>→</Text>
-              <TouchableOpacity style={styles.pokemon} onPress={() => this._goToPokemon(poke.id)}>
+              <TouchableOpacity style={styles.pokemon} onPress={() => poke && this._goToPokemon(poke.id)}>
                 <Image source={poke ? store.getSprite(poke.id) : null} style={styles.image} />
                 <Text style={styles.label}>{poke ? poke.name : ''}</Text>
                 <View style={styles.row}>
