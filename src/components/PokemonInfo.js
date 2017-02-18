@@ -15,6 +15,7 @@ import {
   TabNavigator,
 } from 'react-navigation';
 import Appbar from './Appbar';
+import DelayedItem from './DelayedItem';
 import PokemonTypeLabel from './PokemonTypeLabel';
 import PokemonDetails from './PokemonDetails';
 import PokemonMatches from './PokemonMatches';
@@ -106,9 +107,29 @@ type Props = {
 console.ignoredYellowBox = [ 'Behaviour of screenProps has changed' ];
 
 const InfoTabs = TabNavigator({
-  Details: { screen: ({ screenProps, ...rest }) => <PokemonDetails {...rest} pokemon={screenProps.pokemon} /> },
-  Matches: { screen: ({ screenProps, ...rest }) => <PokemonMatches {...rest} pokemon={screenProps.pokemon} /> },
-  Tools: { screen: ({ screenProps, ...rest }) => <PokemonTools {...rest} pokemon={screenProps.pokemon} /> },
+  Details: {
+    screen: ({ screenProps, ...rest }) => (
+      <PokemonDetails {...rest} {...screenProps} />
+    ),
+  },
+  Matches: {
+    screen: ({ screenProps, ...rest }) => (
+      <DelayedItem
+        {...rest}
+        {...screenProps}
+        component={PokemonMatches}
+      />
+    ),
+  },
+  Tools: {
+    screen: ({ screenProps, ...rest }) => (
+      <DelayedItem
+        {...rest}
+        {...screenProps}
+        component={PokemonTools}
+      />
+    ),
+  },
 }, {
   ...TabNavigator.Presets.AndroidTopTabs,
   tabBarOptions: {
