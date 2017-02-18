@@ -9,7 +9,7 @@ import getWeakAgainstTypes from './getWeakAgainstTypes';
 import compareStrength from './compareStrength';
 import type {
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 export default function getWeakAgainstPokemons(pokemon: Pokemon) {
   const strongAgainstAll = getStrongAgainstTypes(pokemon);

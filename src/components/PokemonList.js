@@ -8,7 +8,7 @@ import GridView from './GridView';
 import PokemonListCard from './PokemonListCard';
 import type {
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 const styles = StyleSheet.create({
   grid: {

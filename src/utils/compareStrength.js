@@ -3,7 +3,7 @@
 import store from '../store';
 import type {
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 export default function compareStrength(a: Pokemon, b: Pokemon) {
   const max = store.getMaxValues();

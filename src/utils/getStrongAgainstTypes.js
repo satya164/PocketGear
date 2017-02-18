@@ -6,7 +6,7 @@ import getAttackTypesForPokemon from './getAttackTypesForPokemon';
 import type {
   Pokemon,
   PokemonType,
-} from '../typeDefinitions';
+} from '../types';
 
 export default function getStrongAgainstTypes(pokemon: Pokemon): Array<PokemonType> {
   const types = intersection(pokemon.types, getAttackTypesForPokemon(pokemon));

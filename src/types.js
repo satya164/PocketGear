@@ -20,6 +20,13 @@ export type PokemonType =
   | 'Steel'
   | 'Water'
 
+export type EvolutionItem =
+  | "Dragon Scale"
+  | "King's Rock"
+  | "Metal Coat"
+  | "Sun Stone"
+  | "Up-Grade"
+
 export type PokemonID = number;
 
 export type Pokemon = {|
@@ -54,7 +61,14 @@ export type Pokemon = {|
   points: {
     max_cp: number;
   };
-  evolution_chains?: Array<Array<PokemonID>>;
+  evolution: {
+    parent?: PokemonID;
+    branch?: Array<{
+      id: PokemonID;
+      candy_cost: number;
+      item_requirement?: EvolutionItem;
+    }>
+  },
   evolution_cp_multipliers: Array<{
     id: PokemonID;
     multipliers: {
@@ -69,10 +83,6 @@ export type Pokemon = {|
   buddy_distance?: {
     amount: number;
     unit: 'km';
-  };
-  evolution_requirements: {
-    amount: number;
-    name: string;
   };
   encounter: {
     capture_rate: number;

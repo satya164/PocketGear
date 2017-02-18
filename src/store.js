@@ -11,7 +11,7 @@ import type {
   PokemonType,
   Move,
   TypeChart,
-} from './typeDefinitions';
+} from './types';
 
 const MAX_VALUES = {
   attack: 300,

@@ -3,7 +3,7 @@
 import compareStrength from './compareStrength';
 import type {
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 export default function findClosestMatch(pokemons: Array<Pokemon>, pokemon: Pokemon, stronger: boolean = true) {
   const items = pokemons.sort((a, b) => stronger ? compareStrength(a, b) : compareStrength(b, a));

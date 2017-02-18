@@ -11,7 +11,7 @@ import TouchableItem from './TouchableItem';
 import store from '../store';
 import type {
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 const styles = StyleSheet.create({
   block: {

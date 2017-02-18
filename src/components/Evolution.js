@@ -1,6 +1,5 @@
 /* @flow */
 
-import difference from 'lodash/difference';
 import React, { PropTypes, PureComponent } from 'react';
 import {
   View,
@@ -14,13 +13,12 @@ import store from '../store';
 import type {
   Pokemon,
   PokemonID,
-} from '../typeDefinitions';
+} from '../types';
 
 const styles = StyleSheet.create({
-  container: {
+  row: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    alignItems: 'flex-end',
   },
 
   image: {
@@ -30,35 +28,39 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 
+  arrow: {
+    fontSize: 24,
+    marginHorizontal: 16,
+    marginTop: 24,
+  },
+
   requirements: {
     fontFamily: 'Montserrat',
-    fontSize: 13,
+    fontSize: 9,
     color: '#222',
-    marginVertical: 8,
+    margin: 2,
   },
 
   label: {
-    fontFamily: 'Montserrat',
+    fontFamily: 'MontserratBold',
     fontSize: 11,
     color: '#222',
   },
 
-  item: {
-    flexDirection: 'row',
+  pokemon: {
     alignItems: 'center',
     marginVertical: 8,
   },
 
-  pokemon: {
-    alignItems: 'center',
+  item: {
+    marginVertical: 8,
   },
 
-  arrow: {
-    margin: 8,
-    marginBottom: 21,
-    fontSize: 16,
-    color: '#000',
-    opacity: 0.5,
+  candy: {
+    height: 10,
+    width: 10,
+    margin: 2,
+    marginLeft: 0,
   },
 });
 
@@ -81,67 +83,74 @@ export default class Evolution extends PureComponent<void, Props, void> {
   };
 
   render() {
-    const { pokemon } = this.props;
-    const evolutionChains = pokemon.evolution_chains;
     const pokemons = store.getPokemons();
+    const { pokemon } = this.props;
+    const { evolution } = pokemon;
 
-    const chains = evolutionChains ? evolutionChains.map(chain =>
-      // Remove Pokemons from a newer generation
-      chain.filter(id =>
-        pokemons[id - 1]
-      )
-    )
-    .filter(it => it.length > 1)
-    // Remove evolution chains which are subset of another
-    // Will happen when we remove pokemons from newer generation
-    .filter((it, i, self) => {
-      const items = self.filter(c => c !== it);
-      if (items.length === 0) {
-        return true;
-      }
-      return items.some(c =>
-        difference(it, c).length
-      );
-    })
-    .map(chain =>
-      chain.map(id =>
-        pokemons[id - 1]
-      )
-    ) : [];
-
-    if (chains.length === 0) {
+    if (!evolution) {
       return null;
     }
+
+    const parent = evolution.parent ? pokemons.find(it => it.id === evolution.parent) : null;
+    const branch = evolution.branch ? evolution.branch.map(ev => ({
+      poke: pokemons.find(p => p.id === ev.id),
+      ev,
+    })).filter(ev => ev.poke) : null;
 
     return (
       <View {...this.props}>
         <Heading>Evolution</Heading>
-        {pokemon.evolution_requirements && pokemon.evolution_requirements.name ?
-          <Text style={styles.requirements}>
-            {pokemon.evolution_requirements.amount} {pokemon.evolution_requirements.name}
-          </Text> :
-          null
-        }
-        {chains.map((chain, i) => (
-          <View key={'outer-' + i} style={styles.container}>
-            {chain.map((p, index) => (
-              <TouchableOpacity
-                key={p.id}
-                style={styles.item}
-                onPress={() => this._goToPokemon(p.id)}
-              >
-                <View style={styles.pokemon}>
-                  <Image source={store.getSprite(p.id)} style={styles.image} />
-                  <Text style={styles.label}>{p.name}</Text>
+        <View style={styles.item}>
+          {branch ? branch.map(({ ev, poke }) => (
+            <View key={ev.id} style={styles.row}>
+              {parent ? (
+                <TouchableOpacity style={styles.pokemon} onPress={() => this._goToPokemon(parent.id)}>
+                  <Image source={store.getSprite(parent.id)} style={styles.image} />
+                  <Text style={styles.label}>{parent.name}</Text>
+                </TouchableOpacity>
+              ) : null}
+              {parent ? (
+                <Text style={styles.arrow}>→</Text>
+              ) : null}
+              <View style={styles.pokemon}>
+                <Image source={store.getSprite(pokemon.id)} style={styles.image} />
+                <Text style={styles.label}>{pokemon.name}</Text>
+              </View>
+              <Text style={styles.arrow}>→</Text>
+              <TouchableOpacity style={styles.pokemon} onPress={() => this._goToPokemon(poke.id)}>
+                <Image source={poke ? store.getSprite(poke.id) : null} style={styles.image} />
+                <Text style={styles.label}>{poke ? poke.name : ''}</Text>
+                <View style={styles.row}>
+                  <Image source={require('../../assets/images/candy.png')} style={styles.candy} />
+                  <Text style={styles.requirements}>
+                    {ev.candy_cost}
+                  </Text>
                 </View>
-                {index !== chain.length - 1 ?
-                  <Text style={styles.arrow}>→</Text> :
-                  null
-                }
+                {ev.item_requirement ? (
+                  <Text style={styles.requirements}>
+                    {ev.item_requirement}
+                  </Text>
+                ) : null}
               </TouchableOpacity>
-            ))}
-          </View>
-        ))}
+            </View>
+          )) : (
+            <View style={styles.row}>
+              {parent ? (
+                <TouchableOpacity style={styles.pokemon} onPress={() => this._goToPokemon(parent.id)}>
+                  <Image source={store.getSprite(parent.id)} style={styles.image} />
+                  <Text style={styles.label}>{parent.name}</Text>
+                </TouchableOpacity>
+              ) : null}
+              {parent ? (
+                <Text style={styles.arrow}>→</Text>
+              ) : null}
+              <View style={styles.pokemon}>
+                <Image source={store.getSprite(pokemon.id)} style={styles.image} />
+                <Text style={styles.label}>{pokemon.name}</Text>
+              </View>
+            </View>
+          )}
+        </View>
       </View>
     );
   }

@@ -6,7 +6,7 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
-import type { Move } from '../typeDefinitions';
+import type { Move } from '../types';
 
 const styles = StyleSheet.create({
   spacer: {

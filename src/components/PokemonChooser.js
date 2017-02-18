@@ -14,7 +14,7 @@ import NoResults from './NoResults';
 import store from '../store';
 import type {
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 const styles = StyleSheet.create({
   container: {
@@ -110,7 +110,6 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
   _unsetRef = () => (this._list = null);
 
   render() {
-    console.log(this.props);
     return (
       <KeyboardAvoidingView style={styles.container}>
         <SearchBar

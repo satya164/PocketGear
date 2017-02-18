@@ -14,7 +14,7 @@ import store from '../store';
 import type {
   Pokemon,
   PokemonID,
-} from '../typeDefinitions';
+} from '../types';
 
 const styles = StyleSheet.create({
   container: {

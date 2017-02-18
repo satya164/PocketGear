@@ -24,7 +24,7 @@ import store from '../store';
 import type {
   PokemonID,
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 const LOLLIPOP = 21;
 

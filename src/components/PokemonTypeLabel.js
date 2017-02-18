@@ -9,7 +9,7 @@ import {
 import store from '../store';
 import type {
   PokemonType,
-} from '../typeDefinitions';
+} from '../types';
 
 const styles = StyleSheet.create({
 

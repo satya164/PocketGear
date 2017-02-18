@@ -5,7 +5,7 @@ import getSpecialAttacks from './getSpecialAttacks';
 import type {
   Pokemon,
   PokemonType,
-} from '../typeDefinitions';
+} from '../types';
 
 export default function getAttackTypesForPokemon(pokemon: Pokemon): Array<PokemonType> {
   const quickAttacks = getQuickAttacks(pokemon);

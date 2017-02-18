@@ -3,7 +3,7 @@
 import store from '../store';
 import type {
   Pokemon,
-} from '../typeDefinitions';
+} from '../types';
 
 export default function getQuickAttacks(pokemon: Pokemon) {
   const moves = store.getMoves();

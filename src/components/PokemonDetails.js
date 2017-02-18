@@ -24,7 +24,7 @@ import type {
   Pokemon,
   PokemonID,
   Move,
-} from '../typeDefinitions';
+} from '../types';
 
 const styles = StyleSheet.create({
   container: {
@@ -242,7 +242,7 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
             {this._renderStat('Max CP', pokemon.points.max_cp / maxValues.max_cp, pokemon.points.max_cp, '#e57373')}
           </View>
 
-          {pokemon.evolution_chains ?
+          {pokemon.evolution ?
             <View style={styles.item}>
               <Evolution
                 style={styles.item}
