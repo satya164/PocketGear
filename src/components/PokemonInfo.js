@@ -5,7 +5,6 @@ import memoize from 'lodash/memoize';
 import React, { PropTypes, PureComponent } from 'react';
 import {
   Image,
-  InteractionManager,
   ScrollView,
   StyleSheet,
   Platform,
@@ -79,10 +78,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  tabview: {
-    flex: 1,
-  },
-
   tabbar: {
     backgroundColor: '#fff',
     elevation: 1,
@@ -102,20 +97,9 @@ const styles = StyleSheet.create({
   },
 });
 
-type Route = {
-  key: string;
-  title?: string;
-}
-
 type Props = {
   navigation: Object;
   style?: any;
-}
-
-type State = {
-  index: number;
-  routes: Array<Route>;
-  loading: boolean;
 }
 
 /* $FlowFixMe */
@@ -139,7 +123,7 @@ const InfoTabs = TabNavigator({
   order: [ 'Details', 'Matches', 'Tools' ],
 });
 
-class PokemonInfo extends PureComponent<void, Props, State> {
+class PokemonInfo extends PureComponent<void, Props, void> {
 
   static propTypes = {
     navigation: PropTypes.object.isRequired,
@@ -148,37 +132,11 @@ class PokemonInfo extends PureComponent<void, Props, State> {
 
   static router = InfoTabs.router;
 
-  state: State = {
-    index: 0,
-    routes: [
-      { key: 'details', title: 'Details' },
-      { key: 'matches', title: 'Matches' },
-      { key: 'tools', title: 'Tools' },
-    ],
-    loading: true,
-  };
-
-  componentDidMount() {
-    InteractionManager.runAfterInteractions(this._setLoading);
-  }
-
-  _setLoading = () => {
-    this.setState({
-      loading: false,
-    });
-  };
-
   _getPokemon: (id: PokemonID) => Pokemon = memoize((id: PokemonID) => {
     const pokemons = store.getPokemons();
     const pokemon = find(pokemons, { id });
     return pokemon;
   });
-
-  _handleChangeTab = (index: number) => {
-    this.setState({
-      index,
-    });
-  };
 
   render() {
     const pokemon = this._getPokemon(this.props.navigation.state.params.pokemonId);
