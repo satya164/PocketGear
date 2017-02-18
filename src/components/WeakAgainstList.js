@@ -15,7 +15,6 @@ import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
 import store from '../store';
 import type {
   Pokemon,
-  PokemonID,
 } from '../types';
 
 const styles = StyleSheet.create({

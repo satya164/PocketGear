@@ -15,7 +15,6 @@ import getStrongAgainstPokemons from '../utils/getStrongAgainstPokemons';
 import store from '../store';
 import type {
   Pokemon,
-  PokemonID,
 } from '../types';
 
 const styles = StyleSheet.create({
