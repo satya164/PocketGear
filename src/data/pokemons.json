@@ -9126,7 +9126,10 @@
     "description": "Ditto rearranges its cell structure to transform itself into other shapes. However, if it tries to transform itself into something by relying on its memory, this Pokémon manages to get details wrong.",
     "points": {
       "max_cp": 718
-    }
+    },
+    "easter_eggs": [
+      "Ditto is usually found disguised as Pidgey, Magikarp, Zubat, Rattata, Hoothoot, Sentret or Yanma. When you catch these pokemons, they might turn out to be ditto."
+    ]
   },
   {
     "id": 133,
