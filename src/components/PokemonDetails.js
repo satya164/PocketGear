@@ -141,8 +141,6 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
     const weakAgainst = difference(weakAgainstAll, strongAgainstAll);
     const resistantTo = difference(resistantToAll, [ ...weakAgainst, ...strongAgainst ]);
 
-    console.log(this.props);
-
     return (
       <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
         <View style={styles.content}>
