@@ -61,7 +61,7 @@ export type Pokemon = {|
   points: {
     max_cp: number;
   };
-  evolution: {
+  evolution?: {
     parent?: PokemonID;
     branch?: Array<{
       id: PokemonID;
@@ -69,7 +69,7 @@ export type Pokemon = {|
       item_requirement?: EvolutionItem;
     }>
   },
-  evolution_cp_multipliers: Array<{
+  evolution_cp_multipliers?: Array<{
     id: PokemonID;
     multipliers: {
       minimum: number;

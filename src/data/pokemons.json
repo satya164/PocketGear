@@ -15269,6 +15269,9 @@
       "amount": 3,
       "unit": "km"
     },
+    "evolution": {
+      "parent": 117
+    },
     "category": "Dragon Pokémon",
     "name_origin": [
       {

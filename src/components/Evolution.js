@@ -86,7 +86,7 @@ export default class Evolution extends PureComponent<void, Props, void> {
     const pokemons = store.getPokemons();
     const { evolution } = pokemon;
 
-    return evolution.branch ?
+    return evolution && evolution.branch ?
       evolution.branch.map(ev => (
         /* $FlowFixMe */
         pokemons.find(p => p.id === ev.id)
@@ -125,7 +125,8 @@ export default class Evolution extends PureComponent<void, Props, void> {
       let curr = chain[0];
 
       while (curr.evolution && curr.evolution.parent) {
-        const poke = pokemons.find(p => p.id === curr.evolution.parent); // eslint-disable-line no-loop-func
+        const { parent } = curr.evolution;
+        const poke = pokemons.find(p => p.id === parent); // eslint-disable-line no-loop-func
         if (poke) {
           curr = poke;
           parents = [ poke, ...parents ];
@@ -136,7 +137,8 @@ export default class Evolution extends PureComponent<void, Props, void> {
     }).map(chain =>
       chain.map(poke => {
         if (poke.evolution && poke.evolution.parent) {
-          const prev = pokemons.find(p => p.id === poke.evolution.parent);
+          const { parent } = poke.evolution;
+          const prev = pokemons.find(p => p.id === parent);
 
           if (prev && prev.evolution && prev.evolution.branch) {
             const ev = prev.evolution.branch.find(({ id }) => id === poke.id);
