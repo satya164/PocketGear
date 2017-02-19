@@ -172,7 +172,7 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
             }
             {pokemon.buddy_distance ?
               <View style={[ styles.row, styles.center ]}>
-                <Text selectable style={[ styles.text, styles.strong, styles.measurement ]}>Candy Distance</Text>
+                <Text selectable style={[ styles.text, styles.strong, styles.measurement ]}>Buddy Distance</Text>
                 <Text selectable style={styles.text}>
                   {pokemon.buddy_distance.amount} {pokemon.buddy_distance.unit}
                 </Text>
