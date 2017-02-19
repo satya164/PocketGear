@@ -85,7 +85,7 @@ export type Pokemon = {|
     unit: 'km';
   };
   encounter: {
-    capture_rate: number;
+    capture_rate?: number;
     flee_rate: number;
   };
   easter_eggs?: Array<string>;
