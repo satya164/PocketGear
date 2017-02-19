@@ -39,14 +39,13 @@ const styles = StyleSheet.create({
   filters: {
     position: 'absolute',
     top: Platform.OS === 'ios' ? 44 : 56,
-    height: 52,
     left: 0,
     right: 0,
     paddingBottom: 8,
   },
 
   row: {
-    flexGrow: 1,
+    height: 48,
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 2,
