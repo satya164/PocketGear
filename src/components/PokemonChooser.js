@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
 
   filters: {
     position: 'absolute',
-    top: Platform.OS === 'ios' ? 64 : 56,
+    top: Platform.OS === 'ios' ? 44 : 56,
     height: 52,
     left: 0,
     right: 0,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
 
   row: {
-    flex: 1,
+    flexGrow: 1,
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 2,
@@ -192,7 +192,7 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
     return (
       <KeyboardAvoidingView style={styles.container}>
         <SearchBar
-          placeholder='Find Pokémon by name, type or index'
+          placeholder='Find Pokémon by name, number or type'
           value={this.state.query}
           onChangeText={this._handleSearchChange}
           style={styles.searchbar}

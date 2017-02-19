@@ -113,7 +113,7 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
     return (
       <View style={[ styles.row, styles.center ]}>
         <Text style={[ styles.text, styles.label ]}>{type}</Text>
-        <ProgressBar ratio={ratio} fillColor={fill} />
+        <ProgressBar ratio={ratio || 0} fillColor={fill} />
         <Text style={[ styles.text, styles.amount ]}>{amount}</Text>
       </View>
     );

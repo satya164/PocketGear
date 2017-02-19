@@ -5,6 +5,7 @@ import {
   View,
   Text,
   TouchableWithoutFeedback,
+  Platform,
   StyleSheet,
 } from 'react-native';
 
@@ -25,6 +26,8 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Montserrat',
     fontSize: 11,
+    lineHeight: Platform.OS === 'ios' ? 11 : undefined,
+    textAlignVertical: 'center',
     color: '#222',
   },
 
