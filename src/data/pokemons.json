@@ -7449,6 +7449,9 @@
     "description": "Hitmonlee's legs freely contract and stretch. Using these springlike legs, it bowls over foes with devastating kicks. After battle, it rubs down its legs and loosens the muscles to overcome fatigue.",
     "points": {
       "max_cp": 2406
+    },
+    "evolution": {
+      "parent": 236
     }
   },
   {
@@ -7516,6 +7519,9 @@
     "description": "Hitmonchan is said to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity.",
     "points": {
       "max_cp": 2098
+    },
+    "evolution": {
+      "parent": 236
     }
   },
   {
