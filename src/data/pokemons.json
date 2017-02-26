@@ -301,8 +301,7 @@
     "moves": {
       "quick": [
         "Ember",
-        "Fire Fang",
-        "Scratch"
+        "Fire Fang"
       ],
       "cinematic": [
         "Fire Punch",
@@ -378,15 +377,12 @@
     "moves": {
       "quick": [
         "Fire Spin",
-        "Air Slash",
-        "Ember",
-        "Wing Attack"
+        "Air Slash"
       ],
       "cinematic": [
         "Fire Blast",
         "Dragon Claw",
-        "Overheat",
-        "Flamethrower"
+        "Overheat"
       ]
     },
     "stats": {
@@ -806,8 +802,7 @@
     "moves": {
       "quick": [
         "Struggle Bug",
-        "Confusion",
-        "Bug Bite"
+        "Confusion"
       ],
       "cinematic": [
         "Bug Buzz",
@@ -1014,8 +1009,7 @@
     "moves": {
       "quick": [
         "Infestation",
-        "Poison Jab",
-        "Bug Bite"
+        "Poison Jab"
       ],
       "cinematic": [
         "Sludge Bomb",
@@ -1222,14 +1216,12 @@
     "moves": {
       "quick": [
         "Air Slash",
-        "Steel Wing",
-        "Wing Attack"
+        "Steel Wing"
       ],
       "cinematic": [
         "Hurricane",
         "Aerial Ace",
-        "Brave Bird",
-        "Air Cutter"
+        "Brave Bird"
       ]
     },
     "stats": {
@@ -1422,8 +1414,7 @@
       "cinematic": [
         "Aerial Ace",
         "Drill Peck",
-        "Sky Attack",
-        "Twister"
+        "Sky Attack"
       ]
     },
     "stats": {
@@ -1502,8 +1493,7 @@
       "cinematic": [
         "Aerial Ace",
         "Drill Run",
-        "Sky Attack",
-        "Twister"
+        "Sky Attack"
       ]
     },
     "stats": {
@@ -1562,8 +1552,7 @@
       "cinematic": [
         "Wrap",
         "Poison Fang",
-        "Sludge Bomb",
-        "Gunk Shot"
+        "Sludge Bomb"
       ]
     },
     "stats": {
@@ -1692,8 +1681,7 @@
       "cinematic": [
         "Discharge",
         "Thunderbolt",
-        "Wild Charge",
-        "Thunder"
+        "Wild Charge"
       ]
     },
     "stats": {
@@ -1770,14 +1758,12 @@
     "moves": {
       "quick": [
         "Volt Switch",
-        "Spark",
-        "Thunder Shock"
+        "Spark"
       ],
       "cinematic": [
         "Brick Break",
         "Thunder Punch",
-        "Wild Charge",
-        "Thunder"
+        "Wild Charge"
       ]
     },
     "stats": {
@@ -1836,8 +1822,7 @@
       "cinematic": [
         "Dig",
         "Rock Slide",
-        "Sand Tomb",
-        "Rock Tomb"
+        "Sand Tomb"
       ]
     },
     "stats": {
@@ -2344,8 +2329,7 @@
     "moves": {
       "quick": [
         "Poison Jab",
-        "Iron Tail",
-        "Fury Cutter"
+        "Iron Tail"
       ],
       "cinematic": [
         "Earthquake",
@@ -2483,8 +2467,7 @@
     "moves": {
       "quick": [
         "Charge Beam",
-        "Zen Headbutt",
-        "Pound"
+        "Zen Headbutt"
       ],
       "cinematic": [
         "Dazzling Gleam",
@@ -2621,15 +2604,12 @@
     "moves": {
       "quick": [
         "Feint Attack",
-        "Fire Spin",
-        "Ember"
+        "Fire Spin"
       ],
       "cinematic": [
         "Heat Wave",
         "Overheat",
-        "Solar Beam",
-        "Flamethrower",
-        "Fire Blast"
+        "Solar Beam"
       ]
     },
     "stats": {
@@ -2689,9 +2669,7 @@
       "cinematic": [
         "Disarming Voice",
         "Gyro Ball",
-        "Dazzling Gleam",
-        "Play Rough",
-        "Body Slam"
+        "Dazzling Gleam"
       ]
     },
     "stats": {
@@ -2831,8 +2809,7 @@
       "cinematic": [
         "Poison Fang",
         "Air Cutter",
-        "Swift",
-        "Sludge Bomb"
+        "Swift"
       ]
     },
     "stats": {
@@ -2911,8 +2888,7 @@
       "cinematic": [
         "Shadow Ball",
         "Air Cutter",
-        "Poison Fang",
-        "Ominous Wind"
+        "Poison Fang"
       ]
     },
     "stats": {
@@ -3269,8 +3245,7 @@
     "moves": {
       "quick": [
         "Struggle Bug",
-        "Fury Cutter",
-        "Bug Bite"
+        "Fury Cutter"
       ],
       "cinematic": [
         "Cross Poison",
@@ -3409,14 +3384,12 @@
     "moves": {
       "quick": [
         "Infestation",
-        "Confusion",
-        "Bug Bite"
+        "Confusion"
       ],
       "cinematic": [
         "Silver Wind",
         "Psychic",
-        "Bug Buzz",
-        "Poison Fang"
+        "Bug Buzz"
       ]
     },
     "stats": {
@@ -3470,8 +3443,7 @@
     "moves": {
       "quick": [
         "Mud Slap",
-        "Scratch",
-        "Mud Shot"
+        "Scratch"
       ],
       "cinematic": [
         "Dig",
@@ -3549,8 +3521,7 @@
     "moves": {
       "quick": [
         "Sucker Punch",
-        "Mud Slap",
-        "Mud Shot"
+        "Mud Slap"
       ],
       "cinematic": [
         "Earthquake",
@@ -3614,8 +3585,7 @@
       "cinematic": [
         "Night Slash",
         "Dark Pulse",
-        "Foul Play",
-        "Body Slam"
+        "Foul Play"
       ]
     },
     "stats": {
@@ -3689,8 +3659,7 @@
       "cinematic": [
         "Foul Play",
         "Power Gem",
-        "Play Rough",
-        "Night Slash"
+        "Play Rough"
       ]
     },
     "stats": {
@@ -3955,14 +3924,12 @@
     "moves": {
       "quick": [
         "Low Kick",
-        "Counter",
-        "Karate Chop"
+        "Counter"
       ],
       "cinematic": [
         "Close Combat",
         "Low Sweep",
-        "Night Slash",
-        "Cross Chop"
+        "Night Slash"
       ]
     },
     "stats": {
@@ -4098,15 +4065,12 @@
     "moves": {
       "quick": [
         "Fire Fang",
-        "Snarl",
-        "Bite"
+        "Snarl"
       ],
       "cinematic": [
         "Fire Blast",
         "Wild Charge",
-        "Crunch",
-        "Flamethrower",
-        "Bulldoze"
+        "Crunch"
       ]
     },
     "stats": {
@@ -4243,8 +4207,7 @@
       "cinematic": [
         "Water Pulse",
         "Mud Bomb",
-        "Bubble Beam",
-        "Scald"
+        "Bubble Beam"
       ]
     },
     "stats": {
@@ -4320,14 +4283,12 @@
     "moves": {
       "quick": [
         "Bubble",
-        "Rock Smash",
-        "Mud Shot"
+        "Rock Smash"
       ],
       "cinematic": [
         "Hydro Pump",
         "Dynamic Punch",
-        "Ice Punch",
-        "Submission"
+        "Ice Punch"
       ]
     },
     "stats": {
@@ -4531,9 +4492,7 @@
       "cinematic": [
         "Futuresight",
         "Focus Blast",
-        "Shadow Ball",
-        "Psychic",
-        "Dazzling Gleam"
+        "Shadow Ball"
       ]
     },
     "stats": {
@@ -4583,8 +4542,7 @@
     "moves": {
       "quick": [
         "Rock Smash",
-        "Karate Chop",
-        "Low Kick"
+        "Karate Chop"
       ],
       "cinematic": [
         "Low Sweep",
@@ -4667,8 +4625,7 @@
       "cinematic": [
         "Submission",
         "Brick Break",
-        "Dynamic Punch",
-        "Cross Chop"
+        "Dynamic Punch"
       ]
     },
     "stats": {
@@ -4738,16 +4695,12 @@
     "moves": {
       "quick": [
         "Bullet Punch",
-        "Counter",
-        "Karate Chop"
+        "Counter"
       ],
       "cinematic": [
         "Heavy Slam",
         "Dynamic Punch",
-        "Close Combat",
-        "Stone Edge",
-        "Submission",
-        "Cross Chop"
+        "Close Combat"
       ]
     },
     "stats": {
@@ -4881,8 +4834,7 @@
     "moves": {
       "quick": [
         "Bullet Seed",
-        "Acid",
-        "Razor Leaf"
+        "Acid"
       ],
       "cinematic": [
         "Power Whip",
@@ -5240,14 +5192,12 @@
     "moves": {
       "quick": [
         "Rock Throw",
-        "Mud Slap",
-        "Mud Shot"
+        "Mud Slap"
       ],
       "cinematic": [
         "Dig",
         "Stone Edge",
-        "Rock Blast",
-        "Rock Slide"
+        "Rock Blast"
       ]
     },
     "stats": {
@@ -5314,14 +5264,12 @@
     "moves": {
       "quick": [
         "Rock Throw",
-        "Mud Slap",
-        "Mud Shot"
+        "Mud Slap"
       ],
       "cinematic": [
         "Stone Edge",
         "Rock Blast",
-        "Earthquake",
-        "Ancient Power"
+        "Earthquake"
       ]
     },
     "stats": {
@@ -5376,8 +5324,7 @@
       "cinematic": [
         "Flame Charge",
         "Flame Wheel",
-        "Stomp",
-        "Fire Blast"
+        "Stomp"
       ]
     },
     "stats": {
@@ -5450,8 +5397,7 @@
     "moves": {
       "quick": [
         "Low Kick",
-        "Fire Spin",
-        "Ember"
+        "Fire Spin"
       ],
       "cinematic": [
         "Fire Blast",
@@ -5738,14 +5684,12 @@
     "moves": {
       "quick": [
         "Spark",
-        "Charge Beam",
-        "Thunder Shock"
+        "Charge Beam"
       ],
       "cinematic": [
         "Zap Cannon",
         "Magnet Bomb",
-        "Flash Cannon",
-        "Discharge"
+        "Flash Cannon"
       ]
     },
     "stats": {
@@ -5800,8 +5744,7 @@
     "moves": {
       "quick": [
         "Air Slash",
-        "Fury Cutter",
-        "Cut"
+        "Fury Cutter"
       ],
       "cinematic": [
         "Aerial Ace",
@@ -5863,8 +5806,7 @@
       "cinematic": [
         "Drill Peck",
         "Aerial Ace",
-        "Brave Bird",
-        "Swift"
+        "Brave Bird"
       ]
     },
     "stats": {
@@ -5943,8 +5885,7 @@
       "cinematic": [
         "Drill Peck",
         "Aerial Ace",
-        "Brave Bird",
-        "Air Cutter"
+        "Brave Bird"
       ]
     },
     "stats": {
@@ -5998,14 +5939,12 @@
     "moves": {
       "quick": [
         "Ice Shard",
-        "Lick",
-        "Water Gun"
+        "Lick"
       ],
       "cinematic": [
         "Aurora Beam",
         "Icy Wind",
-        "Aqua Tail",
-        "Aqua Jet"
+        "Aqua Tail"
       ]
     },
     "stats": {
@@ -6075,15 +6014,12 @@
     "moves": {
       "quick": [
         "Frost Breath",
-        "Iron Tail",
-        "Ice Shard"
+        "Iron Tail"
       ],
       "cinematic": [
         "Aurora Beam",
         "Water Pulse",
-        "Blizzard",
-        "Icy Wind",
-        "Aqua Jet"
+        "Blizzard"
       ]
     },
     "stats": {
@@ -6137,8 +6073,7 @@
     "moves": {
       "quick": [
         "Poison Jab",
-        "Mud Slap",
-        "Acid"
+        "Mud Slap"
       ],
       "cinematic": [
         "Sludge",
@@ -6212,9 +6147,7 @@
     "moves": {
       "quick": [
         "Infestation",
-        "Poison Jab",
-        "Acid",
-        "Lick"
+        "Poison Jab"
       ],
       "cinematic": [
         "Dark Pulse",
@@ -6353,9 +6286,7 @@
       "cinematic": [
         "Aurora Beam",
         "Hydro Pump",
-        "Avalanche",
-        "Icy Wind",
-        "Blizzard"
+        "Avalanche"
       ]
     },
     "stats": {
@@ -6414,14 +6345,12 @@
     "moves": {
       "quick": [
         "Lick",
-        "Astonish",
-        "Sucker Punch"
+        "Astonish"
       ],
       "cinematic": [
         "Night Shade",
         "Dark Pulse",
-        "Sludge Bomb",
-        "Ominous Wind"
+        "Sludge Bomb"
       ]
     },
     "stats": {
@@ -6495,14 +6424,12 @@
     "moves": {
       "quick": [
         "Shadow Claw",
-        "Astonish",
-        "Lick"
+        "Astonish"
       ],
       "cinematic": [
         "Shadow Punch",
         "Dark Pulse",
-        "Sludge Bomb",
-        "Shadow Ball"
+        "Sludge Bomb"
       ]
     },
     "stats": {
@@ -6569,15 +6496,12 @@
     "moves": {
       "quick": [
         "Sucker Punch",
-        "Hex",
-        "Shadow Claw"
+        "Hex"
       ],
       "cinematic": [
         "Shadow Ball",
         "Focus Blast",
-        "Sludge Bomb",
-        "Sludge Wave",
-        "Dark Pulse"
+        "Sludge Bomb"
       ]
     },
     "stats": {
@@ -6633,9 +6557,7 @@
       "cinematic": [
         "Sand Tomb",
         "Stone Edge",
-        "Heavy Slam",
-        "Rock Slide",
-        "Iron Head"
+        "Heavy Slam"
       ]
     },
     "stats": {
@@ -6778,9 +6700,7 @@
       "cinematic": [
         "Futuresight",
         "Psychic",
-        "Focus Blast",
-        "Psyshock",
-        "Shadow Ball"
+        "Focus Blast"
       ]
     },
     "stats": {
@@ -6908,17 +6828,12 @@
     "moves": {
       "quick": [
         "Bubble",
-        "Metal Claw",
-        "Mud Shot",
-        "Tackle",
-        "Confusion",
-        "Zen Headbutt"
+        "Metal Claw"
       ],
       "cinematic": [
         "Vice Grip",
         "X Scissor",
-        "Water Pulse",
-        "Signal Beam"
+        "Water Pulse"
       ]
     },
     "stats": {
@@ -6972,16 +6887,12 @@
     "moves": {
       "quick": [
         "Spark",
-        "Tackle",
-        "Tackle",
-        "Confusion",
-        "Zen Headbutt"
+        "Tackle"
       ],
       "cinematic": [
         "Discharge",
         "Thunderbolt",
-        "Gyro Ball",
-        "Signal Beam"
+        "Gyro Ball"
       ]
     },
     "stats": {
@@ -7054,10 +6965,7 @@
     "moves": {
       "quick": [
         "Spark",
-        "Volt Switch",
-        "Tackle",
-        "Confusion",
-        "Zen Headbutt"
+        "Volt Switch"
       ],
       "cinematic": [
         "Discharge",
@@ -7196,9 +7104,7 @@
     "moves": {
       "quick": [
         "Bullet Seed",
-        "Extrasensory",
-        "Confusion",
-        "Zen Headbutt"
+        "Extrasensory"
       ],
       "cinematic": [
         "Seed Bomb",
@@ -7399,9 +7305,7 @@
       "cinematic": [
         "Close Combat",
         "Low Sweep",
-        "Stone Edge",
-        "Stomp",
-        "Brick Break"
+        "Stone Edge"
       ]
     },
     "stats": {
@@ -7463,15 +7367,13 @@
     "moves": {
       "quick": [
         "Bullet Punch",
-        "Counter",
-        "Rock Smash"
+        "Counter"
       ],
       "cinematic": [
         "Fire Punch",
         "Ice Punch",
         "Thunder Punch",
-        "Close Combat",
-        "Brick Break"
+        "Close Combat"
       ]
     },
     "stats": {
@@ -7593,8 +7495,7 @@
     "moves": {
       "quick": [
         "Tackle",
-        "Infestation",
-        "Acid"
+        "Infestation"
       ],
       "cinematic": [
         "Sludge",
@@ -7668,8 +7569,7 @@
     "moves": {
       "quick": [
         "Tackle",
-        "Infestation",
-        "Acid"
+        "Infestation"
       ],
       "cinematic": [
         "Sludge Bomb",
@@ -7868,8 +7768,7 @@
       "cinematic": [
         "Psychic",
         "Hyper Beam",
-        "Dazzling Gleam",
-        "Psybeam"
+        "Dazzling Gleam"
       ]
     },
     "stats": {
@@ -7934,8 +7833,7 @@
       "cinematic": [
         "Grass Knot",
         "Sludge Bomb",
-        "Solar Beam",
-        "Power Whip"
+        "Solar Beam"
       ]
     },
     "stats": {
@@ -7991,9 +7889,7 @@
       "cinematic": [
         "Crunch",
         "Earthquake",
-        "Outrage",
-        "Brick Break",
-        "Stomp"
+        "Outrage"
       ]
     },
     "stats": {
@@ -8131,8 +8027,7 @@
       "cinematic": [
         "Aurora Beam",
         "Dragon Pulse",
-        "Hydro Pump",
-        "Blizzard"
+        "Hydro Pump"
       ]
     },
     "stats": {
@@ -8276,9 +8171,7 @@
       "cinematic": [
         "Ice Beam",
         "Water Pulse",
-        "Megahorn",
-        "Icy Wind",
-        "Drill Run"
+        "Megahorn"
       ]
     },
     "stats": {
@@ -8332,8 +8225,7 @@
     "moves": {
       "quick": [
         "Tackle",
-        "Water Gun",
-        "Quick Attack"
+        "Water Gun"
       ],
       "cinematic": [
         "Swift",
@@ -8412,15 +8304,12 @@
     "moves": {
       "quick": [
         "Hidden Power",
-        "Water Gun",
-        "Quick Attack",
-        "Tackle"
+        "Water Gun"
       ],
       "cinematic": [
         "Hydro Pump",
         "Power Gem",
-        "Psychic",
-        "Psybeam"
+        "Psychic"
       ]
     },
     "stats": {
@@ -8536,14 +8425,12 @@
     "moves": {
       "quick": [
         "Fury Cutter",
-        "Air Slash",
-        "Steel Wing"
+        "Air Slash"
       ],
       "cinematic": [
         "Night Slash",
         "X Scissor",
-        "Aerial Ace",
-        "Bug Buzz"
+        "Aerial Ace"
       ]
     },
     "stats": {
@@ -8604,14 +8491,12 @@
     "moves": {
       "quick": [
         "Frost Breath",
-        "Confusion",
-        "Pound"
+        "Confusion"
       ],
       "cinematic": [
         "Draining Kiss",
         "Avalanche",
-        "Psyshock",
-        "Ice Punch"
+        "Psyshock"
       ]
     },
     "stats": {
@@ -8787,14 +8672,12 @@
     "moves": {
       "quick": [
         "Rock Smash",
-        "Bug Bite",
-        "Fury Cutter"
+        "Bug Bite"
       ],
       "cinematic": [
         "Vice Grip",
         "X Scissor",
-        "Close Combat",
-        "Submission"
+        "Close Combat"
       ]
     },
     "stats": {
@@ -8977,15 +8860,12 @@
     "moves": {
       "quick": [
         "Bite",
-        "Dragon Tail",
-        "Dragon Breath"
+        "Dragon Tail"
       ],
       "cinematic": [
         "Hydro Pump",
         "Crunch",
-        "Outrage",
-        "Twister",
-        "Dragon Pulse"
+        "Outrage"
       ]
     },
     "stats": {
@@ -9036,14 +8916,12 @@
     "moves": {
       "quick": [
         "Frost Breath",
-        "Water Gun",
-        "Ice Shard"
+        "Water Gun"
       ],
       "cinematic": [
         "Hydro Pump",
         "Ice Beam",
-        "Blizzard",
-        "Dragon Pulse"
+        "Blizzard"
       ]
     },
     "stats": {
@@ -9150,8 +9028,7 @@
       ],
       "cinematic": [
         "Dig",
-        "Swift",
-        "Body Slam"
+        "Swift"
       ]
     },
     "stats": {
@@ -9379,8 +9256,7 @@
       "cinematic": [
         "Fire Blast",
         "Flamethrower",
-        "Overheat",
-        "Heat Wave"
+        "Overheat"
       ]
     },
     "stats": {
@@ -9434,18 +9310,12 @@
     "moves": {
       "quick": [
         "Charge Beam",
-        "Hidden Power",
-        "Quick Attack",
-        "Zen Headbutt",
-        "Tackle"
+        "Hidden Power"
       ],
       "cinematic": [
         "Solar Beam",
         "Hyper Beam",
-        "Zap Cannon",
-        "Psybeam",
-        "Signal Beam",
-        "Discharge"
+        "Zap Cannon"
       ]
     },
     "stats": {
@@ -9511,9 +9381,7 @@
       "cinematic": [
         "Ancient Power",
         "Bubble Beam",
-        "Rock Blast",
-        "Brine",
-        "Rock Tomb"
+        "Rock Blast"
       ]
     },
     "stats": {
@@ -9587,14 +9455,12 @@
     "moves": {
       "quick": [
         "Mud Shot",
-        "Water Gun",
-        "Rock Throw"
+        "Water Gun"
       ],
       "cinematic": [
         "Ancient Power",
         "Hydro Pump",
-        "Rock Blast",
-        "Rock Slide"
+        "Rock Blast"
       ]
     },
     "stats": {
@@ -9724,8 +9590,7 @@
     "moves": {
       "quick": [
         "Mud Shot",
-        "Rock Smash",
-        "Fury Cutter"
+        "Rock Smash"
       ],
       "cinematic": [
         "Ancient Power",
@@ -9850,8 +9715,7 @@
       "cinematic": [
         "Heavy Slam",
         "Hyper Beam",
-        "Earthquake",
-        "Body Slam"
+        "Earthquake"
       ]
     },
     "stats": {
@@ -9961,14 +9825,12 @@
     ],
     "moves": {
       "quick": [
-        "Charge Beam",
-        "Thunder Shock"
+        "Charge Beam"
       ],
       "cinematic": [
         "Zap Cannon",
         "Thunderbolt",
-        "Thunder",
-        "Discharge"
+        "Thunder"
       ]
     },
     "stats": {
@@ -10018,14 +9880,12 @@
     ],
     "moves": {
       "quick": [
-        "Fire Spin",
-        "Ember"
+        "Fire Spin"
       ],
       "cinematic": [
         "Fire Blast",
         "Heat Wave",
-        "Overheat",
-        "Flamethrower"
+        "Overheat"
       ]
     },
     "stats": {
@@ -10229,15 +10089,12 @@
     "moves": {
       "quick": [
         "Dragon Tail",
-        "Steel Wing",
-        "Dragon Breath"
+        "Steel Wing"
       ],
       "cinematic": [
         "Hurricane",
         "Hyper Beam",
-        "Outrage",
-        "Dragon Pulse",
-        "Dragon Claw"
+        "Outrage"
       ]
     },
     "stats": {
