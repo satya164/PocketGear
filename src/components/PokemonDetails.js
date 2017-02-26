@@ -125,6 +125,7 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
         key={move.name}
         style={styles.row}
         move={move}
+        types={this.props.pokemon.types}
       />
     );
   };

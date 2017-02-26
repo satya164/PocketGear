@@ -53,20 +53,28 @@ const styles = StyleSheet.create({
   numbers: {
     fontSize: 10,
   },
+
+  stab: {
+    color: '#4caf50',
+  },
 });
 
 type Props = {
   move: Move;
+  types: Array<*>;
 }
 
 export default class Attack extends PureComponent<void, Props, void> {
 
   static propTypes = {
     move: PropTypes.object.isRequired,
+    types: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
   render() {
-    const { move } = this.props;
+    const { move, types } = this.props;
+    const multiplier = types.includes(move.type) ? 1.25 : 1;
+    const stab = move.power * (multiplier - 1);
 
     return (
       <View style={styles.row}>
@@ -83,10 +91,10 @@ export default class Attack extends PureComponent<void, Props, void> {
         }) : <View style={styles.spacer} />}
         <View style={styles.damage}>
           <Text style={styles.text}>
-            {(move.power / (move.duration / 1000)).toFixed(1)} dps
+            {((move.power + stab) / (move.duration / 1000)).toFixed(2)} dps
           </Text>
           <Text style={[ styles.subtitle, styles.numbers ]}>
-            {move.power} / {(move.duration / 1000)} s
+            {move.power} {stab ? <Text style={styles.stab}>+{stab} </Text> : ''}/ {(move.duration / 1000)} s
           </Text>
         </View>
       </View>
