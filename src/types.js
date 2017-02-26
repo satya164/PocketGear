@@ -100,7 +100,7 @@ export type TypeChart = {|
 export type Move = {|
   name: string;
   type: PokemonType;
-  power: number;
+  power?: number;
   duration: number;
   energy_delta: number;
   accuracy_chance: number;

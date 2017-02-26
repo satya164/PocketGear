@@ -12,5 +12,5 @@ export default function getQuickAttacks(pokemon: Pokemon) {
     .filter(move =>
       pokemon.moves.quick.includes(move.name)
     )
-    .sort((a, b) => (b.power / b.duration) - (a.power / a.duration));
+    .sort((a, b) => ((b.power || 0) / b.duration) - ((a.power || 0) / a.duration));
 }

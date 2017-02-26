@@ -73,8 +73,9 @@ export default class Attack extends PureComponent<void, Props, void> {
 
   render() {
     const { move, types } = this.props;
+    const power = move.power || 0;
     const multiplier = types.includes(move.type) ? 1.25 : 1;
-    const stab = move.power * (multiplier - 1);
+    const stab = power * (multiplier - 1);
 
     return (
       <View style={styles.row}>
@@ -91,10 +92,10 @@ export default class Attack extends PureComponent<void, Props, void> {
         }) : <View style={styles.spacer} />}
         <View style={styles.damage}>
           <Text style={styles.text}>
-            {((move.power + stab) / (move.duration / 1000)).toFixed(2)} dps
+            {((power + stab) / (move.duration / 1000)).toFixed(2)} dps
           </Text>
           <Text style={[ styles.subtitle, styles.numbers ]}>
-            {move.power} {stab ? <Text style={styles.stab}>+{stab} </Text> : ''}/ {(move.duration / 1000)} s
+            {power} {stab ? <Text style={styles.stab}>+{stab} </Text> : ''}/ {(move.duration / 1000)} s
           </Text>
         </View>
       </View>
