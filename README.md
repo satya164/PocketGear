@@ -1,5 +1,7 @@
 # PocketGear
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/satya164/PocketGear.svg)](https://greenkeeper.io/)
+
 PocketGear is a clean and simple Pokédex app for Pokémon GO you'll ever need.
 
 [Download for iOS](https://itunes.apple.com/in/app/pokedb/id1143037838) | [Download for Android](https://play.google.com/store/apps/details?id=com.wibblystuff.gear)
