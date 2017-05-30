@@ -88,7 +88,6 @@ export default class SearchBar extends PureComponent<void, Props, void> {
           style={styles.input}
           placeholder={placeholder}
           value={value}
-          selectionColor='rgba(0, 0, 0, .32)'
           placeholderTextColor='rgba(0, 0, 0, .32)'
           underlineColorAndroid='transparent'
           onChangeText={onChangeText}

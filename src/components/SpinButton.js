@@ -95,7 +95,6 @@ export default class SpinButton extends PureComponent<void, Props, void> {
           value={isNaN(value) ? '' : value.toString()}
           onChange={onChange}
           onChangeText={this._handleChangeText}
-          selectionColor='rgba(0, 0, 0, .32)'
           style={[ styles.text, styles.input ]}
         />
         <TouchableButton onPress={this._handleIncrement} style={styles.button}>
