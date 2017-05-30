@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   Image,
@@ -35,11 +35,14 @@ type Props = {
   label: string;
 }
 
-export default function NoResults({ source, label }: Props) {
-  return (
-    <View style={styles.container}>
-      <Image style={styles.item} source={source} />
-      <Text style={styles.label}>{label}</Text>
-    </View>
-  );
+export default class NoResults extends PureComponent {
+  render() {
+    const { source, label } = this.props;
+    return (
+      <View style={styles.container}>
+        <Image style={styles.item} source={source} />
+        <Text style={styles.label}>{label}</Text>
+      </View>
+    );
+  }
 }
