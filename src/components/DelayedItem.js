@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   StyleSheet,
   InteractionManager,
@@ -22,11 +22,6 @@ type State = {
 }
 
 export default class StrongAgainstList<T: *> extends PureComponent<void, Props<T>, State> {
-
-  static propTypes = {
-    component: PropTypes.func.isRequired,
-  };
-
   state: State = {
     loading: true,
   };

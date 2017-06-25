@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   TextInput,
@@ -57,14 +57,6 @@ type Props = {
 }
 
 export default class SpinButton extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    value: PropTypes.number.isRequired,
-    onChange: PropTypes.func,
-    onChangeValue: PropTypes.func.isRequired,
-    style: View.propTypes.style,
-  };
-
   _handleChangeText = (text: string) => {
     this.props.onChangeValue(parseInt(text, 10));
   };

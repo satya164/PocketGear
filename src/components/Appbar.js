@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Platform,
   StyleSheet,
@@ -45,13 +45,6 @@ type Props = {
 }
 
 export default class Appbar extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    navigation: PropTypes.object.isRequired,
-    children: PropTypes.node.isRequired,
-    style: View.propTypes.style,
-  };
-
   _handleGoBack = () => {
     this.props.navigation.goBack(null);
   };

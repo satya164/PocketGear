@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   Image,
@@ -70,12 +70,6 @@ type Props = {
 }
 
 export default class Evolution extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    pokemon: PropTypes.object.isRequired,
-    navigation: PropTypes.object.isRequired,
-  };
-
   _goToPokemon = (pokemonId: PokemonID) => {
     this.props.navigation.navigate('Info', {
       pokemonId,

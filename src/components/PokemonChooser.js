@@ -2,7 +2,7 @@
 
 import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Animated,
   View,
@@ -69,11 +69,6 @@ type Props = {
 }
 
 export default class PokemonChooser extends PureComponent<void, Props, State> {
-
-  static propTypes = {
-    navigation: PropTypes.object.isRequired,
-  };
-
   state: State = {
     query: '',
     sort: '#',

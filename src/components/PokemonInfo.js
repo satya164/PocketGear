@@ -2,7 +2,7 @@
 
 import find from 'lodash/find';
 import memoize from 'lodash/memoize';
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Image,
   ScrollView,
@@ -103,9 +103,6 @@ type Props = {
   style?: any;
 }
 
-/* $FlowFixMe */
-console.ignoredYellowBox = [ 'Behaviour of screenProps has changed' ];
-
 const InfoTabs = TabNavigator({
   Details: {
     screen: ({ screenProps, ...rest }) => (
@@ -145,12 +142,6 @@ const InfoTabs = TabNavigator({
 });
 
 class PokemonInfo extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    navigation: PropTypes.object.isRequired,
-    style: ScrollView.propTypes.style,
-  };
-
   static router = InfoTabs.router;
 
   _getPokemon: (id: PokemonID) => Pokemon = memoize((id: PokemonID) => {

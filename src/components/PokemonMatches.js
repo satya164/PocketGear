@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Text,
   StyleSheet,
@@ -51,13 +51,6 @@ type RowData = {
 type SectionData = Array<RowData>
 
 export default class PokemonMatches extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    pokemon: PropTypes.object.isRequired,
-    style: GridView.propTypes.style,
-    navigation: PropTypes.object.isRequired,
-  };
-
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.navigation.navigate('Info', {
       pokemonId,

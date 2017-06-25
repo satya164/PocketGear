@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   Text,
@@ -54,11 +54,6 @@ type State = {
 }
 
 export default class StrongAgainstList extends PureComponent<void, Props, State> {
-
-  static propTypes = {
-    navigation: PropTypes.object.isRequired,
-  };
-
   state: State = {
     data: {
       pokemons: [],
