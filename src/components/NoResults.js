@@ -35,7 +35,7 @@ type Props = {
   label: string;
 }
 
-export default class NoResults extends PureComponent {
+export default class NoResults extends PureComponent<void, Props, void> {
   render() {
     const { source, label } = this.props;
     return (

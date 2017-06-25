@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   StyleSheet,
 } from 'react-native';
@@ -27,15 +27,6 @@ type Props = {
 const CARD_WIDTH = 160;
 
 export default class PokemonList extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    navigation: PropTypes.object.isRequired,
-    data: PropTypes.shape({
-      pokemons: PropTypes.arrayOf(PropTypes.object),
-    }).isRequired,
-    style: GridView.propTypes.style,
-  };
-
   scrollTo(options: any) {
     this._root.scrollTo(options);
   }

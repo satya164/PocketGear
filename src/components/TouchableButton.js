@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import { TouchableOpacity } from 'react-native';
 
 type Props = {
@@ -9,12 +9,6 @@ type Props = {
 }
 
 export default class TouchableButton extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    onPress: PropTypes.func.isRequired,
-    children: PropTypes.element.isRequired,
-  };
-
   componentWillUnmount() {
     this._cleanUp();
   }

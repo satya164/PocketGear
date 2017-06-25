@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Platform,
   TextInput,
@@ -57,16 +57,6 @@ type Props = {
 }
 
 export default class SearchBar extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    onChangeText: PropTypes.func.isRequired,
-    onFocus: PropTypes.func,
-    onBlur: PropTypes.func,
-    placeholder: PropTypes.string,
-    value: PropTypes.string.isRequired,
-    style: AppbarShell.propTypes.style,
-  };
-
   _handleClearPress = () => {
     this.props.onChangeText('');
   };

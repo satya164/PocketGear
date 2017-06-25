@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PureComponent, PropTypes } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Platform,
   Dimensions,
@@ -39,17 +39,6 @@ type State = {
 }
 
 export default class GridView extends PureComponent<DefaultProps, Props, State> {
-  static propTypes = {
-    data: PropTypes.objectOf(PropTypes.array).isRequired,
-    spacing: PropTypes.number.isRequired,
-    getNumberOfColumns: PropTypes.func.isRequired,
-    renderSectionHeader: PropTypes.func,
-    renderRow: PropTypes.func.isRequired,
-    onLayout: PropTypes.func,
-    contentContainerStyle: View.propTypes.style,
-    style: View.propTypes.style,
-  };
-
   static defaultProps = {
     getNumberOfColumns: () => 1,
     spacing: 0,

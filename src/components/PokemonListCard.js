@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   Image,
@@ -58,13 +58,6 @@ type Props = {
 }
 
 export default class PokemonListCard extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    navigation: PropTypes.object.isRequired,
-    pokemon: PropTypes.object.isRequired,
-    style: View.propTypes.style,
-  };
-
   _handlePress = () => {
     this.props.navigation.navigate('Info', {
       pokemonId: this.props.pokemon.id,

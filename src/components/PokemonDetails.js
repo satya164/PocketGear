@@ -1,7 +1,7 @@
 /* @flow */
 
 import difference from 'lodash/difference';
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   Text,
@@ -96,13 +96,6 @@ type Props = {
 }
 
 export default class PokemonDetails extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    pokemon: PropTypes.object.isRequired,
-    style: ScrollView.propTypes.style,
-    navigation: PropTypes.object.isRequired,
-  };
-
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.navigation.navigate('Info', {
       pokemonId,

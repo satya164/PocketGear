@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   View,
   Text,
@@ -65,12 +65,6 @@ type Props = {
 }
 
 export default class Attack extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    move: PropTypes.object.isRequired,
-    types: PropTypes.arrayOf(PropTypes.string).isRequired,
-  };
-
   render() {
     const { move, types } = this.props;
     const power = move.power || 0;

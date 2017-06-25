@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Platform,
   StyleSheet,
@@ -36,12 +36,6 @@ type Props = {
 }
 
 export default class AppbarShell extends PureComponent<void, Props, void> {
-
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    style: View.propTypes.style,
-  };
-
   static HEIGHT = BAR_HEIGHT;
 
   render() {
