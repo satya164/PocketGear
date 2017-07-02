@@ -135,10 +135,17 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file(POCKETGEAR_RELEASE_STORE_FILE)
-            storePassword POCKETGEAR_RELEASE_STORE_PASSWORD
-            keyAlias POCKETGEAR_RELEASE_KEY_ALIAS
-            keyPassword POCKETGEAR_RELEASE_KEY_PASSWORD
+            // For Play Store
+            // storeFile file(POCKETGEAR_RELEASE_STORE_FILE)
+            // storePassword POCKETGEAR_RELEASE_STORE_PASSWORD
+            // keyAlias POCKETGEAR_RELEASE_KEY_ALIAS
+            // keyPassword POCKETGEAR_RELEASE_KEY_PASSWORD
+
+            // For Open Source
+            storeFile file("${System.properties['user.home']}${File.separator}.android${File.separator}debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
         }
     }
     buildTypes {
