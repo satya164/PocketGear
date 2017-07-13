@@ -1,8 +1,5 @@
 {
-  "presets": ["react-native"],
-  "env": {
-    "expo": {
-      "presets": ["expo"]
-    }
-  }
+  "presets": [
+    "react-native"
+  ]
 }
