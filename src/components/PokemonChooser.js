@@ -166,6 +166,7 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
       toValue: 1,
       tension: 300,
       friction: 35,
+      useNativeDriver: true,
     }).start();
   };
 
@@ -175,6 +176,7 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
       toValue: 0,
       tension: 300,
       friction: 35,
+      useNativeDriver: true,
     }).start();
   };
 

@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     height: BAR_HEIGHT,
     marginTop: Platform.OS === 'ios' ? 20 : 0,
     backgroundColor: '#fff',
-    elevation: 2,
+    elevation: 1,
     shadowColor: 'black',
     shadowOpacity: 0.1,
     shadowRadius: StyleSheet.hairlineWidth,
