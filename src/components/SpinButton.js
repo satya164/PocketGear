@@ -74,11 +74,14 @@ export default class SpinButton extends PureComponent<void, Props, void> {
           <MaterialIcons name="remove" size={16} style={styles.icon} />
         </TouchableButton>
         <TextInput
+          selectTextOnFocus
           keyboardType="numeric"
           returnKeyType="done"
           value={isNaN(value) ? '' : value.toString()}
           onChange={onChange}
           onChangeText={this._handleChangeText}
+          underlineColorAndroid="transparent"
+          selectionColor="rgba(0, 0, 0, .32)"
           style={[styles.text, styles.input]}
         />
         <TouchableButton onPress={this._handleIncrement} style={styles.button}>

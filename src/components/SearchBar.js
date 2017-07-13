@@ -79,6 +79,7 @@ export default class SearchBar extends PureComponent<void, Props, void> {
           placeholder={placeholder}
           value={value}
           placeholderTextColor="rgba(0, 0, 0, .32)"
+          selectionColor="rgba(0, 0, 0, .32)"
           underlineColorAndroid="transparent"
           onChangeText={onChangeText}
           onFocus={onFocus}
