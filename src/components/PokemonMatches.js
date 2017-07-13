@@ -100,32 +100,37 @@ export default class PokemonMatches extends PureComponent<void, Props, State> {
         style={styles.container}
         contentContainerStyle={styles.content}
       >
-        <Text style={styles.heading}>
-          Strong against ({strongAgainstPokemons.length})
-        </Text>
-        <View style={styles.row}>
-          {strongAgainstFirst &&
-            <PokemonListCard
-              pokemon={strongAgainstFirst}
-              navigation={this.props.navigation}
-              style={cardStyle}
-            />}
-          {strongAgainstPokemons.length > 1 &&
-            <More onPress={this._handleStrongPress} style={cardStyle} />}
-        </View>
-        <Text style={styles.heading}>
-          Weak against ({weakAgainstPokemons.length})
-        </Text>
-        <View style={styles.row}>
-          {weakAgainstFirst &&
-            <PokemonListCard
-              pokemon={weakAgainstFirst}
-              navigation={this.props.navigation}
-              style={cardStyle}
-            />}
-          {weakAgainstPokemons.length > 1 &&
-            <More onPress={this._handleWeakPress} style={cardStyle} />}
-        </View>
+        {strongAgainstFirst &&
+          <View>
+            <Text style={styles.heading}>
+              Strong against ({strongAgainstPokemons.length})
+            </Text>
+            <View style={styles.row}>
+              <PokemonListCard
+                pokemon={strongAgainstFirst}
+                navigation={this.props.navigation}
+                style={cardStyle}
+              />
+              {strongAgainstPokemons.length > 1 &&
+                <More onPress={this._handleStrongPress} style={cardStyle} />}
+            </View>
+          </View>}
+
+        {weakAgainstFirst &&
+          <View>
+            <Text style={styles.heading}>
+              Weak against ({weakAgainstPokemons.length})
+            </Text>
+            <View style={styles.row}>
+              <PokemonListCard
+                pokemon={weakAgainstFirst}
+                navigation={this.props.navigation}
+                style={cardStyle}
+              />
+              {weakAgainstPokemons.length > 1 &&
+                <More onPress={this._handleWeakPress} style={cardStyle} />}
+            </View>
+          </View>}
       </ScrollView>
     );
   }
