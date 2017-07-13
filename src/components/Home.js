@@ -1,5 +1,6 @@
 /* @flow */
 
+import React from 'react';
 import { StackNavigator } from 'react-navigation';
 import PokemonChooser from './PokemonChooser';
 import PokemonInfo from './PokemonInfo';
@@ -16,4 +17,5 @@ const Home = StackNavigator({
   headerMode: 'none',
 });
 
-export default Home;
+// eslint-disable-next-line jsx/no-bind
+export default () => <Home onNavigationStateChange={() => {}} />;

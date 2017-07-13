@@ -2,10 +2,12 @@
 
 import React, { PureComponent } from 'react';
 import {
+  View,
   Text,
+  ScrollView,
+  Dimensions,
   StyleSheet,
 } from 'react-native';
-import GridView from './GridView';
 import More from './More';
 import PokemonListCard from './PokemonListCard';
 import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
@@ -18,8 +20,11 @@ import type {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fafafa',
+  },
+
+  content: {
+    padding: 4,
   },
 
   heading: {
@@ -31,6 +36,10 @@ const styles = StyleSheet.create({
     marginTop: 16,
     backgroundColor: 'transparent',
   },
+
+  row: {
+    flexDirection: 'row',
+  },
 });
 
 
@@ -38,19 +47,17 @@ type Props = {
   pokemon: Pokemon;
   style?: any;
   navigation: Object;
-}
+};
 
-type RowData = {
-  type: 'pokemon';
-  pokemon: Pokemon;
-} | {
-  type: 'more';
-  strongAgainst?: boolean;
-}
+type State = {
+  containerWidth: number,
+};
 
-type SectionData = Array<RowData>
+export default class PokemonMatches extends PureComponent<void, Props, State> {
+  state: State = {
+    containerWidth: Dimensions.get('window').width,
+  };
 
-export default class PokemonMatches extends PureComponent<void, Props, void> {
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.navigation.navigate('Info', {
       pokemonId,
@@ -69,62 +76,48 @@ export default class PokemonMatches extends PureComponent<void, Props, void> {
     });
   };
 
-  _renderSectionHeader = (sectionData: SectionData, sectionID: string) => {
-    return <Text style={styles.heading}>{sectionID}</Text>;
-  };
-
-  _renderRow = (rowData: RowData) => {
-    switch (rowData.type) {
-    case 'pokemon':
-      return <PokemonListCard pokemon={rowData.pokemon} navigation={this.props.navigation} />;
-    case 'more':
-      return <More onPress={rowData.strongAgainst ? this._handleStrongPress : this._handleWeakPress} />;
-    default:
-      return null;
+  _handleLayout = e => {
+    if (this.state.containerWidth === e.nativeEvent.layout.width) {
+      return;
     }
-  };
 
-  _getNumberOfColumns = (width: number) => {
-    return Math.floor(width / 160);
-  };
+    this.setState({
+      containerWidth: e.nativeEvent.layout.width,
+    });
+  }
 
   render() {
     const { pokemon } = this.props;
+    const { containerWidth } = this.state;
     const weakAgainstPokemons = getWeakAgainstPokemons(pokemon);
     const strongAgainstPokemons = getStrongAgainstPokemons(pokemon);
 
-    const strongAgainstData: ?SectionData = strongAgainstPokemons.length ? [
-      { type: 'pokemon', pokemon: findClosestMatch(strongAgainstPokemons, pokemon, false) },
-    ] : null;
-    if (strongAgainstData && strongAgainstPokemons.length > 1) {
-      strongAgainstData.push({ type: 'more', strongAgainst: true });
-    }
-    const weakAgainstData: ?SectionData = weakAgainstPokemons.length ? [
-      { type: 'pokemon', pokemon: findClosestMatch(weakAgainstPokemons, pokemon) },
-    ] : null;
-    if (weakAgainstData && weakAgainstPokemons.length > 1) {
-      weakAgainstData.push({ type: 'more' });
-    }
+    const strongAgainstFirst: ?Pokemon = strongAgainstPokemons.length ?
+      findClosestMatch(strongAgainstPokemons, pokemon, false) :
+      null;
 
-    const data = {};
+    const weakAgainstFirst: ?Pokemon = weakAgainstPokemons.length ?
+      findClosestMatch(weakAgainstPokemons, pokemon) :
+      null;
 
-    if (strongAgainstData) {
-      data[`Strong against (${strongAgainstPokemons.length})`] = strongAgainstData;
-    }
-
-    if (weakAgainstData) {
-      data[`Weak against (${weakAgainstPokemons.length})`] = weakAgainstData;
-    }
+    const cardStyle = {
+      width: ((containerWidth - 8) / Math.floor(containerWidth / 160)) - 8,
+      margin: 4,
+    };
 
     return (
-      <GridView
-        data={data}
-        style={styles.container}
-        spacing={8}
-        renderRow={this._renderRow}
-        renderSectionHeader={this._renderSectionHeader}
-        getNumberOfColumns={this._getNumberOfColumns}
-      />
+      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+        <Text style={styles.heading}>Strong against ({strongAgainstPokemons.length})</Text>
+        <View style={styles.row}>
+          {strongAgainstFirst && <PokemonListCard pokemon={strongAgainstFirst} navigation={this.props.navigation} style={cardStyle} />}
+          {strongAgainstPokemons.length > 1 && <More onPress={this._handleStrongPress} style={cardStyle} />}
+        </View>
+        <Text style={styles.heading}>Weak against ({weakAgainstPokemons.length})</Text>
+        <View style={styles.row}>
+          {weakAgainstFirst && <PokemonListCard pokemon={weakAgainstFirst} navigation={this.props.navigation} style={cardStyle} />}
+          {weakAgainstPokemons.length > 1 && <More onPress={this._handleWeakPress} style={cardStyle} />}
+        </View>
+      </ScrollView>
     );
   }
 }

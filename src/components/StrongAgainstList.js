@@ -47,17 +47,13 @@ type Props = {
 }
 
 type State = {
-  data: {
-    pokemons: Array<Pokemon>;
-  };
+  data: Array<Pokemon>;
   loading: boolean;
 }
 
 export default class StrongAgainstList extends PureComponent<void, Props, State> {
   state: State = {
-    data: {
-      pokemons: [],
-    },
+    data: [],
     loading: true,
   };
 
@@ -72,7 +68,7 @@ export default class StrongAgainstList extends PureComponent<void, Props, State>
     }
     const pokemons = getStrongAgainstPokemons(pokemon);
     this.setState({
-      data: { pokemons },
+      data: pokemons,
       loading: false,
     });
   };
@@ -91,7 +87,7 @@ export default class StrongAgainstList extends PureComponent<void, Props, State>
         <View style={styles.content}>
           {this.state.loading ?
             <Placeholder style={styles.container} /> :
-            this.state.data.pokemons.length ?
+            this.state.data.length ?
               <PokemonList data={this.state.data} navigation={this.props.navigation} /> :
               <NoResults
                 source={require('../../assets/images/chansey.png')}

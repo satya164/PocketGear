@@ -196,7 +196,7 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
             <PokemonList
               scrollsToTop
               keyboardShouldPersistTaps='handled'
-              data={{ pokemons: this._sortResults(this.state.results.pokemons) }}
+              data={this._sortResults(this.state.results.pokemons)}
               navigation={this.props.navigation}
               ref={this._setRef}
             /> :

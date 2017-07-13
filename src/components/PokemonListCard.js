@@ -65,7 +65,7 @@ export default class PokemonListCard extends PureComponent<void, Props, void> {
   };
 
   render() {
-    const { pokemon } = this.props;
+    const { pokemon, style } = this.props;
     const types = pokemon.types.join(', ');
     const color = store.getColor(pokemon.types[0]);
     const sprite = store.getSprite(pokemon.id);
@@ -75,7 +75,7 @@ export default class PokemonListCard extends PureComponent<void, Props, void> {
         key={pokemon.name}
         onPress={this._handlePress}
         activeOpacity={0.7}
-        style={[ styles.block, { backgroundColor: color } ]}
+        style={[ styles.block, { backgroundColor: color }, style ]}
       >
         <Text style={[ styles.index, styles.subtitle ]}>#{pokemon.id}</Text>
         <Image source={sprite} style={styles.image} />

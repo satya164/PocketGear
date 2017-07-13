@@ -47,17 +47,13 @@ type Props = {
 }
 
 type State = {
-  data: {
-    pokemons: Array<Pokemon>;
-  };
+  data: Array<Pokemon>;
   loading: boolean;
 }
 
 export default class WeakAgainstList extends PureComponent<void, Props, State> {
   state: State = {
-    data: {
-      pokemons: [],
-    },
+    data: [],
     loading: true,
   };
 
@@ -72,7 +68,7 @@ export default class WeakAgainstList extends PureComponent<void, Props, State> {
     }
     const pokemons = getWeakAgainstPokemons(pokemon);
     this.setState({
-      data: { pokemons },
+      data: pokemons,
       loading: false,
     });
   };
@@ -91,7 +87,7 @@ export default class WeakAgainstList extends PureComponent<void, Props, State> {
         <View style={styles.content}>
           {this.state.loading ?
             <Placeholder /> :
-            this.state.data.pokemons.length ?
+            this.state.data.length ?
               <PokemonList data={this.state.data} navigation={this.props.navigation} /> :
               <NoResults
                 source={require('../../assets/images/chansey.png')}
