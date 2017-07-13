@@ -5,6 +5,10 @@
     "slug": "pocketgear",
     "version": "1.0.0",
     "icon": "assets/icons/app.png",
+    "loading": {
+      "icon": "assets/icons/splash.png",
+      "backgroundColor": "#fb6b6f"
+    },
     "privacy": "public",
     "sdkVersion": "17.0.0",
     "packagerOpts": {
