@@ -11,19 +11,23 @@ import {
 const LOLLIPOP = 21;
 
 type Props = {
-  delayPressIn: number;
-  pressColor: string;
-  borderless?: boolean;
-  children?: React.Element<any>;
-  style?: any;
-}
+  delayPressIn: number,
+  pressColor: string,
+  borderless?: boolean,
+  children?: React.Element<any>,
+  style?: any,
+};
 
 type DefaultProps = {
-  delayPressIn: number;
-  pressColor: string;
-}
+  delayPressIn: number,
+  pressColor: string,
+};
 
-export default class TouchableItem extends PureComponent<DefaultProps, Props, void> {
+export default class TouchableItem extends PureComponent<
+  DefaultProps,
+  Props,
+  void
+> {
   static defaultProps = {
     delayPressIn: 0,
     pressColor: 'rgba(0, 0, 0, .16)',
@@ -35,7 +39,10 @@ export default class TouchableItem extends PureComponent<DefaultProps, Props, vo
         <TouchableNativeFeedback
           {...this.props}
           style={null}
-          background={TouchableNativeFeedback.Ripple(this.props.pressColor, this.props.borderless)}
+          background={TouchableNativeFeedback.Ripple(
+            this.props.pressColor,
+            this.props.borderless
+          )}
         >
           <View style={this.props.style}>
             {this.props.children}

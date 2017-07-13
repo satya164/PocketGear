@@ -1,13 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  Platform,
-  Dimensions,
-  ListView,
-  StyleSheet,
-  View,
-} from 'react-native';
+import { Platform, Dimensions, ListView, StyleSheet, View } from 'react-native';
 
 const styles = StyleSheet.create({
   grid: {
@@ -18,26 +12,34 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  data: Array<any>;
-  spacing: number;
-  getNumberOfColumns: (width: number) => number;
-  renderRow: (rowData: any, rowID: string, highlightRow: boolean) => ?React.Element<*>;
-  onLayout?: Function;
-  contentContainerStyle?: any;
-  style?: any;
-}
+  data: Array<any>,
+  spacing: number,
+  getNumberOfColumns: (width: number) => number,
+  renderRow: (
+    rowData: any,
+    rowID: string,
+    highlightRow: boolean
+  ) => ?React.Element<*>,
+  onLayout?: Function,
+  contentContainerStyle?: any,
+  style?: any,
+};
 
 type DefaultProps = {
-  getNumberOfColumns: (width: number) => number;
-  spacing: number;
-}
+  getNumberOfColumns: (width: number) => number,
+  spacing: number,
+};
 
 type State = {
-  dataSource: ListView.DataSource;
-  containerWidth: number;
-}
+  dataSource: ListView.DataSource,
+  containerWidth: number,
+};
 
-export default class GridView extends PureComponent<DefaultProps, Props, State> {
+export default class GridView extends PureComponent<
+  DefaultProps,
+  Props,
+  State
+> {
   static defaultProps = {
     getNumberOfColumns: () => 1,
     spacing: 0,
@@ -83,7 +85,9 @@ export default class GridView extends PureComponent<DefaultProps, Props, State> 
   _processData = (containerWidth: number, props: Props) => {
     const { getNumberOfColumns, spacing, data } = props;
     const style = {
-      width: ((containerWidth - spacing) / getNumberOfColumns(containerWidth)) - spacing,
+      width:
+        (containerWidth - spacing) / getNumberOfColumns(containerWidth) -
+        spacing,
       margin: spacing / 2,
     };
     return data.map(tile => ({
@@ -122,7 +126,11 @@ export default class GridView extends PureComponent<DefaultProps, Props, State> 
         dataSource={this.state.dataSource}
         onLayout={this._handleLayout}
         renderRow={this._renderRow}
-        contentContainerStyle={[ styles.grid, { padding: this.props.spacing / 2 }, this.props.contentContainerStyle ]}
+        contentContainerStyle={[
+          styles.grid,
+          { padding: this.props.spacing / 2 },
+          this.props.contentContainerStyle,
+        ]}
         ref={this._setRef}
       />
     );

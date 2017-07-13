@@ -14,9 +14,17 @@ cleanup(() => {
   fs.writeFileSync(babelrc, backup);
 });
 
-fs.writeFileSync(babelrc, JSON.stringify({
-  presets: ['expo'],
-}, null, 2));
+fs.writeFileSync(
+  babelrc,
+  JSON.stringify(
+    {
+      presets: ['expo'],
+    },
+    null,
+    2
+  )
+);
 
-child_process.execSync(`${process.argv.slice(2).join(' ')} --reset-cache`, { stdio: [0, 1, 2] });
-
+child_process.execSync(`${process.argv.slice(2).join(' ')} --reset-cache`, {
+  stdio: [0, 1, 2],
+});

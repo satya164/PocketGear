@@ -48,13 +48,13 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  onChangeText: Function;
-  onFocus?: Function;
-  onBlur?: Function;
-  placeholder: string;
-  value: string;
-  style?: any;
-}
+  onChangeText: Function,
+  onFocus?: Function,
+  onBlur?: Function,
+  placeholder: string,
+  value: string,
+  style?: any,
+};
 
 export default class SearchBar extends PureComponent<void, Props, void> {
   _handleClearPress = () => {
@@ -73,33 +73,35 @@ export default class SearchBar extends PureComponent<void, Props, void> {
     } = this.props;
 
     return (
-      <AppbarShell {...rest} style={[ styles.container, style ]}>
+      <AppbarShell {...rest} style={[styles.container, style]}>
         <TextInput
           style={styles.input}
           placeholder={placeholder}
           value={value}
-          placeholderTextColor='rgba(0, 0, 0, .32)'
-          underlineColorAndroid='transparent'
+          placeholderTextColor="rgba(0, 0, 0, .32)"
+          underlineColorAndroid="transparent"
           onChangeText={onChangeText}
           onFocus={onFocus}
           onBlur={onBlur}
-          returnKeyType='done'
+          returnKeyType="done"
         />
         <Icon
-          style={[ styles.icon, styles.search ]}
-          name='search'
+          style={[styles.icon, styles.search]}
+          name="search"
           size={Platform.OS === 'ios' ? 16 : 24}
         />
-        {this.props.value ?
-          <TouchableOpacity onPress={this._handleClearPress} style={styles.touchable}>
-            <Icon
-              style={styles.icon}
-              name='cancel'
-              size={Platform.OS === 'ios' ? 16 : 24}
-            />
-          </TouchableOpacity> :
-          null
-        }
+        {this.props.value
+          ? <TouchableOpacity
+              onPress={this._handleClearPress}
+              style={styles.touchable}
+            >
+              <Icon
+                style={styles.icon}
+                name="cancel"
+                size={Platform.OS === 'ios' ? 16 : 24}
+              />
+            </TouchableOpacity>
+          : null}
       </AppbarShell>
     );
   }

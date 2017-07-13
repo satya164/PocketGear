@@ -1,16 +1,9 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  ScrollView,
-  StyleSheet,
-} from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 import CPCalculator from './CPCalculator';
-import type {
-  Pokemon,
-  PokemonID,
-} from '../types';
+import type { Pokemon, PokemonID } from '../types';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,12 +20,11 @@ const styles = StyleSheet.create({
   },
 });
 
-
 type Props = {
-  pokemon: Pokemon;
-  style?: any;
-  navigation: Object;
-}
+  pokemon: Pokemon,
+  style?: any,
+  navigation: Object,
+};
 
 export default class PokemonTools extends PureComponent<void, Props, void> {
   _goToPokemon = (pokemonId: PokemonID) => () => {
@@ -43,7 +35,7 @@ export default class PokemonTools extends PureComponent<void, Props, void> {
 
   render() {
     return (
-      <ScrollView {...this.props} style={[ styles.container, this.props.style ]}>
+      <ScrollView {...this.props} style={[styles.container, this.props.style]}>
         <View style={styles.content}>
           <CPCalculator
             style={styles.item}

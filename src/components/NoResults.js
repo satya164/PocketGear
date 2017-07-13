@@ -1,12 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  Image,
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { View, Image, Text, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -31,9 +26,9 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  source: any;
-  label: string;
-}
+  source: any,
+  label: string,
+};
 
 export default class NoResults extends PureComponent<void, Props, void> {
   render() {
@@ -41,7 +36,9 @@ export default class NoResults extends PureComponent<void, Props, void> {
     return (
       <View style={styles.container}>
         <Image style={styles.item} source={source} />
-        <Text style={styles.label}>{label}</Text>
+        <Text style={styles.label}>
+          {label}
+        </Text>
       </View>
     );
   }

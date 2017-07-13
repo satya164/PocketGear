@@ -3,12 +3,11 @@
 import intersection from 'lodash/intersection';
 import store from '../store';
 import getAttackTypesForPokemon from './getAttackTypesForPokemon';
-import type {
-  Pokemon,
-  PokemonType,
-} from '../types';
+import type { Pokemon, PokemonType } from '../types';
 
-export default function getStrongAgainstTypes(pokemon: Pokemon): Array<PokemonType> {
+export default function getStrongAgainstTypes(
+  pokemon: Pokemon
+): Array<PokemonType> {
   const types = intersection(pokemon.types, getAttackTypesForPokemon(pokemon));
   const typeChart = store.getTypeChart();
 

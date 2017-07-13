@@ -1,11 +1,7 @@
 /* @flow */
 
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import TouchableItem from './TouchableItem';
 
@@ -43,19 +39,15 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  style?: any;
-}
+  style?: any,
+};
 
 export default function More(props: Props) {
   return (
-    <TouchableItem {...props} style={[ styles.card, styles.center, props.style ]}>
+    <TouchableItem {...props} style={[styles.card, styles.center, props.style]}>
       <View style={styles.center}>
         <View style={styles.button}>
-          <MaterialIcons
-            name='arrow-forward'
-            size={16}
-            style={styles.icon}
-          />
+          <MaterialIcons name="arrow-forward" size={16} style={styles.icon} />
         </View>
         <Text style={styles.more}>more</Text>
       </View>

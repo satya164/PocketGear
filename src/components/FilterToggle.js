@@ -37,16 +37,18 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  active: boolean;
-  label: string;
-  onPress: Function;
-}
+  active: boolean,
+  label: string,
+  onPress: Function,
+};
 
 export default function NoResults({ active, label, onPress }: Props) {
   return (
     <TouchableWithoutFeedback onPress={onPress}>
-      <View style={[ styles.toggle, active && styles.active ]}>
-        <Text style={[ styles.label, active && styles.activeLabel ]}>{label}</Text>
+      <View style={[styles.toggle, active && styles.active]}>
+        <Text style={[styles.label, active && styles.activeLabel]}>
+          {label}
+        </Text>
       </View>
     </TouchableWithoutFeedback>
   );

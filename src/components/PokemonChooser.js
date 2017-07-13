@@ -17,9 +17,7 @@ import NoResults from './NoResults';
 import store from '../store';
 import FilterToggle from './FilterToggle';
 import AppbarShell from './AppbarShell';
-import type {
-  Pokemon,
-} from '../types';
+import type { Pokemon } from '../types';
 
 const styles = StyleSheet.create({
   container: {
@@ -52,21 +50,21 @@ const styles = StyleSheet.create({
   },
 });
 
-type SortKey = '#' | 'name' | 'attack' | 'defense' | 'max_cp'
+type SortKey = '#' | 'name' | 'attack' | 'defense' | 'max_cp';
 
 type State = {
-  query: string;
-  sort: SortKey;
-  filters: boolean;
-  focused: Animated.Value;
+  query: string,
+  sort: SortKey,
+  filters: boolean,
+  focused: Animated.Value,
   results: {
-    pokemons: Array<Pokemon>;
-  };
-}
+    pokemons: Array<Pokemon>,
+  },
+};
 
 type Props = {
-  navigation: Object;
-}
+  navigation: Object,
+};
 
 export default class PokemonChooser extends PureComponent<void, Props, State> {
   state: State = {
@@ -97,15 +95,18 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
       if (!isNaN(query)) {
         return filter(pokemons, p => p.id === parseInt(query, 10));
       }
-      return filter(pokemons, (pokemon => {
+      return filter(pokemons, pokemon => {
         return (
           /* String#startsWith doesn't work properly for unicode */
           pokemon.name.toLowerCase().indexOf(query) === 0 ||
-          query.split(',').map(q => q.trim()).every(q =>
-            pokemon.types.some(type => type.toLowerCase().indexOf(q) === 0)
-          )
+          query
+            .split(',')
+            .map(q => q.trim())
+            .every(q =>
+              pokemon.types.some(type => type.toLowerCase().indexOf(q) === 0)
+            )
         );
-      }));
+      });
     }
 
     return pokemons;
@@ -115,35 +116,38 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
     const { sort } = this.state;
     return results.slice(0).sort((a, b) => {
       switch (sort) {
-      case '#':
-        return a.id - b.id;
-      case 'name':
-        return a.name.localeCompare(b.name);
-      case 'attack':
-        return b.stats.attack - a.stats.attack;
-      case 'defense':
-        return b.stats.defense - a.stats.defense;
-      case 'max_cp':
-        return b.points.max_cp - a.points.max_cp;
-      default:
-        return 0;
+        case '#':
+          return a.id - b.id;
+        case 'name':
+          return a.name.localeCompare(b.name);
+        case 'attack':
+          return b.stats.attack - a.stats.attack;
+        case 'defense':
+          return b.stats.defense - a.stats.defense;
+        case 'max_cp':
+          return b.points.max_cp - a.points.max_cp;
+        default:
+          return 0;
       }
     });
-  }
+  };
 
   _updateResults = debounce(() => {
     const pokemons = this._getResults(this.state.query);
-    this.setState({
-      results: { pokemons },
-    }, () => {
-      if (this._list) {
-        this._list.scrollTo({
-          x: 0,
-          y: 0,
-          animated: false,
-        });
+    this.setState(
+      {
+        results: { pokemons },
+      },
+      () => {
+        if (this._list) {
+          this._list.scrollTo({
+            x: 0,
+            y: 0,
+            animated: false,
+          });
+        }
       }
-    });
+    );
   }, 200);
 
   _handleSearchChange = (query: string) => {
@@ -186,55 +190,54 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
     return (
       <KeyboardAvoidingView style={styles.container}>
         <SearchBar
-          placeholder='Find Pokémon by name, number or type'
+          placeholder="Find Pokémon by name, number or type"
           value={this.state.query}
           onChangeText={this._handleSearchChange}
           style={styles.searchbar}
         />
         <View style={styles.content}>
-          {this.state.results.pokemons.length ?
-            <PokemonList
-              scrollsToTop
-              keyboardShouldPersistTaps='handled'
-              data={this._sortResults(this.state.results.pokemons)}
-              navigation={this.props.navigation}
-              ref={this._setRef}
-            /> :
-            <NoResults
-              label='No Pokémon found'
-              source={require('../../assets/images/open-pokeball.png')}
-              ref={this._unsetRef}
-            />
-          }
+          {this.state.results.pokemons.length
+            ? <PokemonList
+                scrollsToTop
+                keyboardShouldPersistTaps="handled"
+                data={this._sortResults(this.state.results.pokemons)}
+                navigation={this.props.navigation}
+                ref={this._setRef}
+              />
+            : <NoResults
+                label="No Pokémon found"
+                source={require('../../assets/images/open-pokeball.png')}
+                ref={this._unsetRef}
+              />}
         </View>
         <Animated.View
-          style={[ styles.filters, { opacity: this.state.focused } ]}
+          style={[styles.filters, { opacity: this.state.focused }]}
           pointerEvents={this.state.filters ? 'auto' : 'none'}
         >
           <AppbarShell style={styles.row}>
             <FilterToggle
               active={this.state.sort === '#'}
-              label='#'
+              label="#"
               onPress={this._setSortType('#')}
             />
             <FilterToggle
               active={this.state.sort === 'name'}
-              label='Name'
+              label="Name"
               onPress={this._setSortType('name')}
             />
             <FilterToggle
               active={this.state.sort === 'attack'}
-              label='Attack'
+              label="Attack"
               onPress={this._setSortType('attack')}
             />
             <FilterToggle
               active={this.state.sort === 'defense'}
-              label='Defense'
+              label="Defense"
               onPress={this._setSortType('defense')}
             />
             <FilterToggle
               active={this.state.sort === 'max_cp'}
-              label='Max CP'
+              label="Max CP"
               onPress={this._setSortType('max_cp')}
             />
           </AppbarShell>

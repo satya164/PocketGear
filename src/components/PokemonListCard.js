@@ -1,17 +1,10 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  Image,
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { Image, Text, StyleSheet } from 'react-native';
 import TouchableItem from './TouchableItem';
 import store from '../store';
-import type {
-  Pokemon,
-} from '../types';
+import type { Pokemon } from '../types';
 
 const styles = StyleSheet.create({
   block: {
@@ -52,10 +45,10 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  navigation: Object;
-  pokemon: Pokemon;
-  style?: any;
-}
+  navigation: Object,
+  pokemon: Pokemon,
+  style?: any,
+};
 
 export default class PokemonListCard extends PureComponent<void, Props, void> {
   _handlePress = () => {
@@ -75,12 +68,18 @@ export default class PokemonListCard extends PureComponent<void, Props, void> {
         key={pokemon.name}
         onPress={this._handlePress}
         activeOpacity={0.7}
-        style={[ styles.block, { backgroundColor: color }, style ]}
+        style={[styles.block, { backgroundColor: color }, style]}
       >
-        <Text style={[ styles.index, styles.subtitle ]}>#{pokemon.id}</Text>
+        <Text style={[styles.index, styles.subtitle]}>
+          #{pokemon.id}
+        </Text>
         <Image source={sprite} style={styles.image} />
-        <Text style={styles.title}>{pokemon.name}</Text>
-        <Text style={styles.subtitle}>{types}</Text>
+        <Text style={styles.title}>
+          {pokemon.name}
+        </Text>
+        <Text style={styles.subtitle}>
+          {types}
+        </Text>
       </TouchableItem>
     );
   }

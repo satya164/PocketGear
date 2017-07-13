@@ -1,7 +1,8 @@
 /* @flow */
 /* eslint-disable import/no-commonjs */
 
-export default [ require('../assets/sprites/1.png'),
+export default [
+  require('../assets/sprites/1.png'),
   require('../assets/sprites/2.png'),
   require('../assets/sprites/3.png'),
   require('../assets/sprites/4.png'),

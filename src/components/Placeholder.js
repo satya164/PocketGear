@@ -1,11 +1,7 @@
 /* @flow */
 
 import React from 'react';
-import {
-  ActivityIndicator,
-  View,
-  StyleSheet,
-} from 'react-native';
+import { ActivityIndicator, View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,7 +14,7 @@ const styles = StyleSheet.create({
 export default function Placeholder() {
   return (
     <View style={styles.container}>
-      <ActivityIndicator size='small' color='#000' />
+      <ActivityIndicator size="small" color="#000" />
     </View>
   );
 }

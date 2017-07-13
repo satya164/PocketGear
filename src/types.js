@@ -18,93 +18,93 @@ export type PokemonType =
   | 'Psychic'
   | 'Rock'
   | 'Steel'
-  | 'Water'
+  | 'Water';
 
 export type EvolutionItem =
-  | "Dragon Scale"
+  | 'Dragon Scale'
   | "King's Rock"
-  | "Metal Coat"
-  | "Sun Stone"
-  | "Up-Grade"
+  | 'Metal Coat'
+  | 'Sun Stone'
+  | 'Up-Grade';
 
 export type PokemonID = number;
 
 export type Pokemon = {|
-  id: PokemonID;
-  name: string;
-  types: Array<PokemonType>;
-  category: string;
-  description: string;
+  id: PokemonID,
+  name: string,
+  types: Array<PokemonType>,
+  category: string,
+  description: string,
   name_origin: Array<{
-    term: string;
-    meaning: string;
-  }>;
+    term: string,
+    meaning: string,
+  }>,
   moves: {
-    quick: Array<string>;
-    cinematic: Array<string>;
-  };
+    quick: Array<string>,
+    cinematic: Array<string>,
+  },
   measurements: {
     height: {
-      amount: number;
-      unit: 'm' | 'cm';
-    };
+      amount: number,
+      unit: 'm' | 'cm',
+    },
     weight: {
-      amount: number;
-      unit: 'g' | 'kg';
-    };
-  };
+      amount: number,
+      unit: 'g' | 'kg',
+    },
+  },
   stats: {
-    stamina: number;
-    attack: number;
-    defense: number;
-  };
+    stamina: number,
+    attack: number,
+    defense: number,
+  },
   points: {
-    max_cp: number;
-  };
+    max_cp: number,
+  },
   evolution?: {
-    parent?: PokemonID;
+    parent?: PokemonID,
     branch?: Array<{
-      id: PokemonID;
-      candy_cost: number;
-      item_requirement?: EvolutionItem;
-    }>
+      id: PokemonID,
+      candy_cost: number,
+      item_requirement?: EvolutionItem,
+    }>,
   },
   evolution_cp_multipliers?: Array<{
-    id: PokemonID;
+    id: PokemonID,
     multipliers: {
-      minimum: number;
-      maximum: number;
-    };
-  }>;
+      minimum: number,
+      maximum: number,
+    },
+  }>,
   egg_distance?: {
-    amount: number;
-    unit: 'km';
-  };
+    amount: number,
+    unit: 'km',
+  },
   buddy_distance?: {
-    amount: number;
-    unit: 'km';
-  };
+    amount: number,
+    unit: 'km',
+  },
   encounter: {
-    capture_rate?: number;
-    flee_rate: number;
-  };
-  easter_eggs?: Array<string>;
-|}
+    capture_rate?: number,
+    flee_rate: number,
+  },
+  easter_eggs?: Array<string>,
+|};
 
 export type TypeChart = {|
-  name: PokemonType;
-  super_effective: Array<PokemonType>;
-  not_very_effective: Array<PokemonType>;
-|}
+  name: PokemonType,
+  super_effective: Array<PokemonType>,
+  not_very_effective: Array<PokemonType>,
+|};
 
 export type Move = {|
-  name: string;
-  type: PokemonType;
-  power?: number;
-  duration: number;
-  energy_delta: number;
-  accuracy_chance: number;
-  critical_chance?: number;
-  stamina_loss: number;
-  quick: boolean;
-|}
+  name: string,
+  type: PokemonType,
+  power?: number,
+  duration: number,
+  energy_delta: number,
+  accuracy_chance: number,
+  critical_chance?: number,
+  stamina_loss: number,
+  quick: boolean,
+|};

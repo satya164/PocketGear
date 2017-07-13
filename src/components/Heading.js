@@ -1,10 +1,7 @@
 /* @flow */
 
 import React from 'react';
-import {
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   heading: {
@@ -17,13 +14,13 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  style?: any;
-  children?: any;
-}
+  style?: any,
+  children?: any,
+};
 
 export default function Heading(props: Props) {
   return (
-    <Text {...props} style={[ styles.heading, props.style ]}>
+    <Text {...props} style={[styles.heading, props.style]}>
       {props.children}
     </Text>
   );

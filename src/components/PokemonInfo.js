@@ -3,17 +3,8 @@
 import find from 'lodash/find';
 import memoize from 'lodash/memoize';
 import React, { PureComponent } from 'react';
-import {
-  Image,
-  ScrollView,
-  StyleSheet,
-  Platform,
-  Text,
-  View,
-} from 'react-native';
-import {
-  TabNavigator,
-} from 'react-navigation';
+import { Image, StyleSheet, Text, View } from 'react-native';
+import { TabNavigator } from 'react-navigation';
 import Appbar from './Appbar';
 import DelayedItem from './DelayedItem';
 import PokemonTypeLabel from './PokemonTypeLabel';
@@ -21,12 +12,7 @@ import PokemonDetails from './PokemonDetails';
 import PokemonMatches from './PokemonMatches';
 import PokemonTools from './PokemonTools';
 import store from '../store';
-import type {
-  PokemonID,
-  Pokemon,
-} from '../types';
-
-const LOLLIPOP = 21;
+import type { PokemonID, Pokemon } from '../types';
 
 const styles = StyleSheet.create({
   container: {
@@ -100,47 +86,39 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  navigation: Object;
-  style?: any;
-}
+  navigation: Object,
+  style?: any,
+};
 
-const InfoTabs = TabNavigator({
-  Details: {
-    screen: ({ screenProps, ...rest }) => (
-      <PokemonDetails {...rest} {...screenProps} />
-    ),
+const InfoTabs = TabNavigator(
+  {
+    Details: {
+      screen: ({ screenProps, ...rest }) =>
+        <PokemonDetails {...rest} {...screenProps} />,
+    },
+    Matches: {
+      screen: ({ screenProps, ...rest }) =>
+        <DelayedItem {...rest} {...screenProps} component={PokemonMatches} />,
+    },
+    Tools: {
+      screen: ({ screenProps, ...rest }) =>
+        <DelayedItem {...rest} {...screenProps} component={PokemonTools} />,
+    },
   },
-  Matches: {
-    screen: ({ screenProps, ...rest }) => (
-      <DelayedItem
-        {...rest}
-        {...screenProps}
-        component={PokemonMatches}
-      />
-    ),
-  },
-  Tools: {
-    screen: ({ screenProps, ...rest }) => (
-      <DelayedItem
-        {...rest}
-        {...screenProps}
-        component={PokemonTools}
-      />
-    ),
-  },
-}, {
-  ...TabNavigator.Presets.AndroidTopTabs,
-  tabBarOptions: {
-    style: styles.tabbar,
-    indicatorStyle: styles.indicator,
-    labelStyle: styles.tablabel,
-    activeTintColor: '#222',
-    inactiveTintColor: '#222',
-  },
-  backBehavior: 'none',
-  initialRouteName: 'Details',
-  order: [ 'Details', 'Matches', 'Tools' ],
-});
+  {
+    ...TabNavigator.Presets.AndroidTopTabs,
+    tabBarOptions: {
+      style: styles.tabbar,
+      indicatorStyle: styles.indicator,
+      labelStyle: styles.tablabel,
+      activeTintColor: '#222',
+      inactiveTintColor: '#222',
+    },
+    backBehavior: 'none',
+    initialRouteName: 'Details',
+    order: ['Details', 'Matches', 'Tools'],
+  }
+);
 
 class PokemonInfo extends PureComponent<void, Props, void> {
   static router = InfoTabs.router;
@@ -152,17 +130,23 @@ class PokemonInfo extends PureComponent<void, Props, void> {
   });
 
   render() {
-    const pokemon = this._getPokemon(this.props.navigation.state.params.pokemonId);
-    const sprite = store.getSprite(this.props.navigation.state.params.pokemonId);
+    const pokemon = this._getPokemon(
+      this.props.navigation.state.params.pokemonId
+    );
+    const sprite = store.getSprite(
+      this.props.navigation.state.params.pokemonId
+    );
 
     return (
-      <View {...this.props} style={[ styles.container, this.props.style ]}>
+      <View {...this.props} style={[styles.container, this.props.style]}>
         <Appbar style={styles.appbar} navigation={this.props.navigation}>
           {'#' + pokemon.id}
         </Appbar>
-        <View style={[ styles.row, styles.meta ]}>
+        <View style={[styles.row, styles.meta]}>
           <View style={styles.basic}>
-            <Text style={[ styles.label, styles.name ]}>{pokemon.name}</Text>
+            <Text style={[styles.label, styles.name]}>
+              {pokemon.name}
+            </Text>
             <View style={styles.types}>
               {pokemon.types.map(type =>
                 <PokemonTypeLabel key={type} type={type} />

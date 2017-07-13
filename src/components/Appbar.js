@@ -1,12 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import TouchableItem from './TouchableItem';
@@ -39,10 +34,10 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  style?: any;
-  children?: any;
-  navigation: Object;
-}
+  style?: any,
+  children?: any,
+  navigation: Object,
+};
 
 export default class Appbar extends PureComponent<void, Props, void> {
   _handleGoBack = () => {
@@ -57,26 +52,16 @@ export default class Appbar extends PureComponent<void, Props, void> {
           style={styles.button}
           onPress={this._handleGoBack}
         >
-          {Platform.OS === 'ios' ?
-            <EvilIcons
-              name='chevron-left'
-              size={36}
-              style={styles.icon}
-            /> :
-            <MaterialIcons
-              name='arrow-back'
-              size={24}
-              style={styles.icon}
-            />
-          }
+          {Platform.OS === 'ios'
+            ? <EvilIcons name="chevron-left" size={36} style={styles.icon} />
+            : <MaterialIcons name="arrow-back" size={24} style={styles.icon} />}
         </TouchableItem>
         <View style={styles.content}>
-          {typeof this.props.children === 'string' ?
-            <Text numberOfLines={1} style={styles.title}>
-              {this.props.children}
-            </Text> :
-            this.props.children
-          }
+          {typeof this.props.children === 'string'
+            ? <Text numberOfLines={1} style={styles.title}>
+                {this.props.children}
+              </Text>
+            : this.props.children}
         </View>
         <View style={styles.button} />
       </AppbarShell>

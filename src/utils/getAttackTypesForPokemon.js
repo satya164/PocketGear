@@ -2,12 +2,11 @@
 
 import getQuickAttacks from './getQuickAttacks';
 import getSpecialAttacks from './getSpecialAttacks';
-import type {
-  Pokemon,
-  PokemonType,
-} from '../types';
+import type { Pokemon, PokemonType } from '../types';
 
-export default function getAttackTypesForPokemon(pokemon: Pokemon): Array<PokemonType> {
+export default function getAttackTypesForPokemon(
+  pokemon: Pokemon
+): Array<PokemonType> {
   const quickAttacks = getQuickAttacks(pokemon);
   const specialAttacks = getSpecialAttacks(pokemon);
 
@@ -15,9 +14,7 @@ export default function getAttackTypesForPokemon(pokemon: Pokemon): Array<Pokemo
     .concat(specialAttacks)
     .filter(attack => attack.power) // ignore attacks with 0 power, e.g.- Splash
     .map(attack => attack.type)
-    .filter((type, i, self) =>
-      self.indexOf(type) === i
-    );
+    .filter((type, i, self) => self.indexOf(type) === i);
 
   return types;
 }

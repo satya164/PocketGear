@@ -1,11 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  TextInput,
-  StyleSheet,
-} from 'react-native';
+import { View, TextInput, StyleSheet } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import TouchableButton from './TouchableButton';
 
@@ -50,11 +46,11 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  value: number;
-  onChange?: Function;
-  onChangeValue: (value: number) => void;
-  style?: any;
-}
+  value: number,
+  onChange?: Function,
+  onChangeValue: (value: number) => void,
+  style?: any,
+};
 
 export default class SpinButton extends PureComponent<void, Props, void> {
   _handleChangeText = (text: string) => {
@@ -73,28 +69,20 @@ export default class SpinButton extends PureComponent<void, Props, void> {
     const { value, onChange, ...rest } = this.props;
 
     return (
-      <View {...rest} style={[ styles.spinbutton, styles.row, this.props.style ]}>
+      <View {...rest} style={[styles.spinbutton, styles.row, this.props.style]}>
         <TouchableButton onPress={this._handleDecrement} style={styles.button}>
-          <MaterialIcons
-            name='remove'
-            size={16}
-            style={styles.icon}
-          />
+          <MaterialIcons name="remove" size={16} style={styles.icon} />
         </TouchableButton>
         <TextInput
-          keyboardType='numeric'
-          returnKeyType='done'
+          keyboardType="numeric"
+          returnKeyType="done"
           value={isNaN(value) ? '' : value.toString()}
           onChange={onChange}
           onChangeText={this._handleChangeText}
-          style={[ styles.text, styles.input ]}
+          style={[styles.text, styles.input]}
         />
         <TouchableButton onPress={this._handleIncrement} style={styles.button}>
-          <MaterialIcons
-            name='add'
-            size={16}
-            style={styles.icon}
-          />
+          <MaterialIcons name="add" size={16} style={styles.icon} />
         </TouchableButton>
       </View>
     );

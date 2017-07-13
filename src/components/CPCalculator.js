@@ -1,20 +1,11 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  Image,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
+import { View, Image, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import Heading from './Heading';
 import SpinButton from './SpinButton';
 import store from '../store';
-import type {
-  Pokemon,
-  PokemonID,
-} from '../types';
+import type { Pokemon, PokemonID } from '../types';
 
 const styles = StyleSheet.create({
   container: {
@@ -68,13 +59,13 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  pokemon: Pokemon;
-  navigation: Object;
-}
+  pokemon: Pokemon,
+  navigation: Object,
+};
 
 type State = {
-  value: number;
-}
+  value: number,
+};
 
 export default class CPCalculator extends PureComponent<void, Props, State> {
   constructor(props: Props) {
@@ -132,19 +123,28 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
               return null;
             }
             return (
-              <TouchableOpacity key={it.id} onPress={() => this._goToPokemon(it.id)}>
+              <TouchableOpacity
+                key={it.id}
+                onPress={() => this._goToPokemon(it.id)}
+              >
                 <View style={styles.pokemon}>
-                    <Image source={store.getSprite(it.id)} style={styles.image} />
-                    <Text style={[ styles.text, styles.small ]}>
-                      {poke.name}
+                  <Image source={store.getSprite(it.id)} style={styles.image} />
+                  <Text style={[styles.text, styles.small]}>
+                    {poke.name}
+                  </Text>
+                  <Text style={[styles.text, styles.amount]}>
+                    {Math.round(average)}
+                  </Text>
+                  <View style={styles.row}>
+                    <Text style={[styles.text, styles.small, styles.value]}>
+                      {Math.floor(minimum)}
                     </Text>
-                    <Text style={[ styles.text, styles.amount ]}>{Math.round(average)}</Text>
-                    <View style={styles.row}>
-                      <Text style={[ styles.text, styles.small, styles.value ]}>{Math.floor(minimum)}</Text>
-                      <Text style={[ styles.text, styles.small ]}>-</Text>
-                      <Text style={[ styles.text, styles.small, styles.value ]}>{Math.ceil(maximum)}</Text>
-                    </View>
+                    <Text style={[styles.text, styles.small]}>-</Text>
+                    <Text style={[styles.text, styles.small, styles.value]}>
+                      {Math.ceil(maximum)}
+                    </Text>
                   </View>
+                </View>
               </TouchableOpacity>
             );
           })}

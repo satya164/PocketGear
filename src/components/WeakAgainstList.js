@@ -1,21 +1,14 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  InteractionManager,
-} from 'react-native';
+import { View, Text, StyleSheet, InteractionManager } from 'react-native';
 import Placeholder from './Placeholder';
 import Appbar from './Appbar';
 import PokemonList from './PokemonList';
 import NoResults from './NoResults';
 import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
 import store from '../store';
-import type {
-  Pokemon,
-} from '../types';
+import type { Pokemon } from '../types';
 
 const styles = StyleSheet.create({
   container: {
@@ -43,13 +36,13 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  navigation: Object;
-}
+  navigation: Object,
+};
 
 type State = {
-  data: Array<Pokemon>;
-  loading: boolean;
-}
+  data: Array<Pokemon>,
+  loading: boolean,
+};
 
 export default class WeakAgainstList extends PureComponent<void, Props, State> {
   state: State = {
@@ -62,7 +55,9 @@ export default class WeakAgainstList extends PureComponent<void, Props, State> {
   }
 
   _updateData = () => {
-    const pokemon = store.getPokemons().find(p => p.id === this.props.navigation.state.params.pokemonId);
+    const pokemon = store
+      .getPokemons()
+      .find(p => p.id === this.props.navigation.state.params.pokemonId);
     if (!pokemon) {
       return;
     }
@@ -74,26 +69,32 @@ export default class WeakAgainstList extends PureComponent<void, Props, State> {
   };
 
   render() {
-    const pokemon = store.getPokemons().find(p => p.id === this.props.navigation.state.params.pokemonId);
+    const pokemon = store
+      .getPokemons()
+      .find(p => p.id === this.props.navigation.state.params.pokemonId);
     if (!pokemon) {
       return null;
     }
     return (
       <View style={styles.container}>
         <Appbar navigation={this.props.navigation}>
-          <Text style={styles.title}>{pokemon.name}</Text>
+          <Text style={styles.title}>
+            {pokemon.name}
+          </Text>
           <Text style={styles.subtitle}>Weak against</Text>
         </Appbar>
         <View style={styles.content}>
-          {this.state.loading ?
-            <Placeholder /> :
-            this.state.data.length ?
-              <PokemonList data={this.state.data} navigation={this.props.navigation} /> :
-              <NoResults
-                source={require('../../assets/images/chansey.png')}
-                label={`${pokemon.name} seems unbeatable`}
-              />
-          }
+          {this.state.loading
+            ? <Placeholder />
+            : this.state.data.length
+              ? <PokemonList
+                  data={this.state.data}
+                  navigation={this.props.navigation}
+                />
+              : <NoResults
+                  source={require('../../assets/images/chansey.png')}
+                  label={`${pokemon.name} seems unbeatable`}
+                />}
         </View>
       </View>
     );

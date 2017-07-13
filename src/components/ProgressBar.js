@@ -1,10 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  StyleSheet,
-} from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   bar: {
@@ -20,30 +17,32 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  ratio: number;
-  fillColor?: string;
-  style?: any;
-}
+  ratio: number,
+  fillColor?: string,
+  style?: any,
+};
 
 type DefaultProps = {
-  fillColor: string;
-}
+  fillColor: string,
+};
 
-export default class ProgressBar extends PureComponent<DefaultProps, Props, void> {
+export default class ProgressBar extends PureComponent<
+  DefaultProps,
+  Props,
+  void
+> {
   static defaultProps = {
     fillColor: '#FB6B6F',
   };
 
   render() {
-    const {
-      fillColor,
-      ratio,
-      style,
-    } = this.props;
+    const { fillColor, ratio, style } = this.props;
 
     return (
-      <View style={[ styles.bar, styles.round, style ]}>
-        <View style={[ { flex: ratio, backgroundColor: fillColor }, styles.round ]} />
+      <View style={[styles.bar, styles.round, style]}>
+        <View
+          style={[{ flex: ratio, backgroundColor: fillColor }, styles.round]}
+        />
         <View style={{ flex: 1 - ratio }} />
       </View>
     );

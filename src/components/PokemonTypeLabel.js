@@ -1,18 +1,11 @@
 /* @flow */
 
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import store from '../store';
-import type {
-  PokemonType,
-} from '../types';
+import type { PokemonType } from '../types';
 
 const styles = StyleSheet.create({
-
   type: {
     borderRadius: 2,
     paddingVertical: 3,
@@ -30,15 +23,17 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  type: PokemonType;
-  style?: any;
-}
+  type: PokemonType,
+  style?: any,
+};
 
 export default function PokemonTypeLabel({ type, style }: Props) {
   const color = store.getColor(type);
   return (
-    <View style={[ styles.type, { backgroundColor: color }, style ]}>
-      <Text style={styles.text}>{type}</Text>
+    <View style={[styles.type, { backgroundColor: color }, style]}>
+      <Text style={styles.text}>
+        {type}
+      </Text>
     </View>
   );
 }

@@ -4,9 +4,9 @@ import React, { PureComponent } from 'react';
 import { TouchableOpacity } from 'react-native';
 
 type Props = {
-  onPress: Function;
-  children?: any;
-}
+  onPress: Function,
+  children?: any,
+};
 
 export default class TouchableButton extends PureComponent<void, Props, void> {
   componentWillUnmount() {
@@ -25,7 +25,7 @@ export default class TouchableButton extends PureComponent<void, Props, void> {
       clearInterval(this._timeout);
     }
     this._handled = false;
-  }
+  };
 
   _handlePressIn = (e: any) => {
     this._timeout = setTimeout(() => {

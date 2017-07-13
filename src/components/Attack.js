@@ -1,11 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import type { Move } from '../types';
 
 const styles = StyleSheet.create({
@@ -60,9 +56,9 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  move: Move;
-  types: Array<*>;
-}
+  move: Move,
+  types: Array<*>,
+};
 
 export default class Attack extends PureComponent<void, Props, void> {
   render() {
@@ -81,15 +77,24 @@ export default class Attack extends PureComponent<void, Props, void> {
             {move.type}
           </Text>
         </View>
-        {!move.quick && move.energy_delta ? Array.from({ length: Math.abs(Math.round(100 / move.energy_delta)) }).map((_, i) => {
-          return <View key={i} style={styles.energy} />;
-        }) : <View style={styles.spacer} />}
+        {!move.quick && move.energy_delta
+          ? Array.from({
+              length: Math.abs(Math.round(100 / move.energy_delta)),
+            }).map((_, i) => {
+              return <View key={i} style={styles.energy} />;
+            })
+          : <View style={styles.spacer} />}
         <View style={styles.damage}>
           <Text style={styles.text}>
             {((power + stab) / (move.duration / 1000)).toFixed(2)} dps
           </Text>
-          <Text style={[ styles.subtitle, styles.numbers ]}>
-            {power} {stab ? <Text style={styles.stab}>+{stab} </Text> : ''}/ {(move.duration / 1000)} s
+          <Text style={[styles.subtitle, styles.numbers]}>
+            {power}{' '}
+            {stab
+              ? <Text style={styles.stab}>
+                  +{stab}{' '}
+                </Text>
+              : ''}/ {move.duration / 1000} s
           </Text>
         </View>
       </View>

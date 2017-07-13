@@ -1,10 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  StyleSheet,
-  InteractionManager,
-} from 'react-native';
+import { StyleSheet, InteractionManager } from 'react-native';
 import Placeholder from './Placeholder';
 
 const styles = StyleSheet.create({
@@ -14,14 +11,18 @@ const styles = StyleSheet.create({
 });
 
 type Props<T> = T & {
-  component: ReactClass<T>
-}
+  component: ReactClass<T>,
+};
 
 type State = {
-  loading: boolean;
-}
+  loading: boolean,
+};
 
-export default class StrongAgainstList<T: *> extends PureComponent<void, Props<T>, State> {
+export default class StrongAgainstList<T: *> extends PureComponent<
+  void,
+  Props<T>,
+  State
+> {
   state: State = {
     loading: true,
   };

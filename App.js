@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
 });
 
 type State = {
-  bootstrapped: boolean;
-}
+  bootstrapped: boolean,
+};
 
 export default class App extends PureComponent<void, {}, State> {
   state: State = {

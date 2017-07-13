@@ -1,14 +1,10 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import {
-  StyleSheet,
-} from 'react-native';
+import { StyleSheet } from 'react-native';
 import GridView from './GridView';
 import PokemonListCard from './PokemonListCard';
-import type {
-  Pokemon,
-} from '../types';
+import type { Pokemon } from '../types';
 
 const styles = StyleSheet.create({
   grid: {
@@ -17,12 +13,12 @@ const styles = StyleSheet.create({
 });
 
 type Props = {
-  navigation: Object;
+  navigation: Object,
   data: {
-    pokemons: Array<Pokemon>;
-  };
-  style?: any;
-}
+    pokemons: Array<Pokemon>,
+  },
+  style?: any,
+};
 
 const CARD_WIDTH = 160;
 
@@ -34,7 +30,9 @@ export default class PokemonList extends PureComponent<void, Props, void> {
   _root: Object;
 
   _renderRow = (rowData: any) => {
-    return <PokemonListCard pokemon={rowData} navigation={this.props.navigation} />;
+    return (
+      <PokemonListCard pokemon={rowData} navigation={this.props.navigation} />
+    );
   };
 
   _getNumberOfColumns = (width: number) => {
@@ -48,7 +46,7 @@ export default class PokemonList extends PureComponent<void, Props, void> {
       <GridView
         {...this.props}
         pageSize={2}
-        style={[ styles.grid, this.props.style ]}
+        style={[styles.grid, this.props.style]}
         spacing={8}
         renderRow={this._renderRow}
         getNumberOfColumns={this._getNumberOfColumns}
