@@ -17,13 +17,12 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "expo": "~17.0.0",
+    "expo": "~18.0.9",
     "lodash": "^4.17.4",
-    "react": "16.0.0-alpha.6",
-    "react-native": "~0.44.0",
+    "react": "16.0.0-alpha.12",
+    "react-native": "~0.45.0",
     "react-native-vector-icons": "^4.2.0",
-    "react-navigation": "^1.0.0-beta.11",
-    "uuid": "^3.1.0"
+    "react-navigation": "^1.0.0-beta.11"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -40,12 +39,12 @@
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-react-native": "^2.3.2",
-    "flow-bin": "~0.42.0",
+    "flow-bin": "~0.45.0",
     "jest": "^20.0.4",
-    "jest-expo": "~1.0.1",
+    "jest-expo": "~18.0.0",
     "node-cleanup": "^2.1.2",
     "prettier": "^1.5.2",
-    "react-native-scripts": "0.0.30",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "react-native-scripts": "0.0.50",
+    "react-test-renderer": "16.0.0-alpha.12"
   }
 }
