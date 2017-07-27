@@ -10,8 +10,15 @@
       "backgroundColor": "#fb6b6f",
       "hideExponentText": true
     },
+    "ios": {
+      "bundleIdentifier": "com.wibblystuff.gear"
+    },
+    "android": {
+      "package": "com.wibblystuff.gear",
+      "permissions": []
+    },
     "privacy": "public",
-    "sdkVersion": "18.0.0",
+    "sdkVersion": "19.0.0",
     "packagerOpts": {
       "assetExts": [
         "ttf",
