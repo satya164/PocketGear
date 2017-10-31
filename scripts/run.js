@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+/* @flow */
 /* eslint-disable import/no-commonjs */
 
 const child_process = require('child_process');

@@ -17,10 +17,10 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "expo": "~18.0.9",
+    "expo": "^19.0.1",
     "lodash": "^4.17.4",
     "react": "16.0.0-alpha.12",
-    "react-native": "~0.45.0",
+    "react-native": "~0.46.0",
     "react-native-vector-icons": "^4.2.0",
     "react-navigation": "^1.0.0-beta.11"
   },
@@ -41,7 +41,7 @@
     "eslint-plugin-react-native": "^2.3.2",
     "flow-bin": "~0.45.0",
     "jest": "^20.0.4",
-    "jest-expo": "~18.0.0",
+    "jest-expo": "~19.0.0",
     "node-cleanup": "^2.1.2",
     "prettier": "^1.5.2",
     "react-native-scripts": "0.0.50",
