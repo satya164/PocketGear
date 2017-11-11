@@ -60,7 +60,7 @@ type Props = {
   types: Array<*>,
 };
 
-export default class Attack extends PureComponent<void, Props, void> {
+export default class Attack extends PureComponent<Props, void> {
   render() {
     const { move, types } = this.props;
     const power = move.power || 0;
@@ -70,31 +70,25 @@ export default class Attack extends PureComponent<void, Props, void> {
     return (
       <View style={styles.row}>
         <View style={styles.type}>
-          <Text style={styles.text}>
-            {move.name}
-          </Text>
-          <Text style={styles.subtitle}>
-            {move.type}
-          </Text>
+          <Text style={styles.text}>{move.name}</Text>
+          <Text style={styles.subtitle}>{move.type}</Text>
         </View>
-        {!move.quick && move.energy_delta
-          ? Array.from({
-              length: Math.abs(Math.round(100 / move.energy_delta)),
-            }).map((_, i) => {
-              return <View key={i} style={styles.energy} />;
-            })
-          : <View style={styles.spacer} />}
+        {!move.quick && move.energy_delta ? (
+          Array.from({
+            length: Math.abs(Math.round(100 / move.energy_delta)),
+          }).map((_, i) => {
+            return <View key={i} style={styles.energy} />;
+          })
+        ) : (
+          <View style={styles.spacer} />
+        )}
         <View style={styles.damage}>
           <Text style={styles.text}>
             {((power + stab) / (move.duration / 1000)).toFixed(2)} dps
           </Text>
           <Text style={[styles.subtitle, styles.numbers]}>
-            {power}{' '}
-            {stab
-              ? <Text style={styles.stab}>
-                  +{stab}{' '}
-                </Text>
-              : ''}/ {move.duration / 1000} s
+            {power} {stab ? <Text style={styles.stab}>+{stab} </Text> : ''}/{' '}
+            {move.duration / 1000} s
           </Text>
         </View>
       </View>

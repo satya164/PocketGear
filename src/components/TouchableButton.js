@@ -8,7 +8,7 @@ type Props = {
   children?: any,
 };
 
-export default class TouchableButton extends PureComponent<void, Props, void> {
+export default class TouchableButton extends PureComponent<Props, void> {
   componentWillUnmount() {
     this._cleanUp();
   }

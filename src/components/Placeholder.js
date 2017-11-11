@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react';
+import * as React from 'react';
 import { ActivityIndicator, View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({

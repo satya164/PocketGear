@@ -60,7 +60,7 @@ type Props = {
   navigation: Object,
 };
 
-export default class Evolution extends PureComponent<void, Props, void> {
+export default class Evolution extends PureComponent<Props, void> {
   _goToPokemon = (pokemonId: PokemonID) => {
     this.props.navigation.navigate('Info', {
       pokemonId,
@@ -142,7 +142,7 @@ export default class Evolution extends PureComponent<void, Props, void> {
       <View {...this.props}>
         <Heading>Evolution</Heading>
         <View style={styles.item}>
-          {chains.map((chain, i) =>
+          {chains.map((chain, i) => (
             <View key={i} style={styles.row}>
               {chain.map(({ poke, ev }, index, self) => [
                 <TouchableOpacity
@@ -151,40 +151,37 @@ export default class Evolution extends PureComponent<void, Props, void> {
                   onPress={() =>
                     poke && poke.id !== pokemon.id
                       ? this._goToPokemon(poke.id)
-                      : undefined}
+                      : undefined
+                  }
                 >
                   <Image
                     source={poke ? store.getSprite(poke.id) : ''}
                     style={styles.image}
                   />
-                  <Text style={styles.label}>
-                    {poke ? poke.name : ''}
-                  </Text>
-                  {ev
-                    ? <View style={styles.row}>
-                        <Image
-                          source={require('../../assets/images/candy.png')}
-                          style={styles.candy}
-                        />
-                        <Text style={styles.requirements}>
-                          {ev.candy_cost}
-                        </Text>
-                      </View>
-                    : null}
-                  {ev && ev.item_requirement
-                    ? <Text style={styles.requirements}>
-                        {ev.item_requirement}
-                      </Text>
-                    : null}
-                </TouchableOpacity>,
-                index !== self.length - 1
-                  ? <Text key={`arrow-${index}`} style={styles.arrow}>
-                      →
+                  <Text style={styles.label}>{poke ? poke.name : ''}</Text>
+                  {ev ? (
+                    <View style={styles.row}>
+                      <Image
+                        source={require('../../assets/images/candy.png')}
+                        style={styles.candy}
+                      />
+                      <Text style={styles.requirements}>{ev.candy_cost}</Text>
+                    </View>
+                  ) : null}
+                  {ev && ev.item_requirement ? (
+                    <Text style={styles.requirements}>
+                      {ev.item_requirement}
                     </Text>
-                  : null,
+                  ) : null}
+                </TouchableOpacity>,
+                index !== self.length - 1 ? (
+                  <Text key={`arrow-${index}`} style={styles.arrow}>
+                    →
+                  </Text>
+                ) : null,
               ])}
             </View>
-          )}
+          ))}
         </View>
       </View>
     );

@@ -18,7 +18,7 @@
       "permissions": []
     },
     "privacy": "public",
-    "sdkVersion": "19.0.0",
+    "sdkVersion": "22.0.0",
     "packagerOpts": {
       "assetExts": [
         "ttf",

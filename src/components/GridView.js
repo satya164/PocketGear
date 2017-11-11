@@ -19,15 +19,10 @@ type Props = {
     rowData: any,
     rowID: string,
     highlightRow: boolean
-  ) => ?React.Element<*>,
+  ) => ?React.Element<any>,
   onLayout?: Function,
   contentContainerStyle?: any,
   style?: any,
-};
-
-type DefaultProps = {
-  getNumberOfColumns: (width: number) => number,
-  spacing: number,
 };
 
 type State = {
@@ -35,11 +30,7 @@ type State = {
   containerWidth: number,
 };
 
-export default class GridView extends PureComponent<
-  DefaultProps,
-  Props,
-  State
-> {
+export default class GridView extends PureComponent<Props, State> {
   static defaultProps = {
     getNumberOfColumns: () => 1,
     spacing: 0,

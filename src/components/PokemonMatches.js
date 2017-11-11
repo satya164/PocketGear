@@ -43,7 +43,7 @@ type State = {
   containerWidth: number,
 };
 
-export default class PokemonMatches extends PureComponent<void, Props, State> {
+export default class PokemonMatches extends PureComponent<Props, State> {
   state: State = {
     containerWidth: Dimensions.get('window').width,
   };
@@ -100,7 +100,7 @@ export default class PokemonMatches extends PureComponent<void, Props, State> {
         style={styles.container}
         contentContainerStyle={styles.content}
       >
-        {strongAgainstFirst &&
+        {strongAgainstFirst && (
           <View>
             <Text style={styles.heading}>
               Strong against ({strongAgainstPokemons.length})
@@ -111,12 +111,14 @@ export default class PokemonMatches extends PureComponent<void, Props, State> {
                 navigation={this.props.navigation}
                 style={cardStyle}
               />
-              {strongAgainstPokemons.length > 1 &&
-                <More onPress={this._handleStrongPress} style={cardStyle} />}
+              {strongAgainstPokemons.length > 1 && (
+                <More onPress={this._handleStrongPress} style={cardStyle} />
+              )}
             </View>
-          </View>}
+          </View>
+        )}
 
-        {weakAgainstFirst &&
+        {weakAgainstFirst && (
           <View>
             <Text style={styles.heading}>
               Weak against ({weakAgainstPokemons.length})
@@ -127,10 +129,12 @@ export default class PokemonMatches extends PureComponent<void, Props, State> {
                 navigation={this.props.navigation}
                 style={cardStyle}
               />
-              {weakAgainstPokemons.length > 1 &&
-                <More onPress={this._handleWeakPress} style={cardStyle} />}
+              {weakAgainstPokemons.length > 1 && (
+                <More onPress={this._handleWeakPress} style={cardStyle} />
+              )}
             </View>
-          </View>}
+          </View>
+        )}
       </ScrollView>
     );
   }

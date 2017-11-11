@@ -44,11 +44,7 @@ type State = {
   loading: boolean,
 };
 
-export default class StrongAgainstList extends PureComponent<
-  void,
-  Props,
-  State
-> {
+export default class StrongAgainstList extends PureComponent<Props, State> {
   state: State = {
     data: [],
     loading: true,
@@ -82,23 +78,23 @@ export default class StrongAgainstList extends PureComponent<
     return (
       <View style={styles.container}>
         <Appbar navigation={this.props.navigation}>
-          <Text style={styles.title}>
-            {pokemon.name}
-          </Text>
+          <Text style={styles.title}>{pokemon.name}</Text>
           <Text style={styles.subtitle}>Strong against</Text>
         </Appbar>
         <View style={styles.content}>
-          {this.state.loading
-            ? <Placeholder style={styles.container} />
-            : this.state.data.length
-              ? <PokemonList
-                  data={this.state.data}
-                  navigation={this.props.navigation}
-                />
-              : <NoResults
-                  source={require('../../assets/images/chansey.png')}
-                  label={`${pokemon.name} seems weak`}
-                />}
+          {this.state.loading ? (
+            <Placeholder style={styles.container} />
+          ) : this.state.data.length ? (
+            <PokemonList
+              data={this.state.data}
+              navigation={this.props.navigation}
+            />
+          ) : (
+            <NoResults
+              source={require('../../assets/images/chansey.png')}
+              label={`${pokemon.name} seems weak`}
+            />
+          )}
         </View>
       </View>
     );

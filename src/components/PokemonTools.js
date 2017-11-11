@@ -26,7 +26,7 @@ type Props = {
   navigation: Object,
 };
 
-export default class PokemonTools extends PureComponent<void, Props, void> {
+export default class PokemonTools extends PureComponent<Props, void> {
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.navigation.navigate('Info', {
       pokemonId,

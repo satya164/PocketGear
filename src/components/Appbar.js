@@ -39,7 +39,7 @@ type Props = {
   navigation: Object,
 };
 
-export default class Appbar extends PureComponent<void, Props, void> {
+export default class Appbar extends PureComponent<Props, void> {
   _handleGoBack = () => {
     this.props.navigation.goBack(null);
   };
@@ -52,16 +52,20 @@ export default class Appbar extends PureComponent<void, Props, void> {
           style={styles.button}
           onPress={this._handleGoBack}
         >
-          {Platform.OS === 'ios'
-            ? <EvilIcons name="chevron-left" size={36} style={styles.icon} />
-            : <MaterialIcons name="arrow-back" size={24} style={styles.icon} />}
+          {Platform.OS === 'ios' ? (
+            <EvilIcons name="chevron-left" size={36} style={styles.icon} />
+          ) : (
+            <MaterialIcons name="arrow-back" size={24} style={styles.icon} />
+          )}
         </TouchableItem>
         <View style={styles.content}>
-          {typeof this.props.children === 'string'
-            ? <Text numberOfLines={1} style={styles.title}>
-                {this.props.children}
-              </Text>
-            : this.props.children}
+          {typeof this.props.children === 'string' ? (
+            <Text numberOfLines={1} style={styles.title}>
+              {this.props.children}
+            </Text>
+          ) : (
+            this.props.children
+          )}
         </View>
         <View style={styles.button} />
       </AppbarShell>

@@ -50,7 +50,7 @@ type Props = {
   style?: any,
 };
 
-export default class PokemonListCard extends PureComponent<void, Props, void> {
+export default class PokemonListCard extends PureComponent<Props, void> {
   _handlePress = () => {
     this.props.navigation.navigate('Info', {
       pokemonId: this.props.pokemon.id,
@@ -70,16 +70,10 @@ export default class PokemonListCard extends PureComponent<void, Props, void> {
         activeOpacity={0.7}
         style={[styles.block, { backgroundColor: color }, style]}
       >
-        <Text style={[styles.index, styles.subtitle]}>
-          #{pokemon.id}
-        </Text>
+        <Text style={[styles.index, styles.subtitle]}>#{pokemon.id}</Text>
         <Image source={sprite} style={styles.image} />
-        <Text style={styles.title}>
-          {pokemon.name}
-        </Text>
-        <Text style={styles.subtitle}>
-          {types}
-        </Text>
+        <Text style={styles.title}>{pokemon.name}</Text>
+        <Text style={styles.subtitle}>{types}</Text>
       </TouchableItem>
     );
   }

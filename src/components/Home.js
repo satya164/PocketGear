@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react';
+import * as React from 'react';
 import { StackNavigator } from 'react-navigation';
 import PokemonChooser from './PokemonChooser';
 import PokemonInfo from './PokemonInfo';

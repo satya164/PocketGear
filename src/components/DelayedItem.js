@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 });
 
 type Props<T> = T & {
-  component: ReactClass<T>,
+  component: React.ComponentType<T>,
 };
 
 type State = {
@@ -19,7 +19,6 @@ type State = {
 };
 
 export default class StrongAgainstList<T: *> extends PureComponent<
-  void,
   Props<T>,
   State
 > {

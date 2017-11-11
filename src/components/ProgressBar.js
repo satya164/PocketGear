@@ -22,15 +22,7 @@ type Props = {
   style?: any,
 };
 
-type DefaultProps = {
-  fillColor: string,
-};
-
-export default class ProgressBar extends PureComponent<
-  DefaultProps,
-  Props,
-  void
-> {
+export default class ProgressBar extends PureComponent<Props, void> {
   static defaultProps = {
     fillColor: '#FB6B6F',
   };

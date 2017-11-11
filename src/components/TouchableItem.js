@@ -18,16 +18,7 @@ type Props = {
   style?: any,
 };
 
-type DefaultProps = {
-  delayPressIn: number,
-  pressColor: string,
-};
-
-export default class TouchableItem extends PureComponent<
-  DefaultProps,
-  Props,
-  void
-> {
+export default class TouchableItem extends PureComponent<Props, void> {
   static defaultProps = {
     delayPressIn: 0,
     pressColor: 'rgba(0, 0, 0, .16)',
@@ -44,9 +35,7 @@ export default class TouchableItem extends PureComponent<
             this.props.borderless
           )}
         >
-          <View style={this.props.style}>
-            {this.props.children}
-          </View>
+          <View style={this.props.style}>{this.props.children}</View>
         </TouchableNativeFeedback>
       );
     } else {

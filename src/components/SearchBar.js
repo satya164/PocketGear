@@ -123,11 +123,7 @@ type State = {
   focused: Animated.Value,
 };
 
-export default class SearchBar<T: *> extends PureComponent<
-  void,
-  Props<T>,
-  State
-> {
+export default class SearchBar<T: *> extends PureComponent<Props<T>, State> {
   static HEIGHT = Platform.OS === 'ios' ? 64 : 56;
 
   state = {
@@ -204,18 +200,18 @@ export default class SearchBar<T: *> extends PureComponent<
             name="search"
             size={Platform.OS === 'ios' ? 16 : 24}
           />
-          {this.props.value
-            ? <TouchableOpacity
-                onPress={this._handleClearPress}
-                style={styles.touchable}
-              >
-                <Icon
-                  style={styles.icon}
-                  name="cancel"
-                  size={Platform.OS === 'ios' ? 16 : 24}
-                />
-              </TouchableOpacity>
-            : null}
+          {this.props.value ? (
+            <TouchableOpacity
+              onPress={this._handleClearPress}
+              style={styles.touchable}
+            >
+              <Icon
+                style={styles.icon}
+                name="cancel"
+                size={Platform.OS === 'ios' ? 16 : 24}
+              />
+            </TouchableOpacity>
+          ) : null}
         </Animated.View>
         <Animated.View
           style={[styles.bar, styles.toggles, { opacity: this.state.focused }]}
@@ -223,14 +219,14 @@ export default class SearchBar<T: *> extends PureComponent<
         >
           <Animated.View style={styles.separator} />
           <Animated.View style={styles.row}>
-            {this.props.toggles.map(toggle =>
+            {this.props.toggles.map(toggle => (
               <FilterToggle
                 key={toggle.name}
                 active={toggle.active}
                 label={toggle.label}
                 onPress={() => this.props.onChangeToggle(toggle)}
               />
-            )}
+            ))}
           </Animated.View>
         </Animated.View>
       </View>

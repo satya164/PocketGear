@@ -67,7 +67,7 @@ type State = {
   value: number,
 };
 
-export default class CPCalculator extends PureComponent<void, Props, State> {
+export default class CPCalculator extends PureComponent<Props, State> {
   constructor(props: Props) {
     super(props);
 
@@ -129,9 +129,7 @@ export default class CPCalculator extends PureComponent<void, Props, State> {
               >
                 <View style={styles.pokemon}>
                   <Image source={store.getSprite(it.id)} style={styles.image} />
-                  <Text style={[styles.text, styles.small]}>
-                    {poke.name}
-                  </Text>
+                  <Text style={[styles.text, styles.small]}>{poke.name}</Text>
                   <Text style={[styles.text, styles.amount]}>
                     {Math.round(average)}
                   </Text>

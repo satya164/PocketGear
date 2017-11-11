@@ -85,7 +85,7 @@ type Props = {
   navigation: Object,
 };
 
-export default class PokemonDetails extends PureComponent<void, Props, void> {
+export default class PokemonDetails extends PureComponent<Props, void> {
   _goToPokemon = (pokemonId: PokemonID) => () => {
     this.props.navigation.navigate('Info', {
       pokemonId,
@@ -100,13 +100,9 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
   ) => {
     return (
       <View style={[styles.row, styles.center]}>
-        <Text style={[styles.text, styles.label]}>
-          {type}
-        </Text>
+        <Text style={[styles.text, styles.label]}>{type}</Text>
         <ProgressBar ratio={ratio || 0} fillColor={fill} />
-        <Text style={[styles.text, styles.amount]}>
-          {amount}
-        </Text>
+        <Text style={[styles.text, styles.amount]}>{amount}</Text>
       </View>
     );
   };
@@ -141,62 +137,51 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
       <ScrollView {...this.props} style={[styles.container, this.props.style]}>
         <View style={styles.content}>
           <View style={styles.item}>
-            <Heading selectable>
-              {pokemon.category}
-            </Heading>
-            <Paragraph>
-              {pokemon.description}
-            </Paragraph>
+            <Heading selectable>{pokemon.category}</Heading>
+            <Paragraph>{pokemon.description}</Paragraph>
           </View>
 
           <View style={styles.origin}>
-            {pokemon.name_origin.map(({ term, meaning }) =>
+            {pokemon.name_origin.map(({ term, meaning }) => (
               <Paragraph style={styles.term} key={term}>
-                <Text style={[styles.text, styles.strong]}>
-                  {term}
-                </Text>
-                <Text>
-                  {'    '}
-                </Text>
-                <Text>
-                  {meaning}
-                </Text>
+                <Text style={[styles.text, styles.strong]}>{term}</Text>
+                <Text>{'    '}</Text>
+                <Text>{meaning}</Text>
               </Paragraph>
-            )}
+            ))}
           </View>
 
-          {pokemon.egg_distance || pokemon.buddy_distance
-            ? <View style={styles.item}>
-                {pokemon.egg_distance
-                  ? <View style={[styles.row, styles.center]}>
-                      <Text
-                        selectable
-                        style={[styles.text, styles.strong, styles.measurement]}
-                      >
-                        Egg Group
-                      </Text>
-                      <Text selectable style={styles.text}>
-                        {pokemon.egg_distance.amount}{' '}
-                        {pokemon.egg_distance.unit}
-                      </Text>
-                    </View>
-                  : null}
-                {pokemon.buddy_distance
-                  ? <View style={[styles.row, styles.center]}>
-                      <Text
-                        selectable
-                        style={[styles.text, styles.strong, styles.measurement]}
-                      >
-                        Buddy Distance
-                      </Text>
-                      <Text selectable style={styles.text}>
-                        {pokemon.buddy_distance.amount}{' '}
-                        {pokemon.buddy_distance.unit}
-                      </Text>
-                    </View>
-                  : null}
-              </View>
-            : null}
+          {pokemon.egg_distance || pokemon.buddy_distance ? (
+            <View style={styles.item}>
+              {pokemon.egg_distance ? (
+                <View style={[styles.row, styles.center]}>
+                  <Text
+                    selectable
+                    style={[styles.text, styles.strong, styles.measurement]}
+                  >
+                    Egg Group
+                  </Text>
+                  <Text selectable style={styles.text}>
+                    {pokemon.egg_distance.amount} {pokemon.egg_distance.unit}
+                  </Text>
+                </View>
+              ) : null}
+              {pokemon.buddy_distance ? (
+                <View style={[styles.row, styles.center]}>
+                  <Text
+                    selectable
+                    style={[styles.text, styles.strong, styles.measurement]}
+                  >
+                    Buddy Distance
+                  </Text>
+                  <Text selectable style={styles.text}>
+                    {pokemon.buddy_distance.amount}{' '}
+                    {pokemon.buddy_distance.unit}
+                  </Text>
+                </View>
+              ) : null}
+            </View>
+          ) : null}
 
           <View style={styles.item}>
             <View style={[styles.row, styles.center]}>
@@ -226,38 +211,36 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
           </View>
 
           <View style={styles.item}>
-            {strongAgainst.length
-              ? <View style={[styles.row, styles.item]}>
-                  <Text style={[styles.text, styles.label]}>
-                    Strong against
-                  </Text>
-                  <View style={styles.wrap}>
-                    {strongAgainst.map(type =>
-                      <PokemonTypeLabel key={type} type={type} />
-                    )}
-                  </View>
+            {strongAgainst.length ? (
+              <View style={[styles.row, styles.item]}>
+                <Text style={[styles.text, styles.label]}>Strong against</Text>
+                <View style={styles.wrap}>
+                  {strongAgainst.map(type => (
+                    <PokemonTypeLabel key={type} type={type} />
+                  ))}
                 </View>
-              : null}
-            {resistantTo.length
-              ? <View style={[styles.row, styles.item]}>
-                  <Text style={[styles.text, styles.label]}>Resistant to</Text>
-                  <View style={styles.wrap}>
-                    {resistantTo.map(type =>
-                      <PokemonTypeLabel key={type} type={type} />
-                    )}
-                  </View>
+              </View>
+            ) : null}
+            {resistantTo.length ? (
+              <View style={[styles.row, styles.item]}>
+                <Text style={[styles.text, styles.label]}>Resistant to</Text>
+                <View style={styles.wrap}>
+                  {resistantTo.map(type => (
+                    <PokemonTypeLabel key={type} type={type} />
+                  ))}
                 </View>
-              : null}
-            {weakAgainst.length
-              ? <View style={[styles.row, styles.item]}>
-                  <Text style={[styles.text, styles.label]}>Weak against</Text>
-                  <View style={styles.wrap}>
-                    {weakAgainst.map(type =>
-                      <PokemonTypeLabel key={type} type={type} />
-                    )}
-                  </View>
+              </View>
+            ) : null}
+            {weakAgainst.length ? (
+              <View style={[styles.row, styles.item]}>
+                <Text style={[styles.text, styles.label]}>Weak against</Text>
+                <View style={styles.wrap}>
+                  {weakAgainst.map(type => (
+                    <PokemonTypeLabel key={type} type={type} />
+                  ))}
                 </View>
-              : null}
+              </View>
+            ) : null}
           </View>
 
           <View style={styles.item}>
@@ -304,31 +287,29 @@ export default class PokemonDetails extends PureComponent<void, Props, void> {
             )}
           </View>
 
-          {pokemon.evolution
-            ? <View style={styles.item}>
-                <Evolution
-                  style={styles.item}
-                  pokemon={pokemon}
-                  navigation={this.props.navigation}
-                />
-              </View>
-            : null}
+          {pokemon.evolution ? (
+            <View style={styles.item}>
+              <Evolution
+                style={styles.item}
+                pokemon={pokemon}
+                navigation={this.props.navigation}
+              />
+            </View>
+          ) : null}
 
-          {pokemon.easter_eggs
-            ? <View style={styles.item}>
-                <Heading>
-                  {pokemon.easter_eggs.length > 1 ? 'Tips' : 'Tip'}
-                </Heading>
+          {pokemon.easter_eggs ? (
+            <View style={styles.item}>
+              <Heading>
+                {pokemon.easter_eggs.length > 1 ? 'Tips' : 'Tip'}
+              </Heading>
 
-                {pokemon.easter_eggs.map(tip =>
-                  <View key={tip}>
-                    <Paragraph>
-                      {tip}
-                    </Paragraph>
-                  </View>
-                )}
-              </View>
-            : null}
+              {pokemon.easter_eggs.map(tip => (
+                <View key={tip}>
+                  <Paragraph>{tip}</Paragraph>
+                </View>
+              ))}
+            </View>
+          ) : null}
         </View>
       </ScrollView>
     );

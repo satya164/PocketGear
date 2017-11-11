@@ -20,7 +20,7 @@ type State = {
   bootstrapped: boolean,
 };
 
-export default class App extends PureComponent<void, {}, State> {
+export default class App extends PureComponent<{}, State> {
   state: State = {
     bootstrapped: false,
   };

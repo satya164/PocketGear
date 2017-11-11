@@ -34,7 +34,7 @@ type Props = {
   children?: any,
 };
 
-export default class AppbarShell extends PureComponent<void, Props, void> {
+export default class AppbarShell extends PureComponent<Props, void> {
   static HEIGHT = BAR_HEIGHT;
 
   render() {

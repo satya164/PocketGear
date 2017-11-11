@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react';
+import * as React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import store from '../store';
 import type { PokemonType } from '../types';
@@ -31,9 +31,7 @@ export default function PokemonTypeLabel({ type, style }: Props) {
   const color = store.getColor(type);
   return (
     <View style={[styles.type, { backgroundColor: color }, style]}>
-      <Text style={styles.text}>
-        {type}
-      </Text>
+      <Text style={styles.text}>{type}</Text>
     </View>
   );
 }

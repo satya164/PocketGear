@@ -22,7 +22,7 @@ type Props = {
 
 const CARD_WIDTH = 160;
 
-export default class PokemonList extends PureComponent<void, Props, void> {
+export default class PokemonList extends PureComponent<Props, void> {
   scrollTo(options: any) {
     this._root.scrollTo(options);
   }

@@ -52,7 +52,7 @@ type Props = {
   style?: any,
 };
 
-export default class SpinButton extends PureComponent<void, Props, void> {
+export default class SpinButton extends PureComponent<Props, void> {
   _handleChangeText = (text: string) => {
     this.props.onChangeValue(parseInt(text, 10));
   };

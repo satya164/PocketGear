@@ -93,16 +93,19 @@ type Props = {
 const InfoTabs = TabNavigator(
   {
     Details: {
-      screen: ({ screenProps, ...rest }) =>
-        <PokemonDetails {...rest} {...screenProps} />,
+      screen: ({ screenProps, ...rest }) => (
+        <PokemonDetails {...rest} {...screenProps} />
+      ),
     },
     Matches: {
-      screen: ({ screenProps, ...rest }) =>
-        <DelayedItem {...rest} {...screenProps} component={PokemonMatches} />,
+      screen: ({ screenProps, ...rest }) => (
+        <DelayedItem {...rest} {...screenProps} component={PokemonMatches} />
+      ),
     },
     Tools: {
-      screen: ({ screenProps, ...rest }) =>
-        <DelayedItem {...rest} {...screenProps} component={PokemonTools} />,
+      screen: ({ screenProps, ...rest }) => (
+        <DelayedItem {...rest} {...screenProps} component={PokemonTools} />
+      ),
     },
   },
   {
@@ -120,7 +123,7 @@ const InfoTabs = TabNavigator(
   }
 );
 
-class PokemonInfo extends PureComponent<void, Props, void> {
+class PokemonInfo extends PureComponent<Props, void> {
   static router = InfoTabs.router;
 
   _getPokemon: (id: PokemonID) => Pokemon = memoize((id: PokemonID) => {
@@ -144,13 +147,11 @@ class PokemonInfo extends PureComponent<void, Props, void> {
         </Appbar>
         <View style={[styles.row, styles.meta]}>
           <View style={styles.basic}>
-            <Text style={[styles.label, styles.name]}>
-              {pokemon.name}
-            </Text>
+            <Text style={[styles.label, styles.name]}>{pokemon.name}</Text>
             <View style={styles.types}>
-              {pokemon.types.map(type =>
+              {pokemon.types.map(type => (
                 <PokemonTypeLabel key={type} type={type} />
-              )}
+              ))}
             </View>
           </View>
           <Image style={styles.image} source={sprite} />

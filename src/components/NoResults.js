@@ -30,15 +30,13 @@ type Props = {
   label: string,
 };
 
-export default class NoResults extends PureComponent<void, Props, void> {
+export default class NoResults extends PureComponent<Props, void> {
   render() {
     const { source, label } = this.props;
     return (
       <View style={styles.container}>
         <Image style={styles.item} source={source} />
-        <Text style={styles.label}>
-          {label}
-        </Text>
+        <Text style={styles.label}>{label}</Text>
       </View>
     );
   }

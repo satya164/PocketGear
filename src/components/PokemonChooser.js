@@ -43,7 +43,7 @@ type Props = {
   navigation: Object,
 };
 
-export default class PokemonChooser extends PureComponent<void, Props, State> {
+export default class PokemonChooser extends PureComponent<Props, State> {
   state: State = {
     query: '',
     sort: '#',
@@ -137,21 +137,23 @@ export default class PokemonChooser extends PureComponent<void, Props, State> {
   render() {
     return (
       <KeyboardAvoidingView style={styles.container}>
-        {this.state.results.pokemons.length
-          ? <PokemonList
-              scrollsToTop
-              keyboardShouldPersistTaps="handled"
-              data={this._sortResults(this.state.results.pokemons)}
-              navigation={this.props.navigation}
-              contentContainerStyle={styles.content}
-              ref={this._setRef}
-            />
-          : <NoResults
-              label="No Pokémon found"
-              source={require('../../assets/images/open-pokeball.png')}
-              style={styles.content}
-              ref={this._unsetRef}
-            />}
+        {this.state.results.pokemons.length ? (
+          <PokemonList
+            scrollsToTop
+            keyboardShouldPersistTaps="handled"
+            data={this._sortResults(this.state.results.pokemons)}
+            navigation={this.props.navigation}
+            contentContainerStyle={styles.content}
+            ref={this._setRef}
+          />
+        ) : (
+          <NoResults
+            label="No Pokémon found"
+            source={require('../../assets/images/open-pokeball.png')}
+            style={styles.content}
+            ref={this._unsetRef}
+          />
+        )}
         <SearchBar
           placeholder="Find Pokémon by name, number or type"
           value={this.state.query}
