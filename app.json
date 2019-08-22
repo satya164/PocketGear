@@ -1,29 +1,30 @@
 {
   "expo": {
     "name": "PocketGear",
-    "description": "PocketGear is a clean and simple Pokédex app for Pokémon GO you'll ever need.",
-    "slug": "pocketgear",
-    "version": "1.0.0",
-    "icon": "assets/icons/app.png",
-    "loading": {
-      "icon": "assets/icons/splash.png",
-      "backgroundColor": "#fb6b6f",
-      "hideExponentText": true
-    },
-    "ios": {
-      "bundleIdentifier": "com.wibblystuff.gear"
-    },
-    "android": {
-      "package": "com.wibblystuff.gear",
-      "permissions": []
-    },
+    "slug": "pocket-gear",
     "privacy": "public",
-    "sdkVersion": "22.0.0",
-    "packagerOpts": {
-      "assetExts": [
-        "ttf",
-        "otf"
-      ]
+    "sdkVersion": "34.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
     }
   }
 }

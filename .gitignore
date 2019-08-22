@@ -33,7 +33,6 @@ local.properties
 # VSCode
 .vscode/
 jsconfig.json
-tsconfig.json
 
 # node.js
 #
