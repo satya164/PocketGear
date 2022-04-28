@@ -3,7 +3,7 @@
     "name": "PocketGear",
     "slug": "pocket-gear",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
+    "sdkVersion": "44.0.0",
     "platforms": [
       "ios",
       "android",
@@ -25,6 +25,15 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
     }
   }
 }

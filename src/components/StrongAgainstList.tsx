@@ -24,7 +24,7 @@ export default class StrongAgainstList extends PureComponent<Props, State> {
     loading: true,
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     InteractionManager.runAfterInteractions(this._updateData);
   }
 

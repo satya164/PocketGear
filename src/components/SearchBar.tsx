@@ -69,6 +69,7 @@ export default class SearchBar<T extends Toggle> extends PureComponent<
       toValue: 1,
       tension: 300,
       friction: 35,
+      useNativeDriver: true,
     }).start(() => this.setState({ toggles: true }));
 
   _handleBlur = () =>
@@ -76,6 +77,7 @@ export default class SearchBar<T extends Toggle> extends PureComponent<
       toValue: 0,
       tension: 300,
       friction: 35,
+      useNativeDriver: true,
     }).start(() => this.setState({ toggles: false }));
 
   render() {

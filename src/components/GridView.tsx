@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
+import ListView from 'deprecated-react-native-listview';
 import {
   Platform,
   Dimensions,
-  ListView,
   StyleSheet,
   View,
   StyleProp,
@@ -44,7 +44,7 @@ export default class GridView extends PureComponent<Props, State> {
     containerWidth: Dimensions.get('window').width,
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState(state => ({
       dataSource: state.dataSource.cloneWithRows(
         this._processData(state.containerWidth, this.props)
@@ -52,7 +52,7 @@ export default class GridView extends PureComponent<Props, State> {
     }));
   }
 
-  componentWillReceiveProps(nextProps: Props) {
+  UNSAFE_componentWillReceiveProps(nextProps: Props) {
     this.setState(state => ({
       dataSource: state.dataSource.cloneWithRows(
         this._processData(state.containerWidth, nextProps)
