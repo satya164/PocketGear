@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 
 export default function Home() {
   return (
-    <Stack.Navigator headerMode="none">
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Main" component={PokemonChooser} />
       <Stack.Screen name="StrongAgainst" component={StrongAgainstList} />
       <Stack.Screen name="WeakAgainst" component={WeakAgainstList} />

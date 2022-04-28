@@ -64,12 +64,12 @@ export default class PokemonInfo extends PureComponent<Props> {
           <Image style={styles.image} source={sprite} />
         </View>
         <MaterialTab.Navigator
-          tabBarOptions={{
-            style: styles.tabbar,
-            indicatorStyle: styles.indicator,
-            labelStyle: styles.tablabel,
-            activeTintColor: '#222',
-            inactiveTintColor: '#222',
+          screenOptions={{
+            tabBarStyle: styles.tabbar,
+            tabBarIndicatorStyle: styles.indicator,
+            tabBarLabelStyle: styles.tablabel,
+            tabBarActiveTintColor: '#222',
+            tabBarInactiveTintColor: '#222',
           }}
         >
           <MaterialTab.Screen name="Details">
