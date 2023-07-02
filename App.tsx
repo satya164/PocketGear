@@ -4,11 +4,13 @@ import {
   NavigationContainer,
   useNavigationContainerRef,
 } from '@react-navigation/native';
-import AppLoading from 'expo-app-loading';
+import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
 import React from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import Home from './src/components/Home';
+
+SplashScreen.preventAutoHideAsync();
 
 const styles = StyleSheet.create({
   container: {
@@ -32,12 +34,18 @@ export default function App() {
     }).then(() => setIsReady(true));
   }, []);
 
+  const onLayoutRootView = React.useCallback(async () => {
+    if (isReady) {
+      await SplashScreen.hideAsync();
+    }
+  }, [isReady]);
+
   if (!isReady) {
-    return <AppLoading />;
+    return null;
   }
 
   return (
-    <NavigationContainer ref={ref}>
+    <NavigationContainer ref={ref} onReady={onLayoutRootView}>
       <View style={styles.container}>
         <View style={styles.statusbar} />
         <Home />
