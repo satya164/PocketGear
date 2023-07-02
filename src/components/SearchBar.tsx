@@ -11,6 +11,7 @@ import {
   ViewStyle,
   NativeSyntheticEvent,
   TextInputFocusEventData,
+  EmitterSubscription,
 } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import FilterToggle from './FilterToggle';
@@ -49,15 +50,23 @@ export default class SearchBar<T extends Toggle> extends PureComponent<
     toggles: false,
     focused: new Animated.Value(0),
   };
+  keyboardDidShow?: EmitterSubscription;
+  keyboardDidHide?: EmitterSubscription;
 
   componentDidMount() {
-    Keyboard.addListener('keyboardDidShow', this._handleFocus);
-    Keyboard.addListener('keyboardDidHide', this._handleBlur);
+    this.keyboardDidShow = Keyboard.addListener(
+      'keyboardDidShow',
+      this._handleFocus
+    );
+    this.keyboardDidHide = Keyboard.addListener(
+      'keyboardDidHide',
+      this._handleBlur
+    );
   }
 
   componentWillUnmount() {
-    Keyboard.removeListener('keyboardDidShow', this._handleFocus);
-    Keyboard.removeListener('keyboardDidHide', this._handleBlur);
+    this.keyboardDidShow?.remove();
+    this.keyboardDidHide?.remove();
   }
 
   _handleClearPress = () => {
