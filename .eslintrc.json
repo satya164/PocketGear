@@ -1,7 +1,4 @@
 {
-  "extends": "eslint-config-satya164",
-
-  "env": {
-    "node": true
-  }
+  "root": true,
+  "extends": "@react-native"
 }

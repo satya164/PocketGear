@@ -25,7 +25,7 @@ export default class Evolution extends PureComponent<Props> {
     });
   };
 
-  _getEvolutions = (pokemon: Pokemon): (Pokemon[]) | undefined => {
+  _getEvolutions = (pokemon: Pokemon): Pokemon[] | undefined => {
     const pokemons = store.getPokemons();
     const { evolution } = pokemon;
 

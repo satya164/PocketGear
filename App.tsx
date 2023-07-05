@@ -28,7 +28,7 @@ export default function App() {
 
   React.useEffect(() => {
     Font.loadAsync({
-      'Montserrat': require('./assets/fonts/Montserrat.otf'),
+      Montserrat: require('./assets/fonts/Montserrat.otf'),
       'Montserrat-SemiBold': require('./assets/fonts/Montserrat-SemiBold.otf'),
       ...MaterialIcons.font,
     }).then(() => setIsReady(true));
