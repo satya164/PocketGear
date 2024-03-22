@@ -1,10 +1,13 @@
 import React from 'react';
-import { StyleSheet, StyleProp, ViewStyle, ScrollView } from 'react-native';
+import { StyleSheet, StyleProp, ViewStyle, FlatList } from 'react-native';
 import GridView from './GridView';
 import PokemonListCard from './PokemonListCard';
 import { Pokemon } from '../types';
 
-type Props = React.ComponentProps<typeof GridView> & {
+type Props = Omit<
+  React.ComponentProps<typeof GridView<Pokemon>>,
+  'getNumberOfColumns' | 'renderRow'
+> & {
   navigation: any;
   data: Pokemon[];
   style?: StyleProp<ViewStyle>;
@@ -13,11 +16,9 @@ type Props = React.ComponentProps<typeof GridView> & {
 const CARD_WIDTH = 160;
 
 const PokemonList = React.forwardRef(
-  (props: Props, ref: React.Ref<ScrollView>) => {
-    const renderRow = (rowData: any) => {
-      return (
-        <PokemonListCard pokemon={rowData} navigation={props.navigation} />
-      );
+  ({ navigation, data, style, ...rest }: Props, ref: React.Ref<FlatList>) => {
+    const renderRow = (item: any) => {
+      return <PokemonListCard pokemon={item} navigation={navigation} />;
     };
 
     const getNumberOfColumns = (width: number) => {
@@ -25,11 +26,11 @@ const PokemonList = React.forwardRef(
     };
 
     return (
-      <GridView
-        {...props}
+      <GridView<Pokemon>
+        {...rest}
+        data={data}
         pageSize={2}
-        style={[styles.grid, props.style]}
-        spacing={8}
+        style={[styles.grid, style]}
         renderRow={renderRow}
         getNumberOfColumns={getNumberOfColumns}
         ref={ref}

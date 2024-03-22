@@ -1,14 +1,13 @@
 import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
 import React, { useState } from 'react';
-import { KeyboardAvoidingView, ScrollView, StyleSheet } from 'react-native';
+import { KeyboardAvoidingView, FlatList, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
 import NoResults from './NoResults';
 import store from '../store';
 import { Pokemon } from '../types';
 import { useNavigation } from '@react-navigation/native';
-import GridView from './GridView';
 
 type SortKey = '#' | 'name' | 'attack' | 'defense' | 'max_cp';
 
@@ -81,11 +80,7 @@ export default function PokemonChooser() {
       results: { pokemons: getResults(prevState.query) },
     }));
 
-    listRef.current?.scrollTo({
-      x: 0,
-      y: 0,
-      animated: false,
-    });
+    listRef.current?.scrollToOffset({ animated: false, offset: 0 });
   }, 200);
 
   const onSearchChange = (query: string) => {
@@ -105,7 +100,7 @@ export default function PokemonChooser() {
       sort: name,
     }));
 
-  const listRef = React.useRef<ScrollView>(null);
+  const listRef = React.useRef<FlatList>(null);
 
   return (
     <KeyboardAvoidingView style={styles.container}>

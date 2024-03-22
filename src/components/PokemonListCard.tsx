@@ -10,7 +10,7 @@ type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-function PokemonListCard({ navigation, pokemon, style }: Props) {
+function PokemonListCardInner({ navigation, pokemon, style }: Props) {
   const onPress = () => {
     navigation.push('Info', {
       pokemonId: pokemon.id,
@@ -35,6 +35,8 @@ function PokemonListCard({ navigation, pokemon, style }: Props) {
     </TouchableItem>
   );
 }
+
+const PokemonListCard = React.memo(PokemonListCardInner);
 
 const styles = StyleSheet.create({
   block: {

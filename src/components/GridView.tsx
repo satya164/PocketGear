@@ -1,118 +1,80 @@
-import React, { useEffect, useState } from 'react';
-import ListView from 'deprecated-react-native-listview';
+import React, { useState } from 'react';
 import {
   Platform,
   Dimensions,
-  StyleSheet,
   View,
   StyleProp,
   ViewStyle,
   LayoutChangeEvent,
-  ScrollView,
+  FlatList,
 } from 'react-native';
 
-type Props = React.ComponentProps<typeof ListView> & {
-  data: any[];
-  spacing: number;
+type Props<T> = Omit<React.ComponentProps<typeof FlatList<T>>, 'renderItem'> & {
+  spacing?: number;
   pageSize?: number;
   getNumberOfColumns: (width: number) => number;
-  renderRow: (
-    rowData: any,
-    rowID: string,
-    highlightRow: React.ReactText
-  ) => React.ReactNode;
+  renderRow: (item: T) => React.ReactElement;
   onLayout?: (e: LayoutChangeEvent) => void;
-  contentContainerStyle?: any;
+  contentContainerStyle?: StyleProp<ViewStyle>;
   style?: StyleProp<ViewStyle>;
 };
 
-const GridView = React.forwardRef(
-  (props: Props, ref: React.Ref<ScrollView>) => {
-    const [dataSource, setDataSource] = useState<ListView.DataSource>(
-      new ListView.DataSource({
-        rowHasChanged: (r1, r2) => r1 !== r2,
-      })
-    );
-    const [containerWidth, setContainerWidth] = useState(
-      Dimensions.get('window').width
-    );
+const GridViewInner = <T,>(
+  {
+    data,
+    spacing = 8,
+    contentContainerStyle,
+    renderRow,
+    onLayout: onLayoutCustom,
+    getNumberOfColumns,
+    ...rest
+  }: Props<T>,
+  ref?: React.Ref<FlatList>
+) => {
+  const [containerWidth, setContainerWidth] = useState(
+    Dimensions.get('window').width
+  );
 
-    useEffect(() => {
-      setDataSource(
-        dataSource.cloneWithRows(processData(containerWidth, props))
-      );
-    }, [containerWidth, props]);
-
-    const renderRow = (
-      rowData: any,
-      rowID: string,
-      highlightRow: React.ReactText
-    ) => {
-      return (
-        <View style={rowData.style}>
-          {props.renderRow(rowData.tile, rowID, highlightRow)}
-        </View>
-      );
-    };
-
-    const processData = (containerWidth: number, props: Props) => {
-      const { getNumberOfColumns, spacing, data } = props;
-      const style = {
-        width:
-          (containerWidth - spacing) / getNumberOfColumns(containerWidth) -
-          spacing,
-        margin: spacing / 2,
-      };
-      return data.map((tile) => ({
-        tile,
-        style,
-      }));
-    };
-
-    const onLayout = (e: LayoutChangeEvent) => {
-      if (props.onLayout) {
-        props.onLayout(e);
-      }
-
-      if (containerWidth === e.nativeEvent.layout.width) {
-        return;
-      }
-
-      const newContainerWidth = e.nativeEvent.layout.width;
-
-      setContainerWidth(newContainerWidth);
-      setDataSource(
-        dataSource.cloneWithRows(processData(newContainerWidth, props))
-      );
-    };
-
+  const renderItem = ({ item }: { item: T }) => {
     return (
-      <ListView
-        {...props}
-        removeClippedSubviews={Platform.OS !== 'ios'}
-        enableEmptySections={false}
-        dataSource={dataSource}
-        onLayout={onLayout}
-        renderRow={renderRow}
-        contentContainerStyle={[
-          styles.grid,
-          { padding: props.spacing / 2 },
-          props.contentContainerStyle,
-        ]}
-        ref={ref}
-      />
+      <View style={{ flex: 1, margin: spacing / 2 }}>{renderRow(item)}</View>
     );
-  }
-);
+  };
 
+  const onLayout = (e: LayoutChangeEvent) => {
+    onLayoutCustom?.(e);
+
+    if (containerWidth === e.nativeEvent.layout.width) {
+      return;
+    }
+
+    const newContainerWidth = e.nativeEvent.layout.width;
+
+    setContainerWidth(newContainerWidth);
+  };
+
+  const numColumns = getNumberOfColumns(containerWidth);
+
+  return (
+    <FlatList<T>
+      {...rest}
+      key={numColumns}
+      numColumns={numColumns}
+      removeClippedSubviews={Platform.OS !== 'ios'}
+      data={data}
+      onLayout={onLayout}
+      renderItem={renderItem}
+      contentContainerStyle={[{ padding: spacing / 2 }, contentContainerStyle]}
+      ref={ref}
+    />
+  );
+};
+
+const GridView = React.forwardRef(GridViewInner) as <T>(
+  p: Props<T> & { ref?: React.Ref<FlatList> }
+) => React.ReactElement;
+
+// @ts-expect-error - forwardRef type is not accurate
 GridView.displayName = 'GridView';
-
-const styles = StyleSheet.create({
-  grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'flex-start',
-  },
-});
 
 export default GridView;
