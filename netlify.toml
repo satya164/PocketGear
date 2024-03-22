@@ -3,3 +3,7 @@
   publish = "dist"
   command = "yarn expo export --platform web"
   environment = { YARN_VERSION = "4.1.1" }
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
