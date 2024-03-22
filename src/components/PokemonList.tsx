@@ -4,7 +4,7 @@ import GridView from './GridView';
 import PokemonListCard from './PokemonListCard';
 import { Pokemon } from '../types';
 
-type Props = {
+type Props = React.ComponentProps<typeof GridView> & {
   navigation: any;
   data: Pokemon[];
   style?: StyleProp<ViewStyle>;

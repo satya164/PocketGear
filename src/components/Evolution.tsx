@@ -47,10 +47,8 @@ export default class Evolution extends PureComponent<Props> {
 
     const evolutions = this._getEvolutions(pokemon);
 
-    let chains = evolutions ? evolutions.map(item => [item]) : [[pokemon]];
-
-    chains = chains
-      .reduce<Pokemon[]>((acc, chain) => {
+    const chains = (evolutions ? evolutions.map(item => [item]) : [[pokemon]])
+      .reduce<Pokemon[][]>((acc, chain) => {
         const last = chain[chain.length - 1];
         const evs = this._getEvolutions(last);
 

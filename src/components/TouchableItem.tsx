@@ -34,7 +34,7 @@ export default class TouchableItem extends PureComponent<Props> {
           style={null}
           background={TouchableNativeFeedback.Ripple(
             this.props.pressColor,
-            this.props.borderless
+            this.props.borderless ?? false
           )}
         >
           <View style={this.props.style}>{this.props.children}</View>

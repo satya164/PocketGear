@@ -49,7 +49,7 @@ export default class PokemonInfo extends PureComponent<Props> {
 
     return (
       <View {...this.props} style={[styles.container, this.props.style]}>
-        <Appbar style={styles.appbar} navigation={this.props.navigation}>
+        <Appbar style={styles.appbar}>
           {'#' + pokemon.id}
         </Appbar>
         <View style={[styles.row, styles.meta]}>

@@ -25,6 +25,9 @@
     "ios": {
       "supportsTablet": true
     },
+    "androidStatusBar": {
+      "translucent": true
+    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -33,6 +36,9 @@
     },
     "web": {
       "favicon": "./assets/icon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

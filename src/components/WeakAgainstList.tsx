@@ -51,7 +51,7 @@ export default class WeakAgainstList extends PureComponent<Props, State> {
     }
     return (
       <View style={styles.container}>
-        <Appbar navigation={this.props.navigation}>
+        <Appbar>
           <Text style={styles.title}>{pokemon.name}</Text>
           <Text style={styles.subtitle}>Weak against</Text>
         </Appbar>

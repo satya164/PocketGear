@@ -8,7 +8,6 @@ import {
   StyleProp,
   ViewStyle,
   LayoutChangeEvent,
-  ListViewDataSource,
 } from 'react-native';
 
 type Props = React.ComponentProps<typeof ListView> & {
@@ -27,7 +26,7 @@ type Props = React.ComponentProps<typeof ListView> & {
 };
 
 type State = {
-  dataSource: ListViewDataSource;
+  dataSource: typeof ListView.DataSource;
   containerWidth: number;
 };
 

@@ -1,12 +1,13 @@
 import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import { KeyboardAvoidingView, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
 import NoResults from './NoResults';
 import store from '../store';
 import { Pokemon } from '../types';
+import { useNavigation } from '@react-navigation/native';
 
 type SortKey = '#' | 'name' | 'attack' | 'defense' | 'max_cp';
 
@@ -18,20 +19,17 @@ type State = {
   };
 };
 
-type Props = {
-  navigation: any;
-};
-
-export default class PokemonChooser extends PureComponent<Props, State> {
-  state: State = {
+export default function PokemonChooser() {
+  const navigation = useNavigation();
+  const [state, setState] = useState<State>({
     query: '',
     sort: '#',
     results: {
       pokemons: store.getPokemons(),
     },
-  };
+  });
 
-  _getResults = (text: string) => {
+  const getResults = (text: string) => {
     const query = text.toLowerCase().trim();
     const pokemons = store.getPokemons();
 
@@ -56,8 +54,8 @@ export default class PokemonChooser extends PureComponent<Props, State> {
     return pokemons;
   };
 
-  _sortResults = (results: Pokemon[]) => {
-    const { sort } = this.state;
+  const sortResults = (results: Pokemon[]) => {
+    const { sort } = state;
     return results.slice(0).sort((a, b) => {
       switch (sort) {
         case '#':
@@ -76,95 +74,88 @@ export default class PokemonChooser extends PureComponent<Props, State> {
     });
   };
 
-  _updateResults = debounce(() => {
-    this.setState(
-      state => ({
-        results: { pokemons: this._getResults(state.query) },
-      }),
-      () => {
-        if (this._list) {
-          this._list.scrollTo({
-            x: 0,
-            y: 0,
-            animated: false,
-          });
-        }
-      }
-    );
+  const updateResults = debounce(() => {
+    setState(prevState => ({
+      ...prevState,
+      results: { pokemons: getResults(prevState.query) },
+    }));
+
+    listRef.current?.scrollTo({
+      x: 0,
+      y: 0,
+      animated: false,
+    });
   }, 200);
 
-  _handleSearchChange = (query: string) => {
-    if (this.state.query === query) {
+  const onSearchChange = (query: string) => {
+    if (state.query === query) {
       return;
     }
-    this.setState({
+    setState(prevState => ({
+      ...prevState,
       query,
-    });
-    this._updateResults();
+    }));
+    updateResults();
   };
 
-  _handleChangeToggle = ({ name }: { name: SortKey }) =>
-    this.setState({ sort: name });
+  const onChangeToggle = ({ name }: { name: SortKey }) =>
+    setState(prevState => ({
+      ...prevState,
+      sort: name,
+    }));
 
-  _list: any | undefined;
+  const listRef = React.useRef<PokemonList>(null);
 
-  _setRef = (c: any) => (this._list = c);
-
-  _unsetRef = () => (this._list = null);
-
-  render() {
-    return (
-      <KeyboardAvoidingView style={styles.container}>
-        {this.state.results.pokemons.length ? (
-          <PokemonList
-            scrollsToTop
-            keyboardShouldPersistTaps="handled"
-            data={this._sortResults(this.state.results.pokemons)}
-            navigation={this.props.navigation}
-            contentContainerStyle={styles.content}
-            ref={this._setRef}
-          />
-        ) : (
-          <NoResults
-            label="No Pokémon found"
-            source={require('../../assets/images/open-pokeball.png')}
-            style={styles.content}
-            ref={this._unsetRef}
-          />
-        )}
-        <SearchBar
-          placeholder="Find Pokémon by name, number or type"
-          value={this.state.query}
-          onChangeText={this._handleSearchChange}
-          toggles={[
-            { name: '#' as const, label: '#', active: this.state.sort === '#' },
-            {
-              name: 'name' as const,
-              label: 'Name',
-              active: this.state.sort === 'name',
-            },
-            {
-              name: 'attack' as const,
-              label: 'Attack',
-              active: this.state.sort === 'attack',
-            },
-            {
-              name: 'defense' as const,
-              label: 'Defense',
-              active: this.state.sort === 'defense',
-            },
-            {
-              name: 'max_cp' as const,
-              label: 'Max CP',
-              active: this.state.sort === 'max_cp',
-            },
-          ]}
-          onChangeToggle={this._handleChangeToggle}
-          style={styles.searchbar}
+  return (
+    <KeyboardAvoidingView style={styles.container}>
+      {state.results.pokemons.length ? (
+        <PokemonList
+          scrollsToTop
+          keyboardShouldPersistTaps="handled"
+          data={sortResults(state.results.pokemons)}
+          navigation={navigation}
+          contentContainerStyle={styles.content}
+          ref={listRef}
         />
-      </KeyboardAvoidingView>
-    );
-  }
+      ) : (
+        <NoResults
+          label="No Pokémon found"
+          source={require('../../assets/images/open-pokeball.png')}
+          style={styles.content}
+        />
+      )}
+      <SearchBar
+        placeholder="Find Pokémon by name, number or type"
+        value={state.query}
+        onChangeText={onSearchChange}
+        toggles={[
+          { name: '#' as const, label: '#', active: state.sort === '#' },
+          {
+            name: 'name' as const,
+            label: 'Name',
+            active: state.sort === 'name',
+          },
+          {
+            name: 'attack' as const,
+            label: 'Attack',
+            active: state.sort === 'attack',
+          },
+          {
+            name: 'defense' as const,
+            label: 'Defense',
+            active: state.sort === 'defense',
+          },
+          {
+            name: 'max_cp' as const,
+            label: 'Max CP',
+            active: state.sort === 'max_cp',
+          },
+        ]}
+        onChangeToggle={onChangeToggle}
+        style={styles.searchbar}
+      />
+    </KeyboardAvoidingView>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -175,7 +166,6 @@ const styles = StyleSheet.create({
 
   content: {
     backgroundColor: '#fafafa',
-    paddingTop: SearchBar.HEIGHT + 4,
   },
 
   searchbar: {
