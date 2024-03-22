@@ -4,6 +4,7 @@ import typeChart from './data/type_chart.json';
 import colors from './colors.json';
 import sprites from './sprites';
 import { Pokemon, PokemonID, PokemonType, Move, TypeChart } from './types';
+import { ImageSourcePropType } from 'react-native';
 
 const MAX_VALUES = {
   attack: 300,
@@ -25,7 +26,7 @@ function getTypeChart(): TypeChart[] {
   return typeChart as TypeChart[];
 }
 
-function getSprite(id: PokemonID): any {
+function getSprite(id: PokemonID): ImageSourcePropType {
   return sprites[id - 1];
 }
 

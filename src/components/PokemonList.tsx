@@ -17,7 +17,7 @@ const CARD_WIDTH = 160;
 
 const PokemonList = React.forwardRef(
   ({ navigation, data, style, ...rest }: Props, ref: React.Ref<FlatList>) => {
-    const renderRow = (item: any) => {
+    const renderRow = (item: Pokemon) => {
       return <PokemonListCard pokemon={item} navigation={navigation} />;
     };
 
