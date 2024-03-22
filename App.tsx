@@ -43,7 +43,7 @@ export default function App() {
         onReady={() => SplashScreen.hideAsync()}
         linking={{
           prefixes: [Linking.createURL('/')],
-          config: 'auto',
+          enabled: 'auto',
         }}
       />
     </>

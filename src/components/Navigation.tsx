@@ -119,7 +119,6 @@ const RootStack = createStackNavigator({
         title: 'PocketGear',
         headerShown: false,
       },
-      linking: '',
     },
     Info: {
       screen: InfoScreen,
