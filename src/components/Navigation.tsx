@@ -115,7 +115,10 @@ const RootStack = createStackNavigator({
   screens: {
     Main: {
       screen: PokemonChooser,
-      options: { headerShown: false },
+      options: {
+        title: 'PocketGear',
+        headerShown: false,
+      },
       linking: '',
     },
     Info: {
