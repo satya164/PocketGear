@@ -1,12 +1,12 @@
 import React from 'react';
 import {
-  TouchableWithoutFeedback,
+  Platform,
   TouchableNativeFeedback,
   TouchableOpacity,
-  Platform,
+  TouchableWithoutFeedback,
   View,
-  StyleProp,
-  ViewStyle,
+  type StyleProp,
+  type ViewStyle,
 } from 'react-native';
 
 type Props = React.ComponentProps<typeof TouchableWithoutFeedback> & {

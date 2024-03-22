@@ -1,19 +1,18 @@
-import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
+import filter from 'lodash/filter';
 import React, { useState } from 'react';
 import {
-  KeyboardAvoidingView,
   FlatList,
-  StyleSheet,
+  KeyboardAvoidingView,
   Platform,
+  StyleSheet,
 } from 'react-native';
-import SearchBar from './SearchBar';
-import PokemonList from './PokemonList';
-import NoResults from './NoResults';
-import store from '../store';
-import { Pokemon } from '../types';
-import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import store from '../store';
+import { type Pokemon } from '../types';
+import NoResults from './NoResults';
+import PokemonList from './PokemonList';
+import SearchBar from './SearchBar';
 
 type SortKey = '#' | 'name' | 'attack' | 'defense' | 'max_cp';
 
@@ -27,7 +26,6 @@ type State = {
 
 export default function PokemonChooser() {
   const insets = useSafeAreaInsets();
-  const navigation = useNavigation();
   const [state, setState] = useState<State>({
     query: '',
     sort: '#',
@@ -116,7 +114,6 @@ export default function PokemonChooser() {
           scrollsToTop
           keyboardShouldPersistTaps="handled"
           data={sortResults(state.results.pokemons)}
-          navigation={navigation}
           contentContainerStyle={[
             styles.content,
             {

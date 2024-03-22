@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
+import { StyleSheet, Text, type StyleProp, type ViewStyle } from 'react-native';
 
 type Props = React.ComponentProps<typeof Text> & {
   style?: StyleProp<ViewStyle>;

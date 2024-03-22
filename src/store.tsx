@@ -1,10 +1,10 @@
-import pokemons from './data/pokemons.json';
-import moves from './data/moves.json';
-import typeChart from './data/type_chart.json';
+import type { ImageSourcePropType } from 'react-native';
 import colors from './colors.json';
+import moves from './data/moves.json';
+import pokemons from './data/pokemons.json';
+import typeChart from './data/type_chart.json';
 import sprites from './sprites';
-import { Pokemon, PokemonID, PokemonType, Move, TypeChart } from './types';
-import { ImageSourcePropType } from 'react-native';
+import type { Move, Pokemon, PokemonID, PokemonType, TypeChart } from './types';
 
 const MAX_VALUES = {
   attack: 300,

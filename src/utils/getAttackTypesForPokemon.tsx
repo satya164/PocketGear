@@ -1,6 +1,6 @@
+import { type Pokemon, type PokemonType } from '../types';
 import getQuickAttacks from './getQuickAttacks';
 import getSpecialAttacks from './getSpecialAttacks';
-import { Pokemon, PokemonType } from '../types';
 
 export default function getAttackTypesForPokemon(
   pokemon: Pokemon

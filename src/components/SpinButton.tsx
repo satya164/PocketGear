@@ -1,14 +1,14 @@
+import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 import {
-  View,
-  TextInput,
   StyleSheet,
-  StyleProp,
-  ViewStyle,
-  NativeSyntheticEvent,
-  TextInputChangeEventData,
+  TextInput,
+  View,
+  type NativeSyntheticEvent,
+  type StyleProp,
+  type TextInputChangeEventData,
+  type ViewStyle,
 } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
 import TouchableButton from './TouchableButton';
 
 type Props = {

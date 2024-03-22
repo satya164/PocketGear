@@ -1,3 +1,4 @@
+import type { StaticScreenProps } from '@react-navigation/native';
 import find from 'lodash/find';
 import React, { useCallback } from 'react';
 import {
@@ -5,36 +6,30 @@ import {
   StyleSheet,
   Text,
   View,
-  StyleProp,
-  ViewStyle,
+  type StyleProp,
+  type ViewStyle,
 } from 'react-native';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import Appbar from './Appbar';
-import PokemonTypeLabel from './PokemonTypeLabel';
-import PokemonDetails from './PokemonDetails';
-import PokemonMatches from './PokemonMatches';
-import PokemonTools from './PokemonTools';
+import { PokemonProvider } from '../contexts/PokemonContext';
 import store from '../store';
-import { PokemonID } from '../types';
+import type { PokemonID } from '../types';
+import Appbar from './Appbar';
 import NoResults from './NoResults';
+import PokemonTypeLabel from './PokemonTypeLabel';
 
-type Props = {
-  navigation: any;
-  route: any;
+type Props = StaticScreenProps<{ pokemonId: PokemonID }> & {
   style?: StyleProp<ViewStyle>;
+  children: React.ReactNode;
 };
 
-const MaterialTab = createMaterialTopTabNavigator();
-
-function PokemonInfo(props: Props) {
+function PokemonInfo({ route, children, style, ...rest }: Props) {
   const getPokemon = useCallback((id: PokemonID) => {
     const pokemons = store.getPokemons();
     const pokemon = find(pokemons, { id });
     return pokemon;
   }, []);
 
-  const pokemon = getPokemon(props.route.params.pokemonId);
-  const sprite = store.getSprite(props.route.params.pokemonId);
+  const pokemon = getPokemon(route.params.pokemonId);
+  const sprite = store.getSprite(route.params.pokemonId);
 
   if (pokemon === undefined) {
     return (
@@ -46,7 +41,7 @@ function PokemonInfo(props: Props) {
   }
 
   return (
-    <View {...props} style={[styles.container, props.style]}>
+    <View {...rest} style={[styles.container, style]}>
       <Appbar style={styles.appbar}>{'#' + pokemon.id}</Appbar>
       <View style={[styles.row, styles.meta]}>
         <View style={styles.basic}>
@@ -59,25 +54,7 @@ function PokemonInfo(props: Props) {
         </View>
         <Image style={styles.image} source={sprite} />
       </View>
-      <MaterialTab.Navigator
-        screenOptions={{
-          tabBarStyle: styles.tabbar,
-          tabBarIndicatorStyle: styles.indicator,
-          tabBarLabelStyle: styles.tablabel,
-          tabBarActiveTintColor: '#222',
-          tabBarInactiveTintColor: '#222',
-        }}
-      >
-        <MaterialTab.Screen name="Details">
-          {(props) => <PokemonDetails {...props} pokemon={pokemon} />}
-        </MaterialTab.Screen>
-        <MaterialTab.Screen name="Matches">
-          {(props) => <PokemonMatches {...props} pokemon={pokemon} />}
-        </MaterialTab.Screen>
-        <MaterialTab.Screen name="Tools">
-          {(props) => <PokemonTools {...props} pokemon={pokemon} />}
-        </MaterialTab.Screen>
-      </MaterialTab.Navigator>
+      <PokemonProvider value={pokemon}>{children}</PokemonProvider>
     </View>
   );
 }
@@ -131,25 +108,6 @@ const styles = StyleSheet.create({
 
   basic: {
     flex: 1,
-  },
-
-  tabbar: {
-    backgroundColor: '#fff',
-    elevation: 0,
-    shadowOpacity: 0,
-    borderBottomColor: 'rgba(0, 0, 0, 0.16)',
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
-
-  tablabel: {
-    color: '#222',
-    fontFamily: 'Montserrat-SemiBold',
-    fontSize: 10,
-    marginVertical: 8,
-  },
-
-  indicator: {
-    backgroundColor: '#222',
   },
 });
 

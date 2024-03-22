@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react';
-import { View, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
-import { Move } from '../types';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import type { Move, PokemonType } from '../types';
 
 type Props = {
   move: Move;
-  types: Array<any>;
+  types: PokemonType[];
 };
 
 export default function Attack({ move, types }: Props) {
@@ -22,6 +22,7 @@ export default function Attack({ move, types }: Props) {
         Array.from({
           length: Math.abs(Math.round(100 / move.energy_delta)),
         }).map((_, i) => {
+          // eslint-disable-next-line react/no-array-index-key
           return <View key={i} style={styles.energy} />;
         })
       ) : (

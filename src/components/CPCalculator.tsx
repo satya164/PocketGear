@@ -1,29 +1,30 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import {
-  View,
   Image,
+  StyleSheet,
   Text,
   TouchableOpacity,
-  StyleSheet,
-  StyleProp,
-  ViewStyle,
+  View,
+  type StyleProp,
+  type ViewStyle,
 } from 'react-native';
+import store from '../store';
+import type { Pokemon, PokemonID } from '../types';
 import Heading from './Heading';
 import SpinButton from './SpinButton';
-import store from '../store';
-import { Pokemon, PokemonID } from '../types';
 
 type Props = {
   pokemon: Pokemon;
-  navigation: any;
   style: StyleProp<ViewStyle>;
 };
 
-function CPCalculator({ pokemon, navigation, style }: Props) {
+function CPCalculator({ pokemon, style }: Props) {
+  const navigation = useNavigation();
   const [value, setValue] = useState(Math.round(pokemon.points.max_cp / 2));
 
   const goToPokemon = (pokemonId: PokemonID) => {
-    navigation.push('Info', {
+    navigation.navigate('Info', {
       pokemonId,
     });
   };

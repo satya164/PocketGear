@@ -1,10 +1,16 @@
+import { getDefaultHeaderHeight } from '@react-navigation/elements';
 import React from 'react';
-import { Platform, StyleSheet, View, StyleProp, ViewStyle } from 'react-native';
+import {
+  Platform,
+  StyleSheet,
+  View,
+  type StyleProp,
+  type ViewStyle,
+} from 'react-native';
 import {
   useSafeAreaFrame,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
-import { getDefaultHeaderHeight } from '@react-navigation/elements';
 
 type Props = {
   style?: StyleProp<ViewStyle>;

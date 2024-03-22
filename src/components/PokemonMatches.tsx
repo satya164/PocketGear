@@ -1,37 +1,37 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import {
-  View,
-  Text,
-  ScrollView,
   Dimensions,
+  ScrollView,
   StyleSheet,
-  LayoutChangeEvent,
+  Text,
+  View,
+  type LayoutChangeEvent,
 } from 'react-native';
+import { usePokemon } from '../contexts/PokemonContext';
+import type { Pokemon } from '../types';
+import findClosestMatch from '../utils/findClosestMatch';
+import getStrongAgainstPokemons from '../utils/getStrongAgainstPokemons';
+import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
 import More from './More';
 import PokemonListCard from './PokemonListCard';
-import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
-import getStrongAgainstPokemons from '../utils/getStrongAgainstPokemons';
-import findClosestMatch from '../utils/findClosestMatch';
-import { Pokemon } from '../types';
 
-type Props = {
-  pokemon: Pokemon;
-  navigation: any;
-};
+function PokemonMatches() {
+  const navigation = useNavigation();
+  const pokemon = usePokemon();
 
-function PokemonMatches({ pokemon, navigation }: Props) {
   const [containerWidth, setContainerWidth] = useState(
     Dimensions.get('window').width
   );
 
   const onStrongPress = () => {
-    navigation.push('StrongAgainst', {
+    navigation.navigate('StrongAgainst', {
       pokemonId: pokemon.id,
     });
   };
 
   const onWeakPress = () => {
-    navigation.push('WeakAgainst', {
+    navigation.navigate('WeakAgainst', {
       pokemonId: pokemon.id,
     });
   };
@@ -72,11 +72,7 @@ function PokemonMatches({ pokemon, navigation }: Props) {
             Strong against ({strongAgainstPokemons.length})
           </Text>
           <View style={styles.row}>
-            <PokemonListCard
-              pokemon={strongAgainstFirst}
-              navigation={navigation}
-              style={cardStyle}
-            />
+            <PokemonListCard pokemon={strongAgainstFirst} style={cardStyle} />
             {strongAgainstPokemons.length > 1 && (
               <More onPress={onStrongPress} style={cardStyle} />
             )}
@@ -90,11 +86,7 @@ function PokemonMatches({ pokemon, navigation }: Props) {
             Weak against ({weakAgainstPokemons.length})
           </Text>
           <View style={styles.row}>
-            <PokemonListCard
-              pokemon={weakAgainstFirst}
-              navigation={navigation}
-              style={cardStyle}
-            />
+            <PokemonListCard pokemon={weakAgainstFirst} style={cardStyle} />
             {weakAgainstPokemons.length > 1 && (
               <More onPress={onWeakPress} style={cardStyle} />
             )}

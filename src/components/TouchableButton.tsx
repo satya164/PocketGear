@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { TouchableOpacity, GestureResponderEvent } from 'react-native';
+import { TouchableOpacity, type GestureResponderEvent } from 'react-native';
 
 type Props = React.ComponentProps<typeof TouchableOpacity> & {
   onPress: (e: GestureResponderEvent) => void;

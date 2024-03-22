@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import {
-  Platform,
   Dimensions,
-  View,
-  StyleProp,
-  ViewStyle,
-  LayoutChangeEvent,
   FlatList,
+  Platform,
+  View,
+  type LayoutChangeEvent,
+  type StyleProp,
+  type ViewStyle,
 } from 'react-native';
 
 type Props<T> = Omit<React.ComponentProps<typeof FlatList<T>>, 'renderItem'> & {

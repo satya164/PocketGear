@@ -31,7 +31,6 @@ project.xcworkspace
 local.properties
 
 # VSCode
-.vscode/
 jsconfig.json
 
 # node.js

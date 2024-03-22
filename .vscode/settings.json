@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll"],
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

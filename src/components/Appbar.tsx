@@ -1,16 +1,16 @@
+import { EvilIcons, MaterialIcons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {
   Platform,
   StyleSheet,
   Text,
   View,
-  StyleProp,
-  ViewStyle,
+  type StyleProp,
+  type ViewStyle,
 } from 'react-native';
-import { MaterialIcons, EvilIcons } from '@expo/vector-icons';
-import TouchableItem from './TouchableItem';
 import AppbarShell from './AppbarShell';
-import { useNavigation } from '@react-navigation/native';
+import TouchableItem from './TouchableItem';
 
 type Props = {
   style?: StyleProp<ViewStyle>;

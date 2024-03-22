@@ -1,26 +1,28 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {
-  View,
   Image,
+  StyleSheet,
   Text,
   TouchableOpacity,
-  StyleSheet,
-  StyleProp,
-  ViewStyle,
+  View,
+  type StyleProp,
+  type ViewStyle,
 } from 'react-native';
-import Heading from './Heading';
 import store from '../store';
-import { Pokemon, PokemonID } from '../types';
+import type { Pokemon, PokemonID } from '../types';
+import Heading from './Heading';
 
 type Props = {
   pokemon: Pokemon;
-  navigation: any;
   style?: StyleProp<ViewStyle>;
 };
 
 function Evolution(props: Props) {
+  const navigation = useNavigation();
+
   const goToPokemon = (pokemonId: PokemonID) => {
-    props.navigation.push('Info', {
+    navigation.navigate('Info', {
       pokemonId,
     });
   };
@@ -95,9 +97,11 @@ function Evolution(props: Props) {
       <Heading>Evolution</Heading>
       <View style={styles.item}>
         {chains.map((chain, i) => (
+          // eslint-disable-next-line react/no-array-index-key
           <View key={i} style={styles.row}>
             {chain.map(({ poke, ev }, index, self) => [
               <TouchableOpacity
+                // eslint-disable-next-line react/no-array-index-key
                 key={index}
                 style={styles.pokemon}
                 onPress={() =>
@@ -125,6 +129,7 @@ function Evolution(props: Props) {
                 ) : null}
               </TouchableOpacity>,
               index !== self.length - 1 ? (
+                // eslint-disable-next-line react/no-array-index-key
                 <Text key={`arrow-${index}`} style={styles.arrow}>
                   →
                 </Text>

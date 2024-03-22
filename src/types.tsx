@@ -33,10 +33,10 @@ export type Pokemon = {
   types: PokemonType[];
   category: string;
   description: string;
-  name_origin: Array<{
+  name_origin: {
     term: string;
     meaning: string;
-  }>;
+  }[];
   moves: {
     quick: string[];
     cinematic: string[];
@@ -61,19 +61,19 @@ export type Pokemon = {
   };
   evolution?: {
     parent?: PokemonID;
-    branch?: Array<{
+    branch?: {
       id: PokemonID;
       candy_cost: number;
       item_requirement?: EvolutionItem;
-    }>;
+    }[];
   };
-  evolution_cp_multipliers?: Array<{
+  evolution_cp_multipliers?: {
     id: PokemonID;
     multipliers: {
       minimum: number;
       maximum: number;
     };
-  }>;
+  }[];
   egg_distance?: {
     amount: number;
     unit: 'km';

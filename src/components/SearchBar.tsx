@@ -3,15 +3,15 @@ import { BlurView } from 'expo-blur';
 import React, { useEffect, useRef, useState } from 'react';
 import {
   Animated,
-  NativeSyntheticEvent,
   Platform,
-  StyleProp,
   StyleSheet,
   TextInput,
-  TextInputFocusEventData,
   TouchableOpacity,
   View,
-  ViewStyle,
+  type NativeSyntheticEvent,
+  type StyleProp,
+  type TextInputFocusEventData,
+  type ViewStyle,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import FilterToggle from './FilterToggle';

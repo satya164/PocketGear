@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {
-  View,
-  Text,
-  TouchableWithoutFeedback,
   Platform,
   StyleSheet,
-  GestureResponderEvent,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+  type GestureResponderEvent,
 } from 'react-native';
 
 type Props = {

@@ -1,7 +1,13 @@
 import * as React from 'react';
-import { View, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  type StyleProp,
+  type ViewStyle,
+} from 'react-native';
 import store from '../store';
-import { PokemonType } from '../types';
+import { type PokemonType } from '../types';
 
 type Props = {
   type: PokemonType;

@@ -1,18 +1,26 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Image, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
-import TouchableItem from './TouchableItem';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  type StyleProp,
+  type ViewStyle,
+} from 'react-native';
 import store from '../store';
-import { Pokemon } from '../types';
+import type { Pokemon } from '../types';
+import TouchableItem from './TouchableItem';
 
 type Props = {
-  navigation: any;
   pokemon: Pokemon;
   style?: StyleProp<ViewStyle>;
 };
 
-function PokemonListCardInner({ navigation, pokemon, style }: Props) {
+function PokemonListCardInner({ pokemon, style }: Props) {
+  const navigation = useNavigation();
+
   const onPress = () => {
-    navigation.push('Info', {
+    navigation.navigate('Info', {
       pokemonId: pokemon.id,
     });
   };

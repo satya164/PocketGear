@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, StyleProp, ViewStyle } from 'react-native';
+import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 
 type Props = {
   ratio: number;

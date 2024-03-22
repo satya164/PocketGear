@@ -1,11 +1,11 @@
 import difference from 'lodash/difference';
 import intersection from 'lodash/intersection';
 import store from '../store';
+import type { Pokemon } from '../types';
+import compareStrength from './compareStrength';
 import getAttackTypesForPokemon from './getAttackTypesForPokemon';
 import getStrongAgainstTypes from './getStrongAgainstTypes';
 import getWeakAgainstTypes from './getWeakAgainstTypes';
-import compareStrength from './compareStrength';
-import { Pokemon } from '../types';
 
 export default function getWeakAgainstPokemons(pokemon: Pokemon) {
   const strongAgainstAll = getStrongAgainstTypes(pokemon);

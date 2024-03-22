@@ -1,6 +1,12 @@
-import * as React from 'react';
-import { View, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
+import * as React from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  type StyleProp,
+  type ViewStyle,
+} from 'react-native';
 import TouchableItem from './TouchableItem';
 
 type Props = Partial<React.ComponentProps<typeof TouchableItem>> & {

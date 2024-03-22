@@ -1,34 +1,24 @@
 import difference from 'lodash/difference';
 import React from 'react';
-import {
-  View,
-  Text,
-  ScrollView,
-  StyleSheet,
-  StyleProp,
-  ViewStyle,
-} from 'react-native';
-import Heading from './Heading';
-import Paragraph from './Paragraph';
-import ProgressBar from './ProgressBar';
-import PokemonTypeLabel from './PokemonTypeLabel';
-import Attack from './Attack';
-import Evolution from './Evolution';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { usePokemon } from '../contexts/PokemonContext';
+import store from '../store';
+import type { Move } from '../types';
 import getQuickAttacks from '../utils/getQuickAttacks';
+import getResistantToTypes from '../utils/getResistantToTypes';
 import getSpecialAttacks from '../utils/getSpecialAttacks';
 import getStrongAgainstTypes from '../utils/getStrongAgainstTypes';
 import getWeakAgainstTypes from '../utils/getWeakAgainstTypes';
-import getResistantToTypes from '../utils/getResistantToTypes';
-import store from '../store';
-import { Pokemon, Move } from '../types';
+import Attack from './Attack';
+import Evolution from './Evolution';
+import Heading from './Heading';
+import Paragraph from './Paragraph';
+import PokemonTypeLabel from './PokemonTypeLabel';
+import ProgressBar from './ProgressBar';
 
-type Props = {
-  pokemon: Pokemon;
-  style?: StyleProp<ViewStyle>;
-  navigation: any;
-};
+function PokemonDetails() {
+  const pokemon = usePokemon();
 
-function PokemonDetails({ pokemon, style, navigation }: Props) {
   const renderStat = (
     type: string,
     ratio: number,
@@ -62,7 +52,7 @@ function PokemonDetails({ pokemon, style, navigation }: Props) {
   ]);
 
   return (
-    <ScrollView style={[styles.container, style]}>
+    <ScrollView style={styles.container}>
       <View style={styles.content}>
         <View style={styles.item}>
           <Heading selectable>{pokemon.category}</Heading>
@@ -216,11 +206,7 @@ function PokemonDetails({ pokemon, style, navigation }: Props) {
 
         {pokemon.evolution ? (
           <View style={styles.item}>
-            <Evolution
-              style={styles.item}
-              pokemon={pokemon}
-              navigation={navigation}
-            />
+            <Evolution style={styles.item} pokemon={pokemon} />
           </View>
         ) : null}
 

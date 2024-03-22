@@ -1,12 +1,10 @@
 import { MaterialIcons } from '@expo/vector-icons';
-import { NavigationContainer } from '@react-navigation/native';
 import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
-import { StyleSheet, View } from 'react-native';
 import 'react-native-gesture-handler';
-import Home from './src/components/Home';
+import Navigation from './src/components/Navigation';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -28,21 +26,9 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer onReady={() => SplashScreen.hideAsync()}>
+    <>
       <StatusBar translucent />
-      <View style={styles.container}>
-        <View style={styles.statusbar} />
-        <Home />
-      </View>
-    </NavigationContainer>
+      <Navigation onReady={() => SplashScreen.hideAsync()} />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  statusbar: {
-    backgroundColor: '#fff',
-  },
-});

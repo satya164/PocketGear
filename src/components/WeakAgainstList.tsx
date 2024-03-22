@@ -1,19 +1,17 @@
+import type { StaticScreenProps } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, InteractionManager } from 'react-native';
-import Placeholder from './Placeholder';
-import Appbar from './Appbar';
-import PokemonList from './PokemonList';
-import NoResults from './NoResults';
-import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
+import { InteractionManager, StyleSheet, Text, View } from 'react-native';
 import store from '../store';
-import { Pokemon } from '../types';
+import type { Pokemon, PokemonID } from '../types';
+import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
+import Appbar from './Appbar';
+import NoResults from './NoResults';
+import Placeholder from './Placeholder';
+import PokemonList from './PokemonList';
 
-type Props = {
-  navigation: any;
-  route: any;
-};
-
-function WeakAgainstList({ navigation, route }: Props) {
+function WeakAgainstList({
+  route,
+}: StaticScreenProps<{ pokemonId: PokemonID }>) {
   const [data, setData] = useState<Pokemon[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -50,7 +48,7 @@ function WeakAgainstList({ navigation, route }: Props) {
         {loading ? (
           <Placeholder />
         ) : data.length ? (
-          <PokemonList data={data} navigation={navigation} />
+          <PokemonList data={data} />
         ) : (
           <NoResults
             source={require('../../assets/images/chansey.png')}

@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  View,
   Image,
-  Text,
   StyleSheet,
-  ImageSourcePropType,
+  Text,
+  View,
+  type ImageSourcePropType,
 } from 'react-native';
 
 type Props = {

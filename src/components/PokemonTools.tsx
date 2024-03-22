@@ -1,29 +1,15 @@
 import React from 'react';
-import {
-  View,
-  ScrollView,
-  StyleSheet,
-  StyleProp,
-  ViewStyle,
-} from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
+import { usePokemon } from '../contexts/PokemonContext';
 import CPCalculator from './CPCalculator';
-import { Pokemon } from '../types';
 
-type Props = {
-  pokemon: Pokemon;
-  style?: StyleProp<ViewStyle>;
-  navigation: any;
-};
+function PokemonTools() {
+  const pokemon = usePokemon();
 
-function PokemonTools({ pokemon, style, navigation, ...rest }: Props) {
   return (
-    <ScrollView {...rest} style={[styles.container, style]}>
+    <ScrollView style={styles.container}>
       <View style={styles.content}>
-        <CPCalculator
-          style={styles.item}
-          pokemon={pokemon}
-          navigation={navigation}
-        />
+        <CPCalculator style={styles.item} pokemon={pokemon} />
       </View>
     </ScrollView>
   );

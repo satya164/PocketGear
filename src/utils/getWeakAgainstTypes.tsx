@@ -1,5 +1,5 @@
 import store from '../store';
-import { Pokemon, PokemonType } from '../types';
+import type { Pokemon, PokemonType } from '../types';
 
 export default function getWeakAgainstTypes(pokemon: Pokemon): PokemonType[] {
   const { types } = pokemon;

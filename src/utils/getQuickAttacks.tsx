@@ -1,5 +1,5 @@
 import store from '../store';
-import { Pokemon } from '../types';
+import type { Pokemon } from '../types';
 
 export default function getQuickAttacks(pokemon: Pokemon) {
   const moves = store.getMoves();
