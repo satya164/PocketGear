@@ -14,11 +14,15 @@ const MAX_VALUES = {
   max_cp: 3904,
 };
 
-function getPokemons(): Pokemon[] {
+function getAllPokemons(): Pokemon[] {
   return pokemons as Pokemon[];
 }
 
-function getMoves(): Move[] {
+function getPokemon(id: PokemonID): Pokemon | undefined {
+  return getAllPokemons().find((p) => p.id === id);
+}
+
+function getAllMoves(): Move[] {
   return moves as Move[];
 }
 
@@ -39,8 +43,9 @@ function getMaxValues() {
 }
 
 export default {
-  getPokemons,
-  getMoves,
+  getAllPokemons,
+  getPokemon,
+  getAllMoves,
   getTypeChart,
   getSprite,
   getColor,

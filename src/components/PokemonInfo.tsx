@@ -1,6 +1,5 @@
 import type { StaticScreenProps } from '@react-navigation/native';
-import find from 'lodash/find';
-import React, { useCallback } from 'react';
+import React from 'react';
 import {
   Image,
   StyleSheet,
@@ -12,7 +11,6 @@ import {
 import { PokemonProvider } from '../contexts/PokemonContext';
 import store from '../store';
 import type { PokemonID } from '../types';
-import Appbar from './Appbar';
 import NoResults from './NoResults';
 import PokemonTypeLabel from './PokemonTypeLabel';
 
@@ -22,13 +20,7 @@ type Props = StaticScreenProps<{ pokemonId: PokemonID }> & {
 };
 
 function PokemonInfo({ route, children, style, ...rest }: Props) {
-  const getPokemon = useCallback((id: PokemonID) => {
-    const pokemons = store.getPokemons();
-    const pokemon = find(pokemons, { id });
-    return pokemon;
-  }, []);
-
-  const pokemon = getPokemon(route.params.pokemonId);
+  const pokemon = store.getPokemon(route.params.pokemonId);
   const sprite = store.getSprite(route.params.pokemonId);
 
   if (pokemon === undefined) {
@@ -42,7 +34,6 @@ function PokemonInfo({ route, children, style, ...rest }: Props) {
 
   return (
     <View {...rest} style={[styles.container, style]}>
-      <Appbar style={styles.appbar}>{'#' + pokemon.id}</Appbar>
       <View style={[styles.row, styles.meta]}>
         <View style={styles.basic}>
           <Text style={[styles.label, styles.name]}>{pokemon.name}</Text>
@@ -64,13 +55,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-
-  appbar: {
-    elevation: 0,
-    borderBottomWidth: 0,
-    shadowOpacity: 0,
-  },
-
   image: {
     marginHorizontal: 8,
     height: 72,

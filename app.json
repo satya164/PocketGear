@@ -2,6 +2,7 @@
   "expo": {
     "name": "PocketGear",
     "slug": "pocket-gear",
+    "scheme": "pocketgear",
     "privacy": "public",
     "platforms": [
       "ios",

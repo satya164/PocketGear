@@ -2,7 +2,7 @@ import store from '../store';
 import type { Pokemon } from '../types';
 
 export default function getSpecialAttacks(pokemon: Pokemon) {
-  const moves = store.getMoves();
+  const moves = store.getAllMoves();
 
   return moves
     .filter((move) => pokemon.moves.cinematic.includes(move.name))

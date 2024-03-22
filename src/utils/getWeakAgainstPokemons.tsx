@@ -13,7 +13,7 @@ export default function getWeakAgainstPokemons(pokemon: Pokemon) {
   const weakAgainst = difference(weakAgainstAll, strongAgainstAll);
 
   return store
-    .getPokemons()
+    .getAllPokemons()
     .filter(({ id }) => id !== pokemon.id)
     .filter((p) =>
       intersection(p.types, getAttackTypesForPokemon(p)).some((t) =>

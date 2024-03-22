@@ -1,5 +1,4 @@
 import debounce from 'lodash/debounce';
-import filter from 'lodash/filter';
 import React, { useState } from 'react';
 import {
   FlatList,
@@ -30,19 +29,20 @@ export default function PokemonChooser() {
     query: '',
     sort: '#',
     results: {
-      pokemons: store.getPokemons(),
+      pokemons: store.getAllPokemons(),
     },
   });
 
   const getResults = (text: string) => {
     const query = text.toLowerCase().trim();
-    const pokemons = store.getPokemons();
+    const pokemons = store.getAllPokemons();
 
     if (query) {
       if (!isNaN(Number(query))) {
-        return filter(pokemons, (p) => p.id === parseInt(query, 10));
+        return pokemons.filter((p) => p.id === parseInt(query, 10));
       }
-      return filter(pokemons, (pokemon) => {
+
+      return pokemons.filter((pokemon) => {
         return (
           /* String#startsWith doesn't work properly for unicode */
           pokemon.name.toLowerCase().indexOf(query) === 0 ||

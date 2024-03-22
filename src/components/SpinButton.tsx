@@ -67,6 +67,8 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: 'center',
     height: 36,
+    // Workaround for Web
+    width: 56,
     padding: 0,
     marginVertical: 0,
   },

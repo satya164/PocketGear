@@ -41,8 +41,6 @@ function CPCalculator({ pokemon, style }: Props) {
     setValue((prev) => prev - 1);
   };
 
-  const pokemons = store.getPokemons();
-
   if (!pokemon.evolution_cp_multipliers) {
     return (
       <View style={style}>
@@ -65,13 +63,15 @@ function CPCalculator({ pokemon, style }: Props) {
       />
       <View style={styles.container}>
         {pokemon.evolution_cp_multipliers.map((it) => {
-          const poke = pokemons.find((p) => p.id === it.id);
+          const poke = store.getPokemon(it.id);
           const minimum = (value || 0) * it.multipliers.minimum;
           const maximum = (value || 0) * it.multipliers.maximum;
           const average = (minimum + maximum) / 2;
+
           if (!poke) {
             return null;
           }
+
           return (
             <TouchableOpacity key={it.id} onPress={() => goToPokemon(it.id)}>
               <View style={styles.pokemon}>

@@ -11,7 +11,7 @@ export default function getStrongAgainstPokemons(pokemon: Pokemon) {
   const strongAgainst = difference(strongAgainstAll, weakAgainstAll);
 
   return store
-    .getPokemons()
+    .getAllPokemons()
     .filter(({ id }) => id !== pokemon.id)
     .filter(({ types }) => types.some((t) => strongAgainst.includes(t)))
     .sort(compareStrength);

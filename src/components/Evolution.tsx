@@ -28,17 +28,15 @@ function Evolution(props: Props) {
   };
 
   const getEvolutions = (pokemon: Pokemon): Pokemon[] | undefined => {
-    const pokemons = store.getPokemons();
     const { evolution } = pokemon;
 
     return evolution && evolution.branch
       ? (evolution.branch
-          .map((ev) => pokemons.find((p) => p.id === ev.id))
+          .map((ev) => store.getPokemon(ev.id))
           .filter(Boolean) as Pokemon[])
       : undefined;
   };
 
-  const pokemons = store.getPokemons();
   const { pokemon } = props;
   const { evolution } = pokemon;
 
@@ -67,7 +65,8 @@ function Evolution(props: Props) {
 
       while (curr.evolution && curr.evolution.parent) {
         const { parent } = curr.evolution;
-        const poke = pokemons.find((p) => p.id === parent);
+        const poke = store.getPokemon(parent);
+
         if (poke) {
           curr = poke;
           parents = [poke, ...parents];
@@ -80,7 +79,7 @@ function Evolution(props: Props) {
       chain.map((poke) => {
         if (poke.evolution && poke.evolution.parent) {
           const { parent } = poke.evolution;
-          const prev = pokemons.find((p) => p.id === parent);
+          const prev = store.getPokemon(parent);
 
           if (prev && prev.evolution && prev.evolution.branch) {
             const ev = prev.evolution.branch.find(({ id }) => id === poke.id);

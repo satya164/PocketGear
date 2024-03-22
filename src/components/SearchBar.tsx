@@ -261,6 +261,11 @@ const styles = StyleSheet.create({
         margin: 8,
         height: 36,
       },
+      web: {
+        paddingLeft: 48,
+        // `height` doesn't work on web
+        lineHeight: 48,
+      },
       default: {
         paddingLeft: 48,
         height: 48,

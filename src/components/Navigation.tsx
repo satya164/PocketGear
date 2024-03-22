@@ -2,13 +2,16 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import {
   createComponentForStaticNavigation,
   createStaticNavigation,
+  useRoute,
   type NavigatorScreenParams,
+  type RouteProp,
   type StaticParamList,
   type StaticScreenProps,
 } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+import store from '../store';
 import type { PokemonID } from '../types';
 import PokemonChooser from './PokemonChooser';
 import PokemonDetails from './PokemonDetails';
@@ -37,7 +40,34 @@ const styles = StyleSheet.create({
   indicator: {
     backgroundColor: '#222',
   },
+
+  title: {
+    fontFamily: 'Montserrat',
+    color: '#222',
+    fontSize: 15,
+  },
+
+  subtitle: {
+    fontFamily: 'Montserrat',
+    color: '#000',
+    opacity: 0.5,
+    fontSize: 11,
+  },
 });
+
+const MatchTitle = ({ children }: { children: React.ReactNode }) => {
+  const route =
+    useRoute<RouteProp<RootStackParamList, 'StrongAgainst' | 'WeakAgainst'>>();
+
+  const pokemon = store.getPokemon(route.params.pokemonId);
+
+  return (
+    <>
+      <Text style={styles.title}>{pokemon?.name}</Text>
+      <Text style={styles.subtitle}>{children}</Text>
+    </>
+  );
+};
 
 const InfoTabs = createMaterialTopTabNavigator({
   screenOptions: {
@@ -78,25 +108,71 @@ const InfoScreen = ({
 
 InfoScreen.config = InfoTabs.config;
 
-const HomeStack = createStackNavigator({
+const RootStack = createStackNavigator({
   screenOptions: {
-    headerShown: false,
+    cardStyle: { flex: 1 },
   },
   screens: {
-    Main: PokemonChooser,
-    StrongAgainst: StrongAgainstList,
-    WeakAgainst: WeakAgainstList,
-    Info: InfoScreen,
+    Main: {
+      screen: PokemonChooser,
+      options: { headerShown: false },
+      linking: '',
+    },
+    Info: {
+      screen: InfoScreen,
+      options: ({ route }) => {
+        return {
+          // @ts-expect-error: figure out how to type route
+          title: '#' + route.params.pokemonId,
+        };
+      },
+      linking: {
+        path: ':pokemonId',
+        parse: { pokemonId: Number },
+      },
+    },
+  },
+  groups: {
+    Matches: {
+      screenOptions: {
+        title: 'Strong against',
+        headerTitle: ({ children }) => <MatchTitle>{children}</MatchTitle>,
+      },
+      screens: {
+        StrongAgainst: {
+          screen: StrongAgainstList,
+          options: {
+            title: 'Strong against',
+          },
+          linking: {
+            path: ':pokemonId/strong-against',
+            parse: { pokemonId: Number },
+          },
+        },
+        WeakAgainst: {
+          screen: WeakAgainstList,
+          options: {
+            title: 'Weak against',
+          },
+          linking: {
+            path: ':pokemonId/weak-against',
+            parse: { pokemonId: Number },
+          },
+        },
+      },
+    },
   },
 });
 
-const Navigation = createStaticNavigation(HomeStack);
+const Navigation = createStaticNavigation(RootStack);
 
 export default Navigation;
+
+type RootStackParamList = StaticParamList<typeof RootStack>;
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace ReactNavigation {
-    interface RootParamList extends StaticParamList<typeof HomeStack> {}
+    interface RootParamList extends RootStackParamList {}
   }
 }

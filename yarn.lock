@@ -2223,6 +2223,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/metro-runtime@npm:~3.1.3":
+  version: 3.1.3
+  resolution: "@expo/metro-runtime@npm:3.1.3"
+  peerDependencies:
+    react-native: "*"
+  checksum: 10c0/0803513760f3f24f1821fd20f3d049bd432c250e1ea89c369b776422749423433bda5e3e2fb683b55ef0f900882fac725b4106273b9223e61e6983a6edfe5f51
+  languageName: node
+  linkType: hard
+
 "@expo/osascript@npm:^2.0.31":
   version: 2.1.0
   resolution: "@expo/osascript@npm:2.1.0"
@@ -6480,7 +6489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-constants@npm:~15.4.0":
+"expo-constants@npm:~15.4.0, expo-constants@npm:~15.4.3":
   version: 15.4.5
   resolution: "expo-constants@npm:15.4.5"
   dependencies:
@@ -6531,6 +6540,16 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: 10c0/d3699129ae1d536787f0e84f0e9e4cf5c1c99a6f8396057db6319de6485f8a832b98902aa13d71973c75fb9067b36290b1e9947a3fae79e6bf46348cf72c2ee5
+  languageName: node
+  linkType: hard
+
+"expo-linking@npm:~6.2.2":
+  version: 6.2.2
+  resolution: "expo-linking@npm:6.2.2"
+  dependencies:
+    expo-constants: "npm:~15.4.3"
+    invariant: "npm:^2.2.4"
+  checksum: 10c0/fcbac8ba0471e676682ee5e83fe977faf9a4430cf208654bf76a747b641a5d40cbacf86ab3898d47953cc3338446e6c7f11c3fc94284b6eeab1202fd59ddccf6
   languageName: node
   linkType: hard
 
@@ -11742,6 +11761,7 @@ __metadata:
     "@babel/core": "npm:^7.20.0"
     "@commitlint/cli": "npm:^19.2.1"
     "@commitlint/config-conventional": "npm:^19.1.0"
+    "@expo/metro-runtime": "npm:~3.1.3"
     "@expo/vector-icons": "npm:^14.0.0"
     "@react-navigation/elements": "npm:^2.0.0-alpha.15"
     "@react-navigation/material-top-tabs": "npm:^7.0.0-alpha.17"
@@ -11757,6 +11777,7 @@ __metadata:
     expo: "npm:^50.0.14"
     expo-blur: "npm:~12.9.2"
     expo-font: "npm:~11.10.3"
+    expo-linking: "npm:~6.2.2"
     expo-splash-screen: "npm:~0.26.4"
     expo-status-bar: "npm:~1.11.1"
     expo-updates: "npm:~0.24.12"
