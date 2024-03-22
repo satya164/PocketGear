@@ -1,7 +1,8 @@
 import { MaterialIcons } from '@expo/vector-icons';
+import { BlurView } from 'expo-blur';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Animated,
-  Keyboard,
   NativeSyntheticEvent,
   Platform,
   StyleProp,
@@ -12,34 +13,8 @@ import {
   View,
   ViewStyle,
 } from 'react-native';
-import FilterToggle from './FilterToggle';
-
-// type Toggle = {
-//   name: string;
-//   active: boolean;
-//   label: string;
-// };
-
-// type Props<T extends Toggle> = {
-//   onChangeText: (query: string) => void;
-//   onFocus?: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void;
-//   onBlur?: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void;
-//   placeholder: string;
-//   value: string;
-//   toggles: T[];
-//   onChangeToggle: (toggle: T) => void;
-//   style?: StyleProp<ViewStyle>;
-// };
-
-// type State = {
-//   toggles: boolean;
-//   focused: Animated.Value;
-// };
-
-// const LOLLIPOP = 21;
-
-import React, { useEffect, useRef, useState } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import FilterToggle from './FilterToggle';
 
 type Toggle = {
   name: string;
@@ -73,16 +48,22 @@ const SearchBar = <T extends Toggle>({
   const insets = useSafeAreaInsets();
   const [togglesVisible, setTogglesVisible] = useState(false);
   const focused = useRef(new Animated.Value(0)).current;
+  const inputRef = useRef<TextInput>(null);
+
+  useEffect(() => {
+    if (togglesVisible) {
+      Animated.spring(focused, {
+        toValue: 1,
+        tension: 300,
+        friction: 35,
+        useNativeDriver: true,
+      }).start();
+    }
+  }, [focused, togglesVisible]);
 
   const onFocus = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
     onCustomFocus?.(e);
-
-    Animated.spring(focused, {
-      toValue: 1,
-      tension: 300,
-      friction: 35,
-      useNativeDriver: true,
-    }).start(() => setTogglesVisible(true));
+    setTogglesVisible(true);
   };
 
   const onBlur = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
@@ -122,8 +103,12 @@ const SearchBar = <T extends Toggle>({
         style,
       ]}
     >
+      {Platform.OS === 'ios' ? (
+        <BlurView intensity={80} tint="light" style={StyleSheet.absoluteFill} />
+      ) : null}
       <Animated.View style={[styles.bar, bar]}>
         <TextInput
+          ref={inputRef}
           style={styles.input}
           placeholder={placeholder}
           value={value}
@@ -135,27 +120,31 @@ const SearchBar = <T extends Toggle>({
           onBlur={onBlur}
           returnKeyType="done"
         />
-        <MaterialIcons
-          style={[styles.icon, styles.search]}
-          name="search"
-          size={Platform.OS === 'ios' ? 16 : 24}
-        />
+        <TouchableOpacity
+          onPress={() => inputRef.current?.blur()}
+          style={[styles.touchable, styles.search]}
+        >
+          <MaterialIcons style={styles.icon} name="search" size={20} />
+        </TouchableOpacity>
         {value ? (
-          <TouchableOpacity onPress={onClearPress} style={styles.touchable}>
-            <MaterialIcons
-              style={styles.icon}
-              name="cancel"
-              size={Platform.OS === 'ios' ? 16 : 24}
-            />
+          <TouchableOpacity
+            onPress={onClearPress}
+            style={[styles.touchable, styles.clear]}
+          >
+            <MaterialIcons style={styles.icon} name="cancel" size={16} />
           </TouchableOpacity>
         ) : null}
       </Animated.View>
       <Animated.View
-        style={[styles.bar, styles.toggles, { opacity: focused }]}
+        style={[
+          styles.bar,
+          styles.toggles,
+          { display: togglesVisible ? 'flex' : 'none', opacity: focused },
+        ]}
         pointerEvents={togglesVisible ? 'auto' : 'none'}
       >
-        <Animated.View style={styles.separator} />
-        <Animated.View style={styles.row}>
+        <View style={styles.separator} />
+        <View style={styles.row}>
           {toggles.map((toggle) => (
             <FilterToggle
               key={toggle.name}
@@ -164,7 +153,7 @@ const SearchBar = <T extends Toggle>({
               onPress={() => onChangeToggle(toggle)}
             />
           ))}
-        </Animated.View>
+        </View>
       </Animated.View>
     </View>
   );
@@ -178,7 +167,6 @@ const styles = StyleSheet.create({
   },
 
   bar: {
-    backgroundColor: '#fff',
     elevation: 1,
     shadowColor: 'black',
     shadowOpacity: 0.1,
@@ -193,6 +181,13 @@ const styles = StyleSheet.create({
         ? StyleSheet.hairlineWidth
         : 0,
     borderRadius: Platform.OS === 'ios' ? 0 : 2,
+    ...Platform.select({
+      ios: null,
+      default: {
+        backgroundColor: '#fff',
+        borderRadius: 2,
+      },
+    }),
   },
 
   icon: {
@@ -201,15 +196,21 @@ const styles = StyleSheet.create({
     margin: 14,
   },
 
-  search: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-  },
-
   touchable: {
     position: 'absolute',
     top: 0,
+    bottom: 0,
+    justifyContent: 'center',
+  },
+
+  search: {
+    left: Platform.select({
+      ios: 4,
+      default: 0,
+    }),
+  },
+
+  clear: {
     right: 0,
   },
 
@@ -222,7 +223,10 @@ const styles = StyleSheet.create({
   },
 
   row: {
-    height: Platform.OS === 'ios' ? 44 : 48,
+    height: Platform.select({
+      ios: 44,
+      default: 48,
+    }),
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 2,
@@ -231,7 +235,9 @@ const styles = StyleSheet.create({
   toggles: {
     borderRadius: 0,
     ...Platform.select({
-      ios: null,
+      ios: {
+        marginTop: -8,
+      },
       default: {
         borderBottomLeftRadius: 2,
         borderBottomRightRadius: 2,
@@ -249,11 +255,11 @@ const styles = StyleSheet.create({
     paddingRight: 8,
     ...Platform.select({
       ios: {
-        paddingLeft: 28,
+        paddingLeft: 36,
         borderRadius: 5,
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#eeeeef',
         margin: 8,
-        height: 28,
+        height: 36,
       },
       default: {
         paddingLeft: 48,

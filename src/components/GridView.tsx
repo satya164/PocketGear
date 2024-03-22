@@ -61,6 +61,7 @@ const GridViewInner = <T,>(
       key={numColumns}
       numColumns={numColumns}
       removeClippedSubviews={Platform.OS !== 'ios'}
+      keyboardDismissMode="on-drag"
       data={data}
       onLayout={onLayout}
       renderItem={renderItem}
