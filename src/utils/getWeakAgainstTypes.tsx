@@ -6,6 +6,6 @@ export default function getWeakAgainstTypes(pokemon: Pokemon): PokemonType[] {
   const typeChart = store.getTypeChart();
 
   return typeChart
-    .filter(t => types.some(it => t.super_effective.includes(it)))
-    .map(t => t.name);
+    .filter((t) => types.some((it) => t.super_effective.includes(it)))
+    .map((t) => t.name);
 }

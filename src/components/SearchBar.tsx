@@ -1,4 +1,4 @@
-import { MaterialIcons } from "@expo/vector-icons";
+import { MaterialIcons } from '@expo/vector-icons';
 import {
   Animated,
   Keyboard,
@@ -11,8 +11,8 @@ import {
   TouchableOpacity,
   View,
   ViewStyle,
-} from "react-native";
-import FilterToggle from "./FilterToggle";
+} from 'react-native';
+import FilterToggle from './FilterToggle';
 
 // type Toggle = {
 //   name: string;
@@ -38,8 +38,8 @@ import FilterToggle from "./FilterToggle";
 
 // const LOLLIPOP = 21;
 
-import React, { useEffect, useRef, useState } from "react";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import React, { useEffect, useRef, useState } from 'react';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type Toggle = {
   name: string;
@@ -62,8 +62,8 @@ const LOLLIPOP = 21;
 
 const SearchBar = <T extends Toggle>({
   onChangeText,
-  onFocus,
-  onBlur,
+  onFocus: onCustomFocus,
+  onBlur: onCustomBlur,
   placeholder,
   value,
   style,
@@ -74,39 +74,30 @@ const SearchBar = <T extends Toggle>({
   const [togglesVisible, setTogglesVisible] = useState(false);
   const focused = useRef(new Animated.Value(0)).current;
 
-  useEffect(() => {
-    const handleFocus = () => {
-      Animated.spring(focused, {
-        toValue: 1,
-        tension: 300,
-        friction: 35,
-        useNativeDriver: true,
-      }).start(() => setTogglesVisible(true));
-    };
+  const onFocus = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+    onCustomFocus?.(e);
 
-    const handleBlur = () => {
-      Animated.spring(focused, {
-        toValue: 0,
-        tension: 300,
-        friction: 35,
-        useNativeDriver: true,
-      }).start(() => setTogglesVisible(false));
-    };
+    Animated.spring(focused, {
+      toValue: 1,
+      tension: 300,
+      friction: 35,
+      useNativeDriver: true,
+    }).start(() => setTogglesVisible(true));
+  };
 
-    const didShowListener = Keyboard.addListener(
-      "keyboardDidShow",
-      handleFocus
-    );
-    const didHideListener = Keyboard.addListener("keyboardDidHide", handleBlur);
+  const onBlur = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+    onCustomBlur?.(e);
 
-    return () => {
-      didShowListener.remove();
-      didHideListener.remove();
-    };
-  }, []);
+    Animated.spring(focused, {
+      toValue: 0,
+      tension: 300,
+      friction: 35,
+      useNativeDriver: true,
+    }).start(() => setTogglesVisible(false));
+  };
 
-  const handleClearPress = () => {
-    onChangeText("");
+  const onClearPress = () => {
+    onChangeText('');
   };
 
   const radius = focused.interpolate({
@@ -114,7 +105,7 @@ const SearchBar = <T extends Toggle>({
     outputRange: [2, 0],
   });
 
-  const bar = Platform.OS === "android" && {
+  const bar = Platform.OS === 'android' && {
     borderBottomLeftRadius: radius,
     borderBottomRightRadius: radius,
   };
@@ -147,21 +138,21 @@ const SearchBar = <T extends Toggle>({
         <MaterialIcons
           style={[styles.icon, styles.search]}
           name="search"
-          size={Platform.OS === "ios" ? 16 : 24}
+          size={Platform.OS === 'ios' ? 16 : 24}
         />
         {value ? (
-          <TouchableOpacity onPress={handleClearPress} style={styles.touchable}>
+          <TouchableOpacity onPress={onClearPress} style={styles.touchable}>
             <MaterialIcons
               style={styles.icon}
               name="cancel"
-              size={Platform.OS === "ios" ? 16 : 24}
+              size={Platform.OS === 'ios' ? 16 : 24}
             />
           </TouchableOpacity>
         ) : null}
       </Animated.View>
       <Animated.View
         style={[styles.bar, styles.toggles, { opacity: focused }]}
-        pointerEvents={togglesVisible ? "auto" : "none"}
+        pointerEvents={togglesVisible ? 'auto' : 'none'}
       >
         <Animated.View style={styles.separator} />
         <Animated.View style={styles.row}>
@@ -181,59 +172,59 @@ const SearchBar = <T extends Toggle>({
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: Platform.OS === "ios" ? 0 : 8,
-    marginTop: Platform.OS === "ios" ? 0 : 8,
+    marginHorizontal: Platform.OS === 'ios' ? 0 : 8,
+    marginTop: Platform.OS === 'ios' ? 0 : 8,
     marginBottom: 0,
   },
 
   bar: {
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
     elevation: 1,
-    shadowColor: "black",
+    shadowColor: 'black',
     shadowOpacity: 0.1,
     shadowRadius: StyleSheet.hairlineWidth,
     shadowOffset: {
       height: StyleSheet.hairlineWidth,
       width: 0,
     },
-    borderColor: "rgba(0, 0, 0, 0.16)",
+    borderColor: 'rgba(0, 0, 0, 0.16)',
     borderWidth:
-      Platform.OS === "android" && Platform.Version < LOLLIPOP
+      Platform.OS === 'android' && Platform.Version < LOLLIPOP
         ? StyleSheet.hairlineWidth
         : 0,
-    borderRadius: Platform.OS === "ios" ? 0 : 2,
+    borderRadius: Platform.OS === 'ios' ? 0 : 2,
   },
 
   icon: {
-    backgroundColor: "transparent",
-    color: "rgba(0, 0, 0, .32)",
+    backgroundColor: 'transparent',
+    color: 'rgba(0, 0, 0, .32)',
     margin: 14,
   },
 
   search: {
-    position: "absolute",
+    position: 'absolute',
     top: 0,
     left: 0,
   },
 
   touchable: {
-    position: "absolute",
+    position: 'absolute',
     top: 0,
     right: 0,
   },
 
   separator: {
-    backgroundColor: "rgba(0, 0, 0, 0.16)",
+    backgroundColor: 'rgba(0, 0, 0, 0.16)',
     height:
-      Platform.OS === "android" && Platform.Version >= LOLLIPOP
+      Platform.OS === 'android' && Platform.Version >= LOLLIPOP
         ? StyleSheet.hairlineWidth
         : 0,
   },
 
   row: {
-    height: Platform.OS === "ios" ? 44 : 48,
-    flexDirection: "row",
-    alignItems: "center",
+    height: Platform.OS === 'ios' ? 44 : 48,
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingHorizontal: 2,
   },
 
@@ -249,9 +240,9 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    fontFamily: "Montserrat",
+    fontFamily: 'Montserrat',
     fontSize: 13,
-    color: "#000",
+    color: '#000',
     flex: 1,
     margin: 0,
     paddingVertical: 0,
@@ -260,7 +251,7 @@ const styles = StyleSheet.create({
       ios: {
         paddingLeft: 28,
         borderRadius: 5,
-        backgroundColor: "#f0f0f0",
+        backgroundColor: '#f0f0f0',
         margin: 8,
         height: 28,
       },

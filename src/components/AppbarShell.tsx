@@ -1,32 +1,44 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Platform, StyleSheet, View, StyleProp, ViewStyle } from 'react-native';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import { getDefaultHeaderHeight } from '@react-navigation/elements';
 
 type Props = {
   style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
 };
 
-const BAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 const LOLLIPOP = 21;
 
-export default class AppbarShell extends PureComponent<Props> {
-  static HEIGHT = BAR_HEIGHT;
+function AppbarShell({ style, children }: Props) {
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
 
-  render() {
-    return (
-      <View {...this.props} style={[styles.appbar, this.props.style]}>
-        {this.props.children}
-      </View>
-    );
-  }
+  return (
+    <View
+      style={[
+        styles.appbar,
+        {
+          height: getDefaultHeaderHeight(frame, false, insets.top),
+          paddingTop: insets.top,
+          paddingLeft: insets.left,
+          paddingRight: insets.right,
+        },
+        style,
+      ]}
+    >
+      {children}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   appbar: {
     flexDirection: 'row',
     alignItems: 'center',
-    height: BAR_HEIGHT,
-    marginTop: Platform.OS === 'ios' ? 20 : 0,
     backgroundColor: '#fff',
     elevation: 1,
     shadowColor: 'black',
@@ -44,3 +56,5 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
 });
+
+export default AppbarShell;

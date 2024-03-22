@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -12,112 +12,97 @@ import PokemonListCard from './PokemonListCard';
 import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
 import getStrongAgainstPokemons from '../utils/getStrongAgainstPokemons';
 import findClosestMatch from '../utils/findClosestMatch';
-import { Pokemon, PokemonID } from '../types';
+import { Pokemon } from '../types';
 
 type Props = {
   pokemon: Pokemon;
   navigation: any;
 };
 
-type State = {
-  containerWidth: number;
-};
+function PokemonMatches({ pokemon, navigation }: Props) {
+  const [containerWidth, setContainerWidth] = useState(
+    Dimensions.get('window').width
+  );
 
-export default class PokemonMatches extends PureComponent<Props, State> {
-  state: State = {
-    containerWidth: Dimensions.get('window').width,
-  };
-
-  _goToPokemon = (pokemonId: PokemonID) => () => {
-    this.props.navigation.push('Info', {
-      pokemonId,
+  const onStrongPress = () => {
+    navigation.push('StrongAgainst', {
+      pokemonId: pokemon.id,
     });
   };
 
-  _handleStrongPress = () => {
-    this.props.navigation.push('StrongAgainst', {
-      pokemonId: this.props.pokemon.id,
+  const onWeakPress = () => {
+    navigation.push('WeakAgainst', {
+      pokemonId: pokemon.id,
     });
   };
 
-  _handleWeakPress = () => {
-    this.props.navigation.push('WeakAgainst', {
-      pokemonId: this.props.pokemon.id,
-    });
-  };
-
-  _handleLayout = (e: LayoutChangeEvent) => {
-    if (this.state.containerWidth === e.nativeEvent.layout.width) {
+  const onLayout = (e: LayoutChangeEvent) => {
+    if (containerWidth === e.nativeEvent.layout.width) {
       return;
     }
 
-    this.setState({
-      containerWidth: e.nativeEvent.layout.width,
-    });
+    setContainerWidth(e.nativeEvent.layout.width);
   };
 
-  render() {
-    const { pokemon } = this.props;
-    const { containerWidth } = this.state;
-    const weakAgainstPokemons = getWeakAgainstPokemons(pokemon);
-    const strongAgainstPokemons = getStrongAgainstPokemons(pokemon);
+  const weakAgainstPokemons = getWeakAgainstPokemons(pokemon);
+  const strongAgainstPokemons = getStrongAgainstPokemons(pokemon);
 
-    const strongAgainstFirst: Pokemon | undefined = strongAgainstPokemons.length
-      ? findClosestMatch(strongAgainstPokemons, pokemon, false)
-      : undefined;
+  const strongAgainstFirst: Pokemon | undefined = strongAgainstPokemons.length
+    ? findClosestMatch(strongAgainstPokemons, pokemon, false)
+    : undefined;
 
-    const weakAgainstFirst: Pokemon | undefined = weakAgainstPokemons.length
-      ? findClosestMatch(weakAgainstPokemons, pokemon)
-      : undefined;
+  const weakAgainstFirst: Pokemon | undefined = weakAgainstPokemons.length
+    ? findClosestMatch(weakAgainstPokemons, pokemon)
+    : undefined;
 
-    const cardStyle = {
-      width: (containerWidth - 8) / Math.floor(containerWidth / 160) - 8,
-      margin: 4,
-    };
+  const cardStyle = {
+    width: (containerWidth - 8) / Math.floor(containerWidth / 160) - 8,
+    margin: 4,
+  };
 
-    return (
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={styles.content}
-      >
-        {strongAgainstFirst && (
-          <View>
-            <Text style={styles.heading}>
-              Strong against ({strongAgainstPokemons.length})
-            </Text>
-            <View style={styles.row}>
-              <PokemonListCard
-                pokemon={strongAgainstFirst}
-                navigation={this.props.navigation}
-                style={cardStyle}
-              />
-              {strongAgainstPokemons.length > 1 && (
-                <More onPress={this._handleStrongPress} style={cardStyle} />
-              )}
-            </View>
+  return (
+    <ScrollView
+      style={styles.container}
+      contentContainerStyle={styles.content}
+      onLayout={onLayout}
+    >
+      {strongAgainstFirst && (
+        <View>
+          <Text style={styles.heading}>
+            Strong against ({strongAgainstPokemons.length})
+          </Text>
+          <View style={styles.row}>
+            <PokemonListCard
+              pokemon={strongAgainstFirst}
+              navigation={navigation}
+              style={cardStyle}
+            />
+            {strongAgainstPokemons.length > 1 && (
+              <More onPress={onStrongPress} style={cardStyle} />
+            )}
           </View>
-        )}
+        </View>
+      )}
 
-        {weakAgainstFirst && (
-          <View>
-            <Text style={styles.heading}>
-              Weak against ({weakAgainstPokemons.length})
-            </Text>
-            <View style={styles.row}>
-              <PokemonListCard
-                pokemon={weakAgainstFirst}
-                navigation={this.props.navigation}
-                style={cardStyle}
-              />
-              {weakAgainstPokemons.length > 1 && (
-                <More onPress={this._handleWeakPress} style={cardStyle} />
-              )}
-            </View>
+      {weakAgainstFirst && (
+        <View>
+          <Text style={styles.heading}>
+            Weak against ({weakAgainstPokemons.length})
+          </Text>
+          <View style={styles.row}>
+            <PokemonListCard
+              pokemon={weakAgainstFirst}
+              navigation={navigation}
+              style={cardStyle}
+            />
+            {weakAgainstPokemons.length > 1 && (
+              <More onPress={onWeakPress} style={cardStyle} />
+            )}
           </View>
-        )}
-      </ScrollView>
-    );
-  }
+        </View>
+      )}
+    </ScrollView>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -143,3 +128,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
 });
+
+export default PokemonMatches;

@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { TouchableOpacity, GestureResponderEvent } from 'react-native';
 
 type Props = React.ComponentProps<typeof TouchableOpacity> & {
@@ -6,55 +6,49 @@ type Props = React.ComponentProps<typeof TouchableOpacity> & {
   children: React.ReactNode;
 };
 
-export default class TouchableButton extends PureComponent<Props> {
-  componentWillUnmount() {
-    this._cleanUp();
-  }
+function TouchableButton({ onPress: onPressCustom, children, ...rest }: Props) {
+  const intervalRef = useRef<NodeJS.Timeout>();
+  const timeoutRef = useRef<NodeJS.Timeout>();
+  const handledRef = useRef<boolean>(false);
 
-  _interval: any;
-  _timeout: any;
-  _handled: boolean = false;
+  useEffect(() => {
+    return () => {
+      cleanUp();
+    };
+  }, []);
 
-  _cleanUp = () => {
-    if (this._interval) {
-      clearInterval(this._interval);
+  const cleanUp = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
     }
-    if (this._timeout) {
-      clearInterval(this._timeout);
+    if (timeoutRef.current) {
+      clearInterval(timeoutRef.current);
     }
-    this._handled = false;
+    handledRef.current = false;
   };
 
-  _handlePressIn = (e: any) => {
-    this._timeout = setTimeout(() => {
-      this._interval = setInterval(() => {
-        this._handled = true;
-        this.props.onPress(e);
+  const onPressIn = (e: GestureResponderEvent) => {
+    timeoutRef.current = setTimeout(() => {
+      intervalRef.current = setInterval(() => {
+        handledRef.current = true;
+        onPressCustom(e);
       }, 50);
     }, 750);
   };
 
-  _handlePressOut = () => {
-    this._cleanUp();
-  };
-
-  _handlePress = (e: any) => {
-    if (this._handled) {
-      return;
+  const onPressOut = (e: GestureResponderEvent) => {
+    if (!handledRef.current) {
+      onPressCustom(e);
     }
-    this.props.onPress(e);
+
+    cleanUp();
   };
 
-  render() {
-    return (
-      <TouchableOpacity
-        {...this.props}
-        onPress={this._handlePress}
-        onPressIn={this._handlePressIn}
-        onPressOut={this._handlePressOut}
-      >
-        {this.props.children}
-      </TouchableOpacity>
-    );
-  }
+  return (
+    <TouchableOpacity {...rest} onPressIn={onPressIn} onPressOut={onPressOut}>
+      {children}
+    </TouchableOpacity>
+  );
 }
+
+export default TouchableButton;

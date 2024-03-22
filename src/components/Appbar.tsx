@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Platform,
   StyleSheet,
@@ -6,47 +6,35 @@ import {
   View,
   StyleProp,
   ViewStyle,
-} from "react-native";
-import { MaterialIcons, EvilIcons } from "@expo/vector-icons";
-import TouchableItem from "./TouchableItem";
-import AppbarShell from "./AppbarShell";
-import { useNavigation } from "@react-navigation/native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+} from 'react-native';
+import { MaterialIcons, EvilIcons } from '@expo/vector-icons';
+import TouchableItem from './TouchableItem';
+import AppbarShell from './AppbarShell';
+import { useNavigation } from '@react-navigation/native';
 
 type Props = {
   style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
 };
 
-function Appbar({ style, children, ...rest }: Props) {
-  const insets = useSafeAreaInsets();
+function Appbar({ children, ...rest }: Props) {
   const navigation = useNavigation();
 
   return (
-    <AppbarShell
-      {...rest}
-      style={[
-        {
-          paddingTop: insets.top,
-          paddingLeft: insets.left,
-          paddingRight: insets.right,
-        },
-        style,
-      ]}
-    >
+    <AppbarShell {...rest}>
       <TouchableItem
         borderless
         style={styles.button}
         onPress={navigation.goBack}
       >
-        {Platform.OS === "ios" ? (
+        {Platform.OS === 'ios' ? (
           <EvilIcons name="chevron-left" size={36} style={styles.icon} />
         ) : (
           <MaterialIcons name="arrow-back" size={24} style={styles.icon} />
         )}
       </TouchableItem>
       <View style={styles.content}>
-        {typeof children === "string" ? (
+        {typeof children === 'string' ? (
           <Text numberOfLines={1} style={styles.title}>
             {children}
           </Text>
@@ -61,26 +49,27 @@ function Appbar({ style, children, ...rest }: Props) {
 
 const styles = StyleSheet.create({
   icon: {
-    color: "#222",
+    color: '#222',
   },
 
   button: {
-    height: AppbarShell.HEIGHT,
-    width: AppbarShell.HEIGHT - 8,
-    alignItems: "center",
-    justifyContent: "center",
+    height: '100%',
+    aspectRatio: 1,
+    marginHorizontal: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   title: {
-    color: "#222",
-    fontFamily: "Montserrat",
-    fontSize: Platform.OS === "ios" ? 16 : 18,
+    color: '#222',
+    fontFamily: 'Montserrat',
+    fontSize: Platform.OS === 'ios' ? 16 : 18,
   },
 
   content: {
     flex: 1,
-    alignItems: Platform.OS === "ios" ? "center" : "flex-start",
-    justifyContent: "center",
+    alignItems: Platform.OS === 'ios' ? 'center' : 'flex-start',
+    justifyContent: 'center',
     marginHorizontal: 8,
   },
 });

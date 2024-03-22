@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Image,
@@ -19,93 +19,82 @@ type Props = {
   style: StyleProp<ViewStyle>;
 };
 
-type State = {
-  value: number;
-};
+function CPCalculator({ pokemon, navigation, style }: Props) {
+  const [value, setValue] = useState(Math.round(pokemon.points.max_cp / 2));
 
-export default class CPCalculator extends PureComponent<Props, State> {
-  constructor(props: Props) {
-    super(props);
-
-    this.state = {
-      value: Math.round(this.props.pokemon.points.max_cp / 2),
-    };
-  }
-
-  state: State;
-
-  _goToPokemon = (pokemonId: PokemonID) => {
-    this.props.navigation.push('Info', {
+  const goToPokemon = (pokemonId: PokemonID) => {
+    navigation.push('Info', {
       pokemonId,
     });
   };
 
-  _handleChangeValue = (value: number) => {
-    this.setState({
-      value,
-    });
+  const onValueChange = (newValue: number) => {
+    setValue(newValue);
   };
 
-  render() {
-    const { pokemon } = this.props;
+  const onIncrement = () => {
+    setValue((prev) => prev + 1);
+  };
 
-    const pokemons = store.getPokemons();
+  const onDecrement = () => {
+    setValue((prev) => prev - 1);
+  };
 
-    if (!pokemon.evolution_cp_multipliers) {
-      return (
-        <View {...this.props}>
-          <Text style={styles.text}>
-            CP Calculator is not available for this Pokémon.
-          </Text>
-        </View>
-      );
-    }
+  const pokemons = store.getPokemons();
 
+  if (!pokemon.evolution_cp_multipliers) {
     return (
-      <View {...this.props}>
-        <Heading>CP after evolution</Heading>
-        <SpinButton
-          value={this.state.value}
-          onChangeValue={this._handleChangeValue}
-          style={styles.spinbutton}
-        />
-        <View style={styles.container}>
-          {pokemon.evolution_cp_multipliers.map(it => {
-            const poke = pokemons.find(p => p.id === it.id);
-            const minimum = (this.state.value || 0) * it.multipliers.minimum;
-            const maximum = (this.state.value || 0) * it.multipliers.maximum;
-            const average = (minimum + maximum) / 2;
-            if (!poke) {
-              return null;
-            }
-            return (
-              <TouchableOpacity
-                key={it.id}
-                onPress={() => this._goToPokemon(it.id)}
-              >
-                <View style={styles.pokemon}>
-                  <Image source={store.getSprite(it.id)} style={styles.image} />
-                  <Text style={[styles.text, styles.small]}>{poke.name}</Text>
-                  <Text style={[styles.text, styles.amount]}>
-                    {Math.round(average)}
-                  </Text>
-                  <View style={styles.row}>
-                    <Text style={[styles.text, styles.small, styles.value]}>
-                      {Math.floor(minimum)}
-                    </Text>
-                    <Text style={[styles.text, styles.small]}>-</Text>
-                    <Text style={[styles.text, styles.small, styles.value]}>
-                      {Math.ceil(maximum)}
-                    </Text>
-                  </View>
-                </View>
-              </TouchableOpacity>
-            );
-          })}
-        </View>
+      <View style={style}>
+        <Text style={styles.text}>
+          CP Calculator is not available for this Pokémon.
+        </Text>
       </View>
     );
   }
+
+  return (
+    <View style={style}>
+      <Heading>CP after evolution</Heading>
+      <SpinButton
+        value={value}
+        onValueChange={onValueChange}
+        onIncrement={onIncrement}
+        onDecrement={onDecrement}
+        style={styles.spinbutton}
+      />
+      <View style={styles.container}>
+        {pokemon.evolution_cp_multipliers.map((it) => {
+          const poke = pokemons.find((p) => p.id === it.id);
+          const minimum = (value || 0) * it.multipliers.minimum;
+          const maximum = (value || 0) * it.multipliers.maximum;
+          const average = (minimum + maximum) / 2;
+          if (!poke) {
+            return null;
+          }
+          return (
+            <TouchableOpacity key={it.id} onPress={() => goToPokemon(it.id)}>
+              <View style={styles.pokemon}>
+                <Image source={store.getSprite(it.id)} style={styles.image} />
+                <Text style={[styles.text, styles.small]}>{poke.name}</Text>
+                <Text style={[styles.text, styles.amount]}>
+                  {Math.round(average)}
+                </Text>
+                <View style={styles.row}>
+                  <Text style={[styles.text, styles.small, styles.value]}>
+                    {Math.floor(minimum)}
+                  </Text>
+                  <Text style={[styles.text, styles.small]}>-</Text>
+                  <Text style={[styles.text, styles.small, styles.value]}>
+                    {Math.ceil(maximum)}
+                  </Text>
+                </View>
+              </View>
+            </TouchableOpacity>
+          );
+        })}
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -158,3 +147,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
+
+export default CPCalculator;

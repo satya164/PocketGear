@@ -2,20 +2,10 @@
   {
     "id": 1,
     "name": "Bulbasaur",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Vine Whip",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Sludge Bomb",
-        "Seed Bomb",
-        "Power Whip"
-      ]
+      "quick": ["Vine Whip", "Tackle"],
+      "cinematic": ["Sludge Bomb", "Seed Bomb", "Power Whip"]
     },
     "stats": {
       "attack": 118,
@@ -81,20 +71,10 @@
   {
     "id": 2,
     "name": "Ivysaur",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Vine Whip"
-      ],
-      "cinematic": [
-        "Sludge Bomb",
-        "Solar Beam",
-        "Power Whip"
-      ]
+      "quick": ["Razor Leaf", "Vine Whip"],
+      "cinematic": ["Sludge Bomb", "Solar Beam", "Power Whip"]
     },
     "stats": {
       "attack": 151,
@@ -157,20 +137,10 @@
   {
     "id": 3,
     "name": "Venusaur",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Vine Whip"
-      ],
-      "cinematic": [
-        "Sludge Bomb",
-        "Petal Blizzard",
-        "Solar Beam"
-      ]
+      "quick": ["Razor Leaf", "Vine Whip"],
+      "cinematic": ["Sludge Bomb", "Petal Blizzard", "Solar Beam"]
     },
     "stats": {
       "attack": 198,
@@ -217,19 +187,10 @@
   {
     "id": 4,
     "name": "Charmander",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Scratch"
-      ],
-      "cinematic": [
-        "Flame Charge",
-        "Flame Burst",
-        "Flamethrower"
-      ]
+      "quick": ["Ember", "Scratch"],
+      "cinematic": ["Flame Charge", "Flame Burst", "Flamethrower"]
     },
     "stats": {
       "attack": 116,
@@ -295,19 +256,10 @@
   {
     "id": 5,
     "name": "Charmeleon",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Fire Fang"
-      ],
-      "cinematic": [
-        "Fire Punch",
-        "Flame Burst",
-        "Flamethrower"
-      ]
+      "quick": ["Ember", "Fire Fang"],
+      "cinematic": ["Fire Punch", "Flame Burst", "Flamethrower"]
     },
     "stats": {
       "attack": 158,
@@ -370,20 +322,10 @@
   {
     "id": 6,
     "name": "Charizard",
-    "types": [
-      "Fire",
-      "Flying"
-    ],
+    "types": ["Fire", "Flying"],
     "moves": {
-      "quick": [
-        "Fire Spin",
-        "Air Slash"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Dragon Claw",
-        "Overheat"
-      ]
+      "quick": ["Fire Spin", "Air Slash"],
+      "cinematic": ["Fire Blast", "Dragon Claw", "Overheat"]
     },
     "stats": {
       "attack": 223,
@@ -430,19 +372,10 @@
   {
     "id": 7,
     "name": "Squirtle",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Aqua Jet",
-        "Aqua Tail",
-        "Water Pulse"
-      ]
+      "quick": ["Bubble", "Tackle"],
+      "cinematic": ["Aqua Jet", "Aqua Tail", "Water Pulse"]
     },
     "stats": {
       "attack": 94,
@@ -512,19 +445,10 @@
   {
     "id": 8,
     "name": "Wartortle",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Bite"
-      ],
-      "cinematic": [
-        "Aqua Jet",
-        "Ice Beam",
-        "Hydro Pump"
-      ]
+      "quick": ["Water Gun", "Bite"],
+      "cinematic": ["Aqua Jet", "Ice Beam", "Hydro Pump"]
     },
     "stats": {
       "attack": 126,
@@ -591,19 +515,10 @@
   {
     "id": 9,
     "name": "Blastoise",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Bite"
-      ],
-      "cinematic": [
-        "Flash Cannon",
-        "Ice Beam",
-        "Hydro Pump"
-      ]
+      "quick": ["Water Gun", "Bite"],
+      "cinematic": ["Flash Cannon", "Ice Beam", "Hydro Pump"]
     },
     "stats": {
       "attack": 171,
@@ -650,17 +565,10 @@
   {
     "id": 10,
     "name": "Caterpie",
-    "types": [
-      "Bug"
-    ],
+    "types": ["Bug"],
     "moves": {
-      "quick": [
-        "Bug Bite",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Bug Bite", "Tackle"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 55,
@@ -722,17 +630,10 @@
   {
     "id": 11,
     "name": "Metapod",
-    "types": [
-      "Bug"
-    ],
+    "types": ["Bug"],
     "moves": {
-      "quick": [
-        "Bug Bite",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Bug Bite", "Tackle"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 45,
@@ -795,20 +696,10 @@
   {
     "id": 12,
     "name": "Butterfree",
-    "types": [
-      "Bug",
-      "Flying"
-    ],
+    "types": ["Bug", "Flying"],
     "moves": {
-      "quick": [
-        "Struggle Bug",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Bug Buzz",
-        "Psychic",
-        "Signal Beam"
-      ]
+      "quick": ["Struggle Bug", "Confusion"],
+      "cinematic": ["Bug Buzz", "Psychic", "Signal Beam"]
     },
     "stats": {
       "attack": 167,
@@ -855,18 +746,10 @@
   {
     "id": 13,
     "name": "Weedle",
-    "types": [
-      "Bug",
-      "Poison"
-    ],
+    "types": ["Bug", "Poison"],
     "moves": {
-      "quick": [
-        "Bug Bite",
-        "Poison Sting"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Bug Bite", "Poison Sting"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 63,
@@ -932,18 +815,10 @@
   {
     "id": 14,
     "name": "Kakuna",
-    "types": [
-      "Bug",
-      "Poison"
-    ],
+    "types": ["Bug", "Poison"],
     "moves": {
-      "quick": [
-        "Bug Bite",
-        "Poison Sting"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Bug Bite", "Poison Sting"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 46,
@@ -1002,20 +877,10 @@
   {
     "id": 15,
     "name": "Beedrill",
-    "types": [
-      "Bug",
-      "Poison"
-    ],
+    "types": ["Bug", "Poison"],
     "moves": {
-      "quick": [
-        "Infestation",
-        "Poison Jab"
-      ],
-      "cinematic": [
-        "Sludge Bomb",
-        "Aerial Ace",
-        "X Scissor"
-      ]
+      "quick": ["Infestation", "Poison Jab"],
+      "cinematic": ["Sludge Bomb", "Aerial Ace", "X Scissor"]
     },
     "stats": {
       "attack": 169,
@@ -1062,20 +927,10 @@
   {
     "id": 16,
     "name": "Pidgey",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Quick Attack",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Twister",
-        "Aerial Ace",
-        "Air Cutter"
-      ]
+      "quick": ["Quick Attack", "Tackle"],
+      "cinematic": ["Twister", "Aerial Ace", "Air Cutter"]
     },
     "stats": {
       "attack": 85,
@@ -1137,20 +992,10 @@
   {
     "id": 17,
     "name": "Pidgeotto",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Wing Attack",
-        "Steel Wing"
-      ],
-      "cinematic": [
-        "Twister",
-        "Aerial Ace",
-        "Air Cutter"
-      ]
+      "quick": ["Wing Attack", "Steel Wing"],
+      "cinematic": ["Twister", "Aerial Ace", "Air Cutter"]
     },
     "stats": {
       "attack": 117,
@@ -1209,20 +1054,10 @@
   {
     "id": 18,
     "name": "Pidgeot",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Air Slash",
-        "Steel Wing"
-      ],
-      "cinematic": [
-        "Hurricane",
-        "Aerial Ace",
-        "Brave Bird"
-      ]
+      "quick": ["Air Slash", "Steel Wing"],
+      "cinematic": ["Hurricane", "Aerial Ace", "Brave Bird"]
     },
     "stats": {
       "attack": 166,
@@ -1265,19 +1100,10 @@
   {
     "id": 19,
     "name": "Rattata",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Dig",
-        "Hyper Fang",
-        "Body Slam"
-      ]
+      "quick": ["Tackle", "Quick Attack"],
+      "cinematic": ["Dig", "Hyper Fang", "Body Slam"]
     },
     "stats": {
       "attack": 103,
@@ -1343,19 +1169,10 @@
   {
     "id": 20,
     "name": "Raticate",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Dig",
-        "Hyper Fang",
-        "Hyper Beam"
-      ]
+      "quick": ["Bite", "Quick Attack"],
+      "cinematic": ["Dig", "Hyper Fang", "Hyper Beam"]
     },
     "stats": {
       "attack": 161,
@@ -1402,20 +1219,10 @@
   {
     "id": 21,
     "name": "Spearow",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Aerial Ace",
-        "Drill Peck",
-        "Sky Attack"
-      ]
+      "quick": ["Peck", "Quick Attack"],
+      "cinematic": ["Aerial Ace", "Drill Peck", "Sky Attack"]
     },
     "stats": {
       "attack": 112,
@@ -1481,20 +1288,10 @@
   {
     "id": 22,
     "name": "Fearow",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Steel Wing"
-      ],
-      "cinematic": [
-        "Aerial Ace",
-        "Drill Run",
-        "Sky Attack"
-      ]
+      "quick": ["Peck", "Steel Wing"],
+      "cinematic": ["Aerial Ace", "Drill Run", "Sky Attack"]
     },
     "stats": {
       "attack": 182,
@@ -1541,19 +1338,10 @@
   {
     "id": 23,
     "name": "Ekans",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Poison Sting",
-        "Acid"
-      ],
-      "cinematic": [
-        "Wrap",
-        "Poison Fang",
-        "Sludge Bomb"
-      ]
+      "quick": ["Poison Sting", "Acid"],
+      "cinematic": ["Wrap", "Poison Fang", "Sludge Bomb"]
     },
     "stats": {
       "attack": 110,
@@ -1615,19 +1403,10 @@
   {
     "id": 24,
     "name": "Arbok",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Acid"
-      ],
-      "cinematic": [
-        "Dark Pulse",
-        "Sludge Wave",
-        "Gunk Shot"
-      ]
+      "quick": ["Bite", "Acid"],
+      "cinematic": ["Dark Pulse", "Sludge Wave", "Gunk Shot"]
     },
     "stats": {
       "attack": 167,
@@ -1670,19 +1449,10 @@
   {
     "id": 25,
     "name": "Pikachu",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Thunder Shock",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Discharge",
-        "Thunderbolt",
-        "Wild Charge"
-      ]
+      "quick": ["Thunder Shock", "Quick Attack"],
+      "cinematic": ["Discharge", "Thunderbolt", "Wild Charge"]
     },
     "stats": {
       "attack": 112,
@@ -1752,19 +1522,10 @@
   {
     "id": 26,
     "name": "Raichu",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Volt Switch",
-        "Spark"
-      ],
-      "cinematic": [
-        "Brick Break",
-        "Thunder Punch",
-        "Wild Charge"
-      ]
+      "quick": ["Volt Switch", "Spark"],
+      "cinematic": ["Brick Break", "Thunder Punch", "Wild Charge"]
     },
     "stats": {
       "attack": 193,
@@ -1811,19 +1572,10 @@
   {
     "id": 27,
     "name": "Sandshrew",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Dig",
-        "Rock Slide",
-        "Sand Tomb"
-      ]
+      "quick": ["Scratch", "Mud Shot"],
+      "cinematic": ["Dig", "Rock Slide", "Sand Tomb"]
     },
     "stats": {
       "attack": 126,
@@ -1889,19 +1641,10 @@
   {
     "id": 28,
     "name": "Sandslash",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Metal Claw",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Earthquake",
-        "Rock Tomb",
-        "Bulldoze"
-      ]
+      "quick": ["Metal Claw", "Mud Shot"],
+      "cinematic": ["Earthquake", "Rock Tomb", "Bulldoze"]
     },
     "stats": {
       "attack": 182,
@@ -1948,19 +1691,10 @@
   {
     "id": 29,
     "name": "Nidoran♀",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Poison Sting"
-      ],
-      "cinematic": [
-        "Poison Fang",
-        "Body Slam",
-        "Sludge Bomb"
-      ]
+      "quick": ["Bite", "Poison Sting"],
+      "cinematic": ["Poison Fang", "Body Slam", "Sludge Bomb"]
     },
     "stats": {
       "attack": 86,
@@ -2030,19 +1764,10 @@
   {
     "id": 30,
     "name": "Nidorina",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Poison Sting"
-      ],
-      "cinematic": [
-        "Poison Fang",
-        "Dig",
-        "Sludge Bomb"
-      ]
+      "quick": ["Bite", "Poison Sting"],
+      "cinematic": ["Poison Fang", "Dig", "Sludge Bomb"]
     },
     "stats": {
       "attack": 117,
@@ -2105,20 +1830,10 @@
   {
     "id": 31,
     "name": "Nidoqueen",
-    "types": [
-      "Poison",
-      "Ground"
-    ],
+    "types": ["Poison", "Ground"],
     "moves": {
-      "quick": [
-        "Poison Jab",
-        "Bite"
-      ],
-      "cinematic": [
-        "Earthquake",
-        "Sludge Wave",
-        "Stone Edge"
-      ]
+      "quick": ["Poison Jab", "Bite"],
+      "cinematic": ["Earthquake", "Sludge Wave", "Stone Edge"]
     },
     "stats": {
       "attack": 180,
@@ -2165,19 +1880,10 @@
   {
     "id": 32,
     "name": "Nidoran♂",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Poison Sting"
-      ],
-      "cinematic": [
-        "Horn Attack",
-        "Body Slam",
-        "Sludge Bomb"
-      ]
+      "quick": ["Peck", "Poison Sting"],
+      "cinematic": ["Horn Attack", "Body Slam", "Sludge Bomb"]
     },
     "stats": {
       "attack": 105,
@@ -2247,19 +1953,10 @@
   {
     "id": 33,
     "name": "Nidorino",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Poison Jab",
-        "Poison Sting"
-      ],
-      "cinematic": [
-        "Horn Attack",
-        "Dig",
-        "Sludge Bomb"
-      ]
+      "quick": ["Poison Jab", "Poison Sting"],
+      "cinematic": ["Horn Attack", "Dig", "Sludge Bomb"]
     },
     "stats": {
       "attack": 137,
@@ -2322,20 +2019,10 @@
   {
     "id": 34,
     "name": "Nidoking",
-    "types": [
-      "Poison",
-      "Ground"
-    ],
+    "types": ["Poison", "Ground"],
     "moves": {
-      "quick": [
-        "Poison Jab",
-        "Iron Tail"
-      ],
-      "cinematic": [
-        "Earthquake",
-        "Sludge Wave",
-        "Megahorn"
-      ]
+      "quick": ["Poison Jab", "Iron Tail"],
+      "cinematic": ["Earthquake", "Sludge Wave", "Megahorn"]
     },
     "stats": {
       "attack": 204,
@@ -2382,19 +2069,10 @@
   {
     "id": 35,
     "name": "Clefairy",
-    "types": [
-      "Fairy"
-    ],
+    "types": ["Fairy"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Disarming Voice",
-        "Body Slam",
-        "Moonblast"
-      ]
+      "quick": ["Pound", "Zen Headbutt"],
+      "cinematic": ["Disarming Voice", "Body Slam", "Moonblast"]
     },
     "stats": {
       "attack": 107,
@@ -2461,19 +2139,10 @@
   {
     "id": 36,
     "name": "Clefable",
-    "types": [
-      "Fairy"
-    ],
+    "types": ["Fairy"],
     "moves": {
-      "quick": [
-        "Charge Beam",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Dazzling Gleam",
-        "Psychic",
-        "Moonblast"
-      ]
+      "quick": ["Charge Beam", "Zen Headbutt"],
+      "cinematic": ["Dazzling Gleam", "Psychic", "Moonblast"]
     },
     "stats": {
       "attack": 178,
@@ -2520,19 +2189,10 @@
   {
     "id": 37,
     "name": "Vulpix",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Quick Attack",
-        "Ember"
-      ],
-      "cinematic": [
-        "Body Slam",
-        "Flamethrower",
-        "Flame Charge"
-      ]
+      "quick": ["Quick Attack", "Ember"],
+      "cinematic": ["Body Slam", "Flamethrower", "Flame Charge"]
     },
     "stats": {
       "attack": 96,
@@ -2598,19 +2258,10 @@
   {
     "id": 38,
     "name": "Ninetales",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Feint Attack",
-        "Fire Spin"
-      ],
-      "cinematic": [
-        "Heat Wave",
-        "Overheat",
-        "Solar Beam"
-      ]
+      "quick": ["Feint Attack", "Fire Spin"],
+      "cinematic": ["Heat Wave", "Overheat", "Solar Beam"]
     },
     "stats": {
       "attack": 169,
@@ -2657,20 +2308,10 @@
   {
     "id": 39,
     "name": "Jigglypuff",
-    "types": [
-      "Normal",
-      "Fairy"
-    ],
+    "types": ["Normal", "Fairy"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Feint Attack"
-      ],
-      "cinematic": [
-        "Disarming Voice",
-        "Gyro Ball",
-        "Dazzling Gleam"
-      ]
+      "quick": ["Pound", "Feint Attack"],
+      "cinematic": ["Disarming Voice", "Gyro Ball", "Dazzling Gleam"]
     },
     "stats": {
       "attack": 80,
@@ -2737,20 +2378,10 @@
   {
     "id": 40,
     "name": "Wigglytuff",
-    "types": [
-      "Normal",
-      "Fairy"
-    ],
+    "types": ["Normal", "Fairy"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Feint Attack"
-      ],
-      "cinematic": [
-        "Dazzling Gleam",
-        "Hyper Beam",
-        "Play Rough"
-      ]
+      "quick": ["Pound", "Feint Attack"],
+      "cinematic": ["Dazzling Gleam", "Hyper Beam", "Play Rough"]
     },
     "stats": {
       "attack": 156,
@@ -2797,20 +2428,10 @@
   {
     "id": 41,
     "name": "Zubat",
-    "types": [
-      "Poison",
-      "Flying"
-    ],
+    "types": ["Poison", "Flying"],
     "moves": {
-      "quick": [
-        "Quick Attack",
-        "Bite"
-      ],
-      "cinematic": [
-        "Poison Fang",
-        "Air Cutter",
-        "Swift"
-      ]
+      "quick": ["Quick Attack", "Bite"],
+      "cinematic": ["Poison Fang", "Air Cutter", "Swift"]
     },
     "stats": {
       "attack": 83,
@@ -2876,20 +2497,10 @@
   {
     "id": 42,
     "name": "Golbat",
-    "types": [
-      "Poison",
-      "Flying"
-    ],
+    "types": ["Poison", "Flying"],
     "moves": {
-      "quick": [
-        "Wing Attack",
-        "Bite"
-      ],
-      "cinematic": [
-        "Shadow Ball",
-        "Air Cutter",
-        "Poison Fang"
-      ]
+      "quick": ["Wing Attack", "Bite"],
+      "cinematic": ["Shadow Ball", "Air Cutter", "Poison Fang"]
     },
     "stats": {
       "attack": 161,
@@ -2943,20 +2554,10 @@
   {
     "id": 43,
     "name": "Oddish",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Acid"
-      ],
-      "cinematic": [
-        "Seed Bomb",
-        "Sludge Bomb",
-        "Moonblast"
-      ]
+      "quick": ["Razor Leaf", "Acid"],
+      "cinematic": ["Seed Bomb", "Sludge Bomb", "Moonblast"]
     },
     "stats": {
       "attack": 131,
@@ -3022,20 +2623,10 @@
   {
     "id": 44,
     "name": "Gloom",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Acid"
-      ],
-      "cinematic": [
-        "Petal Blizzard",
-        "Sludge Bomb",
-        "Moonblast"
-      ]
+      "quick": ["Razor Leaf", "Acid"],
+      "cinematic": ["Petal Blizzard", "Sludge Bomb", "Moonblast"]
     },
     "stats": {
       "attack": 153,
@@ -3103,20 +2694,10 @@
   {
     "id": 45,
     "name": "Vileplume",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Acid"
-      ],
-      "cinematic": [
-        "Petal Blizzard",
-        "Solar Beam",
-        "Moonblast"
-      ]
+      "quick": ["Razor Leaf", "Acid"],
+      "cinematic": ["Petal Blizzard", "Solar Beam", "Moonblast"]
     },
     "stats": {
       "attack": 202,
@@ -3163,20 +2744,10 @@
   {
     "id": 46,
     "name": "Paras",
-    "types": [
-      "Bug",
-      "Grass"
-    ],
+    "types": ["Bug", "Grass"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Bug Bite"
-      ],
-      "cinematic": [
-        "Cross Poison",
-        "X Scissor",
-        "Seed Bomb"
-      ]
+      "quick": ["Scratch", "Bug Bite"],
+      "cinematic": ["Cross Poison", "X Scissor", "Seed Bomb"]
     },
     "stats": {
       "attack": 121,
@@ -3238,20 +2809,10 @@
   {
     "id": 47,
     "name": "Parasect",
-    "types": [
-      "Bug",
-      "Grass"
-    ],
+    "types": ["Bug", "Grass"],
     "moves": {
-      "quick": [
-        "Struggle Bug",
-        "Fury Cutter"
-      ],
-      "cinematic": [
-        "Cross Poison",
-        "X Scissor",
-        "Solar Beam"
-      ]
+      "quick": ["Struggle Bug", "Fury Cutter"],
+      "cinematic": ["Cross Poison", "X Scissor", "Solar Beam"]
     },
     "stats": {
       "attack": 165,
@@ -3298,20 +2859,10 @@
   {
     "id": 48,
     "name": "Venonat",
-    "types": [
-      "Bug",
-      "Poison"
-    ],
+    "types": ["Bug", "Poison"],
     "moves": {
-      "quick": [
-        "Bug Bite",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Poison Fang",
-        "Psybeam",
-        "Signal Beam"
-      ]
+      "quick": ["Bug Bite", "Confusion"],
+      "cinematic": ["Poison Fang", "Psybeam", "Signal Beam"]
     },
     "stats": {
       "attack": 100,
@@ -3377,20 +2928,10 @@
   {
     "id": 49,
     "name": "Venomoth",
-    "types": [
-      "Bug",
-      "Poison"
-    ],
+    "types": ["Bug", "Poison"],
     "moves": {
-      "quick": [
-        "Infestation",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Silver Wind",
-        "Psychic",
-        "Bug Buzz"
-      ]
+      "quick": ["Infestation", "Confusion"],
+      "cinematic": ["Silver Wind", "Psychic", "Bug Buzz"]
     },
     "stats": {
       "attack": 179,
@@ -3437,19 +2978,10 @@
   {
     "id": 50,
     "name": "Diglett",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Mud Slap",
-        "Scratch"
-      ],
-      "cinematic": [
-        "Dig",
-        "Mud Bomb",
-        "Rock Tomb"
-      ]
+      "quick": ["Mud Slap", "Scratch"],
+      "cinematic": ["Dig", "Mud Bomb", "Rock Tomb"]
     },
     "stats": {
       "attack": 109,
@@ -3515,19 +3047,10 @@
   {
     "id": 51,
     "name": "Dugtrio",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Sucker Punch",
-        "Mud Slap"
-      ],
-      "cinematic": [
-        "Earthquake",
-        "Mud Bomb",
-        "Stone Edge"
-      ]
+      "quick": ["Sucker Punch", "Mud Slap"],
+      "cinematic": ["Earthquake", "Mud Bomb", "Stone Edge"]
     },
     "stats": {
       "attack": 167,
@@ -3574,19 +3097,10 @@
   {
     "id": 52,
     "name": "Meowth",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Bite"
-      ],
-      "cinematic": [
-        "Night Slash",
-        "Dark Pulse",
-        "Foul Play"
-      ]
+      "quick": ["Scratch", "Bite"],
+      "cinematic": ["Night Slash", "Dark Pulse", "Foul Play"]
     },
     "stats": {
       "attack": 92,
@@ -3648,19 +3162,10 @@
   {
     "id": 53,
     "name": "Persian",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Feint Attack"
-      ],
-      "cinematic": [
-        "Foul Play",
-        "Power Gem",
-        "Play Rough"
-      ]
+      "quick": ["Scratch", "Feint Attack"],
+      "cinematic": ["Foul Play", "Power Gem", "Play Rough"]
     },
     "stats": {
       "attack": 150,
@@ -3703,19 +3208,10 @@
   {
     "id": 54,
     "name": "Psyduck",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Psybeam",
-        "Aqua Tail",
-        "Cross Chop"
-      ]
+      "quick": ["Water Gun", "Zen Headbutt"],
+      "cinematic": ["Psybeam", "Aqua Tail", "Cross Chop"]
     },
     "stats": {
       "attack": 122,
@@ -3781,19 +3277,10 @@
   {
     "id": 55,
     "name": "Golduck",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Psychic",
-        "Hydro Pump",
-        "Ice Beam"
-      ]
+      "quick": ["Water Gun", "Confusion"],
+      "cinematic": ["Psychic", "Hydro Pump", "Ice Beam"]
     },
     "stats": {
       "attack": 191,
@@ -3840,19 +3327,10 @@
   {
     "id": 56,
     "name": "Mankey",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Karate Chop",
-        "Scratch"
-      ],
-      "cinematic": [
-        "Cross Chop",
-        "Low Sweep",
-        "Brick Break"
-      ]
+      "quick": ["Karate Chop", "Scratch"],
+      "cinematic": ["Cross Chop", "Low Sweep", "Brick Break"]
     },
     "stats": {
       "attack": 148,
@@ -3918,19 +3396,10 @@
   {
     "id": 57,
     "name": "Primeape",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Low Kick",
-        "Counter"
-      ],
-      "cinematic": [
-        "Close Combat",
-        "Low Sweep",
-        "Night Slash"
-      ]
+      "quick": ["Low Kick", "Counter"],
+      "cinematic": ["Close Combat", "Low Sweep", "Night Slash"]
     },
     "stats": {
       "attack": 207,
@@ -3981,19 +3450,10 @@
   {
     "id": 58,
     "name": "Growlithe",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Bite"
-      ],
-      "cinematic": [
-        "Flame Wheel",
-        "Body Slam",
-        "Flamethrower"
-      ]
+      "quick": ["Ember", "Bite"],
+      "cinematic": ["Flame Wheel", "Body Slam", "Flamethrower"]
     },
     "stats": {
       "attack": 136,
@@ -4059,19 +3519,10 @@
   {
     "id": 59,
     "name": "Arcanine",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Fire Fang",
-        "Snarl"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Wild Charge",
-        "Crunch"
-      ]
+      "quick": ["Fire Fang", "Snarl"],
+      "cinematic": ["Fire Blast", "Wild Charge", "Crunch"]
     },
     "stats": {
       "attack": 227,
@@ -4118,19 +3569,10 @@
   {
     "id": 60,
     "name": "Poliwag",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Bubble Beam",
-        "Mud Bomb",
-        "Body Slam"
-      ]
+      "quick": ["Bubble", "Mud Shot"],
+      "cinematic": ["Bubble Beam", "Mud Bomb", "Body Slam"]
     },
     "stats": {
       "attack": 101,
@@ -4196,19 +3638,10 @@
   {
     "id": 61,
     "name": "Poliwhirl",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Water Pulse",
-        "Mud Bomb",
-        "Bubble Beam"
-      ]
+      "quick": ["Bubble", "Mud Shot"],
+      "cinematic": ["Water Pulse", "Mud Bomb", "Bubble Beam"]
     },
     "stats": {
       "attack": 130,
@@ -4276,20 +3709,10 @@
   {
     "id": 62,
     "name": "Poliwrath",
-    "types": [
-      "Water",
-      "Fighting"
-    ],
+    "types": ["Water", "Fighting"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Dynamic Punch",
-        "Ice Punch"
-      ]
+      "quick": ["Bubble", "Rock Smash"],
+      "cinematic": ["Hydro Pump", "Dynamic Punch", "Ice Punch"]
     },
     "stats": {
       "attack": 182,
@@ -4336,19 +3759,10 @@
   {
     "id": 63,
     "name": "Abra",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Zen Headbutt",
-        "Charge Beam"
-      ],
-      "cinematic": [
-        "Psyshock",
-        "Signal Beam",
-        "Shadow Ball"
-      ]
+      "quick": ["Zen Headbutt", "Charge Beam"],
+      "cinematic": ["Psyshock", "Signal Beam", "Shadow Ball"]
     },
     "stats": {
       "attack": 195,
@@ -4410,19 +3824,10 @@
   {
     "id": 64,
     "name": "Kadabra",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Psycho Cut",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Psybeam",
-        "Dazzling Gleam",
-        "Shadow Ball"
-      ]
+      "quick": ["Psycho Cut", "Confusion"],
+      "cinematic": ["Psybeam", "Dazzling Gleam", "Shadow Ball"]
     },
     "stats": {
       "attack": 232,
@@ -4481,19 +3886,10 @@
   {
     "id": 65,
     "name": "Alakazam",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Psycho Cut",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Futuresight",
-        "Focus Blast",
-        "Shadow Ball"
-      ]
+      "quick": ["Psycho Cut", "Confusion"],
+      "cinematic": ["Futuresight", "Focus Blast", "Shadow Ball"]
     },
     "stats": {
       "attack": 271,
@@ -4536,19 +3932,10 @@
   {
     "id": 66,
     "name": "Machop",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Rock Smash",
-        "Karate Chop"
-      ],
-      "cinematic": [
-        "Low Sweep",
-        "Brick Break",
-        "Cross Chop"
-      ]
+      "quick": ["Rock Smash", "Karate Chop"],
+      "cinematic": ["Low Sweep", "Brick Break", "Cross Chop"]
     },
     "stats": {
       "attack": 137,
@@ -4614,19 +4001,10 @@
   {
     "id": 67,
     "name": "Machoke",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Low Kick",
-        "Karate Chop"
-      ],
-      "cinematic": [
-        "Submission",
-        "Brick Break",
-        "Dynamic Punch"
-      ]
+      "quick": ["Low Kick", "Karate Chop"],
+      "cinematic": ["Submission", "Brick Break", "Dynamic Punch"]
     },
     "stats": {
       "attack": 177,
@@ -4689,19 +4067,10 @@
   {
     "id": 68,
     "name": "Machamp",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Bullet Punch",
-        "Counter"
-      ],
-      "cinematic": [
-        "Heavy Slam",
-        "Dynamic Punch",
-        "Close Combat"
-      ]
+      "quick": ["Bullet Punch", "Counter"],
+      "cinematic": ["Heavy Slam", "Dynamic Punch", "Close Combat"]
     },
     "stats": {
       "attack": 234,
@@ -4748,20 +4117,10 @@
   {
     "id": 69,
     "name": "Bellsprout",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Vine Whip",
-        "Acid"
-      ],
-      "cinematic": [
-        "Power Whip",
-        "Sludge Bomb",
-        "Wrap"
-      ]
+      "quick": ["Vine Whip", "Acid"],
+      "cinematic": ["Power Whip", "Sludge Bomb", "Wrap"]
     },
     "stats": {
       "attack": 139,
@@ -4827,20 +4186,10 @@
   {
     "id": 70,
     "name": "Weepinbell",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Bullet Seed",
-        "Acid"
-      ],
-      "cinematic": [
-        "Power Whip",
-        "Sludge Bomb",
-        "Seed Bomb"
-      ]
+      "quick": ["Bullet Seed", "Acid"],
+      "cinematic": ["Power Whip", "Sludge Bomb", "Seed Bomb"]
     },
     "stats": {
       "attack": 172,
@@ -4903,20 +4252,10 @@
   {
     "id": 71,
     "name": "Victreebel",
-    "types": [
-      "Grass",
-      "Poison"
-    ],
+    "types": ["Grass", "Poison"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Acid"
-      ],
-      "cinematic": [
-        "Leaf Blade",
-        "Sludge Bomb",
-        "Solar Beam"
-      ]
+      "quick": ["Razor Leaf", "Acid"],
+      "cinematic": ["Leaf Blade", "Sludge Bomb", "Solar Beam"]
     },
     "stats": {
       "attack": 207,
@@ -4967,20 +4306,10 @@
   {
     "id": 72,
     "name": "Tentacool",
-    "types": [
-      "Water",
-      "Poison"
-    ],
+    "types": ["Water", "Poison"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Poison Sting"
-      ],
-      "cinematic": [
-        "Bubble Beam",
-        "Water Pulse",
-        "Wrap"
-      ]
+      "quick": ["Bubble", "Poison Sting"],
+      "cinematic": ["Bubble Beam", "Water Pulse", "Wrap"]
     },
     "stats": {
       "attack": 97,
@@ -5046,20 +4375,10 @@
   {
     "id": 73,
     "name": "Tentacruel",
-    "types": [
-      "Water",
-      "Poison"
-    ],
+    "types": ["Water", "Poison"],
     "moves": {
-      "quick": [
-        "Acid",
-        "Poison Jab"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Sludge Wave",
-        "Blizzard"
-      ]
+      "quick": ["Acid", "Poison Jab"],
+      "cinematic": ["Hydro Pump", "Sludge Wave", "Blizzard"]
     },
     "stats": {
       "attack": 166,
@@ -5106,20 +4425,10 @@
   {
     "id": 74,
     "name": "Geodude",
-    "types": [
-      "Rock",
-      "Ground"
-    ],
+    "types": ["Rock", "Ground"],
     "moves": {
-      "quick": [
-        "Rock Throw",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Rock Slide",
-        "Rock Tomb",
-        "Dig"
-      ]
+      "quick": ["Rock Throw", "Tackle"],
+      "cinematic": ["Rock Slide", "Rock Tomb", "Dig"]
     },
     "stats": {
       "attack": 132,
@@ -5185,20 +4494,10 @@
   {
     "id": 75,
     "name": "Graveler",
-    "types": [
-      "Rock",
-      "Ground"
-    ],
+    "types": ["Rock", "Ground"],
     "moves": {
-      "quick": [
-        "Rock Throw",
-        "Mud Slap"
-      ],
-      "cinematic": [
-        "Dig",
-        "Stone Edge",
-        "Rock Blast"
-      ]
+      "quick": ["Rock Throw", "Mud Slap"],
+      "cinematic": ["Dig", "Stone Edge", "Rock Blast"]
     },
     "stats": {
       "attack": 164,
@@ -5257,20 +4556,10 @@
   {
     "id": 76,
     "name": "Golem",
-    "types": [
-      "Rock",
-      "Ground"
-    ],
+    "types": ["Rock", "Ground"],
     "moves": {
-      "quick": [
-        "Rock Throw",
-        "Mud Slap"
-      ],
-      "cinematic": [
-        "Stone Edge",
-        "Rock Blast",
-        "Earthquake"
-      ]
+      "quick": ["Rock Throw", "Mud Slap"],
+      "cinematic": ["Stone Edge", "Rock Blast", "Earthquake"]
     },
     "stats": {
       "attack": 211,
@@ -5313,19 +4602,10 @@
   {
     "id": 77,
     "name": "Ponyta",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Ember"
-      ],
-      "cinematic": [
-        "Flame Charge",
-        "Flame Wheel",
-        "Stomp"
-      ]
+      "quick": ["Tackle", "Ember"],
+      "cinematic": ["Flame Charge", "Flame Wheel", "Stomp"]
     },
     "stats": {
       "attack": 170,
@@ -5391,19 +4671,10 @@
   {
     "id": 78,
     "name": "Rapidash",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Low Kick",
-        "Fire Spin"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Drill Run",
-        "Heat Wave"
-      ]
+      "quick": ["Low Kick", "Fire Spin"],
+      "cinematic": ["Fire Blast", "Drill Run", "Heat Wave"]
     },
     "stats": {
       "attack": 207,
@@ -5454,20 +4725,10 @@
   {
     "id": 79,
     "name": "Slowpoke",
-    "types": [
-      "Water",
-      "Psychic"
-    ],
+    "types": ["Water", "Psychic"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Water Pulse",
-        "Psyshock",
-        "Psychic"
-      ]
+      "quick": ["Water Gun", "Confusion"],
+      "cinematic": ["Water Pulse", "Psyshock", "Psychic"]
     },
     "stats": {
       "attack": 109,
@@ -5538,20 +4799,10 @@
   {
     "id": 80,
     "name": "Slowbro",
-    "types": [
-      "Water",
-      "Psychic"
-    ],
+    "types": ["Water", "Psychic"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Water Pulse",
-        "Psychic",
-        "Ice Beam"
-      ]
+      "quick": ["Water Gun", "Confusion"],
+      "cinematic": ["Water Pulse", "Psychic", "Ice Beam"]
     },
     "stats": {
       "attack": 177,
@@ -5598,20 +4849,10 @@
   {
     "id": 81,
     "name": "Magnemite",
-    "types": [
-      "Electric",
-      "Steel"
-    ],
+    "types": ["Electric", "Steel"],
     "moves": {
-      "quick": [
-        "Spark",
-        "Thunder Shock"
-      ],
-      "cinematic": [
-        "Discharge",
-        "Magnet Bomb",
-        "Thunderbolt"
-      ]
+      "quick": ["Spark", "Thunder Shock"],
+      "cinematic": ["Discharge", "Magnet Bomb", "Thunderbolt"]
     },
     "stats": {
       "attack": 165,
@@ -5677,20 +4918,10 @@
   {
     "id": 82,
     "name": "Magneton",
-    "types": [
-      "Electric",
-      "Steel"
-    ],
+    "types": ["Electric", "Steel"],
     "moves": {
-      "quick": [
-        "Spark",
-        "Charge Beam"
-      ],
-      "cinematic": [
-        "Zap Cannon",
-        "Magnet Bomb",
-        "Flash Cannon"
-      ]
+      "quick": ["Spark", "Charge Beam"],
+      "cinematic": ["Zap Cannon", "Magnet Bomb", "Flash Cannon"]
     },
     "stats": {
       "attack": 223,
@@ -5737,20 +4968,10 @@
   {
     "id": 83,
     "name": "Farfetch'd",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Air Slash",
-        "Fury Cutter"
-      ],
-      "cinematic": [
-        "Aerial Ace",
-        "Air Cutter",
-        "Leaf Blade"
-      ]
+      "quick": ["Air Slash", "Fury Cutter"],
+      "cinematic": ["Aerial Ace", "Air Cutter", "Leaf Blade"]
     },
     "stats": {
       "attack": 124,
@@ -5794,20 +5015,10 @@
   {
     "id": 84,
     "name": "Doduo",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Drill Peck",
-        "Aerial Ace",
-        "Brave Bird"
-      ]
+      "quick": ["Peck", "Quick Attack"],
+      "cinematic": ["Drill Peck", "Aerial Ace", "Brave Bird"]
     },
     "stats": {
       "attack": 158,
@@ -5873,20 +5084,10 @@
   {
     "id": 85,
     "name": "Dodrio",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Feint Attack",
-        "Steel Wing"
-      ],
-      "cinematic": [
-        "Drill Peck",
-        "Aerial Ace",
-        "Brave Bird"
-      ]
+      "quick": ["Feint Attack", "Steel Wing"],
+      "cinematic": ["Drill Peck", "Aerial Ace", "Brave Bird"]
     },
     "stats": {
       "attack": 218,
@@ -5933,19 +5134,10 @@
   {
     "id": 86,
     "name": "Seel",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Ice Shard",
-        "Lick"
-      ],
-      "cinematic": [
-        "Aurora Beam",
-        "Icy Wind",
-        "Aqua Tail"
-      ]
+      "quick": ["Ice Shard", "Lick"],
+      "cinematic": ["Aurora Beam", "Icy Wind", "Aqua Tail"]
     },
     "stats": {
       "attack": 85,
@@ -6007,20 +5199,10 @@
   {
     "id": 87,
     "name": "Dewgong",
-    "types": [
-      "Water",
-      "Ice"
-    ],
+    "types": ["Water", "Ice"],
     "moves": {
-      "quick": [
-        "Frost Breath",
-        "Iron Tail"
-      ],
-      "cinematic": [
-        "Aurora Beam",
-        "Water Pulse",
-        "Blizzard"
-      ]
+      "quick": ["Frost Breath", "Iron Tail"],
+      "cinematic": ["Aurora Beam", "Water Pulse", "Blizzard"]
     },
     "stats": {
       "attack": 139,
@@ -6067,19 +5249,10 @@
   {
     "id": 88,
     "name": "Grimer",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Poison Jab",
-        "Mud Slap"
-      ],
-      "cinematic": [
-        "Sludge",
-        "Mud Bomb",
-        "Sludge Bomb"
-      ]
+      "quick": ["Poison Jab", "Mud Slap"],
+      "cinematic": ["Sludge", "Mud Bomb", "Sludge Bomb"]
     },
     "stats": {
       "attack": 135,
@@ -6141,19 +5314,10 @@
   {
     "id": 89,
     "name": "Muk",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Infestation",
-        "Poison Jab"
-      ],
-      "cinematic": [
-        "Dark Pulse",
-        "Gunk Shot",
-        "Sludge Wave"
-      ]
+      "quick": ["Infestation", "Poison Jab"],
+      "cinematic": ["Dark Pulse", "Gunk Shot", "Sludge Wave"]
     },
     "stats": {
       "attack": 190,
@@ -6196,19 +5360,10 @@
   {
     "id": 90,
     "name": "Shellder",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Ice Shard",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Bubble Beam",
-        "Water Pulse",
-        "Icy Wind"
-      ]
+      "quick": ["Ice Shard", "Tackle"],
+      "cinematic": ["Bubble Beam", "Water Pulse", "Icy Wind"]
     },
     "stats": {
       "attack": 116,
@@ -6274,20 +5429,10 @@
   {
     "id": 91,
     "name": "Cloyster",
-    "types": [
-      "Water",
-      "Ice"
-    ],
+    "types": ["Water", "Ice"],
     "moves": {
-      "quick": [
-        "Frost Breath",
-        "Ice Shard"
-      ],
-      "cinematic": [
-        "Aurora Beam",
-        "Hydro Pump",
-        "Avalanche"
-      ]
+      "quick": ["Frost Breath", "Ice Shard"],
+      "cinematic": ["Aurora Beam", "Hydro Pump", "Avalanche"]
     },
     "stats": {
       "attack": 186,
@@ -6338,20 +5483,10 @@
   {
     "id": 92,
     "name": "Gastly",
-    "types": [
-      "Ghost",
-      "Poison"
-    ],
+    "types": ["Ghost", "Poison"],
     "moves": {
-      "quick": [
-        "Lick",
-        "Astonish"
-      ],
-      "cinematic": [
-        "Night Shade",
-        "Dark Pulse",
-        "Sludge Bomb"
-      ]
+      "quick": ["Lick", "Astonish"],
+      "cinematic": ["Night Shade", "Dark Pulse", "Sludge Bomb"]
     },
     "stats": {
       "attack": 186,
@@ -6417,20 +5552,10 @@
   {
     "id": 93,
     "name": "Haunter",
-    "types": [
-      "Ghost",
-      "Poison"
-    ],
+    "types": ["Ghost", "Poison"],
     "moves": {
-      "quick": [
-        "Shadow Claw",
-        "Astonish"
-      ],
-      "cinematic": [
-        "Shadow Punch",
-        "Dark Pulse",
-        "Sludge Bomb"
-      ]
+      "quick": ["Shadow Claw", "Astonish"],
+      "cinematic": ["Shadow Punch", "Dark Pulse", "Sludge Bomb"]
     },
     "stats": {
       "attack": 223,
@@ -6489,20 +5614,10 @@
   {
     "id": 94,
     "name": "Gengar",
-    "types": [
-      "Ghost",
-      "Poison"
-    ],
+    "types": ["Ghost", "Poison"],
     "moves": {
-      "quick": [
-        "Sucker Punch",
-        "Hex"
-      ],
-      "cinematic": [
-        "Shadow Ball",
-        "Focus Blast",
-        "Sludge Bomb"
-      ]
+      "quick": ["Sucker Punch", "Hex"],
+      "cinematic": ["Shadow Ball", "Focus Blast", "Sludge Bomb"]
     },
     "stats": {
       "attack": 261,
@@ -6545,20 +5660,10 @@
   {
     "id": 95,
     "name": "Onix",
-    "types": [
-      "Rock",
-      "Ground"
-    ],
+    "types": ["Rock", "Ground"],
     "moves": {
-      "quick": [
-        "Rock Throw",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Sand Tomb",
-        "Stone Edge",
-        "Heavy Slam"
-      ]
+      "quick": ["Rock Throw", "Tackle"],
+      "cinematic": ["Sand Tomb", "Stone Edge", "Heavy Slam"]
     },
     "stats": {
       "attack": 85,
@@ -6611,19 +5716,10 @@
   {
     "id": 96,
     "name": "Drowzee",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Psybeam",
-        "Psyshock",
-        "Psychic"
-      ]
+      "quick": ["Pound", "Confusion"],
+      "cinematic": ["Psybeam", "Psyshock", "Psychic"]
     },
     "stats": {
       "attack": 89,
@@ -6689,19 +5785,10 @@
   {
     "id": 97,
     "name": "Hypno",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Zen Headbutt",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Futuresight",
-        "Psychic",
-        "Focus Blast"
-      ]
+      "quick": ["Zen Headbutt", "Confusion"],
+      "cinematic": ["Futuresight", "Psychic", "Focus Blast"]
     },
     "stats": {
       "attack": 144,
@@ -6744,19 +5831,10 @@
   {
     "id": 98,
     "name": "Krabby",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Vice Grip",
-        "Bubble Beam",
-        "Water Pulse"
-      ]
+      "quick": ["Bubble", "Mud Shot"],
+      "cinematic": ["Vice Grip", "Bubble Beam", "Water Pulse"]
     },
     "stats": {
       "attack": 181,
@@ -6822,19 +5900,10 @@
   {
     "id": 99,
     "name": "Kingler",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Metal Claw"
-      ],
-      "cinematic": [
-        "Vice Grip",
-        "X Scissor",
-        "Water Pulse"
-      ]
+      "quick": ["Bubble", "Metal Claw"],
+      "cinematic": ["Vice Grip", "X Scissor", "Water Pulse"]
     },
     "stats": {
       "attack": 240,
@@ -6881,19 +5950,10 @@
   {
     "id": 100,
     "name": "Voltorb",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Spark",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Discharge",
-        "Thunderbolt",
-        "Gyro Ball"
-      ]
+      "quick": ["Spark", "Tackle"],
+      "cinematic": ["Discharge", "Thunderbolt", "Gyro Ball"]
     },
     "stats": {
       "attack": 109,
@@ -6959,19 +6019,10 @@
   {
     "id": 101,
     "name": "Electrode",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Spark",
-        "Volt Switch"
-      ],
-      "cinematic": [
-        "Discharge",
-        "Thunderbolt",
-        "Hyper Beam"
-      ]
+      "quick": ["Spark", "Volt Switch"],
+      "cinematic": ["Discharge", "Thunderbolt", "Hyper Beam"]
     },
     "stats": {
       "attack": 173,
@@ -7018,20 +6069,10 @@
   {
     "id": 102,
     "name": "Exeggcute",
-    "types": [
-      "Grass",
-      "Psychic"
-    ],
+    "types": ["Grass", "Psychic"],
     "moves": {
-      "quick": [
-        "Confusion",
-        "Bullet Seed"
-      ],
-      "cinematic": [
-        "Seed Bomb",
-        "Psychic",
-        "Ancient Power"
-      ]
+      "quick": ["Confusion", "Bullet Seed"],
+      "cinematic": ["Seed Bomb", "Psychic", "Ancient Power"]
     },
     "stats": {
       "attack": 107,
@@ -7097,20 +6138,10 @@
   {
     "id": 103,
     "name": "Exeggutor",
-    "types": [
-      "Grass",
-      "Psychic"
-    ],
+    "types": ["Grass", "Psychic"],
     "moves": {
-      "quick": [
-        "Bullet Seed",
-        "Extrasensory"
-      ],
-      "cinematic": [
-        "Seed Bomb",
-        "Psychic",
-        "Solar Beam"
-      ]
+      "quick": ["Bullet Seed", "Extrasensory"],
+      "cinematic": ["Seed Bomb", "Psychic", "Solar Beam"]
     },
     "stats": {
       "attack": 233,
@@ -7157,19 +6188,10 @@
   {
     "id": 104,
     "name": "Cubone",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Mud Slap",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Bone Club",
-        "Dig",
-        "Bulldoze"
-      ]
+      "quick": ["Mud Slap", "Rock Smash"],
+      "cinematic": ["Bone Club", "Dig", "Bulldoze"]
     },
     "stats": {
       "attack": 90,
@@ -7235,19 +6257,10 @@
   {
     "id": 105,
     "name": "Marowak",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Mud Slap",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Bone Club",
-        "Dig",
-        "Earthquake"
-      ]
+      "quick": ["Mud Slap", "Rock Smash"],
+      "cinematic": ["Bone Club", "Dig", "Earthquake"]
     },
     "stats": {
       "attack": 144,
@@ -7294,19 +6307,10 @@
   {
     "id": 106,
     "name": "Hitmonlee",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Low Kick",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Close Combat",
-        "Low Sweep",
-        "Stone Edge"
-      ]
+      "quick": ["Low Kick", "Rock Smash"],
+      "cinematic": ["Close Combat", "Low Sweep", "Stone Edge"]
     },
     "stats": {
       "attack": 224,
@@ -7361,20 +6365,10 @@
   {
     "id": 107,
     "name": "Hitmonchan",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Bullet Punch",
-        "Counter"
-      ],
-      "cinematic": [
-        "Fire Punch",
-        "Ice Punch",
-        "Thunder Punch",
-        "Close Combat"
-      ]
+      "quick": ["Bullet Punch", "Counter"],
+      "cinematic": ["Fire Punch", "Ice Punch", "Thunder Punch", "Close Combat"]
     },
     "stats": {
       "attack": 193,
@@ -7429,19 +6423,10 @@
   {
     "id": 108,
     "name": "Lickitung",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Lick",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Hyper Beam",
-        "Stomp",
-        "Power Whip"
-      ]
+      "quick": ["Lick", "Zen Headbutt"],
+      "cinematic": ["Hyper Beam", "Stomp", "Power Whip"]
     },
     "stats": {
       "attack": 108,
@@ -7489,19 +6474,10 @@
   {
     "id": 109,
     "name": "Koffing",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Infestation"
-      ],
-      "cinematic": [
-        "Sludge",
-        "Sludge Bomb",
-        "Dark Pulse"
-      ]
+      "quick": ["Tackle", "Infestation"],
+      "cinematic": ["Sludge", "Sludge Bomb", "Dark Pulse"]
     },
     "stats": {
       "attack": 119,
@@ -7563,19 +6539,10 @@
   {
     "id": 110,
     "name": "Weezing",
-    "types": [
-      "Poison"
-    ],
+    "types": ["Poison"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Infestation"
-      ],
-      "cinematic": [
-        "Sludge Bomb",
-        "Shadow Ball",
-        "Dark Pulse"
-      ]
+      "quick": ["Tackle", "Infestation"],
+      "cinematic": ["Sludge Bomb", "Shadow Ball", "Dark Pulse"]
     },
     "stats": {
       "attack": 174,
@@ -7618,20 +6585,10 @@
   {
     "id": 111,
     "name": "Rhyhorn",
-    "types": [
-      "Ground",
-      "Rock"
-    ],
+    "types": ["Ground", "Rock"],
     "moves": {
-      "quick": [
-        "Mud Slap",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Bulldoze",
-        "Horn Attack",
-        "Stomp"
-      ]
+      "quick": ["Mud Slap", "Rock Smash"],
+      "cinematic": ["Bulldoze", "Horn Attack", "Stomp"]
     },
     "stats": {
       "attack": 140,
@@ -7697,20 +6654,10 @@
   {
     "id": 112,
     "name": "Rhydon",
-    "types": [
-      "Ground",
-      "Rock"
-    ],
+    "types": ["Ground", "Rock"],
     "moves": {
-      "quick": [
-        "Mud Slap",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Megahorn",
-        "Earthquake",
-        "Stone Edge"
-      ]
+      "quick": ["Mud Slap", "Rock Smash"],
+      "cinematic": ["Megahorn", "Earthquake", "Stone Edge"]
     },
     "stats": {
       "attack": 222,
@@ -7757,19 +6704,10 @@
   {
     "id": 113,
     "name": "Chansey",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Psychic",
-        "Hyper Beam",
-        "Dazzling Gleam"
-      ]
+      "quick": ["Pound", "Zen Headbutt"],
+      "cinematic": ["Psychic", "Hyper Beam", "Dazzling Gleam"]
     },
     "stats": {
       "attack": 60,
@@ -7822,19 +6760,10 @@
   {
     "id": 114,
     "name": "Tangela",
-    "types": [
-      "Grass"
-    ],
+    "types": ["Grass"],
     "moves": {
-      "quick": [
-        "Vine Whip",
-        "Infestation"
-      ],
-      "cinematic": [
-        "Grass Knot",
-        "Sludge Bomb",
-        "Solar Beam"
-      ]
+      "quick": ["Vine Whip", "Infestation"],
+      "cinematic": ["Grass Knot", "Sludge Bomb", "Solar Beam"]
     },
     "stats": {
       "attack": 183,
@@ -7878,19 +6807,10 @@
   {
     "id": 115,
     "name": "Kangaskhan",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Mud Slap",
-        "Low Kick"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Earthquake",
-        "Outrage"
-      ]
+      "quick": ["Mud Slap", "Low Kick"],
+      "cinematic": ["Crunch", "Earthquake", "Outrage"]
     },
     "stats": {
       "attack": 181,
@@ -7938,19 +6858,10 @@
   {
     "id": 116,
     "name": "Horsea",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Bubble"
-      ],
-      "cinematic": [
-        "Bubble Beam",
-        "Dragon Pulse",
-        "Flash Cannon"
-      ]
+      "quick": ["Water Gun", "Bubble"],
+      "cinematic": ["Bubble Beam", "Dragon Pulse", "Flash Cannon"]
     },
     "stats": {
       "attack": 129,
@@ -8016,19 +6927,10 @@
   {
     "id": 117,
     "name": "Seadra",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Dragon Breath"
-      ],
-      "cinematic": [
-        "Aurora Beam",
-        "Dragon Pulse",
-        "Hydro Pump"
-      ]
+      "quick": ["Water Gun", "Dragon Breath"],
+      "cinematic": ["Aurora Beam", "Dragon Pulse", "Hydro Pump"]
     },
     "stats": {
       "attack": 187,
@@ -8082,19 +6984,10 @@
   {
     "id": 118,
     "name": "Goldeen",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Water Pulse",
-        "Horn Attack",
-        "Aqua Tail"
-      ]
+      "quick": ["Peck", "Mud Shot"],
+      "cinematic": ["Water Pulse", "Horn Attack", "Aqua Tail"]
     },
     "stats": {
       "attack": 123,
@@ -8160,19 +7053,10 @@
   {
     "id": 119,
     "name": "Seaking",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Poison Jab"
-      ],
-      "cinematic": [
-        "Ice Beam",
-        "Water Pulse",
-        "Megahorn"
-      ]
+      "quick": ["Peck", "Poison Jab"],
+      "cinematic": ["Ice Beam", "Water Pulse", "Megahorn"]
     },
     "stats": {
       "attack": 175,
@@ -8219,19 +7103,10 @@
   {
     "id": 120,
     "name": "Staryu",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Water Gun"
-      ],
-      "cinematic": [
-        "Swift",
-        "Bubble Beam",
-        "Power Gem"
-      ]
+      "quick": ["Tackle", "Water Gun"],
+      "cinematic": ["Swift", "Bubble Beam", "Power Gem"]
     },
     "stats": {
       "attack": 137,
@@ -8297,20 +7172,10 @@
   {
     "id": 121,
     "name": "Starmie",
-    "types": [
-      "Water",
-      "Psychic"
-    ],
+    "types": ["Water", "Psychic"],
     "moves": {
-      "quick": [
-        "Hidden Power",
-        "Water Gun"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Power Gem",
-        "Psychic"
-      ]
+      "quick": ["Hidden Power", "Water Gun"],
+      "cinematic": ["Hydro Pump", "Power Gem", "Psychic"]
     },
     "stats": {
       "attack": 210,
@@ -8357,20 +7222,10 @@
   {
     "id": 122,
     "name": "Mr. Mime",
-    "types": [
-      "Psychic",
-      "Fairy"
-    ],
+    "types": ["Psychic", "Fairy"],
     "moves": {
-      "quick": [
-        "Confusion",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Psybeam",
-        "Psychic",
-        "Shadow Ball"
-      ]
+      "quick": ["Confusion", "Zen Headbutt"],
+      "cinematic": ["Psybeam", "Psychic", "Shadow Ball"]
     },
     "stats": {
       "attack": 192,
@@ -8418,20 +7273,10 @@
   {
     "id": 123,
     "name": "Scyther",
-    "types": [
-      "Bug",
-      "Flying"
-    ],
+    "types": ["Bug", "Flying"],
     "moves": {
-      "quick": [
-        "Fury Cutter",
-        "Air Slash"
-      ],
-      "cinematic": [
-        "Night Slash",
-        "X Scissor",
-        "Aerial Ace"
-      ]
+      "quick": ["Fury Cutter", "Air Slash"],
+      "cinematic": ["Night Slash", "X Scissor", "Aerial Ace"]
     },
     "stats": {
       "attack": 218,
@@ -8484,20 +7329,10 @@
   {
     "id": 124,
     "name": "Jynx",
-    "types": [
-      "Ice",
-      "Psychic"
-    ],
+    "types": ["Ice", "Psychic"],
     "moves": {
-      "quick": [
-        "Frost Breath",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Draining Kiss",
-        "Avalanche",
-        "Psyshock"
-      ]
+      "quick": ["Frost Breath", "Confusion"],
+      "cinematic": ["Draining Kiss", "Avalanche", "Psyshock"]
     },
     "stats": {
       "attack": 223,
@@ -8544,19 +7379,10 @@
   {
     "id": 125,
     "name": "Electabuzz",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Thunder Shock",
-        "Low Kick"
-      ],
-      "cinematic": [
-        "Thunder Punch",
-        "Thunderbolt",
-        "Thunder"
-      ]
+      "quick": ["Thunder Shock", "Low Kick"],
+      "cinematic": ["Thunder Punch", "Thunderbolt", "Thunder"]
     },
     "stats": {
       "attack": 198,
@@ -8607,19 +7433,10 @@
   {
     "id": 126,
     "name": "Magmar",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Karate Chop"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Fire Punch",
-        "Flamethrower"
-      ]
+      "quick": ["Ember", "Karate Chop"],
+      "cinematic": ["Fire Blast", "Fire Punch", "Flamethrower"]
     },
     "stats": {
       "attack": 206,
@@ -8666,19 +7483,10 @@
   {
     "id": 127,
     "name": "Pinsir",
-    "types": [
-      "Bug"
-    ],
+    "types": ["Bug"],
     "moves": {
-      "quick": [
-        "Rock Smash",
-        "Bug Bite"
-      ],
-      "cinematic": [
-        "Vice Grip",
-        "X Scissor",
-        "Close Combat"
-      ]
+      "quick": ["Rock Smash", "Bug Bite"],
+      "cinematic": ["Vice Grip", "X Scissor", "Close Combat"]
     },
     "stats": {
       "attack": 238,
@@ -8722,19 +7530,10 @@
   {
     "id": 128,
     "name": "Tauros",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Horn Attack",
-        "Iron Head",
-        "Earthquake"
-      ]
+      "quick": ["Tackle", "Zen Headbutt"],
+      "cinematic": ["Horn Attack", "Iron Head", "Earthquake"]
     },
     "stats": {
       "attack": 198,
@@ -8778,16 +7577,10 @@
   {
     "id": 129,
     "name": "Magikarp",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Splash"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Splash"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 29,
@@ -8853,20 +7646,10 @@
   {
     "id": 130,
     "name": "Gyarados",
-    "types": [
-      "Water",
-      "Flying"
-    ],
+    "types": ["Water", "Flying"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Dragon Tail"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Crunch",
-        "Outrage"
-      ]
+      "quick": ["Bite", "Dragon Tail"],
+      "cinematic": ["Hydro Pump", "Crunch", "Outrage"]
     },
     "stats": {
       "attack": 237,
@@ -8909,20 +7692,10 @@
   {
     "id": 131,
     "name": "Lapras",
-    "types": [
-      "Water",
-      "Ice"
-    ],
+    "types": ["Water", "Ice"],
     "moves": {
-      "quick": [
-        "Frost Breath",
-        "Water Gun"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Ice Beam",
-        "Blizzard"
-      ]
+      "quick": ["Frost Breath", "Water Gun"],
+      "cinematic": ["Hydro Pump", "Ice Beam", "Blizzard"]
     },
     "stats": {
       "attack": 165,
@@ -8966,16 +7739,10 @@
   {
     "id": 132,
     "name": "Ditto",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Transform"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Transform"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 91,
@@ -9018,18 +7785,10 @@
   {
     "id": 133,
     "name": "Eevee",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Quick Attack",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Dig",
-        "Swift"
-      ]
+      "quick": ["Quick Attack", "Tackle"],
+      "cinematic": ["Dig", "Swift"]
     },
     "stats": {
       "attack": 104,
@@ -9128,18 +7887,10 @@
   {
     "id": 134,
     "name": "Vaporeon",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun"
-      ],
-      "cinematic": [
-        "Water Pulse",
-        "Hydro Pump",
-        "Aqua Tail"
-      ]
+      "quick": ["Water Gun"],
+      "cinematic": ["Water Pulse", "Hydro Pump", "Aqua Tail"]
     },
     "stats": {
       "attack": 205,
@@ -9186,19 +7937,10 @@
   {
     "id": 135,
     "name": "Jolteon",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Thunder Shock",
-        "Volt Switch"
-      ],
-      "cinematic": [
-        "Discharge",
-        "Thunderbolt",
-        "Thunder"
-      ]
+      "quick": ["Thunder Shock", "Volt Switch"],
+      "cinematic": ["Discharge", "Thunderbolt", "Thunder"]
     },
     "stats": {
       "attack": 232,
@@ -9245,19 +7987,10 @@
   {
     "id": 136,
     "name": "Flareon",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Fire Spin"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Flamethrower",
-        "Overheat"
-      ]
+      "quick": ["Ember", "Fire Spin"],
+      "cinematic": ["Fire Blast", "Flamethrower", "Overheat"]
     },
     "stats": {
       "attack": 246,
@@ -9304,19 +8037,10 @@
   {
     "id": 137,
     "name": "Porygon",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Charge Beam",
-        "Hidden Power"
-      ],
-      "cinematic": [
-        "Solar Beam",
-        "Hyper Beam",
-        "Zap Cannon"
-      ]
+      "quick": ["Charge Beam", "Hidden Power"],
+      "cinematic": ["Solar Beam", "Hyper Beam", "Zap Cannon"]
     },
     "stats": {
       "attack": 153,
@@ -9369,20 +8093,10 @@
   {
     "id": 138,
     "name": "Omanyte",
-    "types": [
-      "Rock",
-      "Water"
-    ],
+    "types": ["Rock", "Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Bubble Beam",
-        "Rock Blast"
-      ]
+      "quick": ["Water Gun", "Mud Shot"],
+      "cinematic": ["Ancient Power", "Bubble Beam", "Rock Blast"]
     },
     "stats": {
       "attack": 155,
@@ -9448,20 +8162,10 @@
   {
     "id": 139,
     "name": "Omastar",
-    "types": [
-      "Rock",
-      "Water"
-    ],
+    "types": ["Rock", "Water"],
     "moves": {
-      "quick": [
-        "Mud Shot",
-        "Water Gun"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Hydro Pump",
-        "Rock Blast"
-      ]
+      "quick": ["Mud Shot", "Water Gun"],
+      "cinematic": ["Ancient Power", "Hydro Pump", "Rock Blast"]
     },
     "stats": {
       "attack": 207,
@@ -9508,20 +8212,10 @@
   {
     "id": 140,
     "name": "Kabuto",
-    "types": [
-      "Rock",
-      "Water"
-    ],
+    "types": ["Rock", "Water"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Aqua Jet",
-        "Rock Tomb"
-      ]
+      "quick": ["Scratch", "Mud Shot"],
+      "cinematic": ["Ancient Power", "Aqua Jet", "Rock Tomb"]
     },
     "stats": {
       "attack": 148,
@@ -9583,20 +8277,10 @@
   {
     "id": 141,
     "name": "Kabutops",
-    "types": [
-      "Rock",
-      "Water"
-    ],
+    "types": ["Rock", "Water"],
     "moves": {
-      "quick": [
-        "Mud Shot",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Water Pulse",
-        "Stone Edge"
-      ]
+      "quick": ["Mud Shot", "Rock Smash"],
+      "cinematic": ["Ancient Power", "Water Pulse", "Stone Edge"]
     },
     "stats": {
       "attack": 220,
@@ -9643,20 +8327,10 @@
   {
     "id": 142,
     "name": "Aerodactyl",
-    "types": [
-      "Rock",
-      "Flying"
-    ],
+    "types": ["Rock", "Flying"],
     "moves": {
-      "quick": [
-        "Steel Wing",
-        "Bite"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Iron Head",
-        "Hyper Beam"
-      ]
+      "quick": ["Steel Wing", "Bite"],
+      "cinematic": ["Ancient Power", "Iron Head", "Hyper Beam"]
     },
     "stats": {
       "attack": 221,
@@ -9704,19 +8378,10 @@
   {
     "id": 143,
     "name": "Snorlax",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Zen Headbutt",
-        "Lick"
-      ],
-      "cinematic": [
-        "Heavy Slam",
-        "Hyper Beam",
-        "Earthquake"
-      ]
+      "quick": ["Zen Headbutt", "Lick"],
+      "cinematic": ["Heavy Slam", "Hyper Beam", "Earthquake"]
     },
     "stats": {
       "attack": 190,
@@ -9764,19 +8429,10 @@
   {
     "id": 144,
     "name": "Articuno",
-    "types": [
-      "Ice",
-      "Flying"
-    ],
+    "types": ["Ice", "Flying"],
     "moves": {
-      "quick": [
-        "Frost Breath"
-      ],
-      "cinematic": [
-        "Ice Beam",
-        "Icy Wind",
-        "Blizzard"
-      ]
+      "quick": ["Frost Breath"],
+      "cinematic": ["Ice Beam", "Icy Wind", "Blizzard"]
     },
     "stats": {
       "attack": 192,
@@ -9819,19 +8475,10 @@
   {
     "id": 145,
     "name": "Zapdos",
-    "types": [
-      "Electric",
-      "Flying"
-    ],
+    "types": ["Electric", "Flying"],
     "moves": {
-      "quick": [
-        "Charge Beam"
-      ],
-      "cinematic": [
-        "Zap Cannon",
-        "Thunderbolt",
-        "Thunder"
-      ]
+      "quick": ["Charge Beam"],
+      "cinematic": ["Zap Cannon", "Thunderbolt", "Thunder"]
     },
     "stats": {
       "attack": 253,
@@ -9874,19 +8521,10 @@
   {
     "id": 146,
     "name": "Moltres",
-    "types": [
-      "Fire",
-      "Flying"
-    ],
+    "types": ["Fire", "Flying"],
     "moves": {
-      "quick": [
-        "Fire Spin"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Heat Wave",
-        "Overheat"
-      ]
+      "quick": ["Fire Spin"],
+      "cinematic": ["Fire Blast", "Heat Wave", "Overheat"]
     },
     "stats": {
       "attack": 251,
@@ -9929,19 +8567,10 @@
   {
     "id": 147,
     "name": "Dratini",
-    "types": [
-      "Dragon"
-    ],
+    "types": ["Dragon"],
     "moves": {
-      "quick": [
-        "Dragon Breath",
-        "Iron Tail"
-      ],
-      "cinematic": [
-        "Wrap",
-        "Twister",
-        "Aqua Tail"
-      ]
+      "quick": ["Dragon Breath", "Iron Tail"],
+      "cinematic": ["Wrap", "Twister", "Aqua Tail"]
     },
     "stats": {
       "attack": 119,
@@ -10007,19 +8636,10 @@
   {
     "id": 148,
     "name": "Dragonair",
-    "types": [
-      "Dragon"
-    ],
+    "types": ["Dragon"],
     "moves": {
-      "quick": [
-        "Dragon Breath",
-        "Iron Tail"
-      ],
-      "cinematic": [
-        "Wrap",
-        "Aqua Tail",
-        "Dragon Pulse"
-      ]
+      "quick": ["Dragon Breath", "Iron Tail"],
+      "cinematic": ["Wrap", "Aqua Tail", "Dragon Pulse"]
     },
     "stats": {
       "attack": 163,
@@ -10082,20 +8702,10 @@
   {
     "id": 149,
     "name": "Dragonite",
-    "types": [
-      "Dragon",
-      "Flying"
-    ],
+    "types": ["Dragon", "Flying"],
     "moves": {
-      "quick": [
-        "Dragon Tail",
-        "Steel Wing"
-      ],
-      "cinematic": [
-        "Hurricane",
-        "Hyper Beam",
-        "Outrage"
-      ]
+      "quick": ["Dragon Tail", "Steel Wing"],
+      "cinematic": ["Hurricane", "Hyper Beam", "Outrage"]
     },
     "stats": {
       "attack": 263,
@@ -10142,20 +8752,10 @@
   {
     "id": 150,
     "name": "Mewtwo",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Psycho Cut",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Psychic",
-        "Shadow Ball",
-        "Hyper Beam",
-        "Focus Blast"
-      ]
+      "quick": ["Psycho Cut", "Confusion"],
+      "cinematic": ["Psychic", "Shadow Ball", "Hyper Beam", "Focus Blast"]
     },
     "stats": {
       "attack": 330,
@@ -10198,13 +8798,9 @@
   {
     "id": 151,
     "name": "Mew",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Pound"
-      ],
+      "quick": ["Pound"],
       "cinematic": [
         "Blizzard",
         "Earthquake",
@@ -10253,19 +8849,10 @@
   {
     "id": 152,
     "name": "Chikorita",
-    "types": [
-      "Grass"
-    ],
+    "types": ["Grass"],
     "moves": {
-      "quick": [
-        "Vine Whip",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Energy Ball",
-        "Grass Knot",
-        "Body Slam"
-      ]
+      "quick": ["Vine Whip", "Tackle"],
+      "cinematic": ["Energy Ball", "Grass Knot", "Body Slam"]
     },
     "stats": {
       "attack": 92,
@@ -10322,19 +8909,10 @@
   {
     "id": 153,
     "name": "Bayleef",
-    "types": [
-      "Grass"
-    ],
+    "types": ["Grass"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Energy Ball",
-        "Grass Knot",
-        "Ancient Power"
-      ]
+      "quick": ["Razor Leaf", "Tackle"],
+      "cinematic": ["Energy Ball", "Grass Knot", "Ancient Power"]
     },
     "stats": {
       "attack": 122,
@@ -10388,19 +8966,10 @@
   {
     "id": 154,
     "name": "Meganium",
-    "types": [
-      "Grass"
-    ],
+    "types": ["Grass"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Vine Whip"
-      ],
-      "cinematic": [
-        "Petal Blizzard",
-        "Solar Beam",
-        "Earthquake"
-      ]
+      "quick": ["Razor Leaf", "Vine Whip"],
+      "cinematic": ["Petal Blizzard", "Solar Beam", "Earthquake"]
     },
     "stats": {
       "attack": 168,
@@ -10447,19 +9016,10 @@
   {
     "id": 155,
     "name": "Cyndaquil",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Flame Charge",
-        "Swift",
-        "Flamethrower"
-      ]
+      "quick": ["Ember", "Tackle"],
+      "cinematic": ["Flame Charge", "Swift", "Flamethrower"]
     },
     "stats": {
       "attack": 116,
@@ -10516,19 +9076,10 @@
   {
     "id": 156,
     "name": "Quilava",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Flame Charge",
-        "Dig",
-        "Flamethrower"
-      ]
+      "quick": ["Ember", "Tackle"],
+      "cinematic": ["Flame Charge", "Dig", "Flamethrower"]
     },
     "stats": {
       "attack": 158,
@@ -10582,19 +9133,10 @@
   {
     "id": 157,
     "name": "Typhlosion",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Shadow Claw"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Overheat",
-        "Solar Beam"
-      ]
+      "quick": ["Ember", "Shadow Claw"],
+      "cinematic": ["Fire Blast", "Overheat", "Solar Beam"]
     },
     "stats": {
       "attack": 223,
@@ -10641,19 +9183,10 @@
   {
     "id": 158,
     "name": "Totodile",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Scratch"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Aqua Jet",
-        "Water Pulse"
-      ]
+      "quick": ["Water Gun", "Scratch"],
+      "cinematic": ["Crunch", "Aqua Jet", "Water Pulse"]
     },
     "stats": {
       "attack": 117,
@@ -10710,19 +9243,10 @@
   {
     "id": 159,
     "name": "Croconaw",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Scratch"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Ice Punch",
-        "Water Pulse"
-      ]
+      "quick": ["Water Gun", "Scratch"],
+      "cinematic": ["Crunch", "Ice Punch", "Water Pulse"]
     },
     "stats": {
       "attack": 150,
@@ -10776,19 +9300,10 @@
   {
     "id": 160,
     "name": "Feraligatr",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Bite"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Hydro Pump",
-        "Ice Beam"
-      ]
+      "quick": ["Water Gun", "Bite"],
+      "cinematic": ["Crunch", "Hydro Pump", "Ice Beam"]
     },
     "stats": {
       "attack": 205,
@@ -10835,19 +9350,10 @@
   {
     "id": 161,
     "name": "Sentret",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Dig",
-        "Brick Break",
-        "Grass Knot"
-      ]
+      "quick": ["Scratch", "Quick Attack"],
+      "cinematic": ["Dig", "Brick Break", "Grass Knot"]
     },
     "stats": {
       "attack": 79,
@@ -10900,19 +9406,10 @@
   {
     "id": 162,
     "name": "Furret",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Quick Attack",
-        "Sucker Punch"
-      ],
-      "cinematic": [
-        "Dig",
-        "Brick Break",
-        "Hyper Beam"
-      ]
+      "quick": ["Quick Attack", "Sucker Punch"],
+      "cinematic": ["Dig", "Brick Break", "Hyper Beam"]
     },
     "stats": {
       "attack": 148,
@@ -10959,20 +9456,10 @@
   {
     "id": 163,
     "name": "Hoothoot",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Feint Attack",
-        "Peck"
-      ],
-      "cinematic": [
-        "Aerial Ace",
-        "Sky Attack",
-        "Night Shade"
-      ]
+      "quick": ["Feint Attack", "Peck"],
+      "cinematic": ["Aerial Ace", "Sky Attack", "Night Shade"]
     },
     "stats": {
       "attack": 67,
@@ -11021,20 +9508,10 @@
   {
     "id": 164,
     "name": "Noctowl",
-    "types": [
-      "Normal",
-      "Flying"
-    ],
+    "types": ["Normal", "Flying"],
     "moves": {
-      "quick": [
-        "Wing Attack",
-        "Extrasensory"
-      ],
-      "cinematic": [
-        "Psychic",
-        "Sky Attack",
-        "Night Shade"
-      ]
+      "quick": ["Wing Attack", "Extrasensory"],
+      "cinematic": ["Psychic", "Sky Attack", "Night Shade"]
     },
     "stats": {
       "attack": 145,
@@ -11081,20 +9558,10 @@
   {
     "id": 165,
     "name": "Ledyba",
-    "types": [
-      "Bug",
-      "Flying"
-    ],
+    "types": ["Bug", "Flying"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Bug Bite"
-      ],
-      "cinematic": [
-        "Silver Wind",
-        "Swift",
-        "Aerial Ace"
-      ]
+      "quick": ["Tackle", "Bug Bite"],
+      "cinematic": ["Silver Wind", "Swift", "Aerial Ace"]
     },
     "stats": {
       "attack": 72,
@@ -11143,20 +9610,10 @@
   {
     "id": 166,
     "name": "Ledian",
-    "types": [
-      "Bug",
-      "Flying"
-    ],
+    "types": ["Bug", "Flying"],
     "moves": {
-      "quick": [
-        "Struggle Bug",
-        "Bug Bite"
-      ],
-      "cinematic": [
-        "Bug Buzz",
-        "Silver Wind",
-        "Aerial Ace"
-      ]
+      "quick": ["Struggle Bug", "Bug Bite"],
+      "cinematic": ["Bug Buzz", "Silver Wind", "Aerial Ace"]
     },
     "stats": {
       "attack": 107,
@@ -11199,20 +9656,10 @@
   {
     "id": 167,
     "name": "Spinarak",
-    "types": [
-      "Bug",
-      "Poison"
-    ],
+    "types": ["Bug", "Poison"],
     "moves": {
-      "quick": [
-        "Poison Sting",
-        "Bug Bite"
-      ],
-      "cinematic": [
-        "Night Slash",
-        "Signal Beam",
-        "Cross Poison"
-      ]
+      "quick": ["Poison Sting", "Bug Bite"],
+      "cinematic": ["Night Slash", "Signal Beam", "Cross Poison"]
     },
     "stats": {
       "attack": 105,
@@ -11265,20 +9712,10 @@
   {
     "id": 168,
     "name": "Ariados",
-    "types": [
-      "Bug",
-      "Poison"
-    ],
+    "types": ["Bug", "Poison"],
     "moves": {
-      "quick": [
-        "Poison Sting",
-        "Infestation"
-      ],
-      "cinematic": [
-        "Shadow Sneak",
-        "Megahorn",
-        "Cross Poison"
-      ]
+      "quick": ["Poison Sting", "Infestation"],
+      "cinematic": ["Shadow Sneak", "Megahorn", "Cross Poison"]
     },
     "stats": {
       "attack": 161,
@@ -11325,20 +9762,10 @@
   {
     "id": 169,
     "name": "Crobat",
-    "types": [
-      "Poison",
-      "Flying"
-    ],
+    "types": ["Poison", "Flying"],
     "moves": {
-      "quick": [
-        "Air Slash",
-        "Bite"
-      ],
-      "cinematic": [
-        "Shadow Ball",
-        "Air Cutter",
-        "Sludge Bomb"
-      ]
+      "quick": ["Air Slash", "Bite"],
+      "cinematic": ["Shadow Ball", "Air Cutter", "Sludge Bomb"]
     },
     "stats": {
       "attack": 194,
@@ -11385,20 +9812,10 @@
   {
     "id": 170,
     "name": "Chinchou",
-    "types": [
-      "Water",
-      "Electric"
-    ],
+    "types": ["Water", "Electric"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Spark"
-      ],
-      "cinematic": [
-        "Water Pulse",
-        "Thunderbolt",
-        "Bubble Beam"
-      ]
+      "quick": ["Bubble", "Spark"],
+      "cinematic": ["Water Pulse", "Thunderbolt", "Bubble Beam"]
     },
     "stats": {
       "attack": 106,
@@ -11447,20 +9864,10 @@
   {
     "id": 171,
     "name": "Lanturn",
-    "types": [
-      "Water",
-      "Electric"
-    ],
+    "types": ["Water", "Electric"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Charge Beam"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Thunderbolt",
-        "Thunder"
-      ]
+      "quick": ["Water Gun", "Charge Beam"],
+      "cinematic": ["Hydro Pump", "Thunderbolt", "Thunder"]
     },
     "stats": {
       "attack": 146,
@@ -11507,18 +9914,10 @@
   {
     "id": 172,
     "name": "Pichu",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Thunder Shock"
-      ],
-      "cinematic": [
-        "Thunderbolt",
-        "Disarming Voice",
-        "Thunder Punch"
-      ]
+      "quick": ["Thunder Shock"],
+      "cinematic": ["Thunderbolt", "Disarming Voice", "Thunder Punch"]
     },
     "stats": {
       "attack": 77,
@@ -11574,19 +9973,10 @@
   {
     "id": 173,
     "name": "Cleffa",
-    "types": [
-      "Fairy"
-    ],
+    "types": ["Fairy"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Grass Knot",
-        "Psyshock",
-        "Signal Beam"
-      ]
+      "quick": ["Pound", "Zen Headbutt"],
+      "cinematic": ["Grass Knot", "Psyshock", "Signal Beam"]
     },
     "stats": {
       "attack": 75,
@@ -11638,20 +10028,10 @@
   {
     "id": 174,
     "name": "Igglybuff",
-    "types": [
-      "Normal",
-      "Fairy"
-    ],
+    "types": ["Normal", "Fairy"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Feint Attack"
-      ],
-      "cinematic": [
-        "Wild Charge",
-        "Shadow Ball",
-        "Psychic"
-      ]
+      "quick": ["Pound", "Feint Attack"],
+      "cinematic": ["Wild Charge", "Shadow Ball", "Psychic"]
     },
     "stats": {
       "attack": 69,
@@ -11707,19 +10087,10 @@
   {
     "id": 175,
     "name": "Togepi",
-    "types": [
-      "Fairy"
-    ],
+    "types": ["Fairy"],
     "moves": {
-      "quick": [
-        "Hidden Power",
-        "Peck"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Psyshock",
-        "Dazzling Gleam"
-      ]
+      "quick": ["Hidden Power", "Peck"],
+      "cinematic": ["Ancient Power", "Psyshock", "Dazzling Gleam"]
     },
     "stats": {
       "attack": 67,
@@ -11775,20 +10146,10 @@
   {
     "id": 176,
     "name": "Togetic",
-    "types": [
-      "Fairy",
-      "Flying"
-    ],
+    "types": ["Fairy", "Flying"],
     "moves": {
-      "quick": [
-        "Extrasensory",
-        "Hidden Power"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Dazzling Gleam",
-        "Aerial Ace"
-      ]
+      "quick": ["Extrasensory", "Hidden Power"],
+      "cinematic": ["Ancient Power", "Dazzling Gleam", "Aerial Ace"]
     },
     "stats": {
       "attack": 139,
@@ -11834,20 +10195,10 @@
   {
     "id": 177,
     "name": "Natu",
-    "types": [
-      "Psychic",
-      "Flying"
-    ],
+    "types": ["Psychic", "Flying"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Night Shade",
-        "Psyshock",
-        "Drill Peck"
-      ]
+      "quick": ["Peck", "Quick Attack"],
+      "cinematic": ["Night Shade", "Psyshock", "Drill Peck"]
     },
     "stats": {
       "attack": 134,
@@ -11900,20 +10251,10 @@
   {
     "id": 178,
     "name": "Xatu",
-    "types": [
-      "Psychic",
-      "Flying"
-    ],
+    "types": ["Psychic", "Flying"],
     "moves": {
-      "quick": [
-        "Air Slash",
-        "Feint Attack"
-      ],
-      "cinematic": [
-        "Ominous Wind",
-        "Futuresight",
-        "Aerial Ace"
-      ]
+      "quick": ["Air Slash", "Feint Attack"],
+      "cinematic": ["Ominous Wind", "Futuresight", "Aerial Ace"]
     },
     "stats": {
       "attack": 192,
@@ -11960,19 +10301,10 @@
   {
     "id": 179,
     "name": "Mareep",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Thunder Shock"
-      ],
-      "cinematic": [
-        "Body Slam",
-        "Thunderbolt",
-        "Discharge"
-      ]
+      "quick": ["Tackle", "Thunder Shock"],
+      "cinematic": ["Body Slam", "Thunderbolt", "Discharge"]
     },
     "stats": {
       "attack": 114,
@@ -12029,19 +10361,10 @@
   {
     "id": 180,
     "name": "Flaaffy",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Charge Beam"
-      ],
-      "cinematic": [
-        "Power Gem",
-        "Thunderbolt",
-        "Discharge"
-      ]
+      "quick": ["Tackle", "Charge Beam"],
+      "cinematic": ["Power Gem", "Thunderbolt", "Discharge"]
     },
     "stats": {
       "attack": 145,
@@ -12095,19 +10418,10 @@
   {
     "id": 181,
     "name": "Ampharos",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Charge Beam",
-        "Volt Switch"
-      ],
-      "cinematic": [
-        "Zap Cannon",
-        "Focus Blast",
-        "Thunder"
-      ]
+      "quick": ["Charge Beam", "Volt Switch"],
+      "cinematic": ["Zap Cannon", "Focus Blast", "Thunder"]
     },
     "stats": {
       "attack": 211,
@@ -12158,19 +10472,10 @@
   {
     "id": 182,
     "name": "Bellossom",
-    "types": [
-      "Grass"
-    ],
+    "types": ["Grass"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Acid"
-      ],
-      "cinematic": [
-        "Leaf Blade",
-        "Petal Blizzard",
-        "Dazzling Gleam"
-      ]
+      "quick": ["Razor Leaf", "Acid"],
+      "cinematic": ["Leaf Blade", "Petal Blizzard", "Dazzling Gleam"]
     },
     "stats": {
       "attack": 169,
@@ -12217,20 +10522,10 @@
   {
     "id": 183,
     "name": "Marill",
-    "types": [
-      "Water",
-      "Fairy"
-    ],
+    "types": ["Water", "Fairy"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Bubble"
-      ],
-      "cinematic": [
-        "Bubble Beam",
-        "Aqua Tail",
-        "Body Slam"
-      ]
+      "quick": ["Tackle", "Bubble"],
+      "cinematic": ["Bubble Beam", "Aqua Tail", "Body Slam"]
     },
     "stats": {
       "attack": 37,
@@ -12283,20 +10578,10 @@
   {
     "id": 184,
     "name": "Azumarill",
-    "types": [
-      "Water",
-      "Fairy"
-    ],
+    "types": ["Water", "Fairy"],
     "moves": {
-      "quick": [
-        "Rock Smash",
-        "Bubble"
-      ],
-      "cinematic": [
-        "Play Rough",
-        "Hydro Pump",
-        "Ice Beam"
-      ]
+      "quick": ["Rock Smash", "Bubble"],
+      "cinematic": ["Play Rough", "Hydro Pump", "Ice Beam"]
     },
     "stats": {
       "attack": 112,
@@ -12347,19 +10632,10 @@
   {
     "id": 185,
     "name": "Sudowoodo",
-    "types": [
-      "Rock"
-    ],
+    "types": ["Rock"],
     "moves": {
-      "quick": [
-        "Rock Throw",
-        "Counter"
-      ],
-      "cinematic": [
-        "Stone Edge",
-        "Earthquake",
-        "Rock Slide"
-      ]
+      "quick": ["Rock Throw", "Counter"],
+      "cinematic": ["Stone Edge", "Earthquake", "Rock Slide"]
     },
     "stats": {
       "attack": 167,
@@ -12407,19 +10683,10 @@
   {
     "id": 186,
     "name": "Politoed",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Mud Shot",
-        "Bubble"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Blizzard",
-        "Earthquake"
-      ]
+      "quick": ["Mud Shot", "Bubble"],
+      "cinematic": ["Hydro Pump", "Blizzard", "Earthquake"]
     },
     "stats": {
       "attack": 174,
@@ -12466,20 +10733,10 @@
   {
     "id": 187,
     "name": "Hoppip",
-    "types": [
-      "Grass",
-      "Flying"
-    ],
+    "types": ["Grass", "Flying"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Bullet Seed"
-      ],
-      "cinematic": [
-        "Grass Knot",
-        "Dazzling Gleam",
-        "Seed Bomb"
-      ]
+      "quick": ["Tackle", "Bullet Seed"],
+      "cinematic": ["Grass Knot", "Dazzling Gleam", "Seed Bomb"]
     },
     "stats": {
       "attack": 67,
@@ -12532,20 +10789,10 @@
   {
     "id": 188,
     "name": "Skiploom",
-    "types": [
-      "Grass",
-      "Flying"
-    ],
+    "types": ["Grass", "Flying"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Bullet Seed"
-      ],
-      "cinematic": [
-        "Grass Knot",
-        "Dazzling Gleam",
-        "Energy Ball"
-      ]
+      "quick": ["Tackle", "Bullet Seed"],
+      "cinematic": ["Grass Knot", "Dazzling Gleam", "Energy Ball"]
     },
     "stats": {
       "attack": 91,
@@ -12599,20 +10846,10 @@
   {
     "id": 189,
     "name": "Jumpluff",
-    "types": [
-      "Grass",
-      "Flying"
-    ],
+    "types": ["Grass", "Flying"],
     "moves": {
-      "quick": [
-        "Infestation",
-        "Bullet Seed"
-      ],
-      "cinematic": [
-        "Energy Ball",
-        "Dazzling Gleam",
-        "Solar Beam"
-      ]
+      "quick": ["Infestation", "Bullet Seed"],
+      "cinematic": ["Energy Ball", "Dazzling Gleam", "Solar Beam"]
     },
     "stats": {
       "attack": 118,
@@ -12659,19 +10896,10 @@
   {
     "id": 190,
     "name": "Aipom",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Astonish"
-      ],
-      "cinematic": [
-        "Low Sweep",
-        "Swift",
-        "Aerial Ace"
-      ]
+      "quick": ["Scratch", "Astonish"],
+      "cinematic": ["Low Sweep", "Swift", "Aerial Ace"]
     },
     "stats": {
       "attack": 136,
@@ -12723,19 +10951,10 @@
   {
     "id": 191,
     "name": "Sunkern",
-    "types": [
-      "Grass"
-    ],
+    "types": ["Grass"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Cut"
-      ],
-      "cinematic": [
-        "Energy Ball",
-        "Grass Knot",
-        "Seed Bomb"
-      ]
+      "quick": ["Razor Leaf", "Cut"],
+      "cinematic": ["Energy Ball", "Grass Knot", "Seed Bomb"]
     },
     "stats": {
       "attack": 55,
@@ -12792,19 +11011,10 @@
   {
     "id": 192,
     "name": "Sunflora",
-    "types": [
-      "Grass"
-    ],
+    "types": ["Grass"],
     "moves": {
-      "quick": [
-        "Razor Leaf",
-        "Bullet Seed"
-      ],
-      "cinematic": [
-        "Solar Beam",
-        "Petal Blizzard",
-        "Sludge Bomb"
-      ]
+      "quick": ["Razor Leaf", "Bullet Seed"],
+      "cinematic": ["Solar Beam", "Petal Blizzard", "Sludge Bomb"]
     },
     "stats": {
       "attack": 185,
@@ -12851,20 +11061,10 @@
   {
     "id": 193,
     "name": "Yanma",
-    "types": [
-      "Bug",
-      "Flying"
-    ],
+    "types": ["Bug", "Flying"],
     "moves": {
-      "quick": [
-        "Quick Attack",
-        "Wing Attack"
-      ],
-      "cinematic": [
-        "Ancient Power",
-        "Aerial Ace",
-        "Silver Wind"
-      ]
+      "quick": ["Quick Attack", "Wing Attack"],
+      "cinematic": ["Ancient Power", "Aerial Ace", "Silver Wind"]
     },
     "stats": {
       "attack": 154,
@@ -12908,20 +11108,10 @@
   {
     "id": 194,
     "name": "Wooper",
-    "types": [
-      "Water",
-      "Ground"
-    ],
+    "types": ["Water", "Ground"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Mud Bomb",
-        "Dig",
-        "Body Slam"
-      ]
+      "quick": ["Water Gun", "Mud Shot"],
+      "cinematic": ["Mud Bomb", "Dig", "Body Slam"]
     },
     "stats": {
       "attack": 75,
@@ -12974,20 +11164,10 @@
   {
     "id": 195,
     "name": "Quagsire",
-    "types": [
-      "Water",
-      "Ground"
-    ],
+    "types": ["Water", "Ground"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Sludge Bomb",
-        "Earthquake",
-        "Stone Edge"
-      ]
+      "quick": ["Water Gun", "Mud Shot"],
+      "cinematic": ["Sludge Bomb", "Earthquake", "Stone Edge"]
     },
     "stats": {
       "attack": 152,
@@ -13034,19 +11214,10 @@
   {
     "id": 196,
     "name": "Espeon",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Confusion",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Psybeam",
-        "Psychic",
-        "Futuresight"
-      ]
+      "quick": ["Confusion", "Zen Headbutt"],
+      "cinematic": ["Psybeam", "Psychic", "Futuresight"]
     },
     "stats": {
       "attack": 261,
@@ -13092,18 +11263,10 @@
   {
     "id": 197,
     "name": "Umbreon",
-    "types": [
-      "Dark"
-    ],
+    "types": ["Dark"],
     "moves": {
-      "quick": [
-        "Feint Attack",
-        "Snarl"
-      ],
-      "cinematic": [
-        "Dark Pulse",
-        "Foul Play"
-      ]
+      "quick": ["Feint Attack", "Snarl"],
+      "cinematic": ["Dark Pulse", "Foul Play"]
     },
     "stats": {
       "attack": 126,
@@ -13149,20 +11312,10 @@
   {
     "id": 198,
     "name": "Murkrow",
-    "types": [
-      "Dark",
-      "Flying"
-    ],
+    "types": ["Dark", "Flying"],
     "moves": {
-      "quick": [
-        "Peck",
-        "Feint Attack"
-      ],
-      "cinematic": [
-        "Drill Peck",
-        "Foul Play",
-        "Dark Pulse"
-      ]
+      "quick": ["Peck", "Feint Attack"],
+      "cinematic": ["Drill Peck", "Foul Play", "Dark Pulse"]
     },
     "stats": {
       "attack": 175,
@@ -13210,20 +11363,10 @@
   {
     "id": 199,
     "name": "Slowking",
-    "types": [
-      "Water",
-      "Psychic"
-    ],
+    "types": ["Water", "Psychic"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Blizzard",
-        "Psychic",
-        "Fire Blast"
-      ]
+      "quick": ["Water Gun", "Confusion"],
+      "cinematic": ["Blizzard", "Psychic", "Fire Blast"]
     },
     "stats": {
       "attack": 177,
@@ -13270,19 +11413,10 @@
   {
     "id": 200,
     "name": "Misdreavus",
-    "types": [
-      "Ghost"
-    ],
+    "types": ["Ghost"],
     "moves": {
-      "quick": [
-        "Astonish",
-        "Hex"
-      ],
-      "cinematic": [
-        "Shadow Sneak",
-        "Dark Pulse",
-        "Ominous Wind"
-      ]
+      "quick": ["Astonish", "Hex"],
+      "cinematic": ["Shadow Sneak", "Dark Pulse", "Ominous Wind"]
     },
     "stats": {
       "attack": 167,
@@ -13334,16 +11468,10 @@
   {
     "id": 201,
     "name": "Unown",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Hidden Power"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Hidden Power"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 136,
@@ -13383,17 +11511,10 @@
   {
     "id": 202,
     "name": "Wobbuffet",
-    "types": [
-      "Psychic"
-    ],
+    "types": ["Psychic"],
     "moves": {
-      "quick": [
-        "Counter",
-        "Splash"
-      ],
-      "cinematic": [
-        "Mirror Coat"
-      ]
+      "quick": ["Counter", "Splash"],
+      "cinematic": ["Mirror Coat"]
     },
     "stats": {
       "attack": 60,
@@ -13441,20 +11562,10 @@
   {
     "id": 203,
     "name": "Girafarig",
-    "types": [
-      "Normal",
-      "Psychic"
-    ],
+    "types": ["Normal", "Psychic"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Confusion"
-      ],
-      "cinematic": [
-        "Psychic",
-        "Thunderbolt",
-        "Mirror Coat"
-      ]
+      "quick": ["Tackle", "Confusion"],
+      "cinematic": ["Psychic", "Thunderbolt", "Mirror Coat"]
     },
     "stats": {
       "attack": 182,
@@ -13502,19 +11613,10 @@
   {
     "id": 204,
     "name": "Pineco",
-    "types": [
-      "Bug"
-    ],
+    "types": ["Bug"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Bug Bite"
-      ],
-      "cinematic": [
-        "Gyro Ball",
-        "Rock Tomb",
-        "Sand Tomb"
-      ]
+      "quick": ["Tackle", "Bug Bite"],
+      "cinematic": ["Gyro Ball", "Rock Tomb", "Sand Tomb"]
     },
     "stats": {
       "attack": 108,
@@ -13567,20 +11669,10 @@
   {
     "id": 205,
     "name": "Forretress",
-    "types": [
-      "Bug",
-      "Steel"
-    ],
+    "types": ["Bug", "Steel"],
     "moves": {
-      "quick": [
-        "Bug Bite",
-        "Struggle Bug"
-      ],
-      "cinematic": [
-        "Heavy Slam",
-        "Earthquake",
-        "Rock Tomb"
-      ]
+      "quick": ["Bug Bite", "Struggle Bug"],
+      "cinematic": ["Heavy Slam", "Earthquake", "Rock Tomb"]
     },
     "stats": {
       "attack": 161,
@@ -13627,19 +11719,10 @@
   {
     "id": 206,
     "name": "Dunsparce",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Astonish"
-      ],
-      "cinematic": [
-        "Dig",
-        "Rock Slide",
-        "Drill Run"
-      ]
+      "quick": ["Bite", "Astonish"],
+      "cinematic": ["Dig", "Rock Slide", "Drill Run"]
     },
     "stats": {
       "attack": 131,
@@ -13683,20 +11766,10 @@
   {
     "id": 207,
     "name": "Gligar",
-    "types": [
-      "Ground",
-      "Flying"
-    ],
+    "types": ["Ground", "Flying"],
     "moves": {
-      "quick": [
-        "Fury Cutter",
-        "Wing Attack"
-      ],
-      "cinematic": [
-        "Dig",
-        "Aerial Ace",
-        "Night Slash"
-      ]
+      "quick": ["Fury Cutter", "Wing Attack"],
+      "cinematic": ["Dig", "Aerial Ace", "Night Slash"]
     },
     "stats": {
       "attack": 143,
@@ -13744,20 +11817,10 @@
   {
     "id": 208,
     "name": "Steelix",
-    "types": [
-      "Steel",
-      "Ground"
-    ],
+    "types": ["Steel", "Ground"],
     "moves": {
-      "quick": [
-        "Iron Tail",
-        "Dragon Tail"
-      ],
-      "cinematic": [
-        "Earthquake",
-        "Heavy Slam",
-        "Crunch"
-      ]
+      "quick": ["Iron Tail", "Dragon Tail"],
+      "cinematic": ["Earthquake", "Heavy Slam", "Crunch"]
     },
     "stats": {
       "attack": 148,
@@ -13804,19 +11867,10 @@
   {
     "id": 209,
     "name": "Snubbull",
-    "types": [
-      "Fairy"
-    ],
+    "types": ["Fairy"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Bite"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Dazzling Gleam",
-        "Brick Break"
-      ]
+      "quick": ["Tackle", "Bite"],
+      "cinematic": ["Crunch", "Dazzling Gleam", "Brick Break"]
     },
     "stats": {
       "attack": 137,
@@ -13869,19 +11923,10 @@
   {
     "id": 210,
     "name": "Granbull",
-    "types": [
-      "Fairy"
-    ],
+    "types": ["Fairy"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Snarl"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Play Rough",
-        "Close Combat"
-      ]
+      "quick": ["Bite", "Snarl"],
+      "cinematic": ["Crunch", "Play Rough", "Close Combat"]
     },
     "stats": {
       "attack": 212,
@@ -13928,20 +11973,10 @@
   {
     "id": 211,
     "name": "Qwilfish",
-    "types": [
-      "Water",
-      "Poison"
-    ],
+    "types": ["Water", "Poison"],
     "moves": {
-      "quick": [
-        "Poison Sting",
-        "Water Gun"
-      ],
-      "cinematic": [
-        "Aqua Tail",
-        "Ice Beam",
-        "Sludge Wave"
-      ]
+      "quick": ["Poison Sting", "Water Gun"],
+      "cinematic": ["Aqua Tail", "Ice Beam", "Sludge Wave"]
     },
     "stats": {
       "attack": 184,
@@ -13989,20 +12024,10 @@
   {
     "id": 212,
     "name": "Scizor",
-    "types": [
-      "Bug",
-      "Steel"
-    ],
+    "types": ["Bug", "Steel"],
     "moves": {
-      "quick": [
-        "Bullet Punch",
-        "Fury Cutter"
-      ],
-      "cinematic": [
-        "X Scissor",
-        "Iron Head",
-        "Night Slash"
-      ]
+      "quick": ["Bullet Punch", "Fury Cutter"],
+      "cinematic": ["X Scissor", "Iron Head", "Night Slash"]
     },
     "stats": {
       "attack": 236,
@@ -14045,20 +12070,10 @@
   {
     "id": 213,
     "name": "Shuckle",
-    "types": [
-      "Bug",
-      "Rock"
-    ],
+    "types": ["Bug", "Rock"],
     "moves": {
-      "quick": [
-        "Struggle Bug",
-        "Rock Throw"
-      ],
-      "cinematic": [
-        "Rock Blast",
-        "Stone Edge",
-        "Gyro Ball"
-      ]
+      "quick": ["Struggle Bug", "Rock Throw"],
+      "cinematic": ["Rock Blast", "Stone Edge", "Gyro Ball"]
     },
     "stats": {
       "attack": 17,
@@ -14106,20 +12121,10 @@
   {
     "id": 214,
     "name": "Heracross",
-    "types": [
-      "Bug",
-      "Fighting"
-    ],
+    "types": ["Bug", "Fighting"],
     "moves": {
-      "quick": [
-        "Counter",
-        "Struggle Bug"
-      ],
-      "cinematic": [
-        "Megahorn",
-        "Close Combat",
-        "Earthquake"
-      ]
+      "quick": ["Counter", "Struggle Bug"],
+      "cinematic": ["Megahorn", "Close Combat", "Earthquake"]
     },
     "stats": {
       "attack": 234,
@@ -14163,20 +12168,10 @@
   {
     "id": 215,
     "name": "Sneasel",
-    "types": [
-      "Dark",
-      "Ice"
-    ],
+    "types": ["Dark", "Ice"],
     "moves": {
-      "quick": [
-        "Ice Shard",
-        "Feint Attack"
-      ],
-      "cinematic": [
-        "Avalanche",
-        "Ice Punch",
-        "Foul Play"
-      ]
+      "quick": ["Ice Shard", "Feint Attack"],
+      "cinematic": ["Avalanche", "Ice Punch", "Foul Play"]
     },
     "stats": {
       "attack": 189,
@@ -14224,19 +12219,10 @@
   {
     "id": 216,
     "name": "Teddiursa",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Scratch",
-        "Lick"
-      ],
-      "cinematic": [
-        "Cross Chop",
-        "Crunch",
-        "Play Rough"
-      ]
+      "quick": ["Scratch", "Lick"],
+      "cinematic": ["Cross Chop", "Crunch", "Play Rough"]
     },
     "stats": {
       "attack": 142,
@@ -14289,19 +12275,10 @@
   {
     "id": 217,
     "name": "Ursaring",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Metal Claw",
-        "Counter"
-      ],
-      "cinematic": [
-        "Close Combat",
-        "Hyper Beam",
-        "Play Rough"
-      ]
+      "quick": ["Metal Claw", "Counter"],
+      "cinematic": ["Close Combat", "Hyper Beam", "Play Rough"]
     },
     "stats": {
       "attack": 236,
@@ -14348,19 +12325,10 @@
   {
     "id": 218,
     "name": "Slugma",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Rock Throw"
-      ],
-      "cinematic": [
-        "Flame Burst",
-        "Flame Charge",
-        "Rock Slide"
-      ]
+      "quick": ["Ember", "Rock Throw"],
+      "cinematic": ["Flame Burst", "Flame Charge", "Rock Slide"]
     },
     "stats": {
       "attack": 118,
@@ -14417,20 +12385,10 @@
   {
     "id": 219,
     "name": "Magcargo",
-    "types": [
-      "Fire",
-      "Rock"
-    ],
+    "types": ["Fire", "Rock"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Rock Throw"
-      ],
-      "cinematic": [
-        "Heat Wave",
-        "Overheat",
-        "Stone Edge"
-      ]
+      "quick": ["Ember", "Rock Throw"],
+      "cinematic": ["Heat Wave", "Overheat", "Stone Edge"]
     },
     "stats": {
       "attack": 139,
@@ -14477,20 +12435,10 @@
   {
     "id": 220,
     "name": "Swinub",
-    "types": [
-      "Ice",
-      "Ground"
-    ],
+    "types": ["Ice", "Ground"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Powder Snow"
-      ],
-      "cinematic": [
-        "Icy Wind",
-        "Body Slam",
-        "Rock Slide"
-      ]
+      "quick": ["Tackle", "Powder Snow"],
+      "cinematic": ["Icy Wind", "Body Slam", "Rock Slide"]
     },
     "stats": {
       "attack": 90,
@@ -14543,20 +12491,10 @@
   {
     "id": 221,
     "name": "Piloswine",
-    "types": [
-      "Ice",
-      "Ground"
-    ],
+    "types": ["Ice", "Ground"],
     "moves": {
-      "quick": [
-        "Ice Shard",
-        "Powder Snow"
-      ],
-      "cinematic": [
-        "Avalanche",
-        "Bulldoze",
-        "Stone Edge"
-      ]
+      "quick": ["Ice Shard", "Powder Snow"],
+      "cinematic": ["Avalanche", "Bulldoze", "Stone Edge"]
     },
     "stats": {
       "attack": 181,
@@ -14603,20 +12541,10 @@
   {
     "id": 222,
     "name": "Corsola",
-    "types": [
-      "Water",
-      "Rock"
-    ],
+    "types": ["Water", "Rock"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Bubble"
-      ],
-      "cinematic": [
-        "Rock Blast",
-        "Power Gem",
-        "Bubble Beam"
-      ]
+      "quick": ["Tackle", "Bubble"],
+      "cinematic": ["Rock Blast", "Power Gem", "Bubble Beam"]
     },
     "stats": {
       "attack": 118,
@@ -14660,19 +12588,10 @@
   {
     "id": 223,
     "name": "Remoraid",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Aurora Beam",
-        "Water Pulse",
-        "Rock Blast"
-      ]
+      "quick": ["Water Gun", "Mud Shot"],
+      "cinematic": ["Aurora Beam", "Water Pulse", "Rock Blast"]
     },
     "stats": {
       "attack": 127,
@@ -14729,19 +12648,10 @@
   {
     "id": 224,
     "name": "Octillery",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Mud Shot"
-      ],
-      "cinematic": [
-        "Gunk Shot",
-        "Water Pulse",
-        "Aurora Beam"
-      ]
+      "quick": ["Water Gun", "Mud Shot"],
+      "cinematic": ["Gunk Shot", "Water Pulse", "Aurora Beam"]
     },
     "stats": {
       "attack": 197,
@@ -14788,20 +12698,10 @@
   {
     "id": 225,
     "name": "Delibird",
-    "types": [
-      "Ice",
-      "Flying"
-    ],
+    "types": ["Ice", "Flying"],
     "moves": {
-      "quick": [
-        "Ice Shard",
-        "Quick Attack"
-      ],
-      "cinematic": [
-        "Ice Punch",
-        "Icy Wind",
-        "Aerial Ace"
-      ]
+      "quick": ["Ice Shard", "Quick Attack"],
+      "cinematic": ["Ice Punch", "Icy Wind", "Aerial Ace"]
     },
     "stats": {
       "attack": 128,
@@ -14849,20 +12749,10 @@
   {
     "id": 226,
     "name": "Mantine",
-    "types": [
-      "Water",
-      "Flying"
-    ],
+    "types": ["Water", "Flying"],
     "moves": {
-      "quick": [
-        "Bubble",
-        "Wing Attack"
-      ],
-      "cinematic": [
-        "Water Pulse",
-        "Ice Beam",
-        "Aerial Ace"
-      ]
+      "quick": ["Bubble", "Wing Attack"],
+      "cinematic": ["Water Pulse", "Ice Beam", "Aerial Ace"]
     },
     "stats": {
       "attack": 148,
@@ -14910,20 +12800,10 @@
   {
     "id": 227,
     "name": "Skarmory",
-    "types": [
-      "Steel",
-      "Flying"
-    ],
+    "types": ["Steel", "Flying"],
     "moves": {
-      "quick": [
-        "Steel Wing",
-        "Air Slash"
-      ],
-      "cinematic": [
-        "Brave Bird",
-        "Sky Attack",
-        "Flash Cannon"
-      ]
+      "quick": ["Steel Wing", "Air Slash"],
+      "cinematic": ["Brave Bird", "Sky Attack", "Flash Cannon"]
     },
     "stats": {
       "attack": 148,
@@ -14971,20 +12851,10 @@
   {
     "id": 228,
     "name": "Houndour",
-    "types": [
-      "Dark",
-      "Fire"
-    ],
+    "types": ["Dark", "Fire"],
     "moves": {
-      "quick": [
-        "Feint Attack",
-        "Ember"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Flamethrower",
-        "Dark Pulse"
-      ]
+      "quick": ["Feint Attack", "Ember"],
+      "cinematic": ["Crunch", "Flamethrower", "Dark Pulse"]
     },
     "stats": {
       "attack": 152,
@@ -15037,20 +12907,10 @@
   {
     "id": 229,
     "name": "Houndoom",
-    "types": [
-      "Dark",
-      "Fire"
-    ],
+    "types": ["Dark", "Fire"],
     "moves": {
-      "quick": [
-        "Snarl",
-        "Fire Fang"
-      ],
-      "cinematic": [
-        "Crunch",
-        "Fire Blast",
-        "Foul Play"
-      ]
+      "quick": ["Snarl", "Fire Fang"],
+      "cinematic": ["Crunch", "Fire Blast", "Foul Play"]
     },
     "stats": {
       "attack": 224,
@@ -15097,20 +12957,10 @@
   {
     "id": 230,
     "name": "Kingdra",
-    "types": [
-      "Water",
-      "Dragon"
-    ],
+    "types": ["Water", "Dragon"],
     "moves": {
-      "quick": [
-        "Water Gun",
-        "Dragon Breath"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Blizzard",
-        "Outrage"
-      ]
+      "quick": ["Water Gun", "Dragon Breath"],
+      "cinematic": ["Hydro Pump", "Blizzard", "Outrage"]
     },
     "stats": {
       "attack": 194,
@@ -15157,19 +13007,10 @@
   {
     "id": 231,
     "name": "Phanpy",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Bulldoze",
-        "Rock Slide",
-        "Body Slam"
-      ]
+      "quick": ["Tackle", "Rock Smash"],
+      "cinematic": ["Bulldoze", "Rock Slide", "Body Slam"]
     },
     "stats": {
       "attack": 107,
@@ -15226,19 +13067,10 @@
   {
     "id": 232,
     "name": "Donphan",
-    "types": [
-      "Ground"
-    ],
+    "types": ["Ground"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Counter"
-      ],
-      "cinematic": [
-        "Earthquake",
-        "Heavy Slam",
-        "Play Rough"
-      ]
+      "quick": ["Tackle", "Counter"],
+      "cinematic": ["Earthquake", "Heavy Slam", "Play Rough"]
     },
     "stats": {
       "attack": 214,
@@ -15285,19 +13117,10 @@
   {
     "id": 233,
     "name": "Porygon2",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Hidden Power",
-        "Charge Beam"
-      ],
-      "cinematic": [
-        "Solar Beam",
-        "Hyper Beam",
-        "Zap Cannon"
-      ]
+      "quick": ["Hidden Power", "Charge Beam"],
+      "cinematic": ["Solar Beam", "Hyper Beam", "Zap Cannon"]
     },
     "stats": {
       "attack": 198,
@@ -15344,19 +13167,10 @@
   {
     "id": 234,
     "name": "Stantler",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Stomp",
-        "Wild Charge",
-        "Megahorn"
-      ]
+      "quick": ["Tackle", "Zen Headbutt"],
+      "cinematic": ["Stomp", "Wild Charge", "Megahorn"]
     },
     "stats": {
       "attack": 192,
@@ -15404,16 +13218,10 @@
   {
     "id": 235,
     "name": "Smeargle",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Tackle"
-      ],
-      "cinematic": [
-        "Struggle"
-      ]
+      "quick": ["Tackle"],
+      "cinematic": ["Struggle"]
     },
     "stats": {
       "attack": 40,
@@ -15457,19 +13265,10 @@
   {
     "id": 236,
     "name": "Tyrogue",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Rock Smash",
-        "Tackle"
-      ],
-      "cinematic": [
-        "Brick Break",
-        "Rock Slide",
-        "Low Sweep"
-      ]
+      "quick": ["Rock Smash", "Tackle"],
+      "cinematic": ["Brick Break", "Rock Slide", "Low Sweep"]
     },
     "stats": {
       "attack": 64,
@@ -15535,19 +13334,10 @@
   {
     "id": 237,
     "name": "Hitmontop",
-    "types": [
-      "Fighting"
-    ],
+    "types": ["Fighting"],
     "moves": {
-      "quick": [
-        "Rock Smash",
-        "Counter"
-      ],
-      "cinematic": [
-        "Close Combat",
-        "Gyro Ball",
-        "Stone Edge"
-      ]
+      "quick": ["Rock Smash", "Counter"],
+      "cinematic": ["Close Combat", "Gyro Ball", "Stone Edge"]
     },
     "stats": {
       "attack": 173,
@@ -15598,20 +13388,10 @@
   {
     "id": 238,
     "name": "Smoochum",
-    "types": [
-      "Ice",
-      "Psychic"
-    ],
+    "types": ["Ice", "Psychic"],
     "moves": {
-      "quick": [
-        "Powder Snow",
-        "Pound"
-      ],
-      "cinematic": [
-        "Ice Beam",
-        "Ice Punch",
-        "Psyshock"
-      ]
+      "quick": ["Powder Snow", "Pound"],
+      "cinematic": ["Ice Beam", "Ice Punch", "Psyshock"]
     },
     "stats": {
       "attack": 153,
@@ -15667,19 +13447,10 @@
   {
     "id": 239,
     "name": "Elekid",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Thunder Shock",
-        "Low Kick"
-      ],
-      "cinematic": [
-        "Thunder Punch",
-        "Brick Break",
-        "Discharge"
-      ]
+      "quick": ["Thunder Shock", "Low Kick"],
+      "cinematic": ["Thunder Punch", "Brick Break", "Discharge"]
     },
     "stats": {
       "attack": 135,
@@ -15735,19 +13506,10 @@
   {
     "id": 240,
     "name": "Magby",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Ember",
-        "Karate Chop"
-      ],
-      "cinematic": [
-        "Brick Break",
-        "Fire Punch",
-        "Flame Burst"
-      ]
+      "quick": ["Ember", "Karate Chop"],
+      "cinematic": ["Brick Break", "Fire Punch", "Flame Burst"]
     },
     "stats": {
       "attack": 151,
@@ -15803,19 +13565,10 @@
   {
     "id": 241,
     "name": "Miltank",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Tackle",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Stomp",
-        "Body Slam",
-        "Gyro Ball"
-      ]
+      "quick": ["Tackle", "Zen Headbutt"],
+      "cinematic": ["Stomp", "Body Slam", "Gyro Ball"]
     },
     "stats": {
       "attack": 157,
@@ -15863,19 +13616,10 @@
   {
     "id": 242,
     "name": "Blissey",
-    "types": [
-      "Normal"
-    ],
+    "types": ["Normal"],
     "moves": {
-      "quick": [
-        "Pound",
-        "Zen Headbutt"
-      ],
-      "cinematic": [
-        "Psychic",
-        "Hyper Beam",
-        "Dazzling Gleam"
-      ]
+      "quick": ["Pound", "Zen Headbutt"],
+      "cinematic": ["Psychic", "Hyper Beam", "Dazzling Gleam"]
     },
     "stats": {
       "attack": 129,
@@ -15918,19 +13662,10 @@
   {
     "id": 243,
     "name": "Raikou",
-    "types": [
-      "Electric"
-    ],
+    "types": ["Electric"],
     "moves": {
-      "quick": [
-        "Thunder Shock",
-        "Volt Switch"
-      ],
-      "cinematic": [
-        "Thunder",
-        "Thunderbolt",
-        "Wild Charge"
-      ]
+      "quick": ["Thunder Shock", "Volt Switch"],
+      "cinematic": ["Thunder", "Thunderbolt", "Wild Charge"]
     },
     "stats": {
       "attack": 241,
@@ -15973,19 +13708,10 @@
   {
     "id": 244,
     "name": "Entei",
-    "types": [
-      "Fire"
-    ],
+    "types": ["Fire"],
     "moves": {
-      "quick": [
-        "Fire Spin",
-        "Fire Fang"
-      ],
-      "cinematic": [
-        "Flamethrower",
-        "Fire Blast",
-        "Overheat"
-      ]
+      "quick": ["Fire Spin", "Fire Fang"],
+      "cinematic": ["Flamethrower", "Fire Blast", "Overheat"]
     },
     "stats": {
       "attack": 235,
@@ -16028,19 +13754,10 @@
   {
     "id": 245,
     "name": "Suicune",
-    "types": [
-      "Water"
-    ],
+    "types": ["Water"],
     "moves": {
-      "quick": [
-        "Extrasensory",
-        "Snarl"
-      ],
-      "cinematic": [
-        "Hydro Pump",
-        "Bubble Beam",
-        "Water Pulse"
-      ]
+      "quick": ["Extrasensory", "Snarl"],
+      "cinematic": ["Hydro Pump", "Bubble Beam", "Water Pulse"]
     },
     "stats": {
       "attack": 180,
@@ -16083,20 +13800,10 @@
   {
     "id": 246,
     "name": "Larvitar",
-    "types": [
-      "Rock",
-      "Ground"
-    ],
+    "types": ["Rock", "Ground"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Stomp",
-        "Crunch",
-        "Ancient Power"
-      ]
+      "quick": ["Bite", "Rock Smash"],
+      "cinematic": ["Stomp", "Crunch", "Ancient Power"]
     },
     "stats": {
       "attack": 115,
@@ -16153,20 +13860,10 @@
   {
     "id": 247,
     "name": "Pupitar",
-    "types": [
-      "Rock",
-      "Ground"
-    ],
+    "types": ["Rock", "Ground"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Rock Smash"
-      ],
-      "cinematic": [
-        "Dig",
-        "Crunch",
-        "Ancient Power"
-      ]
+      "quick": ["Bite", "Rock Smash"],
+      "cinematic": ["Dig", "Crunch", "Ancient Power"]
     },
     "stats": {
       "attack": 155,
@@ -16220,20 +13917,10 @@
   {
     "id": 248,
     "name": "Tyranitar",
-    "types": [
-      "Rock",
-      "Dark"
-    ],
+    "types": ["Rock", "Dark"],
     "moves": {
-      "quick": [
-        "Bite",
-        "Iron Tail"
-      ],
-      "cinematic": [
-        "Fire Blast",
-        "Crunch",
-        "Stone Edge"
-      ]
+      "quick": ["Bite", "Iron Tail"],
+      "cinematic": ["Fire Blast", "Crunch", "Stone Edge"]
     },
     "stats": {
       "attack": 251,
@@ -16280,20 +13967,10 @@
   {
     "id": 249,
     "name": "Lugia",
-    "types": [
-      "Psychic",
-      "Flying"
-    ],
+    "types": ["Psychic", "Flying"],
     "moves": {
-      "quick": [
-        "Extrasensory",
-        "Dragon Tail"
-      ],
-      "cinematic": [
-        "Sky Attack",
-        "Hydro Pump",
-        "Futuresight"
-      ]
+      "quick": ["Extrasensory", "Dragon Tail"],
+      "cinematic": ["Sky Attack", "Hydro Pump", "Futuresight"]
     },
     "stats": {
       "attack": 193,
@@ -16332,20 +14009,10 @@
   {
     "id": 250,
     "name": "Ho-Oh",
-    "types": [
-      "Fire",
-      "Flying"
-    ],
+    "types": ["Fire", "Flying"],
     "moves": {
-      "quick": [
-        "Extrasensory",
-        "Steel Wing"
-      ],
-      "cinematic": [
-        "Brave Bird",
-        "Fire Blast",
-        "Solar Beam"
-      ]
+      "quick": ["Extrasensory", "Steel Wing"],
+      "cinematic": ["Brave Bird", "Fire Blast", "Solar Beam"]
     },
     "stats": {
       "attack": 263,
@@ -16384,20 +14051,10 @@
   {
     "id": 251,
     "name": "Celebi",
-    "types": [
-      "Psychic",
-      "Grass"
-    ],
+    "types": ["Psychic", "Grass"],
     "moves": {
-      "quick": [
-        "Confusion",
-        "Charge Beam"
-      ],
-      "cinematic": [
-        "Hyper Beam",
-        "Psychic",
-        "Dazzling Gleam"
-      ]
+      "quick": ["Confusion", "Charge Beam"],
+      "cinematic": ["Hyper Beam", "Psychic", "Dazzling Gleam"]
     },
     "stats": {
       "attack": 210,

@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import {
   View,
   Image,
@@ -18,127 +18,123 @@ type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-export default class Evolution extends PureComponent<Props> {
-  _goToPokemon = (pokemonId: PokemonID) => {
-    this.props.navigation.push('Info', {
+function Evolution(props: Props) {
+  const goToPokemon = (pokemonId: PokemonID) => {
+    props.navigation.push('Info', {
       pokemonId,
     });
   };
 
-  _getEvolutions = (pokemon: Pokemon): (Pokemon[]) | undefined => {
+  const getEvolutions = (pokemon: Pokemon): Pokemon[] | undefined => {
     const pokemons = store.getPokemons();
     const { evolution } = pokemon;
 
     return evolution && evolution.branch
       ? (evolution.branch
-          .map(ev => pokemons.find(p => p.id === ev.id))
+          .map((ev) => pokemons.find((p) => p.id === ev.id))
           .filter(Boolean) as Pokemon[])
       : undefined;
   };
 
-  render() {
-    const pokemons = store.getPokemons();
-    const { pokemon } = this.props;
-    const { evolution } = pokemon;
+  const pokemons = store.getPokemons();
+  const { pokemon } = props;
+  const { evolution } = pokemon;
 
-    if (!evolution) {
-      return undefined;
-    }
-
-    const evolutions = this._getEvolutions(pokemon);
-
-    const chains = (evolutions ? evolutions.map(item => [item]) : [[pokemon]])
-      .reduce<Pokemon[][]>((acc, chain) => {
-        const last = chain[chain.length - 1];
-        const evs = this._getEvolutions(last);
-
-        if (evs) {
-          const next = [...acc];
-          evs.forEach(it => next.push([...chain, it]));
-          return next;
-        }
-
-        return [...acc, chain];
-      }, [])
-      .map(chain => {
-        let parents: Pokemon[] = [];
-        let curr = chain[0];
-
-        while (curr.evolution && curr.evolution.parent) {
-          const { parent } = curr.evolution;
-          const poke = pokemons.find(p => p.id === parent);
-          if (poke) {
-            curr = poke;
-            parents = [poke, ...parents];
-          }
-        }
-
-        return [...parents, ...chain];
-      })
-      .map(chain =>
-        chain.map(poke => {
-          if (poke.evolution && poke.evolution.parent) {
-            const { parent } = poke.evolution;
-            const prev = pokemons.find(p => p.id === parent);
-
-            if (prev && prev.evolution && prev.evolution.branch) {
-              const ev = prev.evolution.branch.find(({ id }) => id === poke.id);
-              return { poke, ev };
-            }
-          }
-
-          return { poke, ev: null };
-        })
-      );
-
-    return (
-      <View {...this.props}>
-        <Heading>Evolution</Heading>
-        <View style={styles.item}>
-          {chains.map((chain, i) => (
-            <View key={i} style={styles.row}>
-              {chain.map(({ poke, ev }, index, self) => [
-                <TouchableOpacity
-                  key={index}
-                  style={styles.pokemon}
-                  onPress={() =>
-                    poke && poke.id !== pokemon.id
-                      ? this._goToPokemon(poke.id)
-                      : undefined
-                  }
-                >
-                  <Image
-                    source={poke ? store.getSprite(poke.id) : ''}
-                    style={styles.image}
-                  />
-                  <Text style={styles.label}>{poke ? poke.name : ''}</Text>
-                  {ev ? (
-                    <View style={styles.row}>
-                      <Image
-                        source={require('../../assets/images/candy.png')}
-                        style={styles.candy}
-                      />
-                      <Text style={styles.requirements}>{ev.candy_cost}</Text>
-                    </View>
-                  ) : null}
-                  {ev && ev.item_requirement ? (
-                    <Text style={styles.requirements}>
-                      {ev.item_requirement}
-                    </Text>
-                  ) : null}
-                </TouchableOpacity>,
-                index !== self.length - 1 ? (
-                  <Text key={`arrow-${index}`} style={styles.arrow}>
-                    →
-                  </Text>
-                ) : null,
-              ])}
-            </View>
-          ))}
-        </View>
-      </View>
-    );
+  if (!evolution) {
+    return null;
   }
+
+  const evolutions = getEvolutions(pokemon);
+
+  const chains = (evolutions ? evolutions.map((item) => [item]) : [[pokemon]])
+    .reduce<Pokemon[][]>((acc, chain) => {
+      const last = chain[chain.length - 1];
+      const evs = getEvolutions(last);
+
+      if (evs) {
+        const next = [...acc];
+        evs.forEach((it) => next.push([...chain, it]));
+        return next;
+      }
+
+      return [...acc, chain];
+    }, [])
+    .map((chain) => {
+      let parents: Pokemon[] = [];
+      let curr = chain[0];
+
+      while (curr.evolution && curr.evolution.parent) {
+        const { parent } = curr.evolution;
+        const poke = pokemons.find((p) => p.id === parent);
+        if (poke) {
+          curr = poke;
+          parents = [poke, ...parents];
+        }
+      }
+
+      return [...parents, ...chain];
+    })
+    .map((chain) =>
+      chain.map((poke) => {
+        if (poke.evolution && poke.evolution.parent) {
+          const { parent } = poke.evolution;
+          const prev = pokemons.find((p) => p.id === parent);
+
+          if (prev && prev.evolution && prev.evolution.branch) {
+            const ev = prev.evolution.branch.find(({ id }) => id === poke.id);
+            return { poke, ev };
+          }
+        }
+
+        return { poke, ev: null };
+      })
+    );
+
+  return (
+    <View {...props}>
+      <Heading>Evolution</Heading>
+      <View style={styles.item}>
+        {chains.map((chain, i) => (
+          <View key={i} style={styles.row}>
+            {chain.map(({ poke, ev }, index, self) => [
+              <TouchableOpacity
+                key={index}
+                style={styles.pokemon}
+                onPress={() =>
+                  poke && poke.id !== pokemon.id
+                    ? goToPokemon(poke.id)
+                    : undefined
+                }
+              >
+                <Image
+                  source={poke ? store.getSprite(poke.id) : undefined}
+                  style={styles.image}
+                />
+                <Text style={styles.label}>{poke ? poke.name : ''}</Text>
+                {ev ? (
+                  <View style={styles.row}>
+                    <Image
+                      source={require('../../assets/images/candy.png')}
+                      style={styles.candy}
+                    />
+                    <Text style={styles.requirements}>{ev.candy_cost}</Text>
+                  </View>
+                ) : null}
+                {ev && ev.item_requirement ? (
+                  <Text style={styles.requirements}>{ev.item_requirement}</Text>
+                ) : null}
+              </TouchableOpacity>,
+              index !== self.length - 1 ? (
+                <Text key={`arrow-${index}`} style={styles.arrow}>
+                  →
+                </Text>
+              ) : null,
+            ])}
+          </View>
+        ))}
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -189,3 +185,5 @@ const styles = StyleSheet.create({
     marginLeft: 0,
   },
 });
+
+export default Evolution;

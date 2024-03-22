@@ -1,6 +1,5 @@
 import find from 'lodash/find';
-import memoize from 'lodash/memoize';
-import React, { PureComponent } from 'react';
+import React, { useCallback } from 'react';
 import {
   Image,
   StyleSheet,
@@ -27,64 +26,60 @@ type Props = {
 
 const MaterialTab = createMaterialTopTabNavigator();
 
-export default class PokemonInfo extends PureComponent<Props> {
-  _getPokemon = memoize((id: PokemonID) => {
+function PokemonInfo(props: Props) {
+  const getPokemon = useCallback((id: PokemonID) => {
     const pokemons = store.getPokemons();
     const pokemon = find(pokemons, { id });
     return pokemon;
-  });
+  }, []);
 
-  render() {
-    const pokemon = this._getPokemon(this.props.route.params.pokemonId);
-    const sprite = store.getSprite(this.props.route.params.pokemonId);
+  const pokemon = getPokemon(props.route.params.pokemonId);
+  const sprite = store.getSprite(props.route.params.pokemonId);
 
-    if (pokemon === undefined) {
-      return (
-        <NoResults
-          source={require('../../assets/images/open-pokeball.png')}
-          label="Pokemon not found"
-        />
-      );
-    }
-
+  if (pokemon === undefined) {
     return (
-      <View {...this.props} style={[styles.container, this.props.style]}>
-        <Appbar style={styles.appbar}>
-          {'#' + pokemon.id}
-        </Appbar>
-        <View style={[styles.row, styles.meta]}>
-          <View style={styles.basic}>
-            <Text style={[styles.label, styles.name]}>{pokemon.name}</Text>
-            <View style={styles.types}>
-              {pokemon.types.map(type => (
-                <PokemonTypeLabel key={type} type={type} />
-              ))}
-            </View>
-          </View>
-          <Image style={styles.image} source={sprite} />
-        </View>
-        <MaterialTab.Navigator
-          screenOptions={{
-            tabBarStyle: styles.tabbar,
-            tabBarIndicatorStyle: styles.indicator,
-            tabBarLabelStyle: styles.tablabel,
-            tabBarActiveTintColor: '#222',
-            tabBarInactiveTintColor: '#222',
-          }}
-        >
-          <MaterialTab.Screen name="Details">
-            {props => <PokemonDetails {...props} pokemon={pokemon} />}
-          </MaterialTab.Screen>
-          <MaterialTab.Screen name="Matches">
-            {props => <PokemonMatches {...props} pokemon={pokemon} />}
-          </MaterialTab.Screen>
-          <MaterialTab.Screen name="Tools">
-            {props => <PokemonTools {...props} pokemon={pokemon} />}
-          </MaterialTab.Screen>
-        </MaterialTab.Navigator>
-      </View>
+      <NoResults
+        source={require('../../assets/images/open-pokeball.png')}
+        label="Pokemon not found"
+      />
     );
   }
+
+  return (
+    <View {...props} style={[styles.container, props.style]}>
+      <Appbar style={styles.appbar}>{'#' + pokemon.id}</Appbar>
+      <View style={[styles.row, styles.meta]}>
+        <View style={styles.basic}>
+          <Text style={[styles.label, styles.name]}>{pokemon.name}</Text>
+          <View style={styles.types}>
+            {pokemon.types.map((type) => (
+              <PokemonTypeLabel key={type} type={type} />
+            ))}
+          </View>
+        </View>
+        <Image style={styles.image} source={sprite} />
+      </View>
+      <MaterialTab.Navigator
+        screenOptions={{
+          tabBarStyle: styles.tabbar,
+          tabBarIndicatorStyle: styles.indicator,
+          tabBarLabelStyle: styles.tablabel,
+          tabBarActiveTintColor: '#222',
+          tabBarInactiveTintColor: '#222',
+        }}
+      >
+        <MaterialTab.Screen name="Details">
+          {(props) => <PokemonDetails {...props} pokemon={pokemon} />}
+        </MaterialTab.Screen>
+        <MaterialTab.Screen name="Matches">
+          {(props) => <PokemonMatches {...props} pokemon={pokemon} />}
+        </MaterialTab.Screen>
+        <MaterialTab.Screen name="Tools">
+          {(props) => <PokemonTools {...props} pokemon={pokemon} />}
+        </MaterialTab.Screen>
+      </MaterialTab.Navigator>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -157,3 +152,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#222',
   },
 });
+
+export default PokemonInfo;

@@ -64,7 +64,7 @@ it('should match closest stronger pokemon', () => {
     },
   };
   const match = findClosestMatch(pokemons, pokemon, true);
-  expect(match).toBe(pokemons.find(p => p.id === 4));
+  expect(match).toBe(pokemons.find((p) => p.id === 4));
 });
 
 it('should match closest weaker pokemon', () => {
@@ -77,7 +77,7 @@ it('should match closest weaker pokemon', () => {
     },
   };
   const match = findClosestMatch(pokemons, pokemon, false);
-  expect(match).toBe(pokemons.find(p => p.id === 2));
+  expect(match).toBe(pokemons.find((p) => p.id === 2));
 });
 
 it('should match strongest pokemon if stronger than all', () => {
@@ -90,7 +90,7 @@ it('should match strongest pokemon if stronger than all', () => {
     },
   };
   const match = findClosestMatch(pokemons, pokemon, false);
-  expect(match).toBe(pokemons.find(p => p.id === 1));
+  expect(match).toBe(pokemons.find((p) => p.id === 1));
 });
 
 it('should match weakest pokemon if weaker than all', () => {
@@ -103,5 +103,5 @@ it('should match weakest pokemon if weaker than all', () => {
     },
   };
   const match = findClosestMatch(pokemons, pokemon, true);
-  expect(match).toBe(pokemons.find(p => p.id === 2));
+  expect(match).toBe(pokemons.find((p) => p.id === 2));
 });

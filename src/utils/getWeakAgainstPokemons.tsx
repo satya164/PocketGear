@@ -15,8 +15,8 @@ export default function getWeakAgainstPokemons(pokemon: Pokemon) {
   return store
     .getPokemons()
     .filter(({ id }) => id !== pokemon.id)
-    .filter(p =>
-      intersection(p.types, getAttackTypesForPokemon(p)).some(t =>
+    .filter((p) =>
+      intersection(p.types, getAttackTypesForPokemon(p)).some((t) =>
         weakAgainst.includes(t)
       )
     )

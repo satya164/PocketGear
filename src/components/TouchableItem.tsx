@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import {
   TouchableWithoutFeedback,
   TouchableNativeFeedback,
@@ -10,8 +10,8 @@ import {
 } from 'react-native';
 
 type Props = React.ComponentProps<typeof TouchableWithoutFeedback> & {
-  delayPressIn: number;
-  pressColor: string;
+  delayPressIn?: number;
+  pressColor?: string;
   activeOpacity?: number;
   borderless?: boolean;
   children: React.ReactNode;
@@ -20,32 +20,32 @@ type Props = React.ComponentProps<typeof TouchableWithoutFeedback> & {
 
 const LOLLIPOP = 21;
 
-export default class TouchableItem extends PureComponent<Props> {
-  static defaultProps = {
-    delayPressIn: 0,
-    pressColor: 'rgba(0, 0, 0, .16)',
-  };
-
-  render() {
-    if (Platform.OS === 'android' && Platform.Version >= LOLLIPOP) {
-      return (
-        <TouchableNativeFeedback
-          {...this.props}
-          style={null}
-          background={TouchableNativeFeedback.Ripple(
-            this.props.pressColor,
-            this.props.borderless ?? false
-          )}
-        >
-          <View style={this.props.style}>{this.props.children}</View>
-        </TouchableNativeFeedback>
-      );
-    } else {
-      return (
-        <TouchableOpacity {...this.props}>
-          {this.props.children}
-        </TouchableOpacity>
-      );
-    }
+function TouchableItem({
+  delayPressIn = 0,
+  pressColor = 'rgba(0, 0, 0, .16)',
+  borderless = false,
+  style,
+  children,
+  ...rest
+}: Props) {
+  if (Platform.OS === 'android' && Platform.Version >= LOLLIPOP) {
+    return (
+      <TouchableNativeFeedback
+        {...rest}
+        delayPressIn={delayPressIn}
+        style={null}
+        background={TouchableNativeFeedback.Ripple(pressColor, borderless)}
+      >
+        <View style={style}>{children}</View>
+      </TouchableNativeFeedback>
+    );
+  } else {
+    return (
+      <TouchableOpacity delayPressIn={delayPressIn} style={style} {...rest}>
+        {children}
+      </TouchableOpacity>
+    );
   }
 }
+
+export default TouchableItem;

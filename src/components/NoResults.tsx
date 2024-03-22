@@ -1,29 +1,24 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import {
   View,
   Image,
   Text,
   StyleSheet,
-  StyleProp,
-  ViewStyle,
+  ImageSourcePropType,
 } from 'react-native';
 
 type Props = {
-  source: any;
+  source: ImageSourcePropType;
   label: string;
-  style?: StyleProp<ViewStyle>;
 };
 
-export default class NoResults extends PureComponent<Props> {
-  render() {
-    const { source, label } = this.props;
-    return (
-      <View style={styles.container}>
-        <Image style={styles.item} source={source} />
-        <Text style={styles.label}>{label}</Text>
-      </View>
-    );
-  }
+function NoResults({ source, label }: Props) {
+  return (
+    <View style={styles.container}>
+      <Image style={styles.item} source={source} />
+      <Text style={styles.label}>{label}</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -47,3 +42,5 @@ const styles = StyleSheet.create({
     margin: 8,
   },
 });
+
+export default NoResults;

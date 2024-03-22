@@ -18,7 +18,7 @@ export default function findClosestMatch<T extends PokemonData>(
     stronger ? compareStrength(a, b) : compareStrength(b, a)
   );
 
-  const item = items.find(p => {
+  const item = items.find((p) => {
     const difference = compareStrength(pokemon, p);
 
     if (difference === 0) {

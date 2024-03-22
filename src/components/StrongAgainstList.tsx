@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, InteractionManager } from 'react-native';
 import Placeholder from './Placeholder';
 import Appbar from './Appbar';
@@ -13,66 +13,53 @@ type Props = {
   route: any;
 };
 
-type State = {
-  data: Pokemon[];
-  loading: boolean;
-};
+function StrongAgainstList({ navigation, route }: Props) {
+  const [data, setData] = useState<Pokemon[]>([]);
+  const [loading, setLoading] = useState(true);
 
-export default class StrongAgainstList extends PureComponent<Props, State> {
-  state: State = {
-    data: [],
-    loading: true,
-  };
+  useEffect(() => {
+    const updateData = () => {
+      const pokemon = store
+        .getPokemons()
+        .find((p) => p.id === route.params.pokemonId);
+      if (!pokemon) {
+        return;
+      }
+      const pokemons = getStrongAgainstPokemons(pokemon);
+      setData(pokemons);
+      setLoading(false);
+    };
 
-  UNSAFE_componentWillMount() {
-    InteractionManager.runAfterInteractions(this._updateData);
+    InteractionManager.runAfterInteractions(updateData);
+  }, [route.params.pokemonId]);
+
+  const pokemon = store
+    .getPokemons()
+    .find((p) => p.id === route.params.pokemonId);
+  if (!pokemon) {
+    return null;
   }
 
-  _updateData = () => {
-    const pokemon = store
-      .getPokemons()
-      .find(p => p.id === this.props.route.params.pokemonId);
-    if (!pokemon) {
-      return;
-    }
-    const pokemons = getStrongAgainstPokemons(pokemon);
-    this.setState({
-      data: pokemons,
-      loading: false,
-    });
-  };
-
-  render() {
-    const pokemon = store
-      .getPokemons()
-      .find(p => p.id === this.props.route.params.pokemonId);
-    if (!pokemon) {
-      return null;
-    }
-    return (
-      <View style={styles.container}>
-        <Appbar >
-          <Text style={styles.title}>{pokemon.name}</Text>
-          <Text style={styles.subtitle}>Strong against</Text>
-        </Appbar>
-        <View style={styles.content}>
-          {this.state.loading ? (
-            <Placeholder />
-          ) : this.state.data.length ? (
-            <PokemonList
-              data={this.state.data}
-              navigation={this.props.navigation}
-            />
-          ) : (
-            <NoResults
-              source={require('../../assets/images/chansey.png')}
-              label={`${pokemon.name} seems weak`}
-            />
-          )}
-        </View>
+  return (
+    <View style={styles.container}>
+      <Appbar>
+        <Text style={styles.title}>{pokemon.name}</Text>
+        <Text style={styles.subtitle}>Strong against</Text>
+      </Appbar>
+      <View style={styles.content}>
+        {loading ? (
+          <Placeholder />
+        ) : data.length ? (
+          <PokemonList data={data} navigation={navigation} />
+        ) : (
+          <NoResults
+            source={require('../../assets/images/chansey.png')}
+            label={`${pokemon.name} seems weak`}
+          />
+        )}
       </View>
-    );
-  }
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -99,3 +86,5 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
 });
+
+export default StrongAgainstList;

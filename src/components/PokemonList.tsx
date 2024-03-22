@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { StyleSheet, StyleProp, ViewStyle } from 'react-native';
+import React from 'react';
+import { StyleSheet, StyleProp, ViewStyle, ScrollView } from 'react-native';
 import GridView from './GridView';
 import PokemonListCard from './PokemonListCard';
 import { Pokemon } from '../types';
@@ -12,42 +12,38 @@ type Props = React.ComponentProps<typeof GridView> & {
 
 const CARD_WIDTH = 160;
 
-export default class PokemonList extends PureComponent<Props> {
-  scrollTo(options: any) {
-    this._root.scrollTo(options);
-  }
+const PokemonList = React.forwardRef(
+  (props: Props, ref: React.Ref<ScrollView>) => {
+    const renderRow = (rowData: any) => {
+      return (
+        <PokemonListCard pokemon={rowData} navigation={props.navigation} />
+      );
+    };
 
-  _root: any;
+    const getNumberOfColumns = (width: number) => {
+      return Math.floor(width / CARD_WIDTH);
+    };
 
-  _renderRow = (rowData: any) => {
-    return (
-      <PokemonListCard pokemon={rowData} navigation={this.props.navigation} />
-    );
-  };
-
-  _getNumberOfColumns = (width: number) => {
-    return Math.floor(width / CARD_WIDTH);
-  };
-
-  _setRef = (c: any) => (this._root = c);
-
-  render() {
     return (
       <GridView
-        {...this.props}
+        {...props}
         pageSize={2}
-        style={[styles.grid, this.props.style]}
+        style={[styles.grid, props.style]}
         spacing={8}
-        renderRow={this._renderRow}
-        getNumberOfColumns={this._getNumberOfColumns}
-        ref={this._setRef}
+        renderRow={renderRow}
+        getNumberOfColumns={getNumberOfColumns}
+        ref={ref}
       />
     );
   }
-}
+);
+
+PokemonList.displayName = 'PokemonList';
 
 const styles = StyleSheet.create({
   grid: {
     backgroundColor: '#fafafa',
   },
 });
+
+export default PokemonList;

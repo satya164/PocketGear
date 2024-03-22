@@ -8,11 +8,11 @@ export default function getStrongAgainstTypes(pokemon: Pokemon): PokemonType[] {
   const typeChart = store.getTypeChart();
 
   return typeChart
-    .filter(t => types.includes(t.name))
-    .map(t => t.super_effective)
+    .filter((t) => types.includes(t.name))
+    .map((t) => t.super_effective)
     .reduce((acc, curr) => {
       const next = acc.slice();
-      curr.forEach(t => {
+      curr.forEach((t) => {
         if (!acc.includes(t)) {
           next.push(t);
         }

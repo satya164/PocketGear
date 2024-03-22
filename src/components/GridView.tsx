@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { useEffect, useState } from 'react';
 import ListView from 'deprecated-react-native-listview';
 import {
   Platform,
@@ -8,6 +8,7 @@ import {
   StyleProp,
   ViewStyle,
   LayoutChangeEvent,
+  ScrollView,
 } from 'react-native';
 
 type Props = React.ComponentProps<typeof ListView> & {
@@ -25,108 +26,86 @@ type Props = React.ComponentProps<typeof ListView> & {
   style?: StyleProp<ViewStyle>;
 };
 
-type State = {
-  dataSource: typeof ListView.DataSource;
-  containerWidth: number;
-};
-
-export default class GridView extends PureComponent<Props, State> {
-  static defaultProps = {
-    getNumberOfColumns: () => 1,
-    spacing: 0,
-  };
-
-  state: State = {
-    dataSource: new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2,
-    }),
-    containerWidth: Dimensions.get('window').width,
-  };
-
-  UNSAFE_componentWillMount() {
-    this.setState(state => ({
-      dataSource: state.dataSource.cloneWithRows(
-        this._processData(state.containerWidth, this.props)
-      ),
-    }));
-  }
-
-  UNSAFE_componentWillReceiveProps(nextProps: Props) {
-    this.setState(state => ({
-      dataSource: state.dataSource.cloneWithRows(
-        this._processData(state.containerWidth, nextProps)
-      ),
-    }));
-  }
-
-  scrollTo(options: any) {
-    this._root.scrollTo(options);
-  }
-
-  _root: any;
-
-  _renderRow = (rowData: any, rowID: string, highlightRow: React.ReactText) => {
-    return (
-      <View style={rowData.style}>
-        {this.props.renderRow(rowData.tile, rowID, highlightRow)}
-      </View>
+const GridView = React.forwardRef(
+  (props: Props, ref: React.Ref<ScrollView>) => {
+    const [dataSource, setDataSource] = useState<ListView.DataSource>(
+      new ListView.DataSource({
+        rowHasChanged: (r1, r2) => r1 !== r2,
+      })
     );
-  };
+    const [containerWidth, setContainerWidth] = useState(
+      Dimensions.get('window').width
+    );
 
-  _processData = (containerWidth: number, props: Props) => {
-    const { getNumberOfColumns, spacing, data } = props;
-    const style = {
-      width:
-        (containerWidth - spacing) / getNumberOfColumns(containerWidth) -
-        spacing,
-      margin: spacing / 2,
+    useEffect(() => {
+      setDataSource(
+        dataSource.cloneWithRows(processData(containerWidth, props))
+      );
+    }, [containerWidth, props]);
+
+    const renderRow = (
+      rowData: any,
+      rowID: string,
+      highlightRow: React.ReactText
+    ) => {
+      return (
+        <View style={rowData.style}>
+          {props.renderRow(rowData.tile, rowID, highlightRow)}
+        </View>
+      );
     };
-    return data.map(tile => ({
-      tile,
-      style,
-    }));
-  };
 
-  _handleLayout = (e: any) => {
-    if (this.props.onLayout) {
-      this.props.onLayout(e);
-    }
+    const processData = (containerWidth: number, props: Props) => {
+      const { getNumberOfColumns, spacing, data } = props;
+      const style = {
+        width:
+          (containerWidth - spacing) / getNumberOfColumns(containerWidth) -
+          spacing,
+        margin: spacing / 2,
+      };
+      return data.map((tile) => ({
+        tile,
+        style,
+      }));
+    };
 
-    if (this.state.containerWidth === e.nativeEvent.layout.width) {
-      return;
-    }
+    const onLayout = (e: LayoutChangeEvent) => {
+      if (props.onLayout) {
+        props.onLayout(e);
+      }
 
-    const containerWidth = e.nativeEvent.layout.width;
+      if (containerWidth === e.nativeEvent.layout.width) {
+        return;
+      }
 
-    this.setState(state => ({
-      containerWidth,
-      dataSource: state.dataSource.cloneWithRows(
-        this._processData(containerWidth, this.props)
-      ),
-    }));
-  };
+      const newContainerWidth = e.nativeEvent.layout.width;
 
-  _setRef = (c: any) => (this._root = c);
+      setContainerWidth(newContainerWidth);
+      setDataSource(
+        dataSource.cloneWithRows(processData(newContainerWidth, props))
+      );
+    };
 
-  render() {
     return (
       <ListView
-        {...this.props}
+        {...props}
         removeClippedSubviews={Platform.OS !== 'ios'}
         enableEmptySections={false}
-        dataSource={this.state.dataSource}
-        onLayout={this._handleLayout}
-        renderRow={this._renderRow}
+        dataSource={dataSource}
+        onLayout={onLayout}
+        renderRow={renderRow}
         contentContainerStyle={[
           styles.grid,
-          { padding: this.props.spacing / 2 },
-          this.props.contentContainerStyle,
+          { padding: props.spacing / 2 },
+          props.contentContainerStyle,
         ]}
-        ref={this._setRef}
+        ref={ref}
       />
     );
   }
-}
+);
+
+GridView.displayName = 'GridView';
 
 const styles = StyleSheet.create({
   grid: {
@@ -135,3 +114,5 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
 });
+
+export default GridView;

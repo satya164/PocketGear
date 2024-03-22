@@ -13,6 +13,6 @@ export default function getStrongAgainstPokemons(pokemon: Pokemon) {
   return store
     .getPokemons()
     .filter(({ id }) => id !== pokemon.id)
-    .filter(({ types }) => types.some(t => strongAgainst.includes(t)))
+    .filter(({ types }) => types.some((t) => strongAgainst.includes(t)))
     .sort(compareStrength);
 }

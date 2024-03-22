@@ -1,13 +1,14 @@
 import filter from 'lodash/filter';
 import debounce from 'lodash/debounce';
 import React, { useState } from 'react';
-import { KeyboardAvoidingView, StyleSheet } from 'react-native';
+import { KeyboardAvoidingView, ScrollView, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
 import PokemonList from './PokemonList';
 import NoResults from './NoResults';
 import store from '../store';
 import { Pokemon } from '../types';
 import { useNavigation } from '@react-navigation/native';
+import GridView from './GridView';
 
 type SortKey = '#' | 'name' | 'attack' | 'defense' | 'max_cp';
 
@@ -35,17 +36,17 @@ export default function PokemonChooser() {
 
     if (query) {
       if (!isNaN(Number(query))) {
-        return filter(pokemons, p => p.id === parseInt(query, 10));
+        return filter(pokemons, (p) => p.id === parseInt(query, 10));
       }
-      return filter(pokemons, pokemon => {
+      return filter(pokemons, (pokemon) => {
         return (
           /* String#startsWith doesn't work properly for unicode */
           pokemon.name.toLowerCase().indexOf(query) === 0 ||
           query
             .split(',')
-            .map(q => q.trim())
-            .every(q =>
-              pokemon.types.some(type => type.toLowerCase().indexOf(q) === 0)
+            .map((q) => q.trim())
+            .every((q) =>
+              pokemon.types.some((type) => type.toLowerCase().indexOf(q) === 0)
             )
         );
       });
@@ -75,7 +76,7 @@ export default function PokemonChooser() {
   };
 
   const updateResults = debounce(() => {
-    setState(prevState => ({
+    setState((prevState) => ({
       ...prevState,
       results: { pokemons: getResults(prevState.query) },
     }));
@@ -91,7 +92,7 @@ export default function PokemonChooser() {
     if (state.query === query) {
       return;
     }
-    setState(prevState => ({
+    setState((prevState) => ({
       ...prevState,
       query,
     }));
@@ -99,12 +100,12 @@ export default function PokemonChooser() {
   };
 
   const onChangeToggle = ({ name }: { name: SortKey }) =>
-    setState(prevState => ({
+    setState((prevState) => ({
       ...prevState,
       sort: name,
     }));
 
-  const listRef = React.useRef<PokemonList>(null);
+  const listRef = React.useRef<ScrollView>(null);
 
   return (
     <KeyboardAvoidingView style={styles.container}>
@@ -121,7 +122,6 @@ export default function PokemonChooser() {
         <NoResults
           label="No Pokémon found"
           source={require('../../assets/images/open-pokeball.png')}
-          style={styles.content}
         />
       )}
       <SearchBar

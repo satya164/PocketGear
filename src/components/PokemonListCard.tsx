@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Image, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
 import TouchableItem from './TouchableItem';
 import store from '../store';
@@ -10,33 +10,30 @@ type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-export default class PokemonListCard extends PureComponent<Props> {
-  _handlePress = () => {
-    this.props.navigation.push('Info', {
-      pokemonId: this.props.pokemon.id,
+function PokemonListCard({ navigation, pokemon, style }: Props) {
+  const onPress = () => {
+    navigation.push('Info', {
+      pokemonId: pokemon.id,
     });
   };
 
-  render() {
-    const { pokemon, style } = this.props;
-    const types = pokemon.types.join(', ');
-    const color = store.getColor(pokemon.types[0]);
-    const sprite = store.getSprite(pokemon.id);
+  const types = pokemon.types.join(', ');
+  const color = store.getColor(pokemon.types[0]);
+  const sprite = store.getSprite(pokemon.id);
 
-    return (
-      <TouchableItem
-        key={pokemon.name}
-        onPress={this._handlePress}
-        activeOpacity={0.7}
-        style={[styles.block, { backgroundColor: color }, style]}
-      >
-        <Text style={[styles.index, styles.subtitle]}>#{pokemon.id}</Text>
-        <Image source={sprite} style={styles.image} />
-        <Text style={styles.title}>{pokemon.name}</Text>
-        <Text style={styles.subtitle}>{types}</Text>
-      </TouchableItem>
-    );
-  }
+  return (
+    <TouchableItem
+      key={pokemon.name}
+      onPress={onPress}
+      activeOpacity={0.7}
+      style={[styles.block, { backgroundColor: color }, style]}
+    >
+      <Text style={[styles.index, styles.subtitle]}>#{pokemon.id}</Text>
+      <Image source={sprite} style={styles.image} />
+      <Text style={styles.title}>{pokemon.name}</Text>
+      <Text style={styles.subtitle}>{types}</Text>
+    </TouchableItem>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -76,3 +73,5 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
 });
+
+export default PokemonListCard;
