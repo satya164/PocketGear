@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "PocketGear",
-    "slug": "pocket-gear",
+    "slug": "pocketgear",
     "scheme": "pocketgear",
     "privacy": "public",
     "platforms": [
@@ -19,7 +19,7 @@
     },
     "updates": {
       "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/d04f0b52-0348-4f0c-bd15-abd7bb69748b"
+      "url": "https://u.expo.dev/85bcb0f0-d130-11e6-b8eb-59d1587e6774"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -42,13 +42,13 @@
     "plugins": [
       "expo-font"
     ],
-    "extra": {
-      "eas": {
-        "projectId": "d04f0b52-0348-4f0c-bd15-abd7bb69748b"
-      }
-    },
     "runtimeVersion": {
       "policy": "appVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85bcb0f0-d130-11e6-b8eb-59d1587e6774"
+      }
     }
   }
 }
