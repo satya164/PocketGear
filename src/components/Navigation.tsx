@@ -110,6 +110,7 @@ InfoScreen.config = InfoTabs.config;
 
 const RootStack = createStackNavigator({
   screenOptions: {
+    headerBackTitleVisible: false,
     cardStyle: { flex: 1 },
   },
   screens: {
