@@ -9,6 +9,11 @@
 
 
 ## Features
+### Search Bar
+![image](https://github.com/Spaghettimonstar/PocketGear/assets/130066887/2094af59-73e5-4b0d-9c73-dc20a1f6b5d0)
 
-Search Bar
-![image](https://github.com/Spaghettimonstar/PocketGear/assets/130066887/a028ec29-d4f2-4b07-bd01-1e4ff5522f8e)
+
+### Detailed pokémon information
+![image](https://github.com/Spaghettimonstar/PocketGear/assets/130066887/9b861038-6f88-4ec5-9c79-a574953c1673)
+
+Information on type match-ups
