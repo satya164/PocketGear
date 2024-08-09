@@ -22,7 +22,7 @@ export default function Attack({ move, types }: Props) {
         Array.from({
           length: Math.abs(Math.round(100 / move.energy_delta)),
         }).map((_, i) => {
-          // eslint-disable-next-line react/no-array-index-key
+          // eslint-disable-next-line @eslint-react/no-array-index-key
           return <View key={i} style={styles.energy} />;
         })
       ) : (

@@ -1,4 +1,4 @@
-/* eslint-env jest */
+import { expect, test } from '@jest/globals';
 
 import findClosestMatch from '../findClosestMatch';
 
@@ -37,7 +37,7 @@ const pokemons = [
   },
 ];
 
-it('should match if stats are same', () => {
+test('should match if stats are same', () => {
   const pokemon = {
     id: 5,
     stats: {
@@ -54,7 +54,7 @@ it('should match if stats are same', () => {
   expect({ ...weak, id: 5 }).toEqual(pokemon);
 });
 
-it('should match closest stronger pokemon', () => {
+test('should match closest stronger pokemon', () => {
   const pokemon = {
     id: 5,
     stats: {
@@ -67,7 +67,7 @@ it('should match closest stronger pokemon', () => {
   expect(match).toBe(pokemons.find((p) => p.id === 4));
 });
 
-it('should match closest weaker pokemon', () => {
+test('should match closest weaker pokemon', () => {
   const pokemon = {
     id: 5,
     stats: {
@@ -80,7 +80,7 @@ it('should match closest weaker pokemon', () => {
   expect(match).toBe(pokemons.find((p) => p.id === 2));
 });
 
-it('should match strongest pokemon if stronger than all', () => {
+test('should match strongest pokemon if stronger than all', () => {
   const pokemon = {
     id: 5,
     stats: {
@@ -93,7 +93,7 @@ it('should match strongest pokemon if stronger than all', () => {
   expect(match).toBe(pokemons.find((p) => p.id === 1));
 });
 
-it('should match weakest pokemon if weaker than all', () => {
+test('should match weakest pokemon if weaker than all', () => {
   const pokemon = {
     id: 5,
     stats: {

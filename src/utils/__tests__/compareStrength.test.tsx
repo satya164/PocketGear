@@ -1,8 +1,8 @@
-/* eslint-env jest */
+import { expect, test } from '@jest/globals';
 
 import compareStrength from '../compareStrength';
 
-it('should compare strength', () => {
+test('should compare strength', () => {
   const a = {
     stats: {
       attack: 190,
