@@ -96,11 +96,11 @@ function Evolution(props: Props) {
       <Heading>Evolution</Heading>
       <View style={styles.item}>
         {chains.map((chain, i) => (
-          // eslint-disable-next-line react/no-array-index-key
+          // eslint-disable-next-line @eslint-react/no-array-index-key
           <View key={i} style={styles.row}>
             {chain.map(({ poke, ev }, index, self) => [
               <TouchableOpacity
-                // eslint-disable-next-line react/no-array-index-key
+                // eslint-disable-next-line @eslint-react/no-array-index-key
                 key={index}
                 style={styles.pokemon}
                 onPress={() =>
@@ -128,7 +128,7 @@ function Evolution(props: Props) {
                 ) : null}
               </TouchableOpacity>,
               index !== self.length - 1 ? (
-                // eslint-disable-next-line react/no-array-index-key
+                // eslint-disable-next-line @eslint-react/no-array-index-key
                 <Text key={`arrow-${index}`} style={styles.arrow}>
                   →
                 </Text>

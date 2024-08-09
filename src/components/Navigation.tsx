@@ -10,7 +10,7 @@ import {
 } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import store from '../store';
 import type { PokemonID } from '../types';
 import PokemonChooser from './PokemonChooser';
@@ -41,6 +41,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#222',
   },
 
+  heading: {
+    alignItems: 'center',
+  },
+
   title: {
     fontFamily: 'Montserrat',
     color: '#222',
@@ -62,10 +66,10 @@ const MatchTitle = ({ children }: { children: React.ReactNode }) => {
   const pokemon = store.getPokemon(route.params.pokemonId);
 
   return (
-    <>
+    <View style={styles.heading}>
       <Text style={styles.title}>{pokemon?.name}</Text>
       <Text style={styles.subtitle}>{children}</Text>
-    </>
+    </View>
   );
 };
 
@@ -110,7 +114,7 @@ InfoScreen.config = InfoTabs.config;
 
 const RootStack = createStackNavigator({
   screenOptions: {
-    headerBackTitleVisible: false,
+    headerBackButtonDisplayMode: 'minimal',
     cardStyle: { flex: 1 },
   },
   screens: {
