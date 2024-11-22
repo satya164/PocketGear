@@ -1,22 +1,18 @@
 import * as React from 'react';
-import { StyleSheet, Text, type StyleProp, type ViewStyle } from 'react-native';
+import { StyleSheet, Text, type TextProps } from 'react-native';
 
-type Props = {
-  style?: StyleProp<ViewStyle>;
-  children: React.ReactNode;
-};
-
-export default function Paragraph(props: Props) {
+export default function Paragraph({
+  selectable = true,
+  style,
+  children,
+  ...rest
+}: TextProps) {
   return (
-    <Text {...props} style={[styles.paragraph, props.style]}>
-      {props.children}
+    <Text {...rest} selectable={selectable} style={[styles.paragraph, style]}>
+      {children}
     </Text>
   );
 }
-
-Paragraph.defaultProps = {
-  selectable: true,
-};
 
 const styles = StyleSheet.create({
   paragraph: {
