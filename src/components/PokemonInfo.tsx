@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
   image: {
     marginHorizontal: 8,
     height: 72,
+    aspectRatio: 1,
     resizeMode: 'contain',
   },
 

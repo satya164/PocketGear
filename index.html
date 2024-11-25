@@ -1,0 +1,21 @@
+<style>
+  html,
+  body {
+    height: 100%;
+  }
+
+  #root {
+    display: flex;
+    height: 100%;
+  }
+</style>
+<div id="root"></div>
+<script type="module" src="./index.tsx"></script>
+<script type="module">
+  import { AppRegistry } from 'react-native';
+
+  AppRegistry.runApplication('main', {
+    initialProps: {},
+    rootTag: document.getElementById('root'),
+  });
+</script>
