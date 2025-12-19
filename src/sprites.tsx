@@ -1,4 +1,4 @@
-/* eslint-disable import-x/no-commonjs */
+/* eslint-disable import-x/no-commonjs, @typescript-eslint/no-require-imports */
 
 export default [
   require('../assets/sprites/1.png'),

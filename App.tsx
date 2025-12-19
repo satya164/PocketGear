@@ -6,6 +6,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
 import 'react-native-gesture-handler';
+import MontserratSemiBold from './assets/fonts/Montserrat-SemiBold.otf';
+import Montserrat from './assets/fonts/Montserrat.otf';
 import Navigation from './src/components/Navigation';
 
 SplashScreen.preventAutoHideAsync();
@@ -23,8 +25,8 @@ export default function App() {
 
   useEffect(() => {
     Font.loadAsync({
-      'Montserrat': require('./assets/fonts/Montserrat.otf'),
-      'Montserrat-SemiBold': require('./assets/fonts/Montserrat-SemiBold.otf'),
+      'Montserrat': Montserrat,
+      'Montserrat-SemiBold': MontserratSemiBold,
       ...MaterialIcons.font,
     })
       .finally(() => setFontsLoaded(true))

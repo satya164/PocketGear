@@ -8,6 +8,7 @@ import {
   type StyleProp,
   type ViewStyle,
 } from 'react-native';
+import OpenPokeball from '../../assets/images/open-pokeball.png';
 import { PokemonProvider } from '../contexts/PokemonContext';
 import store from '../store';
 import type { PokemonID } from '../types';
@@ -24,12 +25,7 @@ function PokemonInfo({ route, children, style, ...rest }: Props) {
   const sprite = store.getSprite(route.params.pokemonId);
 
   if (pokemon === undefined) {
-    return (
-      <NoResults
-        source={require('../../assets/images/open-pokeball.png')}
-        label="Pokemon not found"
-      />
-    );
+    return <NoResults source={OpenPokeball} label="Pokemon not found" />;
   }
 
   return (

@@ -1,6 +1,7 @@
 import type { StaticScreenProps } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { InteractionManager, StyleSheet, View } from 'react-native';
+import Chansey from '../../assets/images/chansey.png';
 import store from '../store';
 import type { Pokemon, PokemonID } from '../types';
 import getWeakAgainstPokemons from '../utils/getWeakAgainstPokemons';
@@ -44,7 +45,7 @@ function WeakAgainstList({
           <PokemonList data={data} />
         ) : (
           <NoResults
-            source={require('../../assets/images/chansey.png')}
+            source={Chansey}
             label={`${pokemon.name} seems unbeatable`}
           />
         )}

@@ -1,7 +1,0 @@
-{
-  "extends": "eslint-config-satya164",
-
-  "env": {
-    "node": true
-  }
-}

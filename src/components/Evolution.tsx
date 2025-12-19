@@ -9,6 +9,7 @@ import {
   type StyleProp,
   type ViewStyle,
 } from 'react-native';
+import Candy from '../../assets/images/candy.png';
 import store from '../store';
 import type { Pokemon, PokemonID } from '../types';
 import Heading from './Heading';
@@ -116,10 +117,7 @@ function Evolution(props: Props) {
                 <Text style={styles.label}>{poke ? poke.name : ''}</Text>
                 {ev ? (
                   <View style={styles.row}>
-                    <Image
-                      source={require('../../assets/images/candy.png')}
-                      style={styles.candy}
-                    />
+                    <Image source={Candy} style={styles.candy} />
                     <Text style={styles.requirements}>{ev.candy_cost}</Text>
                   </View>
                 ) : null}

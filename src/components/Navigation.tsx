@@ -99,7 +99,7 @@ const InfoScreen = ({
 }: StaticScreenProps<
   { pokemonId: PokemonID } & (
     | NavigatorScreenParams<StaticParamList<typeof InfoTabs>>
-    // eslint-disable-next-line @typescript-eslint/ban-types
+    // eslint-disable-next-line @typescript-eslint/no-empty-object-type
     | {}
   )
 >) => {
@@ -180,6 +180,7 @@ type RootStackParamList = StaticParamList<typeof RootStack>;
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace ReactNavigation {
+    // eslint-disable-next-line @typescript-eslint/no-empty-object-type
     interface RootParamList extends RootStackParamList {}
   }
 }

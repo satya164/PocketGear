@@ -8,9 +8,9 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-  type NativeSyntheticEvent,
+  type BlurEvent,
+  type FocusEvent,
   type StyleProp,
-  type TextInputFocusEventData,
   type ViewStyle,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -24,8 +24,8 @@ type Toggle = {
 
 type Props<T extends Toggle> = {
   onChangeText: (query: string) => void;
-  onFocus?: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void;
-  onBlur?: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void;
+  onFocus?: (e: FocusEvent) => void;
+  onBlur?: (e: BlurEvent) => void;
   placeholder: string;
   value: string;
   toggles: T[];
@@ -61,12 +61,12 @@ const SearchBar = <T extends Toggle>({
     }
   }, [focused, togglesVisible]);
 
-  const onFocus = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+  const onFocus = (e: FocusEvent) => {
     onCustomFocus?.(e);
     setTogglesVisible(true);
   };
 
-  const onBlur = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
+  const onBlur = (e: BlurEvent) => {
     onCustomBlur?.(e);
 
     Animated.spring(focused, {

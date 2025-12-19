@@ -57,8 +57,8 @@ const GridViewInner = <T,>(
 
   return (
     <FlatList<T>
-      {...rest}
       key={numColumns}
+      {...rest}
       numColumns={numColumns}
       removeClippedSubviews={Platform.OS !== 'ios'}
       keyboardDismissMode="on-drag"

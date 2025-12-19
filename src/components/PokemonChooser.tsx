@@ -7,6 +7,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import OpenPokeball from '../../assets/images/open-pokeball.png';
 import store from '../store';
 import { type Pokemon } from '../types';
 import NoResults from './NoResults';
@@ -127,10 +128,7 @@ export default function PokemonChooser() {
           ref={listRef}
         />
       ) : (
-        <NoResults
-          label="No Pokémon found"
-          source={require('../../assets/images/open-pokeball.png')}
-        />
+        <NoResults label="No Pokémon found" source={OpenPokeball} />
       )}
       <SearchBar
         placeholder="Find Pokémon by name, number or type"

@@ -7,8 +7,8 @@ type Props = React.ComponentProps<typeof TouchableOpacity> & {
 };
 
 function TouchableButton({ onPress: onPressCustom, children, ...rest }: Props) {
-  const intervalRef = useRef<NodeJS.Timeout>();
-  const timeoutRef = useRef<NodeJS.Timeout>();
+  const intervalRef = useRef<NodeJS.Timeout>(null);
+  const timeoutRef = useRef<NodeJS.Timeout>(null);
   const handledRef = useRef<boolean>(false);
 
   useEffect(() => {
