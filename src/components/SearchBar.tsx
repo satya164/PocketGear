@@ -167,14 +167,24 @@ const styles = StyleSheet.create({
   },
 
   bar: {
+    ...Platform.select({
+      android: {
+        elevation: 1,
+      },
+      web: {
+        boxShadow: '0 1px 1px rgba(0, 0, 0, 0.1)',
+      },
+      default: {
+        shadowColor: 'black',
+        shadowOpacity: 0.1,
+        shadowRadius: StyleSheet.hairlineWidth,
+        shadowOffset: {
+          height: StyleSheet.hairlineWidth,
+          width: 0,
+        },
+      },
+    }),
     elevation: 1,
-    shadowColor: 'black',
-    shadowOpacity: 0.1,
-    shadowRadius: StyleSheet.hairlineWidth,
-    shadowOffset: {
-      height: StyleSheet.hairlineWidth,
-      width: 0,
-    },
     borderColor: 'rgba(0, 0, 0, 0.16)',
     borderWidth:
       Platform.OS === 'android' && Platform.Version < LOLLIPOP

@@ -2576,9 +2576,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/core@npm:^7.0.4":
-  version: 7.0.4
-  resolution: "@react-navigation/core@npm:7.0.4"
+"@react-navigation/core@npm:^7.0.6":
+  version: 7.0.6
+  resolution: "@react-navigation/core@npm:7.0.6"
   dependencies:
     "@react-navigation/routers": "npm:^7.0.0"
     escape-string-regexp: "npm:^4.0.0"
@@ -2589,49 +2589,49 @@ __metadata:
     use-sync-external-store: "npm:^1.2.2"
   peerDependencies:
     react: ">= 18.2.0"
-  checksum: 10c0/8df3fb6f3883b1e079460db4512f8e5d9f5fce0c1fa15f073837c5d38c06ccbe98495be90ad157191698b80c3745b0fc0ef6a2d648755cc07ab561c2b6376909
+  checksum: 10c0/b390452418537bffbc377444f840741ef2e314eae62c8c1eba03395425020cd9f2fa1a9e64bba6fd870c10f47819adeae8d553ea5f782172afcab538a6ca322f
   languageName: node
   linkType: hard
 
-"@react-navigation/elements@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@react-navigation/elements@npm:2.1.1"
+"@react-navigation/elements@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@react-navigation/elements@npm:2.1.5"
   dependencies:
     color: "npm:^4.2.3"
   peerDependencies:
     "@react-native-masked-view/masked-view": ">= 0.2.0"
-    "@react-navigation/native": ^7.0.4
+    "@react-navigation/native": ^7.0.6
     react: ">= 18.2.0"
     react-native: "*"
     react-native-safe-area-context: ">= 4.0.0"
   peerDependenciesMeta:
     "@react-native-masked-view/masked-view":
       optional: true
-  checksum: 10c0/ae30721004439ad0350aeaeddb559f8a52278d301cf3543391815055993ab9b991d3fa9050ba51e048f43716137e5f86357b0d71fd4a8bff61f393d46d8f653a
+  checksum: 10c0/7a412fd6525ac85e96d2fb09ef0d1803ec37a1e8cae1d2c34b4063be2fa27bde60c9d133a58b0f30cd5b6398b4f2f832438936b9125bea4c3f06766f5e44afbb
   languageName: node
   linkType: hard
 
-"@react-navigation/material-top-tabs@npm:^7.0.7":
-  version: 7.0.7
-  resolution: "@react-navigation/material-top-tabs@npm:7.0.7"
+"@react-navigation/material-top-tabs@npm:^7.0.11":
+  version: 7.0.11
+  resolution: "@react-navigation/material-top-tabs@npm:7.0.11"
   dependencies:
-    "@react-navigation/elements": "npm:^2.1.1"
+    "@react-navigation/elements": "npm:^2.1.5"
     color: "npm:^4.2.3"
-    react-native-tab-view: "npm:^4.0.3"
+    react-native-tab-view: "npm:^4.0.4"
   peerDependencies:
-    "@react-navigation/native": ^7.0.4
+    "@react-navigation/native": ^7.0.6
     react: ">= 18.2.0"
     react-native: "*"
     react-native-pager-view: ">= 6.0.0"
-  checksum: 10c0/4add53074688afcac951ab885d928b4d29f9ed93d336fd8a213eff84e7b8a52b0b7dd2d3cdcf4e0d2b1a310009b554c92e2e9410334382e560c00e056ca4149e
+  checksum: 10c0/d2d2254f5390ceaed97c605bb5aa09ef73c41880f3cffebe09c29b8629d09e112672130fd28554ab834d1b98171af2701e77a10f1234cc2c3311764c9e40b7aa
   languageName: node
   linkType: hard
 
-"@react-navigation/native@npm:^7.0.4":
-  version: 7.0.4
-  resolution: "@react-navigation/native@npm:7.0.4"
+"@react-navigation/native@npm:^7.0.6":
+  version: 7.0.6
+  resolution: "@react-navigation/native@npm:7.0.6"
   dependencies:
-    "@react-navigation/core": "npm:^7.0.4"
+    "@react-navigation/core": "npm:^7.0.6"
     escape-string-regexp: "npm:^4.0.0"
     fast-deep-equal: "npm:^3.1.3"
     nanoid: "npm:3.3.7"
@@ -2639,7 +2639,7 @@ __metadata:
   peerDependencies:
     react: ">= 18.2.0"
     react-native: "*"
-  checksum: 10c0/1d01916a30236d99caabe2d4e720fc4c9f47cdf7ca0df98cdd882e90b35cb159be45df16e7f5ceb783f0af5ab44406f99ee5321ccfa75781d35b59a5cc045072
+  checksum: 10c0/0d11867a7cd387d82b8ca9d7c949ae4422e56cf43e00c5a863cdbdbf06570fd8cc793deb11dfc8f417a0df1c60b492d5881395be53e3da96590a2fae248acbd2
   languageName: node
   linkType: hard
 
@@ -2652,20 +2652,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/stack@npm:^7.0.6":
-  version: 7.0.6
-  resolution: "@react-navigation/stack@npm:7.0.6"
+"@react-navigation/stack@npm:^7.0.11":
+  version: 7.0.11
+  resolution: "@react-navigation/stack@npm:7.0.11"
   dependencies:
-    "@react-navigation/elements": "npm:^2.1.1"
+    "@react-navigation/elements": "npm:^2.1.5"
     color: "npm:^4.2.3"
   peerDependencies:
-    "@react-navigation/native": ^7.0.4
+    "@react-navigation/native": ^7.0.6
     react: ">= 18.2.0"
     react-native: "*"
     react-native-gesture-handler: ">= 2.0.0"
     react-native-safe-area-context: ">= 4.0.0"
     react-native-screens: ">= 4.0.0"
-  checksum: 10c0/e70d2ba49545856a93dc651f31758ff3143c69d805d2173e468133141b12c876f444e08392475f14814957bc35b0f48bde71bbf883409a88053ee1c864bfe5f4
+  checksum: 10c0/cc2985db1a7bc3788852c49adb515ae4643aeda49d5953c9c2b656fd2f91e416b6d2109882e3fb041ab6f9ae1d27e49079b388b90875da1329eaaadad1bb2c20
   languageName: node
   linkType: hard
 
@@ -8984,16 +8984,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-tab-view@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "react-native-tab-view@npm:4.0.3"
+"react-native-tab-view@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "react-native-tab-view@npm:4.0.4"
   dependencies:
     use-latest-callback: "npm:^0.2.1"
   peerDependencies:
     react: ">= 18.2.0"
     react-native: "*"
     react-native-pager-view: ">= 6.0.0"
-  checksum: 10c0/cd456599fd2f3c985fc03f337b136df5c878c7dfce78210976525a689453df563cca60bc79b48b9ebf01595a5b86a14b638f5814d20dfb6511ba5c80b9a9e6aa
+  checksum: 10c0/2831f08e9ae089d78911ab4e03ba388c0e2393320623d7bcf1e1e21b109be50663669f4863cfbdde26d566d1a896ee7a355ebe596df3d97c38c8a02a02e4c4ca
   languageName: node
   linkType: hard
 
@@ -9330,10 +9330,10 @@ __metadata:
     "@expo/metro-runtime": "npm:~6.1.2"
     "@expo/vector-icons": "npm:^15.0.3"
     "@jest/globals": "npm:^29.7.0"
-    "@react-navigation/elements": "npm:^2.1.1"
-    "@react-navigation/material-top-tabs": "npm:^7.0.7"
-    "@react-navigation/native": "npm:^7.0.4"
-    "@react-navigation/stack": "npm:^7.0.6"
+    "@react-navigation/elements": "npm:^2.1.5"
+    "@react-navigation/material-top-tabs": "npm:^7.0.11"
+    "@react-navigation/native": "npm:^7.0.6"
+    "@react-navigation/stack": "npm:^7.0.11"
     "@types/lodash": "npm:4.17.0"
     "@types/react": "npm:~19.1.10"
     "@types/react-dom": "npm:~19.1.7"

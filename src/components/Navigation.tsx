@@ -10,7 +10,7 @@ import {
 } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import store from '../store';
 import type { PokemonID } from '../types';
 import PokemonChooser from './PokemonChooser';
@@ -23,9 +23,18 @@ import WeakAgainstList from './WeakAgainstList';
 
 const styles = StyleSheet.create({
   tabbar: {
+    ...Platform.select({
+      android: {
+        elevation: 0,
+      },
+      web: {
+        boxShadow: 'none',
+      },
+      default: {
+        shadowOpacity: 0,
+      },
+    }),
     backgroundColor: '#fff',
-    elevation: 0,
-    shadowOpacity: 0,
     borderBottomColor: 'rgba(0, 0, 0, 0.16)',
     borderBottomWidth: StyleSheet.hairlineWidth,
   },

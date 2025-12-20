@@ -112,6 +112,7 @@ function Evolution(props: Props) {
               >
                 <Image
                   source={poke ? store.getSprite(poke.id) : undefined}
+                  resizeMode="contain"
                   style={styles.image}
                 />
                 <Text style={styles.label}>{poke ? poke.name : ''}</Text>
@@ -149,7 +150,6 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     height: 48,
     width: 64,
-    resizeMode: 'contain',
   },
 
   arrow: {

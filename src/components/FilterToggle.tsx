@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {
   Platform,
+  Pressable,
   StyleSheet,
   Text,
-  TouchableWithoutFeedback,
   View,
   type GestureResponderEvent,
 } from 'react-native';
@@ -16,13 +16,13 @@ type Props = {
 
 export default function NoResults({ active, label, onPress }: Props) {
   return (
-    <TouchableWithoutFeedback onPress={onPress}>
+    <Pressable onPress={onPress}>
       <View style={[styles.toggle, active && styles.active]}>
         <Text style={[styles.label, active && styles.activeLabel]}>
           {label}
         </Text>
       </View>
-    </TouchableWithoutFeedback>
+    </Pressable>
   );
 }
 

@@ -39,7 +39,7 @@ function PokemonInfo({ route, children, style, ...rest }: Props) {
             ))}
           </View>
         </View>
-        <Image style={styles.image} source={sprite} />
+        <Image source={sprite} resizeMode="contain" style={styles.image} />
       </View>
       <PokemonProvider value={pokemon}>{children}</PokemonProvider>
     </View>
@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
   image: {
     marginHorizontal: 8,
     height: 72,
-    resizeMode: 'contain',
   },
 
   label: {

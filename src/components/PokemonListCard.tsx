@@ -1,3 +1,4 @@
+import { PlatformPressable } from '@react-navigation/elements';
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {
@@ -9,7 +10,6 @@ import {
 } from 'react-native';
 import store from '../store';
 import type { Pokemon } from '../types';
-import TouchableItem from './TouchableItem';
 
 type Props = {
   pokemon: Pokemon;
@@ -30,17 +30,17 @@ function PokemonListCardInner({ pokemon, style }: Props) {
   const sprite = store.getSprite(pokemon.id);
 
   return (
-    <TouchableItem
+    <PlatformPressable
       key={pokemon.name}
       onPress={onPress}
-      activeOpacity={0.7}
+      pressOpacity={0.7}
       style={[styles.block, { backgroundColor: color }, style]}
     >
       <Text style={[styles.index, styles.subtitle]}>#{pokemon.id}</Text>
-      <Image source={sprite} style={styles.image} />
+      <Image source={sprite} resizeMode="contain" style={styles.image} />
       <Text style={styles.title}>{pokemon.name}</Text>
       <Text style={styles.subtitle}>{types}</Text>
-    </TouchableItem>
+    </PlatformPressable>
   );
 }
 
@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
   image: {
     margin: 16,
     height: 72,
-    resizeMode: 'contain',
   },
 
   index: {

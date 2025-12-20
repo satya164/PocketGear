@@ -75,7 +75,11 @@ function CPCalculator({ pokemon, style }: Props) {
           return (
             <TouchableOpacity key={it.id} onPress={() => goToPokemon(it.id)}>
               <View style={styles.pokemon}>
-                <Image source={store.getSprite(it.id)} style={styles.image} />
+                <Image
+                  source={store.getSprite(it.id)}
+                  resizeMode="contain"
+                  style={styles.image}
+                />
                 <Text style={[styles.text, styles.small]}>{poke.name}</Text>
                 <Text style={[styles.text, styles.amount]}>
                   {Math.round(average)}
@@ -109,7 +113,6 @@ const styles = StyleSheet.create({
     margin: 8,
     height: 48,
     width: 64,
-    resizeMode: 'contain',
   },
 
   text: {
