@@ -17,7 +17,6 @@ import PokemonChooser from './PokemonChooser';
 import PokemonDetails from './PokemonDetails';
 import PokemonInfo from './PokemonInfo';
 import PokemonMatches from './PokemonMatches';
-import PokemonTools from './PokemonTools';
 import StrongAgainstList from './StrongAgainstList';
 import WeakAgainstList from './WeakAgainstList';
 
@@ -93,7 +92,6 @@ const InfoTabs = createMaterialTopTabNavigator({
   screens: {
     Details: PokemonDetails,
     Matches: PokemonMatches,
-    Tools: PokemonTools,
   },
 });
 
