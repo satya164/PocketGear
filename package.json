@@ -50,8 +50,7 @@
     "typescript": "~5.9.2"
   },
   "jest": {
-    "preset": "jest-expo",
-    "collectCoverage": true
+    "preset": "jest-expo"
   },
   "prettier": {
     "quoteProps": "consistent",
