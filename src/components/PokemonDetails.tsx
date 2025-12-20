@@ -3,13 +3,9 @@ import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { usePokemon } from '../contexts/PokemonContext';
 import store from '../store';
-import type { Move } from '../types';
-import getQuickAttacks from '../utils/getQuickAttacks';
 import getResistantToTypes from '../utils/getResistantToTypes';
-import getSpecialAttacks from '../utils/getSpecialAttacks';
 import getStrongAgainstTypes from '../utils/getStrongAgainstTypes';
 import getWeakAgainstTypes from '../utils/getWeakAgainstTypes';
-import Attack from './Attack';
 import Evolution from './Evolution';
 import Heading from './Heading';
 import Paragraph from './Paragraph';
@@ -34,13 +30,7 @@ function PokemonDetails() {
     );
   };
 
-  const renderAttack = (move: Move) => {
-    return <Attack key={move.name} move={move} types={pokemon.types} />;
-  };
-
   const maxValues = store.getMaxValues();
-  const quickAttacks = getQuickAttacks(pokemon);
-  const specialAttacks = getSpecialAttacks(pokemon);
   const strongAgainstAll = getStrongAgainstTypes(pokemon);
   const weakAgainstAll = getWeakAgainstTypes(pokemon);
   const resistantToAll = getResistantToTypes(pokemon);
@@ -59,47 +49,6 @@ function PokemonDetails() {
           <Paragraph>{pokemon.description}</Paragraph>
         </View>
 
-        <View style={styles.origin}>
-          {pokemon.name_origin.map(({ term, meaning }) => (
-            <Paragraph style={styles.term} key={term}>
-              <Text style={[styles.text, styles.strong]}>{term}</Text>
-              <Text>{'    '}</Text>
-              <Text>{meaning}</Text>
-            </Paragraph>
-          ))}
-        </View>
-
-        {pokemon.egg_distance || pokemon.buddy_distance ? (
-          <View style={styles.item}>
-            {pokemon.egg_distance ? (
-              <View style={[styles.row, styles.center]}>
-                <Text
-                  selectable
-                  style={[styles.text, styles.strong, styles.measurement]}
-                >
-                  Egg Group
-                </Text>
-                <Text selectable style={styles.text}>
-                  {pokemon.egg_distance.amount} {pokemon.egg_distance.unit}
-                </Text>
-              </View>
-            ) : null}
-            {pokemon.buddy_distance ? (
-              <View style={[styles.row, styles.center]}>
-                <Text
-                  selectable
-                  style={[styles.text, styles.strong, styles.measurement]}
-                >
-                  Buddy Distance
-                </Text>
-                <Text selectable style={styles.text}>
-                  {pokemon.buddy_distance.amount} {pokemon.buddy_distance.unit}
-                </Text>
-              </View>
-            ) : null}
-          </View>
-        ) : null}
-
         <View style={styles.item}>
           <View style={[styles.row, styles.center]}>
             <Text
@@ -109,8 +58,7 @@ function PokemonDetails() {
               Height
             </Text>
             <Text selectable style={styles.text}>
-              {pokemon.measurements.height.amount}{' '}
-              {pokemon.measurements.height.unit}
+              {pokemon.height} m
             </Text>
           </View>
           <View style={[styles.row, styles.center]}>
@@ -121,8 +69,7 @@ function PokemonDetails() {
               Weight
             </Text>
             <Text selectable style={styles.text}>
-              {pokemon.measurements.weight.amount}{' '}
-              {pokemon.measurements.weight.unit}
+              {pokemon.weight} kg
             </Text>
           </View>
         </View>
@@ -161,16 +108,17 @@ function PokemonDetails() {
         </View>
 
         <View style={styles.item}>
-          {quickAttacks.map(renderAttack)}
-          {specialAttacks.map(renderAttack)}
-        </View>
-
-        <View style={styles.item}>
+          {renderStat(
+            'HP',
+            pokemon.stats.hp / maxValues.hp,
+            pokemon.stats.hp,
+            '#ff8a65'
+          )}
           {renderStat(
             'Attack',
             pokemon.stats.attack / maxValues.attack,
             pokemon.stats.attack,
-            '#ff8a65'
+            '#f06292'
           )}
           {renderStat(
             'Defense',
@@ -179,27 +127,27 @@ function PokemonDetails() {
             '#9575cd'
           )}
           {renderStat(
-            'Stamina',
-            pokemon.stats.stamina / maxValues.stamina,
-            pokemon.stats.stamina,
+            'Sp. Attack',
+            pokemon.stats.special_attack / maxValues.special_attack,
+            pokemon.stats.special_attack,
             '#5499c7'
           )}
           {renderStat(
-            'Capture Rate',
-            pokemon.encounter.capture_rate || 0,
-            ((pokemon.encounter.capture_rate || 0) * 100).toFixed(2) + '%',
-            '#f06292'
+            'Sp. Defense',
+            pokemon.stats.special_defense / maxValues.special_defense,
+            pokemon.stats.special_defense,
+            '#4db6ac'
           )}
           {renderStat(
-            'Flee Rate',
-            pokemon.encounter.flee_rate,
-            (pokemon.encounter.flee_rate * 100).toFixed(2) + '%',
+            'Speed',
+            pokemon.stats.speed / maxValues.speed,
+            pokemon.stats.speed,
             '#ffd54f'
           )}
           {renderStat(
-            'Max CP',
-            pokemon.points.max_cp / maxValues.max_cp,
-            pokemon.points.max_cp,
+            'Capture Rate',
+            pokemon.capture_rate / 255,
+            pokemon.capture_rate,
             '#e57373'
           )}
         </View>
@@ -207,18 +155,6 @@ function PokemonDetails() {
         {pokemon.evolution ? (
           <View style={styles.item}>
             <Evolution style={styles.item} pokemon={pokemon} />
-          </View>
-        ) : null}
-
-        {pokemon.easter_eggs ? (
-          <View style={styles.item}>
-            <Heading>{pokemon.easter_eggs.length > 1 ? 'Tips' : 'Tip'}</Heading>
-
-            {pokemon.easter_eggs.map((tip) => (
-              <View key={tip}>
-                <Paragraph>{tip}</Paragraph>
-              </View>
-            ))}
           </View>
         ) : null}
       </View>
@@ -253,14 +189,6 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     marginVertical: 4,
-  },
-
-  origin: {
-    marginVertical: 10,
-  },
-
-  term: {
-    marginVertical: 2,
   },
 
   wrap: {

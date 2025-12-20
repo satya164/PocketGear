@@ -4,7 +4,7 @@
   "scripts": {
     "start": "expo start",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint . --ext '.mjs,.js,.ts,.tsx'",
+    "lint": "eslint . --ext '.mjs,.js,.ts,.mts,.tsx'",
     "test": "jest"
   },
   "packageManager": "yarn@4.1.1",
@@ -43,7 +43,7 @@
     "@types/react": "~19.1.10",
     "@types/react-dom": "~19.1.7",
     "eslint": "^9.39.2",
-    "eslint-config-satya164": "^5.1.6",
+    "eslint-config-satya164": "^5.1.7",
     "jest": "~29.7.0",
     "lefthook": "^2.0.12",
     "prettier": "^3.7.4",

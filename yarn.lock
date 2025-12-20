@@ -4729,9 +4729,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-satya164@npm:^5.1.6":
-  version: 5.1.6
-  resolution: "eslint-config-satya164@npm:5.1.6"
+"eslint-config-satya164@npm:^5.1.7":
+  version: 5.1.7
+  resolution: "eslint-config-satya164@npm:5.1.7"
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments": "npm:^4.4.1"
     "@eslint-react/eslint-plugin": "npm:^1.38.0"
@@ -4749,7 +4749,7 @@ __metadata:
   peerDependencies:
     eslint: "*"
     prettier: "*"
-  checksum: 10c0/540926e627c25bb577aa53c64c49a321c90524ec92f7c42436f097a272cc797c6e28994e62a7f257c90e7aaa41185a143e205485ded8ee5e783c2cefec6775b8
+  checksum: 10c0/35bb00943199c69afa873f827f49c7a1b9597c7a353290b7c734caac08a77f48aa8e2b8cd809b4b87dba998017550777217016485f011bd2681a41118135fff8
   languageName: node
   linkType: hard
 
@@ -9338,7 +9338,7 @@ __metadata:
     "@types/react": "npm:~19.1.10"
     "@types/react-dom": "npm:~19.1.7"
     eslint: "npm:^9.39.2"
-    eslint-config-satya164: "npm:^5.1.6"
+    eslint-config-satya164: "npm:^5.1.7"
     expo: "npm:^54.0.30"
     expo-blur: "npm:~15.0.8"
     expo-font: "npm:~14.0.10"

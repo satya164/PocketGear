@@ -18,13 +18,6 @@ export type PokemonType =
   | 'Steel'
   | 'Water';
 
-export type EvolutionItem =
-  | 'Dragon Scale'
-  | "King's Rock"
-  | 'Metal Coat'
-  | 'Sun Stone'
-  | 'Up-Grade';
-
 export type PokemonID = number;
 
 export type Pokemon = {
@@ -33,60 +26,32 @@ export type Pokemon = {
   types: PokemonType[];
   category: string;
   description: string;
-  name_origin: {
-    term: string;
-    meaning: string;
-  }[];
-  moves: {
-    quick: string[];
-    cinematic: string[];
-  };
-  measurements: {
-    height: {
-      amount: number;
-      unit: 'm' | 'cm';
-    };
-    weight: {
-      amount: number;
-      unit: 'g' | 'kg';
-    };
-  };
+  height: number; // meters
+  weight: number; // kg
   stats: {
-    stamina: number;
+    hp: number;
     attack: number;
     defense: number;
-  };
-  points: {
-    max_cp: number;
+    special_attack: number;
+    special_defense: number;
+    speed: number;
   };
   evolution?: {
     parent?: PokemonID;
-    branch?: {
+    children?: {
       id: PokemonID;
-      candy_cost: number;
-      item_requirement?: EvolutionItem;
+      trigger: 'level-up' | 'trade' | 'use-item' | 'other';
+      min_level?: number;
+      min_happiness?: number;
+      time_of_day?: 'day' | 'night';
+      item?: string;
+      held_item?: string;
     }[];
   };
-  evolution_cp_multipliers?: {
-    id: PokemonID;
-    multipliers: {
-      minimum: number;
-      maximum: number;
-    };
-  }[];
-  egg_distance?: {
-    amount: number;
-    unit: 'km';
-  };
-  buddy_distance?: {
-    amount: number;
-    unit: 'km';
-  };
-  encounter: {
-    capture_rate?: number;
-    flee_rate: number;
-  };
-  easter_eggs?: string[];
+  capture_rate: number;
+  is_legendary: boolean;
+  is_mythical: boolean;
+  generation: number;
 };
 
 export type TypeChart = {
@@ -99,10 +64,7 @@ export type Move = {
   name: string;
   type: PokemonType;
   power?: number;
-  duration: number;
-  energy_delta: number;
-  accuracy_chance: number;
-  critical_chance?: number;
-  stamina_loss: number;
-  quick: boolean;
+  accuracy?: number;
+  pp: number;
+  damage_class: 'physical' | 'special' | 'status';
 };

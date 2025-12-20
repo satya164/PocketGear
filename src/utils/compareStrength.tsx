@@ -4,7 +4,7 @@ type PokemonData = {
   stats: {
     attack: number;
     defense: number;
-    stamina: number;
+    hp: number;
   };
 };
 
@@ -13,9 +13,9 @@ export default function compareStrength(a: PokemonData, b: PokemonData) {
   return (
     a.stats.attack / max.attack +
     a.stats.defense / max.defense +
-    a.stats.stamina / max.stamina -
+    a.stats.hp / max.hp -
     (b.stats.attack / max.attack +
       b.stats.defense / max.defense +
-      b.stats.stamina / max.stamina)
+      b.stats.hp / max.hp)
   );
 }

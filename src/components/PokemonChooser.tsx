@@ -14,7 +14,7 @@ import NoResults from './NoResults';
 import PokemonList from './PokemonList';
 import SearchBar from './SearchBar';
 
-type SortKey = '#' | 'name' | 'attack' | 'defense' | 'max_cp';
+type SortKey = '#' | 'name' | 'attack' | 'defense' | 'speed';
 
 type State = {
   query: string;
@@ -72,8 +72,8 @@ export default function PokemonChooser() {
           return b.stats.attack - a.stats.attack;
         case 'defense':
           return b.stats.defense - a.stats.defense;
-        case 'max_cp':
-          return b.points.max_cp - a.points.max_cp;
+        case 'speed':
+          return b.stats.speed - a.stats.speed;
         default:
           return 0;
       }
@@ -152,9 +152,9 @@ export default function PokemonChooser() {
             active: state.sort === 'defense',
           },
           {
-            name: 'max_cp' as const,
-            label: 'Max CP',
-            active: state.sort === 'max_cp',
+            name: 'speed' as const,
+            label: 'Speed',
+            active: state.sort === 'speed',
           },
         ]}
         onChangeToggle={onChangeToggle}

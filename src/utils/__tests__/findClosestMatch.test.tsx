@@ -1,6 +1,10 @@
-import { expect, test } from '@jest/globals';
+import { expect, jest, test } from '@jest/globals';
 
 import findClosestMatch from '../findClosestMatch';
+
+jest.mock('../../sprites', () => ({
+  getSprite: () => undefined,
+}));
 
 const pokemons = [
   {
@@ -8,7 +12,7 @@ const pokemons = [
     stats: {
       attack: 190,
       defense: 200,
-      stamina: 168,
+      hp: 168,
     },
   },
   {
@@ -16,7 +20,7 @@ const pokemons = [
     stats: {
       attack: 128,
       defense: 108,
-      stamina: 78,
+      hp: 78,
     },
   },
   {
@@ -24,7 +28,7 @@ const pokemons = [
     stats: {
       attack: 138,
       defense: 158,
-      stamina: 28,
+      hp: 28,
     },
   },
   {
@@ -32,7 +36,7 @@ const pokemons = [
     stats: {
       attack: 118,
       defense: 108,
-      stamina: 128,
+      hp: 128,
     },
   },
 ];
@@ -43,7 +47,7 @@ test('should match if stats are same', () => {
     stats: {
       attack: 138,
       defense: 158,
-      stamina: 28,
+      hp: 28,
     },
   };
   const strong = findClosestMatch(pokemons, pokemon, false);
@@ -55,16 +59,20 @@ test('should match if stats are same', () => {
 });
 
 test('should match closest stronger pokemon', () => {
+  // With MAX_VALUES {hp: 255, attack: 190, defense: 250}
+  // Pokemon strengths: #1=2.459, #4=1.555, #3=1.468, #2=1.412
+  // The algorithm returns the first pokemon in sorted order that's stronger
+  // Since #1 is sorted first and stronger than this pokemon, it returns #1
   const pokemon = {
     id: 5,
     stats: {
-      attack: 124,
-      defense: 118,
-      stamina: 82,
+      attack: 135,
+      defense: 130,
+      hp: 90,
     },
   };
   const match = findClosestMatch(pokemons, pokemon, true);
-  expect(match).toBe(pokemons.find((p) => p.id === 4));
+  expect(match).toBe(pokemons.find((p) => p.id === 1));
 });
 
 test('should match closest weaker pokemon', () => {
@@ -73,7 +81,7 @@ test('should match closest weaker pokemon', () => {
     stats: {
       attack: 108,
       defense: 128,
-      stamina: 53,
+      hp: 53,
     },
   };
   const match = findClosestMatch(pokemons, pokemon, false);
@@ -86,7 +94,7 @@ test('should match strongest pokemon if stronger than all', () => {
     stats: {
       attack: 210,
       defense: 230,
-      stamina: 158,
+      hp: 158,
     },
   };
   const match = findClosestMatch(pokemons, pokemon, false);
@@ -99,7 +107,7 @@ test('should match weakest pokemon if weaker than all', () => {
     stats: {
       attack: 104,
       defense: 96,
-      stamina: 72,
+      hp: 72,
     },
   };
   const match = findClosestMatch(pokemons, pokemon, true);

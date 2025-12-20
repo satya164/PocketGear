@@ -5,7 +5,7 @@ type PokemonData = {
   stats: {
     attack: number;
     defense: number;
-    stamina: number;
+    hp: number;
   };
 };
 

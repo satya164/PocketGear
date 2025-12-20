@@ -16,25 +16,16 @@ export default function Attack({ move, types }: Props) {
     <View style={styles.row}>
       <View style={styles.type}>
         <Text style={styles.text}>{move.name}</Text>
-        <Text style={styles.subtitle}>{move.type}</Text>
-      </View>
-      {!move.quick && move.energy_delta ? (
-        Array.from({
-          length: Math.abs(Math.round(100 / move.energy_delta)),
-        }).map((_, i) => {
-          // eslint-disable-next-line @eslint-react/no-array-index-key
-          return <View key={i} style={styles.energy} />;
-        })
-      ) : (
-        <View style={styles.spacer} />
-      )}
-      <View style={styles.damage}>
-        <Text style={styles.text}>
-          {((power + stab) / (move.duration / 1000)).toFixed(2)} dps
+        <Text style={styles.subtitle}>
+          {move.type} · {move.damage_class}
         </Text>
+      </View>
+      <View style={styles.spacer} />
+      <View style={styles.damage}>
+        <Text style={styles.text}>{power + stab} pow</Text>
         <Text style={[styles.subtitle, styles.numbers]}>
           {power} {stab ? <Text style={styles.stab}>+{stab} </Text> : ''}/{' '}
-          {move.duration / 1000} s
+          {move.pp} PP
         </Text>
       </View>
     </View>
@@ -60,15 +51,6 @@ const styles = StyleSheet.create({
 
   type: {
     width: 120,
-  },
-
-  energy: {
-    flex: 1,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: '#4fc3f7',
-    marginHorizontal: 2,
-    marginVertical: 10,
   },
 
   damage: {

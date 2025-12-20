@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npm test:*)",
+      "Bash(curl:*)",
+      "Bash(npx eslint:*)",
+      "Bash(npx tsx:*)",
+      "Bash(node --experimental-strip-types:*)",
+      "Bash(cat:*)"
+    ]
+  }
+}

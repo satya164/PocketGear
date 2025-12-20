@@ -9,7 +9,6 @@ import {
   type StyleProp,
   type ViewStyle,
 } from 'react-native';
-import Candy from '../../assets/images/candy.png';
 import store from '../store';
 import type { Pokemon, PokemonID } from '../types';
 import Heading from './Heading';
@@ -31,8 +30,8 @@ function Evolution(props: Props) {
   const getEvolutions = (pokemon: Pokemon): Pokemon[] | undefined => {
     const { evolution } = pokemon;
 
-    return evolution && evolution.branch
-      ? (evolution.branch
+    return evolution && evolution.children
+      ? (evolution.children
           .map((ev) => store.getPokemon(ev.id))
           .filter(Boolean) as Pokemon[])
       : undefined;
@@ -82,8 +81,8 @@ function Evolution(props: Props) {
           const { parent } = poke.evolution;
           const prev = store.getPokemon(parent);
 
-          if (prev && prev.evolution && prev.evolution.branch) {
-            const ev = prev.evolution.branch.find(({ id }) => id === poke.id);
+          if (prev && prev.evolution && prev.evolution.children) {
+            const ev = prev.evolution.children.find(({ id }) => id === poke.id);
             return { poke, ev };
           }
         }
@@ -116,14 +115,8 @@ function Evolution(props: Props) {
                   style={styles.image}
                 />
                 <Text style={styles.label}>{poke ? poke.name : ''}</Text>
-                {ev ? (
-                  <View style={styles.row}>
-                    <Image source={Candy} style={styles.candy} />
-                    <Text style={styles.requirements}>{ev.candy_cost}</Text>
-                  </View>
-                ) : null}
-                {ev && ev.item_requirement ? (
-                  <Text style={styles.requirements}>{ev.item_requirement}</Text>
+                {ev && ev.item ? (
+                  <Text style={styles.requirements}>{ev.item}</Text>
                 ) : null}
               </TouchableOpacity>,
               index !== self.length - 1 ? (

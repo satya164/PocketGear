@@ -1,17 +1,17 @@
 import type { ImageSourcePropType } from 'react-native';
+import pokemons from '../data/pokemon.json';
 import colors from './colors.json';
-import moves from './data/moves.json';
-import pokemons from './data/pokemons.json';
 import typeChart from './data/type_chart.json';
-import sprites from './sprites';
-import type { Move, Pokemon, PokemonID, PokemonType, TypeChart } from './types';
+import { getSprite as getSpriteFromMap } from './sprites';
+import type { Pokemon, PokemonID, PokemonType, TypeChart } from './types';
 
 const MAX_VALUES = {
-  attack: 300,
-  defense: 200,
-  stamina: 320,
-  max_hp: 163,
-  max_cp: 3904,
+  hp: 255,
+  attack: 190,
+  defense: 250,
+  special_attack: 194,
+  special_defense: 250,
+  speed: 200,
 };
 
 function getAllPokemons(): Pokemon[] {
@@ -22,16 +22,12 @@ function getPokemon(id: PokemonID): Pokemon | undefined {
   return getAllPokemons().find((p) => p.id === id);
 }
 
-function getAllMoves(): Move[] {
-  return moves as Move[];
-}
-
 function getTypeChart(): TypeChart[] {
   return typeChart as TypeChart[];
 }
 
-function getSprite(id: PokemonID): ImageSourcePropType {
-  return sprites[id - 1];
+function getSprite(id: PokemonID): ImageSourcePropType | undefined {
+  return getSpriteFromMap(id);
 }
 
 function getColor(type: PokemonType): string {
@@ -45,7 +41,6 @@ function getMaxValues() {
 export default {
   getAllPokemons,
   getPokemon,
-  getAllMoves,
   getTypeChart,
   getSprite,
   getColor,
